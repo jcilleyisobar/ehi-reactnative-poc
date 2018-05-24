@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EHIRedemptionPickerCell" id="fav-wr-48C" customClass="EHIRedemptionPickerCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="268"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="268"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0wW-nw-VCX" userLabel="Container">
+                        <rect key="frame" x="30" y="30" width="315" height="200"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How many free days would you like to redeem?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="315" translatesAutoresizingMaskIntoConstraints="NO" id="PtG-3O-nNT" userLabel="Title" customClass="EHILabel">
+                                <rect key="frame" x="0.0" y="0.0" width="315" height="60.5"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="450 points per free day" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="315" translatesAutoresizingMaskIntoConstraints="NO" id="3mD-yw-PuJ" userLabel="Subtitle" customClass="EHILabel">
+                                <rect key="frame" x="0.0" y="75.5" width="315" height="18"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zb8-DA-ucM" userLabel="Day Stepper" customClass="EHIStepperControl">
+                                <rect key="frame" x="0.0" y="113.5" width="315" height="45"/>
+                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="T2s-xH-w1K"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="delegate" destination="fav-wr-48C" id="gU6-il-hvD"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points Spent: 1,250" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="315" translatesAutoresizingMaskIntoConstraints="NO" id="dJe-AR-fSb" customClass="EHILabel">
+                                <rect key="frame" x="0.0" y="178.5" width="315" height="21.5"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3mD-yw-PuJ" firstAttribute="trailing" secondItem="dJe-AR-fSb" secondAttribute="trailing" id="6Nb-VL-1Nl"/>
+                            <constraint firstItem="3mD-yw-PuJ" firstAttribute="trailing" secondItem="PtG-3O-nNT" secondAttribute="trailing" id="7lQ-lF-wff"/>
+                            <constraint firstItem="3mD-yw-PuJ" firstAttribute="leading" secondItem="PtG-3O-nNT" secondAttribute="leading" id="GZu-NN-3si"/>
+                            <constraint firstAttribute="bottom" secondItem="dJe-AR-fSb" secondAttribute="bottom" id="K3J-O8-1XM"/>
+                            <constraint firstItem="PtG-3O-nNT" firstAttribute="leading" secondItem="0wW-nw-VCX" secondAttribute="leading" id="LL5-zy-Nny"/>
+                            <constraint firstAttribute="trailing" secondItem="PtG-3O-nNT" secondAttribute="trailing" id="QcH-59-wdI"/>
+                            <constraint firstItem="3mD-yw-PuJ" firstAttribute="top" secondItem="PtG-3O-nNT" secondAttribute="bottom" constant="15" id="aay-DC-zzq"/>
+                            <constraint firstItem="zb8-DA-ucM" firstAttribute="top" secondItem="3mD-yw-PuJ" secondAttribute="bottom" constant="20" id="i6S-yX-2xB"/>
+                            <constraint firstItem="zb8-DA-ucM" firstAttribute="leading" secondItem="0wW-nw-VCX" secondAttribute="leading" id="m0n-fR-IlW"/>
+                            <constraint firstItem="3mD-yw-PuJ" firstAttribute="leading" secondItem="dJe-AR-fSb" secondAttribute="leading" id="nMt-3N-wXy"/>
+                            <constraint firstItem="PtG-3O-nNT" firstAttribute="top" secondItem="0wW-nw-VCX" secondAttribute="top" id="o14-6C-bdP"/>
+                            <constraint firstItem="dJe-AR-fSb" firstAttribute="top" secondItem="zb8-DA-ucM" secondAttribute="bottom" constant="20" id="tvg-IN-mBK"/>
+                            <constraint firstAttribute="trailing" secondItem="zb8-DA-ucM" secondAttribute="trailing" id="w3G-ok-r6g"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0wW-nw-VCX" firstAttribute="leading" secondItem="fav-wr-48C" secondAttribute="leading" constant="30" id="Dbn-O1-4Ms"/>
+                <constraint firstItem="0wW-nw-VCX" firstAttribute="top" secondItem="fav-wr-48C" secondAttribute="top" constant="30" id="GQI-3Y-uzQ"/>
+                <constraint firstAttribute="trailing" secondItem="0wW-nw-VCX" secondAttribute="trailing" constant="30" id="jrd-Ui-Mqm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="aGH-bF-efs"/>
+            <size key="customSize" width="331" height="268"/>
+            <connections>
+                <outlet property="contentContainer" destination="0wW-nw-VCX" id="AjN-uM-YZn"/>
+                <outlet property="footerLabel" destination="dJe-AR-fSb" id="QcT-8V-rFK"/>
+                <outlet property="stepper" destination="zb8-DA-ucM" id="iIE-aZ-Rm9"/>
+                <outlet property="subtitleLabel" destination="3mD-yw-PuJ" id="YLW-n5-Az6"/>
+                <outlet property="titleLabel" destination="PtG-3O-nNT" id="aqY-Go-lHq"/>
+            </connections>
+            <point key="canvasLocation" x="386.5" y="290"/>
+        </collectionViewCell>
+    </objects>
+</document>

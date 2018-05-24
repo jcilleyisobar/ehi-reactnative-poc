@@ -1,0 +1,2314 @@
+{
+    "errors": [],
+    "res_session_id": "Oo3UMTjwxk0-j5hXrZ7X5w5MnRapa0fP",
+    "pickup_location": {
+        "brand": "ENTERPRISE",
+        "we_will_pick_you_up": true,
+        "id": "1018740",
+        "location_type": "airport",
+        "business_types": [
+            "INR"
+        ],
+        "name": "Richmond Intl Arpt",
+        "description": "Enterprise Leasing Co Of Norfolk/richmond, Llc",
+        "airport_code": "RIC",
+        "gps": {
+            "latitude": 37.507546,
+            "longitude": -77.333551
+        },
+        "drive_distance": {
+            "unit": "MI",
+            "distance": 0
+        },
+        "hours": [
+            {
+                "type": "STANDARD",
+                "days": [
+                    {
+                        "day": "MON",
+                        "date": "2015-04-06",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "TUE",
+                        "date": "2015-04-07",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "WED",
+                        "date": "2015-04-08",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "THU",
+                        "date": "2015-04-09",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "FRI",
+                        "date": "2015-04-10",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "SAT",
+                        "date": "2015-04-11",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "800",
+                                "close_time": "2030"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "SUN",
+                        "date": "2015-04-12",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "800",
+                                "close_time": "2330"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "STANDARD",
+                "days": [
+                    {
+                        "day": "MON",
+                        "date": "2015-04-13",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "TUE",
+                        "date": "2015-04-14",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "WED",
+                        "date": "2015-04-15",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "THU",
+                        "date": "2015-04-16",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "FRI",
+                        "date": "2015-04-17",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "SAT",
+                        "date": "2015-04-18",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "800",
+                                "close_time": "2030"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "SUN",
+                        "date": "2015-04-19",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "800",
+                                "close_time": "2330"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "STANDARD",
+                "days": [
+                    {
+                        "day": "MON",
+                        "date": "2015-04-20",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "TUE",
+                        "date": "2015-04-21",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "WED",
+                        "date": "2015-04-22",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "THU",
+                        "date": "2015-04-23",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "FRI",
+                        "date": "2015-04-24",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "SAT",
+                        "date": "2015-04-25",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "800",
+                                "close_time": "2030"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "SUN",
+                        "date": "2015-04-26",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "800",
+                                "close_time": "2330"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "DROP",
+                "days": [
+                    {
+                        "day": "MON",
+                        "date": "2015-04-06",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "TUE",
+                        "date": "2015-04-07",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "WED",
+                        "date": "2015-04-08",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "THU",
+                        "date": "2015-04-09",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "FRI",
+                        "date": "2015-04-10",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "SAT",
+                        "date": "2015-04-11",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "SUN",
+                        "date": "2015-04-12",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "DROP",
+                "days": [
+                    {
+                        "day": "MON",
+                        "date": "2015-04-13",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "TUE",
+                        "date": "2015-04-14",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "WED",
+                        "date": "2015-04-15",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "THU",
+                        "date": "2015-04-16",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "FRI",
+                        "date": "2015-04-17",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "SAT",
+                        "date": "2015-04-18",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "SUN",
+                        "date": "2015-04-19",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "DROP",
+                "days": [
+                    {
+                        "day": "MON",
+                        "date": "2015-04-20",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "TUE",
+                        "date": "2015-04-21",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "WED",
+                        "date": "2015-04-22",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "THU",
+                        "date": "2015-04-23",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "FRI",
+                        "date": "2015-04-24",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "SAT",
+                        "date": "2015-04-25",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "SUN",
+                        "date": "2015-04-26",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "time_zone_id": "America/New_York",
+        "offered_car_classes": [
+            {
+                "code": "ECAR",
+                "name": "Economy",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [
+                    {
+                        "code": "GRE",
+                        "name": "Green"
+                    },
+                    {
+                        "code": "EXO",
+                        "name": "Exotic"
+                    },
+                    {
+                        "code": "HYB",
+                        "name": "Hybrid"
+                    }
+                ],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "CCAR",
+                "name": "Compact",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [
+                    {
+                        "code": "GRE",
+                        "name": "Green"
+                    },
+                    {
+                        "code": "EXO",
+                        "name": "Exotic"
+                    }
+                ],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "ICAR",
+                "name": "Intermediate",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [
+                    {
+                        "code": "MOT",
+                        "name": "Motorcycle"
+                    }
+                ],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "SCAR",
+                "name": "Standard",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "FCAR",
+                "name": "Full Size",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [
+                    {
+                        "code": "HYB",
+                        "name": "Hybrid"
+                    }
+                ],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "PCAR",
+                "name": "Premium",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "LCAR",
+                "name": "Luxury",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "IFAR",
+                "name": "Intermediate SUV",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "SFAR",
+                "name": "Standard SUV",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "PGAR",
+                "name": "Crossover premium",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "MVAR",
+                "name": "Minivan",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "FFAR",
+                "name": "Large SUV",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "PFAR",
+                "name": "SUV premium",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "SVAR",
+                "name": "Minivan",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "FVAR",
+                "name": "15 passenger Van",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": true,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "SPAR",
+                "name": "Pick-Up Truck",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "PPAR",
+                "name": "Large Pick-up",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "SSAR",
+                "name": "Sporty",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": true,
+                "images": []
+            },
+            {
+                "code": "STAR",
+                "name": "Convertible",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "SCAH",
+                "name": "Standard Hybrid",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "LFAR",
+                "name": "Luxury SUV",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            }
+        ],
+        "filter_tags": [
+            "PFAR",
+            "SSAR",
+            "CCAR",
+            "STAR",
+            "ICAR",
+            "PCAR",
+            "SCAH",
+            "SFAR",
+            "SPAR",
+            "PPAR",
+            "MVAR",
+            "LFAR",
+            "SVAR",
+            "FCAR",
+            "LCAR",
+            "IFAR",
+            "FFAR",
+            "ECAR",
+            "PGAR",
+            "FVAR",
+            "SCAR",
+            "AIRPORT",
+            "OPEN NOW"
+        ],
+        "booking_urls": [
+            {
+                "type": "Enterprise",
+                "url": "http://www.enterprise.com/ "
+            }
+        ],
+        "exotics_location": false,
+        "car_sales_location": false,
+        "show_truck_lob_url": false,
+        "after_hours_pickup": false,
+        "after_hours_return": true
+    },
+    "return_location": {
+        "brand": "ENTERPRISE",
+        "we_will_pick_you_up": true,
+        "id": "1018740",
+        "location_type": "airport",
+        "business_types": [
+            "INR"
+        ],
+        "name": "Richmond Intl Arpt",
+        "description": "Enterprise Leasing Co Of Norfolk/richmond, Llc",
+        "airport_code": "RIC",
+        "gps": {
+            "latitude": 37.507546,
+            "longitude": -77.333551
+        },
+        "drive_distance": {
+            "unit": "MI",
+            "distance": 0
+        },
+        "hours": [
+            {
+                "type": "STANDARD",
+                "days": [
+                    {
+                        "day": "MON",
+                        "date": "2015-04-06",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "TUE",
+                        "date": "2015-04-07",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "WED",
+                        "date": "2015-04-08",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "THU",
+                        "date": "2015-04-09",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "FRI",
+                        "date": "2015-04-10",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "SAT",
+                        "date": "2015-04-11",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "800",
+                                "close_time": "2030"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "SUN",
+                        "date": "2015-04-12",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "800",
+                                "close_time": "2330"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "STANDARD",
+                "days": [
+                    {
+                        "day": "MON",
+                        "date": "2015-04-13",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "TUE",
+                        "date": "2015-04-14",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "WED",
+                        "date": "2015-04-15",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "THU",
+                        "date": "2015-04-16",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "FRI",
+                        "date": "2015-04-17",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "SAT",
+                        "date": "2015-04-18",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "800",
+                                "close_time": "2030"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "SUN",
+                        "date": "2015-04-19",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "800",
+                                "close_time": "2330"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "STANDARD",
+                "days": [
+                    {
+                        "day": "MON",
+                        "date": "2015-04-20",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "TUE",
+                        "date": "2015-04-21",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "WED",
+                        "date": "2015-04-22",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "THU",
+                        "date": "2015-04-23",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "FRI",
+                        "date": "2015-04-24",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "700",
+                                "close_time": "2330"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "SAT",
+                        "date": "2015-04-25",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "800",
+                                "close_time": "2030"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "SUN",
+                        "date": "2015-04-26",
+                        "open_all_day": false,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "800",
+                                "close_time": "2330"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "DROP",
+                "days": [
+                    {
+                        "day": "MON",
+                        "date": "2015-04-06",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "TUE",
+                        "date": "2015-04-07",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "WED",
+                        "date": "2015-04-08",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "THU",
+                        "date": "2015-04-09",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "FRI",
+                        "date": "2015-04-10",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "SAT",
+                        "date": "2015-04-11",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "SUN",
+                        "date": "2015-04-12",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "DROP",
+                "days": [
+                    {
+                        "day": "MON",
+                        "date": "2015-04-13",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "TUE",
+                        "date": "2015-04-14",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "WED",
+                        "date": "2015-04-15",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "THU",
+                        "date": "2015-04-16",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "FRI",
+                        "date": "2015-04-17",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "SAT",
+                        "date": "2015-04-18",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "SUN",
+                        "date": "2015-04-19",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "type": "DROP",
+                "days": [
+                    {
+                        "day": "MON",
+                        "date": "2015-04-20",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "TUE",
+                        "date": "2015-04-21",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "WED",
+                        "date": "2015-04-22",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "THU",
+                        "date": "2015-04-23",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "FRI",
+                        "date": "2015-04-24",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "SAT",
+                        "date": "2015-04-25",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    },
+                    {
+                        "day": "SUN",
+                        "date": "2015-04-26",
+                        "open_all_day": true,
+                        "closed_all_day": false,
+                        "open_close_times": [
+                            {
+                                "open_time": "0",
+                                "close_time": "2359"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ],
+        "time_zone_id": "America/New_York",
+        "offered_car_classes": [
+            {
+                "code": "ECAR",
+                "name": "Economy",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [
+                    {
+                        "code": "GRE",
+                        "name": "Green"
+                    },
+                    {
+                        "code": "EXO",
+                        "name": "Exotic"
+                    },
+                    {
+                        "code": "HYB",
+                        "name": "Hybrid"
+                    }
+                ],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "CCAR",
+                "name": "Compact",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [
+                    {
+                        "code": "GRE",
+                        "name": "Green"
+                    },
+                    {
+                        "code": "EXO",
+                        "name": "Exotic"
+                    }
+                ],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "ICAR",
+                "name": "Intermediate",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [
+                    {
+                        "code": "MOT",
+                        "name": "Motorcycle"
+                    }
+                ],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "SCAR",
+                "name": "Standard",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "FCAR",
+                "name": "Full Size",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [
+                    {
+                        "code": "HYB",
+                        "name": "Hybrid"
+                    }
+                ],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "PCAR",
+                "name": "Premium",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "LCAR",
+                "name": "Luxury",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "IFAR",
+                "name": "Intermediate SUV",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "SFAR",
+                "name": "Standard SUV",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "PGAR",
+                "name": "Crossover premium",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "MVAR",
+                "name": "Minivan",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "FFAR",
+                "name": "Large SUV",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "PFAR",
+                "name": "SUV premium",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "SVAR",
+                "name": "Minivan",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "FVAR",
+                "name": "15 passenger Van",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": true,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "SPAR",
+                "name": "Pick-Up Truck",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "PPAR",
+                "name": "Large Pick-up",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "SSAR",
+                "name": "Sporty",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": true,
+                "images": []
+            },
+            {
+                "code": "STAR",
+                "name": "Convertible",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "SCAH",
+                "name": "Standard Hybrid",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            },
+            {
+                "code": "LFAR",
+                "name": "Luxury SUV",
+                "charges": [],
+                "categories": [],
+                "previously_selected": false,
+                "features": [],
+                "features_shorts": [],
+                "filters": [],
+                "terms_and_conditions_required": false,
+                "speciality_vehicle": false,
+                "images": []
+            }
+        ],
+        "filter_tags": [
+            "PFAR",
+            "SSAR",
+            "CCAR",
+            "STAR",
+            "ICAR",
+            "PCAR",
+            "SCAH",
+            "SFAR",
+            "SPAR",
+            "PPAR",
+            "MVAR",
+            "LFAR",
+            "SVAR",
+            "FCAR",
+            "LCAR",
+            "IFAR",
+            "FFAR",
+            "ECAR",
+            "PGAR",
+            "FVAR",
+            "SCAR",
+            "AIRPORT",
+            "OPEN NOW"
+        ],
+        "booking_urls": [
+            {
+                "type": "Enterprise",
+                "url": "http://www.enterprise.com/ "
+            }
+        ],
+        "exotics_location": false,
+        "car_sales_location": false,
+        "show_truck_lob_url": false,
+        "after_hours_pickup": false,
+        "after_hours_return": true
+    },
+    "pickup_time": "2015-04-28T10:25",
+    "return_time": "2015-04-29T12:25",
+    "contract_number": "",
+    "renter_age": 25,
+    "car_classes": [],
+    "excluded_extras": [],
+    "additional_information": [],
+    "alternative_pickup_locations": [],
+    "alternative_return_locations": [],
+    "car_class_details": {
+        "code": "ECAR",
+        "name": "Economy",
+        "make_model_or_similar_text": "Chevy Spark",
+        "charges": [],
+        "call_for_availability_phone_number": "8042225803",
+        "categories": [
+            {
+                "code": "CARS",
+                "name": "CARS"
+            }
+        ],
+        "previously_selected": false,
+        "features": [
+            "Power Steering/Brakes",
+            "Automatic Transmission",
+            "ABS Brakes",
+            "Air Conditioning",
+            "AM/FM Stereo CD/MP3"
+        ],
+        "features_shorts": [
+            "Automatic Transmission",
+            "Air Conditioning"
+        ],
+        "filters": [
+            {
+                "code": "GRE",
+                "name": "Green"
+            },
+            {
+                "code": "EXO",
+                "name": "Exotic"
+            },
+            {
+                "code": "HYB",
+                "name": "Hybrid"
+            }
+        ],
+        "terms_and_conditions_required": false,
+        "speciality_vehicle": false,
+        "images": [
+            {
+                "name": "SideProfile",
+                "path": "https://enterprise-cros-uat1.enterprise.com/content/enterprise_cros/data/vehicle/bookingCountries/US/CARS/ECAR.doi.{width}.{quality}.imageSmallSideProfileNodePath.png/1427830661209",
+                "supported_widths": [
+                    "60",
+                    "120",
+                    "125",
+                    "132",
+                    "140",
+                    "176",
+                    "180",
+                    "200",
+                    "240",
+                    "264",
+                    "295",
+                    "320",
+                    "352",
+                    "480",
+                    "640",
+                    "768"
+                ],
+                "supported_qualities": [
+                    "low",
+                    "medium",
+                    "high"
+                ]
+            },
+            {
+                "name": "ThreeQuarter",
+                "path": "https://enterprise-cros-uat1.enterprise.com/content/enterprise_cros/data/vehicle/bookingCountries/US/CARS/ECAR.doi.{width}.{quality}.imageSmallThreeQuarterNodePath.png/1427830661209",
+                "supported_widths": [
+                    "60",
+                    "120",
+                    "125",
+                    "132",
+                    "140",
+                    "176",
+                    "180",
+                    "200",
+                    "240",
+                    "264",
+                    "295",
+                    "320",
+                    "352",
+                    "480",
+                    "640",
+                    "768"
+                ],
+                "supported_qualities": [
+                    "low",
+                    "medium",
+                    "high"
+                ]
+            }
+        ],
+        "description": "<p>The Chevy Spark&nbsp;is a globe-trotting city car that packs a big punch. Designed to fit into your life and city, the Spark is a perfect driving solution.</p>\n",
+        "people_capacity": 3,
+        "luggage_capacity": 1,
+        "extras": {
+            "equipment": [
+                {
+                    "code": "GPS",
+                    "name": "GPS",
+                    "description": "Need help getting around? Try one of our GPS navigation devices that are now available for rent.*",
+                    "detailed_description": "Need help getting around? Try one of our GPS navigation devices that are now available for rent.*",
+                    "status": "OPTIONAL",
+                    "rate_amount_view": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 69.65
+                    },
+                    "rate_amount_payment": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 69.65
+                    },
+                    "rate_type": "WEEKLY",
+                    "max_quantity": 1
+                },
+                {
+                    "code": "CST",
+                    "name": "Child Safety Seat",
+                    "description": "Enterprise features child restraint systems that conform to government standards. The convertible seat is designed for infants and toddlers.*",
+                    "detailed_description": "<p>Enterprise features child restraint systems that conform to government standards. The convertible seat is designed for infants and toddlers.*<br>",
+                    "status": "OPTIONAL",
+                    "rate_amount_view": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 8.95
+                    },
+                    "rate_amount_payment": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 8.95
+                    },
+                    "rate_type": "DAILY",
+                    "max_quantity": 2
+                },
+                {
+                    "code": "COF",
+                    "name": "Greenhouse Gas Emissions Offset",
+                    "description": "Enterprise Rent-A-Car is pleased to offer you the opportunity to benefit the environment by offsetting greenhouse gas emissions generated by a rental vehicle. For just $1.25 you can offset emissions....",
+                    "detailed_description": "Enterprise Rent-A-Car is pleased to offer you the opportunity to benefit the environment by offsetting greenhouse gas emissions generated by a rental vehicle. For just $1.25 you can offset emissions produced by the average rental. The money will go to TerraPass to fund certified offset projects that work to remove carbon from the atmosphere.  What's more, we will match these customer contributions dollar-for-dollar up to $1 million dollars.",
+                    "status": "OPTIONAL",
+                    "rate_amount_view": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 1.25
+                    },
+                    "rate_amount_payment": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 1.25
+                    },
+                    "rate_type": "RENTAL",
+                    "max_quantity": 1
+                },
+                {
+                    "code": "TPD",
+                    "name": "Toll Pass Device",
+                    "description": "<p></p>",
+                    "detailed_description": "<p><b>Toll Pass Device</b></p>\n<p>For a per day price (plus toll fees), you can breeze through toll facilities. No more coin tosses. No more idling in line. You don't even have to open your window. Just drive thru and take the 'fast' lane.</p>\n<p>Tolls are billed separately after vehicle return and may be billed by a 3rd party vendor.</p>\n",
+                    "status": "OPTIONAL",
+                    "rate_amount_view": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 19.75
+                    },
+                    "rate_amount_payment": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 19.75
+                    },
+                    "rate_type": "WEEKLY",
+                    "max_quantity": 1
+                }
+            ],
+            "insurance": [
+                {
+                    "code": "CDW1",
+                    "name": "Collision Damage Waiver",
+                    "description": "Collision Damage Waiver limits the renters financial responsibility for loss to the rental vehicle.",
+                    "detailed_description": "Damage waiver (CDW) is offered at the time of rental for an additional daily charge. If the renter accepts CDW, enterprise waives or reduces the renter's responsibility for loss of, or damage to, the rental vehicle (including but not limited to towing, storage, loss of use, admininistrative fees and/or diminishment of value) subject to the terms and conditions of the rental agreement and applicable laws. CDW is not insurance. The purchase of CDW is optional and not required to rent a car. The protection provided by CDW may duplicate the renter's existing coverage. Enterprise is not qualified to evaluate the adequacy of the renter's existing coverage; therefore should examine his or her credit card protections, automobile insurance policies or other sources of coverage that may duplicate the protection provided by CDW.",
+                    "status": "INCLUDED",
+                    "rate_amount_view": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 21.99
+                    },
+                    "rate_amount_payment": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 21.99
+                    },
+                    "rate_type": "DAILY"
+                },
+                {
+                    "code": "PAI_PEC",
+                    "name": "Personal Accident Insurance / Personal Effects Coverage",
+                    "description": "Personal accident insurance / personal effects coverage (PAI/PEC) is offered at the time of rental for an additional daily charge.  If accepted the PAI contained in the policy provides renter…",
+                    "detailed_description": "Personal accident insurance/personal effects coverage (PAI/PEC) is offered at the time of rental for an additional daily charge. If accepted, the PAI contained in the policy provides renter and renter's passengers with accidental death, accident medical expenses and ambulance expense benefits. The PEC contained in the policy insures the personal effects of the renter, additional drivers, or any member of the renter's immediate family who permanently resides in the renter's household and who is traveling with the renter against risks of loss or damage. Benefits are payable in addition to any other insurance coverage the renter or passengers may have. This is a summary only. PAI/PEC is subject to the provisions, limitations and exclusions of the PAI/PEC policy underwritten by empire fire and marine insurance company or empire indemnity insurance company depending on the rental location. The purchase of PAI/PEC is optional and not required to rent a car. The coverage provided by PAI/PEC may duplicate the renter's existing coverage. Enterprise is not qualified to evaluate the adequacy of the renter's existing coverage; therefore the renter should examine his or her personal insurance policies or other sources of coverage that may duplicate the coverage provided by PAI/PEC.",
+                    "status": "MANDATORY",
+                    "rate_amount_view": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 5
+                    },
+                    "rate_amount_payment": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 5
+                    },
+                    "rate_type": "DAILY"
+                },
+                {
+                    "code": "RAP",
+                    "name": "Roadside Assistance Program",
+                    "description": "<p>Enterprise offers roadside assistance protection at select locations.&nbsp;<br>\n</p>\n",
+                    "detailed_description": "<p>Enterprise offers roadside assistance protection at select locations.&nbsp;Roadside Assistance (RAP) allows Enterprise customers to waive financial responsibility for chargeable roadside incidents such as lost keys, lockouts, and fuel outages. RAP can be added for 4.99 US or Canadian dollars per day. Road side assistance protection offers these services: flat tire, jump start, lockout service, fuel delivery, and key replacement. Note: in NY, CA, NV, and KS the cost of the key will not be covered, only the service to deliver the key or perform the lockout service. Roadside assistance protection is void and of no effect if, at the time of the incident necessitating roadside assistance, you or any authorized driver were in violation of the rental agreement, including, without limitation, the prohibited uses and violations set forth therein. In such cases, roadside assistance will be available, but standard charges may apply.<br>\n</p>\n",
+                    "status": "OPTIONAL",
+                    "rate_amount_view": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 4.99
+                    },
+                    "rate_amount_payment": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 4.99
+                    },
+                    "rate_type": "DAILY"
+                },
+                {
+                    "code": "SLP1",
+                    "name": "Supplemental Liability Protection",
+                    "description": "Supplemental liability protection (SLP) is offered at the time of rental for an additional daily charge. If accepted, SLP provides the renter and authorized drivers with up to $1,000,000…",
+                    "detailed_description": "Supplemental liability protection (SLP) is offered at the time of rental for an additional daily charge. If accepted, SLP provides the renter and authorized drivers with up to $1,000,000 combined single limit for third party liability claims. If the renter accepts SLP, Enterprise provides third party liability protection up to the applicable minimum financial responsibility limit and empire fire and marine insurance company provides excess third party liability insurance coverage from the applicable minimum financial responsibility limit to $1,000,000.  This is a summary only. SLP is subject to the terms, conditions, provisions, limitations and exclusions in the supplemental rental liability insurance excess policy underwritten by empire fire and marine insurance company or empire indemnity insurance company depending on location. The purchase of SLP is optional and not required to rent a car. The coverage provided by SLP may duplicate the renter's existing coverage.  Enterprise is not qualified to evaluate the adequacy of the renter's existing coverage; therefore the renter should examine his or her personal insurance policies or other sources of coverage that may duplicate the coverage provided by SLP.",
+                    "status": "OPTIONAL",
+                    "rate_amount_view": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 13.8
+                    },
+                    "rate_amount_payment": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 13.8
+                    },
+                    "rate_type": "DAILY"
+                }
+            ],
+            "fuel": [
+                {
+                    "code": "F",
+                    "status": "OPTIONAL",
+                    "rate_amount_view": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 3.32
+                    },
+                    "rate_amount_payment": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 3.32
+                    },
+                    "rate_type": "GALLON"
+                }
+            ]
+        },
+        "price_summary": {
+            "estimated_total_view": {
+                "code": "USD",
+                "symbol": "$",
+                "amount": 96.69
+            },
+            "estimated_total_payment": {
+                "code": "USD",
+                "symbol": "$",
+                "amount": 96.69
+            },
+            "payment_line_items": [
+                {
+                    "category": "VEHICLE_RATE",
+                    "total_amount_view": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 47
+                    },
+                    "total_amount_payment": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 47
+                    },
+                    "rate_type": "DAILY",
+                    "rate_amount_view": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 47
+                    },
+                    "rate_amount_payment": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 47
+                    },
+                    "rate_quantity": 1,
+                    "description": "VEHICLE_RATE"
+                },
+                {
+                    "category": "VEHICLE_RATE",
+                    "total_amount_view": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 31.34
+                    },
+                    "total_amount_payment": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 31.34
+                    },
+                    "rate_type": "HOURLY",
+                    "rate_amount_view": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 15.67
+                    },
+                    "rate_amount_payment": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 15.67
+                    },
+                    "rate_quantity": 2,
+                    "description": "VEHICLE_RATE"
+                },
+                {
+                    "category": "FEE",
+                    "total_amount_view": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 1.1
+                    },
+                    "total_amount_payment": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 1.1
+                    },
+                    "rate_type": "DAILY",
+                    "rate_amount_view": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 0.55
+                    },
+                    "rate_amount_payment": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 0.55
+                    },
+                    "rate_quantity": 2,
+                    "description": "FEE"
+                },
+                {
+                    "category": "FEE",
+                    "total_amount_view": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 8.77
+                    },
+                    "total_amount_payment": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 8.77
+                    },
+                    "rate_type": "PERCENT",
+                    "rate_amount_view": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 0
+                    },
+                    "rate_amount_payment": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 0
+                    },
+                    "rate_quantity": 0,
+                    "description": "FEE"
+                },
+                {
+                    "category": "FEE",
+                    "total_amount_view": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 0.58
+                    },
+                    "total_amount_payment": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 0.58
+                    },
+                    "rate_type": "DAILY",
+                    "rate_amount_view": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 0.29
+                    },
+                    "rate_amount_payment": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 0.29
+                    },
+                    "rate_quantity": 2,
+                    "description": "FEE"
+                },
+                {
+                    "category": "FEE",
+                    "total_amount_view": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 1.58
+                    },
+                    "total_amount_payment": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 1.58
+                    },
+                    "rate_type": "PERCENT",
+                    "rate_amount_view": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 0
+                    },
+                    "rate_amount_payment": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 0
+                    },
+                    "rate_quantity": 0,
+                    "description": "FEE"
+                },
+                {
+                    "category": "FEE",
+                    "total_amount_view": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 3.16
+                    },
+                    "total_amount_payment": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 3.16
+                    },
+                    "rate_type": "PERCENT",
+                    "rate_amount_view": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 0
+                    },
+                    "rate_amount_payment": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 0
+                    },
+                    "rate_quantity": 0,
+                    "description": "FEE"
+                },
+                {
+                    "category": "FEE",
+                    "total_amount_view": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 3.16
+                    },
+                    "total_amount_payment": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 3.16
+                    },
+                    "rate_type": "PERCENT",
+                    "rate_amount_view": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 0
+                    },
+                    "rate_amount_payment": {
+                        "code": "USD",
+                        "symbol": "$",
+                        "amount": 0
+                    },
+                    "rate_quantity": 0,
+                    "description": "FEE"
+                }
+            ]
+        },
+        "rental_duration": 1
+    },
+    "upgrade_vehicle_possible": false,
+    "upgrade_car_class_details": [],
+    "extras_no_longer_available_after_upgrades": [],
+    "delivery_collection_allowed": false,
+    "business_leisure_info_allowed": false,
+    "policies": [],
+    "after_hours_return_selected": false
+}

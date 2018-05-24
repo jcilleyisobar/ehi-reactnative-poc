@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Policies View Controller-->
+        <scene sceneID="kIa-ol-sid">
+            <objects>
+                <viewController storyboardIdentifier="EHIPoliciesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="3xw-iS-BVK" customClass="EHIPoliciesViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L7F-Ka-P8Y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MtZ-2K-QDU" customClass="EHIListCollectionView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="KRd-dn-rn4">
+                                    <size key="itemSize" width="320" height="104"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="delegate" destination="3xw-iS-BVK" id="SG9-jx-cG3"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MtZ-2K-QDU" firstAttribute="leading" secondItem="aKJ-SC-VuF" secondAttribute="leading" id="TNF-y2-PLm"/>
+                            <constraint firstItem="aKJ-SC-VuF" firstAttribute="trailing" secondItem="MtZ-2K-QDU" secondAttribute="trailing" id="Xbj-d9-7ss"/>
+                            <constraint firstItem="MtZ-2K-QDU" firstAttribute="top" secondItem="aKJ-SC-VuF" secondAttribute="top" id="k6j-7j-NjX"/>
+                            <constraint firstAttribute="bottom" secondItem="MtZ-2K-QDU" secondAttribute="bottom" id="n2Z-4w-Oed"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aKJ-SC-VuF"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="MtZ-2K-QDU" id="pIN-tX-3Kx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="smq-Es-tem" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188" y="69"/>
+        </scene>
+        <!--Policy Detail View Controller-->
+        <scene sceneID="T2u-s1-Mfk">
+            <objects>
+                <viewController storyboardIdentifier="EHIPolicyDetailViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ve8-Gv-CyX" customClass="EHIPolicyDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8lu-dE-xvt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ROI-rp-IJC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fN5-cP-0sx" customClass="EHILabel">
+                                <rect key="frame" x="18" y="40" width="339" height="29"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bw6-bc-hwh">
+                                <rect key="frame" x="14" y="74" width="345" height="593"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PCt-pc-fx2" firstAttribute="trailing" secondItem="fN5-cP-0sx" secondAttribute="trailing" constant="18" id="5d7-qH-eeG"/>
+                            <constraint firstAttribute="bottom" secondItem="Bw6-bc-hwh" secondAttribute="bottom" id="7SH-eO-6Ji"/>
+                            <constraint firstItem="Bw6-bc-hwh" firstAttribute="top" secondItem="fN5-cP-0sx" secondAttribute="bottom" constant="5" id="9G7-pm-vMs"/>
+                            <constraint firstItem="fN5-cP-0sx" firstAttribute="leading" secondItem="PCt-pc-fx2" secondAttribute="leading" constant="18" id="YMQ-7H-Saw"/>
+                            <constraint firstItem="PCt-pc-fx2" firstAttribute="trailing" secondItem="ROI-rp-IJC" secondAttribute="trailing" id="aSP-Do-ffg"/>
+                            <constraint firstAttribute="bottom" secondItem="ROI-rp-IJC" secondAttribute="bottom" id="bNg-RZ-SkJ"/>
+                            <constraint firstItem="Bw6-bc-hwh" firstAttribute="leading" secondItem="PCt-pc-fx2" secondAttribute="leading" constant="14" id="cJx-ut-8hd"/>
+                            <constraint firstItem="fN5-cP-0sx" firstAttribute="top" secondItem="PCt-pc-fx2" secondAttribute="top" constant="20" id="gGr-Mt-6HR"/>
+                            <constraint firstItem="ROI-rp-IJC" firstAttribute="leading" secondItem="PCt-pc-fx2" secondAttribute="leading" id="kYZ-E7-nNz"/>
+                            <constraint firstItem="PCt-pc-fx2" firstAttribute="top" secondItem="ROI-rp-IJC" secondAttribute="top" id="lAY-xz-YXa"/>
+                            <constraint firstItem="PCt-pc-fx2" firstAttribute="trailing" secondItem="Bw6-bc-hwh" secondAttribute="trailing" constant="16" id="vm0-Ik-7cg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PCt-pc-fx2"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="detailsTextView" destination="Bw6-bc-hwh" id="C73-uI-gzy"/>
+                        <outlet property="nameLabel" destination="fN5-cP-0sx" id="7wS-Wa-UFK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mN9-3R-lwr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188" y="745.27736131934034"/>
+        </scene>
+    </scenes>
+</document>

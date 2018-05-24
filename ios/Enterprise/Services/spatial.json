@@ -1,0 +1,1773 @@
+{
+  "radiusUsedInKilometers" : "12",
+  "brands" : [ "ENTERPRISE" ],
+  "locations" : [ {
+    "location-hours" : [ {
+      "date" : "2015-03-03",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-04",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-05",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-06",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-07",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0900",
+        "close" : "1200"
+      } ]
+    }, {
+      "date" : "2015-03-09",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    } ],
+    "locationType" : "CITY",
+    "peopleSoftId" : "1002154",
+    "addressLines" : [ "680 WEST EL CAMINO REAL" ],
+    "city" : "SUNNYVALE",
+    "state" : "CA",
+    "postalCode" : "94087",
+    "countryCode" : "USA",
+    "cityId" : "SUNNYVALE-CA-USA",
+    "airportCode" : "",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "4087300900",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "SUNNYVALE, 680 W EL CAMINO",
+    "stationId" : "E12302",
+    "latitude" : 37.369806,
+    "longitude" : -122.040228,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911500099584,
+    "calculatedDistance" : 4.517622134765197
+  }, {
+    "location-hours" : [ {
+      "date" : "2015-03-03",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-04",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-05",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-06",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-07",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0900",
+        "close" : "1400"
+      } ]
+    }, {
+      "date" : "2015-03-09",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    } ],
+    "locationType" : "CITY",
+    "peopleSoftId" : "1002166",
+    "addressLines" : [ "4785 STEVENS CREEK BLVD" ],
+    "city" : "SANTA CLARA",
+    "state" : "CA",
+    "postalCode" : "95051",
+    "countryCode" : "USA",
+    "cityId" : "SANTA_CLARA-CA-USA",
+    "airportCode" : "",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "4082462100",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "SANTA CLARA-STEVENS CREEK WEST",
+    "stationId" : "E12314",
+    "latitude" : 37.323169,
+    "longitude" : -121.986485,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911503245313,
+    "calculatedDistance" : 3.9219177514537273
+  }, {
+    "location-hours" : [ {
+      "date" : "2015-03-03",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0600",
+        "close" : "2359"
+      } ]
+    }, {
+      "date" : "2015-03-04",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0600",
+        "close" : "2359"
+      } ]
+    }, {
+      "date" : "2015-03-05",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0600",
+        "close" : "2359"
+      } ]
+    }, {
+      "date" : "2015-03-06",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0600",
+        "close" : "2359"
+      } ]
+    }, {
+      "date" : "2015-03-07",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0600",
+        "close" : "2359"
+      } ]
+    }, {
+      "date" : "2015-03-08",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0600",
+        "close" : "2359"
+      } ]
+    }, {
+      "date" : "2015-03-09",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0600",
+        "close" : "2359"
+      } ]
+    } ],
+    "locationType" : "AIRPORT",
+    "peopleSoftId" : "1008339",
+    "addressLines" : [ "1659 AIRPORT BLVD STE 5" ],
+    "city" : "SAN JOSE",
+    "state" : "CA",
+    "postalCode" : "95110",
+    "countryCode" : "USA",
+    "cityId" : "SAN_JOSE-CA-USA",
+    "airportCode" : "SJC",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "4084521100",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "SJC AP CONSOLIDATED FAC",
+    "stationId" : "E1231D",
+    "latitude" : 37.363675,
+    "longitude" : -121.921623,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911506391040,
+    "calculatedDistance" : 10.286047852264009
+  }, {
+    "location-hours" : [ {
+      "date" : "2015-03-03",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-04",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-05",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-06",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-07",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0900",
+        "close" : "1200"
+      } ]
+    }, {
+      "date" : "2015-03-08",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0900",
+        "close" : "1200"
+      } ]
+    }, {
+      "date" : "2015-03-09",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    } ],
+    "locationType" : "CITY",
+    "peopleSoftId" : "1002191",
+    "addressLines" : [ "1415A W. EL CAMINO REAL" ],
+    "city" : "MOUNTAIN VIEW",
+    "state" : "CA",
+    "postalCode" : "94040",
+    "countryCode" : "USA",
+    "cityId" : "MOUNTAIN_VIEW-CA-USA",
+    "airportCode" : "",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "6509676800",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "MOUNTAIN VIEW, EL CAMINO",
+    "stationId" : "E12339",
+    "latitude" : 37.389208,
+    "longitude" : -122.091252,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911514779649,
+    "calculatedDistance" : 8.523582789991444
+  }, {
+    "location-hours" : [ {
+      "date" : "2015-03-03",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-04",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-05",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-06",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-07",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0900",
+        "close" : "1200"
+      } ]
+    }, {
+      "date" : "2015-03-09",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    } ],
+    "locationType" : "CITY",
+    "peopleSoftId" : "1002203",
+    "addressLines" : [ "1485 KERLEY DR" ],
+    "city" : "SAN JOSE",
+    "state" : "CA",
+    "postalCode" : "95112",
+    "countryCode" : "USA",
+    "cityId" : "SAN_JOSE-CA-USA",
+    "airportCode" : "",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "4084371001",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "SAN JOSE - KERLEY DRIVE",
+    "stationId" : "E12350",
+    "latitude" : 37.365158,
+    "longitude" : -121.910133,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911521071104,
+    "calculatedDistance" : 11.294045591272537
+  }, {
+    "location-hours" : [ {
+      "date" : "2015-03-03",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-04",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-05",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-06",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-07",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0900",
+        "close" : "1200"
+      } ]
+    }, {
+      "date" : "2015-03-09",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    } ],
+    "locationType" : "CITY",
+    "peopleSoftId" : "1002211",
+    "addressLines" : [ "814 SAN ANTONIO RD" ],
+    "city" : "PALO ALTO",
+    "state" : "CA",
+    "postalCode" : "94303",
+    "countryCode" : "USA",
+    "cityId" : "PALO_ALTO-CA-USA",
+    "airportCode" : "",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "6508434990",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "PALO ALTO, SAN ANTONIO RD",
+    "stationId" : "E12358",
+    "latitude" : 37.420672,
+    "longitude" : -122.101623,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911523168257,
+    "calculatedDistance" : 11.90408817615822
+  }, {
+    "location-hours" : [ {
+      "date" : "2015-03-03",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0800",
+        "close" : "1700"
+      } ]
+    }, {
+      "date" : "2015-03-04",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0800",
+        "close" : "1700"
+      } ]
+    }, {
+      "date" : "2015-03-05",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0800",
+        "close" : "1700"
+      } ]
+    }, {
+      "date" : "2015-03-06",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0800",
+        "close" : "1700"
+      } ]
+    }, {
+      "date" : "2015-03-07",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0900",
+        "close" : "1200"
+      } ]
+    }, {
+      "date" : "2015-03-09",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0800",
+        "close" : "1700"
+      } ]
+    } ],
+    "locationType" : "CITY",
+    "peopleSoftId" : "1008625",
+    "addressLines" : [ "4767 LAFAYETTE ST" ],
+    "city" : "SANTA CLARA",
+    "state" : "CA",
+    "postalCode" : "95054",
+    "countryCode" : "USA",
+    "cityId" : "SANTA_CLARA-CA-USA",
+    "airportCode" : "",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "4084920012",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "SANTA CLARA-LAFAYETTE",
+    "stationId" : "E1235D",
+    "latitude" : 37.400519,
+    "longitude" : -121.96228,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911525265409,
+    "calculatedDistance" : 9.86433227347264
+  }, {
+    "location-hours" : [ {
+      "date" : "2015-03-03",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0700",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-04",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0700",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-05",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0700",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-06",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0700",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-07",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0700",
+        "close" : "1200"
+      } ]
+    }, {
+      "date" : "2015-03-09",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0700",
+        "close" : "1800"
+      } ]
+    } ],
+    "locationType" : "CITY",
+    "peopleSoftId" : "1008731",
+    "addressLines" : [ "4590 STEVENS CREEK BLVD" ],
+    "city" : "SAN JOSE",
+    "state" : "CA",
+    "postalCode" : "95129",
+    "countryCode" : "USA",
+    "cityId" : "SAN_JOSE-CA-USA",
+    "airportCode" : "",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "4082472625",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "STEVENS CREEK HONDA",
+    "stationId" : "E1236D",
+    "latitude" : 37.322971,
+    "longitude" : -121.983326,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911529459712,
+    "calculatedDistance" : 4.200347527612613
+  }, {
+    "location-hours" : [ {
+      "date" : "2015-03-03",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-04",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-05",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-06",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-07",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0900",
+        "close" : "1200"
+      } ]
+    }, {
+      "date" : "2015-03-09",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    } ],
+    "locationType" : "CITY",
+    "peopleSoftId" : "1002227",
+    "addressLines" : [ "815 E EL CAMINO REAL" ],
+    "city" : "SUNNYVALE",
+    "state" : "CA",
+    "postalCode" : "94087",
+    "countryCode" : "USA",
+    "cityId" : "SUNNYVALE-CA-USA",
+    "airportCode" : "",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "4087333700",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "SUNNYVALE EAST, EL CAMINO",
+    "stationId" : "E12375",
+    "latitude" : 37.355478,
+    "longitude" : -122.017092,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911531556864,
+    "calculatedDistance" : 3.054202917075067
+  }, {
+    "location-hours" : [ {
+      "date" : "2015-03-03",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-04",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-05",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-06",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-07",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0900",
+        "close" : "1200"
+      } ]
+    }, {
+      "date" : "2015-03-09",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    } ],
+    "locationType" : "CITY",
+    "peopleSoftId" : "1002234",
+    "addressLines" : [ "2750 DE LA CRUZ BLVD" ],
+    "city" : "SANTA CLARA",
+    "state" : "CA",
+    "postalCode" : "95050",
+    "countryCode" : "USA",
+    "cityId" : "SANTA_CLARA-CA-USA",
+    "airportCode" : "",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "4084920501",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "SANTA CLARA EAST",
+    "stationId" : "E12382",
+    "latitude" : 37.369975,
+    "longitude" : -121.941764,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911534702593,
+    "calculatedDistance" : 8.977238967185903
+  }, {
+    "location-hours" : [ {
+      "date" : "2015-03-03",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-04",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-05",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-06",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-07",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0900",
+        "close" : "1200"
+      } ]
+    }, {
+      "date" : "2015-03-09",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    } ],
+    "locationType" : "CITY",
+    "peopleSoftId" : "1009127",
+    "addressLines" : [ "15011 LOS GATOS BLVD" ],
+    "city" : "LOS GATOS",
+    "state" : "CA",
+    "postalCode" : "95032",
+    "countryCode" : "USA",
+    "cityId" : "LOS_GATOS-CA-USA",
+    "airportCode" : "",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "4084029522",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "NORTH LOS GATOS",
+    "stationId" : "E1238D",
+    "latitude" : 37.250617,
+    "longitude" : -121.954488,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911536799746,
+    "calculatedDistance" : 11.069763977911803
+  }, {
+    "location-hours" : [ {
+      "date" : "2015-03-03",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-04",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-05",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-06",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-07",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0900",
+        "close" : "1200"
+      } ]
+    }, {
+      "date" : "2015-03-09",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    } ],
+    "locationType" : "CITY",
+    "peopleSoftId" : "1002088",
+    "addressLines" : [ "3581 STEVENS CREEK BLVD" ],
+    "city" : "SAN JOSE",
+    "state" : "CA",
+    "postalCode" : "95117",
+    "countryCode" : "USA",
+    "cityId" : "SAN_JOSE-CA-USA",
+    "airportCode" : "",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "4082466477",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "SAN JOSE - EAST STEVENS CREEK",
+    "stationId" : "E123D4",
+    "latitude" : 37.323317,
+    "longitude" : -121.962268,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911550431234,
+    "calculatedDistance" : 6.034883777711186
+  }, {
+    "location-hours" : [ {
+      "date" : "2015-03-03",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-04",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-05",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-06",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-07",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0900",
+        "close" : "1200"
+      } ]
+    }, {
+      "date" : "2015-03-08",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0900",
+        "close" : "1200"
+      } ]
+    }, {
+      "date" : "2015-03-09",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    } ],
+    "locationType" : "CITY",
+    "peopleSoftId" : "1002091",
+    "addressLines" : [ "282 S MONTGOMERY ST" ],
+    "city" : "SAN JOSE",
+    "state" : "CA",
+    "postalCode" : "95110",
+    "countryCode" : "USA",
+    "cityId" : "SAN_JOSE-CA-USA",
+    "airportCode" : "",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "4082864444",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "SAN JOSE - DOWNTOWN",
+    "stationId" : "E123D7",
+    "latitude" : 37.325226,
+    "longitude" : -121.900462,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911551479808,
+    "calculatedDistance" : 11.46607663269397
+  }, {
+    "location-hours" : [ {
+      "date" : "2015-03-03",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-04",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-05",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-06",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-07",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0900",
+        "close" : "1200"
+      } ]
+    }, {
+      "date" : "2015-03-09",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    } ],
+    "locationType" : "CITY",
+    "peopleSoftId" : "1036513",
+    "addressLines" : [ "970 W EVELYN AVE" ],
+    "city" : "SUNNYVALE",
+    "state" : "CA",
+    "postalCode" : "94086",
+    "countryCode" : "USA",
+    "cityId" : "SUNNYVALE-CA-USA",
+    "airportCode" : "",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "4087300900",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "GOLDEN WEST SUNNYVALE",
+    "stationId" : "E123DW",
+    "latitude" : 37.382504,
+    "longitude" : -122.043558,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911552528384,
+    "calculatedDistance" : 5.959903602526429
+  }, {
+    "location-hours" : [ {
+      "date" : "2015-03-03",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0800",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-04",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0800",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-05",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0800",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-06",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0800",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-07",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0900",
+        "close" : "1200"
+      } ]
+    }, {
+      "date" : "2015-03-09",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0800",
+        "close" : "1800"
+      } ]
+    } ],
+    "locationType" : "CITY",
+    "peopleSoftId" : "1036399",
+    "addressLines" : [ "2752 DE LA CRUZ BLVD" ],
+    "city" : "SANTA CLARA",
+    "state" : "CA",
+    "postalCode" : "95050",
+    "countryCode" : "USA",
+    "cityId" : "SANTA_CLARA-CA-USA",
+    "airportCode" : "",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "4085909935",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "EXOTIC CAR COLLECTION",
+    "stationId" : "E123E1",
+    "latitude" : 37.370273,
+    "longitude" : -121.941858,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911552528385,
+    "calculatedDistance" : 8.98647396476756
+  }, {
+    "location-hours" : [ {
+      "date" : "2015-03-03",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0800",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-04",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0800",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-05",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0800",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-06",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0800",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-07",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0900",
+        "close" : "1200"
+      } ]
+    }, {
+      "date" : "2015-03-09",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0800",
+        "close" : "1800"
+      } ]
+    } ],
+    "locationType" : "AIRPORT",
+    "peopleSoftId" : "1036561",
+    "addressLines" : [ "2752 DE LA CRUZ BLVD" ],
+    "city" : "SANTA CLARA",
+    "state" : "CA",
+    "postalCode" : "95050",
+    "countryCode" : "USA",
+    "cityId" : "SANTA_CLARA-CA-USA",
+    "airportCode" : "SJC",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "4085909935",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "EXOTIC SJC",
+    "stationId" : "E123E2",
+    "latitude" : 37.370273,
+    "longitude" : -121.941858,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911552528386,
+    "calculatedDistance" : 8.98647396476756
+  }, {
+    "location-hours" : [ {
+      "date" : "2015-03-03",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0800",
+        "close" : "1200"
+      } ]
+    }, {
+      "date" : "2015-03-04",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0800",
+        "close" : "1200"
+      } ]
+    }, {
+      "date" : "2015-03-05",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0800",
+        "close" : "1200"
+      } ]
+    }, {
+      "date" : "2015-03-06",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0800",
+        "close" : "1200"
+      } ]
+    }, {
+      "date" : "2015-03-09",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0800",
+        "close" : "1200"
+      } ]
+    } ],
+    "locationType" : "CITY",
+    "peopleSoftId" : "1013572",
+    "addressLines" : [ "1460 TERMINAL AVE" ],
+    "city" : "SAN JOSE",
+    "state" : "CA",
+    "postalCode" : "95112",
+    "countryCode" : "USA",
+    "cityId" : "SAN_JOSE-CA-USA",
+    "airportCode" : "",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "4084412730",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "CAR WEST SJ",
+    "stationId" : "E123J4",
+    "latitude" : 37.366215,
+    "longitude" : -121.904055,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911566159872,
+    "calculatedDistance" : 11.83895884561466
+  }, {
+    "location-hours" : [ ],
+    "locationType" : "CITY",
+    "peopleSoftId" : "1011909",
+    "addressLines" : [ "175 SAN LAZARO AVE" ],
+    "city" : "SUNNYVALE",
+    "state" : "CA",
+    "postalCode" : "94086",
+    "countryCode" : "USA",
+    "cityId" : "SUNNYVALE-CA-USA",
+    "airportCode" : "",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "6505283180",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "ADMIN REMARKETING",
+    "stationId" : "E123J9",
+    "latitude" : 37.376772,
+    "longitude" : -122.012045,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911566159873,
+    "calculatedDistance" : 5.437571912919581
+  }, {
+    "location-hours" : [ {
+      "date" : "2015-03-03",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0800",
+        "close" : "1730"
+      } ]
+    }, {
+      "date" : "2015-03-04",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0800",
+        "close" : "1730"
+      } ]
+    }, {
+      "date" : "2015-03-05",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0800",
+        "close" : "1730"
+      } ]
+    }, {
+      "date" : "2015-03-06",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0800",
+        "close" : "1730"
+      } ]
+    }, {
+      "date" : "2015-03-09",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0800",
+        "close" : "1730"
+      } ]
+    } ],
+    "locationType" : "CITY",
+    "peopleSoftId" : "1016761",
+    "addressLines" : [ "631 MARTIN AVE" ],
+    "city" : "SANTA CLARA",
+    "state" : "CA",
+    "postalCode" : "95050",
+    "countryCode" : "USA",
+    "cityId" : "SANTA_CLARA-CA-USA",
+    "airportCode" : "",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "4,087,273,358,307",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "CAR WEST 23JF",
+    "stationId" : "E123JF",
+    "latitude" : 37.366559,
+    "longitude" : -121.94549,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911566159874,
+    "calculatedDistance" : 8.504802341423703
+  }, {
+    "location-hours" : [ {
+      "date" : "2015-03-03",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1730"
+      } ]
+    }, {
+      "date" : "2015-03-04",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1730"
+      } ]
+    }, {
+      "date" : "2015-03-05",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1730"
+      } ]
+    }, {
+      "date" : "2015-03-06",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1730"
+      } ]
+    }, {
+      "date" : "2015-03-09",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1730"
+      } ]
+    } ],
+    "locationType" : "CITY",
+    "peopleSoftId" : "1011908",
+    "addressLines" : [ "815 E EL CAMINO REAL" ],
+    "city" : "SUNNYVALE",
+    "state" : "CA",
+    "postalCode" : "94087",
+    "countryCode" : "USA",
+    "cityId" : "SUNNYVALE-CA-USA",
+    "airportCode" : "",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "4084194900",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "SF-WEST ADMIN OFFICE",
+    "stationId" : "E123JJ",
+    "latitude" : 37.355478,
+    "longitude" : -122.017092,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911567208449,
+    "calculatedDistance" : 3.054202917075067
+  }, {
+    "location-hours" : [ {
+      "date" : "2015-03-03",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-04",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-05",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-06",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    }, {
+      "date" : "2015-03-07",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0900",
+        "close" : "1200"
+      } ]
+    }, {
+      "date" : "2015-03-09",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0730",
+        "close" : "1800"
+      } ]
+    } ],
+    "locationType" : "CITY",
+    "peopleSoftId" : "1030323",
+    "addressLines" : [ "2400 OLD MIDDLEFIELD WAY" ],
+    "city" : "MOUNTAIN VIEW",
+    "state" : "CA",
+    "postalCode" : "94043",
+    "countryCode" : "USA",
+    "cityId" : "MOUNTAIN_VIEW-CA-USA",
+    "airportCode" : "",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "6508434990",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "CAR WEST MOUNTAIN VIEW",
+    "stationId" : "E123JT",
+    "latitude" : 37.414936,
+    "longitude" : -122.097556,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911568257026,
+    "calculatedDistance" : 11.172995552826354
+  }, {
+    "location-hours" : [ ],
+    "locationType" : "CITY",
+    "peopleSoftId" : "1037482",
+    "addressLines" : [ "250 E BROKAW RD" ],
+    "city" : "SAN JOSE",
+    "state" : "CA",
+    "postalCode" : "95112",
+    "countryCode" : "USA",
+    "cityId" : "SAN_JOSE-CA-USA",
+    "airportCode" : "",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "4084371001",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "FIX AUTO BODY",
+    "stationId" : "E123JX",
+    "latitude" : 37.376611,
+    "longitude" : -121.913877,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911569305601,
+    "calculatedDistance" : 11.498459990838583
+  }, {
+    "location-hours" : [ ],
+    "locationType" : "CITY",
+    "peopleSoftId" : "1022248",
+    "addressLines" : [ "1932 OLD MIDDLEFIELD WAY" ],
+    "city" : "MOUNTAIN VIEW",
+    "state" : "CA",
+    "postalCode" : "94043",
+    "countryCode" : "USA",
+    "cityId" : "MOUNTAIN_VIEW-CA-USA",
+    "airportCode" : "",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "6506251272",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "MOUNTAIN VIEW BODY SHOP",
+    "stationId" : "E123MV",
+    "latitude" : 37.414347,
+    "longitude" : -122.088568,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911572451330,
+    "calculatedDistance" : 10.712196066314599
+  }, {
+    "location-hours" : [ {
+      "date" : "2015-03-03",
+      "open24" : false,
+      "closed" : false
+    }, {
+      "date" : "2015-03-04",
+      "open24" : false,
+      "closed" : false
+    }, {
+      "date" : "2015-03-05",
+      "open24" : false,
+      "closed" : false
+    }, {
+      "date" : "2015-03-06",
+      "open24" : false,
+      "closed" : false
+    }, {
+      "date" : "2015-03-07",
+      "open24" : false,
+      "closed" : false
+    }, {
+      "date" : "2015-03-08",
+      "open24" : false,
+      "closed" : false
+    }, {
+      "date" : "2015-03-09",
+      "open24" : false,
+      "closed" : false
+    } ],
+    "locationType" : "CITY",
+    "peopleSoftId" : "1021183",
+    "addressLines" : [ "2750 DE LA CRUZ BLVD" ],
+    "city" : "SANTA CLARA",
+    "state" : "CA",
+    "postalCode" : "95050",
+    "countryCode" : "USA",
+    "cityId" : "SANTA_CLARA-CA-USA",
+    "airportCode" : "",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "4089883403",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "PARK&FLY",
+    "stationId" : "E123PF",
+    "latitude" : 37.369975,
+    "longitude" : -121.941764,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911581888513,
+    "calculatedDistance" : 8.977238967185903
+  }, {
+    "location-hours" : [ {
+      "date" : "2015-03-03",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0545",
+        "close" : "2359"
+      } ]
+    }, {
+      "date" : "2015-03-04",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0545",
+        "close" : "2359"
+      } ]
+    }, {
+      "date" : "2015-03-05",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0545",
+        "close" : "2359"
+      } ]
+    }, {
+      "date" : "2015-03-06",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0545",
+        "close" : "2359"
+      } ]
+    }, {
+      "date" : "2015-03-07",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0545",
+        "close" : "2359"
+      } ]
+    }, {
+      "date" : "2015-03-08",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0545",
+        "close" : "2359"
+      } ]
+    }, {
+      "date" : "2015-03-09",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0545",
+        "close" : "2359"
+      } ]
+    } ],
+    "locationType" : "AIRPORT",
+    "peopleSoftId" : "1019131",
+    "addressLines" : [ "1659 AIRPORT BLVD STE 5" ],
+    "city" : "SAN JOSE",
+    "state" : "CA",
+    "postalCode" : "95110",
+    "countryCode" : "USA",
+    "cityId" : "SAN_JOSE-CA-USA",
+    "airportCode" : "SJC",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "4084521100",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "SAN JOSE INTL ARPT CRCF",
+    "stationId" : "SJCT61",
+    "latitude" : 37.363675,
+    "longitude" : -121.921623,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911591325696,
+    "calculatedDistance" : 10.286047852264009
+  }, {
+    "location-hours" : [ ],
+    "locationType" : "CITY",
+    "peopleSoftId" : "1022602",
+    "addressLines" : [ "1 INFINITE LOOP" ],
+    "city" : "CUPERTINO",
+    "state" : "CA",
+    "postalCode" : "95014",
+    "countryCode" : "USA",
+    "cityId" : "CUPERTINO-CA-USA",
+    "airportCode" : "",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "6503334603",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "APPLE CARSHARE",
+    "stationId" : "E123WA",
+    "latitude" : 37.330597,
+    "longitude" : -122.028969,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911593422848,
+    "calculatedDistance" : 0.1127676774253333
+  }, {
+    "location-hours" : [ {
+      "date" : "2015-03-03",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0700",
+        "close" : "1700"
+      } ]
+    }, {
+      "date" : "2015-03-04",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0700",
+        "close" : "1700"
+      } ]
+    }, {
+      "date" : "2015-03-05",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0700",
+        "close" : "1700"
+      } ]
+    }, {
+      "date" : "2015-03-06",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0700",
+        "close" : "1700"
+      } ]
+    }, {
+      "date" : "2015-03-09",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0700",
+        "close" : "1700"
+      } ]
+    } ],
+    "locationType" : "CITY",
+    "peopleSoftId" : "1010121",
+    "addressLines" : [ "1485 KERLEY DR" ],
+    "city" : "SAN JOSE",
+    "state" : "CA",
+    "postalCode" : "95112",
+    "countryCode" : "USA",
+    "cityId" : "SAN_JOSE-CA-USA",
+    "airportCode" : "",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "4084419922",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "TRUCK RENTAL-SAN JOSE",
+    "stationId" : "E123X2",
+    "latitude" : 37.365158,
+    "longitude" : -121.910133,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911594471424,
+    "calculatedDistance" : 11.294045591272537
+  }, {
+    "location-hours" : [ {
+      "date" : "2015-03-03",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0700",
+        "close" : "1700"
+      } ]
+    }, {
+      "date" : "2015-03-04",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0700",
+        "close" : "1700"
+      } ]
+    }, {
+      "date" : "2015-03-05",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0700",
+        "close" : "1700"
+      } ]
+    }, {
+      "date" : "2015-03-06",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0700",
+        "close" : "1700"
+      } ]
+    }, {
+      "date" : "2015-03-09",
+      "open24" : false,
+      "closed" : false,
+      "hours" : [ {
+        "open" : "0700",
+        "close" : "1700"
+      } ]
+    } ],
+    "locationType" : "CITY",
+    "peopleSoftId" : "1034672",
+    "addressLines" : [ "1485 KERLEY DR" ],
+    "city" : "SAN JOSE",
+    "state" : "CA",
+    "postalCode" : "95112",
+    "countryCode" : "USA",
+    "cityId" : "SAN_JOSE-CA-USA",
+    "airportCode" : "",
+    "currencyCode" : "USD",
+    "internationalPhoneNumberPrefix" : "1",
+    "phoneNumber" : "4084419922",
+    "afterHoursPickup" : false,
+    "afterHoursDropoff" : false,
+    "defaultLocationName" : "SAN JOSE LARGE TRUCKS",
+    "stationId" : "E123X8",
+    "latitude" : 37.365195,
+    "longitude" : -121.910256,
+    "brand" : "ENTERPRISE",
+    "_version_" : 1494916911595520001,
+    "calculatedDistance" : 11.285269196260492
+  } ]
+}

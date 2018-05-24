@@ -1,0 +1,21 @@
+{
+  "brand": "ENTERPRISE",
+  "id": "1000001",
+  "location_type": "city",
+  "business_types": [
+    "INR"
+  ],
+  "name": "Ladue Rental",
+  "description": "Enterprise Leasing Company Of Stl, Llc",
+  "drive_distance": {
+    "unit": "MI",
+    "distance": 0.0
+  },
+  "filter_tags": [
+    "OPEN NOW"
+  ],
+  "after_hours_pickup": false,
+  "after_hours_return": false,
+  "we_will_pick_you_up": true,
+  "currency_code": "USD"
+}

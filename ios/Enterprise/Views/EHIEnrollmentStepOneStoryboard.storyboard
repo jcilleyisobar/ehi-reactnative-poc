@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Enrollment Step One View Controller-->
+        <scene sceneID="feV-0d-Sm0">
+            <objects>
+                <viewController storyboardIdentifier="EHIEnrollmentStepOneViewController" id="3T5-ig-4rQ" customClass="EHIEnrollmentStepOneViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j3c-0g-gK4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="NkB-5h-7AW" customClass="EHIListCollectionView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="xF4-Ig-Xpn">
+                                    <size key="itemSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HuT-PW-htT" customClass="EHIActivityIndicator">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HuT-PW-htT" firstAttribute="top" secondItem="j3c-0g-gK4" secondAttribute="top" id="0pw-LK-XzN"/>
+                            <constraint firstItem="NkB-5h-7AW" firstAttribute="leading" secondItem="9Qw-ix-ht7" secondAttribute="leading" id="8Qf-AS-SeR"/>
+                            <constraint firstItem="HuT-PW-htT" firstAttribute="leading" secondItem="9Qw-ix-ht7" secondAttribute="leading" id="FlW-5K-lLz"/>
+                            <constraint firstItem="9Qw-ix-ht7" firstAttribute="bottom" secondItem="HuT-PW-htT" secondAttribute="bottom" id="I7c-cc-Xsp"/>
+                            <constraint firstItem="9Qw-ix-ht7" firstAttribute="trailing" secondItem="HuT-PW-htT" secondAttribute="trailing" id="c0H-Hw-Jkc"/>
+                            <constraint firstItem="NkB-5h-7AW" firstAttribute="top" secondItem="9Qw-ix-ht7" secondAttribute="top" id="gBD-Se-bBp"/>
+                            <constraint firstAttribute="bottom" secondItem="NkB-5h-7AW" secondAttribute="bottom" id="itZ-3Z-oz6"/>
+                            <constraint firstItem="9Qw-ix-ht7" firstAttribute="trailing" secondItem="NkB-5h-7AW" secondAttribute="trailing" id="o3H-uF-EZ7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9Qw-ix-ht7"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="NkB-5h-7AW" id="Anu-XE-4ve"/>
+                        <outlet property="loadingIndicator" destination="HuT-PW-htT" id="HOK-cy-I7Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lVm-k6-Igl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="709" y="432"/>
+        </scene>
+    </scenes>
+</document>

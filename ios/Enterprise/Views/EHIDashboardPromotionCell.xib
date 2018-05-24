@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EHIDashboardPromotionCell" id="UvZ-CU-OCJ" customClass="EHIDashboardPromotionCell">
+            <rect key="frame" x="0.0" y="0.0" width="316" height="147"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="316" height="147"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LvP-K1-udx">
+                        <rect key="frame" x="0.0" y="0.0" width="316" height="147"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hmE-8g-rcf" userLabel="Header Line">
+                        <rect key="frame" x="0.0" y="0.0" width="316" height="2"/>
+                        <color key="backgroundColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="hv7-Om-W9S"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C8K-67-KdV" userLabel="Footer Line">
+                        <rect key="frame" x="0.0" y="145" width="316" height="2"/>
+                        <color key="backgroundColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="2" id="5Pb-EQ-UWO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="C8K-67-KdV" secondAttribute="trailing" id="0nX-GX-9Ou"/>
+                <constraint firstItem="hmE-8g-rcf" firstAttribute="top" secondItem="UvZ-CU-OCJ" secondAttribute="top" id="LpD-rx-TOj"/>
+                <constraint firstItem="hmE-8g-rcf" firstAttribute="leading" secondItem="UvZ-CU-OCJ" secondAttribute="leading" id="OpT-IE-ssR"/>
+                <constraint firstAttribute="bottom" secondItem="C8K-67-KdV" secondAttribute="bottom" id="QuE-Gz-HVO"/>
+                <constraint firstItem="LvP-K1-udx" firstAttribute="leading" secondItem="UvZ-CU-OCJ" secondAttribute="leading" id="RhM-ql-mlT"/>
+                <constraint firstItem="C8K-67-KdV" firstAttribute="leading" secondItem="UvZ-CU-OCJ" secondAttribute="leading" id="ZWG-5E-FtH"/>
+                <constraint firstAttribute="trailing" secondItem="hmE-8g-rcf" secondAttribute="trailing" id="dEN-QU-zBL"/>
+                <constraint firstAttribute="trailing" secondItem="LvP-K1-udx" secondAttribute="trailing" id="fkh-w2-rxO"/>
+                <constraint firstAttribute="bottom" secondItem="LvP-K1-udx" secondAttribute="bottom" id="kLR-gJ-Q49"/>
+                <constraint firstItem="LvP-K1-udx" firstAttribute="top" secondItem="UvZ-CU-OCJ" secondAttribute="top" id="qne-iK-0ET"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Hga-Et-G5d"/>
+            <size key="customSize" width="316" height="147"/>
+            <connections>
+                <outlet property="footerDivider" destination="C8K-67-KdV" id="KRP-TA-sMt"/>
+                <outlet property="headerDivider" destination="hmE-8g-rcf" id="0kR-fh-4S6"/>
+            </connections>
+            <point key="canvasLocation" x="446" y="345.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

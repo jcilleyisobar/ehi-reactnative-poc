@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EHIAboutEnterprisePlusPointsCell" id="XxX-iB-3OI" customClass="EHIAboutEnterprisePlusPointsCell">
+            <rect key="frame" x="0.0" y="0.0" width="469" height="273"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="469" height="273"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="snt-xe-Afe">
+                        <rect key="frame" x="20" y="0.0" width="429" height="49"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How points work" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2gw-mx-iru" customClass="EHILabel">
+                                <rect key="frame" x="0.0" y="25" width="429" height="24"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="2gw-mx-iru" secondAttribute="bottom" id="TXj-0H-BbM"/>
+                            <constraint firstItem="2gw-mx-iru" firstAttribute="leading" secondItem="snt-xe-Afe" secondAttribute="leading" id="ihO-5t-Iek"/>
+                            <constraint firstItem="2gw-mx-iru" firstAttribute="top" secondItem="snt-xe-Afe" secondAttribute="top" constant="25" id="uEe-w4-vKG"/>
+                            <constraint firstAttribute="trailing" secondItem="2gw-mx-iru" secondAttribute="trailing" id="xsG-vx-h00"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earn Points" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOb-O6-FfJ" customClass="EHILabel">
+                        <rect key="frame" x="20" y="107" width="429" height="21"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oOB-Cz-6ub" customClass="EHILabel">
+                        <rect key="frame" x="20" y="143" width="429" height="59.5"/>
+                        <string key="text">Enterprise Plus memebers earn one point for every qualifying dollar spent. Silver, Gold and Platinum members earn more points when they rent.</string>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="icon_book" translatesAutoresizingMaskIntoConstraints="NO" id="sPG-M5-aBy">
+                        <rect key="frame" x="220" y="69" width="30" height="30"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.96862745098039216" green="0.96862745098039216" blue="0.96862745098039216" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="snt-xe-Afe" firstAttribute="leading" secondItem="XxX-iB-3OI" secondAttribute="leading" constant="20" id="5a0-UK-rhe"/>
+                <constraint firstItem="oOB-Cz-6ub" firstAttribute="top" secondItem="aOb-O6-FfJ" secondAttribute="bottom" constant="15" id="64L-0B-3ag"/>
+                <constraint firstItem="sPG-M5-aBy" firstAttribute="centerX" secondItem="XxX-iB-3OI" secondAttribute="centerX" id="9qQ-mY-IjV"/>
+                <constraint firstItem="aOb-O6-FfJ" firstAttribute="leading" secondItem="XxX-iB-3OI" secondAttribute="leading" constant="20" id="D7r-vg-YTd"/>
+                <constraint firstAttribute="trailing" secondItem="aOb-O6-FfJ" secondAttribute="trailing" constant="20" id="QZN-46-fKc"/>
+                <constraint firstItem="aOb-O6-FfJ" firstAttribute="top" secondItem="sPG-M5-aBy" secondAttribute="bottom" constant="8" id="bb8-xO-hDb"/>
+                <constraint firstAttribute="trailing" secondItem="oOB-Cz-6ub" secondAttribute="trailing" constant="20" id="cFW-i6-ulA"/>
+                <constraint firstAttribute="trailing" secondItem="snt-xe-Afe" secondAttribute="trailing" constant="20" id="pQI-sx-Ji4"/>
+                <constraint firstItem="snt-xe-Afe" firstAttribute="top" secondItem="XxX-iB-3OI" secondAttribute="top" id="qde-Af-Ap5"/>
+                <constraint firstItem="oOB-Cz-6ub" firstAttribute="leading" secondItem="XxX-iB-3OI" secondAttribute="leading" constant="20" id="qmC-bD-b8u"/>
+                <constraint firstItem="sPG-M5-aBy" firstAttribute="top" secondItem="snt-xe-Afe" secondAttribute="bottom" constant="20" id="r11-G5-7ve"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="GFO-7w-tpK"/>
+            <size key="customSize" width="469" height="273"/>
+            <connections>
+                <outlet property="detailLabel" destination="oOB-Cz-6ub" id="ied-xX-L8M"/>
+                <outlet property="headerLabel" destination="2gw-mx-iru" id="DJv-jb-Czr"/>
+                <outlet property="headerView" destination="snt-xe-Afe" id="feP-Qa-BMJ"/>
+                <outlet property="iconImageView" destination="sPG-M5-aBy" id="Wqk-hp-Tac"/>
+                <outlet property="titleLabel" destination="aOb-O6-FfJ" id="gjs-xn-GVz"/>
+            </connections>
+            <point key="canvasLocation" x="32.5" y="50.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_book" width="30" height="30"/>
+    </resources>
+</document>

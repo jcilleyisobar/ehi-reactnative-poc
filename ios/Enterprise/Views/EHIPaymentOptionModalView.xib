@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="c22-O7-iKe" customClass="EHIPaymentOptionModalView">
+            <rect key="frame" x="0.0" y="0.0" width="388" height="218"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="poT-yy-89K" userLabel="Container">
+                    <rect key="frame" x="0.0" y="0.0" width="388" height="218"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay now:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2UZ-WG-jL0" customClass="EHILabel">
+                            <rect key="frame" x="0.0" y="0.0" width="72.5" height="23"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="18"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pay later:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vQa-nQ-FYi" customClass="EHILabel">
+                            <rect key="frame" x="0.0" y="127.5" width="75.5" height="23"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="18"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="You will be charged at the counter when you pick up your rental. Cancel anytime." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="seA-UY-oeb" customClass="EHILabel">
+                            <rect key="frame" x="0.0" y="150.5" width="388" height="67.5"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PAY NOW TERMS AND CONDITIONS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="388" translatesAutoresizingMaskIntoConstraints="NO" id="YTK-yx-acz" customClass="EHIClickableLabel">
+                            <rect key="frame" x="0.0" y="91" width="388" height="21.5"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Your credit card will be charged at the time of booking. Cancel for a full refund up to 3 days before the rental starts" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dNy-Yo-jyZ" customClass="EHILabel">
+                            <rect key="frame" x="0.0" y="23" width="388" height="68"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="vQa-nQ-FYi" firstAttribute="leading" secondItem="2UZ-WG-jL0" secondAttribute="leading" id="2ax-XD-Eu2"/>
+                        <constraint firstItem="2UZ-WG-jL0" firstAttribute="leading" secondItem="poT-yy-89K" secondAttribute="leading" id="3zg-KG-ZvA"/>
+                        <constraint firstAttribute="bottom" secondItem="seA-UY-oeb" secondAttribute="bottom" id="Bcb-0b-NlD"/>
+                        <constraint firstItem="YTK-yx-acz" firstAttribute="top" secondItem="dNy-Yo-jyZ" secondAttribute="bottom" id="EAZ-wj-bkO"/>
+                        <constraint firstItem="dNy-Yo-jyZ" firstAttribute="leading" secondItem="2UZ-WG-jL0" secondAttribute="leading" id="F3C-y2-myr"/>
+                        <constraint firstItem="vQa-nQ-FYi" firstAttribute="top" secondItem="YTK-yx-acz" secondAttribute="bottom" constant="15" id="FXy-tc-zh5"/>
+                        <constraint firstItem="seA-UY-oeb" firstAttribute="leading" secondItem="2UZ-WG-jL0" secondAttribute="leading" id="Kdn-kN-9yW"/>
+                        <constraint firstItem="seA-UY-oeb" firstAttribute="top" secondItem="vQa-nQ-FYi" secondAttribute="bottom" id="M4P-BE-aMO"/>
+                        <constraint firstItem="dNy-Yo-jyZ" firstAttribute="top" secondItem="2UZ-WG-jL0" secondAttribute="bottom" id="O2B-uV-AhE"/>
+                        <constraint firstItem="2UZ-WG-jL0" firstAttribute="top" secondItem="poT-yy-89K" secondAttribute="top" id="RKH-Lw-PNN"/>
+                        <constraint firstAttribute="trailing" secondItem="dNy-Yo-jyZ" secondAttribute="trailing" id="T0J-ex-ACy"/>
+                        <constraint firstAttribute="trailing" secondItem="seA-UY-oeb" secondAttribute="trailing" id="TbG-oA-CUg"/>
+                        <constraint firstItem="YTK-yx-acz" firstAttribute="leading" secondItem="poT-yy-89K" secondAttribute="leading" id="Ugh-um-EdZ"/>
+                        <constraint firstAttribute="trailing" secondItem="YTK-yx-acz" secondAttribute="trailing" id="ke6-ec-ySj"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="poT-yy-89K" secondAttribute="bottom" id="5X9-Bg-WWt"/>
+                <constraint firstItem="poT-yy-89K" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="QEw-dd-d2a"/>
+                <constraint firstAttribute="trailing" secondItem="poT-yy-89K" secondAttribute="trailing" id="gD6-d7-jgn"/>
+                <constraint firstItem="poT-yy-89K" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="knw-Wc-Uap"/>
+                <constraint firstAttribute="bottom" secondItem="poT-yy-89K" secondAttribute="bottom" id="yTH-ad-pJv"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="B0D-cB-8UD"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="yTH-ad-pJv"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="payLaterDetails" destination="seA-UY-oeb" id="k13-Ke-XBO"/>
+                <outlet property="payLaterTitle" destination="vQa-nQ-FYi" id="zhj-Vs-GM5"/>
+                <outlet property="policiesLabel" destination="YTK-yx-acz" id="Ykd-cN-lFw"/>
+                <outlet property="prepayDetails" destination="dNy-Yo-jyZ" id="zIP-Ov-5eO"/>
+                <outlet property="prepayTitle" destination="2UZ-WG-jL0" id="c7V-Ed-1Wq"/>
+            </connections>
+            <point key="canvasLocation" x="396" y="336"/>
+        </view>
+    </objects>
+</document>

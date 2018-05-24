@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "19319907A4340CB7501F7EE9FD141CDDF328C33C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "DE96CAE28A408610411E628EEB182EDCEEB81DBB" : 0,
+    "19319907A4340CB7501F7EE9FD141CDDF328C33C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "610AC809-BFF1-4FDA-9E7F-CB6E51028363",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "DE96CAE28A408610411E628EEB182EDCEEB81DBB" : "Dropbox\/libraries\/Navigator",
+    "19319907A4340CB7501F7EE9FD141CDDF328C33C" : "ehi-ios\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Enterprise",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Enterprise.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ssh:\/\/keystone.roundarch.com:7999\/en\/enterprise-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "19319907A4340CB7501F7EE9FD141CDDF328C33C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:derkis\/Navigator.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DE96CAE28A408610411E628EEB182EDCEEB81DBB"
+    }
+  ]
+}

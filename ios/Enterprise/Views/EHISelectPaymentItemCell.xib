@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EHISelectPaymentItemCell" id="NI8-wy-QCG" customClass="EHISelectPaymentItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="164"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="360" height="164"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QaX-lr-Wl6" userLabel="Edit Button" customClass="EHIButton">
+                        <rect key="frame" x="300" y="0.0" width="60" height="163"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <state key="normal" title="EDIT">
+                            <color key="titleColor" red="0.10588235294117647" green="0.55294117647058827" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="didTapEditButton:" destination="NI8-wy-QCG" eventType="touchUpInside" id="IgZ-LD-Ttf"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebU-Pv-u4N" customClass="EHIRoundedToggleButton">
+                        <rect key="frame" x="20" y="20" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="Dew-gd-BPe"/>
+                            <constraint firstAttribute="width" constant="25" id="q7F-WV-ud4"/>
+                        </constraints>
+                        <connections>
+                            <action selector="didTapPaymentToggle:" destination="NI8-wy-QCG" eventType="touchUpInside" id="pCt-1S-yRt"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Card (Preferred)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQM-d7-Sb2" userLabel="Alias Label" customClass="EHILabel">
+                        <rect key="frame" x="65" y="20" width="214" height="18"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="15"/>
+                        <color key="textColor" red="0.10588235294117647" green="0.55294117647058827" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M60-1v-OGC" userLabel="Bottom Divider">
+                        <rect key="frame" x="0.0" y="163" width="360" height="1"/>
+                        <color key="backgroundColor" red="0.83921568629999999" green="0.83921568629999999" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="DQc-qO-PXj"/>
+                        </constraints>
+                    </view>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pbS-mB-9IU" userLabel="Card Image Container">
+                        <rect key="frame" x="65" y="42" width="34" height="18"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="creditcard_03_amex" translatesAutoresizingMaskIntoConstraints="NO" id="stY-zZ-lcl">
+                                <rect key="frame" x="0.0" y="0.0" width="26" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="tk3-tb-kDS"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="stY-zZ-lcl" secondAttribute="bottom" id="2Ph-E3-tfJ"/>
+                            <constraint firstAttribute="trailing" secondItem="stY-zZ-lcl" secondAttribute="trailing" constant="8" id="6hU-55-BVK"/>
+                            <constraint firstItem="stY-zZ-lcl" firstAttribute="leading" secondItem="pbS-mB-9IU" secondAttribute="leading" id="dXb-FD-gH3"/>
+                            <constraint firstItem="stY-zZ-lcl" firstAttribute="top" secondItem="pbS-mB-9IU" secondAttribute="top" id="rvb-Sq-kOa"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="749" text="**** **** **** 8902" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmS-6X-7BZ" userLabel="PaymentTitleLabel" customClass="EHILabel">
+                        <rect key="frame" x="99" y="41.5" width="181" height="19"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="750" text="Expires: 01/20" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ym-7l-WKN" customClass="EHILabel">
+                        <rect key="frame" x="65" y="64.5" width="215" height="19"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uF7-Il-GaI">
+                        <rect key="frame" x="65" y="83.5" width="235" height="50"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uq-rc-1Yr" customClass="EHIToggleButton">
+                                <rect key="frame" x="0.0" y="20" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="6CG-sy-IRF"/>
+                                    <constraint firstAttribute="height" constant="30" id="MIs-pu-yEo"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="didTapSaveToggle:" destination="NI8-wy-QCG" eventType="touchUpInside" id="hvJ-Kb-eGA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save card" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTu-xB-h7o">
+                                <rect key="frame" x="40" y="21" width="175" height="29"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3uq-rc-1Yr" firstAttribute="leading" secondItem="uF7-Il-GaI" secondAttribute="leading" id="9Q9-10-q9y"/>
+                            <constraint firstItem="DTu-xB-h7o" firstAttribute="leading" secondItem="3uq-rc-1Yr" secondAttribute="trailing" constant="10" id="IVk-Fz-tti"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="3uq-rc-1Yr" secondAttribute="bottom" id="Pal-uJ-gCo"/>
+                            <constraint firstItem="3uq-rc-1Yr" firstAttribute="top" secondItem="uF7-Il-GaI" secondAttribute="top" priority="999" constant="20" id="aKP-x4-j6h"/>
+                            <constraint firstAttribute="bottom" secondItem="DTu-xB-h7o" secondAttribute="bottom" id="mts-vS-5e0"/>
+                            <constraint firstItem="DTu-xB-h7o" firstAttribute="centerY" secondItem="3uq-rc-1Yr" secondAttribute="centerY" id="pIW-kd-9EQ"/>
+                            <constraint firstAttribute="trailing" secondItem="DTu-xB-h7o" secondAttribute="trailing" constant="20" id="r5T-VB-FFy"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kLe-iS-4WS" userLabel="Horizontal Divider">
+                        <rect key="frame" x="299" y="0.0" width="1" height="164"/>
+                        <color key="backgroundColor" red="0.83921568629999999" green="0.83921568629999999" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="4C9-2V-3Ot"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="QaX-lr-Wl6" firstAttribute="top" secondItem="NI8-wy-QCG" secondAttribute="top" id="0Wj-aU-Izj"/>
+                <constraint firstItem="kmS-6X-7BZ" firstAttribute="centerY" secondItem="pbS-mB-9IU" secondAttribute="centerY" id="1MH-Fz-qMT"/>
+                <constraint firstItem="pbS-mB-9IU" firstAttribute="top" secondItem="lQM-d7-Sb2" secondAttribute="bottom" constant="4" id="2bZ-Sx-pB7"/>
+                <constraint firstItem="kLe-iS-4WS" firstAttribute="top" secondItem="NI8-wy-QCG" secondAttribute="top" id="3aY-yu-mBR"/>
+                <constraint firstAttribute="trailing" secondItem="kLe-iS-4WS" secondAttribute="trailing" constant="60" id="7Ab-K5-fva"/>
+                <constraint firstItem="QaX-lr-Wl6" firstAttribute="leading" secondItem="kmS-6X-7BZ" secondAttribute="trailing" constant="20" id="7Hb-cD-gnq"/>
+                <constraint firstItem="uF7-Il-GaI" firstAttribute="top" secondItem="6Ym-7l-WKN" secondAttribute="bottom" id="8Oe-g7-bAY"/>
+                <constraint firstItem="kLe-iS-4WS" firstAttribute="leading" secondItem="lQM-d7-Sb2" secondAttribute="trailing" constant="20" id="8TR-ho-SRO"/>
+                <constraint firstItem="kmS-6X-7BZ" firstAttribute="leading" secondItem="pbS-mB-9IU" secondAttribute="trailing" id="90R-h5-zSt"/>
+                <constraint firstItem="ebU-Pv-u4N" firstAttribute="top" secondItem="NI8-wy-QCG" secondAttribute="top" constant="20" id="GD4-ei-lgC"/>
+                <constraint firstAttribute="bottom" secondItem="M60-1v-OGC" secondAttribute="bottom" id="IOj-H3-ugj"/>
+                <constraint firstItem="QaX-lr-Wl6" firstAttribute="leading" secondItem="uF7-Il-GaI" secondAttribute="trailing" id="L4F-73-17f"/>
+                <constraint firstItem="M60-1v-OGC" firstAttribute="leading" secondItem="NI8-wy-QCG" secondAttribute="leading" id="UCs-ln-jka"/>
+                <constraint firstItem="ebU-Pv-u4N" firstAttribute="leading" secondItem="NI8-wy-QCG" secondAttribute="leading" constant="20" id="WV3-Fy-aOS"/>
+                <constraint firstItem="QaX-lr-Wl6" firstAttribute="leading" secondItem="kLe-iS-4WS" secondAttribute="trailing" id="gq7-u0-aqO"/>
+                <constraint firstItem="uF7-Il-GaI" firstAttribute="leading" secondItem="pbS-mB-9IU" secondAttribute="leading" id="h2h-Y9-wii"/>
+                <constraint firstItem="6Ym-7l-WKN" firstAttribute="leading" secondItem="lQM-d7-Sb2" secondAttribute="leading" id="hAM-6w-1hP"/>
+                <constraint firstAttribute="bottom" secondItem="kLe-iS-4WS" secondAttribute="bottom" id="hCI-Ug-2Xm"/>
+                <constraint firstItem="lQM-d7-Sb2" firstAttribute="top" secondItem="ebU-Pv-u4N" secondAttribute="top" id="hlm-Dc-08h"/>
+                <constraint firstAttribute="trailing" secondItem="QaX-lr-Wl6" secondAttribute="trailing" id="huY-vf-8R0"/>
+                <constraint firstItem="lQM-d7-Sb2" firstAttribute="leading" secondItem="ebU-Pv-u4N" secondAttribute="trailing" constant="20" id="jqb-2r-WH8"/>
+                <constraint firstItem="6Ym-7l-WKN" firstAttribute="top" secondItem="kmS-6X-7BZ" secondAttribute="bottom" constant="4" id="par-r4-lhS"/>
+                <constraint firstItem="M60-1v-OGC" firstAttribute="top" secondItem="QaX-lr-Wl6" secondAttribute="bottom" id="ptx-vq-Lcn"/>
+                <constraint firstItem="pbS-mB-9IU" firstAttribute="leading" secondItem="lQM-d7-Sb2" secondAttribute="leading" id="sRl-Wl-aXA"/>
+                <constraint firstItem="QaX-lr-Wl6" firstAttribute="leading" secondItem="6Ym-7l-WKN" secondAttribute="trailing" constant="20" id="tQe-3s-4aD"/>
+                <constraint firstAttribute="trailing" secondItem="M60-1v-OGC" secondAttribute="trailing" id="xKD-pp-TC6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="csI-uG-si2"/>
+            <size key="customSize" width="360" height="164"/>
+            <connections>
+                <outlet property="aliasLabel" destination="lQM-d7-Sb2" id="Esp-2n-m3q"/>
+                <outlet property="bottomDivider" destination="M60-1v-OGC" id="i6v-Sf-5Hx"/>
+                <outlet property="cardImage" destination="stY-zZ-lcl" id="z9w-yW-gbB"/>
+                <outlet property="editButton" destination="QaX-lr-Wl6" id="SAD-Yc-kRu"/>
+                <outlet property="paymentSubtitleLabel" destination="6Ym-7l-WKN" id="pel-fh-hNS"/>
+                <outlet property="paymentTitleLabel" destination="kmS-6X-7BZ" id="EGG-V8-Kz6"/>
+                <outlet property="saveContainerView" destination="uF7-Il-GaI" id="wzQ-on-49p"/>
+                <outlet property="saveLabel" destination="DTu-xB-h7o" id="geX-Uj-s8d"/>
+                <outlet property="saveToggleButton" destination="3uq-rc-1Yr" id="Vvj-ub-FW9"/>
+                <outlet property="selectToggleButton" destination="ebU-Pv-u4N" id="yVo-jE-Bpq"/>
+            </connections>
+            <point key="canvasLocation" x="0.0" y="-90"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="creditcard_03_amex" width="26" height="18"/>
+    </resources>
+</document>

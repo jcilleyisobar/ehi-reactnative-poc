@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EHIFormFieldTextToggleCell" id="ehr-I2-37K" customClass="EHIFormFieldTextToggleCell">
+            <rect key="frame" x="0.0" y="0.0" width="397" height="217"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="397" height="217"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KMN-wo-6T8" userLabel="Container">
+                        <rect key="frame" x="20" y="20" width="357" height="159.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i1y-Xx-EjD" userLabel="Title Container">
+                                <rect key="frame" x="0.0" y="0.0" width="357" height="24"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE LABEL" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rKZ-Vl-kYQ" customClass="EHILabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="76.5" height="18"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="14"/>
+                                        <color key="textColor" red="0.060629889369010925" green="0.043859399855136871" blue="0.049030739814043045" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="rKZ-Vl-kYQ" firstAttribute="leading" secondItem="i1y-Xx-EjD" secondAttribute="leading" id="QD9-Pr-dhU"/>
+                                    <constraint firstAttribute="height" constant="24" id="o9p-6k-Qb2" customClass="EHIRestorableConstraint"/>
+                                    <constraint firstItem="rKZ-Vl-kYQ" firstAttribute="top" secondItem="i1y-Xx-EjD" secondAttribute="top" id="uNT-cb-RRh"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="deM-nV-8fR" userLabel="Control Container">
+                                <rect key="frame" x="0.0" y="24" width="357" height="46"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="jsummer@gmail.com" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Z1R-jI-QsR" customClass="EHITextField">
+                                        <rect key="frame" x="0.0" y="0.0" width="215" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="jiX-sT-MqE"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="ehr-I2-37K" id="gBK-6e-We1"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLK-pe-6oM" customClass="EHIButton">
+                                        <rect key="frame" x="214" y="0.0" width="97" height="46"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                                        <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="23" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="HOME" image="downarrow_smgreen">
+                                            <color key="titleColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapCategoryButton:" destination="ehr-I2-37K" eventType="touchUpInside" id="zXB-iz-Fcj"/>
+                                        </connections>
+                                    </button>
+                                    <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rnZ-fw-n0P" userLabel="Hidden Input Field" customClass="EHITextField">
+                                        <rect key="frame" x="214" y="0.0" width="97" height="46"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="Source Sans Pro" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="ehr-I2-37K" id="F0C-j5-I25"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bnz-Ff-DgI" customClass="EHIButton">
+                                        <rect key="frame" x="311" y="0.0" width="46" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="46" id="QcU-He-Wuu" customClass="EHIRestorableConstraint"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                                        <state key="normal" image="icon_delete_01">
+                                            <color key="titleColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapDeleteButton:" destination="ehr-I2-37K" eventType="touchUpInside" id="ECb-zI-m25"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="9UM-mY-hR6"/>
+                                    <constraint firstItem="bLK-pe-6oM" firstAttribute="leading" secondItem="Z1R-jI-QsR" secondAttribute="trailing" constant="-1" id="BiW-Qu-pbc"/>
+                                    <constraint firstItem="Z1R-jI-QsR" firstAttribute="top" secondItem="deM-nV-8fR" secondAttribute="top" id="HYL-Iv-fkX"/>
+                                    <constraint firstItem="bnz-Ff-DgI" firstAttribute="leading" secondItem="bLK-pe-6oM" secondAttribute="trailing" id="J7K-aP-hny"/>
+                                    <constraint firstItem="bnz-Ff-DgI" firstAttribute="top" secondItem="deM-nV-8fR" secondAttribute="top" id="NsH-wj-QTQ"/>
+                                    <constraint firstItem="Z1R-jI-QsR" firstAttribute="leading" secondItem="deM-nV-8fR" secondAttribute="leading" id="OCy-nE-dzy"/>
+                                    <constraint firstAttribute="trailing" secondItem="bnz-Ff-DgI" secondAttribute="trailing" id="OQd-lZ-sOm"/>
+                                    <constraint firstAttribute="bottom" secondItem="Z1R-jI-QsR" secondAttribute="bottom" id="R0Z-ZC-daF"/>
+                                    <constraint firstAttribute="bottom" secondItem="bLK-pe-6oM" secondAttribute="bottom" id="XFT-cF-zgl"/>
+                                    <constraint firstItem="rnZ-fw-n0P" firstAttribute="bottom" secondItem="bLK-pe-6oM" secondAttribute="bottom" id="ZU4-ih-yph"/>
+                                    <constraint firstItem="bnz-Ff-DgI" firstAttribute="leading" secondItem="Z1R-jI-QsR" secondAttribute="trailing" priority="500" constant="-1" id="doM-99-5nH"/>
+                                    <constraint firstItem="rnZ-fw-n0P" firstAttribute="leading" secondItem="bLK-pe-6oM" secondAttribute="leading" id="ejn-58-grH"/>
+                                    <constraint firstAttribute="bottom" secondItem="bnz-Ff-DgI" secondAttribute="bottom" id="geb-PP-fvY"/>
+                                    <constraint firstItem="rnZ-fw-n0P" firstAttribute="trailing" secondItem="bLK-pe-6oM" secondAttribute="trailing" id="rNw-A2-gTf"/>
+                                    <constraint firstItem="bLK-pe-6oM" firstAttribute="top" secondItem="deM-nV-8fR" secondAttribute="top" id="x25-Ax-btk"/>
+                                    <constraint firstItem="rnZ-fw-n0P" firstAttribute="top" secondItem="bLK-pe-6oM" secondAttribute="top" id="yFe-8o-64r"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bfg-eQ-HmP" userLabel="Toggle Container">
+                                <rect key="frame" x="0.0" y="85" width="357" height="31.5"/>
+                                <subviews>
+                                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rXh-Pc-8ox" customClass="EHIToggleButton">
+                                        <rect key="frame" x="0.0" y="2" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="O53-Aa-8pp"/>
+                                            <constraint firstAttribute="width" secondItem="rXh-Pc-8ox" secondAttribute="height" id="Wqc-Pn-x7h"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up to receive emails from Enterprise" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="325" translatesAutoresizingMaskIntoConstraints="NO" id="JJt-Rz-zcm" customClass="EHILabel">
+                                        <rect key="frame" x="32" y="5.5" width="325" height="18"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="14"/>
+                                        <color key="textColor" red="0.060629889369010925" green="0.043859399855136871" blue="0.049030739814043045" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="JJt-Rz-zcm" firstAttribute="centerY" secondItem="rXh-Pc-8ox" secondAttribute="centerY" id="5pK-Nh-sFM"/>
+                                    <constraint firstAttribute="trailing" secondItem="JJt-Rz-zcm" secondAttribute="trailing" id="6b9-HE-1DI"/>
+                                    <constraint firstAttribute="bottom" secondItem="JJt-Rz-zcm" secondAttribute="bottom" constant="8" id="Bu1-S0-G29"/>
+                                    <constraint firstItem="JJt-Rz-zcm" firstAttribute="leading" secondItem="rXh-Pc-8ox" secondAttribute="trailing" constant="8" id="R6L-a5-ZgJ"/>
+                                    <constraint firstItem="rXh-Pc-8ox" firstAttribute="top" secondItem="bfg-eQ-HmP" secondAttribute="top" constant="2" id="dEL-ma-nKj"/>
+                                    <constraint firstItem="rXh-Pc-8ox" firstAttribute="leading" secondItem="bfg-eQ-HmP" secondAttribute="leading" id="s1a-8g-64M"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="igg-ow-TtC" userLabel="Confirmation Container">
+                                <rect key="frame" x="0.0" y="116.5" width="357" height="43"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will receive a confirmation email shortly. Please confirm that you would like to opt-in for email specials." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbn-vo-ZCY" customClass="EHILabel">
+                                        <rect key="frame" x="0.0" y="10" width="357" height="33"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="13"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="gbn-vo-ZCY" firstAttribute="top" secondItem="igg-ow-TtC" secondAttribute="top" constant="10" id="9gU-2r-zlI"/>
+                                    <constraint firstAttribute="bottom" secondItem="gbn-vo-ZCY" secondAttribute="bottom" priority="999" id="KqJ-3N-K67"/>
+                                    <constraint firstAttribute="trailing" secondItem="gbn-vo-ZCY" secondAttribute="trailing" id="NCu-YQ-rml"/>
+                                    <constraint firstItem="gbn-vo-ZCY" firstAttribute="leading" secondItem="igg-ow-TtC" secondAttribute="leading" id="grs-nH-DQS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="deM-nV-8fR" firstAttribute="leading" secondItem="KMN-wo-6T8" secondAttribute="leading" id="0Ut-5b-NLo"/>
+                            <constraint firstAttribute="trailing" secondItem="deM-nV-8fR" secondAttribute="trailing" id="15v-qd-gMR"/>
+                            <constraint firstAttribute="trailing" secondItem="igg-ow-TtC" secondAttribute="trailing" id="1Mb-4z-MnI"/>
+                            <constraint firstAttribute="trailing" secondItem="i1y-Xx-EjD" secondAttribute="trailing" id="9g8-WW-k4Q"/>
+                            <constraint firstItem="igg-ow-TtC" firstAttribute="leading" secondItem="KMN-wo-6T8" secondAttribute="leading" id="Lht-oc-rYX"/>
+                            <constraint firstAttribute="bottom" secondItem="igg-ow-TtC" secondAttribute="bottom" id="Phe-zZ-Abu"/>
+                            <constraint firstAttribute="bottom" secondItem="bfg-eQ-HmP" secondAttribute="bottom" constant="20" id="TTa-R2-n3L"/>
+                            <constraint firstItem="deM-nV-8fR" firstAttribute="top" secondItem="i1y-Xx-EjD" secondAttribute="bottom" id="jib-Sk-6Vv"/>
+                            <constraint firstItem="i1y-Xx-EjD" firstAttribute="leading" secondItem="KMN-wo-6T8" secondAttribute="leading" id="pTz-CT-cC9"/>
+                            <constraint firstItem="igg-ow-TtC" firstAttribute="top" secondItem="bfg-eQ-HmP" secondAttribute="bottom" id="q2e-lm-cTV"/>
+                            <constraint firstAttribute="trailing" secondItem="bfg-eQ-HmP" secondAttribute="trailing" id="qeK-m1-EU5"/>
+                            <constraint firstItem="i1y-Xx-EjD" firstAttribute="top" secondItem="KMN-wo-6T8" secondAttribute="top" id="qmU-AR-xLa"/>
+                            <constraint firstItem="bfg-eQ-HmP" firstAttribute="top" secondItem="deM-nV-8fR" secondAttribute="bottom" constant="15" id="zTO-VO-7uF"/>
+                            <constraint firstItem="bfg-eQ-HmP" firstAttribute="leading" secondItem="KMN-wo-6T8" secondAttribute="leading" id="zgU-8F-evT"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="TTa-R2-n3L"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3JX-ir-PLx" userLabel="Divider">
+                        <rect key="frame" x="0.0" y="199.5" width="397" height="1"/>
+                        <color key="backgroundColor" red="0.80214887857437134" green="0.80212485790252686" blue="0.80213844776153564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Yvc-r6-xD6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3JX-ir-PLx" secondAttribute="trailing" id="GOJ-ik-qD3"/>
+                <constraint firstItem="3JX-ir-PLx" firstAttribute="leading" secondItem="ehr-I2-37K" secondAttribute="leading" id="aFm-i0-Xqr"/>
+                <constraint firstItem="KMN-wo-6T8" firstAttribute="top" secondItem="ehr-I2-37K" secondAttribute="top" constant="20" id="iii-ii-qww" customClass="EHIRestorableConstraint"/>
+                <constraint firstItem="KMN-wo-6T8" firstAttribute="leading" secondItem="ehr-I2-37K" secondAttribute="leading" constant="20" id="pyY-vY-KXr"/>
+                <constraint firstItem="3JX-ir-PLx" firstAttribute="top" secondItem="KMN-wo-6T8" secondAttribute="bottom" constant="20" id="qbj-vB-Lhy"/>
+                <constraint firstAttribute="trailing" secondItem="KMN-wo-6T8" secondAttribute="trailing" constant="20" id="yjV-57-xVE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Pl7-vw-DLg"/>
+            <size key="customSize" width="397" height="217"/>
+            <connections>
+                <outlet property="categoryButton" destination="bLK-pe-6oM" id="c0W-ed-21D"/>
+                <outlet property="categoryInputField" destination="rnZ-fw-n0P" id="Y14-5m-PVT"/>
+                <outlet property="confirmationContainer" destination="igg-ow-TtC" id="S9T-GX-ExN"/>
+                <outlet property="confirmationLabel" destination="gbn-vo-ZCY" id="qS6-7I-0yt"/>
+                <outlet property="containerTopSpacing" destination="iii-ii-qww" id="62t-k9-HdO"/>
+                <outlet property="contentContainer" destination="KMN-wo-6T8" id="KPL-HP-F8K"/>
+                <outlet property="controlContainer" destination="deM-nV-8fR" id="sQe-0y-3Qr"/>
+                <outlet property="deleteButton" destination="bnz-Ff-DgI" id="xUy-zK-5dj"/>
+                <outlet property="deleteButtonWidth" destination="QcU-He-Wuu" id="M9Z-nR-ZQ6"/>
+                <outlet property="divider" destination="3JX-ir-PLx" id="gg3-7r-Dbl"/>
+                <outlet property="inputField" destination="Z1R-jI-QsR" id="N16-bg-DrI"/>
+                <outlet property="textField" destination="Z1R-jI-QsR" id="lKT-rb-zno"/>
+                <outlet property="textFieldToDeleteSpacing" destination="doM-99-5nH" id="8aN-A6-arC"/>
+                <outlet property="titleHeightConstraint" destination="o9p-6k-Qb2" id="cOz-F8-KA4"/>
+                <outlet property="titleLabel" destination="rKZ-Vl-kYQ" id="lDS-Wi-xXv"/>
+                <outlet property="toggleButton" destination="rXh-Pc-8ox" id="Z0V-tT-x19"/>
+                <outlet property="toggleContainer" destination="bfg-eQ-HmP" id="dUV-7x-5LV"/>
+                <outlet property="toggleLabel" destination="JJt-Rz-zcm" id="LCZ-IJ-yw9"/>
+            </connections>
+            <point key="canvasLocation" x="297.5" y="376.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="downarrow_smgreen" width="13" height="8"/>
+        <image name="icon_delete_01" width="19" height="19"/>
+    </resources>
+</document>

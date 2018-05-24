@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EHIPlacardCell" id="qsE-PX-1Lb" customClass="EHIPlacardCell">
+            <rect key="frame" x="0.0" y="0.0" width="483" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="483" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="CUSTOMIZE YOUR RENTAL" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRp-iU-TyW">
+                        <rect key="frame" x="113" y="16" width="257.5" height="24"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="20"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2o-xb-2Gk" userLabel="Info Button" customClass="EHIButton">
+                        <rect key="frame" x="380.5" y="17" width="20" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="gyi-ed-MJ8" customClass="EHIRestorableConstraint"/>
+                        </constraints>
+                        <state key="normal" image="icon_info"/>
+                        <connections>
+                            <action selector="didTapInfo:" destination="qsE-PX-1Lb" eventType="touchUpInside" id="MQD-fD-DIB"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="x2o-xb-2Gk" firstAttribute="leading" secondItem="eRp-iU-TyW" secondAttribute="trailing" constant="10" id="2vW-29-hG2"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eRp-iU-TyW" secondAttribute="trailing" constant="50" id="DbL-Hf-tPf"/>
+                <constraint firstItem="eRp-iU-TyW" firstAttribute="centerX" secondItem="qsE-PX-1Lb" secondAttribute="centerX" id="HdM-ZN-Hsj"/>
+                <constraint firstItem="x2o-xb-2Gk" firstAttribute="centerY" secondItem="eRp-iU-TyW" secondAttribute="centerY" id="ndL-xJ-so2"/>
+                <constraint firstItem="eRp-iU-TyW" firstAttribute="centerY" secondItem="qsE-PX-1Lb" secondAttribute="centerY" id="ob8-RU-6BZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="tBu-x6-2aV"/>
+            <size key="customSize" width="483" height="55"/>
+            <connections>
+                <outlet property="infoIconWidthConstraint" destination="gyi-ed-MJ8" id="Rrp-Yn-P5y"/>
+                <outlet property="titleLabel" destination="eRp-iU-TyW" id="FCz-HO-3aX"/>
+            </connections>
+            <point key="canvasLocation" x="379.5" y="238.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_info" width="20" height="20"/>
+    </resources>
+</document>

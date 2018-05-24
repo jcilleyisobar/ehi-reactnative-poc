@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="u2O-1G-199" customClass="EHIAboutPointsHeaderCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="165"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="165"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_medal" translatesAutoresizingMaskIntoConstraints="NO" id="11j-gp-U3y">
+                        <rect key="frame" x="155" y="30" width="65" height="65"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="65" id="EiB-Lo-Eib"/>
+                            <constraint firstAttribute="width" constant="65" id="zRG-Sq-oQR"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Points" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sw1-X2-rXp">
+                        <rect key="frame" x="165.5" y="132" width="45.5" height="19"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1500" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzl-KM-z3o">
+                        <rect key="frame" x="150" y="100" width="76" height="40"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="34"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="sw1-X2-rXp" firstAttribute="centerX" secondItem="u2O-1G-199" secondAttribute="centerX" id="Ex2-rv-HK0"/>
+                <constraint firstItem="lzl-KM-z3o" firstAttribute="top" secondItem="11j-gp-U3y" secondAttribute="bottom" constant="5" id="Yw6-Km-bod"/>
+                <constraint firstItem="11j-gp-U3y" firstAttribute="top" secondItem="u2O-1G-199" secondAttribute="top" constant="30" id="hHs-3N-ZFw"/>
+                <constraint firstItem="lzl-KM-z3o" firstAttribute="centerX" secondItem="u2O-1G-199" secondAttribute="centerX" id="lxj-0F-zLu"/>
+                <constraint firstItem="11j-gp-U3y" firstAttribute="centerX" secondItem="u2O-1G-199" secondAttribute="centerX" id="qup-1h-E3W"/>
+                <constraint firstItem="sw1-X2-rXp" firstAttribute="top" secondItem="lzl-KM-z3o" secondAttribute="bottom" constant="-8" id="z7i-hA-QxE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="daK-wP-Xea"/>
+            <size key="customSize" width="375" height="161"/>
+            <connections>
+                <outlet property="imageView" destination="11j-gp-U3y" id="CQr-I0-qd5"/>
+                <outlet property="pointsNumberLabel" destination="lzl-KM-z3o" id="58C-Qx-xW5"/>
+                <outlet property="pointsTextLabel" destination="sw1-X2-rXp" id="K8e-p1-XfY"/>
+            </connections>
+            <point key="canvasLocation" x="-508.5" y="-2.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_medal" width="64" height="64"/>
+    </resources>
+</document>

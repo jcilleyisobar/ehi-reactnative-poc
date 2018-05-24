@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kx0-1b-eLh">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding View Controller-->
+        <scene sceneID="da4-qM-vVJ">
+            <objects>
+                <viewController storyboardIdentifier="EHIOnboardingViewController" id="kx0-1b-eLh" customClass="EHIOnboardingViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zzL-9p-efH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feT-HP-Q9e">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="delegate" destination="kx0-1b-eLh" id="4t8-To-OL4"/>
+                                </connections>
+                            </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car-animation-1" translatesAutoresizingMaskIntoConstraints="NO" id="9mb-8B-Csc" userLabel="Car">
+                                <rect key="frame" x="67" y="0.0" width="241" height="300"/>
+                            </imageView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="V59-HS-xX6">
+                                <rect key="frame" x="160" y="229" width="55" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="tvx-Gl-mdI"/>
+                                </constraints>
+                                <color key="pageIndicatorTintColor" red="0.93323183060000003" green="0.93339174989999996" blue="0.93322181699999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </pageControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TLl-zC-Vy1" userLabel="Loading Indicator" customClass="EHIActivityIndicator">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="9mb-8B-Csc" firstAttribute="centerX" secondItem="6qY-dF-k7w" secondAttribute="centerX" id="3FU-ak-wPQ"/>
+                            <constraint firstItem="feT-HP-Q9e" firstAttribute="height" secondItem="zzL-9p-efH" secondAttribute="height" id="BFz-Ws-1YR"/>
+                            <constraint firstItem="feT-HP-Q9e" firstAttribute="top" secondItem="6qY-dF-k7w" secondAttribute="top" id="Gmk-CF-GJG"/>
+                            <constraint firstItem="feT-HP-Q9e" firstAttribute="leading" secondItem="6qY-dF-k7w" secondAttribute="leading" id="LYd-l8-Lnc"/>
+                            <constraint firstItem="6qY-dF-k7w" firstAttribute="trailing" secondItem="TLl-zC-Vy1" secondAttribute="trailing" id="SH9-O7-Hpv"/>
+                            <constraint firstItem="TLl-zC-Vy1" firstAttribute="top" secondItem="6qY-dF-k7w" secondAttribute="top" id="b25-uh-bFF"/>
+                            <constraint firstItem="V59-HS-xX6" firstAttribute="centerX" secondItem="6qY-dF-k7w" secondAttribute="centerX" id="ekS-12-Gej"/>
+                            <constraint firstItem="6qY-dF-k7w" firstAttribute="trailing" secondItem="feT-HP-Q9e" secondAttribute="trailing" id="hwO-Hg-vjY"/>
+                            <constraint firstItem="V59-HS-xX6" firstAttribute="centerY" secondItem="zzL-9p-efH" secondAttribute="centerY" multiplier="1.65" id="i3z-ss-tld"/>
+                            <constraint firstItem="TLl-zC-Vy1" firstAttribute="leading" secondItem="6qY-dF-k7w" secondAttribute="leading" id="qjC-tK-FO7"/>
+                            <constraint firstItem="9mb-8B-Csc" firstAttribute="bottom" secondItem="feT-HP-Q9e" secondAttribute="bottom" id="urq-op-Rkh"/>
+                            <constraint firstItem="9mb-8B-Csc" firstAttribute="top" secondItem="feT-HP-Q9e" secondAttribute="top" id="xKE-mO-esI"/>
+                            <constraint firstItem="TLl-zC-Vy1" firstAttribute="bottom" secondItem="6qY-dF-k7w" secondAttribute="bottom" id="yor-XF-iR4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6qY-dF-k7w"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="300"/>
+                    <connections>
+                        <outlet property="carCenterConstraint" destination="3FU-ak-wPQ" id="rN1-CB-i2Z"/>
+                        <outlet property="carImageView" destination="9mb-8B-Csc" id="WfE-Wx-dwu"/>
+                        <outlet property="loadingIndicator" destination="TLl-zC-Vy1" id="BM8-1C-Un7"/>
+                        <outlet property="pageControl" destination="V59-HS-xX6" id="rlC-c3-yOs"/>
+                        <outlet property="scrollView" destination="feT-HP-Q9e" id="BAf-cm-pSR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dM8-RL-36Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.7246376811594204" y="-202.98913043478262"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="car-animation-1" width="241" height="203"/>
+    </resources>
+</document>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+        <array key="SourceSansPro-LightItalic.otf">
+            <string>SourceSansPro-LightItalic</string>
+        </array>
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="c22-O7-iKe" customClass="EHIConfirmationCancelModalView">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="260"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JcH-3I-MIQ" userLabel="Container">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="260"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Subtitle " lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="600" translatesAutoresizingMaskIntoConstraints="NO" id="NHB-7e-IVd" userLabel="Subtitle" customClass="EHIClickableLabel">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="19"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="16"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ihm-Sa-2pc" userLabel="Currency Container">
+                            <rect key="frame" x="0.0" y="19" width="600" height="110"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="All charges and refunds are processed in your destination’s currency (USD). Conversations are shown here for your convenience." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHB-jh-CR2">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="110"/>
+                                    <fontDescription key="fontDescription" name="SourceSansPro-LightItalic" family="DIN Next LT Pro" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="eHB-jh-CR2" secondAttribute="bottom" id="Glr-8b-UFi"/>
+                                <constraint firstItem="eHB-jh-CR2" firstAttribute="top" secondItem="Ihm-Sa-2pc" secondAttribute="top" id="He5-mx-gG3"/>
+                                <constraint firstAttribute="trailing" secondItem="eHB-jh-CR2" secondAttribute="trailing" id="SKJ-sF-Aiu"/>
+                                <constraint firstItem="eHB-jh-CR2" firstAttribute="leading" secondItem="Ihm-Sa-2pc" secondAttribute="leading" id="f4n-gA-ndV"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Original Amount" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XG7-Zu-Ebt" customClass="EHILabel">
+                            <rect key="frame" x="0.0" y="139" width="538.5" height="21"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8by-ZU-m57" customClass="EHILabel">
+                            <rect key="frame" x="554.5" y="139" width="45.5" height="21"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="DIN Next LT Pro" pointSize="18"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Cancellation Fee" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fh6-5G-zHd" customClass="EHILabel">
+                            <rect key="frame" x="0.0" y="170" width="538.5" height="21"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="$0.00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dpd-i0-Vm3" customClass="EHILabel">
+                            <rect key="frame" x="554.5" y="170" width="45.5" height="21"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="DIN Next LT Pro" pointSize="18"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZV7-rs-DLH" userLabel="Divider">
+                            <rect key="frame" x="0.0" y="201" width="600" height="1"/>
+                            <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="JWO-NY-tQh"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Refunded Amount" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9f-eT-MUA" customClass="EHILabel">
+                            <rect key="frame" x="0.0" y="212" width="539" height="21"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BnM-E3-Qe5" customClass="EHILabel">
+                            <rect key="frame" x="555" y="212.5" width="45" height="21"/>
+                            <attributedString key="attributedText">
+                                <fragment content="$0.00">
+                                    <attributes>
+                                        <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <font key="NSFont" metaFont="system" size="17"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nru-Ea-uoO" userLabel="Refund Container">
+                            <rect key="frame" x="0.0" y="233" width="600" height="27"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="refunded as: USD $120.22" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBW-kc-kgO">
+                                    <rect key="frame" x="0.0" y="8" width="600" height="19"/>
+                                    <fontDescription key="fontDescription" name="SourceSansPro-LightItalic" family="DIN Next LT Pro" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="CBW-kc-kgO" firstAttribute="leading" secondItem="nru-Ea-uoO" secondAttribute="leading" id="PeD-NG-bn2"/>
+                                <constraint firstAttribute="bottom" secondItem="CBW-kc-kgO" secondAttribute="bottom" id="R1A-Fu-Ng7"/>
+                                <constraint firstItem="CBW-kc-kgO" firstAttribute="top" secondItem="nru-Ea-uoO" secondAttribute="top" constant="8" id="Sqv-XT-tMn"/>
+                                <constraint firstAttribute="trailing" secondItem="CBW-kc-kgO" secondAttribute="trailing" id="qsO-Nr-vM7"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="BnM-E3-Qe5" firstAttribute="centerY" secondItem="P9f-eT-MUA" secondAttribute="centerY" id="0dO-1z-GpX"/>
+                        <constraint firstItem="Dpd-i0-Vm3" firstAttribute="centerY" secondItem="Fh6-5G-zHd" secondAttribute="centerY" id="0hi-st-PcN"/>
+                        <constraint firstAttribute="trailing" secondItem="nru-Ea-uoO" secondAttribute="trailing" id="9hf-5w-4uY"/>
+                        <constraint firstAttribute="trailing" secondItem="BnM-E3-Qe5" secondAttribute="trailing" id="9sb-Ea-sEa"/>
+                        <constraint firstItem="ZV7-rs-DLH" firstAttribute="top" secondItem="Dpd-i0-Vm3" secondAttribute="bottom" constant="10" id="C4L-8k-iU6"/>
+                        <constraint firstAttribute="trailing" secondItem="ZV7-rs-DLH" secondAttribute="trailing" id="Hah-f8-SOs"/>
+                        <constraint firstItem="8by-ZU-m57" firstAttribute="centerY" secondItem="XG7-Zu-Ebt" secondAttribute="centerY" id="JSJ-hc-2Qg"/>
+                        <constraint firstItem="Dpd-i0-Vm3" firstAttribute="leading" secondItem="Fh6-5G-zHd" secondAttribute="trailing" constant="16" id="JfV-U5-jFw"/>
+                        <constraint firstItem="Ihm-Sa-2pc" firstAttribute="top" secondItem="NHB-7e-IVd" secondAttribute="bottom" id="Mqp-Jv-HI3"/>
+                        <constraint firstAttribute="trailing" secondItem="8by-ZU-m57" secondAttribute="trailing" id="R5i-Nt-IIU"/>
+                        <constraint firstAttribute="trailing" secondItem="Dpd-i0-Vm3" secondAttribute="trailing" id="TYW-7E-UNe"/>
+                        <constraint firstItem="ZV7-rs-DLH" firstAttribute="leading" secondItem="JcH-3I-MIQ" secondAttribute="leading" id="UaL-0J-QaB"/>
+                        <constraint firstItem="Fh6-5G-zHd" firstAttribute="leading" secondItem="JcH-3I-MIQ" secondAttribute="leading" id="Uom-o2-gQ8"/>
+                        <constraint firstItem="nru-Ea-uoO" firstAttribute="leading" secondItem="JcH-3I-MIQ" secondAttribute="leading" id="Vc4-co-NIo"/>
+                        <constraint firstAttribute="trailing" secondItem="NHB-7e-IVd" secondAttribute="trailing" id="WuJ-no-ZTc"/>
+                        <constraint firstAttribute="trailing" secondItem="Ihm-Sa-2pc" secondAttribute="trailing" id="XIU-Uy-ITB"/>
+                        <constraint firstItem="XG7-Zu-Ebt" firstAttribute="leading" secondItem="JcH-3I-MIQ" secondAttribute="leading" id="YFp-5l-R32"/>
+                        <constraint firstItem="8by-ZU-m57" firstAttribute="leading" secondItem="XG7-Zu-Ebt" secondAttribute="trailing" constant="16" id="bfc-7T-GLS"/>
+                        <constraint firstItem="P9f-eT-MUA" firstAttribute="leading" secondItem="JcH-3I-MIQ" secondAttribute="leading" id="fxe-AK-adh"/>
+                        <constraint firstAttribute="bottom" secondItem="nru-Ea-uoO" secondAttribute="bottom" id="ggP-Va-H1e"/>
+                        <constraint firstItem="NHB-7e-IVd" firstAttribute="leading" secondItem="JcH-3I-MIQ" secondAttribute="leading" id="gqv-xY-6Ps"/>
+                        <constraint firstItem="8by-ZU-m57" firstAttribute="top" secondItem="Ihm-Sa-2pc" secondAttribute="bottom" constant="10" id="m6E-p1-LZG"/>
+                        <constraint firstItem="Fh6-5G-zHd" firstAttribute="top" secondItem="XG7-Zu-Ebt" secondAttribute="bottom" constant="10" id="nB5-S5-1KM"/>
+                        <constraint firstItem="NHB-7e-IVd" firstAttribute="top" secondItem="JcH-3I-MIQ" secondAttribute="top" id="nih-GP-Sm3"/>
+                        <constraint firstItem="P9f-eT-MUA" firstAttribute="top" secondItem="ZV7-rs-DLH" secondAttribute="bottom" constant="10" id="nz9-HZ-m7K"/>
+                        <constraint firstItem="nru-Ea-uoO" firstAttribute="top" secondItem="P9f-eT-MUA" secondAttribute="bottom" id="q9v-RV-2q3"/>
+                        <constraint firstItem="BnM-E3-Qe5" firstAttribute="leading" secondItem="P9f-eT-MUA" secondAttribute="trailing" constant="16" id="twh-IG-wgZ"/>
+                        <constraint firstItem="Ihm-Sa-2pc" firstAttribute="leading" secondItem="JcH-3I-MIQ" secondAttribute="leading" id="yyr-3E-rBc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="JcH-3I-MIQ" secondAttribute="trailing" id="NyZ-7h-p6C"/>
+                <constraint firstAttribute="bottom" secondItem="JcH-3I-MIQ" secondAttribute="bottom" id="UTY-Pq-CAE"/>
+                <constraint firstAttribute="bottom" secondItem="JcH-3I-MIQ" secondAttribute="bottom" id="dGk-Kx-s1d"/>
+                <constraint firstItem="JcH-3I-MIQ" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="tSJ-iI-HFC"/>
+                <constraint firstItem="JcH-3I-MIQ" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="w9w-FU-I40"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="OzC-yw-QWb"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="UTY-Pq-CAE"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="cancellationFee" destination="Dpd-i0-Vm3" id="52H-sq-P5c"/>
+                <outlet property="cancellationFeeTitle" destination="Fh6-5G-zHd" id="fO8-dZ-Lav"/>
+                <outlet property="convertedRefundLabel" destination="CBW-kc-kgO" id="oXo-ZF-jhF"/>
+                <outlet property="convertedRefundView" destination="CBW-kc-kgO" id="SYC-nJ-IEo"/>
+                <outlet property="currencyConversionLabel" destination="eHB-jh-CR2" id="JnJ-33-eCe"/>
+                <outlet property="currencyConversionView" destination="Ihm-Sa-2pc" id="I7Y-S6-hBc"/>
+                <outlet property="originalAmount" destination="8by-ZU-m57" id="gYF-d0-B7Z"/>
+                <outlet property="originalAmountTitle" destination="XG7-Zu-Ebt" id="Akp-ac-a8d"/>
+                <outlet property="refundedAmount" destination="BnM-E3-Qe5" id="H8B-7S-W4R"/>
+                <outlet property="refundedAmountTitle" destination="P9f-eT-MUA" id="hVo-Pm-Pbh"/>
+                <outlet property="subtitleLabel" destination="NHB-7e-IVd" id="MNe-pl-SSX"/>
+            </connections>
+            <point key="canvasLocation" x="-14" y="177"/>
+        </view>
+    </objects>
+</document>

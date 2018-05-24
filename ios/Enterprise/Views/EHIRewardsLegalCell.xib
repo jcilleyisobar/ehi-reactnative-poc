@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EHIRewardsLegalCell" id="FGV-TJ-xFN" customClass="EHIRewardsLegalCell">
+            <rect key="frame" x="0.0" y="0.0" width="434" height="283"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="434" height="283"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XGh-Hs-75V">
+                        <rect key="frame" x="0.0" y="0.0" width="434" height="12"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="auK-Ui-ejp">
+                                <rect key="frame" x="0.0" y="0.0" width="434" height="1"/>
+                                <color key="backgroundColor" red="0.70196078429999997" green="0.70196078429999997" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="jGd-NA-zmv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83921568627450982" green="0.83921568627450982" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="auK-Ui-ejp" firstAttribute="leading" secondItem="XGh-Hs-75V" secondAttribute="leading" id="GSQ-ew-tsL"/>
+                            <constraint firstItem="auK-Ui-ejp" firstAttribute="top" secondItem="XGh-Hs-75V" secondAttribute="top" id="IvK-bF-bHA"/>
+                            <constraint firstAttribute="height" constant="12" id="PMR-Ue-iiL"/>
+                            <constraint firstAttribute="trailing" secondItem="auK-Ui-ejp" secondAttribute="trailing" id="t2B-bc-WjB"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tno-0p-hWj" userLabel="Container View">
+                        <rect key="frame" x="0.0" y="12" width="434" height="150.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="394" translatesAutoresizingMaskIntoConstraints="NO" id="H8v-20-5bL" customClass="EHIClickableLabel">
+                                <rect key="frame" x="20" y="20" width="394" height="130.5"/>
+                                <string key="text">* Points are earned on qualifying dollars at participating locations, but points are not earned on fuel, taxes, surcharges and non qualifying rentals. Membership tier is based on qualifying rentals earned within a program year. See #{terms} for more information.
+</string>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="H8v-20-5bL" secondAttribute="trailing" constant="20" id="Evz-tn-kPE"/>
+                            <constraint firstAttribute="bottom" secondItem="H8v-20-5bL" secondAttribute="bottom" id="K9M-kY-6eW"/>
+                            <constraint firstItem="H8v-20-5bL" firstAttribute="top" secondItem="Tno-0p-hWj" secondAttribute="top" constant="20" id="aZE-wv-Cxv"/>
+                            <constraint firstItem="H8v-20-5bL" firstAttribute="leading" secondItem="Tno-0p-hWj" secondAttribute="leading" constant="20" id="yaF-Pm-y3y"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Tno-0p-hWj" secondAttribute="trailing" id="8Bn-JG-i48"/>
+                <constraint firstItem="XGh-Hs-75V" firstAttribute="top" secondItem="FGV-TJ-xFN" secondAttribute="top" id="Gwo-Wv-sPp"/>
+                <constraint firstItem="Tno-0p-hWj" firstAttribute="top" secondItem="XGh-Hs-75V" secondAttribute="bottom" id="KBv-dZ-ofA"/>
+                <constraint firstItem="Tno-0p-hWj" firstAttribute="leading" secondItem="FGV-TJ-xFN" secondAttribute="leading" id="hYN-dW-MGY"/>
+                <constraint firstItem="XGh-Hs-75V" firstAttribute="leading" secondItem="FGV-TJ-xFN" secondAttribute="leading" id="nzE-gm-wFt"/>
+                <constraint firstAttribute="trailing" secondItem="XGh-Hs-75V" secondAttribute="trailing" id="qyY-3W-CPQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="b9z-RF-dT3"/>
+            <size key="customSize" width="434" height="283"/>
+            <connections>
+                <outlet property="containerView" destination="Tno-0p-hWj" id="RhY-wj-e1c"/>
+                <outlet property="legalLabel" destination="H8v-20-5bL" id="r4R-ci-NxU"/>
+            </connections>
+            <point key="canvasLocation" x="-17" y="-192.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

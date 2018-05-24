@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Black.ttf">
+            <string>SourceSansPro-Black</string>
+        </array>
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EHIMenuPromotionCell" id="uC8-FP-J1V" customClass="EHIMenuPromotionCell">
+            <rect key="frame" x="0.0" y="0.0" width="306" height="114"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="306" height="114"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="weekend_special_menu" translatesAutoresizingMaskIntoConstraints="NO" id="m1n-Rt-PWs">
+                        <rect key="frame" x="0.0" y="0.0" width="306" height="115"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="326" id="VdZ-YT-CRj"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="VdZ-YT-CRj"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlJ-3v-MBs" customClass="EHIButton">
+                        <rect key="frame" x="85.5" y="56" width="135" height="43"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="DIN Next LT Pro" pointSize="16"/>
+                        <state key="normal" title="GET STARTED" image="arrow_white_thin">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="didTapLearnMore:" destination="uC8-FP-J1V" eventType="touchUpInside" id="E2U-Z2-dQj"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="$9.99 WEEKEND SPECIAL" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dG7-yR-7DJ" customClass="EHILabel">
+                        <rect key="frame" x="20" y="30" width="266" height="26"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Black" family="DIN Next LT Pro" pointSize="22"/>
+                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="m1n-Rt-PWs" firstAttribute="leading" secondItem="uC8-FP-J1V" secondAttribute="leading" id="6j3-43-vVV"/>
+                <constraint firstItem="nlJ-3v-MBs" firstAttribute="top" secondItem="dG7-yR-7DJ" secondAttribute="bottom" id="7t0-tM-fop"/>
+                <constraint firstItem="dG7-yR-7DJ" firstAttribute="leading" secondItem="uC8-FP-J1V" secondAttribute="leading" constant="20" id="BEA-EV-DIz"/>
+                <constraint firstItem="dG7-yR-7DJ" firstAttribute="top" secondItem="uC8-FP-J1V" secondAttribute="top" constant="30" id="Fgw-xT-xrB"/>
+                <constraint firstItem="m1n-Rt-PWs" firstAttribute="top" secondItem="uC8-FP-J1V" secondAttribute="top" id="Ig0-tE-xgu"/>
+                <constraint firstAttribute="trailing" secondItem="dG7-yR-7DJ" secondAttribute="trailing" constant="20" id="WZI-XT-fuc"/>
+                <constraint firstAttribute="bottom" secondItem="nlJ-3v-MBs" secondAttribute="bottom" constant="15" id="ZLW-eN-plY"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nlJ-3v-MBs" secondAttribute="trailing" constant="20" id="ciT-DD-pxa"/>
+                <constraint firstItem="nlJ-3v-MBs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="uC8-FP-J1V" secondAttribute="leading" constant="20" id="lX1-jH-tXX"/>
+                <constraint firstAttribute="trailing" secondItem="m1n-Rt-PWs" secondAttribute="trailing" id="r4j-Lx-qU7"/>
+                <constraint firstItem="nlJ-3v-MBs" firstAttribute="centerX" secondItem="m1n-Rt-PWs" secondAttribute="centerX" id="v7C-yR-h9u"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="7gg-5h-t7I"/>
+            <size key="customSize" width="306" height="114"/>
+            <connections>
+                <outlet property="learnMoreButton" destination="nlJ-3v-MBs" id="Nn9-zk-Ucp"/>
+                <outlet property="promotionImageView" destination="m1n-Rt-PWs" id="JE0-Lx-lCe"/>
+                <outlet property="promotionLabel" destination="dG7-yR-7DJ" id="R0z-8o-XYK"/>
+            </connections>
+            <point key="canvasLocation" x="354" y="202"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_white_thin" width="30" height="30"/>
+        <image name="weekend_special_menu" width="414" height="115"/>
+    </resources>
+</document>

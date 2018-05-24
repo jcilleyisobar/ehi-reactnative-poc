@@ -1,0 +1,408 @@
+{
+    "brand": "ENTERPRISE",
+    "id": "1000003",
+    "location_type": "city",
+    "business_types": [
+                       "INR"
+                       ],
+    "name": "Chestnut Rental",
+    "description": "Enterprise Leasing Company Of Stl, Llc",
+    "gps": {
+        "latitude": 38.653275,
+        "longitude": -90.350875
+    },
+    "drive_distance": {
+        "unit": "MI",
+        "distance": 0.0
+    },
+    "hours": [
+              {
+              "type": "STANDARD",
+              "days": [
+                       {
+                       "day": "MON",
+                       "date": "2015-03-02",
+                       "open_all_day": false,
+                       "closed_all_day": false,
+                       "open_close_times": [
+                                            {
+                                            "open_time": "730",
+                                            "close_time": "1800"
+                                            }
+                                            ]
+                       },
+                       {
+                       "day": "TUE",
+                       "date": "2015-03-03",
+                       "open_all_day": false,
+                       "closed_all_day": false,
+                       "open_close_times": [
+                                            {
+                                            "open_time": "730",
+                                            "close_time": "1800"
+                                            }
+                                            ]
+                       },
+                       {
+                       "day": "WED",
+                       "date": "2015-03-04",
+                       "open_all_day": false,
+                       "closed_all_day": false,
+                       "open_close_times": [
+                                            {
+                                            "open_time": "730",
+                                            "close_time": "1800"
+                                            }
+                                            ]
+                       },
+                       {
+                       "day": "THU",
+                       "date": "2015-03-05",
+                       "open_all_day": false,
+                       "closed_all_day": false,
+                       "open_close_times": [
+                                            {
+                                            "open_time": "730",
+                                            "close_time": "1800"
+                                            }
+                                            ]
+                       },
+                       {
+                       "day": "FRI",
+                       "date": "2015-03-06",
+                       "open_all_day": false,
+                       "closed_all_day": false,
+                       "open_close_times": [
+                                            {
+                                            "open_time": "730",
+                                            "close_time": "1800"
+                                            }
+                                            ]
+                       },
+                       {
+                       "day": "SAT",
+                       "date": "2015-03-07",
+                       "open_all_day": false,
+                       "closed_all_day": false,
+                       "open_close_times": [
+                                            {
+                                            "open_time": "800",
+                                            "close_time": "1500"
+                                            }
+                                            ]
+                       },
+                       {
+                       "day": "SUN",
+                       "date": "2015-03-08",
+                       "open_all_day": false,
+                       "closed_all_day": false,
+                       "open_close_times": [
+                                            {
+                                            "open_time": "1100",
+                                            "close_time": "1500"
+                                            }
+                                            ]
+                       }
+                       ]
+              },
+              {
+              "type": "STANDARD",
+              "days": [
+                       {
+                       "day": "MON",
+                       "date": "2015-03-09",
+                       "open_all_day": false,
+                       "closed_all_day": false,
+                       "open_close_times": [
+                                            {
+                                            "open_time": "730",
+                                            "close_time": "1800"
+                                            }
+                                            ]
+                       },
+                       {
+                       "day": "TUE",
+                       "date": "2015-03-10",
+                       "open_all_day": false,
+                       "closed_all_day": false,
+                       "open_close_times": [
+                                            {
+                                            "open_time": "730",
+                                            "close_time": "1800"
+                                            }
+                                            ]
+                       },
+                       {
+                       "day": "WED",
+                       "date": "2015-03-11",
+                       "open_all_day": false,
+                       "closed_all_day": false,
+                       "open_close_times": [
+                                            {
+                                            "open_time": "730",
+                                            "close_time": "1800"
+                                            }
+                                            ]
+                       },
+                       {
+                       "day": "THU",
+                       "date": "2015-03-12",
+                       "open_all_day": false,
+                       "closed_all_day": false,
+                       "open_close_times": [
+                                            {
+                                            "open_time": "730",
+                                            "close_time": "1800"
+                                            }
+                                            ]
+                       },
+                       {
+                       "day": "FRI",
+                       "date": "2015-03-13",
+                       "open_all_day": false,
+                       "closed_all_day": false,
+                       "open_close_times": [
+                                            {
+                                            "open_time": "730",
+                                            "close_time": "1800"
+                                            }
+                                            ]
+                       },
+                       {
+                       "day": "SAT",
+                       "date": "2015-03-14",
+                       "open_all_day": false,
+                       "closed_all_day": false,
+                       "open_close_times": [
+                                            {
+                                            "open_time": "800",
+                                            "close_time": "1500"
+                                            }
+                                            ]
+                       },
+                       {
+                       "day": "SUN",
+                       "date": "2015-03-15",
+                       "open_all_day": false,
+                       "closed_all_day": false,
+                       "open_close_times": [
+                                            {
+                                            "open_time": "1100",
+                                            "close_time": "1500"
+                                            }
+                                            ]
+                       }
+                       ]
+              },
+              {
+              "type": "STANDARD",
+              "days": [
+                       {
+                       "day": "MON",
+                       "date": "2015-03-16",
+                       "open_all_day": false,
+                       "closed_all_day": false,
+                       "open_close_times": [
+                                            {
+                                            "open_time": "730",
+                                            "close_time": "1800"
+                                            }
+                                            ]
+                       },
+                       {
+                       "day": "TUE",
+                       "date": "2015-03-17",
+                       "open_all_day": false,
+                       "closed_all_day": false,
+                       "open_close_times": [
+                                            {
+                                            "open_time": "730",
+                                            "close_time": "1800"
+                                            }
+                                            ]
+                       },
+                       {
+                       "day": "WED",
+                       "date": "2015-03-18",
+                       "open_all_day": false,
+                       "closed_all_day": false,
+                       "open_close_times": [
+                                            {
+                                            "open_time": "730",
+                                            "close_time": "1800"
+                                            }
+                                            ]
+                       },
+                       {
+                       "day": "THU",
+                       "date": "2015-03-19",
+                       "open_all_day": false,
+                       "closed_all_day": false,
+                       "open_close_times": [
+                                            {
+                                            "open_time": "730",
+                                            "close_time": "1800"
+                                            }
+                                            ]
+                       },
+                       {
+                       "day": "FRI",
+                       "date": "2015-03-20",
+                       "open_all_day": false,
+                       "closed_all_day": false,
+                       "open_close_times": [
+                                            {
+                                            "open_time": "730",
+                                            "close_time": "1800"
+                                            }
+                                            ]
+                       },
+                       {
+                       "day": "SAT",
+                       "date": "2015-03-21",
+                       "open_all_day": false,
+                       "closed_all_day": false,
+                       "open_close_times": [
+                                            {
+                                            "open_time": "800",
+                                            "close_time": "1500"
+                                            }
+                                            ]
+                       },
+                       {
+                       "day": "SUN",
+                       "date": "2015-03-22",
+                       "open_all_day": false,
+                       "closed_all_day": false,
+                       "open_close_times": [
+                                            {
+                                            "open_time": "1100",
+                                            "close_time": "1500"
+                                            }
+                                            ]
+                       }
+                       ]
+              }
+              ],
+    "time_zone_id": "America/Chicago",
+    "offered_car_classes": [],
+    "filter_tags": [
+                    "OPEN NOW"
+                    ],
+    "booking_urls": [
+                     {
+                     "type": "Enterprise",
+                     "url": "http://www.enterprise.com/ "
+                     }
+                     ],
+    "after_hours_pickup": false,
+    "after_hours_return": false,
+    "we_will_pick_you_up": true,
+    "policies": [
+                 {
+                 "code": "ADDR",
+                 "description": "ADDITIONAL DRIVER",
+                 "mandatory": false,
+                 "policy_description": "$7.00 ADDR DRIVER",
+                 "policy_text": "THERE WILL BE AN ADDITIONAL CHARGE OF $7.00 PER DAY FOR EACH ADDITIONAL AUTHORIZED DRIVER OTHER THAN A SPOUSE OR DOMESTIC PARTNER."
+                 },
+                 {
+                 "code": "AGE",
+                 "description": "AGE REQUIREMENTS",
+                 "mandatory": false,
+                 "policy_description": "21-24 E-FCAR ONLY",
+                 "policy_text": "ALL DRIVERS MUST BE 21 YEARS OF AGE OR OLDER. RENTERS 21 THROUGH 24 YEARS OF AGE MAY ONLY RENT ECONOMY THROUGH FULLSIZE CARS. "
+                 },
+                 {
+                 "code": "CDW",
+                 "description": "DAMAGE WAIVER",
+                 "mandatory": false,
+                 "policy_description": "19.99 USD and up",
+                 "policy_text": "DAMAGE WAIVER (DW) FOR THIS BRANCH STARTS AT 19.99 USD AND UP PER DAY.-DW IS OFFERED AT THE TIME OF RENTAL FOR AN ADDITIONAL DAILY CHARGE. IF THE RENTER ACCEPTS DW, ENTERPRISE WAIVES OR REDUCES THE RENTERS RESPONSIBILITY FOR LOSS OF, OR DAMAGE TO, THE RENTAL VEHICLE (INCLUDING BUT NOT LIMITED TO TOWING, STORAGE,LOSS OF USE, ADMINISTRATIVE FEES AND/OR DIMINISHMENT OF VALUE) SUBJECT TO THE TERMS AND CONDITIONS OF THE RENTAL AGREEMENT AND APPLICABLE LAWS. DW IS NOT INSURANCE. THE PURCHASE OF DW IS OPTIONAL AND NOT REQUIRED TO RENT A CAR. THE PROTECTION PROVIDED BY DW MAY DUPLICATE THE RENTERS EXISTING COVERAGE. ENTERPRISE IS NOT QUALIFIED TO EVALUATE THE ADEQUACY OF THE RENTERS EXISTING COVERAGE; THEREFORE THE RENTER SHOULD EXAMINE HIS OR HER CREDIT CARD PROTECTIONS, AUTOMOBILE INSURANCE POLICIES OR OTHER SOURCES OF COVERAGE THAT MAY DUPLICATE THE PROTECTION PROVIDED BY DW."
+                 },
+                 {
+                 "code": "EXCL",
+                 "description": "EXCLUSIVE POLICY",
+                 "mandatory": false,
+                 "policy_description": "US EXCLUSIVE",
+                 "policy_text": "PRICING DOES NOT INCLUDE DAMAGE WAIVER. ADDITIONAL SURCHARGES, LOCAL TAXES, ETC. MAY APPLY."
+                 },
+                 {
+                 "code": "INS",
+                 "description": "INSURANCE POLICY",
+                 "mandatory": false,
+                 "policy_description": "CORP INS POLICY",
+                 "policy_text": "THE RENTER'S LIABILITY INSURANCE WILL APPLY EXCEPT WHERE ENTERPRISE IS REQUIRED BY LAW TO PROVIDE LIABILITY PROTECTION."
+                 },
+                 {
+                 "code": "MISC",
+                 "description": "MISCELLANEOUS POLICY",
+                 "mandatory": true,
+                 "policy_description": "PORT OF TAMPA PICKUP",
+                 "policy_text": "THIS BRANCH IS LOCATED 15 MINUTES FROM THE PORT OF TAMPA. PLEASE CALL THE OFFICE DIRECTLY AT 813-254-4221 FOR PICK UP SERVICE FROM THE PORT."
+                 },
+                 {
+                 "code": "PAI",
+                 "description": "PERS ACCIDENT INSUR",
+                 "mandatory": false,
+                 "policy_description": "GROUP 42 - PAI",
+                 "policy_text": "PERSONAL ACCIDENT INSURANCE (PAI) FOR THIS BRANCH IS RANGES BETWEEN $3.00 AND $4.00 PER DAY. - PERSONAL ACCIDENT INSURANCE (PAI) IS OFFERED AT THE TIME OF RENTAL FOR AN ADDITIONAL DAILY CHARGE. IF ACCEPTED, PAI PROVIDES THE RENTER AND PASSENGERS WITH ACCIDENT MEDICAL EXPENSE, ACCIDENTAL DEATH AND AMBULANCE EXPENSE BENEFITS. BENEFITS ARE PAYABLE IN ADDITION TO ANY OTHER INSURANCE COVERAGE THE RENTER OR PASSENGERS MAY HAVE. THIS IS A SUMMARY ONLY. PAI IS SUBJECT TO THE PROVISIONS, LIMITATIONS AND EXCLUSIONS OF THE PAI POLICY UNDERWRITTEN BY EMPIRE FIRE AND MARINE INSURANCE COMPANY. THE PURCHASE OF PAI IS OPTIONAL AND NOT REQUIRED TO RENT A CAR. THE COVERAGE PROVIDED BY PAI MAY DUPLICATE THE RENTER'S EXISTING COVERAGE. ENTERPRISE IS NOT QUALIFIED TO EVALUATE THE ADEQUACY OF THE RENTER'S EXISTING COVERAGE; THEREFORE THE RENTER SHOULD EXAMINE HIS OR HER PERSONAL INSURANCE OR OTHER SOURCES OF COVERAGE THAT MAY DUPLICATE THE COVERAGE PROVIDED BY PAI."
+                 },
+                 {
+                 "code": "PYMT",
+                 "description": "FORMS OF PAYMENT",
+                 "mandatory": false,
+                 "policy_description": "CRED,DEBIT, CASH",
+                 "policy_text": "MAJOR CREDIT CARDS, DEBIT CARDS, OR CASH MAY BE USED FOR DEPOSIT AT THIS LOCATION. IF USING A DEBIT CARD PLEASE SEE DEBIT CARD POLICY FOR FURTHER QUALIFICATION NFORMATION. AT THE TIME OF PAYMENT, CREDIT CARDS, DEBIT CARDS, CASH, AND TRAVELERS CHECKS ARE ACCEPTED."
+                 },
+                 {
+                 "code": "RAP",
+                 "description": "ROADSIDE PROTECTION",
+                 "mandatory": false,
+                 "policy_description": "3.99 US AND CA",
+                 "policy_text": "ENTERPRISE OFFERS ROADSIDE ASSISTANCE PROTECTION AT SELECT LOCATIONS. RAP ALLOWS ENTERPRISE CUSTOMERS TO WAIVE FINANCIAL RESPONSIBILITY FOR CHARGEABLE ROADSIDE INCIDENTS SUCH AS LOST KEYS, LOCKOUTS, AND FUEL OUTAGES. RAP CAN BE ADDED FOR 3.99 US OR CANADIAN DOLLARS PER DAY. . ROAD SIDE ASSISTANCE PROTECTION OFFERS THESE SERVICES: FLAT TIRE, JUMP START, LOCKOUT SERVICE, FUEL DELIVERY, AND KEY REPLACEMENT. NOTE: IN NY, CA, NV, AND KS THE COST OF THE KEY WILL NOT BE COVERED, ONLY THE SERVICE TO DELIVER THE KEY OR PERFORM THE LOCKOUT SERVICE. . ROADSIDE ASSISTANCE PROTECTION IS VOID AND OF NO EFFECT IF, AT THE TIME OF THE INCIDENT NECESSITATING ROADSIDE ASSISTANCE, YOU OR ANY AUTHORIZED DRIVER WERE IN VIOLATION OF THE RENTAL AGREEMENT, INCLUDING, WITHOUT LIMITATION, THE PROHIBITED USES AND VIOLATIONS SET FORTH THEREIN. IN SUCH CASES, ROADSIDE ASSISTANCE WILL BE AVAILABLE, BUT STANDARD CHARGES MAY APPLY."
+                 },
+                 {
+                 "code": "RQMT",
+                 "description": "RENTER REQUIREMENTS",
+                 "mandatory": false,
+                 "policy_description": "US CORPORATE POLICY",
+                 "policy_text": "ALL DRIVERS MUST--HAVE A VALID UNITED STATES, OR INTERNATIONALS DRIVER'S PERMIT.  ALL INTERNATIONAL DRIVER'S MUST ALSO  HAVE THEIR OWN COUNTRY SPECIFIC DRIVER'S LICENSE. NOTE: AT PHOENIX AND NEVADA AREA AIRPORTS AND RENTAL LOCATIONS, RENTERS WITH DRIVER'S LICENSES ISSUED OUTSIDE OF THE UNITED STATES OR ITS TERRITORIES MUST PRODUCE A VALID PASSPORT. US TERRITORI ES INCLUDE AMERCAN SAMOA, GUAM, THE U.S. VIRGIN ISLANDS PUERTO RICO, THE FEDERATED STATES OF MICRONESIA, AND THE MIDWAY ISLANDS.-------------HAVE A MAJOR CREDIT CARD IN THEIR NAME AT THE TIME OF RENTAL. (EXCEPTIONS MAY APPLY BY LOCATION PLEASE SEE INDIVIDUAL LOCATION PAYMENT POLICY.) NOTE: ENTERPRISE LOCATIONS REQUIRE A RENTAL DEPOSIT IN ADDITION TO THE COST OF THE RENTAL AMOUNT.---------------MEET THE RENTAL LOCATION'S MINIMUM AGE REQUIREMENTS. ----------------------------- NOTE: MOST ENTERPRISE LOCATIONS REQUIRE A RENTAL DEPOSIT IN ADDITION TO THE COST OF THE RENTAL  AMOUNT."
+                 },
+                 {
+                 "code": "SLP",
+                 "description": "SUPP LIABILITY PRO",
+                 "mandatory": false,
+                 "policy_description": "$17.95 PER DAY",
+                 "policy_text": "SUPPLEMENTAL LIABILITY PROTECTION (SLP) FOR THIS BRANCH IS $17.95 PER DAY - SUPPLEMENTAL LIABILITY PROTECTION (SLP) IS OFFERED AT THE TIME OF RENTAL FOR AN ADDITIONAL DAILY CHARGE. IF ACCEPTED, SLP PROVIDES THE RENTER AND AUTHORIZED DRIVERS WITH UP TO $1,000,000 COMBINED SINGLE LIMIT FOR THIRD PARTY LIABILITY CLAIMS. IF THE RENTER ACCEPTS SLP, ENTERPRISE PROVIDES THIRD PARTY LIABILITY PROTECTION UP TO THE APPLICABLE MINIMUM FINANCIAL RESPONSIBILITY LIMIT AND EMPIRE FIRE AND MARINE INSURANCE COMPANY PROVIDES EXCESS THIRD PARTY LIABILITY INSURANCE COVERAGE FROM THE APPLICABLE MINIMUM FINANCIAL RESPONSIBILITY LIMIT TO $1,000,000.  THIS IS A SUMMARY ONLY. SLP IS SUBJECT TO THE TERMS, CONDITIONS, PROVISIONS, LIMITATIONS AND EXCLUSIONS IN THE SUPPLEMENTAL RENTAL LIABILITY INSURANCE EXCESS POLICY UNDERWRITTEN BY EMPIRE FIRE AND MARINE INSURANCE COMPANY. THE PURCHASE OF SLP IS OPTIONAL AND NOT REQUIRED TO RENT A CAR. THE COVERAGE PROVIDED BY SLP MAY DUPLICATE THE RENTER'S EXISTING COVERAGE.  ENTERPRISE IS NOT QUALIFIED TO EVALUATE THE ADEQUACY OF THE RENTER'S EXISTING COVERAGE; THEREFORE THE RENTER SHOULD EXAMINE HIS OR HER PERSONAL INSURANCE POLICIES OR OTHER SOURCES OF COVERAGE THAT MAY DUPLICATE THE COVERAGE PROVIDED BY SLP."
+                 },
+                 {
+                 "code": "TCC",
+                 "description": "TOLL PASS CONV CHRG",
+                 "mandatory": false,
+                 "policy_description": "TOLL PASS 07/01/13",
+                 "policy_text": "IF YOU OR ANY DRIVER OPERATE THE RENTAL VEHICLE IN SELECT AREAS, AND GENERATE AN UNPAID TOLL YOU WILL BE CHARGED OUR TOLL PASS CONVENIENCE CHARGE OF $2.95 FOR EACH DAY YOU USE A TOLL ROAD OR BRIDGE PLUS THE COST OF ALL UNPAID TOLLS. THE MAXIMUM TOLLPASS CONVENIENCE CHARGE FOR THE RENTAL PERIOD IS $14.75, PLUS THE COST OF ALL UNPAID TOLLS. FOR INFORMATION CALL (877) 860-1283. IF YOU OR ANY DRIVER OPERATE THE RENTAL VEHICLE IN AREAS NOT SERVED BY TOLLPASS AND GENERATE ANY UNPAID TOLL(S) THEN YOU WILL BE CHARGED FOR ALL UNPAID TOLLS AND AN ADMINISTRATIVE CHARGE OF UP TO $25.00 PER RENTAL. FOR ADDITIONAL INFORMATION REGARDING  PARTICIPATING TOLLPASS LOCATIONS, PLEASE VISIT THE TOLLPASS PROGRAM OVERVIEW ON OUR WEBSITE. THIS CAN BE FOUND BY SEARCHING TOLLPASS IN THE HELP/SUPPORT SECTION. . TOLL ROAD USAGE PROGRAM:WWW.HTALLC.COM/NATIONALCAR. . ESPANOL: WWW.ES.HTALLC.COM/NATIONALCAR. . FRANCAIS: WWW.FR.HTALLC.COM/NATIONALCAR. . PORTUGUES: WWW.PT.HTALLC.COM/NATIONALCAR."
+                 }
+                 ],
+    "wayfindings": [],
+    "address": {
+        "street_addresses": [
+                             "8844 Ladue Road"
+                             ],
+        "city": "Ladue",
+        "country_subdivision_code": "MO",
+        "country_code": "US",
+        "postal": "63124"
+    },
+    "phones": [
+               {
+               "phone_number": "3148898579",
+               "phone_type": "FAX"
+               },
+               {
+               "phone_number": "3148636886",
+               "phone_type": "OFFICE"
+               }
+               ],
+    "currency_code": "USD"
+}

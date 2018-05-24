@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EHIDashboardLoyaltyHeader" id="03B-lg-C1L" customClass="EHIDashboardLoyaltyHeader">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LDk-2p-Iph" userLabel="Unauthenticated">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="550" horizontalCompressionResistancePriority="850" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeG-x7-f0B" userLabel="Sign In Button" customClass="EHIButton">
+                                <rect key="frame" x="526" y="16.5" width="59" height="31"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="DIN Next LT Pro" pointSize="16"/>
+                                <state key="normal" title="SIGN IN">
+                                    <color key="titleColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapSignInButton:" destination="03B-lg-C1L" eventType="touchUpInside" id="TTx-W2-az5"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_eplus" translatesAutoresizingMaskIntoConstraints="NO" id="P71-q4-iKj" userLabel="Eplus Logo">
+                                <rect key="frame" x="15" y="11" width="30" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="ojy-c6-dEM"/>
+                                    <constraint firstAttribute="width" constant="30" id="ovx-0H-hQA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign in to earn points &amp; make booking even faster." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="306" translatesAutoresizingMaskIntoConstraints="NO" id="Qbu-HC-vUX" customClass="EHILabel">
+                                <rect key="frame" x="60" y="15.5" width="451" height="33"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="LeG-x7-f0B" secondAttribute="trailing" constant="15" id="58B-6n-5TY"/>
+                            <constraint firstAttribute="centerY" secondItem="LeG-x7-f0B" secondAttribute="centerY" id="6Ji-yg-3oH"/>
+                            <constraint firstItem="LeG-x7-f0B" firstAttribute="leading" secondItem="Qbu-HC-vUX" secondAttribute="trailing" constant="15" id="82h-gg-FcH"/>
+                            <constraint firstAttribute="centerY" secondItem="P71-q4-iKj" secondAttribute="centerY" id="9pF-tk-Pm1"/>
+                            <constraint firstItem="P71-q4-iKj" firstAttribute="centerY" secondItem="Qbu-HC-vUX" secondAttribute="centerY" id="izr-qK-DyP"/>
+                            <constraint firstItem="Qbu-HC-vUX" firstAttribute="leading" secondItem="P71-q4-iKj" secondAttribute="trailing" constant="15" id="lq7-0E-Gui"/>
+                            <constraint firstItem="P71-q4-iKj" firstAttribute="leading" secondItem="LDk-2p-Iph" secondAttribute="leading" constant="15" id="u1x-cX-DJg"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Sfs-PU-xIS" userLabel="Authenticated">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="64"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXw-TS-ANV" userLabel="Content View">
+                                <rect key="frame" x="15" y="11.5" width="570" height="41"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME," lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="67" translatesAutoresizingMaskIntoConstraints="NO" id="hX9-xu-eAv" customClass="EHILabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="69.5" height="16"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="13"/>
+                                        <color key="textColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jessica Sunner" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="118" translatesAutoresizingMaskIntoConstraints="NO" id="iaN-dB-uvi" customClass="EHILabel">
+                                        <rect key="frame" x="0.0" y="20" width="123" height="21"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qAH-eA-aIF" userLabel="Profile Hit Area" customClass="UIControl">
+                                        <rect key="frame" x="-5" y="15" width="133" height="31"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="didTapProfileName:" destination="03B-lg-C1L" eventType="touchUpInside" id="TGn-iy-0fv"/>
+                                        </connections>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POINTS BALANCE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="110" translatesAutoresizingMaskIntoConstraints="NO" id="34C-ch-ZT2" customClass="EHILabel">
+                                        <rect key="frame" x="459" y="0.0" width="110.5" height="16"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="13"/>
+                                        <color key="textColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12,000 as of 05/10/15" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="132" translatesAutoresizingMaskIntoConstraints="NO" id="FHd-tM-ur8" customClass="EHILabel">
+                                        <rect key="frame" x="413" y="22" width="157" height="19"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7CE-ka-dhi" userLabel="Points Hit Area" customClass="UIControl">
+                                        <rect key="frame" x="408" y="17" width="167" height="29"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="didTapPoints:" destination="03B-lg-C1L" eventType="touchUpInside" id="Q2C-nX-mFl"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="qAH-eA-aIF" firstAttribute="leading" secondItem="iaN-dB-uvi" secondAttribute="leading" constant="-5" id="1my-5Q-vml"/>
+                                    <constraint firstItem="iaN-dB-uvi" firstAttribute="top" secondItem="hX9-xu-eAv" secondAttribute="bottom" constant="4" id="5ti-kJ-iWK"/>
+                                    <constraint firstItem="7CE-ka-dhi" firstAttribute="bottom" secondItem="FHd-tM-ur8" secondAttribute="bottom" constant="5" id="9sd-JM-KXr"/>
+                                    <constraint firstAttribute="bottom" secondItem="iaN-dB-uvi" secondAttribute="bottom" id="DSF-gk-zgr"/>
+                                    <constraint firstItem="34C-ch-ZT2" firstAttribute="top" secondItem="lXw-TS-ANV" secondAttribute="top" id="GIw-PX-bKk"/>
+                                    <constraint firstAttribute="trailing" secondItem="34C-ch-ZT2" secondAttribute="trailing" id="Itu-ex-9zk"/>
+                                    <constraint firstItem="hX9-xu-eAv" firstAttribute="top" secondItem="lXw-TS-ANV" secondAttribute="top" id="LAX-nt-vZL"/>
+                                    <constraint firstItem="7CE-ka-dhi" firstAttribute="trailing" secondItem="FHd-tM-ur8" secondAttribute="trailing" constant="5" id="OAb-rP-7su"/>
+                                    <constraint firstItem="qAH-eA-aIF" firstAttribute="bottom" secondItem="iaN-dB-uvi" secondAttribute="bottom" constant="5" id="PGe-1C-5u8"/>
+                                    <constraint firstAttribute="bottom" secondItem="FHd-tM-ur8" secondAttribute="bottom" id="RrJ-cu-O7h"/>
+                                    <constraint firstItem="qAH-eA-aIF" firstAttribute="trailing" secondItem="iaN-dB-uvi" secondAttribute="trailing" constant="5" id="Tg6-fW-nFZ"/>
+                                    <constraint firstItem="7CE-ka-dhi" firstAttribute="leading" secondItem="FHd-tM-ur8" secondAttribute="leading" constant="-5" id="Uwk-En-xha"/>
+                                    <constraint firstAttribute="trailing" secondItem="FHd-tM-ur8" secondAttribute="trailing" id="WT1-3d-tD0"/>
+                                    <constraint firstItem="hX9-xu-eAv" firstAttribute="leading" secondItem="lXw-TS-ANV" secondAttribute="leading" id="Ybn-d5-eyg"/>
+                                    <constraint firstItem="qAH-eA-aIF" firstAttribute="top" secondItem="iaN-dB-uvi" secondAttribute="top" constant="-5" id="cYs-l5-1YE"/>
+                                    <constraint firstItem="iaN-dB-uvi" firstAttribute="leading" secondItem="lXw-TS-ANV" secondAttribute="leading" id="oeH-52-kL8"/>
+                                    <constraint firstItem="7CE-ka-dhi" firstAttribute="top" secondItem="FHd-tM-ur8" secondAttribute="top" constant="-5" id="va3-ue-VzN"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5eI-GM-u3b" userLabel="Divider">
+                                <rect key="frame" x="0.0" y="63" width="600" height="1"/>
+                                <color key="backgroundColor" red="0.88999998569488525" green="0.88999998569488525" blue="0.88999998569488525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="pug-EX-kBa"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="5eI-GM-u3b" secondAttribute="trailing" id="8yh-yi-h8z"/>
+                            <constraint firstAttribute="trailing" secondItem="lXw-TS-ANV" secondAttribute="trailing" constant="15" id="MLp-wO-ln0"/>
+                            <constraint firstItem="5eI-GM-u3b" firstAttribute="leading" secondItem="Sfs-PU-xIS" secondAttribute="leading" id="Qfa-dd-Z2G"/>
+                            <constraint firstAttribute="centerY" secondItem="lXw-TS-ANV" secondAttribute="centerY" id="UZ4-Sg-UNB"/>
+                            <constraint firstItem="lXw-TS-ANV" firstAttribute="leading" secondItem="Sfs-PU-xIS" secondAttribute="leading" constant="15" id="dp9-0r-wFy"/>
+                            <constraint firstAttribute="bottom" secondItem="5eI-GM-u3b" secondAttribute="bottom" id="kNb-is-DZO"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Sfs-PU-xIS" firstAttribute="leading" secondItem="03B-lg-C1L" secondAttribute="leading" id="5yD-9D-Jpn"/>
+                <constraint firstItem="Sfs-PU-xIS" firstAttribute="top" secondItem="03B-lg-C1L" secondAttribute="top" id="DD0-Ca-eKl"/>
+                <constraint firstAttribute="trailing" secondItem="LDk-2p-Iph" secondAttribute="trailing" id="UGY-iP-OJ1"/>
+                <constraint firstItem="LDk-2p-Iph" firstAttribute="top" secondItem="03B-lg-C1L" secondAttribute="top" id="VNr-xs-2cj"/>
+                <constraint firstItem="LDk-2p-Iph" firstAttribute="leading" secondItem="03B-lg-C1L" secondAttribute="leading" id="Wys-Sh-sNd"/>
+                <constraint firstAttribute="bottom" secondItem="LDk-2p-Iph" secondAttribute="bottom" id="fY0-5u-9df"/>
+                <constraint firstAttribute="trailing" secondItem="Sfs-PU-xIS" secondAttribute="trailing" id="vwh-7B-grv"/>
+                <constraint firstAttribute="bottom" secondItem="Sfs-PU-xIS" secondAttribute="bottom" id="xbq-7d-vJ1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="R3Z-r2-VuK"/>
+            <size key="customSize" width="600" height="64"/>
+            <connections>
+                <outlet property="authenticatedContainer" destination="Sfs-PU-xIS" id="v3F-mI-XLu"/>
+                <outlet property="greetingSubtitleLabel" destination="iaN-dB-uvi" id="5FK-lN-bTF"/>
+                <outlet property="greetingTitleLabel" destination="hX9-xu-eAv" id="Z4E-9s-Sy4"/>
+                <outlet property="pointsSubtitleLabel" destination="FHd-tM-ur8" id="rId-nj-Z06"/>
+                <outlet property="pointsTitleLabel" destination="34C-ch-ZT2" id="aIB-kg-vaZ"/>
+                <outlet property="signInButton" destination="LeG-x7-f0B" id="vnw-8A-1Sb"/>
+                <outlet property="titleLabel" destination="Qbu-HC-vUX" id="6wg-jz-wZX"/>
+                <outlet property="unauthenticatedContainer" destination="LDk-2p-Iph" id="e9w-tR-7Oe"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="logo_eplus" width="40" height="56"/>
+    </resources>
+</document>

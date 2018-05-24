@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EHIPromotionDetailsPolicyCell" id="dea-jP-rUI" customClass="EHIPromotionDetailsPolicyCell">
+            <rect key="frame" x="0.0" y="0.0" width="236" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="236" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EWf-FX-X1H" customClass="EHIButton">
+                        <rect key="frame" x="20" y="8.5" width="180" height="33"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="18"/>
+                        <state key="normal" title="TERMS &amp; CONDITIONS">
+                            <color key="titleColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="didTapPolicies:" destination="dea-jP-rUI" eventType="touchUpInside" id="taE-C1-Ets"/>
+                        </connections>
+                    </button>
+                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="arrow_smgreen" translatesAutoresizingMaskIntoConstraints="NO" id="3j5-rw-gPw">
+                        <rect key="frame" x="208" y="17.5" width="8" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="8" id="Vea-WT-DP9"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="EWf-FX-X1H" firstAttribute="centerY" secondItem="dea-jP-rUI" secondAttribute="centerY" id="7U6-JK-KeG"/>
+                <constraint firstItem="3j5-rw-gPw" firstAttribute="leading" secondItem="EWf-FX-X1H" secondAttribute="trailing" constant="8" id="Dhu-Pa-6Tr"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="3j5-rw-gPw" secondAttribute="trailing" constant="20" id="EeD-WE-teb"/>
+                <constraint firstItem="EWf-FX-X1H" firstAttribute="leading" secondItem="dea-jP-rUI" secondAttribute="leading" constant="20" id="eSf-JP-JZL"/>
+                <constraint firstItem="3j5-rw-gPw" firstAttribute="top" secondItem="EWf-FX-X1H" secondAttribute="top" constant="9" id="fI0-A5-Zmx"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="S2x-v4-poP"/>
+            <size key="customSize" width="236" height="50"/>
+            <connections>
+                <outlet property="policiesButton" destination="EWf-FX-X1H" id="E3n-NB-HwZ"/>
+            </connections>
+            <point key="canvasLocation" x="395" y="352"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_smgreen" width="8" height="13"/>
+    </resources>
+</document>

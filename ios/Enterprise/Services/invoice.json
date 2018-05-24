@@ -1,0 +1,280 @@
+{
+  "messages": [],
+  "past_trip_detail": {
+    "confirmation_number": "273242064",
+    "ticket_number": "2SX2CP",
+    "customer_first_name": "ASHLEY",
+    "customer_last_name": "DANGELO",
+    "customer_address": {
+      "street_addresses": [
+        "2792 HOYTS LANE"
+      ],
+      "city": "ST. LOUIS",
+      "country_subdivision_code": "SRY",
+      "country_code": "GB",
+      "postal": "63105"
+    },
+    "membership_number": "8KR7YTY",
+    "pickup_time": "2016-06-29T15:59:00.000-04:00",
+    "return_time": "2016-06-29T16:07:00.000-04:00",
+    "pickup_location": {
+      "id": "1012762",
+      "location_type": "airport",
+      "address": {
+        "street_addresses": [
+          "Eastlands Car Hire Facility",
+          "Dublin Airport"
+        ],
+        "city": "Dublin",
+        "country_subdivision_code": "L",
+        "country_code": "IE",
+        "postal": "DN"
+      },
+      "phones": [
+        {
+          "phone_number": "018445848",
+          "priority": 0
+        }
+      ],
+      "wayfindings": [
+        {
+          "path": "https://enterprise-xqa2-aem.enterprise.com/content/dam/enterprise/icons/ico-wf-rental-location.png",
+          "text": "If arriving in terminals 1 or 2, please proceed to the enterprise rent a car desk in the arrivals hall."
+        }
+      ],
+      "policies": [],
+      "business_types": [],
+      "indicators": [],
+      "name": " Dublin Airport",
+      "gps": {
+        "latitude": 53.422003,
+        "longitude": -6.224815
+      },
+      "hours": [],
+      "time_zone_id": "Europe/London",
+      "offered_car_classes": [],
+      "filter_tags": [],
+      "booking_urls": [],
+      "exotics_location": false,
+      "car_sales_location": false,
+      "show_truck_lob_url": false,
+      "after_hours_pickup": false,
+      "after_hours_return": false,
+      "airline_details": [],
+      "multi_terminal": false,
+      "do_not_index": false,
+      "rental_checklists": []
+    },
+    "return_location": {
+      "id": "1012762",
+      "location_type": "airport",
+      "address": {
+        "street_addresses": [
+          "Eastlands Car Hire Facility",
+          "Dublin Airport"
+        ],
+        "city": "Dublin",
+        "country_subdivision_code": "L",
+        "country_code": "IE",
+        "postal": "DN"
+      },
+      "phones": [
+        {
+          "phone_number": "018445848",
+          "priority": 0
+        }
+      ],
+      "wayfindings": [
+        {
+          "path": "https://enterprise-xqa2-aem.enterprise.com/content/dam/enterprise/icons/ico-wf-rental-location.png",
+          "text": "If arriving in terminals 1 or 2, please proceed to the enterprise rent a car desk in the arrivals hall."
+        }
+      ],
+      "policies": [],
+      "business_types": [],
+      "indicators": [],
+      "name": " Dublin Airport",
+      "description": "Enterprise Rent-a-car Ireland",
+      "gps": {
+        "latitude": 53.422003,
+        "longitude": -6.224815
+      },
+      "hours": [],
+      "time_zone_id": "Europe/London",
+      "offered_car_classes": [],
+      "filter_tags": [],
+      "booking_urls": [],
+      "exotics_location": false,
+      "car_sales_location": false,
+      "show_truck_lob_url": false,
+      "after_hours_pickup": false,
+      "after_hours_return": false,
+      "airline_details": [],
+      "multi_terminal": false,
+      "do_not_index": false,
+      "rental_checklists": []
+    },
+    "vehicle_details": {
+      "images": [],
+      "make": "VOLK",
+      "model": "UP",
+      "color": "REFLEX SILVER METALLIC",
+      "license_plate": "152D778",
+      "license_state": "L",
+      "license_country": "IE",
+      "starting_odometer": "13966",
+      "ending_odometer": "14500",
+      "distance_traveled": "534",
+      "vehicle_class_driven": "A",
+      "vehicle_class_charged": "A",
+      "vin_number": "WVWZZZAAZFD100196",
+      "distance_unit": "KM",
+      "year": 0
+    },
+    "price_summary": {
+      "total_charged": "1281.39",
+      "amount_due": "0.00",
+      "estimated_total_taxes_and_fees_view": {
+        "code": "EUR",
+        "symbol": "EUR",
+        "amount": "599.34"
+      },
+      "estimated_total_taxes_and_fees_payment": {
+        "code": "EUR",
+        "symbol": "EUR",
+        "amount": "599.34"
+      },
+      "currency_code": "EUR",
+      "currency_symbol": "EUR",
+      "payment_line_items": [
+        {
+          "category": "RNT",
+          "total_amount": "949.99",
+          "total_amount_view": {
+            "code": "EUR",
+            "symbol": "EUR",
+            "amount": "949.99"
+          },
+          "rate_type": "DAY",
+          "rate_amount": "949.99",
+          "rate_amount_view": {
+            "code": "EUR",
+            "symbol": "EUR",
+            "amount": "949.99"
+          },
+          "rate_quantity": 1,
+          "description": "TIME & DISTANCE",
+          "code": "00001"
+        },
+        {
+          "category": "INS",
+          "total_amount": "13.22",
+          "total_amount_view": {
+            "code": "EUR",
+            "symbol": "EUR",
+            "amount": "13.22"
+          },
+          "rate_type": "DAY",
+          "rate_amount": "13.22",
+          "rate_amount_view": {
+            "code": "EUR",
+            "symbol": "EUR",
+            "amount": "13.22"
+          },
+          "rate_quantity": 1,
+          "description": "DW",
+          "code": "00006"
+        },
+        {
+          "category": "INS",
+          "total_amount": "14.10",
+          "total_amount_view": {
+            "code": "EUR",
+            "symbol": "EUR",
+            "amount": "14.10"
+          },
+          "rate_type": "DAY",
+          "rate_amount": "14.10",
+          "rate_amount_view": {
+            "code": "EUR",
+            "symbol": "EUR",
+            "amount": "14.10"
+          },
+          "rate_quantity": 1,
+          "description": "EXCESS",
+          "code": "00207"
+        },
+        {
+          "category": "INS",
+          "total_amount": "4.41",
+          "total_amount_view": {
+            "code": "EUR",
+            "symbol": "EUR",
+            "amount": "4.41"
+          },
+          "rate_type": "DAY",
+          "rate_amount": "4.41",
+          "rate_amount_view": {
+            "code": "EUR",
+            "symbol": "EUR",
+            "amount": "4.41"
+          },
+          "rate_quantity": 1,
+          "description": "ROADSIDE ASSISTANCE PROTECTION",
+          "code": "05033"
+        },
+        {
+          "category": "SUR",
+          "total_amount": "147.26",
+          "total_amount_view": {
+            "code": "EUR",
+            "symbol": "EUR",
+            "amount": "147.26"
+          },
+          "rate_type": "PERCENT",
+          "rate_amount": "15.00",
+          "rate_amount_view": {
+            "code": "EUR",
+            "symbol": "EUR",
+            "amount": "15.00"
+          },
+          "rate_quantity": 0,
+          "description": "PREMIUM LOCATION FEE",
+          "code": "ARPT"
+        },
+        {
+          "category": "SUR",
+          "total_amount": "152.41",
+          "total_amount_view": {
+            "code": "EUR",
+            "symbol": "EUR",
+            "amount": "152.41"
+          },
+          "rate_type": "PERCENT",
+          "rate_amount": "13.50",
+          "rate_amount_view": {
+            "code": "EUR",
+            "symbol": "EUR",
+            "amount": "13.50"
+          },
+          "rate_quantity": 0,
+          "description": "VALUE ADDED TAX",
+          "code": "SVAT"
+        }
+      ]
+    },
+    "rental_agreement_number": "5007500287",
+    "requires_watermark": true,
+    "contract_name": "Ubsuzczwxu - Bcswbb A",
+    "vat_number": "IE8269602C",
+    "payment_details": [
+      {
+        "payment_type": "CC",
+        "payment_method": "VISA",
+        "amount_charged": "1281.39",
+        "currency_code": "EUR",
+        "masked_credit_card_number": "************0026"
+      }
+    ]
+  }
+}

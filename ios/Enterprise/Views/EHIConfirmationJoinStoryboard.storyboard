@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Confirmation Join View Controller-->
+        <scene sceneID="Ruc-UO-kXA">
+            <objects>
+                <viewController storyboardIdentifier="EHIConfirmationJoinViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="A28-It-py1" customClass="EHIConfirmationJoinViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7cY-Ig-oOZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RT9-95-PDb" userLabel="Container">
+                                <rect key="frame" x="25" y="45" width="325" height="597"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fnC-yt-b64" userLabel="Details Container">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="551"/>
+                                        <subviews>
+                                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I5T-wx-hwG">
+                                                <rect key="frame" x="0.0" y="0.0" width="325" height="551"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aZv-nH-DCf" userLabel="Container">
+                                                        <rect key="frame" x="0.0" y="0.0" width="325" height="355.5"/>
+                                                        <subviews>
+                                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" image="icon_clock-1" translatesAutoresizingMaskIntoConstraints="NO" id="P2C-Oa-Jcd">
+                                                                <rect key="frame" x="146" y="0.0" width="34" height="39"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="34" id="IeB-4Z-tp4"/>
+                                                                    <constraint firstAttribute="height" constant="39" id="a37-7j-Y4g"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Want to save time looking for your rentals in the future and start earning rewards?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2h-37-yVC" customClass="EHILabel">
+                                                                <rect key="frame" x="10" y="59" width="305" height="83"/>
+                                                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="22"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IxV-6R-TfA" customClass="EHIButton">
+                                                                <rect key="frame" x="0.0" y="162" width="325" height="46"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="46" id="N98-Z0-HtP"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="18"/>
+                                                                <state key="normal" title="JOIN ENTERPRISE PLUS">
+                                                                    <color key="titleColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="didTapJoin:" destination="A28-It-py1" eventType="touchUpInside" id="gPH-DL-Nfi"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ni-SM-h6w" customClass="EHIButton">
+                                                                <rect key="frame" x="0.0" y="223" width="325" height="46"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="46" id="P3a-ep-0nX"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="15"/>
+                                                                <state key="normal" title="NO THANKS, JUST ADD IT TO MY CALENDAR">
+                                                                    <color key="titleColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                </state>
+                                                                <connections>
+                                                                    <action selector="didTapAddToCalendar:" destination="A28-It-py1" eventType="touchUpInside" id="uL9-LW-jXy"/>
+                                                                </connections>
+                                                            </button>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cvh-Aa-Yoa">
+                                                                <rect key="frame" x="0.0" y="289" width="325" height="1"/>
+                                                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="1" id="EEM-a2-ecv"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Once you exist this screen, this info won't be there unless you enter all this info again." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PzO-ui-xdO" customClass="EHILabel">
+                                                                <rect key="frame" x="0.0" y="310" width="325" height="45.5"/>
+                                                                <fontDescription key="fontDescription" name="SourceSansPro-Light" family="Source Sans Pro" pointSize="18"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="cvh-Aa-Yoa" secondAttribute="trailing" id="00X-u5-W9F"/>
+                                                            <constraint firstItem="PzO-ui-xdO" firstAttribute="top" secondItem="cvh-Aa-Yoa" secondAttribute="bottom" constant="20" id="0oN-lo-OGw"/>
+                                                            <constraint firstItem="c2h-37-yVC" firstAttribute="leading" secondItem="aZv-nH-DCf" secondAttribute="leading" constant="10" id="8f1-Xm-hbm"/>
+                                                            <constraint firstAttribute="trailing" secondItem="c2h-37-yVC" secondAttribute="trailing" constant="10" id="D2G-P7-mO5"/>
+                                                            <constraint firstItem="P2C-Oa-Jcd" firstAttribute="top" secondItem="aZv-nH-DCf" secondAttribute="top" id="H0D-98-zw3"/>
+                                                            <constraint firstAttribute="bottom" secondItem="PzO-ui-xdO" secondAttribute="bottom" id="HoB-hK-iqc"/>
+                                                            <constraint firstItem="8ni-SM-h6w" firstAttribute="top" secondItem="IxV-6R-TfA" secondAttribute="bottom" constant="15" id="OGo-FB-8e9"/>
+                                                            <constraint firstItem="8ni-SM-h6w" firstAttribute="leading" secondItem="aZv-nH-DCf" secondAttribute="leading" id="V22-wq-gK1"/>
+                                                            <constraint firstAttribute="trailing" secondItem="8ni-SM-h6w" secondAttribute="trailing" id="aoe-BE-LiS"/>
+                                                            <constraint firstItem="P2C-Oa-Jcd" firstAttribute="centerX" secondItem="aZv-nH-DCf" secondAttribute="centerX" id="bhQ-kH-4De"/>
+                                                            <constraint firstItem="IxV-6R-TfA" firstAttribute="top" secondItem="c2h-37-yVC" secondAttribute="bottom" constant="20" id="f6N-a3-WrH"/>
+                                                            <constraint firstAttribute="trailing" secondItem="PzO-ui-xdO" secondAttribute="trailing" id="ftA-GR-h8F"/>
+                                                            <constraint firstItem="c2h-37-yVC" firstAttribute="top" secondItem="P2C-Oa-Jcd" secondAttribute="bottom" constant="20" id="mFr-nW-EgP"/>
+                                                            <constraint firstItem="cvh-Aa-Yoa" firstAttribute="leading" secondItem="aZv-nH-DCf" secondAttribute="leading" id="oit-7M-Onn"/>
+                                                            <constraint firstItem="PzO-ui-xdO" firstAttribute="leading" secondItem="aZv-nH-DCf" secondAttribute="leading" id="pdu-gq-lMh"/>
+                                                            <constraint firstAttribute="trailing" secondItem="IxV-6R-TfA" secondAttribute="trailing" id="uEp-8l-6Xn"/>
+                                                            <constraint firstItem="cvh-Aa-Yoa" firstAttribute="top" secondItem="8ni-SM-h6w" secondAttribute="bottom" constant="20" id="wsJ-be-HvB"/>
+                                                            <constraint firstItem="IxV-6R-TfA" firstAttribute="leading" secondItem="aZv-nH-DCf" secondAttribute="leading" id="zcd-2S-QQw"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="aZv-nH-DCf" secondAttribute="trailing" id="9Ae-WP-9xH"/>
+                                                    <constraint firstItem="aZv-nH-DCf" firstAttribute="width" secondItem="I5T-wx-hwG" secondAttribute="width" id="AOu-hk-bp1"/>
+                                                    <constraint firstAttribute="bottom" secondItem="aZv-nH-DCf" secondAttribute="bottom" id="FcF-vx-GHE"/>
+                                                    <constraint firstItem="aZv-nH-DCf" firstAttribute="leading" secondItem="I5T-wx-hwG" secondAttribute="leading" id="WZf-Zr-GE3"/>
+                                                    <constraint firstItem="aZv-nH-DCf" firstAttribute="top" secondItem="I5T-wx-hwG" secondAttribute="top" id="qyc-Db-zO0"/>
+                                                </constraints>
+                                            </scrollView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="I5T-wx-hwG" secondAttribute="trailing" id="94N-Pm-vM8"/>
+                                            <constraint firstItem="I5T-wx-hwG" firstAttribute="top" secondItem="fnC-yt-b64" secondAttribute="top" id="Khr-aT-hBw"/>
+                                            <constraint firstAttribute="bottom" secondItem="I5T-wx-hwG" secondAttribute="bottom" id="PUG-qH-xFn"/>
+                                            <constraint firstItem="I5T-wx-hwG" firstAttribute="top" secondItem="fnC-yt-b64" secondAttribute="top" id="WRX-MY-dx5"/>
+                                            <constraint firstItem="I5T-wx-hwG" firstAttribute="leading" secondItem="fnC-yt-b64" secondAttribute="leading" id="r91-oO-8ni"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Saw-2C-OIM" userLabel="Second Button" customClass="EHIActionButton">
+                                        <rect key="frame" x="0.0" y="551" width="325" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="wpi-NB-S9g"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="18"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapClose:" destination="A28-It-py1" eventType="touchUpInside" id="trB-VJ-Xwt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Saw-2C-OIM" secondAttribute="trailing" id="3nm-5D-7yw"/>
+                                    <constraint firstItem="Saw-2C-OIM" firstAttribute="top" secondItem="fnC-yt-b64" secondAttribute="bottom" id="5R0-Z1-T77"/>
+                                    <constraint firstItem="Saw-2C-OIM" firstAttribute="leading" secondItem="RT9-95-PDb" secondAttribute="leading" id="AOb-lO-JPr"/>
+                                    <constraint firstItem="fnC-yt-b64" firstAttribute="leading" secondItem="RT9-95-PDb" secondAttribute="leading" id="HpJ-aO-Aeq"/>
+                                    <constraint firstItem="fnC-yt-b64" firstAttribute="top" secondItem="RT9-95-PDb" secondAttribute="top" id="Pp1-VN-n4W"/>
+                                    <constraint firstAttribute="bottom" secondItem="Saw-2C-OIM" secondAttribute="bottom" id="pca-B2-Wfk"/>
+                                    <constraint firstAttribute="trailing" secondItem="fnC-yt-b64" secondAttribute="trailing" id="v7k-rF-9RQ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="duO-QJ-EHN" firstAttribute="bottom" secondItem="RT9-95-PDb" secondAttribute="bottom" constant="25" id="OI4-sp-USS"/>
+                            <constraint firstItem="RT9-95-PDb" firstAttribute="leading" secondItem="duO-QJ-EHN" secondAttribute="leading" constant="25" id="dP5-IT-0PM"/>
+                            <constraint firstItem="RT9-95-PDb" firstAttribute="top" secondItem="7cY-Ig-oOZ" secondAttribute="topMargin" constant="25" id="db3-SU-aS1"/>
+                            <constraint firstItem="duO-QJ-EHN" firstAttribute="trailing" secondItem="RT9-95-PDb" secondAttribute="trailing" constant="25" id="yn5-rk-BPB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="duO-QJ-EHN"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="addToCalendarButton" destination="8ni-SM-h6w" id="uM0-nO-asT"/>
+                        <outlet property="clockIconImageView" destination="P2C-Oa-Jcd" id="cVc-pj-uve"/>
+                        <outlet property="closeButton" destination="Saw-2C-OIM" id="26r-MN-CMS"/>
+                        <outlet property="closeMessageLabel" destination="PzO-ui-xdO" id="xFo-h4-Nbb"/>
+                        <outlet property="joinButton" destination="IxV-6R-TfA" id="GVz-53-eo6"/>
+                        <outlet property="messageLabel" destination="c2h-37-yVC" id="amy-Os-efC"/>
+                        <outlet property="scrollView" destination="I5T-wx-hwG" id="KoD-FK-fiU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IYh-6I-8gT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="191"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_clock-1" width="29" height="34"/>
+    </resources>
+</document>

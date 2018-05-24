@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Time Picker View Controller-->
+        <scene sceneID="aUi-ou-gW2">
+            <objects>
+                <viewController storyboardIdentifier="EHITimePickerViewController" id="3FX-8q-Ytb" customClass="EHITimePickerViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6by-6s-nTr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cmj-gY-c3D" userLabel="Content Container">
+                                <rect key="frame" x="0.0" y="210" width="375" height="457"/>
+                                <subviews>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ns6-DH-c5O" userLabel="Time Collection View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="457"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="d70-32-jrr">
+                                            <size key="itemSize" width="50" height="50"/>
+                                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        </collectionViewFlowLayout>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EHITimePickerTimeCell" id="kQ6-at-oRO" customClass="EHITimePickerTimeCell">
+                                                <rect key="frame" x="-112.5" y="0.0" width="600" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pP5-lA-H1z" userLabel="After Hours Bullet">
+                                                            <rect key="frame" x="45" y="22" width="4" height="4"/>
+                                                            <color key="backgroundColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="4" id="kHV-2V-Ane" customClass="EHIRestorableConstraint"/>
+                                                                <constraint firstAttribute="height" constant="4" id="s2y-Og-MpO"/>
+                                                            </constraints>
+                                                        </view>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="39" translatesAutoresizingMaskIntoConstraints="NO" id="I1Q-j8-WeM" customClass="EHILabel">
+                                                            <rect key="frame" x="54" y="12.5" width="54" height="26"/>
+                                                            <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="22"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SCa-Kf-Ji5" userLabel="Divider" customClass="EHITimePickerDividerView">
+                                                            <rect key="frame" x="0.0" y="49" width="600" height="1"/>
+                                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="1" id="Pya-a2-Lqp"/>
+                                                            </constraints>
+                                                        </view>
+                                                    </subviews>
+                                                </view>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="centerY" secondItem="I1Q-j8-WeM" secondAttribute="centerY" id="0dY-cA-ihe"/>
+                                                    <constraint firstItem="pP5-lA-H1z" firstAttribute="leading" secondItem="kQ6-at-oRO" secondAttribute="leading" constant="45" id="2AV-ld-0CL"/>
+                                                    <constraint firstItem="I1Q-j8-WeM" firstAttribute="leading" secondItem="pP5-lA-H1z" secondAttribute="trailing" constant="5" id="5Ky-oZ-R3p"/>
+                                                    <constraint firstAttribute="trailing" secondItem="SCa-Kf-Ji5" secondAttribute="trailing" id="CSg-dY-8dl"/>
+                                                    <constraint firstItem="SCa-Kf-Ji5" firstAttribute="leading" secondItem="kQ6-at-oRO" secondAttribute="leading" id="RPH-Mh-pRi"/>
+                                                    <constraint firstAttribute="bottom" secondItem="SCa-Kf-Ji5" secondAttribute="bottom" id="dRv-Rs-kfi"/>
+                                                    <constraint firstAttribute="centerY" secondItem="pP5-lA-H1z" secondAttribute="centerY" constant="1" id="pV6-uA-NPK"/>
+                                                </constraints>
+                                                <size key="customSize" width="600" height="50"/>
+                                                <connections>
+                                                    <outlet property="afterHoursBullet" destination="pP5-lA-H1z" id="TL9-d4-J3l"/>
+                                                    <outlet property="divider" destination="SCa-Kf-Ji5" id="gJ1-lY-SMj"/>
+                                                    <outlet property="titleLabel" destination="I1Q-j8-WeM" id="4le-EL-K93"/>
+                                                </connections>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="3FX-8q-Ytb" id="Vgt-25-2S7"/>
+                                            <outlet property="delegate" destination="3FX-8q-Ytb" id="Wbc-Tl-REY"/>
+                                        </connections>
+                                    </collectionView>
+                                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hn5-lX-IHN" userLabel="Masking View" customClass="EHITimePickerMaskView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="457"/>
+                                        <subviews>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="GYS-2k-jT1" userLabel="Selected Time Collection View">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="457"/>
+                                                <color key="backgroundColor" red="0.27000001072883606" green="0.30000001192092896" blue="0.28999999165534973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="egk-0h-r6I">
+                                                    <size key="itemSize" width="493.5" height="50"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EHITimePickerActiveTimeCell" id="vcY-Or-pZN" customClass="EHITimePickerActiveTimeCell">
+                                                        <rect key="frame" x="-112.5" y="0.0" width="600" height="50"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                                                            <autoresizingMask key="autoresizingMask"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="38.5" translatesAutoresizingMaskIntoConstraints="NO" id="UJz-gA-vVs" customClass="EHILabel">
+                                                                    <rect key="frame" x="55" y="13.5" width="54" height="26"/>
+                                                                    <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="22"/>
+                                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </view>
+                                                        <constraints>
+                                                            <constraint firstAttribute="centerY" secondItem="UJz-gA-vVs" secondAttribute="centerY" constant="-1" id="3R6-fU-rX5"/>
+                                                            <constraint firstItem="UJz-gA-vVs" firstAttribute="leading" secondItem="vcY-Or-pZN" secondAttribute="leading" constant="55" id="NFx-4f-KYE"/>
+                                                        </constraints>
+                                                        <size key="customSize" width="600" height="50"/>
+                                                        <connections>
+                                                            <outlet property="titleLabel" destination="UJz-gA-vVs" id="AoN-Qs-ff1"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="3FX-8q-Ytb" id="fOJ-4c-vwf"/>
+                                                    <outlet property="delegate" destination="3FX-8q-Ytb" id="Mst-sW-n8D"/>
+                                                </connections>
+                                            </collectionView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_clock" translatesAutoresizingMaskIntoConstraints="NO" id="Ao6-DG-Wam" userLabel="Clock Icon">
+                                                <rect key="frame" x="15" y="215.5" width="21" height="24"/>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDf-eq-whU" userLabel="Select Button" customClass="EHIButton">
+                                                <rect key="frame" x="0.0" y="203.5" width="375" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="ljP-Ux-rPE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="18"/>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="15" maxY="0.0"/>
+                                                <inset key="titleEdgeInsets" minX="0.0" minY="1" maxX="10" maxY="0.0"/>
+                                                <state key="normal" title="SELECT" image="arrow_white">
+                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTapSelectButton:" destination="3FX-8q-Ytb" eventType="touchUpInside" id="hKM-yO-j3M"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="GYS-2k-jT1" firstAttribute="top" secondItem="Hn5-lX-IHN" secondAttribute="top" id="1J7-Vf-aqc"/>
+                                            <constraint firstAttribute="centerY" secondItem="dDf-eq-whU" secondAttribute="centerY" id="4Co-rp-6CE"/>
+                                            <constraint firstAttribute="bottom" secondItem="GYS-2k-jT1" secondAttribute="bottom" id="LfW-fh-wTC"/>
+                                            <constraint firstAttribute="trailing" secondItem="GYS-2k-jT1" secondAttribute="trailing" id="S8t-zW-8Qr"/>
+                                            <constraint firstAttribute="trailing" secondItem="dDf-eq-whU" secondAttribute="trailing" id="X09-QP-cnb"/>
+                                            <constraint firstAttribute="centerY" secondItem="Ao6-DG-Wam" secondAttribute="centerY" constant="1" id="jvy-OS-yPd"/>
+                                            <constraint firstItem="Ao6-DG-Wam" firstAttribute="leading" secondItem="Hn5-lX-IHN" secondAttribute="leading" constant="15" id="lpq-Gw-FAD"/>
+                                            <constraint firstItem="GYS-2k-jT1" firstAttribute="leading" secondItem="Hn5-lX-IHN" secondAttribute="leading" id="ulw-4x-QzJ"/>
+                                            <constraint firstItem="dDf-eq-whU" firstAttribute="leading" secondItem="Hn5-lX-IHN" secondAttribute="leading" id="y1B-J9-CnF"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="collectionView" destination="GYS-2k-jT1" id="1kt-eF-gRs"/>
+                                        </connections>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9d0-ba-jo9" userLabel="Time Info Button" customClass="EHIButton">
+                                        <rect key="frame" x="223" y="153" width="132" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="wTY-nD-FQ8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="DIN Next LT Pro" pointSize="15"/>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="-2" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Location Closed" image="icon_alert_01">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapInfoButton:" destination="3FX-8q-Ytb" eventType="touchUpInside" id="6my-Xe-H9k"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ns6-DH-c5O" secondAttribute="trailing" id="6TK-cJ-Dgf"/>
+                                    <constraint firstItem="ns6-DH-c5O" firstAttribute="top" secondItem="cmj-gY-c3D" secondAttribute="top" id="F5C-pY-3cE"/>
+                                    <constraint firstAttribute="trailing" secondItem="Hn5-lX-IHN" secondAttribute="trailing" id="LEZ-7I-6c6"/>
+                                    <constraint firstItem="Hn5-lX-IHN" firstAttribute="top" secondItem="cmj-gY-c3D" secondAttribute="top" id="acl-7O-uc7"/>
+                                    <constraint firstItem="9d0-ba-jo9" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cmj-gY-c3D" secondAttribute="leading" constant="50" id="bmq-e2-jF3"/>
+                                    <constraint firstAttribute="bottom" secondItem="Hn5-lX-IHN" secondAttribute="bottom" id="gIP-3u-gRj"/>
+                                    <constraint firstAttribute="bottom" secondItem="ns6-DH-c5O" secondAttribute="bottom" id="iqF-m0-DUs"/>
+                                    <constraint firstItem="ns6-DH-c5O" firstAttribute="leading" secondItem="cmj-gY-c3D" secondAttribute="leading" id="mkm-qh-7dk"/>
+                                    <constraint firstItem="dDf-eq-whU" firstAttribute="top" secondItem="9d0-ba-jo9" secondAttribute="bottom" id="nkb-Tg-2BM"/>
+                                    <constraint firstAttribute="trailing" secondItem="9d0-ba-jo9" secondAttribute="trailing" constant="20" id="tY8-e9-e60"/>
+                                    <constraint firstItem="Hn5-lX-IHN" firstAttribute="leading" secondItem="cmj-gY-c3D" secondAttribute="leading" id="ujF-PK-ThW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ccB-Ml-INa" userLabel="Activity Indicator" customClass="EHIActivityIndicator">
+                                <rect key="frame" x="0.0" y="210" width="375" height="457"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hZE-hO-Suw" userLabel="Schedule Picker View" customClass="EHIReservationSchedulePickerView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="147"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="147" id="rHz-rj-Gvu"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nXF-I9-h09" userLabel="Closed Location Banner">
+                                <rect key="frame" x="0.0" y="542" width="375" height="125"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NEED A LOCATION OPEN AT THIS TIME?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZKz-7o-ABX" customClass="EHILabel">
+                                        <rect key="frame" x="20" y="10" width="335" height="42"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2eu-5e-bij" customClass="EHIButton">
+                                        <rect key="frame" x="20" y="60" width="335" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="0.59215686274509804" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="rlU-Gf-JeZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="20"/>
+                                        <state key="normal" title="SEARCH FOR LOCATIONS"/>
+                                        <connections>
+                                            <action selector="didTapSearchButton:" destination="3FX-8q-Ytb" eventType="touchUpInside" id="nd8-zZ-ALf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ZKz-7o-ABX" secondAttribute="trailing" constant="20" id="4Xd-Pw-35E"/>
+                                    <constraint firstItem="ZKz-7o-ABX" firstAttribute="leading" secondItem="nXF-I9-h09" secondAttribute="leading" constant="20" id="BzX-EC-O17"/>
+                                    <constraint firstItem="ZKz-7o-ABX" firstAttribute="top" secondItem="nXF-I9-h09" secondAttribute="top" priority="999" constant="10" id="HXR-vH-iUf"/>
+                                    <constraint firstItem="2eu-5e-bij" firstAttribute="top" secondItem="ZKz-7o-ABX" secondAttribute="bottom" constant="8" id="Oyr-WY-zlv"/>
+                                    <constraint firstAttribute="bottom" secondItem="2eu-5e-bij" secondAttribute="bottom" constant="15" id="YDF-G5-NS3"/>
+                                    <constraint firstItem="2eu-5e-bij" firstAttribute="leading" secondItem="nXF-I9-h09" secondAttribute="leading" constant="20" id="gzn-Kc-dTI"/>
+                                    <constraint firstAttribute="trailing" secondItem="2eu-5e-bij" secondAttribute="trailing" constant="20" id="jCZ-vb-kDH"/>
+                                    <constraint firstItem="2eu-5e-bij" firstAttribute="centerX" secondItem="nXF-I9-h09" secondAttribute="centerX" id="t0K-ly-eVM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HOw-bo-BX5" userLabel="Bottom View">
+                                <rect key="frame" x="0.0" y="667" width="375" height="34"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="Drh-fQ-QnA"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JPs-RH-61Q" userLabel="Last Return Time Banner">
+                                <rect key="frame" x="0.0" y="561" width="375" height="106"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_clock-1" translatesAutoresizingMaskIntoConstraints="NO" id="JCR-ZQ-nzE">
+                                        <rect key="frame" x="40" y="14" width="19" height="21"/>
+                                        <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="19" id="7YT-z2-2w5"/>
+                                            <constraint firstAttribute="height" constant="21" id="BYJ-Oq-cES"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Last Return Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mnJ-3q-1DZ" customClass="EHILabel">
+                                        <rect key="frame" x="67" y="15" width="288" height="23"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="DIN Next LT Pro" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The last return time indicates when this location closes." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hGX-9q-Xz6" customClass="EHILabel">
+                                        <rect key="frame" x="40" y="48" width="295" height="33"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="mnJ-3q-1DZ" firstAttribute="leading" secondItem="JCR-ZQ-nzE" secondAttribute="trailing" constant="8" id="EJE-BV-GEb"/>
+                                    <constraint firstItem="JCR-ZQ-nzE" firstAttribute="leading" secondItem="hGX-9q-Xz6" secondAttribute="leading" id="KgM-Ro-mSD"/>
+                                    <constraint firstItem="hGX-9q-Xz6" firstAttribute="top" secondItem="mnJ-3q-1DZ" secondAttribute="bottom" constant="10" id="QYC-SE-3fT"/>
+                                    <constraint firstAttribute="bottom" secondItem="hGX-9q-Xz6" secondAttribute="bottom" constant="25" id="Tur-v5-Jcq"/>
+                                    <constraint firstItem="mnJ-3q-1DZ" firstAttribute="top" secondItem="JPs-RH-61Q" secondAttribute="top" constant="15" id="b09-i3-9y9"/>
+                                    <constraint firstAttribute="trailing" secondItem="mnJ-3q-1DZ" secondAttribute="trailing" constant="20" id="dtA-Wy-pzN"/>
+                                    <constraint firstItem="mnJ-3q-1DZ" firstAttribute="centerY" secondItem="JCR-ZQ-nzE" secondAttribute="centerY" constant="2" id="koP-jc-rOi"/>
+                                    <constraint firstAttribute="trailing" secondItem="hGX-9q-Xz6" secondAttribute="trailing" constant="40" id="unH-rQ-eeY"/>
+                                    <constraint firstItem="JCR-ZQ-nzE" firstAttribute="leading" secondItem="JPs-RH-61Q" secondAttribute="leading" constant="40" id="z13-EG-LVW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="HOw-bo-BX5" firstAttribute="top" secondItem="JPs-RH-61Q" secondAttribute="bottom" id="8K3-Jl-8Nc"/>
+                            <constraint firstItem="hZE-hO-Suw" firstAttribute="top" secondItem="7a8-YG-Z6c" secondAttribute="top" id="CKM-Li-Xt3"/>
+                            <constraint firstItem="7a8-YG-Z6c" firstAttribute="bottom" secondItem="ccB-Ml-INa" secondAttribute="bottom" id="HG3-QN-1kp"/>
+                            <constraint firstItem="7a8-YG-Z6c" firstAttribute="trailing" secondItem="hZE-hO-Suw" secondAttribute="trailing" id="Mfg-Ux-6ac"/>
+                            <constraint firstItem="cmj-gY-c3D" firstAttribute="leading" secondItem="7a8-YG-Z6c" secondAttribute="leading" id="Ot0-Gm-2V7"/>
+                            <constraint firstAttribute="width" secondItem="cmj-gY-c3D" secondAttribute="width" id="UQb-GJ-d5u"/>
+                            <constraint firstItem="7a8-YG-Z6c" firstAttribute="bottom" secondItem="cmj-gY-c3D" secondAttribute="bottom" id="Vba-Ne-ipY"/>
+                            <constraint firstItem="7a8-YG-Z6c" firstAttribute="trailing" secondItem="ccB-Ml-INa" secondAttribute="trailing" id="a4G-as-hLf"/>
+                            <constraint firstItem="nXF-I9-h09" firstAttribute="leading" secondItem="7a8-YG-Z6c" secondAttribute="leading" id="dYh-As-ajV"/>
+                            <constraint firstItem="JPs-RH-61Q" firstAttribute="trailing" secondItem="7a8-YG-Z6c" secondAttribute="trailing" id="fWu-2U-u8E"/>
+                            <constraint firstItem="HOw-bo-BX5" firstAttribute="leading" secondItem="6by-6s-nTr" secondAttribute="leading" id="gXf-y4-8rl"/>
+                            <constraint firstItem="7a8-YG-Z6c" firstAttribute="bottom" secondItem="nXF-I9-h09" secondAttribute="bottom" id="mWH-Xr-VwW"/>
+                            <constraint firstItem="HOw-bo-BX5" firstAttribute="top" secondItem="cmj-gY-c3D" secondAttribute="bottom" id="rh4-7n-cpE"/>
+                            <constraint firstItem="cmj-gY-c3D" firstAttribute="top" secondItem="hZE-hO-Suw" secondAttribute="bottom" constant="-1" id="sKD-ak-RfX"/>
+                            <constraint firstItem="JPs-RH-61Q" firstAttribute="leading" secondItem="7a8-YG-Z6c" secondAttribute="leading" id="waF-lW-wbh"/>
+                            <constraint firstItem="hZE-hO-Suw" firstAttribute="leading" secondItem="7a8-YG-Z6c" secondAttribute="leading" id="wer-BY-2qn"/>
+                            <constraint firstItem="7a8-YG-Z6c" firstAttribute="trailing" secondItem="nXF-I9-h09" secondAttribute="trailing" id="wn1-pu-4Zr"/>
+                            <constraint firstItem="ccB-Ml-INa" firstAttribute="leading" secondItem="7a8-YG-Z6c" secondAttribute="leading" id="wu0-mX-bFW"/>
+                            <constraint firstItem="ccB-Ml-INa" firstAttribute="top" secondItem="hZE-hO-Suw" secondAttribute="bottom" constant="-1" id="xCj-L6-GKP"/>
+                            <constraint firstAttribute="trailing" secondItem="HOw-bo-BX5" secondAttribute="trailing" id="zr9-D0-rC8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="7a8-YG-Z6c"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="ccB-Ml-INa" id="9NX-hZ-T8T"/>
+                        <outlet property="closedLocationBanner" destination="nXF-I9-h09" id="UmQ-vS-ZzT"/>
+                        <outlet property="contentContainer" destination="cmj-gY-c3D" id="PqK-ql-JdI"/>
+                        <outlet property="contentLeading" destination="Ot0-Gm-2V7" id="zx3-kG-emW"/>
+                        <outlet property="lastReturnTimeBanner" destination="JPs-RH-61Q" id="Piy-yJ-Ipr"/>
+                        <outlet property="lastReturnTimeTextLabel" destination="hGX-9q-Xz6" id="5yu-ar-p0p"/>
+                        <outlet property="lastReturnTimeTitleLabel" destination="mnJ-3q-1DZ" id="wev-2a-eg8"/>
+                        <outlet property="maskedCollectionViewContainer" destination="Hn5-lX-IHN" id="Ghi-hM-2xh"/>
+                        <outlet property="needLocationOpenLabel" destination="ZKz-7o-ABX" id="I2H-Wf-nRb"/>
+                        <outlet property="searchForLocationsButton" destination="2eu-5e-bij" id="b1n-5z-0qf"/>
+                        <outlet property="selectionCollectionView" destination="GYS-2k-jT1" id="nYl-9w-JMu"/>
+                        <outlet property="timeCollectionView" destination="ns6-DH-c5O" id="clo-sF-nW7"/>
+                        <outlet property="timeIconImageView" destination="Ao6-DG-Wam" id="mYf-5D-OTf"/>
+                        <outlet property="timeInfoButton" destination="9d0-ba-jo9" id="80E-Kb-9G5"/>
+                        <outlet property="timeSelectionButton" destination="dDf-eq-whU" id="viO-l5-Wl6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CbU-fn-FZc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="445.60000000000002" y="279.31034482758622"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow_white" width="11" height="20"/>
+        <image name="icon_alert_01" width="22" height="19"/>
+        <image name="icon_clock" width="21" height="24"/>
+        <image name="icon_clock-1" width="29" height="34"/>
+    </resources>
+</document>

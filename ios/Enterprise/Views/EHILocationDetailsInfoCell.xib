@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EHILocationDetailsInfoCell" id="jcq-UT-dmN" customClass="EHILocationDetailsInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="345"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="345"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="exotics_location_detail" translatesAutoresizingMaskIntoConstraints="NO" id="ZF6-iL-Zdd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="74" id="evL-8J-3ut" customClass="EHIRestorableConstraint"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jqX-PW-QdT" userLabel="Text Container">
+                        <rect key="frame" x="20" y="94" width="202" height="132.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Millenium Park" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="210" translatesAutoresizingMaskIntoConstraints="NO" id="mXk-X7-ywh" customClass="EHILabel">
+                                <rect key="frame" x="0.0" y="0.0" width="202" height="28"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="24"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 E. Randolph St., Chicago, IL 60608" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="210" translatesAutoresizingMaskIntoConstraints="NO" id="uQy-VV-xfL" customClass="EHILabel">
+                                <rect key="frame" x="0.0" y="38" width="202" height="37.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qyv-AH-PdG" customClass="EHIButton">
+                                <rect key="frame" x="0.0" y="80.5" width="202" height="30"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="DIN Next LT Pro" pointSize="15"/>
+                                <state key="normal" title="312-555-1234">
+                                    <color key="titleColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapPhoneNumberButton:" destination="jcq-UT-dmN" eventType="touchUpInside" id="oo3-60-3BE"/>
+                                </connections>
+                            </button>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EQn-LJ-jt9" userLabel="After Hours Container">
+                                <rect key="frame" x="0.0" y="110.5" width="202" height="22"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" image="icon_clock-1" translatesAutoresizingMaskIntoConstraints="NO" id="f1P-21-lYB">
+                                        <rect key="frame" x="0.0" y="4" width="13" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="12.789999999999999" id="fsQ-kg-ldL"/>
+                                            <constraint firstAttribute="height" constant="15" id="xdK-eY-Vqo"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="After hours" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1f-BN-VcZ" customClass="EHIClickableLabel">
+                                        <rect key="frame" x="19" y="5" width="183" height="17"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="DIN Next LT Pro" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="l1f-BN-VcZ" secondAttribute="bottom" id="3Ke-5h-90m"/>
+                                    <constraint firstItem="l1f-BN-VcZ" firstAttribute="top" secondItem="EQn-LJ-jt9" secondAttribute="top" priority="999" constant="5" id="8TN-Vs-uuw"/>
+                                    <constraint firstItem="f1P-21-lYB" firstAttribute="leading" secondItem="EQn-LJ-jt9" secondAttribute="leading" id="DIw-aU-Kgf"/>
+                                    <constraint firstAttribute="trailing" secondItem="l1f-BN-VcZ" secondAttribute="trailing" id="NyY-za-IOO"/>
+                                    <constraint firstItem="f1P-21-lYB" firstAttribute="centerY" secondItem="l1f-BN-VcZ" secondAttribute="centerY" constant="-2" id="QzN-9r-VTL"/>
+                                    <constraint firstItem="l1f-BN-VcZ" firstAttribute="leading" secondItem="f1P-21-lYB" secondAttribute="trailing" constant="6" id="ZJQ-ng-iVf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="uQy-VV-xfL" secondAttribute="trailing" id="4zc-Pq-KZa"/>
+                            <constraint firstAttribute="trailing" secondItem="mXk-X7-ywh" secondAttribute="trailing" id="97c-qd-yH2"/>
+                            <constraint firstItem="EQn-LJ-jt9" firstAttribute="top" secondItem="qyv-AH-PdG" secondAttribute="bottom" id="Cbi-LA-GIL"/>
+                            <constraint firstItem="EQn-LJ-jt9" firstAttribute="leading" secondItem="jqX-PW-QdT" secondAttribute="leading" id="EBN-Io-5ja"/>
+                            <constraint firstItem="qyv-AH-PdG" firstAttribute="top" secondItem="uQy-VV-xfL" secondAttribute="bottom" constant="5" id="HaT-YY-RpJ"/>
+                            <constraint firstAttribute="bottom" secondItem="EQn-LJ-jt9" secondAttribute="bottom" id="Lr9-l9-0tC"/>
+                            <constraint firstItem="uQy-VV-xfL" firstAttribute="top" secondItem="mXk-X7-ywh" secondAttribute="bottom" constant="10" id="MrO-In-ebN"/>
+                            <constraint firstAttribute="trailing" secondItem="EQn-LJ-jt9" secondAttribute="trailing" id="TAb-gy-BQU"/>
+                            <constraint firstItem="uQy-VV-xfL" firstAttribute="leading" secondItem="jqX-PW-QdT" secondAttribute="leading" id="Vk1-dR-KLb"/>
+                            <constraint firstItem="qyv-AH-PdG" firstAttribute="leading" secondItem="jqX-PW-QdT" secondAttribute="leading" id="byQ-M7-NEP"/>
+                            <constraint firstItem="mXk-X7-ywh" firstAttribute="leading" secondItem="jqX-PW-QdT" secondAttribute="leading" id="gFW-rN-LzJ"/>
+                            <constraint firstAttribute="trailing" secondItem="qyv-AH-PdG" secondAttribute="trailing" id="sW1-zc-I5G"/>
+                            <constraint firstItem="mXk-X7-ywh" firstAttribute="top" secondItem="jqX-PW-QdT" secondAttribute="top" id="vry-rW-FT5"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hXE-FQ-YER" userLabel="Favorites Button" customClass="EHICaptionedButton">
+                        <rect key="frame" x="242" y="74" width="78" height="118"/>
+                        <color key="backgroundColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="78" id="CRa-DY-flz" customClass="EHIRestorableConstraint"/>
+                            <constraint firstAttribute="height" constant="118" id="jRY-aC-NVv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="12"/>
+                        <state key="normal">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="didTapFavoritesButton:" destination="jcq-UT-dmN" eventType="touchUpInside" id="Baq-SK-YW3"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtE-zb-btS" customClass="EHISecondaryActionButton">
+                        <rect key="frame" x="20" y="246.5" width="280" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="46" id="8ud-CW-0ag"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="DIN Next LT Pro" pointSize="18"/>
+                        <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="15" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="GET DIRECTIONS" image="icon_directions_01">
+                            <color key="titleColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="didTapGetDirectionsButton:" destination="jcq-UT-dmN" eventType="touchUpInside" id="Gzm-c3-LRY"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dgx-PO-WzX" customClass="EHISecondaryActionButton">
+                        <rect key="frame" x="20" y="312.5" width="280" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="46" id="4Ph-nB-lCf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="DIN Next LT Pro" pointSize="18"/>
+                        <inset key="titleEdgeInsets" minX="30" minY="0.0" maxX="15" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="DIRECTIONS FROM TERMINAL" image="icon_terminal_directions">
+                            <color key="titleColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="didTapDirectionsFromTerminal:" destination="jcq-UT-dmN" eventType="touchUpInside" id="atn-P7-5cY"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jqX-PW-QdT" firstAttribute="top" secondItem="ZF6-iL-Zdd" secondAttribute="bottom" constant="20" id="9JR-aD-32D"/>
+                <constraint firstItem="Dgx-PO-WzX" firstAttribute="top" secondItem="jtE-zb-btS" secondAttribute="bottom" constant="20" id="BhN-Oe-dzE"/>
+                <constraint firstItem="jqX-PW-QdT" firstAttribute="top" secondItem="jcq-UT-dmN" secondAttribute="top" constant="20" id="InN-Xi-Rr5"/>
+                <constraint firstItem="hXE-FQ-YER" firstAttribute="trailing" secondItem="jcq-UT-dmN" secondAttribute="trailing" id="JTj-ar-kg9"/>
+                <constraint firstItem="hXE-FQ-YER" firstAttribute="top" secondItem="jcq-UT-dmN" secondAttribute="top" id="Nkc-rV-y20"/>
+                <constraint firstAttribute="trailing" secondItem="ZF6-iL-Zdd" secondAttribute="trailing" id="RvM-dy-dQ2"/>
+                <constraint firstItem="ZF6-iL-Zdd" firstAttribute="top" secondItem="jcq-UT-dmN" secondAttribute="top" id="aHS-AT-Pn5"/>
+                <constraint firstItem="hXE-FQ-YER" firstAttribute="leading" secondItem="jqX-PW-QdT" secondAttribute="trailing" constant="20" id="b2q-1D-Bs6"/>
+                <constraint firstItem="hXE-FQ-YER" firstAttribute="top" secondItem="ZF6-iL-Zdd" secondAttribute="bottom" id="cVS-gI-yug"/>
+                <constraint firstItem="Dgx-PO-WzX" firstAttribute="leading" secondItem="jtE-zb-btS" secondAttribute="leading" id="fky-R5-tg1"/>
+                <constraint firstItem="jtE-zb-btS" firstAttribute="top" secondItem="jqX-PW-QdT" secondAttribute="bottom" constant="20" id="h1L-Q4-bX9"/>
+                <constraint firstItem="jqX-PW-QdT" firstAttribute="leading" secondItem="jcq-UT-dmN" secondAttribute="leading" constant="20" id="hBJ-BG-rcs"/>
+                <constraint firstItem="ZF6-iL-Zdd" firstAttribute="leading" secondItem="jcq-UT-dmN" secondAttribute="leading" id="nhV-XQ-fhY"/>
+                <constraint firstItem="Dgx-PO-WzX" firstAttribute="trailing" secondItem="jtE-zb-btS" secondAttribute="trailing" id="odJ-Lp-tvY"/>
+                <constraint firstItem="jtE-zb-btS" firstAttribute="leading" secondItem="jcq-UT-dmN" secondAttribute="leading" constant="20" id="qVN-cA-ELd"/>
+                <constraint firstAttribute="trailing" secondItem="jtE-zb-btS" secondAttribute="trailing" constant="20" id="u0M-qu-PaS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="RuG-29-t9G"/>
+            <size key="customSize" width="320" height="345"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="InN-Xi-Rr5"/>
+                    <exclude reference="Nkc-rV-y20"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="addressLabel" destination="uQy-VV-xfL" id="iOc-it-OMs"/>
+                <outlet property="afterHoursContainerView" destination="EQn-LJ-jt9" id="zoC-Gh-sFY"/>
+                <outlet property="afterHoursLabel" destination="l1f-BN-VcZ" id="czR-Q6-jhO"/>
+                <outlet property="directionsButton" destination="jtE-zb-btS" id="JvR-JK-jSg"/>
+                <outlet property="exoticsImageViewHeight" destination="evL-8J-3ut" id="LsM-B7-1hj"/>
+                <outlet property="favoritesButton" destination="hXE-FQ-YER" id="n2S-m9-xxo"/>
+                <outlet property="favoritesButtonWidth" destination="CRa-DY-flz" id="4L6-Jw-3sb"/>
+                <outlet property="phoneNumberButton" destination="qyv-AH-PdG" id="o4C-S8-Tsm"/>
+                <outlet property="titleLabel" destination="mXk-X7-ywh" id="CJq-ak-baZ"/>
+                <outlet property="wayfindingButton" destination="Dgx-PO-WzX" id="WY9-8V-Hy7"/>
+            </connections>
+            <point key="canvasLocation" x="394" y="516.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="exotics_location_detail" width="375" height="74"/>
+        <image name="icon_clock-1" width="29" height="34"/>
+        <image name="icon_directions_01" width="17" height="17"/>
+        <image name="icon_terminal_directions" width="24" height="24"/>
+    </resources>
+</document>

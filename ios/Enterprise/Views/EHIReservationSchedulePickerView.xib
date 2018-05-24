@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EHIReservationSchedulePickerView">
+            <rect key="frame" x="0.0" y="0.0" width="318" height="147"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z7C-GL-jLV" userLabel="Middle Divider">
+                    <rect key="frame" x="0.0" y="90" width="318" height="1"/>
+                    <color key="backgroundColor" red="0.88999998569488525" green="0.88999998569488525" blue="0.88999998569488525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="VT8-9K-qIa"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BHb-Um-r5B" userLabel="Bottom Divider">
+                    <rect key="frame" x="0.0" y="146" width="318" height="1"/>
+                    <color key="backgroundColor" red="0.68000000715255737" green="0.68000000715255737" blue="0.68000000715255737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Z8v-p7-6UV"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdc-Xn-5QH" userLabel="Pickup View">
+                    <rect key="frame" x="0.0" y="0.0" width="154" height="146"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PICK-UP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="45" translatesAutoresizingMaskIntoConstraints="NO" id="nEK-OE-e4Y" customClass="EHILabel">
+                            <rect key="frame" x="20" y="0.0" width="57" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="sE7-0u-kWY"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HIm-vc-xh0" userLabel="Time View" customClass="EHIReservationSchedulePickerStepCell">
+                            <rect key="frame" x="0.0" y="91" width="154" height="55"/>
+                            <color key="backgroundColor" red="0.95999997854232788" green="0.95999997854232788" blue="0.95999997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="uWM-kH-OZE"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5UK-Ol-BeP" userLabel="Date View" customClass="EHIReservationSchedulePickerStepCell">
+                            <rect key="frame" x="0.0" y="36" width="154" height="54"/>
+                            <color key="backgroundColor" red="0.95999997854232788" green="0.95999997854232788" blue="0.95999997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="54" id="F1b-37-c2q"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.88999998569488525" green="0.88999998569488525" blue="0.88999998569488525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="5UK-Ol-BeP" firstAttribute="leading" secondItem="gdc-Xn-5QH" secondAttribute="leading" id="3So-bh-MFv"/>
+                        <constraint firstAttribute="trailing" secondItem="5UK-Ol-BeP" secondAttribute="trailing" id="7uz-9P-Iiu"/>
+                        <constraint firstItem="nEK-OE-e4Y" firstAttribute="top" secondItem="gdc-Xn-5QH" secondAttribute="top" id="Bhd-9y-WbW"/>
+                        <constraint firstItem="5UK-Ol-BeP" firstAttribute="top" secondItem="nEK-OE-e4Y" secondAttribute="bottom" id="D1C-Hd-eDf"/>
+                        <constraint firstItem="HIm-vc-xh0" firstAttribute="top" secondItem="5UK-Ol-BeP" secondAttribute="bottom" constant="1" id="XFE-kj-QXo"/>
+                        <constraint firstItem="nEK-OE-e4Y" firstAttribute="leading" secondItem="gdc-Xn-5QH" secondAttribute="leading" constant="20" id="cQA-2k-ogW"/>
+                        <constraint firstItem="HIm-vc-xh0" firstAttribute="leading" secondItem="gdc-Xn-5QH" secondAttribute="leading" id="ePQ-pg-TdK"/>
+                        <constraint firstAttribute="bottom" secondItem="HIm-vc-xh0" secondAttribute="bottom" id="jT8-IE-CLd"/>
+                        <constraint firstAttribute="bottom" secondItem="5UK-Ol-BeP" secondAttribute="bottom" priority="749" id="kiI-Zm-hSh"/>
+                        <constraint firstAttribute="trailing" secondItem="HIm-vc-xh0" secondAttribute="trailing" id="ugd-3c-GFk"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gao-Q1-i90" userLabel="Return View">
+                    <rect key="frame" x="164" y="0.0" width="154" height="146"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RETURN" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="45" translatesAutoresizingMaskIntoConstraints="NO" id="Eam-ko-2Ih" customClass="EHILabel">
+                            <rect key="frame" x="20" y="0.0" width="56" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="36" id="Tug-UP-x03"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W3j-ih-AzB" userLabel="Time View" customClass="EHIReservationSchedulePickerStepCell">
+                            <rect key="frame" x="0.0" y="91" width="154" height="55"/>
+                            <color key="backgroundColor" red="0.95999997854232788" green="0.95999997854232788" blue="0.95999997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="brh-ja-2gJ"/>
+                            </constraints>
+                        </view>
+                        <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BRg-Kt-AGP" userLabel="Date View" customClass="EHIReservationSchedulePickerStepCell">
+                            <rect key="frame" x="0.0" y="36" width="154" height="54"/>
+                            <color key="backgroundColor" red="0.95999997854232788" green="0.95999997854232788" blue="0.95999997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="54" id="SFk-8g-pOW"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.88999998569488525" green="0.88999998569488525" blue="0.88999998569488525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="BRg-Kt-AGP" firstAttribute="top" secondItem="Eam-ko-2Ih" secondAttribute="bottom" id="3WJ-lq-ehX"/>
+                        <constraint firstItem="Eam-ko-2Ih" firstAttribute="leading" secondItem="gao-Q1-i90" secondAttribute="leading" constant="20" id="CWC-L7-je8"/>
+                        <constraint firstItem="Eam-ko-2Ih" firstAttribute="top" secondItem="gao-Q1-i90" secondAttribute="top" id="DCE-nT-zsN"/>
+                        <constraint firstItem="W3j-ih-AzB" firstAttribute="top" secondItem="BRg-Kt-AGP" secondAttribute="bottom" constant="1" id="DQA-sZ-whc"/>
+                        <constraint firstAttribute="bottom" secondItem="BRg-Kt-AGP" secondAttribute="bottom" priority="749" id="U3R-iX-6fV"/>
+                        <constraint firstAttribute="trailing" secondItem="BRg-Kt-AGP" secondAttribute="trailing" id="UF0-Cv-tqD"/>
+                        <constraint firstAttribute="bottom" secondItem="W3j-ih-AzB" secondAttribute="bottom" id="c8L-Em-u8T"/>
+                        <constraint firstAttribute="trailing" secondItem="W3j-ih-AzB" secondAttribute="trailing" id="chs-DT-Xc3"/>
+                        <constraint firstItem="W3j-ih-AzB" firstAttribute="leading" secondItem="gao-Q1-i90" secondAttribute="leading" id="sEh-tz-G7b"/>
+                        <constraint firstItem="BRg-Kt-AGP" firstAttribute="leading" secondItem="gao-Q1-i90" secondAttribute="leading" id="wPn-dV-hEK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gao-Q1-i90" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1CT-jj-8LZ"/>
+                <constraint firstItem="gdc-Xn-5QH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="65O-IS-kYJ"/>
+                <constraint firstAttribute="trailing" secondItem="BHb-Um-r5B" secondAttribute="trailing" id="8QH-Ne-5No"/>
+                <constraint firstItem="gdc-Xn-5QH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Awp-ID-aQM"/>
+                <constraint firstAttribute="trailing" secondItem="gao-Q1-i90" secondAttribute="trailing" id="FHl-X6-ntu"/>
+                <constraint firstAttribute="bottom" secondItem="BHb-Um-r5B" secondAttribute="bottom" id="G2Z-to-vMf"/>
+                <constraint firstItem="Z7C-GL-jLV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="TlI-tS-TCg"/>
+                <constraint firstAttribute="bottom" secondItem="gao-Q1-i90" secondAttribute="bottom" id="fxQ-q0-Cgy"/>
+                <constraint firstAttribute="trailing" secondItem="Z7C-GL-jLV" secondAttribute="trailing" id="giK-tD-y0i"/>
+                <constraint firstItem="HIm-vc-xh0" firstAttribute="top" secondItem="Z7C-GL-jLV" secondAttribute="bottom" id="ihZ-Iq-HcU"/>
+                <constraint firstItem="BHb-Um-r5B" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="pew-vF-jEY"/>
+                <constraint firstItem="gao-Q1-i90" firstAttribute="leading" secondItem="gdc-Xn-5QH" secondAttribute="trailing" constant="10" id="pzs-I1-W7e"/>
+                <constraint firstItem="gdc-Xn-5QH" firstAttribute="width" secondItem="gao-Q1-i90" secondAttribute="width" id="u6J-mz-ofx"/>
+                <constraint firstItem="BHb-Um-r5B" firstAttribute="top" secondItem="gao-Q1-i90" secondAttribute="bottom" id="v2Q-dx-PjN"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="qXx-jG-E7m"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="fxQ-q0-Cgy"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="pickupLabel" destination="nEK-OE-e4Y" id="ePZ-UI-x99"/>
+                <outlet property="pickupTimeContainer" destination="HIm-vc-xh0" id="JQr-od-WFH"/>
+                <outlet property="returnLabel" destination="Eam-ko-2Ih" id="OrR-HK-zVl"/>
+                <outlet property="returnTimeContainer" destination="W3j-ih-AzB" id="YR6-dU-vqa"/>
+                <outletCollection property="cells" destination="5UK-Ol-BeP" id="rXm-ry-ZGI"/>
+                <outletCollection property="cells" destination="BRg-Kt-AGP" id="TMv-hS-Yxn"/>
+                <outletCollection property="cells" destination="HIm-vc-xh0" id="bar-17-cpc"/>
+                <outletCollection property="cells" destination="W3j-ih-AzB" id="V5H-42-O2u"/>
+            </connections>
+            <point key="canvasLocation" x="-49" y="184.5"/>
+        </view>
+    </objects>
+</document>

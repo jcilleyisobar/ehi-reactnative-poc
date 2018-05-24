@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EHIEnrollmentStepHeaderCell" id="U1h-3o-4Jg" customClass="EHIEnrollmentStepHeaderCell">
+            <rect key="frame" x="0.0" y="0.0" width="593" height="222"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="593" height="222"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mi4-uk-EKk" userLabel="Container View">
+                        <rect key="frame" x="0.0" y="30" width="593" height="117"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OLG-7p-DPA" userLabel="Step View">
+                                <rect key="frame" x="20" y="0.0" width="553" height="59"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rlf-SM-xGS">
+                                        <rect key="frame" x="0.0" y="0.0" width="553" height="33"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Step 1 of 3" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DpO-Wi-MOz" customClass="EHILabel">
+                                                <rect key="frame" x="0.0" y="0.0" width="553" height="18"/>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="15"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="DpO-Wi-MOz" secondAttribute="bottom" priority="999" constant="15" id="dS8-k0-qbO"/>
+                                            <constraint firstItem="DpO-Wi-MOz" firstAttribute="leading" secondItem="Rlf-SM-xGS" secondAttribute="leading" id="ggR-gu-ZNu"/>
+                                            <constraint firstItem="DpO-Wi-MOz" firstAttribute="top" secondItem="Rlf-SM-xGS" secondAttribute="top" id="kd7-mo-tHo"/>
+                                            <constraint firstAttribute="trailing" secondItem="DpO-Wi-MOz" secondAttribute="trailing" id="wRi-se-ZSE"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We'll first need your license info" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lGX-ss-usu" customClass="EHILabel">
+                                        <rect key="frame" x="0.0" y="33" width="553" height="26"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="22"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Rlf-SM-xGS" firstAttribute="leading" secondItem="OLG-7p-DPA" secondAttribute="leading" id="7Sq-us-fCI"/>
+                                    <constraint firstItem="lGX-ss-usu" firstAttribute="top" secondItem="Rlf-SM-xGS" secondAttribute="bottom" id="Asr-6T-cE5"/>
+                                    <constraint firstAttribute="bottom" secondItem="lGX-ss-usu" secondAttribute="bottom" id="D8I-y9-2KU"/>
+                                    <constraint firstAttribute="trailing" secondItem="Rlf-SM-xGS" secondAttribute="trailing" id="FC1-2n-f8e"/>
+                                    <constraint firstItem="lGX-ss-usu" firstAttribute="leading" secondItem="OLG-7p-DPA" secondAttribute="leading" id="aEf-km-IIa"/>
+                                    <constraint firstItem="Rlf-SM-xGS" firstAttribute="top" secondItem="OLG-7p-DPA" secondAttribute="top" id="eYL-C2-ZOO"/>
+                                    <constraint firstAttribute="trailing" secondItem="lGX-ss-usu" secondAttribute="trailing" id="ltl-1Q-XWR"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTN-xD-knC" userLabel="Divider">
+                                <rect key="frame" x="0.0" y="74" width="593" height="1"/>
+                                <color key="backgroundColor" red="0.83921568629999999" green="0.83921568629999999" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="jaA-KK-d6z"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DyB-7I-cdN" userLabel="Scan View">
+                                <rect key="frame" x="0.0" y="85" width="593" height="32"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5gP-lA-ixv" userLabel="Divider">
+                                        <rect key="frame" x="0.0" y="31" width="593" height="1"/>
+                                        <color key="backgroundColor" red="0.83921568629999999" green="0.83921568629999999" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1" id="mfs-vH-lLD"/>
+                                            <constraint firstAttribute="height" constant="1" id="otc-OL-4Ru"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxV-V0-WMy" customClass="EHIButton">
+                                        <rect key="frame" x="20" y="0.0" width="553" height="21"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                                        <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Scan license (optional)" image="icon_camera_01">
+                                            <color key="titleColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="xxV-V0-WMy" firstAttribute="top" secondItem="DyB-7I-cdN" secondAttribute="top" priority="999" id="K2j-aw-zvF"/>
+                                    <constraint firstItem="5gP-lA-ixv" firstAttribute="leading" secondItem="DyB-7I-cdN" secondAttribute="leading" id="Wh6-9d-THz"/>
+                                    <constraint firstAttribute="trailing" secondItem="xxV-V0-WMy" secondAttribute="trailing" constant="20" id="ibg-qD-1CX"/>
+                                    <constraint firstItem="xxV-V0-WMy" firstAttribute="leading" secondItem="DyB-7I-cdN" secondAttribute="leading" constant="20" id="n1x-Kt-haH"/>
+                                    <constraint firstAttribute="trailing" secondItem="5gP-lA-ixv" secondAttribute="trailing" id="qQs-ZZ-B97"/>
+                                    <constraint firstItem="5gP-lA-ixv" firstAttribute="top" secondItem="xxV-V0-WMy" secondAttribute="bottom" constant="10" id="rFa-RN-OHz"/>
+                                    <constraint firstAttribute="bottom" secondItem="5gP-lA-ixv" secondAttribute="bottom" id="uIF-ac-DhO"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DyB-7I-cdN" firstAttribute="top" secondItem="OLG-7p-DPA" secondAttribute="bottom" constant="11" id="28T-n6-jid"/>
+                            <constraint firstItem="DyB-7I-cdN" firstAttribute="leading" secondItem="mi4-uk-EKk" secondAttribute="leading" id="2eW-uz-M4y"/>
+                            <constraint firstItem="OLG-7p-DPA" firstAttribute="leading" secondItem="mi4-uk-EKk" secondAttribute="leading" constant="20" id="GzY-eo-45W"/>
+                            <constraint firstAttribute="bottom" secondItem="DyB-7I-cdN" secondAttribute="bottom" id="Iv2-20-C3x"/>
+                            <constraint firstItem="OLG-7p-DPA" firstAttribute="top" secondItem="mi4-uk-EKk" secondAttribute="top" id="Kdf-VK-0f0"/>
+                            <constraint firstItem="HTN-xD-knC" firstAttribute="leading" secondItem="mi4-uk-EKk" secondAttribute="leading" id="Sgc-c5-0kb"/>
+                            <constraint firstAttribute="trailing" secondItem="OLG-7p-DPA" secondAttribute="trailing" constant="20" id="YP4-9s-XN4"/>
+                            <constraint firstAttribute="trailing" secondItem="HTN-xD-knC" secondAttribute="trailing" id="ZaV-TP-E0Q"/>
+                            <constraint firstItem="HTN-xD-knC" firstAttribute="top" secondItem="OLG-7p-DPA" secondAttribute="bottom" constant="15" id="ctw-e8-A38"/>
+                            <constraint firstItem="DyB-7I-cdN" firstAttribute="top" secondItem="HTN-xD-knC" secondAttribute="bottom" constant="10" id="dpG-KF-0UC"/>
+                            <constraint firstAttribute="trailing" secondItem="DyB-7I-cdN" secondAttribute="trailing" id="ee7-YS-Sg2"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="28T-n6-jid"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="mi4-uk-EKk" firstAttribute="top" secondItem="U1h-3o-4Jg" secondAttribute="top" constant="30" id="3PO-Wq-Id8"/>
+                <constraint firstItem="mi4-uk-EKk" firstAttribute="leading" secondItem="U1h-3o-4Jg" secondAttribute="leading" id="bIl-7E-gPh"/>
+                <constraint firstAttribute="trailing" secondItem="mi4-uk-EKk" secondAttribute="trailing" id="crd-2O-wru"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="EAT-gw-Pbu"/>
+            <size key="customSize" width="593" height="222"/>
+            <connections>
+                <outlet property="containerView" destination="mi4-uk-EKk" id="ugH-rL-SIP"/>
+                <outlet property="scanButton" destination="xxV-V0-WMy" id="dWs-3G-fY4"/>
+                <outlet property="scanButtonContainer" destination="DyB-7I-cdN" id="Jfj-bM-WoR"/>
+                <outlet property="stepDetailLabel" destination="lGX-ss-usu" id="KKC-If-kMm"/>
+                <outlet property="stepTitleContainer" destination="Rlf-SM-xGS" id="EeF-2x-592"/>
+                <outlet property="stepTitleLabel" destination="DpO-Wi-MOz" id="W4L-bm-eXl"/>
+            </connections>
+            <point key="canvasLocation" x="831.5" y="594"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_camera_01" width="20" height="17"/>
+    </resources>
+</document>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EHIClassSelectActiveFilterCell" id="RIS-11-u9t" customClass="EHIClassSelectActiveFilterCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" placeholderIntrinsicWidth="320" placeholderIntrinsicHeight="64" translatesAutoresizingMaskIntoConstraints="NO" id="dfc-A6-nf7" userLabel="Active Filter Banner" customClass="EHIActiveFilterBanner">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="dfc-A6-nf7" firstAttribute="leading" secondItem="RIS-11-u9t" secondAttribute="leading" id="JhB-4E-HSJ"/>
+                <constraint firstItem="dfc-A6-nf7" firstAttribute="top" secondItem="RIS-11-u9t" secondAttribute="top" id="XiT-8f-d4H"/>
+                <constraint firstAttribute="bottom" secondItem="dfc-A6-nf7" secondAttribute="bottom" id="asU-GH-bEb"/>
+                <constraint firstAttribute="trailing" secondItem="dfc-A6-nf7" secondAttribute="trailing" id="qzZ-Pq-RMB"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="qNY-7T-RFq"/>
+            <size key="customSize" width="464" height="90"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="asU-GH-bEb"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="customView" destination="dfc-A6-nf7" id="LI6-BR-8J1"/>
+            </connections>
+            <point key="canvasLocation" x="426" y="281"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Payment View Controller-->
+        <scene sceneID="Z28-Rn-fji">
+            <objects>
+                <viewController storyboardIdentifier="EHIPaymentViewController" id="uHK-dK-KYh" customClass="EHIPaymentViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hSR-c6-r5R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rzm-yt-IWM">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lkN-SB-B9t">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fkN-3b-Hh7" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="470"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HMD-mA-KLC" userLabel="Scan Container">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a4n-ZE-Gly" userLabel="Separator">
+                                                        <rect key="frame" x="0.0" y="49" width="375" height="1"/>
+                                                        <color key="backgroundColor" red="0.80214887857437134" green="0.80212485790252686" blue="0.80213844776153564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="1" id="oMW-un-4gQ"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="exk-l0-Vez" customClass="EHIButton">
+                                                        <rect key="frame" x="20" y="15" width="335" height="21"/>
+                                                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                                                        <color key="tintColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                        <state key="normal" title="Tap here to scan your card" image="icon_camera_01">
+                                                            <color key="titleColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="didTapScanButton:" destination="uHK-dK-KYh" eventType="touchUpInside" id="u0b-Bk-kVj"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="a4n-ZE-Gly" secondAttribute="bottom" id="7kQ-3w-OAE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="exk-l0-Vez" secondAttribute="trailing" constant="20" id="PO0-eM-Qg8"/>
+                                                    <constraint firstItem="a4n-ZE-Gly" firstAttribute="leading" secondItem="HMD-mA-KLC" secondAttribute="leading" id="Wd9-Xh-sb4"/>
+                                                    <constraint firstItem="exk-l0-Vez" firstAttribute="leading" secondItem="HMD-mA-KLC" secondAttribute="leading" constant="20" id="Zb2-LZ-IOX"/>
+                                                    <constraint firstAttribute="trailing" secondItem="a4n-ZE-Gly" secondAttribute="trailing" id="g3v-vx-wgg"/>
+                                                    <constraint firstAttribute="height" constant="50" id="txm-mU-nbK"/>
+                                                    <constraint firstItem="exk-l0-Vez" firstAttribute="centerY" secondItem="HMD-mA-KLC" secondAttribute="centerY" id="yXi-1f-5qO"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" placeholderIntrinsicWidth="600" placeholderIntrinsicHeight="330" translatesAutoresizingMaskIntoConstraints="NO" id="YMB-yE-GRq" userLabel="Input Container" customClass="EHIPaymentInputView">
+                                                <rect key="frame" x="0.0" y="50" width="375" height="330"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="330" placeholder="YES" id="60P-vi-ME7"/>
+                                                </constraints>
+                                                <variation key="default">
+                                                    <mask key="constraints">
+                                                        <exclude reference="60P-vi-ME7"/>
+                                                    </mask>
+                                                </variation>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYP-Q6-fP2" customClass="EHIActionButton">
+                                                <rect key="frame" x="20" y="400" width="335" height="50"/>
+                                                <color key="backgroundColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="dJ0-bD-QBJ"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="16"/>
+                                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="ADD CARD">
+                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTapAddButton:" destination="uHK-dK-KYh" eventType="touchUpInside" id="yCd-Sh-deD"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="zYP-Q6-fP2" secondAttribute="bottom" constant="20" id="0mC-cW-2Yd"/>
+                                            <constraint firstAttribute="trailing" secondItem="HMD-mA-KLC" secondAttribute="trailing" id="4lZ-PK-W6P"/>
+                                            <constraint firstItem="zYP-Q6-fP2" firstAttribute="top" secondItem="YMB-yE-GRq" secondAttribute="bottom" constant="20" id="9Id-BK-Lcv"/>
+                                            <constraint firstItem="YMB-yE-GRq" firstAttribute="leading" secondItem="fkN-3b-Hh7" secondAttribute="leading" id="BZd-So-4Cn"/>
+                                            <constraint firstItem="HMD-mA-KLC" firstAttribute="leading" secondItem="fkN-3b-Hh7" secondAttribute="leading" id="K4T-iK-s7M"/>
+                                            <constraint firstItem="zYP-Q6-fP2" firstAttribute="top" secondItem="YMB-yE-GRq" secondAttribute="bottom" id="Wg3-Em-itk"/>
+                                            <constraint firstAttribute="trailing" secondItem="zYP-Q6-fP2" secondAttribute="trailing" constant="20" id="YnP-tn-lMN"/>
+                                            <constraint firstItem="zYP-Q6-fP2" firstAttribute="leading" secondItem="fkN-3b-Hh7" secondAttribute="leading" constant="20" id="ecx-zb-EwW"/>
+                                            <constraint firstItem="YMB-yE-GRq" firstAttribute="top" secondItem="HMD-mA-KLC" secondAttribute="bottom" id="gSN-TM-Egn"/>
+                                            <constraint firstItem="HMD-mA-KLC" firstAttribute="top" secondItem="fkN-3b-Hh7" secondAttribute="top" id="hSJ-IV-QiT"/>
+                                            <constraint firstAttribute="trailing" secondItem="YMB-yE-GRq" secondAttribute="trailing" id="lrt-QJ-WS1"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="Wg3-Em-itk"/>
+                                            </mask>
+                                        </variation>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="fkN-3b-Hh7" secondAttribute="trailing" id="BHp-rp-eVx"/>
+                                    <constraint firstItem="fkN-3b-Hh7" firstAttribute="width" secondItem="lkN-SB-B9t" secondAttribute="width" id="Vho-hW-2Mx"/>
+                                    <constraint firstItem="fkN-3b-Hh7" firstAttribute="leading" secondItem="lkN-SB-B9t" secondAttribute="leading" id="Zhr-4L-xF1"/>
+                                    <constraint firstAttribute="bottom" secondItem="fkN-3b-Hh7" secondAttribute="bottom" id="g4e-gO-PeI"/>
+                                    <constraint firstItem="fkN-3b-Hh7" firstAttribute="top" secondItem="lkN-SB-B9t" secondAttribute="top" id="tZQ-16-IgI"/>
+                                </constraints>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DzK-UG-WtY" customClass="EHIActivityIndicator">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bNV-pJ-DsB" firstAttribute="bottom" secondItem="lkN-SB-B9t" secondAttribute="bottom" id="3dE-NR-kQt"/>
+                            <constraint firstItem="lkN-SB-B9t" firstAttribute="leading" secondItem="bNV-pJ-DsB" secondAttribute="leading" id="BNB-js-ofX"/>
+                            <constraint firstItem="bNV-pJ-DsB" firstAttribute="trailing" secondItem="DzK-UG-WtY" secondAttribute="trailing" id="FeF-6K-b24"/>
+                            <constraint firstItem="lkN-SB-B9t" firstAttribute="top" secondItem="bNV-pJ-DsB" secondAttribute="top" id="L6I-50-E06"/>
+                            <constraint firstItem="DzK-UG-WtY" firstAttribute="top" secondItem="bNV-pJ-DsB" secondAttribute="top" id="OVN-ZU-TLT"/>
+                            <constraint firstItem="Rzm-yt-IWM" firstAttribute="leading" secondItem="bNV-pJ-DsB" secondAttribute="leading" id="OwF-8E-unw"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="DzK-UG-WtY" secondAttribute="bottom" id="aX1-Qe-pQK"/>
+                            <constraint firstItem="DzK-UG-WtY" firstAttribute="leading" secondItem="bNV-pJ-DsB" secondAttribute="leading" id="eVr-np-kpr"/>
+                            <constraint firstItem="bNV-pJ-DsB" firstAttribute="trailing" secondItem="lkN-SB-B9t" secondAttribute="trailing" id="fC8-t3-s63"/>
+                            <constraint firstItem="bNV-pJ-DsB" firstAttribute="trailing" secondItem="Rzm-yt-IWM" secondAttribute="trailing" id="g21-Sd-Xu8"/>
+                            <constraint firstAttribute="bottom" secondItem="Rzm-yt-IWM" secondAttribute="bottom" id="j5q-Xn-Qle"/>
+                            <constraint firstItem="Rzm-yt-IWM" firstAttribute="top" secondItem="bNV-pJ-DsB" secondAttribute="top" id="onP-WZ-xZe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bNV-pJ-DsB"/>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="zYP-Q6-fP2" id="HHr-UG-j0y"/>
+                        <outlet property="loadingIndicator" destination="DzK-UG-WtY" id="Rhz-Ps-TAD"/>
+                        <outlet property="paymentInputView" destination="YMB-yE-GRq" id="Pgc-Ru-xHe"/>
+                        <outlet property="scanButton" destination="exk-l0-Vez" id="AON-B9-7aa"/>
+                        <outlet property="scrollView" destination="lkN-SB-B9t" id="Igc-5M-Ijs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CbG-2l-Ea4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="364" y="382"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_camera_01" width="20" height="17"/>
+    </resources>
+</document>

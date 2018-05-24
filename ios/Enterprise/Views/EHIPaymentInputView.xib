@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EHIPaymentInputView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="391"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DMx-kC-qxS" userLabel="Name Container">
+                    <rect key="frame" x="20" y="0.0" width="280" height="93"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="NGq-VZ-cuf" customClass="EHITextField">
+                            <rect key="frame" x="0.0" y="47" width="280" height="46"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="46" id="U6x-Yb-B0i"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="words" spellCheckingType="no" returnKeyType="next"/>
+                            <connections>
+                                <outlet property="delegate" destination="iN0-l3-epB" id="lpC-zO-puc"/>
+                            </connections>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME ON CARD" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bcy-LP-tEh" customClass="EHILabel">
+                            <rect key="frame" x="0.0" y="20" width="280" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="17" id="2sm-VA-M2T"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="14"/>
+                            <color key="textColor" red="0.060629889369010925" green="0.043859399855136871" blue="0.049030739814043045" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="NGq-VZ-cuf" firstAttribute="top" secondItem="Bcy-LP-tEh" secondAttribute="bottom" constant="10" id="2yw-gK-Lel"/>
+                        <constraint firstAttribute="trailing" secondItem="NGq-VZ-cuf" secondAttribute="trailing" id="6Zd-5f-sta"/>
+                        <constraint firstItem="Bcy-LP-tEh" firstAttribute="top" secondItem="DMx-kC-qxS" secondAttribute="top" constant="20" id="AUn-VB-6pT"/>
+                        <constraint firstAttribute="trailing" secondItem="Bcy-LP-tEh" secondAttribute="trailing" id="ApK-5l-zsy"/>
+                        <constraint firstItem="Bcy-LP-tEh" firstAttribute="leading" secondItem="DMx-kC-qxS" secondAttribute="leading" id="WxZ-5I-duX"/>
+                        <constraint firstAttribute="bottom" secondItem="NGq-VZ-cuf" secondAttribute="bottom" id="dh9-Tx-xYJ"/>
+                        <constraint firstItem="NGq-VZ-cuf" firstAttribute="leading" secondItem="DMx-kC-qxS" secondAttribute="leading" id="uzF-wa-NR6"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dsn-c4-bhx" userLabel="Card Number Container">
+                    <rect key="frame" x="20" y="93" width="280" height="93"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CARD NUMBER" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w14-UU-RMj" customClass="EHILabel">
+                            <rect key="frame" x="0.0" y="20" width="280" height="17"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="17" id="90s-eb-tSc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="14"/>
+                            <color key="textColor" red="0.060629889369010925" green="0.043859399855136871" blue="0.049030739814043045" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d8A-tt-F8r" customClass="EHITextField">
+                            <rect key="frame" x="0.0" y="47" width="280" height="46"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="46" id="kT5-qd-Qpp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                            <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next"/>
+                            <connections>
+                                <outlet property="delegate" destination="iN0-l3-epB" id="NLs-Vk-BQb"/>
+                            </connections>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="w14-UU-RMj" firstAttribute="top" secondItem="dsn-c4-bhx" secondAttribute="top" constant="20" id="2Qs-BL-V1t"/>
+                        <constraint firstAttribute="bottom" secondItem="d8A-tt-F8r" secondAttribute="bottom" id="3eN-Bg-hqo"/>
+                        <constraint firstAttribute="trailing" secondItem="w14-UU-RMj" secondAttribute="trailing" id="YUs-SD-rVG"/>
+                        <constraint firstItem="d8A-tt-F8r" firstAttribute="leading" secondItem="dsn-c4-bhx" secondAttribute="leading" id="ZYb-aR-4Qq"/>
+                        <constraint firstAttribute="trailing" secondItem="d8A-tt-F8r" secondAttribute="trailing" id="iPa-XH-3gK"/>
+                        <constraint firstItem="d8A-tt-F8r" firstAttribute="top" secondItem="w14-UU-RMj" secondAttribute="bottom" constant="10" id="k05-p5-mML"/>
+                        <constraint firstItem="w14-UU-RMj" firstAttribute="leading" secondItem="dsn-c4-bhx" secondAttribute="leading" id="kcT-Pi-NNk"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fFT-h0-ztm" userLabel="Date/Code Container">
+                    <rect key="frame" x="20" y="186" width="280" height="93"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4yZ-Uc-EfD" userLabel="Date Container">
+                            <rect key="frame" x="0.0" y="20" width="120" height="73"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EXPIRATION DATE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xrb-qv-Q9l" customClass="EHILabel">
+                                    <rect key="frame" x="0.0" y="0.0" width="120" height="17"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="17" id="u2X-h2-ybN"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="14"/>
+                                    <color key="textColor" red="0.060629889369010925" green="0.043859399855136871" blue="0.049030739814043045" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vvc-21-OTH" userLabel="Date Input Container">
+                                    <rect key="frame" x="0.0" y="27" width="120" height="46"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="MM" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pyQ-Eh-fY0" customClass="EHITextField">
+                                            <rect key="frame" x="0.0" y="0.0" width="49.5" height="46"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="46" id="nC3-Ea-ZYe"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                                            <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="iN0-l3-epB" id="O2M-nP-SM8"/>
+                                            </connections>
+                                        </textField>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uKg-t8-xa6" customClass="EHILabel">
+                                            <rect key="frame" x="57.5" y="13.5" width="5.5" height="19"/>
+                                            <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="16"/>
+                                            <color key="textColor" red="0.060629889369010925" green="0.043859399855136871" blue="0.049030739814043045" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="YY" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qp7-Mz-8I3" customClass="EHITextField">
+                                            <rect key="frame" x="71" y="0.0" width="49" height="46"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="46" id="59D-iW-r8S"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                                            <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="numberPad" returnKeyType="next"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="iN0-l3-epB" id="dBM-2R-XpP"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstItem="Qp7-Mz-8I3" firstAttribute="top" secondItem="vvc-21-OTH" secondAttribute="top" id="Tyh-Z5-xGf"/>
+                                        <constraint firstItem="Qp7-Mz-8I3" firstAttribute="width" secondItem="pyQ-Eh-fY0" secondAttribute="width" id="dDu-1p-4Pw"/>
+                                        <constraint firstAttribute="bottom" secondItem="Qp7-Mz-8I3" secondAttribute="bottom" id="e4g-oc-RrT"/>
+                                        <constraint firstItem="Qp7-Mz-8I3" firstAttribute="leading" secondItem="uKg-t8-xa6" secondAttribute="trailing" constant="8" id="fcI-zV-OsR"/>
+                                        <constraint firstAttribute="trailing" secondItem="Qp7-Mz-8I3" secondAttribute="trailing" id="imM-8z-lrx"/>
+                                        <constraint firstItem="pyQ-Eh-fY0" firstAttribute="top" secondItem="vvc-21-OTH" secondAttribute="top" id="k5T-OV-6vp"/>
+                                        <constraint firstAttribute="bottom" secondItem="pyQ-Eh-fY0" secondAttribute="bottom" id="pR8-gl-bzn"/>
+                                        <constraint firstItem="uKg-t8-xa6" firstAttribute="leading" secondItem="pyQ-Eh-fY0" secondAttribute="trailing" constant="8" id="x8y-yb-L1k"/>
+                                        <constraint firstItem="pyQ-Eh-fY0" firstAttribute="leading" secondItem="vvc-21-OTH" secondAttribute="leading" id="z0N-dF-9Sp"/>
+                                        <constraint firstItem="uKg-t8-xa6" firstAttribute="centerY" secondItem="vvc-21-OTH" secondAttribute="centerY" id="zgR-zT-ANA"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstItem="vvc-21-OTH" firstAttribute="top" secondItem="Xrb-qv-Q9l" secondAttribute="bottom" constant="10" id="6ZS-wI-v0d"/>
+                                <constraint firstAttribute="trailing" secondItem="Xrb-qv-Q9l" secondAttribute="trailing" id="F05-sx-wQb"/>
+                                <constraint firstAttribute="bottom" secondItem="vvc-21-OTH" secondAttribute="bottom" id="H1g-Ud-hLA"/>
+                                <constraint firstItem="vvc-21-OTH" firstAttribute="leading" secondItem="4yZ-Uc-EfD" secondAttribute="leading" id="Jjt-wW-MSB"/>
+                                <constraint firstItem="Xrb-qv-Q9l" firstAttribute="top" secondItem="4yZ-Uc-EfD" secondAttribute="top" id="dch-Iy-wU7"/>
+                                <constraint firstItem="Xrb-qv-Q9l" firstAttribute="leading" secondItem="4yZ-Uc-EfD" secondAttribute="leading" id="tSg-Q3-3w7"/>
+                                <constraint firstAttribute="trailing" secondItem="vvc-21-OTH" secondAttribute="trailing" id="uBV-r7-aNT"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kFL-rO-wlw" userLabel="Code Container">
+                            <rect key="frame" x="160" y="20" width="120" height="73"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CCV CODE" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peU-Jf-co1" customClass="EHILabel">
+                                    <rect key="frame" x="0.0" y="0.0" width="120" height="17"/>
+                                    <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="14"/>
+                                    <color key="textColor" red="0.060629889369010925" green="0.043859399855136871" blue="0.049030739814043045" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="line" placeholder="123" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VMn-hI-TCP" customClass="EHITextField">
+                                    <rect key="frame" x="0.0" y="27" width="120" height="46"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="46" id="3t5-Id-vew"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                                    <textInputTraits key="textInputTraits" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done"/>
+                                    <connections>
+                                        <outlet property="delegate" destination="iN0-l3-epB" id="DDx-b6-eDe"/>
+                                    </connections>
+                                </textField>
+                            </subviews>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="VMn-hI-TCP" secondAttribute="trailing" id="3Ce-V6-Yog"/>
+                                <constraint firstItem="VMn-hI-TCP" firstAttribute="top" secondItem="peU-Jf-co1" secondAttribute="bottom" constant="10" id="Db5-Zp-JP2"/>
+                                <constraint firstAttribute="bottom" secondItem="VMn-hI-TCP" secondAttribute="bottom" id="EtE-wA-yxJ"/>
+                                <constraint firstItem="peU-Jf-co1" firstAttribute="top" secondItem="kFL-rO-wlw" secondAttribute="top" id="ICB-VX-NwD"/>
+                                <constraint firstItem="VMn-hI-TCP" firstAttribute="leading" secondItem="kFL-rO-wlw" secondAttribute="leading" id="QkB-lC-NPL"/>
+                                <constraint firstAttribute="trailing" secondItem="peU-Jf-co1" secondAttribute="trailing" id="fFj-Xt-ADF"/>
+                                <constraint firstItem="peU-Jf-co1" firstAttribute="leading" secondItem="kFL-rO-wlw" secondAttribute="leading" id="zga-JT-T4Q"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="4yZ-Uc-EfD" firstAttribute="width" secondItem="kFL-rO-wlw" secondAttribute="width" id="05B-Sa-nzD"/>
+                        <constraint firstItem="4yZ-Uc-EfD" firstAttribute="leading" secondItem="fFT-h0-ztm" secondAttribute="leading" id="ACt-Ls-x0d"/>
+                        <constraint firstAttribute="trailing" secondItem="kFL-rO-wlw" secondAttribute="trailing" id="TRN-c3-zbd"/>
+                        <constraint firstItem="kFL-rO-wlw" firstAttribute="leading" secondItem="4yZ-Uc-EfD" secondAttribute="trailing" constant="40" id="UWh-9a-q6J"/>
+                        <constraint firstAttribute="bottom" secondItem="4yZ-Uc-EfD" secondAttribute="bottom" id="dn3-pZ-XEx"/>
+                        <constraint firstItem="kFL-rO-wlw" firstAttribute="top" secondItem="4yZ-Uc-EfD" secondAttribute="top" id="mM5-t2-GMN"/>
+                        <constraint firstItem="4yZ-Uc-EfD" firstAttribute="top" secondItem="fFT-h0-ztm" secondAttribute="top" constant="20" id="uhd-aU-GMo"/>
+                        <constraint firstAttribute="bottom" secondItem="kFL-rO-wlw" secondAttribute="bottom" id="zNO-OS-3zT"/>
+                    </constraints>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="DuF-pR-qGy" userLabel="Save Card Container">
+                    <rect key="frame" x="20" y="299" width="280" height="40.5"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pr6-OK-TUf" userLabel="Save Card Checkbox" customClass="EHIToggleButton">
+                            <rect key="frame" x="0.0" y="5" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="4ta-ka-qvh"/>
+                                <constraint firstAttribute="height" constant="24" id="ehN-oW-Lk1"/>
+                            </constraints>
+                            <state key="normal">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="toggleSaveCard:" destination="iN0-l3-epB" eventType="touchUpInside" id="seT-ln-4Bv"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Save credti card" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="241" translatesAutoresizingMaskIntoConstraints="NO" id="AzQ-jb-f9V" customClass="EHIClickableLabel">
+                            <rect key="frame" x="39" y="8.5" width="241" height="17"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="DIN Next LT Pro" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="AzQ-jb-f9V" secondAttribute="trailing" id="5TB-ff-ora"/>
+                        <constraint firstItem="Pr6-OK-TUf" firstAttribute="leading" secondItem="DuF-pR-qGy" secondAttribute="leading" id="6TA-bb-NbK"/>
+                        <constraint firstItem="Pr6-OK-TUf" firstAttribute="centerY" secondItem="AzQ-jb-f9V" secondAttribute="centerY" id="G6e-te-cjf"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Pr6-OK-TUf" secondAttribute="bottom" constant="5" id="KIc-uB-jHG"/>
+                        <constraint firstAttribute="bottom" secondItem="AzQ-jb-f9V" secondAttribute="bottom" constant="15" id="Qby-hv-Q0J"/>
+                        <constraint firstItem="AzQ-jb-f9V" firstAttribute="top" secondItem="DuF-pR-qGy" secondAttribute="top" priority="999" constant="8" id="SUu-RG-q57"/>
+                        <constraint firstItem="Pr6-OK-TUf" firstAttribute="top" relation="greaterThanOrEqual" secondItem="DuF-pR-qGy" secondAttribute="top" priority="999" constant="5" id="kkS-Un-RI3"/>
+                        <constraint firstItem="AzQ-jb-f9V" firstAttribute="leading" secondItem="Pr6-OK-TUf" secondAttribute="trailing" constant="15" id="o2K-yg-mQf"/>
+                    </constraints>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="17D-O8-v6Y" userLabel="T&amp;C Container">
+                    <rect key="frame" x="0.0" y="340" width="320" height="51"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pyh-7I-Ksq" userLabel="T&amp;C Checkbox" customClass="EHIToggleButton">
+                            <rect key="frame" x="20" y="17" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="Pa2-M2-v1R"/>
+                                <constraint firstAttribute="width" constant="24" id="hzv-62-WZ1"/>
+                            </constraints>
+                            <state key="normal">
+                                <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="togglePoliciesRead:" destination="iN0-l3-epB" eventType="touchUpInside" id="y9z-qv-QFf"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have read the Prepayment Policy Terms &amp; Conditions" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="241" translatesAutoresizingMaskIntoConstraints="NO" id="1rS-fP-bCF" customClass="EHIClickableLabel">
+                            <rect key="frame" x="59" y="15" width="241" height="27.5"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="DIN Next LT Pro" pointSize="14"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="1rS-fP-bCF" secondAttribute="bottom" constant="8.5" id="CkD-Nv-ILT"/>
+                        <constraint firstItem="Pyh-7I-Ksq" firstAttribute="centerY" secondItem="1rS-fP-bCF" secondAttribute="centerY" id="IH3-IU-dri"/>
+                        <constraint firstItem="Pyh-7I-Ksq" firstAttribute="leading" secondItem="17D-O8-v6Y" secondAttribute="leading" constant="20" id="S8a-El-mFS"/>
+                        <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Pyh-7I-Ksq" secondAttribute="bottom" constant="5" id="THx-r5-lpv"/>
+                        <constraint firstItem="Pyh-7I-Ksq" firstAttribute="top" relation="greaterThanOrEqual" secondItem="17D-O8-v6Y" secondAttribute="top" priority="999" constant="5" id="XxQ-1V-bS8"/>
+                        <constraint firstItem="1rS-fP-bCF" firstAttribute="leading" secondItem="Pyh-7I-Ksq" secondAttribute="trailing" constant="15" id="c5b-40-Vw5"/>
+                        <constraint firstAttribute="trailing" secondItem="1rS-fP-bCF" secondAttribute="trailing" constant="20" id="osU-MI-NC7"/>
+                        <constraint firstItem="1rS-fP-bCF" firstAttribute="top" secondItem="17D-O8-v6Y" secondAttribute="top" priority="999" constant="15" id="w1m-3X-bqR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="17D-O8-v6Y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1YY-i7-PW3"/>
+                <constraint firstItem="DuF-pR-qGy" firstAttribute="top" secondItem="fFT-h0-ztm" secondAttribute="bottom" constant="20" id="62f-MM-ngK"/>
+                <constraint firstItem="DMx-kC-qxS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="66A-zg-Qjw"/>
+                <constraint firstItem="DMx-kC-qxS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="GZd-0F-4ic"/>
+                <constraint firstItem="DuF-pR-qGy" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="JTV-KM-Ep7"/>
+                <constraint firstAttribute="trailing" secondItem="DuF-pR-qGy" secondAttribute="trailing" constant="20" id="NbO-Nm-SLG"/>
+                <constraint firstItem="dsn-c4-bhx" firstAttribute="leading" secondItem="DMx-kC-qxS" secondAttribute="leading" id="VxB-DC-ihn"/>
+                <constraint firstItem="dsn-c4-bhx" firstAttribute="trailing" secondItem="DMx-kC-qxS" secondAttribute="trailing" id="WRP-Xw-UGJ"/>
+                <constraint firstItem="fFT-h0-ztm" firstAttribute="trailing" secondItem="DMx-kC-qxS" secondAttribute="trailing" id="XlH-VK-BDl"/>
+                <constraint firstItem="dsn-c4-bhx" firstAttribute="top" secondItem="DMx-kC-qxS" secondAttribute="bottom" id="ZRP-A0-CJc"/>
+                <constraint firstAttribute="trailing" secondItem="17D-O8-v6Y" secondAttribute="trailing" id="ZX5-uY-pQn"/>
+                <constraint firstItem="fFT-h0-ztm" firstAttribute="leading" secondItem="DMx-kC-qxS" secondAttribute="leading" id="c9f-zk-ljR"/>
+                <constraint firstItem="fFT-h0-ztm" firstAttribute="top" secondItem="dsn-c4-bhx" secondAttribute="bottom" id="dM7-RZ-xDN"/>
+                <constraint firstAttribute="bottom" secondItem="17D-O8-v6Y" secondAttribute="bottom" id="fCR-1f-D79"/>
+                <constraint firstItem="17D-O8-v6Y" firstAttribute="top" secondItem="DuF-pR-qGy" secondAttribute="bottom" id="mFo-DW-OaP"/>
+                <constraint firstAttribute="trailing" secondItem="DMx-kC-qxS" secondAttribute="trailing" constant="20" id="rUj-nM-wgg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="5HZ-fy-Kjt"/>
+            <connections>
+                <outlet property="cardNumberField" destination="d8A-tt-F8r" id="Zk8-hl-fEg"/>
+                <outlet property="cardNumberLabel" destination="w14-UU-RMj" id="RT6-kC-vKq"/>
+                <outlet property="cvvCodeField" destination="VMn-hI-TCP" id="6Dw-ce-QBa"/>
+                <outlet property="cvvCodeLabel" destination="peU-Jf-co1" id="JDO-rj-6rX"/>
+                <outlet property="expirationLabel" destination="Xrb-qv-Q9l" id="39x-yX-BFy"/>
+                <outlet property="expirationMonthField" destination="pyQ-Eh-fY0" id="ZJt-2y-h4G"/>
+                <outlet property="expirationYearField" destination="Qp7-Mz-8I3" id="uyD-cx-uNk"/>
+                <outlet property="nameField" destination="NGq-VZ-cuf" id="Q1c-e1-6np"/>
+                <outlet property="nameLabel" destination="Bcy-LP-tEh" id="aXN-q4-iT2"/>
+                <outlet property="saveContainer" destination="DuF-pR-qGy" id="6hQ-JK-JmC"/>
+                <outlet property="saveLabel" destination="AzQ-jb-f9V" id="CQb-vO-Igs"/>
+                <outlet property="saveToggleButton" destination="Pr6-OK-TUf" id="NwY-M0-Fgq"/>
+                <outlet property="termsContainer" destination="17D-O8-v6Y" id="dgz-D4-yvN"/>
+                <outlet property="termsLabel" destination="1rS-fP-bCF" id="kGj-8b-xQZ"/>
+                <outlet property="termsToggleButton" destination="Pyh-7I-Ksq" id="nBd-7p-6G6"/>
+            </connections>
+            <point key="canvasLocation" x="253" y="416.5"/>
+        </view>
+    </objects>
+</document>

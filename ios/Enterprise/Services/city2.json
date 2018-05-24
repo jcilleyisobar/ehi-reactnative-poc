@@ -1,0 +1,261 @@
+{
+    "brand": "ENTERPRISE",
+    "id": "1000002",
+    "location_type": "city",
+    "address": {
+      "street_addresses": ["4927 South Kingshighway", ""],
+      "city": "Saint Louis",
+      "country_subdivision_code": "MO",
+      "country_code": "US",
+      "postal": "63109"
+    },
+    "phones": [{
+      "phone_number": "3148328800",
+      "phone_type": "OFFICE",
+      "priority": 0,
+      "default_indicator": true,
+      "dialing_code": "1"
+    }],
+    "wayfindings": [],
+    "policies": [{
+      "code": "ADDR",
+      "description": "Additional Driver",
+      "mandatory": false,
+      "policy_description": "$10.00 ADDR DRIVER",
+      "policy_text": "There will be an additional charge of 10.00 USD per day for each additional authorized driver other than a spouse or domestic partner.\n",
+      "key_facts_included": false
+    }, {
+      "code": "AGE",
+      "description": "Age Requirements",
+      "mandatory": false,
+      "policy_description": "21-24 E-FCAR ONLY",
+      "policy_text": "All drivers must be 21 years of age or older. Renters 21 through 24 years of age may only rent Economy through Fullsize cars.\n",
+      "key_facts_included": false
+    }, {
+      "code": "CDW",
+      "description": "Damage Waiver",
+      "mandatory": false,
+      "policy_description": "13.50 - 17.99",
+      "policy_text": "DAMAGE WAIVER (DW) FOR THIS BRANCH RANGES BETWEEN $13.50 AND $17.99 PER DAY. - DW IS OFFERED AT THE TIME OF RENTAL FOR AN ADDITIONAL DAILY CHARGE. IF THE RENTER ACCEPTS DW, ENTERPRISE WAIVES OR REDUCES THE RENTER'S RESPONSIBILITY FOR LOSS OF, OR DAMAGE TO, THE RENTAL VEHICLE (INCLUDING BUT NOT LIMITED TO TOWING, STORAGE, LOSS OF USE, ADMINISTRATIVE FEES AND/OR DIMINISHMENT OF VALUE) SUBJECT TO THE TERMS AND CONDITIONS OF THE RENTAL AGREEMENT AND APPLICABLE LAWS. DW IS NOT INSURANCE. THE PURCHASE OF DW IS OPTIONAL AND NOT REQUIRED TO RENT A CAR. THE PROTECTION PROVIDED BY DW MAY DUPLICATE THE RENTER'S EXISTING COVERAGE. ENTERPRISE IS NOT QUALIFIED TO EVALUATE THE ADEQUACY OF THE RENTER'S EXISTING COVERAGE; THEREFORE THE RENTER SHOULD EXAMINE HIS OR HER CREDIT CARD PROTECTIONS, AUTOMOBILE INSURANCE POLICIES OR OTHER SOURCES OF COVERAGE THAT MAY DUPLICATE THE PROTECTION PROVIDED BY DW.",
+      "key_facts_included": false
+    }, {
+      "code": "INS",
+      "description": "Insurance Policy",
+      "mandatory": false,
+      "policy_description": "CORP INS POLICY",
+      "policy_text": "The renters liability insurance will apply except where Enterprise is required by law to provide liability protection.\n",
+      "key_facts_included": false
+    }, {
+      "code": "MISC",
+      "description": "Miscellaneous Policy",
+      "mandatory": true,
+      "policy_description": "MISSOURI VLF",
+      "policy_text": "VLF REC REPRESENTS A RECOVERY OF THE GOVERNMENTAL IMPOSED COST TO LICENSE, TITLE, INSPECT, REGISTER, PLATE AND PAY PERSONAL PROPERTY TAXES ON RENTAL VEHICLES.",
+      "key_facts_included": false
+    }, {
+      "code": "PAI",
+      "description": "Personal Accident Insurance",
+      "mandatory": false,
+      "policy_description": "$3.00 - $7.00",
+      "policy_text": "PERSONAL ACCIDENT INSURANCE (PAI) FOR THIS BRANCH RANGES BETWEEN $3.00 AND $7.00 PER DAY. - PERSONAL ACCIDENT INSURANCE (PAI) IS OFFERED AT THE TIME OF RENTAL FOR AN ADDITIONAL DAILY CHARGE. IF ACCEPTED, PAI PROVIDES THE RENTER AND PASSENGERS WITH ACCIDENT MEDICAL EXPENSE, ACCIDENTAL DEATH AND AMBULANCE EXPENSE BENEFITS. BENEFITS ARE PAYABLE IN ADDITION TO ANY OTHER INSURANCE COVERAGE THE RENTER OR PASSENGERS MAY HAVE. THIS IS A SUMMARY ONLY. PAI IS SUBJECT TO THE PROVISIONS, LIMITATIONS AND EXCLUSIONS OF THE PAI POLICY UNDERWRITTEN BY EMPIRE FIRE AND MARINE INSURANCE COMPANY. THE PURCHASE OF PAI IS OPTIONAL AND NOT REQUIRED TO RENT A CAR. THE COVERAGE PROVIDED BY PAI MAY DUPLICATE THE RENTER'S EXISTING COVERAGE. ENTERPRISE IS NOT QUALIFIED TO EVALUATE THE ADEQUACY OF THE RENTER'S EXISTING COVERAGE; THEREFORE THE RENTER SHOULD EXAMINE HIS OR HER PERSONAL INSURANCE OR OTHER SOURCES OF COVERAGE THAT MAY DUPLICATE THE COVERAGE PROVIDED BY PAI.",
+      "key_facts_included": false
+    }, {
+      "code": "PYMT",
+      "description": "Forms of Payment",
+      "mandatory": false,
+      "policy_description": "CRED, DEB, M.O.,ETC",
+      "policy_text": "A MAJOR CREDIT CARD OR DEBIT CARD IN THE RENTERS NAME IS REQUIRED FOR A DEPOSIT ON ALL RENTALS. IF USING A DEBIT CARD PLEASE SEE DEBIT CARD POLICY FOR FURTHER QUALIFICATION INFORMATION. AT THE TIME OF PAYMENT, MONEY ORDERS, TRAVELERS CHECKS, CASHIER CHECKS, MAJOR CREDIT CARDS OR DEBIT CARDS ARE ACCEPTED.",
+      "key_facts_included": false
+    }, {
+      "code": "RAP",
+      "description": "Roadside Protection",
+      "mandatory": false,
+      "policy_description": "3.99 US AND CA",
+      "policy_text": "Enterprise offers roadside assistance protection at select locations. Rap allows Enterprise customers to waive financial responsibility for chargeable roadside incidents such as lost keys, lockouts, and fuel outages. Rap can be added for 3.99 US or Canadian dollars per day.  Road side assistance protection offers these services--flat tire, jump start, lockout service, fuel delivery, and key replacement. Note- in NY, CA, NV, and KS the cost of the key will not be covered, only the service to deliver the key or perform the lockout service.  Roadside assistance protection is void and of no effect if, at the time of the incident necessitating roadside assistance, you or any authorized driver were in violation of the rental agreement, including, without limitation, the prohibited uses and violations set forth therein. In such cases, roadside assistance will be available, but standard charges may apply.\n",
+      "key_facts_included": false
+    }, {
+      "code": "RQMT",
+      "description": "Renter Requirements",
+      "mandatory": false,
+      "policy_description": "US CORPORATE POLICY",
+      "policy_text": "All drivers must--have a valid United States drivers license, or internationals drivers permit. All international drivers must also have their own valid country specific drivers license. Note- at Phoenix and Nevada area airports and rental locations, renters with drivers licenses issued outside of the United States or its territories must produce a valid passport. US territories include American Samoa, Guam, the U.S. Virgin Islands Puerto Rico, the Federated States of Micronesia, and the Midway Islands. Have a major credit card in their name at the time of rental. Exceptions may apply by location please see individual location payment policy. Note- Enterprise locations require a rental deposit in addition to the cost of the rental amount. Meet the rental locations minimum age requirements.\n",
+      "key_facts_included": false
+    }, {
+      "code": "SLP",
+      "description": "Supplemental Liability Protection",
+      "mandatory": false,
+      "policy_description": "$12.99 PER DAY",
+      "policy_text": "SUPPLEMENTAL LIABILITY PROTECTION -SLP- FOR THIS BRANCH IS 12.99 USD PER DAY. SUPPLEMENTAL LIABILITY PROTECTION -SLP- IS OFFERED AT THE TIME OF RENTAL FOR AN ADDITIONAL DAILY CHARGE. IF ACCEPTED, SLP PROVIDES THE RENTER AND AUTHORIZED DRIVERS WITH UP TO 1,000,000.00 USD COMBINED SINGLE LIMIT FOR THIRD PARTY LIABILITY CLAIMS. IF THE RENTER ACCEPTS SLP, ENTERPRISE PROVIDES THIRD PARTY LIABILITY PROTECTION UP TO THE APPLICABLE MINIMUM FINANCIAL RESPONSIBILITY LIMIT AND EMPIRE FIRE AND MARINE INSURANCE COMPANY PROVIDES EXCESS THIRD PARTY LIABILITY INSURANCE COVERAGE FROM THE APPLICABLE MINIMUM FINANCIAL RESPONSIBILITY LIMIT TO 1,000,000.00 USD. THIS IS A SUMMARY ONLY. SLP IS SUBJECT TO THE TERMS, CONDITIONS, PROVISIONS, LIMITATIONS AND EXCLUSIONS IN THE SUPPLEMENTAL RENTAL LIABILITY INSURANCE EXCESS POLICY UNDERWRITTEN BY EMPIRE FIRE AND MARINE INSURANCE COMPANY. THE PURCHASE OF SLP IS OPTIONAL AND NOT REQUIRED TO RENT A CAR. THE COVERAGE PROVIDED BY SLP MAY DUPLICATE THE RENTERS EXISTING COVERAGE. ENTERPRISE IS NOT QUALIFIED TO EVALUATE THE ADEQUACY OF THE RENTERS EXISTING COVERAGE, THEREFORE THE RENTER SHOULD EXAMINE HIS OR HER PERSONAL INSURANCE POLICIES OR OTHER SOURCES OF COVERAGE THAT MAY DUPLICATE THE COVERAGE PROVIDED BY SLP.\n",
+      "key_facts_included": false
+    }],
+    "business_types": [{
+      "code": "INR"
+    }, {
+      "code": "PYU"
+    }, {
+      "code": "EDR",
+      "description": "Enterprise Daily Rental"
+    }],
+    "indicators": [],
+    "name": "South Kingshighway",
+    "description": "Enterprise Leasing Company Of Stl, Llc",
+    "gps": {
+      "latitude": 38.584496,
+      "longitude": -90.27702
+    },
+    "drive_distance": {
+      "unit": "MI",
+      "distance": 0.0
+    },
+    "hours": [{
+      "type": "STANDARD",
+      "days": [{
+        "day": "MON",
+        "date": "2017-02-06",
+        "open_all_day": false,
+        "closed_all_day": false,
+        "open_close_times": [{
+          "open_time": "730",
+          "close_time": "1800"
+        }]
+      }, {
+        "day": "TUE",
+        "date": "2017-02-07",
+        "open_all_day": false,
+        "closed_all_day": false,
+        "open_close_times": [{
+          "open_time": "730",
+          "close_time": "1800"
+        }]
+      }, {
+        "day": "WED",
+        "date": "2017-02-08",
+        "open_all_day": false,
+        "closed_all_day": false,
+        "open_close_times": [{
+          "open_time": "730",
+          "close_time": "1800"
+        }]
+      }, {
+        "day": "THU",
+        "date": "2017-02-09",
+        "open_all_day": false,
+        "closed_all_day": false,
+        "open_close_times": [{
+          "open_time": "730",
+          "close_time": "1800"
+        }]
+      }, {
+        "day": "FRI",
+        "date": "2017-02-10",
+        "open_all_day": false,
+        "closed_all_day": false,
+        "open_close_times": [{
+          "open_time": "730",
+          "close_time": "1800"
+        }]
+      }, {
+        "day": "SAT",
+        "date": "2017-02-11",
+        "open_all_day": false,
+        "closed_all_day": false,
+        "open_close_times": [{
+          "open_time": "900",
+          "close_time": "1300"
+        }]
+      }, {
+        "day": "SUN",
+        "date": "2017-02-12",
+        "open_all_day": false,
+        "closed_all_day": true,
+        "open_close_times": [{
+          "open_time": "0",
+          "close_time": "0"
+        }]
+      }]
+    }, {
+      "type": "STANDARD",
+      "days": [{
+        "day": "MON",
+        "date": "2017-02-13",
+        "open_all_day": false,
+        "closed_all_day": false,
+        "open_close_times": [{
+          "open_time": "730",
+          "close_time": "1800"
+        }]
+      }, {
+        "day": "TUE",
+        "date": "2017-02-14",
+        "open_all_day": false,
+        "closed_all_day": false,
+        "open_close_times": [{
+          "open_time": "730",
+          "close_time": "1800"
+        }]
+      }, {
+        "day": "WED",
+        "date": "2017-02-15",
+        "open_all_day": false,
+        "closed_all_day": false,
+        "open_close_times": [{
+          "open_time": "730",
+          "close_time": "1800"
+        }]
+      }, {
+        "day": "THU",
+        "date": "2017-02-16",
+        "open_all_day": false,
+        "closed_all_day": false,
+        "open_close_times": [{
+          "open_time": "730",
+          "close_time": "1800"
+        }]
+      }, {
+        "day": "FRI",
+        "date": "2017-02-17",
+        "open_all_day": false,
+        "closed_all_day": false,
+        "open_close_times": [{
+          "open_time": "730",
+          "close_time": "1800"
+        }]
+      }, {
+        "day": "SAT",
+        "date": "2017-02-18",
+        "open_all_day": false,
+        "closed_all_day": false,
+        "open_close_times": [{
+          "open_time": "900",
+          "close_time": "1300"
+        }]
+      }, {
+        "day": "SUN",
+        "date": "2017-02-19",
+        "open_all_day": false,
+        "closed_all_day": true,
+        "open_close_times": [{
+          "open_time": "0",
+          "close_time": "0"
+        }]
+      }]
+    }],
+    "time_zone_id": "America/Chicago",
+    "offered_car_classes": [],
+    "filter_tags": ["OPEN NOW"],
+    "booking_urls": [{
+      "type": "Enterprise",
+      "url": "http://www.enterprise.com/ "
+    }],
+    "exotics_location": false,
+    "car_sales_location": false,
+    "show_truck_lob_url": false,
+    "after_hours_pickup": false,
+    "after_hours_return": true,
+    "airline_details": [],
+    "multi_terminal": false,
+    "do_not_index": false,
+    "reservation_booking_system": "ODYSSEY",
+    "rental_checklists": [],
+    "currency_code": "USD"
+  }

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Survey View Controller-->
+        <scene sceneID="tRQ-VH-vaO">
+            <objects>
+                <viewController storyboardIdentifier="EHISurveyViewController" id="x4v-lf-wMV" customClass="EHISurveyViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bu7-7X-rWc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xtb-KS-WmT">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pkh-d6-8rL">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="441"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="foresee_logo" translatesAutoresizingMaskIntoConstraints="NO" id="KhX-PK-CWW">
+                                                <rect key="frame" x="149.5" y="20" width="77" height="35"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for helping!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYS-xJ-7Lx" userLabel="Title Label" customClass="EHILabel">
+                                                <rect key="frame" x="20" y="80" width="319" height="33"/>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will be emailed or text messaged (US &amp; CAN only) the survey from our partner ForeSee. Text messaging rates apply." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Mu-iI-h4V" customClass="EHILabel">
+                                                <rect key="frame" x="20" y="133" width="335" height="63"/>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL OR PHONE (text message)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CsD-pv-J9p" customClass="EHILabel">
+                                                <rect key="frame" x="20" y="236" width="335" height="17"/>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="14"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kbC-Mn-bgN" customClass="EHITextField">
+                                                <rect key="frame" x="20" y="263" width="335" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="U0n-fw-GAK"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="x4v-lf-wMV" id="4Hz-pN-QU5"/>
+                                                </connections>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O0r-BI-jqm" customClass="EHIActionButton">
+                                                <rect key="frame" x="20" y="324" width="335" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="uSG-l2-z5n"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="18"/>
+                                                <state key="normal" title="SEND SURVEY">
+                                                    <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTapSendSurveyButton:" destination="x4v-lf-wMV" eventType="touchUpInside" id="DD0-qh-ZwE"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VoF-xb-aI6" customClass="EHIButton">
+                                                <rect key="frame" x="20" y="392" width="142" height="29"/>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="14"/>
+                                                <state key="normal" title="Foresee Privacy Policy">
+                                                    <color key="titleColor" red="0.08235294118" green="0.58823529409999997" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTapPrivacyPolicyButton:" destination="x4v-lf-wMV" eventType="touchUpInside" id="2F9-QP-MxX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="VoF-xb-aI6" firstAttribute="top" secondItem="O0r-BI-jqm" secondAttribute="bottom" constant="22" id="1SV-Na-Nmx"/>
+                                            <constraint firstItem="O0r-BI-jqm" firstAttribute="top" secondItem="kbC-Mn-bgN" secondAttribute="bottom" constant="15" id="5Ru-WW-miF"/>
+                                            <constraint firstAttribute="trailing" secondItem="O0r-BI-jqm" secondAttribute="trailing" constant="20" id="91c-lS-jNv"/>
+                                            <constraint firstAttribute="trailing" secondItem="7Mu-iI-h4V" secondAttribute="trailing" constant="20" id="LH2-Pe-wE0"/>
+                                            <constraint firstItem="CsD-pv-J9p" firstAttribute="leading" secondItem="Pkh-d6-8rL" secondAttribute="leading" constant="20" id="MCK-Nu-PLO"/>
+                                            <constraint firstItem="7Mu-iI-h4V" firstAttribute="top" secondItem="rYS-xJ-7Lx" secondAttribute="bottom" constant="20" id="QRo-g8-Bhf"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="rYS-xJ-7Lx" secondAttribute="trailing" constant="28" id="Re8-Z3-aFB"/>
+                                            <constraint firstItem="rYS-xJ-7Lx" firstAttribute="top" secondItem="KhX-PK-CWW" secondAttribute="bottom" constant="25" id="ShM-Ov-SY9"/>
+                                            <constraint firstItem="rYS-xJ-7Lx" firstAttribute="leading" secondItem="Pkh-d6-8rL" secondAttribute="leading" constant="20" id="XdC-lA-ib5"/>
+                                            <constraint firstItem="7Mu-iI-h4V" firstAttribute="leading" secondItem="Pkh-d6-8rL" secondAttribute="leading" constant="20" id="aC7-Qa-7mX"/>
+                                            <constraint firstAttribute="bottom" secondItem="VoF-xb-aI6" secondAttribute="bottom" constant="20" id="aeF-ej-pWZ"/>
+                                            <constraint firstItem="CsD-pv-J9p" firstAttribute="top" secondItem="7Mu-iI-h4V" secondAttribute="bottom" constant="40" id="aqk-em-nWV"/>
+                                            <constraint firstAttribute="trailing" secondItem="kbC-Mn-bgN" secondAttribute="trailing" constant="20" id="gDz-Yn-1Ai"/>
+                                            <constraint firstItem="KhX-PK-CWW" firstAttribute="centerX" secondItem="Pkh-d6-8rL" secondAttribute="centerX" id="gkj-Us-xWa"/>
+                                            <constraint firstItem="kbC-Mn-bgN" firstAttribute="leading" secondItem="Pkh-d6-8rL" secondAttribute="leading" constant="20" id="mri-cz-37s"/>
+                                            <constraint firstAttribute="trailing" secondItem="CsD-pv-J9p" secondAttribute="trailing" constant="20" id="oH3-R6-EiE"/>
+                                            <constraint firstItem="VoF-xb-aI6" firstAttribute="leading" secondItem="Pkh-d6-8rL" secondAttribute="leading" constant="20" id="ofx-Js-0sp"/>
+                                            <constraint firstItem="O0r-BI-jqm" firstAttribute="leading" secondItem="Pkh-d6-8rL" secondAttribute="leading" constant="20" id="rfn-Z6-d3t"/>
+                                            <constraint firstItem="KhX-PK-CWW" firstAttribute="top" secondItem="Pkh-d6-8rL" secondAttribute="top" constant="20" id="sRI-IM-dtw"/>
+                                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="VoF-xb-aI6" secondAttribute="trailing" constant="20" id="vek-YU-9J0"/>
+                                            <constraint firstItem="kbC-Mn-bgN" firstAttribute="top" secondItem="CsD-pv-J9p" secondAttribute="bottom" constant="10" id="wn2-so-S0d"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Pkh-d6-8rL" secondAttribute="bottom" id="28k-Pn-lMp"/>
+                                    <constraint firstItem="Pkh-d6-8rL" firstAttribute="top" secondItem="Xtb-KS-WmT" secondAttribute="top" id="LQY-kS-3hU"/>
+                                    <constraint firstAttribute="width" secondItem="Pkh-d6-8rL" secondAttribute="width" id="gTc-Cn-hTZ"/>
+                                    <constraint firstItem="Pkh-d6-8rL" firstAttribute="leading" secondItem="Xtb-KS-WmT" secondAttribute="leading" id="rhi-I9-Mxa"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pkh-d6-8rL" secondAttribute="trailing" id="viv-xE-xsy"/>
+                                </constraints>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zIz-c1-mFJ" customClass="EHIActivityIndicator">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="zIz-c1-mFJ" firstAttribute="bottom" secondItem="Xtb-KS-WmT" secondAttribute="bottom" id="15d-im-g18"/>
+                            <constraint firstItem="bQJ-ec-TmO" firstAttribute="bottom" secondItem="Xtb-KS-WmT" secondAttribute="bottom" id="BZH-me-gZ2"/>
+                            <constraint firstItem="Xtb-KS-WmT" firstAttribute="leading" secondItem="bQJ-ec-TmO" secondAttribute="leading" id="JSY-LI-gNK"/>
+                            <constraint firstItem="bQJ-ec-TmO" firstAttribute="trailing" secondItem="Xtb-KS-WmT" secondAttribute="trailing" id="NKy-RW-Mew"/>
+                            <constraint firstItem="zIz-c1-mFJ" firstAttribute="top" secondItem="Xtb-KS-WmT" secondAttribute="top" id="Y69-AT-sZa"/>
+                            <constraint firstItem="zIz-c1-mFJ" firstAttribute="leading" secondItem="Xtb-KS-WmT" secondAttribute="leading" id="ZnI-Wl-ZEl"/>
+                            <constraint firstItem="zIz-c1-mFJ" firstAttribute="trailing" secondItem="Xtb-KS-WmT" secondAttribute="trailing" id="l5C-He-ajJ"/>
+                            <constraint firstItem="Xtb-KS-WmT" firstAttribute="top" secondItem="bu7-7X-rWc" secondAttribute="top" id="s40-3g-KYB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="bQJ-ec-TmO"/>
+                    </view>
+                    <connections>
+                        <outlet property="customerDetailLabel" destination="CsD-pv-J9p" id="oAA-M8-9ca"/>
+                        <outlet property="customerDetailsTextField" destination="kbC-Mn-bgN" id="kVQ-bx-8GU"/>
+                        <outlet property="greetingsLabel" destination="rYS-xJ-7Lx" id="huv-dW-dTu"/>
+                        <outlet property="instructionsLabel" destination="7Mu-iI-h4V" id="und-Fb-iqQ"/>
+                        <outlet property="loadingIndicator" destination="zIz-c1-mFJ" id="Qr8-Hz-q3H"/>
+                        <outlet property="scrollView" destination="Xtb-KS-WmT" id="Rkh-QL-pOJ"/>
+                        <outlet property="sendSurveyButton" destination="O0r-BI-jqm" id="Fcl-Eg-SDj"/>
+                        <outlet property="surveyPolicyButton" destination="VoF-xb-aI6" id="Caw-E3-M8A"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hrj-6F-55o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-628" y="-33.733133433283363"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="foresee_logo" width="77" height="35"/>
+    </resources>
+</document>
