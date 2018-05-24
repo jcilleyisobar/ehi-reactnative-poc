@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+                android:oneshot="false">
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00047" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00048" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00049" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00050" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00051" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00052" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00053" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00054" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00055" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00056" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00057" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00060" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00061" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00062" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00063" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00064" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00065" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00066" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00067" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00070" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00071" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00072" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00073" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00074" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00075" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00076" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00077" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00078" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00079" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00080" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00081" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00082" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00083" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00084" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00085" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00086" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00087" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00088" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00089" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00090" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00091" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00092" android:duration="33" />
+    <item android:drawable="@drawable/loader_cycle_small_white_transparent_00093" android:duration="33" />
+</animation-list>

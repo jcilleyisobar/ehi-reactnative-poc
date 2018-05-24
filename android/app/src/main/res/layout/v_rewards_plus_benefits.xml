@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="RewardsPlusBenefitsViewBinding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_marginBottom="130dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/description"
+            style="@style/TextViewSize28"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="@dimen/padding_base"
+            android:layout_marginStart="@dimen/padding_base"
+            android:gravity="center"
+            android:text="@string/rewards_plus_benefits_title"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_bold"/>
+
+        <TextView
+            android:id="@+id/first_benefit_description"
+            style="@style/TextViewSize18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:drawableLeft="@drawable/icon_rewards_black"
+            android:drawablePadding="@dimen/padding_base"
+            android:gravity="center|left"
+            android:text="@string/rewards_first_benefit_description"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_regular"/>
+
+        <TextView
+            style="@style/TextViewSize18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_medium"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:drawableLeft="@drawable/icon_rewards_calendar"
+            android:drawablePadding="@dimen/padding_base"
+            android:gravity="center|left"
+            android:text="@string/rewards_second_benefit_description"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_regular"/>
+
+        <TextView
+            android:id="@+id/third_benefit_description"
+            style="@style/TextViewSize18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:drawableLeft="@drawable/icon_promo_applied"
+            android:drawablePadding="@dimen/padding_base"
+            android:gravity="center|left"
+            android:text="@string/rewards_third_benefit_description"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_regular"/>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="ItemAppliedViewBinding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="@dimen/padding_base"
+        android:paddingRight="@dimen/padding_base"
+        android:paddingTop="@dimen/padding_xsmall"
+        android:paddingBottom="@dimen/padding_xsmall">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_confirm_01"/>
+
+        <TextView
+            android:id="@+id/item_title"
+            style="@style/TextViewSize18"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/ehi_black"
+            tools:text="Item Applied"
+            android:fontFamily="@font/source_sans_regular"/>
+
+        <ImageButton
+            android:id="@+id/remove_button"
+            android:layout_width="@dimen/search_input_height"
+            android:layout_height="@dimen/search_input_height"
+            android:layout_weight="0.01"
+            android:background="@android:color/transparent"
+            android:src="@drawable/icon_x_gray_03"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/unauth_rentals_divider" />
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <data class="EmeraldClubSignInFragmentBinding" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                style="@style/HeaderFont24"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:drawablePadding="@dimen/padding_base"
+                android:drawableStart="@drawable/national_logo_large"
+                android:text="@string/emerald_login_add_account_title"
+                android:fontFamily="@font/source_sans_light" />
+
+            <TextView
+                style="@style/TextViewSize16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/emerald_club_login_details"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light" />
+
+            <TextView
+                style="@style/HeaderFont14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="@string/emerald_club_login_username_placeholder"
+                android:fontFamily="@font/source_sans_bold" />
+
+            <EditText
+                android:id="@+id/ec_member_id"
+                style="@style/InputField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/source_sans_light" />
+
+            <TextView
+                style="@style/HeaderFont14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:text="@string/emerald_club_login_password_placeholder"
+                android:fontFamily="@font/source_sans_bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/edit_text_white_border">
+
+                <EditText
+                    android:id="@+id/ec_password"
+                    style="@style/InputField"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:inputType="textWebPassword"
+                    android:fontFamily="@font/source_sans_light" />
+
+                <ImageView
+                    android:id="@+id/login_screen_show_password_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:layout_marginRight="10dp"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:src="@drawable/icon_show_02" />
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/remember_info_check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_large"
+                android:button="@drawable/check_box_button_selector"
+                android:paddingStart="@dimen/padding_small"
+                android:text="@string/emerald_login_remember_credentials_title"
+                android:fontFamily="@font/source_sans_light" />
+
+            <TextView
+                android:id="@+id/ec_log_in_button"
+                style="@style/GreenContinueButton"
+                android:text="@string/emerald_login_add_account_button_title"
+                android:fontFamily="@font/source_sans_bold" />
+
+            <TextView
+                android:id="@+id/ec_forgot_password_button"
+                style="@style/TextViewSize16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/emerald_login_forgot_password_button_title"
+                android:textColor="@color/green_text_color"
+                android:fontFamily="@font/source_sans_bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

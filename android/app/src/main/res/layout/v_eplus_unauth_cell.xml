@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:id="@+id/unauth_eplus_cell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/eplus_repeat_tile"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/padding_base"
+            android:paddingRight="@dimen/padding_base"
+            android:paddingTop="5dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/logo_eplus"/>
+
+            <TextView
+                style="@style/TextViewSize14"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="3"
+                android:maxLines="3"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:text="@string/dashboard_loyalty_cell_title"
+                android:textColor="@color/white"
+                android:fontFamily="@font/source_sans_bold"/>
+
+            <TextView
+                style="@style/TextViewSize18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/common_signin_button_text"
+                android:textAllCaps="true"
+                android:textColor="@color/dashboard_sign_in_text_color"
+                android:fontFamily="@font/source_sans_bold"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</layout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="RateUsViewBinding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grey_background_with_green_bottom"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_small">
+
+        <TextView
+            style="@style/TextViewSize16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/confirmation_rating_title"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/source_sans_bold" />
+
+        <TextView
+            style="@style/TextViewSize18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/confirmation_rating_subtitle"
+            android:textColor="@android:color/white"
+            android:fontFamily="@font/source_sans_regular" />
+
+        <TextView
+            android:id="@+id/rate_us_button"
+            style="@style/GreenButtonTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/confirmation_rating_rate_us_button_title"
+            android:fontFamily="@font/source_sans_bold" />
+
+        <TextView
+            android:id="@+id/dismiss_button"
+            style="@style/GreenBorderWhiteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/confirmation_rating_dismiss_button_title"
+            android:fontFamily="@font/source_sans_bold" />
+
+    </LinearLayout>
+</layout>

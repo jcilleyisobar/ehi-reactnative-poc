@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="MyProfileEditPaymentsFragmentBinding"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/billing_code_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    style="@style/SectionHeaderProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/section_header_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/ProfileHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="0dp"
+                        android:text="@string/profile_payment_billing_numbers_header"
+                        android:textColor="@color/ehi_black"
+                        android:fontFamily="@font/source_sans_bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/billing_code_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/divider_horiz"
+                    android:orientation="vertical"
+                    android:showDividers="middle"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/review_section_divider_margin"
+                    android:background="@color/ehi_grey_header_bg"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/credit_card_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/SectionHeaderProfile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/section_header_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/ProfileHeader"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="0dp"
+                        android:text="@string/profile_payment_credit_cards_header"
+                        android:textColor="@color/ehi_black"
+                        android:fontFamily="@font/source_sans_bold"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/credit_card_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@drawable/divider_horiz"
+                    android:orientation="vertical"
+                    android:showDividers="middle"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@drawable/divider_horiz"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/warning_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/padding_base"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="gone"
+                tools:visibility="visible">
+
+                <TextView
+                    android:id="@+id/warning_view_title"
+                    style="@style/ProfileHeader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/profile_payment_options_max_credit_card_title"
+                    android:fontFamily="@font/source_sans_bold"/>
+
+                <TextView
+                    android:id="@+id/warning_view_text"
+                    style="@style/TextViewSize18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"
+                    tools:text="@string/profile_payment_options_max_credit_card_text"/>
+
+            </LinearLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/add_credit_card"
+                    style="@style/GreenBorderWhiteButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/padding_base"
+                    android:text="@string/profile_add_credit_card_button"
+                    android:fontFamily="@font/source_sans_bold"/>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

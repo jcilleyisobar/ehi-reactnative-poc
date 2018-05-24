@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="LocationListHeaderBinding" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sliding_panel_height_initial"
+        android:animateLayoutChanges="false"
+        android:background="@color/car_class_select_bottom"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ehi_grey_header_bg" />
+
+        <TextView
+            android:id="@+id/header_text"
+            style="@style/SectionHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/car_class_select_bottom"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/icon_plusbenefits_01"
+            android:paddingEnd="@dimen/padding_base"
+            android:paddingStart="@dimen/padding_base"
+            android:text="@string/locations_list_section_title"
+            android:textColor="@color/ehi_primary"
+            android:fontFamily="@font/source_sans_bold" />
+
+        <View
+            android:id="@+id/separator_view"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/filter_button"
+            android:background="@color/ehi_grey_header_bg" />
+
+        <TextView
+            android:id="@+id/filter_button"
+            style="@style/LocationSearchFilterButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:paddingEnd="@dimen/margin_large"
+            android:paddingStart="@dimen/margin_large"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:visibility="gone"
+            android:fontFamily="@font/source_sans_bold"
+            tools:visibility="visible" />
+
+
+    </RelativeLayout>
+</layout>

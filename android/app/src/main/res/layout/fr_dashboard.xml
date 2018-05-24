@@ -1,0 +1,401 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="DashboardFragmentViewBinding"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:descendantFocusability="beforeDescendants"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/animation_layer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:id="@+id/dummy_search_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/toolbar_height"
+                android:background="@drawable/transparent_to_green_transition">
+
+                <RelativeLayout
+                    android:id="@+id/dummy_dashboard_search_locations_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <EditText
+                        android:id="@+id/dummy_search_edit_text"
+                        style="@style/dashboard_search_box"
+                        android:fontFamily="@font/source_sans_light"
+                        tools:ignore="RtlHardcoded,RtlSymmetry"/>
+
+                    <ImageView
+                        android:id="@+id/dummy_dashboard_input_search_nearby_icon"
+                        android:layout_width="@dimen/search_input_height"
+                        android:layout_height="@dimen/search_input_height"
+                        android:layout_alignRight="@id/dummy_search_edit_text"
+                        android:layout_centerVertical="true"
+                        android:scaleType="center"
+                        android:src="@drawable/icon_locationsrch_03"
+                        tools:ignore="RtlHardcoded"/>
+
+                    <ImageButton
+                        android:id="@+id/search_location_clear_input"
+                        android:layout_width="@dimen/search_input_height"
+                        android:layout_height="@dimen/search_input_height"
+                        android:layout_alignRight="@id/dummy_search_edit_text"
+                        android:layout_centerVertical="true"
+                        android:alpha="0"
+                        android:background="@android:color/transparent"
+                        android:scaleType="center"
+                        android:src="@drawable/icon_x_gray_03"
+                        tools:ignore="RtlHardcoded"/>
+
+                    <FrameLayout
+                        android:id="@+id/dummy_dashboard_search_click_listener"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="72dp"
+                        android:background="@android:color/transparent"/>
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+        </FrameLayout>
+
+        <com.ehi.enterprise.android.ui.widget.NotifyingScrollView
+            android:id="@+id/dashboard_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/dashboard_linear_layout"
+                android:layout_width="match_parent"
+                android:animateLayoutChanges="false"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.ehi.enterprise.android.ui.dashboard.widget.EplusCellViewUnauthenticated
+                    android:id="@+id/eplus_cell_view_unauthenticated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <com.ehi.enterprise.android.ui.dashboard.widget.EplusCellViewAuthenticated
+                    android:id="@+id/eplus_cell_view_authenticated"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
+
+                <FrameLayout
+                    android:id="@+id/parallax_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp">
+
+                    <FrameLayout
+                        android:id="@+id/parallax_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RelativeLayout
+                            android:id="@+id/dashboard_default_image_container"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/dashboard_default_image"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="centerCrop"/>
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignBottom="@+id/dashboard_default_image"
+                                android:layout_alignParentLeft="true"
+                                android:layout_margin="8dp"
+                                android:background="#80000000"
+                                android:padding="8dp">
+
+                                <TextView
+                                    android:id="@+id/image_text"
+                                    style="@style/TextViewSize12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/dashboard_image_caption"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/source_sans_regular"/>
+
+                                <TextView
+                                    android:id="@+id/image_caption_text"
+                                    style="@style/TextViewSize14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/image_text"
+                                    android:layout_marginTop="2dp"
+                                    android:textAllCaps="true"
+                                    android:textColor="@color/white"
+                                    android:fontFamily="@font/source_sans_bold"/>
+
+                            </RelativeLayout>
+
+                        </RelativeLayout>
+
+                        <com.ehi.enterprise.android.ui.dashboard.widget.ActiveRentalView
+                            android:id="@+id/dashboard_active_rental_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"/>
+
+                        <com.ehi.enterprise.android.ui.dashboard.widget.UpcomingRentalsView
+                            android:id="@+id/dashboard_upcoming_rental_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/location_info_window_divider_grey"
+                            android:paddingBottom="@dimen/dashboard_box_padding"
+                            android:paddingTop="@dimen/dashboard_box_padding"
+                            android:visibility="gone"/>
+
+                        <com.ehi.enterprise.android.ui.notification.NotificationPromptView
+                            android:id="@+id/notification_prompt_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/location_info_window_divider_grey"
+                            android:paddingBottom="@dimen/dashboard_box_padding"
+                            android:paddingTop="@dimen/dashboard_box_padding"
+                            android:visibility="gone"/>
+
+
+                        <RelativeLayout
+                            android:id="@+id/progress_spinner_container"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_gravity="center"
+                            android:background="@color/white"
+                            android:gravity="center_vertical"
+                            android:visibility="invisible">
+
+                            <FrameLayout
+                                android:id="@+id/progress_spinner"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:animateLayoutChanges="true"
+                                android:gravity="center"/>
+
+                            <TextView
+                                style="@style/TextViewSize18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/progress_spinner"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginTop="10dp"
+                                android:text="@string/dashboard_loading_cell_title"
+                                android:textColor="@color/ehi_black"
+                                android:fontFamily="@font/source_sans_regular"/>
+
+                        </RelativeLayout>
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/quickstart_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/quick_start_cells"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:animateLayoutChanges="false"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/quick_start_view"
+                            style="@style/TextViewSize18"
+                            android:layout_width="match_parent"
+                            android:layout_height="84dp"
+                            android:background="@color/selected_date_cell_bg"
+                            android:gravity="center"
+                            android:text="@string/dashboard_quickstart_title"
+                            android:textAllCaps="true"
+                            android:textColor="@color/ehi_primary"
+                            android:fontFamily="@font/source_sans_bold"/>
+
+                        <TextView
+                            android:id="@+id/clear_recent_activity_button"
+                            style="@style/TextViewSize18"
+                            android:layout_width="match_parent"
+                            android:layout_height="64dp"
+                            android:background="@color/selected_date_cell_bg"
+                            android:gravity="center"
+                            android:text="@string/dashboard_quickstart_delete_title"
+                            android:textAllCaps="true"
+                            android:textColor="@color/ehi_primary"
+                            android:fontFamily="@font/source_sans_bold"/>
+
+                        <com.ehi.enterprise.android.ui.dashboard.widget.WeekendSpecialDashboardView
+                            android:id="@+id/weekend_special"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <LinearLayout
+                            android:id="@+id/eplus_extended_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/eplus_repeat_tile"
+                            android:orientation="vertical"
+                            android:padding="15dp">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="24dp"
+                                android:src="@drawable/logo_eplus"/>
+
+                            <TextView
+                                style="@style/TextViewSize18"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="28dp"
+                                android:gravity="center"
+                                android:text="@string/dashboard_loyalty_prompt_cell_title"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/source_sans_bold"/>
+
+                            <TextView
+                                style="@style/TextViewSize14"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="14dp"
+                                android:gravity="center"
+                                android:text="@string/dashboard_loyalty_prompt_cell_details"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/source_sans_light"/>
+
+                            <TextView
+                                android:id="@+id/eplus_join_now_button"
+                                style="@style/TextViewSize14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="24dp"
+                                android:layout_marginTop="18dp"
+                                android:background="@color/ehi_primary"
+                                android:paddingBottom="10dp"
+                                android:paddingLeft="16dp"
+                                android:paddingRight="16dp"
+                                android:paddingTop="10dp"
+                                android:text="@string/dashboard_loyalty_prompt_cell_button_title"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/source_sans_bold"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/start_reservation_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="@color/white"
+                        android:clickable="true"
+                        android:orientation="vertical">
+
+                        <View
+                            android:id="@+id/start_container_divider"
+                            android:layout_width="match_parent"
+                            android:layout_height="3px"
+                            android:background="@color/dashboard_upcoming_rentals_divider_grey"/>
+
+                        <TextView
+                            android:id="@+id/start_res_string"
+                            style="@style/TextViewSize24"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/padding_base"
+                            android:layout_marginRight="@dimen/padding_base"
+                            android:layout_marginTop="50dp"
+                            android:gravity="center"
+                            android:letterSpacing="0.041"
+                            android:text="@string/dashboard_search_title"
+                            android:textAllCaps="true"
+                            android:textColor="@color/ehi_black"
+                            android:fontFamily="@font/source_sans_black"/>
+
+                        <RelativeLayout
+                            android:id="@+id/dashboard_search_locations_area"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/toolbar_height"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="35dp"
+                            android:layout_marginTop="10dp">
+
+                            <EditText
+                                android:id="@+id/search_edit_text"
+                                style="@style/dashboard_search_box"
+                                android:fontFamily="@font/source_sans_light"
+                                tools:ignore="RtlHardcoded,RtlSymmetry"/>
+
+                            <ImageView
+                                android:id="@+id/dashboard_input_search_nearby_icon"
+                                android:layout_width="@dimen/search_input_height"
+                                android:layout_height="@dimen/search_input_height"
+                                android:layout_alignRight="@id/search_edit_text"
+                                android:layout_centerVertical="true"
+                                android:scaleType="center"
+                                android:src="@drawable/icon_locationsrch_03"
+                                tools:ignore="RtlHardcoded"/>
+
+                            <FrameLayout
+                                android:id="@+id/dashboard_search_click_listener"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="72dp"
+                                android:background="@android:color/transparent"/>
+
+                        </RelativeLayout>
+
+                        <View
+                            android:id="@+id/start_rentals_divider"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_gravity="bottom"
+                            android:background="@color/ehi_grey_header_bg"/>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/down_arrow_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|top"
+                        android:layout_marginTop="150dp"
+                        android:src="@drawable/icon_dashboardarrow_01"/>
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </com.ehi.enterprise.android.ui.widget.NotifyingScrollView>
+
+    </RelativeLayout>
+
+</layout>

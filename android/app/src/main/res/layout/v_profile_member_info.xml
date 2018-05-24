@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="ProfileMemberInfoBinding" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/divider_horiz"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_base">
+
+            <TextView
+                style="@style/ProfileHeader"
+                android:fontFamily="@font/source_sans_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_name_header" />
+
+            <TextView
+                android:id="@+id/profile_name_view"
+                style="@style/TextViewSize18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light"
+                tools:text="John Smith" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_base">
+
+            <TextView
+                style="@style/ProfileHeader"
+                android:fontFamily="@font/source_sans_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_member_id_header" />
+
+            <TextView
+                android:id="@+id/profile_member_id_view"
+                style="@style/TextViewSize18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light"
+                tools:text="********78" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profile_account_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_base">
+
+            <TextView
+                style="@style/ProfileHeader"
+                android:fontFamily="@font/source_sans_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_corporate_header" />
+
+            <TextView
+                android:id="@+id/profile_account_id_view"
+                style="@style/TextViewSize18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light"
+                tools:text="XD75A" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profile_email_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_base">
+
+            <TextView
+                android:id="@+id/profile_email_title"
+                style="@style/ProfileHeader"
+                android:fontFamily="@font/source_sans_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_email_header" />
+
+            <TextView
+                android:id="@+id/profile_email_view"
+                style="@style/TextViewSize18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light"
+                tools:text="john.smith@gmail.com" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profile_address_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_base">
+
+            <TextView
+                android:id="@+id/profile_address_title"
+                style="@style/ProfileHeader"
+                android:fontFamily="@font/source_sans_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_address_header" />
+
+            <TextView
+                android:id="@+id/profile_address_view"
+                style="@style/TextViewSize18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light"
+                tools:text="123 Main st.\nNew York, NY, 10000 " />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/profile_phone_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_base">
+
+            <TextView
+                android:id="@+id/profile_phone_title"
+                style="@style/ProfileHeader"
+                android:fontFamily="@font/source_sans_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/profile_phone_header" />
+
+            <LinearLayout
+                android:id="@+id/profile_phones_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

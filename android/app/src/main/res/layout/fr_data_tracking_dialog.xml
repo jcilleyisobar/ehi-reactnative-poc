@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <data class="DataTrackingDialogFragmentBinding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_base"
+        android:paddingLeft="@dimen/padding_base"
+        android:paddingRight="@dimen/padding_base">
+
+        <TextView
+            style="@style/TextViewSize26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/modal_analytics_reminder_title"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_light" />
+
+        <TextView
+            style="@style/TextViewSize18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_base"
+            android:text="@string/modal_analytics_reminder_details"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_light" />
+
+        <TextView
+            android:id="@+id/continue_button"
+            style="@style/GreenContinueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="@string/modal_analytics_reminder_continue_button_title"
+            android:fontFamily="@font/source_sans_bold" />
+
+        <TextView
+            android:id="@+id/change_settings_button"
+            style="@style/GreenContinueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/modal_analytics_reminder_change_settings_button"
+            android:fontFamily="@font/source_sans_bold" />
+
+    </LinearLayout>
+
+</layout>

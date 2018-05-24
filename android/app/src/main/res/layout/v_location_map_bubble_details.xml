@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="LocationMapDetailsViewBinding" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/left_container"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/white_button_touch_overlay"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingBottom="15dp"
+                android:paddingLeft="@dimen/padding_base"
+                android:paddingRight="@dimen/padding_base"
+                android:paddingTop="15dp">
+
+                <TextView
+                    android:id="@+id/header_title"
+                    style="@style/TextViewSize20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="2"
+                    android:textColor="@color/ehi_primary"
+                    android:fontFamily="@font/source_sans_regular"
+                    tools:text="Chicago Midway" />
+
+
+                <TextView
+                    android:id="@+id/subheader_title"
+                    style="@style/TextViewSize14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"
+                    tools:text="This is sub-text" />
+
+                <TextView
+                    android:drawableLeft="@drawable/icon_clock_04"
+                    android:visibility="gone"
+                    android:clickable="true"
+                    android:layout_marginTop="@dimen/margin_medium"
+                    style="@style/TextViewSize12"
+                    android:drawablePadding="@dimen/padding_xxsmall"
+                    android:id="@+id/after_hours_return"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_light_italic"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/right_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_large"
+                    android:layout_marginRight="@dimen/margin_large"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:layout_marginBottom="@dimen/margin_xsmall"
+                    android:background="@drawable/green_button_touch_overlay"
+                    android:clickable="true"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/padding_small"
+                    android:paddingRight="14dp"
+                    android:paddingTop="10dp"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/arrow_view"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/arrow_white" />
+                </FrameLayout>
+
+                <TextView
+                    android:id="@+id/flexible_travel_text"
+                    android:layout_width="50dp"
+                    android:visibility="gone"
+                    style="@style/TextViewSize12"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="@string/locations_map_flexible_travel_button" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <com.ehi.enterprise.android.ui.location.widgets.components.TimeConflictComponentView
+            android:id="@+id/time_conflict_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:id="@+id/bottom_divider"
+            android:layout_width="fill_parent"
+            android:layout_height="4dp"
+            android:background="@color/gray_background" />
+    </LinearLayout>
+
+</layout>
+

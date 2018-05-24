@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="PinFragmentBinding">
+
+        <import type="com.ehi.enterprise.android.utils.databinding.adapter.AppAdapters.SymbolPosition" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_base">
+
+                <TextView
+                    style="@style/TextViewSize20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/padding_base"
+                    android:fontFamily="@font/source_sans_light"
+                    android:text="@string/pin_auth_instructions_message"
+                    android:textColor="@color/ehi_black" />
+
+                <TextView
+                    style="@style/TextViewSize12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_light_italic"
+                    android:text="@string/gdpr_res_flow"
+                    android:textColor="@color/ehi_gray"
+                    app:requiredField="@{SymbolPosition.BEFORE}" />
+
+                <TextView
+                    style="@style/TextViewSize20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginTop="@dimen/padding_base"
+                    android:fontFamily="@font/source_sans_bold"
+                    android:text="@string/pin_auth_pin_header"
+                    android:textColor="@color/ehi_black"
+                    android:textStyle="bold"
+                    app:requiredField="@{SymbolPosition.AFTER}" />
+
+                <TextView
+                    style="@style/TextViewSize18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:fontFamily="@font/source_sans_light"
+                    android:text="@string/pin_auth_pin_examples_message" />
+
+                <EditText
+                    android:id="@+id/pin_input"
+                    style="@style/InputField"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/source_sans_light"
+                    android:imeOptions="actionNext"
+                    android:maxLength="3" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/pin_submit_button"
+            style="@style/GreenContinueButton"
+            android:fontFamily="@font/source_sans_bold"
+            android:text="@string/pin_auth_submit_button"
+            android:textAllCaps="true" />
+
+    </LinearLayout>
+
+
+</layout>

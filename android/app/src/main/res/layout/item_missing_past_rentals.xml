@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="MissingPastRentalsItemBinding" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/missing_past_rentals_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dashboard_upcoming_rentals_background"
+            android:paddingBottom="8dp"
+            android:paddingLeft="@dimen/padding_base"
+            android:paddingRight="@dimen/padding_base"
+            android:paddingTop="16dp"
+            android:text="@string/rentals_cannot_find_title"
+            android:textColor="@color/ehi_primary"
+            android:textStyle="bold"
+            android:fontFamily="@font/source_sans_bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/calendar_display_divider_height"
+            android:layout_gravity="top"
+            android:background="@color/calendar_divider" />
+
+    </FrameLayout>
+
+</layout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data class = "KeyFactsPolicyCellViewBinding"/>
+
+    <FrameLayout
+        android:background="@drawable/white_button_touch_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/policy_name"
+            tools:text="Driver's License Policy >"
+            android:textColor="@color/ehi_primary"
+            android:fontFamily="@font/source_sans_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+</layout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="PrePayModifyDialogFragmentBinding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_base"
+        android:paddingLeft="@dimen/padding_base"
+        android:paddingRight="@dimen/padding_base">
+
+        <TextView
+            style="@style/TextViewSize18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/modify_reservation_prepay_dialog_text"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_light" />
+
+        <TextView
+            android:id="@+id/prepay_modify_reservation_button"
+            style="@style/GreenContinueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_base"
+            android:text="@string/modify_reservation_prepay_dialog_continue"
+            android:fontFamily="@font/source_sans_bold" />
+
+        <com.ehi.enterprise.android.ui.widget.DisabledClickButton
+            android:id="@+id/prepay_keep_reservation_button"
+            style="@style/GrayBorderWhiteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:enabled="false"
+            android:minHeight="52dp"
+            android:text="@string/modify_reservation_prepay_dialog_keep_current"
+            android:fontFamily="@font/source_sans_bold" />
+
+    </LinearLayout>
+</layout>

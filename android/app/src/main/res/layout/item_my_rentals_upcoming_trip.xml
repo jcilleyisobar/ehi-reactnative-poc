@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:bind="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="MyRentalsUpcomingTripItemBinding"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:background="@color/ehi_primary_dark">
+
+        <include
+            android:id="@+id/date_header"
+            layout="@layout/item_section_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="16dp"
+            bind:include="@{true}"/>
+
+        <ImageView
+            android:id="@+id/chevron"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/date_header"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/arrow_green"/>
+
+        <TextView
+            android:id="@+id/rental_pickup_location"
+            style="@style/TextViewSize20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/date_header"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_light"
+            tools:text="Chicago O'Hare Intl Airport."/>
+
+        <TextView
+            android:id="@+id/rental_return_location"
+            style="@style/TextViewSize20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rental_pickup_location"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/ehi_black"
+            android:visibility="gone"
+            android:fontFamily="@font/source_sans_light"
+            tools:text="Chicago O'Hare Intl Airport."/>
+
+        <TextView
+            android:id="@+id/rental_confirmation"
+            style="@style/TextViewSize16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rental_return_location"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_light"
+            tools:text="12301723"/>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="color_transparent">#0000</drawable>
+
+    <color name="ehi_primary">#169a5a</color>
+    <color name="ehi_primary_dark">#0C6E40</color>
+    <color name="ehi_primary_light">#00ba6f</color>
+    <color name="modal_dialog_statusbar_color">#0C6E40</color>
+    <color name="light_grey">#eeeeee</color>
+    <color name="white_grey">#fafafa</color>
+    <color name="gray_background">#dbdbdb</color>
+    <color name="ehi_black">#130C0E</color>
+    <color name="transparent_toolbar_black">#43000000</color>
+    <color name="ehi_disabled_gray">#383D3B</color>
+    <color name="ehi_gray">#7a7a7a</color>
+    <color name="ehi_dark_rule">#ACACAC</color>
+    <color name="ehi_table_cell_color">#E2E2E2</color>
+    <color name="ehi_grey_header_bg">#D6D6D6</color>
+    <color name="selected_date_cell_bg">#eeeeee</color>
+    <color name="ehi_module_background_fill">#F5F5F5</color>
+    <color name="ehi_red">#E01212</color>
+    <color name="fingerprint_error">#FF5252</color>
+    <color name="ehi_pressed_gray">#ffcbcbcb</color>
+    <color name="ehi_primary_pressed">#6b169a5a</color>
+    <color name="progress_background">#7fFFFFFF</color>
+    <color name="darker_grey_check_box">#cccccc</color>
+    <color name="car_class_select_bottom">#f3f3f3</color>
+    <color name="white">#FFFFFF</color>
+    <color name="white40">#66ffffff</color>
+    <color name="edit_text_color">#464D4B</color>
+    <color name="white_background_car_select">#CCFFFFFF</color>
+    <color name="map_details_yellow">#fff8ca</color>
+    <color name="map_details_strong_yellow">#f6da29</color>
+    <color name="bubble_map_gray">#666666</color>
+    <color name="map_details_conflict_gray">#464d4b</color>
+
+    <color name="location_info_text_primary">#00a664</color>
+    <color name="location_info_text_secondary">#00975a</color>
+    <color name="location_info_window_divider_grey">#d6d6d6</color>
+    <color name="location_info_window_divider_green">#00a664</color>
+    <color name="location_details_background">#eeeeee</color>
+
+    <color name="time_selection_foreground_not_available">#464d4b</color>
+    <color name="time_selection_foreground_available">@color/location_info_text_secondary</color>
+
+    <color name="time_selection_background_not_available">#eeeeee</color>
+    <color name="time_selection_background_available">@color/white</color>
+
+    <color name="time_selection_divider">#ffa7a7a7</color>
+    <color name="time_selection_shadow_begin">#20000000</color>
+
+    <color name="extra_subtitle">#8b8b8b</color>
+
+    <color name="edit_text_hint_color">#979797</color>
+
+    <color name="rewards_gold_benefits_color">#cfb67f</color>
+
+    <color name="rewards_background_fill">#efefef</color>
+
+    <color name="rewards_silver_benefits_color">#979797</color>
+    <color name="edit_text_border_color">#d6d6d6</color>
+    <color name="dashboard_sign_in_text_color">#1ED17A</color>
+
+    <color name="navigation_light_divider">#077e4a</color>
+    <color name="navigation_dark_divider">#0d5a36</color>
+
+    <color name="lookup_rental_error_background">#eeeeee</color>
+
+    <color name="snack_bar_background">#323232</color>
+
+    <color name="dashboard_upcoming_rentals_background">#eeeeee</color>
+    <color name="dashboard_upcoming_rentals_divider_grey">#d6d6d6</color>
+    <color name="transparent_ehi_pressed_gray">#FFcbcbcb</color>
+
+    <color name="confirmation_coupon_header_background">#EEE6CD</color>
+
+    <color name="reservation_info_banner_background">#F1E4CE</color>
+
+    <color name="banner_bg">#f2ead9</color>
+    <color name="unauth_rentals_divider">#d0cecf</color>
+    <color name="header_divider">#bebebe</color>
+
+    <color name="button_disabled_bg">#eeeeee</color>
+    <color name="button_disabled_text">#cacaca</color>
+
+    <color name="rate_button_stroke">#969696</color>
+    <color name="rate_button_fill">#E2E2E2</color>
+
+    <color name="active_rental_background">#EAEAEA</color>
+
+    <color name="disabled_text">#696969</color>
+
+    <color name="section_header_background">#EDEDED</color>
+    <color name="section_divider">#CECECF</color>
+    <color name="section_mileage_background">#F2F4F5</color>
+    <color name="section_mileage_title">#4D4D4E</color>
+    <color name="section_contract_background">#E7DFC3</color>
+
+    <color name="enroll_error_background">#FBE0E1</color>
+    <color name="invoice_dark_divider">#AAAAAA</color>
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="ExtendRentalFragmentBinding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_base">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TextViewSize24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_regular"
+            android:paddingTop="8dp"
+            android:text="@string/dashboard_current_rental_extend_rental_button_title"
+            android:textColor="@color/ehi_black" />
+
+        <TextView
+            android:id="@+id/need_more_time"
+            style="@style/TextViewSize20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_regular"
+            android:paddingTop="12dp"
+            android:text="@string/dashboard_extend_rental_details"
+            android:textColor="@color/ehi_black" />
+
+        <TextView
+            android:id="@+id/res_number_title"
+            style="@style/TextViewSize18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_regular"
+            android:paddingTop="12dp"
+            android:text="@string/dashboard_extend_rental_reservation_title"
+            android:textColor="@color/ehi_black" />
+
+        <TextView
+            android:id="@+id/res_number"
+            style="@style/TextViewSize22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/source_sans_regular"
+            android:paddingTop="4dp"
+            android:textColor="@color/ehi_black" />
+
+        <RelativeLayout
+            android:id="@+id/call_us_button"
+            style="@style/GreenButtonTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                style="@style/TextViewSize18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_bold"
+                android:text="@string/standard_button_call"
+                android:textAllCaps="true"
+                android:textColor="@color/white" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/close_rental_button"
+            style="@style/GrayBorderWhiteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/source_sans_bold"
+            android:minHeight="52dp"
+            android:text="@string/standard_close_button" />
+
+    </LinearLayout>
+</layout>

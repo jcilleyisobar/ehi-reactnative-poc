@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="PrePayCallUsDialogFragmentBinding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_base"
+        android:paddingLeft="@dimen/padding_base"
+        android:paddingRight="@dimen/padding_base">
+
+        <TextView
+            style="@style/TextViewSize18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/reservation_cancel_unavailable_subtitle"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_light"/>
+
+        <TextView
+            android:id="@+id/prepay_cancel_reservation_button"
+            style="@style/GreenContinueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_base"
+            android:text="@string/standard_button_call"
+            android:fontFamily="@font/source_sans_bold"/>
+
+        <com.ehi.enterprise.android.ui.widget.DisabledClickButton
+            android:id="@+id/prepay_keep_reservation_button"
+            style="@style/GrayBorderWhiteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:enabled="false"
+            android:minHeight="52dp"
+            android:text="@string/reservation_cancel_discard_return_button"
+            android:fontFamily="@font/source_sans_bold"/>
+
+    </LinearLayout>
+</layout>

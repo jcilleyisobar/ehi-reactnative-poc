@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <data class="MyRentalsUnauthFragmentBinding"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_grey"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/padding_base"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@android:color/white"
+                >
+
+                <TextView
+                    style="@style/TextViewSize26"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginRight="@dimen/padding_base"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/padding_base"
+                    android:text="@string/rentals_unauth_title"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_bold"/>
+
+                <TextView
+                    style="@style/TextViewSize18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginRight="@dimen/padding_base"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/padding_base"
+                    android:text="@string/rentals_unauth_subtitle"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"
+                    tools:ignore="RtlHardcoded"
+                    />
+
+
+                <TextView
+                    android:id="@+id/sign_in_button"
+                    style="@style/GreenContinueButton"
+                    android:layout_margin="@dimen/padding_base"
+                    android:text="@string/standard_signin_button_text"
+                    android:fontFamily="@font/source_sans_bold"
+                    android:textSize="@dimen/text_size_18"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/darker_grey_check_box"
+                    />
+
+                <TextView
+                    style="@style/TextViewSize18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginRight="@dimen/padding_base"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:text="@string/rentals_unauth_lookup"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"
+                    tools:ignore="RtlHardcoded"/>
+
+
+                <TextView
+                    android:id="@+id/look_up_rental_button"
+                    style="@style/GreenBorderWhiteButton"
+                    android:minHeight="52dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginRight="@dimen/padding_base"
+                    android:layout_marginTop="@dimen/margin_xlarge"
+                    android:text="@string/standard_lookup_rental_button_text"
+                    android:textAllCaps="true"
+                    android:textColor="@color/ehi_primary"
+                    android:fontFamily="@font/source_sans_bold"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</layout>

@@ -1,0 +1,63 @@
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="PriceDetailsFragmentBinding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        tools:context="com.ehi.enterprise.android.ui.reservation.PriceDetailFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:id="@+id/container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/learn_more_button"
+                    style="@style/TextViewSize14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginRight="@dimen/padding_base"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/class_details_fees_learn_more"
+                    android:textColor="@color/ehi_primary"
+                    android:fontFamily="@font/source_sans_light"/>
+
+                <TextView
+                    android:id="@+id/taxes_fees_more_info"
+                    style="@style/TextViewSize16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginRight="@dimen/padding_base"
+                    android:textColor="@color/ehi_black"
+                    android:visibility="gone"
+                    android:fontFamily="@font/source_sans_light"/>
+            </LinearLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/got_it_button"
+            style="@style/GreenContinueButton"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/modal_default_confirmation_title"
+            android:fontFamily="@font/source_sans_bold"/>
+    </LinearLayout>
+</layout>

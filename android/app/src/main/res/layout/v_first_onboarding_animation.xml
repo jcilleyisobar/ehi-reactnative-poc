@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="FirstOnboardingAnimationViewBinding"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/baloon_animation_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <com.ehi.enterprise.android.ui.location.widgets.MultiDrawableAnimationView
+                android:id="@+id/baloon_animation"
+                android:layout_width="242dp"
+                android:layout_height="204dp"
+                tools:src="@drawable/balloon_1"/>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/layer8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:src="@drawable/anim1_building6_tree"/>
+
+
+        <ImageView
+            android:id="@+id/layer7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:src="@drawable/anim1_building2"/>
+
+        <ImageView
+            android:id="@+id/layer5"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:src="@drawable/anim1_building0"/>
+
+        <ImageView
+            android:id="@+id/layer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:src="@drawable/anim1_building1"/>
+
+        <ImageView
+            android:id="@+id/layer6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:src="@drawable/anim1_building4"/>
+
+        <ImageView
+            android:id="@+id/layer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:src="@drawable/anim1_building3"/>
+
+        <ImageView
+            android:id="@+id/layer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:src="@drawable/anim1_building5"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:layout_centerInParent="true"
+            android:src="@drawable/anim1_bottom_line"/>
+
+        <TextView
+            android:id="@+id/description"
+            style="@style/TextViewSize28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layer3"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="@dimen/padding_xxlarge"
+            android:layout_marginRight="@dimen/padding_xxlarge"
+            android:layout_marginTop="@dimen/padding_xsmall"
+            android:gravity="center_horizontal"
+            android:text="@string/onboarding_scene1_title"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_bold"/>
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TextViewSize20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/description"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/padding_base"
+            android:layout_marginRight="@dimen/padding_base"
+            android:text="@string/onboarding_welcome"
+            android:textAllCaps="true"
+            android:textColor="@color/ehi_primary"
+            android:fontFamily="@font/source_sans_bold"/>
+    </RelativeLayout>
+</layout>

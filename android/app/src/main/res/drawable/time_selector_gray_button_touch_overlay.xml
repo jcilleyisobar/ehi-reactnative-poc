@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+          android:enterFadeDuration="@integer/selectors_animation_duration"
+          android:exitFadeDuration="@integer/selectors_animation_duration">
+    <item android:state_enabled="true"
+          android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/ehi_pressed_gray"/>
+        </shape>
+    </item>
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/time_selection_foreground_not_available"/>
+        </shape>
+    </item>
+    <item android:drawable="@color/time_selection_foreground_not_available"/>
+</selector>

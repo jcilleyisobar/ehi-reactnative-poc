@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.ehi.enterprise.android"
+          android:installLocation="auto">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- localytics wakelock -->
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission-sdk-23 android:name="android.permission.USE_FINGERPRINT"/>
+    <!-- Permission to vibrate - recommended, allows vibration feedback on scan -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <!-- Permission to use camera - required -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <permission
+        android:name="com.ehi.enterprise.android.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <uses-permission android:name="com.ehi.enterprise.android.permission.C2D_MESSAGE" />
+
+    <!-- Camera features - recommended -->
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false"/>
+
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="22"/>
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"/>
+
+    <application
+        android:name=".app.EnterpriseApp"
+        android:allowBackup="false"
+        android:icon="@drawable/eapp_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/EHITheme">
+
+        <!-- Activities -->
+
+        <activity
+            android:name=".ui.splash.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="amp${LOCALYTICS_API_KEY}"/>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <!-- "enterprise://splash” -->
+                <data android:scheme="enterprise" android:host="splash" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.dashboard.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/EHITheme"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ui.location.SearchLocationsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/EHITheme"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".ui.location.LocationsOnMapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/EHITheme"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ui.location.LocationDetailsActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:theme="@style/EHITheme"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ui.location.LocationPoliciesListActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:theme="@style/EHITheme"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ui.location.PolicyDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/EHITheme"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ui.location.DirectionsFromTerminalActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/EHITheme"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ui.reservation.ItineraryActivity"
+            android:launchMode="singleTask"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/EHITheme"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".ui.activity.ModalActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:theme="@style/EHITheme"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".ui.confirmation.ConfirmationActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:theme="@style/EHITheme"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ui.profile.MemberInfoActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:theme="@style/EHITheme"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".ui.profile.LicenseInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/EHITheme"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".ui.reservation.modify.ModifyItineraryActivity"
+            android:launchMode="singleTask"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/EHITheme"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".ui.reservation.modify.ModifyReviewActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:theme="@style/EHITheme"
+            android:windowSoftInputMode="adjustResize"/>
+        <activity
+            android:name=".ui.profile.PaymentOptionsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/EHITheme"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ui.activity.ModalDialogActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:theme="@style/AppTheme.Base.Transparent"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".ui.util.AlertCallUsContinueWrapperActivity"
+            android:exported="false"
+            android:theme="@style/Transparent"/>
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity android:name="io.card.payment.DataEntryActivity"
+                  android:exported="false"/>
+        <activity
+            android:name=".ui.reservation.history.InvoiceActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:theme="@style/EHITheme"/>
+        <activity
+            android:name=".ui.enroll.EnrollActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:theme="@style/EHITheme"/>
+
+        <activity
+            android:name=".ui.onboarding.OnboardingActivity"
+            android:screenOrientation="portrait"
+            android:exported="false"
+            android:theme="@style/EHITheme"/>
+
+        <!-- Services -->
+
+        <service android:name=".network.services.EnterpriseNetworkService"
+                 android:exported="false"/>
+        <service android:name="com.appsee.AppseeBackgroundUploader"
+                 android:exported="false"/>
+        <service android:name=".ui.geofence.GeofenceIntentService"
+                 android:exported="false"/>
+        <service android:name=".ui.geofence.GeofenceRegistrationService"
+                 android:exported="false"/>
+        <service android:name=".ui.notification.NotificationSchedulerService"
+                 android:exported="false"/>
+        <service
+            android:name=".ui.notification.NotificationAlarmReceiverService"
+            android:exported="false"/>
+
+        <receiver
+            android:name=".ui.notification.NotificationBootReceiver"
+            android:enabled="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.localytics.android.ReferralReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- Localytics push notification - GCM -->
+        <receiver android:name="com.localytics.android.GcmReceiver"
+                  android:exported="true"
+                  android:enabled="true">
+            <intent-filter>
+                <category android:name="com.ehi.enterprise.android"/>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.gms.iid.InstanceID" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Meta -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="${GOOGLE_MAPS_API_KEY}"/>
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+
+    <string name="app_name">Enterprise</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_toggle_environment">Toggle Environment</string>
+    <string name="navigation_toogle_solr_environment">Toggle Solr Environment</string>
+    <string name="navigation_toggle_language">Toggle Language</string>
+
+    <string name="bullet_prefix">•</string>
+    <string name="text_with_bullet_prefix">• %1$s</string>
+    <string name="text_with_negative_prefix">-%1$s</string>
+    <string name="text_with_hash_prefix">#%1$s</string>
+
+    <string name="text_bullet">•</string>
+
+    <string name="about_e_p_plus_rentals_needed">0–5</string>
+    <string name="about_e_p_plus_upgrades_per_year">0</string>
+    <string name="about_e_p_silver_rentals_needed">6–11</string>
+    <string name="about_e_p_silver_upgrades_per_year">1</string>
+    <string name="about_e_p_silver_bonus_points">10%</string>
+    <string name="about_e_p_gold_rentals_needed">12</string>
+    <string name="about_e_p_gold_days_needed">40</string>
+    <string name="about_e_p_gold_upgrades_per_year">2</string>
+    <string name="about_e_p_gold_bonus_points">15%</string>
+    <string name="about_e_p_platinum_rentals_needed">24</string>
+    <string name="about_e_p_platinum_days_needed">85</string>
+    <string name="about_e_p_platinum_upgrades_per_year">4</string>
+    <string name="about_e_p_platinum_bonus_points">20%</string>
+
+    <string name="notification_channel_debug_name">Debug Notifications</string>
+
+    <!-- IMPORTANT: When requesting new translation keys make sure not to exceed 50 characters on the string name otherwise they get truncated -->
+    <!-- Translation pending begins here -->
+
+
+</resources>

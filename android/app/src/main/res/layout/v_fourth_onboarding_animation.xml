@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="FourthOnboardingAnimationViewBinding"></data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/ferrie_wheel_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <com.ehi.enterprise.android.ui.location.widgets.MultiDrawableAnimationView
+                android:id="@+id/ferrie_wheel"
+                android:layout_width="242dp"
+                android:layout_height="204dp"
+                tools:src="@drawable/ferris_wheel_0"/>
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/layer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:src="@drawable/anim4_building2"/>
+
+        <ImageView
+            android:id="@+id/layer5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:src="@drawable/anim4_building3"/>
+
+        <ImageView
+            android:id="@+id/layer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:src="@drawable/anim4_building0"/>
+
+        <ImageView
+            android:id="@+id/layer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:src="@drawable/anim4_building1"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="center"
+            android:layout_centerInParent="true"
+            android:src="@drawable/anim4_bottom_line"/>
+
+        <TextView
+            style="@style/TextViewSize28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/layer3"
+            android:layout_marginBottom="18dp"
+            android:layout_marginLeft="@dimen/padding_base"
+            android:layout_marginRight="@dimen/padding_base"
+            android:gravity="center"
+            android:text="@string/onboarding_scene4_title"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_bold"/>
+
+    </RelativeLayout>
+</layout>

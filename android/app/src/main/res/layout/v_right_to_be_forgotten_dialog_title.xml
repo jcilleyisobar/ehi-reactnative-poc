@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_large">
+
+    <TextView
+        style="@style/TextViewSize24"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="@string/right_to_be_forgotten_modal_title"
+        android:textColor="@color/ehi_black"
+        android:fontFamily="@font/source_sans_regular" />
+
+</FrameLayout>

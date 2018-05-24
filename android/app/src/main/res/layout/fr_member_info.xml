@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="MemberInfoFragmentBinding" >
+        <import type="com.ehi.enterprise.android.utils.databinding.adapter.AppAdapters.SymbolPosition"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:descendantFocusability="beforeDescendants"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextViewSize12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin='@dimen/padding_base'
+                    android:fontFamily="@font/source_sans_light_italic"
+                    android:text="@string/gdpr_my_profile"
+                    android:textColor="@color/ehi_gray"
+                    app:requiredField="@{SymbolPosition.BEFORE}" />
+
+
+                <TextView
+                    style="@style/TextViewSize14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginRight="@dimen/padding_base"
+                    android:fontFamily="@font/source_sans_bold"
+                    android:text="@string/profile_name_header"
+                    android:textAllCaps="true"
+                    android:textColor="@color/ehi_black"
+                    />
+
+                <TextView
+                    android:id="@+id/member_info_name"
+                    style="@style/TextViewSize18"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:drawableRight="@drawable/icon_info_01"
+                    android:fontFamily="@font/source_sans_light"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/padding_base"
+                    android:paddingRight="@dimen/padding_base"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/ehi_black"
+                    tools:text="Jessica Sunner" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ehi_grey_header_bg" />
+
+                <TextView
+                    style="@style/TextViewSize14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginRight="@dimen/padding_base"
+                    android:layout_marginTop="@dimen/padding_base"
+                    android:fontFamily="@font/source_sans_bold"
+                    android:text="@string/profile_member_id_header"
+                    android:textAllCaps="true"
+                    android:textColor="@color/ehi_black" />
+
+                <TextView
+                    android:id="@+id/member_info_member_id"
+                    style="@style/TextViewSize18"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:drawableRight="@drawable/icon_info_01"
+                    android:fontFamily="@font/source_sans_light"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/padding_base"
+                    android:paddingRight="@dimen/padding_base"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/ehi_black"
+                    tools:text="KDK464" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ehi_grey_header_bg" />
+
+                <TextView
+                    style="@style/TextViewSize14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginRight="@dimen/padding_base"
+                    android:layout_marginTop="@dimen/padding_base"
+                    android:fontFamily="@font/source_sans_bold"
+                    android:text="@string/profile_corporate_header"
+                    android:textAllCaps="true"
+                    android:textColor="@color/ehi_black" />
+
+                <TextView
+                    android:id="@+id/member_info_account_id"
+                    style="@style/TextViewSize18"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:drawableRight="@drawable/icon_info_01"
+                    android:fontFamily="@font/source_sans_light"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="@dimen/padding_base"
+                    android:paddingRight="@dimen/padding_base"
+                    android:paddingTop="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/ehi_black"
+                    tools:text="ISOBAR ****45" />
+
+                <TextView
+                    android:id="@+id/member_info_no_account_area"
+                    style="@style/TextViewSize16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/padding_base"
+                    android:fontFamily="@font/source_sans_light"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/padding_base"
+                    android:paddingRight="@dimen/padding_base"
+                    android:text="@string/profile_edit_account_no_account_title"
+                    android:textColor="@color/ehi_black"
+                    android:visibility="visible" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ehi_grey_header_bg" />
+
+                <TextView
+                    style="@style/TextViewSize14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginRight="@dimen/padding_base"
+                    android:layout_marginTop="@dimen/padding_base"
+                    android:fontFamily="@font/source_sans_bold"
+                    android:text="@string/profile_email_header"
+                    android:textAllCaps="true"
+                    android:textColor="@color/ehi_black"
+                    app:requiredField="@{SymbolPosition.AFTER}"
+                    />
+
+                <EditText
+                    android:id="@+id/member_info_email"
+                    style="@style/InputField"
+                    android:layout_marginBottom="@dimen/padding_base"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginRight="@dimen/padding_base"
+                    android:fontFamily="@font/source_sans_light"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    app:cleanable="@{true}"
+                    tools:text="jsunner@ehi.com" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginRight="@dimen/padding_base"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/member_info_email_check_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/check_box_button_selector" />
+
+                    <TextView
+                        style="@style/TextViewSize14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/source_sans_light"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="@dimen/padding_base"
+                        app:footNote="@{SymbolPosition.AFTER}"
+                        android:text="@string/profile_email_signup_toggle_title"
+                        android:textColor="@color/ehi_black" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/german_double_opt_in_text"
+                    style="@style/TextViewSize14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginRight="@dimen/padding_base"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/source_sans_light"
+                    android:text="@string/email_special_german_opt_in_text"
+                    android:textColor="@color/ehi_black"
+                    android:visibility="gone" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/padding_base"
+                    android:background="@color/ehi_grey_header_bg" />
+
+                <TextView
+                    style="@style/TextViewSize14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginRight="@dimen/padding_base"
+                    android:layout_marginTop="@dimen/padding_base"
+                    android:fontFamily="@font/source_sans_bold"
+                    android:text="@string/profile_edit_preferred_phone"
+                    android:textAllCaps="true"
+                    android:textColor="@color/ehi_black"
+                    app:requiredField="@{SymbolPosition.AFTER}"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/search_input_height"
+                    android:layout_marginBottom="@dimen/padding_base"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginRight="@dimen/padding_base"
+                    android:background="@drawable/edit_text_white_border"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/member_info_main_phone"
+                        style="@style/InputField"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:fontFamily="@font/source_sans_light"
+                        android:inputType="phone|number"
+                        android:maxLines="1"
+                        app:cleanable="@{true}"
+                        app:sensitiveInformation="@{true}"
+                        tools:text="555-123-4566" />
+
+                    <LinearLayout
+                        android:id="@+id/member_info_main_phone_type_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_green_border"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/member_info_main_phone_type"
+                            style="@style/TextViewSize18"
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/source_sans_light"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:textAllCaps="true"
+                            android:textColor="@color/ehi_primary"
+                            tools:text="MOBILE" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/search_input_height"
+                            android:layout_marginRight="@dimen/padding_base"
+                            android:rotation="90"
+                            android:scaleType="center"
+                            android:src="@drawable/arrow_green" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ehi_grey_header_bg" />
+
+                <TextView
+                    style="@style/TextViewSize14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginRight="@dimen/padding_base"
+                    android:layout_marginTop="@dimen/padding_base"
+                    android:fontFamily="@font/source_sans_bold"
+                    android:text="@string/profile_edit_alternate_phone"
+                    android:textAllCaps="true"
+                    android:textColor="@color/ehi_black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/search_input_height"
+                    android:layout_marginBottom="@dimen/padding_base"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginRight="@dimen/padding_base"
+                    android:background="@drawable/edit_text_white_border"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/member_info_additional_phone"
+                        style="@style/InputField"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:fontFamily="@font/source_sans_light"
+                        android:inputType="phone|number"
+                        android:singleLine="true"
+                        app:cleanable="@{true}"
+                        app:sensitiveInformation="@{true}"
+                        tools:text="555-123-4566" />
+
+                    <LinearLayout
+                        android:id="@+id/member_info_additional_phone_type_area"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/edit_text_green_border"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/member_info_additional_phone_type"
+                            style="@style/TextViewSize18"
+                            android:layout_width="90dp"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/source_sans_light"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:textAllCaps="true"
+                            android:textColor="@color/ehi_primary"
+                            tools:text="MOBILE" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/search_input_height"
+                            android:layout_marginRight="@dimen/padding_base"
+                            android:rotation="90"
+                            android:scaleType="center"
+                            android:src="@drawable/arrow_green" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ehi_grey_header_bg" />
+
+                <TextView
+                    style="@style/TextViewSize14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginRight="@dimen/padding_base"
+                    android:layout_marginTop="@dimen/padding_base"
+                    android:fontFamily="@font/source_sans_bold"
+                    android:text="@string/profile_edit_country_of_residence_title"
+                    android:textAllCaps="true"
+                    android:textColor="@color/ehi_black"
+                    app:requiredField="@{SymbolPosition.AFTER}"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/search_input_height"
+                    android:layout_marginBottom="@dimen/padding_base"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginRight="@dimen/padding_base"
+                    android:background="@drawable/edit_text_white_border"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/member_info_country"
+                        style="@style/TextViewSize18"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/source_sans_light"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/padding_base"
+                        android:paddingRight="@dimen/search_input_height"
+                        android:singleLine="true"
+                        android:textColor="@color/ehi_black"
+                        tools:text="USA" />
+
+                    <ImageView
+                        android:layout_width="@dimen/search_input_height"
+                        android:layout_height="@dimen/search_input_height"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/edit_text_green_border"
+                        android:rotation="90"
+                        android:scaleType="center"
+                        android:src="@drawable/arrow_green" />
+
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ehi_grey_header_bg" />
+
+                <TextView
+                    style="@style/TextViewSize14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginRight="@dimen/padding_base"
+                    android:layout_marginTop="@dimen/padding_base"
+                    android:fontFamily="@font/source_sans_bold"
+                    android:text="@string/profile_edit_street_title"
+                    android:textAllCaps="true"
+                    android:textColor="@color/ehi_black"
+                    app:requiredField="@{SymbolPosition.AFTER}"
+                    />
+
+                <EditText
+                    android:id="@+id/member_info_street1"
+                    style="@style/InputField"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginRight="@dimen/padding_base"
+                    android:fontFamily="@font/source_sans_light"
+                    android:inputType="textPostalAddress"
+                    android:maxLines="1"
+                    app:cleanable="@{true}"
+                    tools:text="street 1" />
+
+                <EditText
+                    android:id="@+id/member_info_street2"
+                    style="@style/InputField"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/padding_base"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginRight="@dimen/padding_base"
+                    android:fontFamily="@font/source_sans_light"
+                    android:inputType="textPostalAddress"
+                    android:maxLines="1"
+                    app:cleanable="@{true}"
+                    tools:text="street 2" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ehi_grey_header_bg" />
+
+                <TextView
+                    style="@style/TextViewSize14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginRight="@dimen/padding_base"
+                    android:layout_marginTop="@dimen/padding_base"
+                    android:fontFamily="@font/source_sans_bold"
+                    android:text="@string/profile_edit_city_title"
+                    android:textAllCaps="true"
+                    android:textColor="@color/ehi_black"
+                    app:requiredField="@{SymbolPosition.AFTER}"
+                    />
+
+                <EditText
+                    android:id="@+id/member_info_city"
+                    style="@style/InputField"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/padding_base"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginRight="@dimen/padding_base"
+                    android:fontFamily="@font/source_sans_light"
+                    android:inputType="textPostalAddress"
+                    android:maxLines="1"
+                    app:cleanable="@{true}"
+                    app:sensitiveInformation="@{true}"
+                    tools:text="New York" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ehi_grey_header_bg" />
+
+                <LinearLayout
+                    android:id="@+id/member_info_subdivision_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/member_info_subdivision_title"
+                        style="@style/TextViewSize14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginLeft="@dimen/padding_base"
+                        android:layout_marginRight="@dimen/padding_base"
+                        android:layout_marginTop="@dimen/padding_base"
+                        android:fontFamily="@font/source_sans_bold"
+                        android:text="@string/profile_edit_member_info_general_subdivision_title"
+                        android:textAllCaps="true"
+                        android:textColor="@color/ehi_black"
+                        app:requiredField="@{SymbolPosition.AFTER}"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/search_input_height"
+                        android:layout_marginBottom="@dimen/padding_base"
+                        android:layout_marginLeft="@dimen/padding_base"
+                        android:layout_marginRight="@dimen/padding_base"
+                        android:background="@drawable/edit_text_white_border"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/member_info_subdivision"
+                            style="@style/TextViewSize18"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/source_sans_light"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/padding_base"
+                            android:paddingRight="@dimen/search_input_height"
+                            android:singleLine="true"
+                            android:textColor="@color/ehi_black"
+                            tools:text="California" />
+
+                        <ImageView
+                            android:layout_width="@dimen/search_input_height"
+                            android:layout_height="@dimen/search_input_height"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/edit_text_green_border"
+                            android:rotation="90"
+                            android:scaleType="center"
+                            android:src="@drawable/arrow_green" />
+
+                    </RelativeLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/ehi_grey_header_bg" />
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/TextViewSize14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginRight="@dimen/padding_base"
+                    android:layout_marginTop="@dimen/padding_base"
+                    android:fontFamily="@font/source_sans_bold"
+                    android:text="@string/profile_edit_post_title"
+                    android:textAllCaps="true"
+                    android:textColor="@color/ehi_black"
+                    app:requiredField="@{SymbolPosition.AFTER}"
+                    />
+
+                <EditText
+                    android:id="@+id/member_info_zip"
+                    style="@style/InputField"
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/padding_base"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginRight="@dimen/padding_base"
+                    android:fontFamily="@font/source_sans_light"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    app:cleanable="@{true}"
+                    app:sensitiveInformation="@{true}"
+                    tools:text="606060"
+                    />
+
+                <TextView
+                    style="@style/TextViewSize14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ehi_module_background_fill"
+                    android:padding="@dimen/padding_base"
+                    android:text="@string/gdpr_marketing_optin_lang"
+                    app:footNote="@{SymbolPosition.BEFORE}"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_regular"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/member_info_save_changes"
+            style="@style/GreenContinueButton"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/green_button_big_height"
+            android:background="@color/ehi_primary"
+            android:fontFamily="@font/source_sans_bold"
+            android:text="@string/profile_edit_member_info_save_title" />
+
+    </LinearLayout>
+</layout>

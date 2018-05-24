@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="DatePickerFragmentBinding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/selection_display_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/selection_display_container_internal_margin"
+                android:layout_weight="1"
+                android:background="@color/ehi_module_background_fill"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SectionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/section_divider_height"
+                    android:text="@string/reservation_pickup_date_cell_title"
+                    android:textAllCaps="true"
+                    android:textColor="@color/ehi_black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/source_sans_bold" />
+
+                <TextView
+                    android:id="@+id/pickup_date_selection_display"
+                    style="@style/TextViewSize18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/calendar_header_background"
+                    android:gravity="left|center_vertical"
+                    android:minHeight="@dimen/date_selector_cell_height"
+                    android:paddingLeft="@dimen/padding_base"
+                    android:text="@string/reservation_scheduler_pickup_date_callout"
+                    android:textColor="@drawable/calendar_date_display_text"
+                    android:fontFamily="@font/source_sans_light"
+                    tools:ignore="RtlSymmetry" />
+
+                <FrameLayout
+                    android:id="@+id/pickup_time_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ehi_grey_header_bg"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/pickup_time_selection_display"
+                    style="@style/TextViewSize18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/calendar_header_background"
+                    android:gravity="left|center_vertical"
+                    android:minHeight="@dimen/date_selector_cell_height"
+                    android:paddingLeft="@dimen/padding_base"
+                    android:text="@string/reservation_scheduler_pickup_time_callout"
+                    android:textColor="@drawable/calendar_date_display_text"
+                    android:visibility="gone"
+                    android:fontFamily="@font/source_sans_light" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/selection_display_container_internal_margin"
+                android:layout_weight="1"
+                android:background="@color/ehi_module_background_fill"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/SectionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/section_divider_height"
+                    android:text="@string/reservation_return_date_cell_title"
+                    android:textAllCaps="true"
+                    android:textColor="@color/ehi_black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/source_sans_bold" />
+
+
+                <TextView
+                    android:id="@+id/return_date_selection_display"
+                    style="@style/TextViewSize18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/calendar_header_background"
+                    android:gravity="left|center_vertical"
+                    android:minHeight="@dimen/date_selector_cell_height"
+                    android:paddingLeft="@dimen/padding_base"
+                    android:text="@string/reservation_scheduler_return_date_callout"
+                    android:textColor="@drawable/calendar_date_display_text"
+                    android:fontFamily="@font/source_sans_light"
+                    tools:ignore="RtlSymmetry" />
+
+                <FrameLayout
+                    android:id="@+id/return_time_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ehi_grey_header_bg"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/return_time_selection_display"
+                    style="@style/TextViewSize18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/calendar_header_background"
+                    android:gravity="left|center_vertical"
+                    android:minHeight="@dimen/date_selector_cell_height"
+                    android:paddingLeft="@dimen/padding_base"
+                    android:text="@string/reservation_scheduler_return_time_callout"
+                    android:textColor="@drawable/calendar_date_display_text"
+                    android:visibility="gone"
+                    android:fontFamily="@font/source_sans_light"
+                    tools:ignore="RtlSymmetry"
+                    tools:visibility="visible" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <com.ehi.enterprise.android.ui.reservation.widget.NonSwipeableViewPager
+                android:id="@+id/fr_date_picker_time_views_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.squareup.timessquare.CalendarPickerView
+                android:id="@+id/calendar_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:dayBackground="@drawable/calendar_day_background"
+                app:dayTextColor="@drawable/calendar_day_text"
+                app:dividerColor="@android:color/transparent"
+                app:headerTextColor="@color/ehi_black"
+                app:titleTextColor="@color/ehi_black" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/sh_shadow_below" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="6dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/fr_date_picker_pickup_triangle"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/shape_green_triangle"
+                        android:rotation="180" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:id="@+id/fr_date_picker_return_triangle"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/shape_green_triangle"
+                        android:rotation="180"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/continue_button"
+            style="@style/GreenContinueButton"
+            android:text="@string/reservation_calendar_continue"
+            android:textColor="@drawable/button_inactive_white"
+            android:fontFamily="@font/source_sans_bold" />
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="FlightDetailsFragmentBinding" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/flight_details_title"
+                    style="@style/TextViewSize16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/flight_details_help_description"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light" />
+
+                <TextView
+                    style="@style/TextViewSize16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/flight_details_airline_title"
+                    android:textAllCaps="true"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_bold" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/airline_description_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    app:errorEnabled="true"
+                    app:hintEnabled="false">
+
+                    <EditText
+                        android:id="@+id/airline_description"
+                        style="@style/InputFieldWithoutVerticalPadding"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edit_text_transparent_dark_border"
+                        android:drawableEnd="@drawable/icon_search"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/flight_details_airline_placeholder"
+                        android:fontFamily="@font/source_sans_light" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/no_flight_button"
+                    style="@style/TextViewSize18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/flight_details_no_flight"
+                    android:textColor="@color/ehi_primary"
+                    android:visibility="visible"
+                    android:fontFamily="@font/source_sans_light" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/TextViewSize16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/flight_details_flight_number_title"
+                        android:textAllCaps="true"
+                        android:textColor="@color/ehi_black"
+                        android:fontFamily="@font/source_sans_bold" />
+
+                    <TextView
+                        android:id="@+id/flight_number_optional_tag"
+                        style="@style/TextViewSize12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/form_title_optional_field"
+                        android:textColor="@color/ehi_black"
+                        android:visibility="gone"
+                        android:fontFamily="@font/source_sans_light" />
+                </LinearLayout>
+
+                <!-- Dummy item to prevent flight_number from receiving focus -->
+                <View
+                    android:layout_width="0px"
+                    android:layout_height="0px"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true" />
+
+                <EditText
+                    android:id="@+id/flight_number"
+                    style="@style/InputField"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/padding_xsmall"
+                    android:hint="@string/flight_details_flight_number_placeholder"
+                    android:fontFamily="@font/source_sans_light" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <com.ehi.enterprise.android.ui.widget.DisabledClickButton
+            android:id="@+id/submit_button"
+            style="@style/GreenContinueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:text="@string/flight_details_submit_button_title"
+            android:textColor="@drawable/button_inactive_white"
+            android:fontFamily="@font/source_sans_bold" />
+    </LinearLayout>
+</layout>

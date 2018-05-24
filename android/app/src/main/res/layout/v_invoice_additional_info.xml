@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="InvoiceAdditionalInfoViewBinding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sectionHeader"
+            style="@style/SectionHeaderSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/selected_date_cell_bg"
+            android:text="@string/additional_info_section_title"
+            android:fontFamily="@font/source_sans_bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_base">
+
+            <TextView
+                style="@style/TextViewSize14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/additional_info_renter_details"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_large"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewSize18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/additional_info_name"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+
+                <TextView
+                    android:id="@+id/name_value"
+                    style="@style/TextViewSize18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_large"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewSize18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/additional_info_member_number"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+
+                <TextView
+                    android:id="@+id/member_value"
+                    style="@style/TextViewSize18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/contract_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_small"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewSize18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/additional_info_contract"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+
+                <TextView
+                    android:id="@+id/contract_value"
+                    style="@style/TextViewSize18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:layout_marginTop="@dimen/margin_large"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewSize18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/additional_info_address"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+
+                <TextView
+                    android:id="@+id/address_value"
+                    style="@style/TextViewSize18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider_horiz"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_base">
+
+            <TextView
+                style="@style/TextViewSize14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/additional_info_vehicle_details_title"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_large"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewSize18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/additional_info_driven_class"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+
+                <TextView
+                    android:id="@+id/driven_class_value"
+                    style="@style/TextViewSize18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_large"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewSize18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/additional_info_charged_class"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+
+                <TextView
+                    android:id="@+id/charged_class_value"
+                    style="@style/TextViewSize18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_large"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewSize18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/additional_info_model"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+
+                <TextView
+                    android:id="@+id/model_value"
+                    style="@style/TextViewSize18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_large"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewSize18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/additional_info_license_plate"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+
+                <TextView
+                    android:id="@+id/plate_value"
+                    style="@style/TextViewSize18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider_horiz"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_base">
+
+            <TextView
+                style="@style/TextViewSize14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/additional_info_distance_title"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_large"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewSize18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/additional_info_odometer_start"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+
+                <TextView
+                    android:id="@+id/odometer_start_value"
+                    style="@style/TextViewSize18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_large"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewSize18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/additional_info_odometer_end"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+
+                <TextView
+                    android:id="@+id/odometer_end_value"
+                    style="@style/TextViewSize18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_large"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewSize18"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/additional_info_total_distance"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+
+                <TextView
+                    android:id="@+id/distance_value"
+                    style="@style/TextViewSize18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider_horiz"/>
+
+    </LinearLayout>
+</layout>

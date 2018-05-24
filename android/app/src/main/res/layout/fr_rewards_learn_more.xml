@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="RewardsLearnMoreFragmentBinding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/top_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/image_benefits_01" />
+
+                    <ImageView
+                        android:id="@+id/eplus_logo"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/top_image"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="25dp"
+                        android:src="@drawable/eplus_logo" />
+
+                    <TextView
+                        android:id="@+id/prompt"
+                        style="@style/TextViewSize24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/top_image"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="25dp"
+                        android:layout_toRightOf="@id/eplus_logo"
+                        android:text="@string/rewards_learn_more_summary_plus_title"
+                        android:textColor="@color/ehi_black"
+                        android:fontFamily="@font/source_sans_bold" />
+
+                    <View
+                        android:id="@+id/dummy_margin"
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp"
+                        android:layout_below="@id/prompt" />
+
+                    <com.ehi.enterprise.android.ui.rewards.widget.CrossView
+                        android:id="@+id/top_right_cross"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="40dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@id/dummy_margin"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="@dimen/rewards_learn_more_screen_padding"
+                        android:layout_marginRight="@dimen/rewards_learn_more_screen_padding"
+                        android:layout_marginTop="@dimen/rewards_learn_more_screen_padding"
+                        android:background="@drawable/green_border_thick" />
+
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/rewards_information"
+                    android:fontFamily="@font/source_sans_light"
+                    android:text="@string/rewards_learn_more_summary_description_title" />
+
+                <TextView
+                    style="@style/SectionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/rewards_learn_more_tiers_section_title"
+                    android:fontFamily="@font/source_sans_bold"/>
+
+                <TextView
+                    style="@style/rewards_information"
+                    android:fontFamily="@font/source_sans_light"
+                    android:text="@string/rewards_learn_more_tier_section_description_title" />
+
+                <com.ehi.enterprise.android.ui.rewards.widget.TierInformationView
+                    android:id="@+id/plus_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp" />
+
+                <com.ehi.enterprise.android.ui.rewards.widget.TierInformationView
+                    android:id="@+id/silver_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+                <com.ehi.enterprise.android.ui.rewards.widget.TierInformationView
+                    android:id="@+id/gold_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+                <com.ehi.enterprise.android.ui.rewards.widget.TierInformationView
+                    android:id="@+id/platinum_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    style="@style/SectionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/rewards_learn_more_tips_section_title"
+                    android:fontFamily="@font/source_sans_bold"/>
+
+                <com.ehi.enterprise.android.ui.rewards.widget.ExpandingHeaderview
+                    android:id="@+id/quick_tip1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/location_details_background">
+
+                        <ImageView
+                            android:id="@+id/arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/spinner_arrow_down" />
+
+                        <TextView
+                            android:id="@+id/clickable_header"
+                            style="@style/LearnMoreExpandHeaderText"
+                            android:fontFamily="@font/source_sans_light"
+                            android:text="@string/rewards_learn_more_tips_earn_free_rentals_title" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/message_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/rewards_expanding_text_container_padding_top_bottom"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="@dimen/rewards_expanding_text_container_padding_top_bottom">
+
+                        <TextView
+                            style="@style/learnMoreExpandedText"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/source_sans_light"
+                            android:text="@string/rewards_learn_more_tips_earn_free_rentals_details" />
+
+                        <TextView
+                            style="@style/learnMoreFooterText"
+                            android:fontFamily="@font/source_sans_light"
+                            android:text="@string/rewards_learn_more_tips_earn_free_rentals_details_legal" />
+
+                    </LinearLayout>
+
+                </com.ehi.enterprise.android.ui.rewards.widget.ExpandingHeaderview>
+
+                <com.ehi.enterprise.android.ui.rewards.widget.ExpandingHeaderview
+                    android:id="@+id/quick_tip2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/location_details_background">
+
+                        <ImageView
+                            android:id="@id/arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/spinner_arrow_down" />
+
+                        <TextView
+                            android:id="@id/clickable_header"
+                            style="@style/LearnMoreExpandHeaderText"
+                            android:fontFamily="@font/source_sans_light"
+                            android:text="@string/rewards_learn_more_tips_point_per_dollar_title" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@id/message_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/rewards_expanding_text_container_padding_top_bottom"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="@dimen/rewards_expanding_text_container_padding_top_bottom">
+
+                        <TextView
+                            style="@style/learnMoreExpandedText"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/source_sans_light"
+                            android:text="@string/rewards_learn_more_tips_point_per_dollar_details" />
+
+                        <TextView
+                            style="@style/learnMoreFooterText"
+                            android:fontFamily="@font/source_sans_light"
+                            android:text="@string/rewards_learn_more_tips_point_per_dollar_details_legal" />
+                    </LinearLayout>
+
+                </com.ehi.enterprise.android.ui.rewards.widget.ExpandingHeaderview>
+
+                <com.ehi.enterprise.android.ui.rewards.widget.ExpandingHeaderview
+                    android:id="@+id/quick_tip3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/location_details_background">
+
+                        <ImageView
+                            android:id="@id/arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/spinner_arrow_down" />
+
+                        <TextView
+                            android:id="@id/clickable_header"
+                            style="@style/LearnMoreExpandHeaderText"
+                            android:fontFamily="@font/source_sans_light"
+                            android:text="@string/rewards_learn_more_tips_redeem_title" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@id/message_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/rewards_expanding_text_container_padding_top_bottom"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="@dimen/rewards_expanding_text_container_padding_top_bottom">
+
+                        <TextView
+                            style="@style/learnMoreExpandedText"
+                            android:fontFamily="@font/source_sans_light"
+                            android:text="@string/rewards_learn_more_tips_redeem_details" />
+                    </LinearLayout>
+                </com.ehi.enterprise.android.ui.rewards.widget.ExpandingHeaderview>
+
+                <com.ehi.enterprise.android.ui.rewards.widget.ExpandingHeaderview
+                    android:id="@+id/quick_tip4"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@color/location_details_background">
+
+                        <ImageView
+                            android:id="@id/arrow"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="20dp"
+                            android:src="@drawable/spinner_arrow_down" />
+
+                        <TextView
+                            android:id="@id/clickable_header"
+                            style="@style/LearnMoreExpandHeaderText"
+                            android:fontFamily="@font/source_sans_light"
+                            android:text="@string/rewards_learn_more_tips_no_blackouts_title" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@id/message_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/rewards_expanding_text_container_padding_top_bottom"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:paddingTop="@dimen/rewards_expanding_text_container_padding_top_bottom">
+
+                        <TextView
+                            style="@style/learnMoreExpandedText"
+                            android:fontFamily="@font/source_sans_light"
+                            android:text="@string/rewards_learn_more_tips_no_blackouts_details" />
+                    </LinearLayout>
+                </com.ehi.enterprise.android.ui.rewards.widget.ExpandingHeaderview>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/eplus_join_now_button"
+            style="@style/GreenContinueButton"
+            android:text="@string/rewards_learn_more_join_title"
+            android:fontFamily="@font/source_sans_bold"/>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="LoginFragmentBinding" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+
+            <TextView
+                android:id="@+id/login_message"
+                style="@style/TextViewSize18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_base"
+                android:layout_marginLeft="@dimen/padding_base"
+                android:layout_marginRight="@dimen/padding_base"
+                android:fontFamily="@font/source_sans_light"
+                android:textColor="@color/ehi_black"
+                android:visibility="gone"
+                tools:text="To add this corporate account to your reservation, you must sign into your Enterprise Plus account."
+                tools:visibility="visible" />
+
+            <TextView
+                android:id="@+id/login_user_name_text_view"
+                style="@style/HeaderFont14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="@dimen/padding_base"
+                android:fontFamily="@font/source_sans_bold"
+                android:text="@string/login_identification_label" />
+
+            <EditText
+                android:id="@+id/login_edit_user_name"
+                style="@style/InputField"
+                android:layout_marginLeft="@dimen/padding_base"
+                android:layout_marginRight="@dimen/padding_base"
+                android:fontFamily="@font/source_sans_light"
+                android:hint="@string/login_identification_placeholder"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                style="@style/HeaderFont14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="@dimen/padding_base"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/source_sans_bold"
+                android:text="@string/login_password_placeholder" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_base"
+                android:layout_marginRight="@dimen/padding_base">
+
+                <EditText
+                    android:id="@+id/login_edit_password"
+                    style="@style/InputField"
+                    android:fontFamily="@font/source_sans_light"
+                    android:hint="@string/login_password_placeholder"
+                    android:inputType="textPassword"
+                    android:paddingRight="60dp" />
+
+                <ImageView
+                    android:id="@+id/login_screen_show_password_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="-60dp"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:src="@drawable/icon_show_02" />
+
+            </LinearLayout>
+
+            <com.ehi.enterprise.android.ui.widget.CompoundRowView
+                android:id="@+id/login_screen_keep_me_signed_in_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_base"
+                app:compoundViewId="@+id/check_box"
+                app:textViewId="@+id/keep_me_signed_in_text">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/padding_base">
+
+                    <CheckBox
+                        android:id="@+id/check_box"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/check_box_button_selector"
+                        android:clickable="false" />
+
+                    <TextView
+                        android:id="@+id/keep_me_signed_in_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:fontFamily="@font/source_sans_regular"
+                        android:text="@string/login_stay_signed_in_label"
+                        android:textColor="@color/ehi_black" />
+
+                </LinearLayout>
+
+            </com.ehi.enterprise.android.ui.widget.CompoundRowView>
+
+            <TextView
+                android:id="@+id/login_screen_signin_button"
+                style="@style/GreenContinueButton"
+                android:layout_margin="@dimen/padding_base"
+                android:fontFamily="@font/source_sans_bold"
+                android:text="@string/login_action_title" />
+
+            <TextView
+                android:id="@+id/login_screen_forgot_password_button"
+                style="@style/TextViewSize14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_base"
+                android:layout_marginRight="@dimen/padding_base"
+                android:fontFamily="@font/source_sans_bold"
+                android:gravity="center_vertical"
+                android:minHeight="32dp"
+                android:text="@string/login_password_forgot_title"
+                android:textColor="@color/ehi_primary" />
+
+            <TextView
+                android:id="@+id/login_container_forgot_email_button"
+                style="@style/TextViewSize14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_base"
+                android:fontFamily="@font/source_sans_bold"
+                android:gravity="center_vertical"
+                android:minHeight="32dp"
+                android:text="@string/login_identification_forgot_title"
+                android:textColor="@color/ehi_primary" />
+
+            <LinearLayout
+                android:id="@+id/emerald_club_and_enroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/location_details_background"
+                android:fillViewport="true"
+                android:orientation="vertical"
+                android:paddingBottom="24dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="24dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@color/unauth_rentals_divider" />
+
+                <LinearLayout
+                    android:id="@+id/enroll_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/join_enterprise_login_button"
+                        style="@style/GreenBorderWhiteTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:fontFamily="@font/source_sans_bold"
+                        android:minHeight="52dp"
+                        android:text="@string/login_join_now_title" />
+
+                    <TextView
+                        android:id="@+id/login_enrolled_at_branch"
+                        style="@style/TextViewSize14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="@dimen/padding_base"
+                        android:layout_marginRight="@dimen/padding_base"
+                        android:fontFamily="@font/source_sans_bold"
+                        android:gravity="center"
+                        android:minHeight="32dp"
+                        android:text="@string/login_partial_enrollment_title"
+                        android:textColor="@color/ehi_primary" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="0dp"
+                        android:background="@color/unauth_rentals_divider" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/login_emerald_club_members_login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/padding_base"
+                    android:paddingLeft="@dimen/padding_base"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        style="@style/TextViewSize18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="@dimen/padding_small"
+                        android:drawablePadding="@dimen/padding_base"
+                        android:drawableStart="@drawable/national_logo"
+                        android:fontFamily="@font/source_sans_bold"
+                        android:text="@string/login_emerald_club_members_button_title"
+                        android:textColor="@color/ehi_primary" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/arrow_smgreen" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/login_emerald_club_members_logout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_base"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <TextView
+                        style="@style/TextViewSize18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_small"
+                        android:drawablePadding="@dimen/padding_small"
+                        android:drawableStart="@drawable/national_logo"
+                        android:fontFamily="@font/source_sans_bold"
+                        android:text="@string/menu_emerald_club_sign_out"
+                        android:textColor="@color/ehi_primary" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dev_login_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                </LinearLayout>
+
+                <!-- TODO join now button -->
+                <LinearLayout
+                    android:id="@+id/fr_login_join_eplus"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/padding_base"
+                    android:paddingLeft="@dimen/padding_base"
+                    android:paddingTop="10dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/TextViewSize16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/source_sans_bold"
+                        android:textAllCaps="true"
+                        android:textColor="@color/ehi_primary" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingTop="2dp"
+                        android:src="@drawable/arrow_smgreen" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>
