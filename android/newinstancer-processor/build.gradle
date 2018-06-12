@@ -1,6 +1,0 @@
-apply plugin: 'java'
-
-dependencies {
-    implementation "com.squareup:javapoet:$rootProject.ext.javaPoetVersion"
-    implementation project(':newinstancer-annotations')
-}

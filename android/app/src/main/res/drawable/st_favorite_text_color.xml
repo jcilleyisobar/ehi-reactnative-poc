@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android"
-          android:enterFadeDuration="@integer/selectors_animation_duration"
-          android:exitFadeDuration="@integer/selectors_animation_duration">
-    <item android:color="@color/white" android:state_selected="true"/>
-    <item android:color="@color/location_info_text_secondary" android:state_selected="false"/>
-</selector>

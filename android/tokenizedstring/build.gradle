@@ -1,3 +1,0 @@
-configurations.create("default")
-artifacts.add("default", file('tokenizedstring-release.aar'))
-task testClasses {}

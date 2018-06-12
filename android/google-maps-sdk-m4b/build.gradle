@@ -1,4 +1,0 @@
-
-configurations.create("default")
-artifacts.add("default", file('google-maps-sdk-m4b-2.26.0.aar'))
-task testClasses {}
