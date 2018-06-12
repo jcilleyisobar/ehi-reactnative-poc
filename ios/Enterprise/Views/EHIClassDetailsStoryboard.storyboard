@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Class Details View Controller-->
+        <scene sceneID="PSI-PQ-NgQ">
+            <objects>
+                <viewController storyboardIdentifier="EHIClassDetailsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DbE-ew-5ox" customClass="EHIClassDetailsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="X1n-UB-6yJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="9x4-sb-dT0" customClass="EHIListCollectionView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="597"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="wkK-1v-L1n" customClass="EHIListCollectionViewLayout">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="delegate" destination="DbE-ew-5ox" id="NdN-dt-Ads"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6cv-tb-ah9" userLabel="Select Button" customClass="EHIActionButton">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <color key="backgroundColor" red="0.090000003576278687" green="0.60000002384185791" blue="0.34999999403953552" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GN1-9l-cvt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="17"/>
+                                <state key="normal" title="SELECT THIS CLASS">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapClassSelectionButton:" destination="DbE-ew-5ox" eventType="touchUpInside" id="nek-v0-Rod"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9x4-sb-dT0" firstAttribute="top" secondItem="b9c-zr-DxV" secondAttribute="top" id="05S-QP-lmY"/>
+                            <constraint firstItem="b9c-zr-DxV" firstAttribute="trailing" secondItem="9x4-sb-dT0" secondAttribute="trailing" id="92A-j2-0eR"/>
+                            <constraint firstItem="6cv-tb-ah9" firstAttribute="leading" secondItem="b9c-zr-DxV" secondAttribute="leading" id="I2t-0E-JEh"/>
+                            <constraint firstItem="b9c-zr-DxV" firstAttribute="bottom" secondItem="6cv-tb-ah9" secondAttribute="bottom" id="TNz-xA-787"/>
+                            <constraint firstItem="9x4-sb-dT0" firstAttribute="leading" secondItem="b9c-zr-DxV" secondAttribute="leading" id="UAa-tE-DLN"/>
+                            <constraint firstItem="b9c-zr-DxV" firstAttribute="bottom" secondItem="9x4-sb-dT0" secondAttribute="bottom" id="ttD-Sn-uKE"/>
+                            <constraint firstItem="b9c-zr-DxV" firstAttribute="trailing" secondItem="6cv-tb-ah9" secondAttribute="trailing" id="ucZ-bk-LGS"/>
+                            <constraint firstItem="6cv-tb-ah9" firstAttribute="top" secondItem="9x4-sb-dT0" secondAttribute="bottom" id="z0p-dh-7PK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b9c-zr-DxV"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="ttD-Sn-uKE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="classSelectionButton" destination="6cv-tb-ah9" id="KZa-ym-5uC"/>
+                        <outlet property="collectionView" destination="9x4-sb-dT0" id="w4R-ys-wzp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HOQ-PF-JpL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1" y="435"/>
+        </scene>
+    </scenes>
+</document>

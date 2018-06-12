@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EHIReservationPriceCell" id="m4A-z9-drm" customClass="EHIReservationPriceCell">
+            <rect key="frame" x="0.0" y="0.0" width="440" height="84"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="440" height="84"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eKs-5g-8iD" userLabel="Default View">
+                        <rect key="frame" x="0.0" y="21" width="440" height="42"/>
+                        <subviews>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CU2-Bd-iuu" userLabel="Arrow Container">
+                                <rect key="frame" x="10" y="0.0" width="35" height="42"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="downarrow_smgreen" translatesAutoresizingMaskIntoConstraints="NO" id="cMw-PT-5dg" userLabel="Arrow">
+                                        <rect key="frame" x="11" y="17" width="13" height="8"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="cMw-PT-5dg" firstAttribute="centerY" secondItem="CU2-Bd-iuu" secondAttribute="centerY" id="1KW-D7-VWJ"/>
+                                    <constraint firstItem="cMw-PT-5dg" firstAttribute="centerX" secondItem="CU2-Bd-iuu" secondAttribute="centerX" id="L7T-L0-DDW"/>
+                                    <constraint firstAttribute="width" constant="35" id="UXC-IW-T7S"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vHw-Ie-XW0" userLabel="Container View">
+                                <rect key="frame" x="45" y="0.0" width="375" height="42"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Really long and interesting title, love me a good title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="ooe-j2-Pfi" userLabel="Title Label" customClass="EHILabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="254.5" height="42"/>
+                                        <gestureRecognizers/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                                        <color key="textColor" red="0.070000000300000004" green="0.050000000750000002" blue="0.050000000750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="751" verticalCompressionResistancePriority="250" text="$120123123" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UvY-ue-1rs" userLabel="Accessory Label" customClass="EHILabel">
+                                        <rect key="frame" x="274.5" y="0.0" width="100.5" height="21"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                                        <color key="textColor" red="0.060629889369010925" green="0.043859399855136871" blue="0.049030739814043045" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="UvY-ue-1rs" firstAttribute="top" secondItem="ooe-j2-Pfi" secondAttribute="top" id="66b-P0-c8h"/>
+                                    <constraint firstItem="ooe-j2-Pfi" firstAttribute="top" secondItem="vHw-Ie-XW0" secondAttribute="top" id="Xh7-kz-lXI"/>
+                                    <constraint firstItem="UvY-ue-1rs" firstAttribute="leading" secondItem="ooe-j2-Pfi" secondAttribute="trailing" constant="20" id="ZXJ-O1-HmD" customClass="EHIRestorableConstraint"/>
+                                    <constraint firstAttribute="bottom" secondItem="ooe-j2-Pfi" secondAttribute="bottom" id="aT5-1S-14c"/>
+                                    <constraint firstItem="ooe-j2-Pfi" firstAttribute="leading" secondItem="vHw-Ie-XW0" secondAttribute="leading" id="oQu-IX-iTN"/>
+                                    <constraint firstAttribute="trailing" secondItem="UvY-ue-1rs" secondAttribute="trailing" id="yRy-fX-5gX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="CU2-Bd-iuu" firstAttribute="leading" secondItem="eKs-5g-8iD" secondAttribute="leading" constant="10" id="APb-4y-nfe"/>
+                            <constraint firstItem="CU2-Bd-iuu" firstAttribute="bottom" secondItem="vHw-Ie-XW0" secondAttribute="bottom" id="JDZ-A2-NWj"/>
+                            <constraint firstItem="vHw-Ie-XW0" firstAttribute="top" secondItem="eKs-5g-8iD" secondAttribute="top" id="QLg-hU-Sw2"/>
+                            <constraint firstItem="CU2-Bd-iuu" firstAttribute="top" secondItem="eKs-5g-8iD" secondAttribute="top" id="UfL-Qo-u2E"/>
+                            <constraint firstAttribute="bottom" secondItem="vHw-Ie-XW0" secondAttribute="bottom" id="XMn-Aq-9pm"/>
+                            <constraint firstAttribute="trailing" secondItem="vHw-Ie-XW0" secondAttribute="trailing" constant="20" id="YJ5-nv-DJW"/>
+                            <constraint firstItem="vHw-Ie-XW0" firstAttribute="leading" secondItem="CU2-Bd-iuu" secondAttribute="trailing" id="hbq-Rd-3OQ"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J6q-EB-D2l" userLabel="Divider">
+                        <rect key="frame" x="0.0" y="83" width="440" height="1"/>
+                        <color key="backgroundColor" red="0.80784313725490198" green="0.80784313725490198" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="MAr-3Q-0zn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="eKs-5g-8iD" firstAttribute="leading" secondItem="m4A-z9-drm" secondAttribute="leading" id="112-3a-nP3"/>
+                <constraint firstAttribute="bottom" secondItem="J6q-EB-D2l" secondAttribute="bottom" id="HUn-PC-TBn"/>
+                <constraint firstAttribute="trailing" secondItem="eKs-5g-8iD" secondAttribute="trailing" id="TJR-lg-WlJ"/>
+                <constraint firstItem="eKs-5g-8iD" firstAttribute="centerY" secondItem="m4A-z9-drm" secondAttribute="centerY" id="s16-v2-jZS"/>
+                <constraint firstItem="J6q-EB-D2l" firstAttribute="leading" secondItem="m4A-z9-drm" secondAttribute="leading" id="tmf-le-5Ti"/>
+                <constraint firstAttribute="trailing" secondItem="J6q-EB-D2l" secondAttribute="trailing" id="xqp-BB-bbn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Urb-we-gVS"/>
+            <size key="customSize" width="440" height="84"/>
+            <connections>
+                <outlet property="arrowImage" destination="cMw-PT-5dg" id="oQI-zY-IYq"/>
+                <outlet property="containerView" destination="eKs-5g-8iD" id="hmL-Ur-hg8"/>
+                <outlet property="middleDivider" destination="J6q-EB-D2l" id="gPd-HI-SpL"/>
+                <outlet property="titleLabel" destination="ooe-j2-Pfi" id="MfZ-Dl-Rgu"/>
+                <outlet property="totalLabel" destination="UvY-ue-1rs" id="0eM-yR-iGe"/>
+            </connections>
+            <point key="canvasLocation" x="365" y="176"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="downarrow_smgreen" width="13" height="8"/>
+    </resources>
+</document>

@@ -1,0 +1,465 @@
+{
+    "brand": "ENTERPRISE",
+    "id": "1019074",
+    "location_type": "airport",
+    "address": {
+        "street_addresses": [
+            "3819 Presidential Blvd",
+            ""
+        ],
+        "city": "Austin",
+        "country_subdivision_code": "TX",
+        "country_code": "US",
+        "postal": "78719"
+    },
+    "phones": [
+        {
+            "phone_number": "7374843896",
+            "phone_type": "OFFICE",
+            "priority": 0,
+            "default_indicator": true,
+            "dialing_code": "1"
+        }
+    ],
+    "wayfindings": [
+        {
+            "path": "https://enterprise-int2-aem.enterprise.com/content/dam/enterprise/icons/ico-wf-compass.png",
+            "text": "No shuttle is required."
+        },
+        {
+            "path": "https://enterprise-int2-aem.enterprise.com/content/dam/enterprise/icons/ico-wf-baggage-claim.png",
+            "text": "The counter is located near the baggage claim in the main terminal. The vehicles are within walking distance."
+        },
+        {
+            "path": "https://enterprise-int2-aem.enterprise.com/content/dam/enterprise/icons/ico-wf-rental-location.png",
+            "text": "Please proceed to the counter to obtain your rental agreement and vehicle keys."
+        },
+        {
+            "path": "https://enterprise-int2-aem.enterprise.com/content/dam/enterprise_cros/%3Cp%3E%3C/p%3E",
+            "text": ""
+        },
+        {
+            "path": "https://enterprise-int2-aem.enterprise.com/content/dam/enterprise_cros/%3Cp%3E%3C/p%3E",
+            "text": ""
+        }
+    ],
+    "policies": [
+        {
+            "code": "ADDR",
+            "description": "Additional Driver",
+            "mandatory": false,
+            "policy_description": "$10.00 ADDR DRIVER",
+            "policy_text": "There will be an additional charge of 10.00 USD per day for each additional authorized driver other than a spouse or domestic partner.\n",
+            "key_facts_included": false
+        },
+        {
+            "code": "AFHR",
+            "description": "After Hours Service",
+            "mandatory": false,
+            "policy_description": "6558, 65V4, 65X2, 65X3",
+            "policy_text": "Please return vehicle to the airport rental car facility. Follow signage to rental car return and park in a designated return lane. Place keys in drop box located next to kiosk.\n",
+            "key_facts_included": false
+        },
+        {
+            "code": "AGE",
+            "description": "Age Requirements",
+            "mandatory": false,
+            "policy_description": "$15 21-24.",
+            "policy_text": "ALL DRIVERS MUST BE 21 YEARS OF AGE OR OLDER. UNDER AGE 25 DRIVERS FEE IS 15.00 USD PER DAY.",
+            "key_facts_included": false
+        },
+        {
+            "code": "CDW",
+            "description": "Damage Waiver",
+            "mandatory": false,
+            "policy_description": "19.99",
+            "policy_text": "DAMAGE WAIVER, DW, FOR THIS BRANCH IS 19.99 USD PER DAY. - DAMAGE WAIVER, DW, IS OFFERED AT THE TIME OF RENTAL FOR AN ADDITIONAL DAILY CHARGE. IF THE RENTER ACCEPTS DW, ENTERPRISE WAIVES OR REDUCES THE RENTERS RESPONSIBILITY FOR LOSS OF, OR DAMAGE TO, THE RENTAL VEHICLE SUBJECT TO THE TERMS AND CONDITIONS OF THE RENTAL AGREEMENT AND APPLICABLE LAWS. DW IS NOT INSURANCE. THE PURCHASE OF DW IS OPTIONAL AND NOT REQUIRED TO RENT A CAR. THE PROTECTION PROVIDED BY DW MAY DUPLICATE THE RENTERS EXISTING COVERAGE. ENTERPRISE IS NOT QUALIFIED TO EVALUATE THE ADEQUACY OF THE RENTERS EXISTING COVERAGE, THEREFORE THE RENTER SHOULD EXAMINE HIS OR HER CREDIT CARD PROTECTIONS, AUTOMOBILE INSURANCE POLICIES OR OTHER SOURCES OF COVERAGE THAT MAY DUPLICATE THE PROTECTION PROVIDED BY DW.\n",
+            "key_facts_included": false
+        },
+        {
+            "code": "INS",
+            "description": "Insurance Policy",
+            "mandatory": false,
+            "policy_description": "CORP INS POLICY",
+            "policy_text": "The renters liability insurance will apply except where Enterprise is required by law to provide liability protection.\n",
+            "key_facts_included": false
+        },
+        {
+            "code": "PAI",
+            "description": "Personal Accident Insurance",
+            "mandatory": false,
+            "policy_description": "GROUP 65 - PAI",
+            "policy_text": "PERSONAL ACCIDENT INSURANCE (PAI) FOR THIS BRANCH RANGES BETWEEN $3.00 AND $7.00 PER DAY. - PERSONAL ACCIDENT INSURANCE (PAI) IS OFFERED AT THE TIME OF RENTAL FOR AN ADDITIONAL DAILY CHARGE. IF ACCEPTED, PAI PROVIDES THE RENTER AND PASSENGERS WITH ACCIDENT MEDICAL EXPENSE, ACCIDENTAL DEATH AND AMBULANCE EXPENSE BENEFITS. BENEFITS ARE PAYABLE IN ADDITION TO ANY OTHER INSURANCE COVERAGE THE RENTER OR PASSENGERS MAY HAVE. THIS IS A SUMMARY ONLY. PAI IS SUBJECT TO THE PROVISIONS, LIMITATIONS AND EXCLUSIONS OF THE PAI POLICY UNDERWRITTEN BY EMPIRE FIRE AND MARINE INSURANCE COMPANY. THE PURCHASE OF PAI IS OPTIONAL AND NOT REQUIRED TO RENT A CAR. THE COVERAGE PROVIDED BY PAI MAY DUPLICATE THE RENTER'S EXISTING COVERAGE. ENTERPRISE IS NOT QUALIFIED TO EVALUATE THE ADEQUACY OF THE RENTER'S EXISTING COVERAGE; THEREFORE THE RENTER SHOULD EXAMINE HIS OR HER PERSONAL INSURANCE OR OTHER SOURCES OF COVERAGE THAT MAY DUPLICATE THE COVERAGE PROVIDED BY PAI.",
+            "key_facts_included": false
+        },
+        {
+            "code": "PYMT",
+            "description": "Forms of Payment",
+            "mandatory": false,
+            "policy_description": "CR CD,CASH,TR CK",
+            "policy_text": "A major credit card in the renters name is required for a deposit on all rentals. At the time of payment, cash, travelers checks or a major credit card are accepted.\n",
+            "key_facts_included": false
+        },
+        {
+            "code": "RAP",
+            "description": "Roadside Protection",
+            "mandatory": false,
+            "policy_description": "4.99 US AND CA",
+            "policy_text": "ENTERPRISE OFFERS ROADSIDE ASSISTANCE PROTECTION AT SELECT LOCATIONS. RAP ALLOWS ENTERPRISE CUSTOMERS TO WAIVE FINANCIAL RESPONSIBILITY FOR CHARGEABLE ROADSIDE INCIDENTS SUCH AS LOST KEYS, LOCKOUTS, AND FUEL OUTAGES. RAP CAN BE ADDED FOR 4.99 US OR CANADIAN DOLLARS PER DAY. ROAD SIDE ASSISTANCE PROTECTION OFFERS THESE SERVICES, FLAT TIRE, JUMP START, LOCKOUT SERVICE, FUEL DELIVERY, AND KEY REPLACEMENT. NOTE- IN NY, CA, NV, AND KS THE COST OF THE KEY WILL NOT BE COVERED, ONLY THE SERVICE TO DELIVER THE KEY OR PERFORM THE LOCKOUT SERVICE. ROADSIDE ASSISTANCE PROTECTION IS VOID AND OF NO EFFECT IF, AT THE TIME OF THE INCIDENT NECESSITATING ROADSIDE ASSISTANCE, YOU OR ANY AUTHORIZED DRIVER WERE IN VIOLATION OF THE RENTAL AGREEMENT, INCLUDING, WITHOUT LIMITATION, THE PROHIBITED USES AND VIOLATIONS SET FORTH THEREIN. IN SUCH CASES, ROADSIDE ASSISTANCE WILL BE AVAILABLE, BUT STANDARD CHARGES MAY APPLY.",
+            "key_facts_included": false
+        },
+        {
+            "code": "RQMT",
+            "description": "Renter Requirements",
+            "mandatory": false,
+            "policy_description": "US CORPORATE POLICY",
+            "policy_text": "All drivers must--have a valid United States drivers license, or internationals drivers permit. All international drivers must also have their own valid country specific drivers license. Note- at Phoenix and Nevada area airports and rental locations, renters with drivers licenses issued outside of the United States or its territories must produce a valid passport. US territories include American Samoa, Guam, the U.S. Virgin Islands Puerto Rico, the Federated States of Micronesia, and the Midway Islands. Have a major credit card in their name at the time of rental. Exceptions may apply by location please see individual location payment policy. Note- Enterprise locations require a rental deposit in addition to the cost of the rental amount. Meet the rental locations minimum age requirements.\n",
+            "key_facts_included": false
+        },
+        {
+            "code": "SLP",
+            "description": "Supplemental Liability Protection",
+            "mandatory": false,
+            "policy_description": "$13.99 PER DAY",
+            "policy_text": "SUPPLEMENTAL LIABILITY PROTECTION -SLP- FOR THIS BRANCH IS 13.99 USD PER DAY. - SUPPLEMENTAL LIABILITY PROTECTION -SLP, IS OFFERED AT THE TIME OF RENTAL FOR AN ADDITIONAL DAILY CHARGE. IF ACCEPTED, SLP PROVIDES THE RENTER AND AUTHORIZED DRIVERS WITH UP TO 1,000,000USD COMBINED SINGLE LIMIT FOR THIRD PARTY LIABILITY CLAIMS. IF THE RENTER ACCEPTS SLP, ENTERPRISE PROVIDES THIRD PARTY LIABILITY PROTECTION UP TO THE APPLICABLE MINIMUM FINANCIAL RESPONSIBILITY LIMIT AND EMPIRE FIRE AND MARINE INSURANCE COMPANY PROVIDES EXCESS THIRD PARTY LIABILITY INSURANCE COVERAGE FROM THE APPLICABLE MINIMUM FINANCIAL RESPONSIBILITY LIMIT TO 1,000,000USD THIS IS A SUMMARY ONLY. SLP IS SUBJECT TO THE TERMS, CONDITIONS, PROVISIONS, LIMITATIONS AND EXCLUSIONS IN THE SUPPLEMENTAL RENTAL LIABILITY INSURANCE EXCESS POLICY UNDERWRITTEN BY EMPIRE FIRE AND MARINE INSURANCE COMPANY. THE PURCHASE OF SLP IS OPTIONAL AND NOT REQUIRED TO RENT A CAR. THE COVERAGE PROVIDED BY SLP MAY DUPLICATE THE RENTERS EXISTING COVERAGE.  ENTERPRISE IS NOT QUALIFIED TO EVALUATE THE ADEQUACY OF THE RENTERS EXISTING COVERAGE, THEREFORE THE RENTER SHOULD EXAMINE HIS OR HER PERSONAL INSURANCE POLICIES OR OTHER SOURCES OF COVERAGE THAT MAY DUPLICATE THE COVERAGE PROVIDED BY SLP.",
+            "key_facts_included": false
+        }
+    ],
+    "business_types": [
+        {
+            "code": "INR"
+        },
+        {
+            "code": "EDR",
+            "description": "Enterprise Daily Rental"
+        }
+    ],
+    "indicators": [],
+    "name": "Austin Bergstrom Airport",
+    "description": "Ean Holdings, Llc",
+    "airport_code": "AUS",
+    "gps": {
+        "latitude": 30.204987,
+        "longitude": -97.66318
+    },
+    "drive_distance": {
+        "unit": "MI",
+        "distance": 0
+    },
+    "hours": [
+        {
+            "type": "STANDARD",
+            "days": [
+                {
+                    "day": "MON",
+                    "date": "2017-02-06",
+                    "open_all_day": false,
+                    "closed_all_day": false,
+                    "open_close_times": [
+                        {
+                            "open_time": "630",
+                            "close_time": "2330"
+                        }
+                    ]
+                },
+                {
+                    "day": "TUE",
+                    "date": "2017-02-07",
+                    "open_all_day": false,
+                    "closed_all_day": false,
+                    "open_close_times": [
+                        {
+                            "open_time": "630",
+                            "close_time": "2330"
+                        }
+                    ]
+                },
+                {
+                    "day": "WED",
+                    "date": "2017-02-08",
+                    "open_all_day": false,
+                    "closed_all_day": false,
+                    "open_close_times": [
+                        {
+                            "open_time": "630",
+                            "close_time": "2330"
+                        }
+                    ]
+                },
+                {
+                    "day": "THU",
+                    "date": "2017-02-09",
+                    "open_all_day": false,
+                    "closed_all_day": false,
+                    "open_close_times": [
+                        {
+                            "open_time": "630",
+                            "close_time": "2330"
+                        }
+                    ]
+                },
+                {
+                    "day": "FRI",
+                    "date": "2017-02-10",
+                    "open_all_day": false,
+                    "closed_all_day": false,
+                    "open_close_times": [
+                        {
+                            "open_time": "630",
+                            "close_time": "2330"
+                        }
+                    ]
+                },
+                {
+                    "day": "SAT",
+                    "date": "2017-02-11",
+                    "open_all_day": false,
+                    "closed_all_day": false,
+                    "open_close_times": [
+                        {
+                            "open_time": "630",
+                            "close_time": "2330"
+                        }
+                    ]
+                },
+                {
+                    "day": "SUN",
+                    "date": "2017-02-12",
+                    "open_all_day": false,
+                    "closed_all_day": false,
+                    "open_close_times": [
+                        {
+                            "open_time": "630",
+                            "close_time": "2330"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "type": "STANDARD",
+            "days": [
+                {
+                    "day": "MON",
+                    "date": "2017-02-13",
+                    "open_all_day": false,
+                    "closed_all_day": false,
+                    "open_close_times": [
+                        {
+                            "open_time": "630",
+                            "close_time": "2330"
+                        }
+                    ]
+                },
+                {
+                    "day": "TUE",
+                    "date": "2017-02-14",
+                    "open_all_day": false,
+                    "closed_all_day": false,
+                    "open_close_times": [
+                        {
+                            "open_time": "630",
+                            "close_time": "2330"
+                        }
+                    ]
+                },
+                {
+                    "day": "WED",
+                    "date": "2017-02-15",
+                    "open_all_day": false,
+                    "closed_all_day": false,
+                    "open_close_times": [
+                        {
+                            "open_time": "630",
+                            "close_time": "2330"
+                        }
+                    ]
+                },
+                {
+                    "day": "THU",
+                    "date": "2017-02-16",
+                    "open_all_day": false,
+                    "closed_all_day": false,
+                    "open_close_times": [
+                        {
+                            "open_time": "630",
+                            "close_time": "2330"
+                        }
+                    ]
+                },
+                {
+                    "day": "FRI",
+                    "date": "2017-02-17",
+                    "open_all_day": false,
+                    "closed_all_day": false,
+                    "open_close_times": [
+                        {
+                            "open_time": "630",
+                            "close_time": "2330"
+                        }
+                    ]
+                },
+                {
+                    "day": "SAT",
+                    "date": "2017-02-18",
+                    "open_all_day": false,
+                    "closed_all_day": false,
+                    "open_close_times": [
+                        {
+                            "open_time": "630",
+                            "close_time": "2330"
+                        }
+                    ]
+                },
+                {
+                    "day": "SUN",
+                    "date": "2017-02-19",
+                    "open_all_day": false,
+                    "closed_all_day": false,
+                    "open_close_times": [
+                        {
+                            "open_time": "630",
+                            "close_time": "2330"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "time_zone_id": "America/Chicago",
+    "offered_car_classes": [],
+    "filter_tags": [
+        "AIRPORT",
+        "OPEN NOW"
+    ],
+    "booking_urls": [
+        {
+            "type": "Enterprise",
+            "url": "http://www.enterprise.com/ "
+        }
+    ],
+    "exotics_location": false,
+    "car_sales_location": false,
+    "show_truck_lob_url": false,
+    "after_hours_pickup": false,
+    "after_hours_return": true,
+    "airline_details": [
+        {
+            "code": "PE",
+            "description": "AIR EUROPE S.P.A."
+        },
+        {
+            "code": "MC",
+            "description": "AIR MOBILITY COMMAND"
+        },
+        {
+            "code": "6L",
+            "description": "AKLAK"
+        },
+        {
+            "code": "HP",
+            "description": "AMERICA WEST AIRLINES INC."
+        },
+        {
+            "code": "AA",
+            "description": "AMERICAN AIRLINES"
+        },
+        {
+            "code": "C5",
+            "description": "ASOCIADOS LATINOAMERICANOS DE TR"
+        },
+        {
+            "code": "CH",
+            "description": "BEMIDJI AIRLINES"
+        },
+        {
+            "code": "SN",
+            "description": "BRUSSELS AIRLINES"
+        },
+        {
+            "code": "XP",
+            "description": "CASINO EXPRESS"
+        },
+        {
+            "code": "CO",
+            "description": "CONTINENTAL AIRLINES, INC."
+        },
+        {
+            "code": "CY",
+            "description": "CYPRUS AIRWAYS"
+        },
+        {
+            "code": "DL",
+            "description": "DELTA AIR LINES INC."
+        },
+        {
+            "code": "XE",
+            "description": "EXPRESS JET"
+        },
+        {
+            "code": "F9",
+            "description": "FRONTIER AIRLINES, INC"
+        },
+        {
+            "code": "WC",
+            "description": "ISLENA AIRLINES"
+        },
+        {
+            "code": "PP",
+            "description": "JET AVIATION BUSINESS JETS AG"
+        },
+        {
+            "code": "B6",
+            "description": "JETBLUE AIRWAYS"
+        },
+        {
+            "code": "WA",
+            "description": "KLM CITYHOPPER"
+        },
+        {
+            "code": "XX",
+            "description": "OTHER"
+        },
+        {
+            "code": "8P",
+            "description": "PACIFIC COASTAL AIRLINES LIMITED"
+        },
+        {
+            "code": "7V",
+            "description": "PELICAN AIR SERVICES"
+        },
+        {
+            "code": "WN",
+            "description": "SOUTHWEST AIRLINES"
+        },
+        {
+            "code": "SR",
+            "description": "SWISS AIR TRANS CO. LTD. (SWISSAIR)"
+        },
+        {
+            "code": "WI",
+            "description": "U-LAND AIRLINES"
+        },
+        {
+            "code": "UA",
+            "description": "UNITED AIRLINES, INC."
+        },
+        {
+            "code": "US",
+            "description": "US AIRWAYS, INC."
+        },
+        {
+            "code": "WU",
+            "description": "WALK IN"
+        },
+        {
+            "code": "WS",
+            "description": "WESTJET AIRLINES LTD."
+        }
+    ],
+    "multi_terminal": false,
+    "do_not_index": false,
+    "reservation_booking_system": "ODYSSEY",
+    "rental_checklists": [],
+    "currency_code": "USD"
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="c22-O7-iKe" customClass="EHIGaugeView">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="spR-lF-tza" customClass="EHIMeterView">
+                    <rect key="frame" x="5" y="5" width="290" height="145"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cQl-nd-bWS" userLabel="Inner Meter View" customClass="EHIMeterView">
+                    <rect key="frame" x="12" y="12" width="276" height="138"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HW3-HS-U5N" customClass="EHIArcSegmentsView">
+                    <rect key="frame" x="0.0" y="0.0" width="300" height="150"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="HW3-HS-U5N" secondAttribute="bottom" id="2nf-Ye-QJe"/>
+                <constraint firstAttribute="trailing" secondItem="cQl-nd-bWS" secondAttribute="trailing" constant="12" id="6g5-H0-eej"/>
+                <constraint firstItem="cQl-nd-bWS" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="12" id="6pi-Je-7rE"/>
+                <constraint firstAttribute="bottom" secondItem="spR-lF-tza" secondAttribute="bottom" id="7MQ-IB-FGY"/>
+                <constraint firstAttribute="trailing" secondItem="HW3-HS-U5N" secondAttribute="trailing" id="8WI-LG-6gL"/>
+                <constraint firstAttribute="bottom" secondItem="cQl-nd-bWS" secondAttribute="bottom" id="PBW-gd-QoK"/>
+                <constraint firstAttribute="trailing" secondItem="spR-lF-tza" secondAttribute="trailing" constant="5" id="h9g-Qs-fcf"/>
+                <constraint firstItem="cQl-nd-bWS" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="12" id="iQn-JX-0E0"/>
+                <constraint firstItem="HW3-HS-U5N" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" id="jnT-ai-LQn"/>
+                <constraint firstItem="spR-lF-tza" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" constant="5" id="mzB-X9-XXl"/>
+                <constraint firstItem="HW3-HS-U5N" firstAttribute="top" secondItem="c22-O7-iKe" secondAttribute="top" id="nZj-4D-22C"/>
+                <constraint firstItem="spR-lF-tza" firstAttribute="leading" secondItem="c22-O7-iKe" secondAttribute="leading" constant="5" id="oay-do-PHJ"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="6c0-G4-oiB"/>
+            <connections>
+                <outlet property="arcSegmentsView" destination="HW3-HS-U5N" id="LZB-Fy-hQV"/>
+                <outlet property="innerMeterView" destination="cQl-nd-bWS" id="cYI-0x-Qgd"/>
+                <outlet property="meterView" destination="spR-lF-tza" id="xd4-zZ-ui2"/>
+            </connections>
+            <point key="canvasLocation" x="-795" y="-131"/>
+        </view>
+    </objects>
+</document>

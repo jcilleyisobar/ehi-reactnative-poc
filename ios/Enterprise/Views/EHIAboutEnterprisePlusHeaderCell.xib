@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EHIAboutEnterprisePlusHeaderCell" id="KVg-WZ-jGH" customClass="EHIAboutEnterprisePlusHeaderCell">
+            <rect key="frame" x="0.0" y="0.0" width="368" height="205"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="368" height="205"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We've made it simple:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPW-V6-YJJ" customClass="EHILabel">
+                        <rect key="frame" x="20" y="30" width="328" height="26"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="22"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="icon_points_trophy" translatesAutoresizingMaskIntoConstraints="NO" id="7n3-EQ-od4">
+                        <rect key="frame" x="107" y="71" width="155" height="45"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dollars spent equals earned." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oo9-OX-SlI" customClass="EHILabel">
+                        <rect key="frame" x="20" y="141" width="328" height="24"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="gPW-V6-YJJ" firstAttribute="leading" secondItem="KVg-WZ-jGH" secondAttribute="leading" constant="20" id="55d-eE-xfr"/>
+                <constraint firstItem="Oo9-OX-SlI" firstAttribute="top" secondItem="7n3-EQ-od4" secondAttribute="bottom" constant="25" id="5xd-r0-06Y"/>
+                <constraint firstItem="gPW-V6-YJJ" firstAttribute="top" secondItem="KVg-WZ-jGH" secondAttribute="top" constant="30" id="8R4-yM-Iy2"/>
+                <constraint firstItem="7n3-EQ-od4" firstAttribute="top" secondItem="gPW-V6-YJJ" secondAttribute="bottom" constant="15" id="BZa-b5-zAs"/>
+                <constraint firstAttribute="trailing" secondItem="gPW-V6-YJJ" secondAttribute="trailing" constant="20" id="Ei5-3q-Uge"/>
+                <constraint firstItem="Oo9-OX-SlI" firstAttribute="leading" secondItem="KVg-WZ-jGH" secondAttribute="leading" constant="20" id="QE0-Tq-k0Y"/>
+                <constraint firstItem="7n3-EQ-od4" firstAttribute="centerX" secondItem="KVg-WZ-jGH" secondAttribute="centerX" id="fRS-BO-Fgl"/>
+                <constraint firstAttribute="trailing" secondItem="Oo9-OX-SlI" secondAttribute="trailing" constant="20" id="nEV-2I-JSc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VcX-Wk-jcx"/>
+            <size key="customSize" width="368" height="205"/>
+            <connections>
+                <outlet property="detailLabel" destination="Oo9-OX-SlI" id="FPB-ef-HrY"/>
+                <outlet property="titleLabel" destination="gPW-V6-YJJ" id="QOX-Uk-uGo"/>
+            </connections>
+            <point key="canvasLocation" x="-6" y="99.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_points_trophy" width="155" height="45"/>
+    </resources>
+</document>

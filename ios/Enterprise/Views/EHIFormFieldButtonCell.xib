@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EHIFormFieldButtonCell" id="Y8K-Vm-yW6" customClass="EHIFormFieldButtonCell">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="46"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="347" height="46"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hb7-Yp-OHj">
+                        <rect key="frame" x="20" y="10" width="307" height="32"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JSu-YF-9hL" customClass="EHIButton">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="999" constant="32" id="yW1-Yu-Kxe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="DIN Next LT Pro" pointSize="16"/>
+                                <state key="normal" title="Title">
+                                    <color key="titleColor" red="0.090196078430000007" green="0.59999999999999998" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTap:" destination="Y8K-Vm-yW6" eventType="touchUpInside" id="a1E-LL-YzD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JSu-YF-9hL" firstAttribute="top" secondItem="hb7-Yp-OHj" secondAttribute="top" id="B5a-wD-QBi"/>
+                            <constraint firstItem="JSu-YF-9hL" firstAttribute="leading" secondItem="hb7-Yp-OHj" secondAttribute="leading" id="aJC-Z6-Gv8"/>
+                            <constraint firstAttribute="bottom" secondItem="JSu-YF-9hL" secondAttribute="bottom" id="mON-kc-Iij"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JSu-YF-9hL" secondAttribute="trailing" id="vSx-lE-Kv1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hb7-Yp-OHj" secondAttribute="trailing" constant="20" id="0b9-89-xJe"/>
+                <constraint firstItem="hb7-Yp-OHj" firstAttribute="top" secondItem="Y8K-Vm-yW6" secondAttribute="top" constant="10" id="awQ-rO-uae"/>
+                <constraint firstItem="hb7-Yp-OHj" firstAttribute="leading" secondItem="Y8K-Vm-yW6" secondAttribute="leading" constant="20" id="g5c-4Y-YWe"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="u9S-Cz-dlf"/>
+            <size key="customSize" width="347" height="46"/>
+            <connections>
+                <outlet property="button" destination="JSu-YF-9hL" id="ULU-6H-BJy"/>
+                <outlet property="containterView" destination="hb7-Yp-OHj" id="Xdj-Iw-mY2"/>
+            </connections>
+            <point key="canvasLocation" x="460.5" y="296"/>
+        </collectionViewCell>
+    </objects>
+</document>

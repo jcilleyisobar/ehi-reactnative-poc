@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EHIReservationDriverInfoCell" id="c6q-CM-rSZ" customClass="EHIReservationDriverInfoCell">
+            <rect key="frame" x="0.0" y="0.0" width="431" height="153"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="431" height="153"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DRIVER INFO" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zmH-Pd-cWu" customClass="EHILabel">
+                        <rect key="frame" x="20" y="15" width="391" height="18"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IJD-gT-8wJ" userLabel="Driver Info Container">
+                        <rect key="frame" x="20" y="43" width="373" height="77"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tester McTesterson" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="373" translatesAutoresizingMaskIntoConstraints="NO" id="RJG-J4-HVo" customClass="EHILabel">
+                                <rect key="frame" x="0.0" y="0.0" width="373" height="19"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="16"/>
+                                <color key="textColor" red="0.060629889369010925" green="0.043859399855136871" blue="0.049030739814043045" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tester@gmail.com" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="373" translatesAutoresizingMaskIntoConstraints="NO" id="Kkn-7K-h2E" customClass="EHILabel">
+                                <rect key="frame" x="0.0" y="29" width="373" height="19"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="16"/>
+                                <color key="textColor" red="0.060629889369010925" green="0.043859399855136871" blue="0.049030739814043045" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="617-445-1232" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="373" translatesAutoresizingMaskIntoConstraints="NO" id="YH3-nK-JuL" customClass="EHILabel">
+                                <rect key="frame" x="0.0" y="58" width="373" height="19"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="16"/>
+                                <color key="textColor" red="0.060629889369010925" green="0.043859399855136871" blue="0.049030739814043045" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="YH3-nK-JuL" firstAttribute="top" secondItem="Kkn-7K-h2E" secondAttribute="bottom" constant="10" id="5Lf-FY-97T"/>
+                            <constraint firstItem="Kkn-7K-h2E" firstAttribute="top" secondItem="RJG-J4-HVo" secondAttribute="bottom" constant="10" id="6Rz-w2-X02"/>
+                            <constraint firstAttribute="trailing" secondItem="Kkn-7K-h2E" secondAttribute="trailing" id="6XC-Ku-Mqe"/>
+                            <constraint firstItem="RJG-J4-HVo" firstAttribute="top" secondItem="IJD-gT-8wJ" secondAttribute="top" id="8hL-Xp-FYF"/>
+                            <constraint firstItem="YH3-nK-JuL" firstAttribute="leading" secondItem="IJD-gT-8wJ" secondAttribute="leading" id="9bc-CP-731"/>
+                            <constraint firstItem="Kkn-7K-h2E" firstAttribute="leading" secondItem="IJD-gT-8wJ" secondAttribute="leading" id="D9C-PQ-B7v"/>
+                            <constraint firstItem="RJG-J4-HVo" firstAttribute="top" secondItem="IJD-gT-8wJ" secondAttribute="top" id="OJC-qc-i7F"/>
+                            <constraint firstAttribute="trailing" secondItem="RJG-J4-HVo" secondAttribute="trailing" id="OVP-Ef-2Lx"/>
+                            <constraint firstItem="RJG-J4-HVo" firstAttribute="leading" secondItem="IJD-gT-8wJ" secondAttribute="leading" id="XqA-Zf-17N"/>
+                            <constraint firstAttribute="trailing" secondItem="YH3-nK-JuL" secondAttribute="trailing" id="dbJ-rX-Xae"/>
+                            <constraint firstAttribute="bottom" secondItem="YH3-nK-JuL" secondAttribute="bottom" id="dhv-Yb-MoW"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="8hL-Xp-FYF"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iyO-4Y-rCn" customClass="EHIButton">
+                        <rect key="frame" x="20" y="43" width="373" height="31"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="16"/>
+                        <color key="tintColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <state key="normal" title="ADD DRIVER INFORMATION">
+                            <color key="titleColor" red="0.090196078430000007" green="0.59999999999999998" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="addButtonPressed:" destination="c6q-CM-rSZ" eventType="touchUpInside" id="kwm-SA-Lio"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" image="arrow_smgreen" translatesAutoresizingMaskIntoConstraints="NO" id="ktW-Xw-Bqp">
+                        <rect key="frame" x="403" y="70" width="8" height="13"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EG1-2S-P6E">
+                        <rect key="frame" x="0.0" y="152" width="431" height="1"/>
+                        <color key="backgroundColor" red="0.83921568627450982" green="0.83921568627450982" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="Dc4-3J-uBP"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zmH-Pd-cWu" secondAttribute="trailing" constant="20" id="BbW-gd-pPP"/>
+                <constraint firstItem="ktW-Xw-Bqp" firstAttribute="leading" secondItem="iyO-4Y-rCn" secondAttribute="trailing" constant="10" id="SbG-bG-AEa"/>
+                <constraint firstAttribute="trailing" secondItem="EG1-2S-P6E" secondAttribute="trailing" id="Tcg-aI-TbI"/>
+                <constraint firstItem="iyO-4Y-rCn" firstAttribute="top" secondItem="zmH-Pd-cWu" secondAttribute="bottom" constant="10" id="V1P-A7-PQ7"/>
+                <constraint firstItem="IJD-gT-8wJ" firstAttribute="leading" secondItem="c6q-CM-rSZ" secondAttribute="leading" constant="20" id="Wz1-T5-thI"/>
+                <constraint firstItem="zmH-Pd-cWu" firstAttribute="leading" secondItem="c6q-CM-rSZ" secondAttribute="leading" constant="20" id="Z0S-Om-mhR"/>
+                <constraint firstItem="IJD-gT-8wJ" firstAttribute="top" secondItem="zmH-Pd-cWu" secondAttribute="bottom" constant="10" id="fiX-kB-km2"/>
+                <constraint firstAttribute="bottom" secondItem="EG1-2S-P6E" secondAttribute="bottom" id="hYP-YU-pFg"/>
+                <constraint firstAttribute="trailing" secondItem="ktW-Xw-Bqp" secondAttribute="trailing" constant="20" id="hdd-lp-6ii"/>
+                <constraint firstItem="EG1-2S-P6E" firstAttribute="leading" secondItem="c6q-CM-rSZ" secondAttribute="leading" id="hka-fE-InA"/>
+                <constraint firstItem="ktW-Xw-Bqp" firstAttribute="centerY" secondItem="c6q-CM-rSZ" secondAttribute="centerY" id="jSz-m9-ueK"/>
+                <constraint firstItem="ktW-Xw-Bqp" firstAttribute="leading" secondItem="IJD-gT-8wJ" secondAttribute="trailing" constant="10" id="v9i-VA-nlv"/>
+                <constraint firstItem="zmH-Pd-cWu" firstAttribute="top" secondItem="c6q-CM-rSZ" secondAttribute="top" constant="15" id="xOu-KH-88L"/>
+                <constraint firstItem="iyO-4Y-rCn" firstAttribute="leading" secondItem="c6q-CM-rSZ" secondAttribute="leading" constant="20" id="yKA-yh-dH6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="mhE-5n-bfP"/>
+            <size key="customSize" width="431" height="153"/>
+            <connections>
+                <outlet property="addButton" destination="iyO-4Y-rCn" id="k5M-EE-MzD"/>
+                <outlet property="arrowImage" destination="ktW-Xw-Bqp" id="Pu5-oF-pWV"/>
+                <outlet property="driverInfoContainer" destination="IJD-gT-8wJ" id="vDd-ya-vac"/>
+                <outlet property="emailLabel" destination="Kkn-7K-h2E" id="stx-FY-pQJ"/>
+                <outlet property="nameLabel" destination="RJG-J4-HVo" id="3EA-vX-RpA"/>
+                <outlet property="phoneLabel" destination="YH3-nK-JuL" id="aAb-x7-Rbd"/>
+                <outlet property="titleLabel" destination="zmH-Pd-cWu" id="ANx-Ag-mdN"/>
+            </connections>
+            <point key="canvasLocation" x="282.5" y="187.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_smgreen" width="8" height="13"/>
+    </resources>
+</document>

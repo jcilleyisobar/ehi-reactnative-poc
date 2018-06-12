@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="EHIRewardsBenefitsView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="622"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UjW-pc-XT5" userLabel="Plus">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sc7-DG-mjk" customClass="EHIRewardsBannerView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                            <color key="backgroundColor" red="0.9951171875" green="0.34666692040000002" blue="0.3920303047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="46" id="PyH-M3-PmR"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="flK-8T-vLC" appends="YES" id="jy5-Y6-lFr"/>
+                            </connections>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="375" translatesAutoresizingMaskIntoConstraints="NO" id="KK8-Ll-pOB" customClass="EHILabel">
+                            <rect key="frame" x="10" y="71" width="355" height="21"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="sc7-DG-mjk" firstAttribute="leading" secondItem="UjW-pc-XT5" secondAttribute="leading" id="Gds-c4-ECH"/>
+                        <constraint firstAttribute="trailing" secondItem="sc7-DG-mjk" secondAttribute="trailing" id="HdN-7z-Hxa"/>
+                        <constraint firstAttribute="height" constant="46" id="Ngr-PT-nJG" customClass="EHIRestorableConstraint"/>
+                        <constraint firstItem="KK8-Ll-pOB" firstAttribute="top" secondItem="sc7-DG-mjk" secondAttribute="bottom" constant="25" id="RkU-C5-z1b"/>
+                        <constraint firstItem="sc7-DG-mjk" firstAttribute="top" secondItem="UjW-pc-XT5" secondAttribute="top" id="kOC-93-R4B"/>
+                        <constraint firstAttribute="trailing" secondItem="KK8-Ll-pOB" secondAttribute="trailing" constant="10" id="qLT-iG-LkM"/>
+                        <constraint firstItem="KK8-Ll-pOB" firstAttribute="leading" secondItem="UjW-pc-XT5" secondAttribute="leading" constant="10" id="xLy-IL-UWx"/>
+                    </constraints>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HG2-eN-aQz" userLabel="Silver">
+                    <rect key="frame" x="0.0" y="56" width="375" height="46"/>
+                    <subviews>
+                        <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H7Z-wp-ZrG" customClass="EHIRewardsBannerView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                            <color key="backgroundColor" red="0.9951171875" green="0.34666692040000002" blue="0.3920303047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="46" id="k16-d8-rMf"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="diY-nu-fWz" appends="YES" id="nGx-wr-zKH"/>
+                            </connections>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="375" translatesAutoresizingMaskIntoConstraints="NO" id="6Ao-oN-Zbz" customClass="EHILabel">
+                            <rect key="frame" x="10" y="71" width="355" height="21"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="6Ao-oN-Zbz" firstAttribute="top" secondItem="H7Z-wp-ZrG" secondAttribute="bottom" constant="25" id="IaS-6R-Tub"/>
+                        <constraint firstItem="6Ao-oN-Zbz" firstAttribute="leading" secondItem="HG2-eN-aQz" secondAttribute="leading" constant="10" id="Pqq-19-6cs"/>
+                        <constraint firstAttribute="height" constant="46" id="fAy-5o-fCC" customClass="EHIRestorableConstraint"/>
+                        <constraint firstAttribute="trailing" secondItem="6Ao-oN-Zbz" secondAttribute="trailing" constant="10" id="gbZ-qU-hbx"/>
+                        <constraint firstItem="H7Z-wp-ZrG" firstAttribute="leading" secondItem="HG2-eN-aQz" secondAttribute="leading" id="lp5-TO-8Xa"/>
+                        <constraint firstAttribute="trailing" secondItem="H7Z-wp-ZrG" secondAttribute="trailing" id="pYJ-AQ-9BD"/>
+                        <constraint firstItem="H7Z-wp-ZrG" firstAttribute="top" secondItem="HG2-eN-aQz" secondAttribute="top" id="uOT-Wx-4ze"/>
+                    </constraints>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lm6-3H-vao" userLabel="Gold">
+                    <rect key="frame" x="0.0" y="112" width="375" height="46"/>
+                    <subviews>
+                        <view tag="2" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="44k-5R-fLD" customClass="EHIRewardsBannerView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                            <color key="backgroundColor" red="0.9951171875" green="0.34666692040000002" blue="0.3920303047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="46" id="03P-DN-fRP"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="K1Z-Vs-aJd" appends="YES" id="vTz-Zy-PbB"/>
+                            </connections>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="375" translatesAutoresizingMaskIntoConstraints="NO" id="SIr-7g-iiQ" customClass="EHILabel">
+                            <rect key="frame" x="10" y="71" width="355" height="21"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="44k-5R-fLD" firstAttribute="top" secondItem="lm6-3H-vao" secondAttribute="top" id="HYd-fC-8s3"/>
+                        <constraint firstItem="44k-5R-fLD" firstAttribute="leading" secondItem="lm6-3H-vao" secondAttribute="leading" id="b09-OK-DE3"/>
+                        <constraint firstItem="SIr-7g-iiQ" firstAttribute="top" secondItem="44k-5R-fLD" secondAttribute="bottom" constant="25" id="cPh-9y-Td3"/>
+                        <constraint firstAttribute="trailing" secondItem="SIr-7g-iiQ" secondAttribute="trailing" constant="10" id="icW-xd-mVc"/>
+                        <constraint firstAttribute="trailing" secondItem="44k-5R-fLD" secondAttribute="trailing" id="oGQ-SL-XIa"/>
+                        <constraint firstAttribute="height" constant="46" id="urG-qk-ZiB" customClass="EHIRestorableConstraint"/>
+                        <constraint firstItem="SIr-7g-iiQ" firstAttribute="leading" secondItem="lm6-3H-vao" secondAttribute="leading" constant="10" id="wSP-hD-Flp"/>
+                    </constraints>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QCG-Z8-DN3" userLabel="Platinum">
+                    <rect key="frame" x="0.0" y="168" width="375" height="46"/>
+                    <subviews>
+                        <view tag="3" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xGD-St-MdZ" customClass="EHIRewardsBannerView">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="46"/>
+                            <color key="backgroundColor" red="0.9951171875" green="0.34666692040000002" blue="0.3920303047" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="46" id="qpb-04-gc0"/>
+                            </constraints>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="O45-7y-a5G" appends="YES" id="qeo-V8-gnU"/>
+                            </connections>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="375" translatesAutoresizingMaskIntoConstraints="NO" id="nra-zn-tAf" customClass="EHILabel">
+                            <rect key="frame" x="10" y="71" width="355" height="21"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="nra-zn-tAf" secondAttribute="trailing" constant="10" id="DEJ-Z7-iDl"/>
+                        <constraint firstItem="xGD-St-MdZ" firstAttribute="top" secondItem="QCG-Z8-DN3" secondAttribute="top" id="IPs-ur-IpO"/>
+                        <constraint firstItem="nra-zn-tAf" firstAttribute="top" secondItem="xGD-St-MdZ" secondAttribute="bottom" constant="25" id="MEk-oX-0fl"/>
+                        <constraint firstItem="xGD-St-MdZ" firstAttribute="leading" secondItem="QCG-Z8-DN3" secondAttribute="leading" id="ZwI-xL-fMv"/>
+                        <constraint firstItem="nra-zn-tAf" firstAttribute="leading" secondItem="QCG-Z8-DN3" secondAttribute="leading" constant="10" id="jJY-lB-JXU"/>
+                        <constraint firstAttribute="trailing" secondItem="xGD-St-MdZ" secondAttribute="trailing" id="mQz-ui-b6v"/>
+                        <constraint firstAttribute="height" constant="46" id="nvf-nh-Ntm" customClass="EHIRestorableConstraint"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="QCG-Z8-DN3" secondAttribute="bottom" id="1SU-jt-tBe"/>
+                <constraint firstItem="UjW-pc-XT5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5AA-k2-6Cw"/>
+                <constraint firstItem="UjW-pc-XT5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BPH-Xq-d5v"/>
+                <constraint firstItem="HG2-eN-aQz" firstAttribute="top" secondItem="UjW-pc-XT5" secondAttribute="bottom" constant="10" id="E1v-A0-IzX"/>
+                <constraint firstItem="QCG-Z8-DN3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="EdV-OJ-Vy6"/>
+                <constraint firstItem="QCG-Z8-DN3" firstAttribute="top" secondItem="lm6-3H-vao" secondAttribute="bottom" constant="10" id="In3-ML-YuH"/>
+                <constraint firstAttribute="trailing" secondItem="UjW-pc-XT5" secondAttribute="trailing" id="K6C-kQ-wmT"/>
+                <constraint firstItem="HG2-eN-aQz" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LaN-Mx-lJg"/>
+                <constraint firstAttribute="trailing" secondItem="QCG-Z8-DN3" secondAttribute="trailing" id="OM3-3N-WcL"/>
+                <constraint firstItem="lm6-3H-vao" firstAttribute="top" secondItem="HG2-eN-aQz" secondAttribute="bottom" constant="10" id="eFz-de-FaM"/>
+                <constraint firstAttribute="trailing" secondItem="lm6-3H-vao" secondAttribute="trailing" id="iv2-SV-NpC"/>
+                <constraint firstItem="lm6-3H-vao" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="lXV-zD-MzD"/>
+                <constraint firstAttribute="trailing" secondItem="HG2-eN-aQz" secondAttribute="trailing" id="uAH-KC-xeX"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="qyD-AY-zYK"/>
+            <connections>
+                <outlet property="goldBanner" destination="44k-5R-fLD" id="NWF-yu-PnO"/>
+                <outlet property="goldHeight" destination="urG-qk-ZiB" id="RmX-I1-dAN"/>
+                <outlet property="goldLabel" destination="SIr-7g-iiQ" id="mlo-Bu-UgZ"/>
+                <outlet property="platinumBanner" destination="xGD-St-MdZ" id="PZ4-f3-EJd"/>
+                <outlet property="platinumHeight" destination="nvf-nh-Ntm" id="fZh-QM-Oxm"/>
+                <outlet property="platinumLabel" destination="nra-zn-tAf" id="knV-3n-v9X"/>
+                <outlet property="plusBanner" destination="sc7-DG-mjk" id="0OX-j4-iOz"/>
+                <outlet property="plusHeight" destination="Ngr-PT-nJG" id="9t3-mS-W9B"/>
+                <outlet property="plusLabel" destination="KK8-Ll-pOB" id="N6I-4I-YFb"/>
+                <outlet property="silverBanner" destination="H7Z-wp-ZrG" id="EGL-DH-95t"/>
+                <outlet property="silverHeight" destination="fAy-5o-fCC" id="XmN-HI-leX"/>
+                <outlet property="silverLabel" destination="6Ao-oN-Zbz" id="pHj-QU-gtu"/>
+            </connections>
+            <point key="canvasLocation" x="351.5" y="434"/>
+        </view>
+        <tapGestureRecognizer id="K1Z-Vs-aJd">
+            <connections>
+                <action selector="didTapBannerView:" destination="iN0-l3-epB" id="67H-pZ-kaZ"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="O45-7y-a5G">
+            <connections>
+                <action selector="didTapBannerView:" destination="iN0-l3-epB" id="EKd-rC-2Jz"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="diY-nu-fWz">
+            <connections>
+                <action selector="didTapBannerView:" destination="iN0-l3-epB" id="iSN-BS-0Ld"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="flK-8T-vLC">
+            <connections>
+                <action selector="didTapBannerView:" destination="iN0-l3-epB" id="3TE-Lu-hzN"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EHINotificationSettingsOptionCell" id="E6S-SE-ud3" customClass="EHINotificationSettingsOptionCell">
+            <rect key="frame" x="0.0" y="0.0" width="472" height="185"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="472" height="185"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="401" translatesAutoresizingMaskIntoConstraints="NO" id="1Wb-nM-w5C">
+                        <rect key="frame" x="20" y="82.5" width="400" height="21"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="icon_check_05" translatesAutoresizingMaskIntoConstraints="NO" id="Xoj-Ml-t9y">
+                        <rect key="frame" x="425" y="79" width="27" height="27"/>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ha-59-9C2" userLabel="Divider">
+                        <rect key="frame" x="0.0" y="184" width="472" height="1"/>
+                        <color key="backgroundColor" red="0.80214887857437134" green="0.80212485790252686" blue="0.80213844776153564" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="EIq-ZA-qta"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="1Wb-nM-w5C" firstAttribute="centerY" secondItem="E6S-SE-ud3" secondAttribute="centerY" id="9Gp-6m-ZzK"/>
+                <constraint firstItem="Xoj-Ml-t9y" firstAttribute="centerY" secondItem="E6S-SE-ud3" secondAttribute="centerY" id="DW0-BF-EIg"/>
+                <constraint firstAttribute="trailing" secondItem="1ha-59-9C2" secondAttribute="trailing" id="FbP-We-XxQ"/>
+                <constraint firstAttribute="trailing" secondItem="Xoj-Ml-t9y" secondAttribute="trailing" constant="20" id="KfD-bp-x3h"/>
+                <constraint firstAttribute="bottom" secondItem="1ha-59-9C2" secondAttribute="bottom" id="NZo-6S-ckt"/>
+                <constraint firstItem="Xoj-Ml-t9y" firstAttribute="leading" secondItem="1Wb-nM-w5C" secondAttribute="trailing" constant="5" id="WpY-vQ-OOD"/>
+                <constraint firstItem="1Wb-nM-w5C" firstAttribute="leading" secondItem="E6S-SE-ud3" secondAttribute="leading" constant="20" id="hIN-Ho-l9O"/>
+                <constraint firstItem="1ha-59-9C2" firstAttribute="leading" secondItem="E6S-SE-ud3" secondAttribute="leading" id="tiu-5X-DbU"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="CEg-5i-kWj"/>
+            <size key="customSize" width="472" height="185"/>
+            <connections>
+                <outlet property="checkmark" destination="Xoj-Ml-t9y" id="ilI-hr-ufP"/>
+                <outlet property="titleLabel" destination="1Wb-nM-w5C" id="Bnw-wF-t7E"/>
+            </connections>
+            <point key="canvasLocation" x="308" y="393.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_check_05" width="27" height="27"/>
+    </resources>
+</document>

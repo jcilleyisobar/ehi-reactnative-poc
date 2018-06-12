@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="EHILocationDetailsConflictCell" reuseIdentifier="EHILocationDetailsConflictCell" id="rgk-nO-4QA" customClass="EHILocationDetailsConflictCell">
+            <rect key="frame" x="0.0" y="0.0" width="399" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="399" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Closed on your pick-up" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GgI-vK-XFj" customClass="EHILabel">
+                        <rect key="frame" x="20" y="10" width="359" height="18"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TUE, JUL 2: 8:00 am - 9:00 pm" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZM-MM-Pac" customClass="EHILabel">
+                        <rect key="frame" x="20" y="30" width="359" height="18"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="DIN Next LT Pro" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.27450980390000002" green="0.30196078430000001" blue="0.29411764709999999" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="GgI-vK-XFj" firstAttribute="leading" secondItem="rgk-nO-4QA" secondAttribute="leading" constant="20" id="1Ob-Xn-Wfc"/>
+                <constraint firstItem="GgI-vK-XFj" firstAttribute="top" secondItem="rgk-nO-4QA" secondAttribute="top" constant="10" id="2YP-Kk-Bcc"/>
+                <constraint firstAttribute="trailing" secondItem="GgI-vK-XFj" secondAttribute="trailing" constant="20" id="4AY-o9-vrc"/>
+                <constraint firstItem="AZM-MM-Pac" firstAttribute="leading" secondItem="GgI-vK-XFj" secondAttribute="leading" id="7g4-T8-2pE"/>
+                <constraint firstItem="AZM-MM-Pac" firstAttribute="trailing" secondItem="GgI-vK-XFj" secondAttribute="trailing" id="DBc-TQ-wMV"/>
+                <constraint firstItem="AZM-MM-Pac" firstAttribute="top" secondItem="GgI-vK-XFj" secondAttribute="bottom" constant="2" id="YZD-bl-q2L"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="WY1-Mw-oBs"/>
+            <size key="customSize" width="399" height="76"/>
+            <connections>
+                <outlet property="openHoursLabel" destination="AZM-MM-Pac" id="8BE-ZA-0Jt"/>
+                <outlet property="titleLabel" destination="GgI-vK-XFj" id="i6q-6l-Jww"/>
+            </connections>
+            <point key="canvasLocation" x="46.5" y="-91"/>
+        </collectionViewCell>
+    </objects>
+</document>

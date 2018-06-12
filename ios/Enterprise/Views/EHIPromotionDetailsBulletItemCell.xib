@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EHIPromotionDetailsBulletItemCell" id="YbE-Xa-cBv" customClass="EHIPromotionDetailsBulletItemCell">
+            <rect key="frame" x="0.0" y="0.0" width="261" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="261" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Starting at $9.99 per day" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="337" translatesAutoresizingMaskIntoConstraints="NO" id="Wgs-EW-XDi" customClass="EHILabel">
+                        <rect key="frame" x="30" y="14.5" width="211" height="21"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="•" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="337" translatesAutoresizingMaskIntoConstraints="NO" id="7Fh-68-nPA" customClass="EHILabel">
+                        <rect key="frame" x="20" y="14.5" width="10" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="FH3-3a-lXe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="Wgs-EW-XDi" firstAttribute="centerY" secondItem="YbE-Xa-cBv" secondAttribute="centerY" id="8Ho-5w-TjN"/>
+                <constraint firstItem="Wgs-EW-XDi" firstAttribute="leading" secondItem="7Fh-68-nPA" secondAttribute="trailing" id="Sfc-nx-cGr"/>
+                <constraint firstAttribute="trailing" secondItem="Wgs-EW-XDi" secondAttribute="trailing" constant="20" id="YhC-2t-mnb"/>
+                <constraint firstItem="7Fh-68-nPA" firstAttribute="top" secondItem="Wgs-EW-XDi" secondAttribute="top" id="b1M-P0-hip"/>
+                <constraint firstItem="7Fh-68-nPA" firstAttribute="leading" secondItem="YbE-Xa-cBv" secondAttribute="leading" constant="20" id="qLv-gD-kr1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Vyz-1O-WRF"/>
+            <size key="customSize" width="261" height="50"/>
+            <connections>
+                <outlet property="bulletTitle" destination="Wgs-EW-XDi" id="eW3-F8-An3"/>
+            </connections>
+            <point key="canvasLocation" x="409.5" y="384"/>
+        </collectionViewCell>
+    </objects>
+</document>

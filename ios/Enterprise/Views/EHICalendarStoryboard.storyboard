@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Calendar View Controller-->
+        <scene sceneID="JMI-Bv-XJ8">
+            <objects>
+                <viewController storyboardIdentifier="EHICalendarViewController" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8Ok-XK-GSs" customClass="EHICalendarViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v51-4V-6t4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C01-c9-haZ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Dgh-EF-Ttd" userLabel="Days Collection View">
+                                <rect key="frame" x="0.0" y="210" width="375" height="407"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="0.0" id="Lvw-Ji-Jej" customClass="EHICalendarDaysLayout">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EHICalendarDayCell" id="M2e-tn-8Mu" customClass="EHICalendarDayCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="50" translatesAutoresizingMaskIntoConstraints="NO" id="K6G-Yd-R7S" customClass="EHILabel">
+                                                    <rect key="frame" x="0.0" y="12" width="50" height="26"/>
+                                                    <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="22"/>
+                                                    <color key="textColor" red="0.070000000300000004" green="0.050000000750000002" blue="0.050000000750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="K6G-Yd-R7S" firstAttribute="leading" secondItem="M2e-tn-8Mu" secondAttribute="leading" id="Rhn-j8-9k6"/>
+                                            <constraint firstAttribute="centerY" secondItem="K6G-Yd-R7S" secondAttribute="centerY" constant="0.5" id="XFb-q9-hPZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="K6G-Yd-R7S" secondAttribute="trailing" id="tKu-pS-Q1W"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="titleLabel" destination="K6G-Yd-R7S" id="TjM-er-5M8"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="8Ok-XK-GSs" id="rEu-vo-UAE"/>
+                                    <outlet property="delegate" destination="8Ok-XK-GSs" id="Bi6-Ol-EP1"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6j1-n2-KQo" customClass="EHICalendarHeaderView">
+                                <rect key="frame" x="0.0" y="210" width="375" height="88"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="December 2014" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ztz-mf-pU4" userLabel="December 2014" customClass="EHILabel">
+                                        <rect key="frame" x="15" y="17" width="189" height="34"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="28"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Sl-ot-JGE" userLabel="Closed Dates View">
+                                        <rect key="frame" x="271" y="22" width="89" height="24"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CLOSED DATES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BxN-1i-Kg6" customClass="EHILabel">
+                                                <rect key="frame" x="5" y="5" width="79" height="14"/>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="DIN Next LT Pro" pointSize="12"/>
+                                                <color key="textColor" red="0.68000000715255737" green="0.68000000715255737" blue="0.68000000715255737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.95999997854232788" green="0.95999997854232788" blue="0.95999997854232788" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="BxN-1i-Kg6" secondAttribute="trailing" constant="5" id="EWR-Bd-SpT"/>
+                                            <constraint firstItem="BxN-1i-Kg6" firstAttribute="leading" secondItem="9Sl-ot-JGE" secondAttribute="leading" constant="5" id="I2x-g0-goG"/>
+                                            <constraint firstItem="BxN-1i-Kg6" firstAttribute="top" secondItem="9Sl-ot-JGE" secondAttribute="top" constant="5" id="RFQ-dG-P4x"/>
+                                            <constraint firstAttribute="bottom" secondItem="BxN-1i-Kg6" secondAttribute="bottom" constant="5" id="dGA-4o-GAS"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Muf-CA-gx4" userLabel="Labels Background">
+                                        <rect key="frame" x="0.0" y="65" width="375" height="23"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHF-uc-wbp" userLabel="Day Labels">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="23"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D1K-5Y-Y2z" customClass="EHILabel">
+                                                        <rect key="frame" x="0.0" y="1" width="53.5" height="22"/>
+                                                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="14"/>
+                                                        <color key="textColor" red="0.070000000298023224" green="0.05000000074505806" blue="0.05000000074505806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="M" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="egf-qi-7yL" customClass="EHILabel">
+                                                        <rect key="frame" x="53.5" y="1" width="53.5" height="22"/>
+                                                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="14"/>
+                                                        <color key="textColor" red="0.070000000298023224" green="0.05000000074505806" blue="0.05000000074505806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyx-Sj-Cn0" customClass="EHILabel">
+                                                        <rect key="frame" x="107" y="1" width="53.5" height="22"/>
+                                                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="14"/>
+                                                        <color key="textColor" red="0.070000000298023224" green="0.05000000074505806" blue="0.05000000074505806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="W" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5S-G1-HdC" customClass="EHILabel">
+                                                        <rect key="frame" x="160.5" y="1" width="54" height="22"/>
+                                                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="14"/>
+                                                        <color key="textColor" red="0.070000000298023224" green="0.05000000074505806" blue="0.05000000074505806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TOi-0P-eVQ" customClass="EHILabel">
+                                                        <rect key="frame" x="214.5" y="1" width="53.5" height="22"/>
+                                                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="14"/>
+                                                        <color key="textColor" red="0.070000000298023224" green="0.05000000074505806" blue="0.05000000074505806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="F" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5pk-jK-a5H" customClass="EHILabel">
+                                                        <rect key="frame" x="268" y="1" width="53.5" height="22"/>
+                                                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="14"/>
+                                                        <color key="textColor" red="0.070000000298023224" green="0.05000000074505806" blue="0.05000000074505806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="S" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQN-TB-aoq" customClass="EHILabel">
+                                                        <rect key="frame" x="321.5" y="1" width="53.5" height="22"/>
+                                                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="14"/>
+                                                        <color key="textColor" red="0.070000000298023224" green="0.05000000074505806" blue="0.05000000074505806" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstItem="egf-qi-7yL" firstAttribute="width" secondItem="D1K-5Y-Y2z" secondAttribute="width" id="68F-eF-RBc"/>
+                                                    <constraint firstAttribute="bottom" secondItem="vyx-Sj-Cn0" secondAttribute="bottom" id="7lS-ve-IyV"/>
+                                                    <constraint firstAttribute="bottom" secondItem="5pk-jK-a5H" secondAttribute="bottom" id="7xI-Iq-lly"/>
+                                                    <constraint firstAttribute="bottom" secondItem="D1K-5Y-Y2z" secondAttribute="bottom" id="Aev-dT-Ri4"/>
+                                                    <constraint firstAttribute="bottom" secondItem="z5S-G1-HdC" secondAttribute="bottom" id="BqM-4m-SSb"/>
+                                                    <constraint firstItem="D1K-5Y-Y2z" firstAttribute="width" secondItem="TOi-0P-eVQ" secondAttribute="width" id="Cmw-Q8-V5C"/>
+                                                    <constraint firstAttribute="bottom" secondItem="TOi-0P-eVQ" secondAttribute="bottom" id="DRj-pC-Rbo"/>
+                                                    <constraint firstAttribute="bottom" secondItem="gQN-TB-aoq" secondAttribute="bottom" id="F39-DN-ccl"/>
+                                                    <constraint firstAttribute="trailing" secondItem="gQN-TB-aoq" secondAttribute="trailing" id="GFm-AG-eWu"/>
+                                                    <constraint firstItem="gQN-TB-aoq" firstAttribute="leading" secondItem="5pk-jK-a5H" secondAttribute="trailing" id="JVR-q5-pBK"/>
+                                                    <constraint firstItem="D1K-5Y-Y2z" firstAttribute="top" secondItem="iHF-uc-wbp" secondAttribute="top" constant="1" id="Jg6-7Q-9Ez"/>
+                                                    <constraint firstItem="5pk-jK-a5H" firstAttribute="leading" secondItem="TOi-0P-eVQ" secondAttribute="trailing" id="LR5-XU-kdd"/>
+                                                    <constraint firstItem="vyx-Sj-Cn0" firstAttribute="leading" secondItem="egf-qi-7yL" secondAttribute="trailing" id="MZk-87-9xV"/>
+                                                    <constraint firstItem="5pk-jK-a5H" firstAttribute="top" secondItem="iHF-uc-wbp" secondAttribute="top" constant="1" id="Mvx-V1-rdx"/>
+                                                    <constraint firstItem="D1K-5Y-Y2z" firstAttribute="width" secondItem="gQN-TB-aoq" secondAttribute="width" id="QIS-NS-V7x"/>
+                                                    <constraint firstItem="D1K-5Y-Y2z" firstAttribute="leading" secondItem="iHF-uc-wbp" secondAttribute="leading" id="SuB-Ug-ipV"/>
+                                                    <constraint firstItem="egf-qi-7yL" firstAttribute="top" secondItem="iHF-uc-wbp" secondAttribute="top" constant="1" id="WmD-J1-0Q5"/>
+                                                    <constraint firstItem="TOi-0P-eVQ" firstAttribute="leading" secondItem="z5S-G1-HdC" secondAttribute="trailing" id="XLs-os-Art"/>
+                                                    <constraint firstItem="z5S-G1-HdC" firstAttribute="width" secondItem="D1K-5Y-Y2z" secondAttribute="width" id="ZQN-h3-rb9"/>
+                                                    <constraint firstItem="z5S-G1-HdC" firstAttribute="leading" secondItem="vyx-Sj-Cn0" secondAttribute="trailing" id="ZoT-wb-LIK"/>
+                                                    <constraint firstItem="TOi-0P-eVQ" firstAttribute="top" secondItem="iHF-uc-wbp" secondAttribute="top" constant="1" id="dro-xN-cXQ"/>
+                                                    <constraint firstAttribute="bottom" secondItem="egf-qi-7yL" secondAttribute="bottom" id="hds-Ty-sVY"/>
+                                                    <constraint firstItem="egf-qi-7yL" firstAttribute="leading" secondItem="D1K-5Y-Y2z" secondAttribute="trailing" id="hjE-A6-wWC"/>
+                                                    <constraint firstItem="gQN-TB-aoq" firstAttribute="top" secondItem="iHF-uc-wbp" secondAttribute="top" constant="1" id="jeE-YF-OR1"/>
+                                                    <constraint firstItem="5pk-jK-a5H" firstAttribute="width" secondItem="D1K-5Y-Y2z" secondAttribute="width" id="qMO-5F-pDy"/>
+                                                    <constraint firstItem="z5S-G1-HdC" firstAttribute="top" secondItem="iHF-uc-wbp" secondAttribute="top" constant="1" id="xNH-yE-3M4"/>
+                                                    <constraint firstItem="D1K-5Y-Y2z" firstAttribute="width" secondItem="vyx-Sj-Cn0" secondAttribute="width" id="zZb-ui-WSC"/>
+                                                    <constraint firstItem="vyx-Sj-Cn0" firstAttribute="top" secondItem="iHF-uc-wbp" secondAttribute="top" constant="1" id="zkE-3e-vCt"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.8399999737739563" green="0.8399999737739563" blue="0.8399999737739563" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="iHF-uc-wbp" firstAttribute="leading" secondItem="Muf-CA-gx4" secondAttribute="leading" id="CN6-xi-o2l"/>
+                                            <constraint firstAttribute="trailing" secondItem="iHF-uc-wbp" secondAttribute="trailing" id="HYG-NS-Wcl"/>
+                                            <constraint firstItem="iHF-uc-wbp" firstAttribute="top" secondItem="Muf-CA-gx4" secondAttribute="top" id="PbC-ox-RJF"/>
+                                            <constraint firstAttribute="height" constant="23" id="Zyt-jf-sDS"/>
+                                            <constraint firstAttribute="bottom" secondItem="iHF-uc-wbp" secondAttribute="bottom" id="k52-hP-Tix"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="1aq-zr-Jx5"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Sl-ot-JGE" secondAttribute="trailing" constant="15" id="2xv-zO-dRE"/>
+                                    <constraint firstItem="ztz-mf-pU4" firstAttribute="leading" secondItem="6j1-n2-KQo" secondAttribute="leading" constant="15" id="EWE-Sk-ggR"/>
+                                    <constraint firstAttribute="trailing" secondItem="Muf-CA-gx4" secondAttribute="trailing" id="b7U-Rk-Jtc"/>
+                                    <constraint firstAttribute="centerY" secondItem="ztz-mf-pU4" secondAttribute="centerY" constant="10" id="ePK-96-4TY"/>
+                                    <constraint firstItem="Muf-CA-gx4" firstAttribute="leading" secondItem="6j1-n2-KQo" secondAttribute="leading" id="kxe-Ud-ayc"/>
+                                    <constraint firstAttribute="centerY" secondItem="9Sl-ot-JGE" secondAttribute="centerY" constant="10" id="nLN-Bc-7ad"/>
+                                    <constraint firstAttribute="bottom" secondItem="Muf-CA-gx4" secondAttribute="bottom" id="rXm-vG-V7s"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="closedDatesLabel" destination="BxN-1i-Kg6" id="LMF-PI-qMG"/>
+                                    <outlet property="monthLabel" destination="ztz-mf-pU4" id="P4l-3t-DoC"/>
+                                    <outletCollection property="weekdayLabels" destination="D1K-5Y-Y2z" id="04u-iP-ugN"/>
+                                    <outletCollection property="weekdayLabels" destination="egf-qi-7yL" id="QuT-Oc-vdc"/>
+                                    <outletCollection property="weekdayLabels" destination="vyx-Sj-Cn0" id="coP-Ee-Yj4"/>
+                                    <outletCollection property="weekdayLabels" destination="z5S-G1-HdC" id="62q-qH-hCc"/>
+                                    <outletCollection property="weekdayLabels" destination="TOi-0P-eVQ" id="qvO-KR-B95"/>
+                                    <outletCollection property="weekdayLabels" destination="5pk-jK-a5H" id="rxH-Xt-QdK"/>
+                                    <outletCollection property="weekdayLabels" destination="gQN-TB-aoq" id="AiN-Q2-fEt"/>
+                                </connections>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7wC-3y-XJB" userLabel="Months Collection View">
+                                <rect key="frame" x="0.0" y="210" width="375" height="407"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewLayout key="collectionViewLayout" id="bC2-vv-Ozi" customClass="EHICalendarMonthsLayout"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EHICalendarMonthCell" id="yA2-fH-dad" customClass="EHICalendarMonthCell">
+                                        <rect key="frame" x="-112.5" y="0.0" width="600" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="December 2014" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="162" translatesAutoresizingMaskIntoConstraints="NO" id="TBP-yr-ad5" userLabel="December 2014" customClass="EHILabel">
+                                                    <rect key="frame" x="15" y="8" width="189" height="34"/>
+                                                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="28"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="TBP-yr-ad5" firstAttribute="leading" secondItem="yA2-fH-dad" secondAttribute="leading" constant="15" id="9cY-1l-Z0b"/>
+                                            <constraint firstAttribute="centerY" secondItem="TBP-yr-ad5" secondAttribute="centerY" id="gdu-4V-X3P"/>
+                                        </constraints>
+                                        <size key="customSize" width="600" height="50"/>
+                                        <connections>
+                                            <outlet property="monthLabel" destination="TBP-yr-ad5" id="NTD-Fq-4Pb"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="8Ok-XK-GSs" id="iyW-zc-hsz"/>
+                                    <outlet property="delegate" destination="8Ok-XK-GSs" id="n1u-7P-QAb"/>
+                                </connections>
+                            </collectionView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wA8-OU-BvL" customClass="EHIActionButton">
+                                <rect key="frame" x="0.0" y="617" width="375" height="84"/>
+                                <color key="backgroundColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="84" id="TQs-Bo-KTb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="16"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="-34" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="CONTINUE">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapTransitionButton:" destination="8Ok-XK-GSs" eventType="touchUpInside" id="db6-cI-WmH"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L6B-RH-wFo" customClass="EHIReservationSchedulePickerView">
+                                <rect key="frame" x="0.0" y="64" width="375" height="146"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="146" placeholder="YES" id="jhv-HH-MOU"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r3G-8u-0qO" customClass="EHIActivityIndicator">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dgh-EF-Ttd" firstAttribute="top" secondItem="L6B-RH-wFo" secondAttribute="bottom" id="5Yh-uT-kQW"/>
+                            <constraint firstItem="7wC-3y-XJB" firstAttribute="leading" secondItem="9K5-uU-PZa" secondAttribute="leading" id="8gg-As-AHX"/>
+                            <constraint firstItem="wA8-OU-BvL" firstAttribute="top" secondItem="7wC-3y-XJB" secondAttribute="bottom" id="Azh-OE-j0g"/>
+                            <constraint firstItem="L6B-RH-wFo" firstAttribute="top" secondItem="9K5-uU-PZa" secondAttribute="top" id="KxD-G1-BkY"/>
+                            <constraint firstItem="r3G-8u-0qO" firstAttribute="leading" secondItem="9K5-uU-PZa" secondAttribute="leading" id="Psr-ON-JlW"/>
+                            <constraint firstItem="9K5-uU-PZa" firstAttribute="trailing" secondItem="L6B-RH-wFo" secondAttribute="trailing" id="Y3V-qg-xe5"/>
+                            <constraint firstItem="C01-c9-haZ" firstAttribute="top" secondItem="9K5-uU-PZa" secondAttribute="top" id="aGj-L4-Dff"/>
+                            <constraint firstItem="6j1-n2-KQo" firstAttribute="top" secondItem="Dgh-EF-Ttd" secondAttribute="top" id="blE-yN-tEL"/>
+                            <constraint firstItem="9K5-uU-PZa" firstAttribute="trailing" secondItem="C01-c9-haZ" secondAttribute="trailing" id="c9J-JM-by9"/>
+                            <constraint firstItem="9K5-uU-PZa" firstAttribute="trailing" secondItem="7wC-3y-XJB" secondAttribute="trailing" id="cr2-WZ-dUH"/>
+                            <constraint firstItem="9K5-uU-PZa" firstAttribute="trailing" secondItem="wA8-OU-BvL" secondAttribute="trailing" id="eNv-A6-wRW"/>
+                            <constraint firstItem="9K5-uU-PZa" firstAttribute="trailing" secondItem="6j1-n2-KQo" secondAttribute="trailing" id="eVG-bk-DfW"/>
+                            <constraint firstItem="7wC-3y-XJB" firstAttribute="top" secondItem="Dgh-EF-Ttd" secondAttribute="top" id="fLl-1f-p87"/>
+                            <constraint firstItem="9K5-uU-PZa" firstAttribute="trailing" secondItem="Dgh-EF-Ttd" secondAttribute="trailing" id="gBT-if-Hnz"/>
+                            <constraint firstItem="L6B-RH-wFo" firstAttribute="leading" secondItem="9K5-uU-PZa" secondAttribute="leading" id="gCT-s0-4p4"/>
+                            <constraint firstItem="C01-c9-haZ" firstAttribute="leading" secondItem="9K5-uU-PZa" secondAttribute="leading" id="gHb-e1-j6m"/>
+                            <constraint firstItem="wA8-OU-BvL" firstAttribute="leading" secondItem="9K5-uU-PZa" secondAttribute="leading" id="iXI-z3-fRQ"/>
+                            <constraint firstItem="r3G-8u-0qO" firstAttribute="top" secondItem="9K5-uU-PZa" secondAttribute="top" id="ja8-3K-PpW"/>
+                            <constraint firstItem="9K5-uU-PZa" firstAttribute="bottom" secondItem="C01-c9-haZ" secondAttribute="bottom" id="kSC-Yu-wYM"/>
+                            <constraint firstItem="9K5-uU-PZa" firstAttribute="bottom" secondItem="r3G-8u-0qO" secondAttribute="bottom" id="lyT-vB-zz8"/>
+                            <constraint firstItem="wA8-OU-BvL" firstAttribute="top" secondItem="Dgh-EF-Ttd" secondAttribute="bottom" id="mK5-Za-fZa"/>
+                            <constraint firstItem="Dgh-EF-Ttd" firstAttribute="leading" secondItem="9K5-uU-PZa" secondAttribute="leading" id="nwf-ud-Ogf"/>
+                            <constraint firstItem="9K5-uU-PZa" firstAttribute="trailing" secondItem="r3G-8u-0qO" secondAttribute="trailing" id="olK-V9-5hS"/>
+                            <constraint firstItem="wA8-OU-BvL" firstAttribute="bottom" secondItem="9K5-uU-PZa" secondAttribute="bottom" constant="34" id="q5F-LH-kUD"/>
+                            <constraint firstItem="6j1-n2-KQo" firstAttribute="leading" secondItem="9K5-uU-PZa" secondAttribute="leading" id="rwf-fz-XVp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9K5-uU-PZa"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="actionButton" destination="wA8-OU-BvL" id="0r0-he-5Pp"/>
+                        <outlet property="daysCollectionView" destination="Dgh-EF-Ttd" id="d7c-od-8z9"/>
+                        <outlet property="headerView" destination="6j1-n2-KQo" id="QEC-sl-fd1"/>
+                        <outlet property="loadingIndicator" destination="r3G-8u-0qO" id="Osa-Kf-Wtw"/>
+                        <outlet property="monthsCollectionView" destination="7wC-3y-XJB" id="1dd-PX-cE5"/>
+                        <outlet property="scheduleView" destination="L6B-RH-wFo" id="AjJ-6C-TSn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="igC-YM-nna" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="682.39999999999998" y="115.59220389805098"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EHIReservationPriceMileageCell" id="0Wk-md-QNM" customClass="EHIReservationPriceMileageCell">
+            <rect key="frame" x="0.0" y="0.0" width="525" height="79"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="525" height="79"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j5Q-wL-c0y" userLabel="Divider">
+                        <rect key="frame" x="0.0" y="0.0" width="525" height="1"/>
+                        <color key="backgroundColor" red="0.83921568627450982" green="0.83921568627450982" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="62b-7v-qwB"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EdJ-sX-iom">
+                        <rect key="frame" x="0.0" y="0.0" width="525" height="26"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Mileage Included: 500 miles" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="296" translatesAutoresizingMaskIntoConstraints="NO" id="hhg-WT-uNj" customClass="EHILabel">
+                                <rect key="frame" x="20" y="8" width="485" height="18"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="15"/>
+                                <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="hhg-WT-uNj" firstAttribute="leading" secondItem="EdJ-sX-iom" secondAttribute="leading" constant="20" id="13q-Jn-9Sf"/>
+                            <constraint firstAttribute="trailing" secondItem="hhg-WT-uNj" secondAttribute="trailing" constant="20" id="XGT-48-sjS"/>
+                            <constraint firstItem="hhg-WT-uNj" firstAttribute="top" secondItem="EdJ-sX-iom" secondAttribute="top" constant="8" id="f8B-cy-sz8"/>
+                            <constraint firstAttribute="bottom" secondItem="hhg-WT-uNj" secondAttribute="bottom" id="gk6-zb-1Fu"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4im-Fr-p5L">
+                        <rect key="frame" x="0.0" y="26" width="525" height="22"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="$1.10 per additional mile" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="296" translatesAutoresizingMaskIntoConstraints="NO" id="QQC-Ta-ymN" customClass="EHILabel">
+                                <rect key="frame" x="20" y="4" width="485" height="18"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="15"/>
+                                <color key="textColor" red="0.30196078431372547" green="0.30196078431372547" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="QQC-Ta-ymN" secondAttribute="bottom" id="4k4-UD-qt3"/>
+                            <constraint firstAttribute="trailing" secondItem="QQC-Ta-ymN" secondAttribute="trailing" constant="20" id="Idg-P4-jlB"/>
+                            <constraint firstItem="QQC-Ta-ymN" firstAttribute="top" secondItem="4im-Fr-p5L" secondAttribute="top" priority="999" constant="4" id="JT7-gg-yqu"/>
+                            <constraint firstItem="QQC-Ta-ymN" firstAttribute="leading" secondItem="4im-Fr-p5L" secondAttribute="leading" constant="20" id="ygC-si-OBn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.92941176470588238" green="0.92941176470588238" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="4im-Fr-p5L" firstAttribute="top" secondItem="EdJ-sX-iom" secondAttribute="bottom" id="2fx-pd-vDv"/>
+                <constraint firstAttribute="trailing" secondItem="j5Q-wL-c0y" secondAttribute="trailing" id="AdT-oi-pFS"/>
+                <constraint firstAttribute="trailing" secondItem="EdJ-sX-iom" secondAttribute="trailing" id="E0f-M3-Xdt"/>
+                <constraint firstItem="EdJ-sX-iom" firstAttribute="leading" secondItem="0Wk-md-QNM" secondAttribute="leading" id="I6f-Mf-qrs"/>
+                <constraint firstAttribute="trailing" secondItem="4im-Fr-p5L" secondAttribute="trailing" id="MSh-cx-43V"/>
+                <constraint firstItem="4im-Fr-p5L" firstAttribute="leading" secondItem="0Wk-md-QNM" secondAttribute="leading" id="WcM-e1-0YK"/>
+                <constraint firstItem="j5Q-wL-c0y" firstAttribute="top" secondItem="0Wk-md-QNM" secondAttribute="top" id="fYh-Kn-Ff7"/>
+                <constraint firstItem="j5Q-wL-c0y" firstAttribute="leading" secondItem="0Wk-md-QNM" secondAttribute="leading" id="p72-rw-SI6"/>
+                <constraint firstItem="EdJ-sX-iom" firstAttribute="top" secondItem="0Wk-md-QNM" secondAttribute="top" id="rQn-fX-9mM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="5cl-pQ-Nt0"/>
+            <size key="customSize" width="525" height="79"/>
+            <connections>
+                <outlet property="subtitleContainer" destination="4im-Fr-p5L" id="epS-7V-x5e"/>
+                <outlet property="subtitleLabel" destination="QQC-Ta-ymN" id="CnR-n8-KZc"/>
+                <outlet property="titleContainer" destination="EdJ-sX-iom" id="Y4H-1S-FNb"/>
+                <outlet property="titleLabel" destination="hhg-WT-uNj" id="uZt-lr-b2u"/>
+            </connections>
+            <point key="canvasLocation" x="504.5" y="253.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

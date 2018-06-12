@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Reservation Enterprise Plus Info View Controller-->
+        <scene sceneID="XKb-N2-Hpu">
+            <objects>
+                <viewController storyboardIdentifier="EHIReservationEnterprisePlusInfoViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="WNS-uJ-dBf" customClass="EHIReservationEnterprisePlusInfoViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kcy-K9-KXB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WgN-4n-2pb" userLabel="Container">
+                                <rect key="frame" x="30" y="10" width="540" height="260"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="Collision Damage Waiver" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="511" translatesAutoresizingMaskIntoConstraints="NO" id="jyZ-oW-r4E" customClass="EHILabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="491" height="28"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="24"/>
+                                        <color key="textColor" red="0.070000000300000004" green="0.050000000750000002" blue="0.050000000750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="560" translatesAutoresizingMaskIntoConstraints="NO" id="VDp-7B-v0z" customClass="EHILabel">
+                                        <rect key="frame" x="0.0" y="43" width="540" height="97"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="16"/>
+                                        <color key="textColor" red="0.070000000300000004" green="0.050000000750000002" blue="0.050000000750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Email address" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="vuY-nF-qRg" customClass="EHITextField">
+                                        <rect key="frame" x="0.0" y="155" width="540" height="44"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="HVH-Er-si3"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" returnKeyType="done"/>
+                                        <connections>
+                                            <outlet property="delegate" destination="WNS-uJ-dBf" id="oAr-vG-cXV"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bns-89-Tn5" userLabel="Action Button" customClass="EHIActionButton">
+                                        <rect key="frame" x="0.0" y="214" width="540" height="46"/>
+                                        <color key="backgroundColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="Dnl-5f-DYO"/>
+                                        </constraints>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapEmailButton:" destination="WNS-uJ-dBf" eventType="touchUpInside" id="OBL-Wp-jXx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vuY-nF-qRg" secondAttribute="trailing" id="7wg-PV-idG"/>
+                                    <constraint firstItem="VDp-7B-v0z" firstAttribute="leading" secondItem="WgN-4n-2pb" secondAttribute="leading" id="9YN-H1-y3h"/>
+                                    <constraint firstItem="VDp-7B-v0z" firstAttribute="top" secondItem="jyZ-oW-r4E" secondAttribute="bottom" constant="15" id="9oY-0w-BgF"/>
+                                    <constraint firstItem="bns-89-Tn5" firstAttribute="leading" secondItem="WgN-4n-2pb" secondAttribute="leading" id="MW4-QS-6Va"/>
+                                    <constraint firstAttribute="trailing" secondItem="VDp-7B-v0z" secondAttribute="trailing" id="QAf-cv-Qin"/>
+                                    <constraint firstItem="vuY-nF-qRg" firstAttribute="leading" secondItem="WgN-4n-2pb" secondAttribute="leading" id="V6A-Hg-Q8v"/>
+                                    <constraint firstItem="vuY-nF-qRg" firstAttribute="top" secondItem="VDp-7B-v0z" secondAttribute="bottom" constant="15" id="Yt3-mv-AUy"/>
+                                    <constraint firstItem="bns-89-Tn5" firstAttribute="top" secondItem="vuY-nF-qRg" secondAttribute="bottom" constant="15" id="b8c-NT-UTd"/>
+                                    <constraint firstItem="jyZ-oW-r4E" firstAttribute="leading" secondItem="WgN-4n-2pb" secondAttribute="leading" id="mXT-7s-PXS"/>
+                                    <constraint firstAttribute="trailing" secondItem="bns-89-Tn5" secondAttribute="trailing" id="qdS-PG-tX6"/>
+                                    <constraint firstAttribute="bottom" secondItem="bns-89-Tn5" secondAttribute="bottom" id="uZm-No-B2r"/>
+                                    <constraint firstItem="jyZ-oW-r4E" firstAttribute="top" secondItem="WgN-4n-2pb" secondAttribute="top" id="uq8-cn-Eaf"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jtv-85-3HY" userLabel="Close Button">
+                                <rect key="frame" x="536" y="2" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="ETq-wP-neU"/>
+                                    <constraint firstAttribute="height" constant="44" id="oen-Sg-kmt"/>
+                                </constraints>
+                                <state key="normal" image="icon_x_gray_02">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapCloseButton:" destination="WNS-uJ-dBf" eventType="touchUpInside" id="lho-Px-VWg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jyZ-oW-r4E" firstAttribute="centerY" secondItem="Jtv-85-3HY" secondAttribute="centerY" id="2NR-rG-RrE"/>
+                            <constraint firstItem="kDI-wL-M8F" firstAttribute="trailing" secondItem="WgN-4n-2pb" secondAttribute="trailing" constant="30" id="QAl-gr-6aB"/>
+                            <constraint firstItem="WgN-4n-2pb" firstAttribute="leading" secondItem="kDI-wL-M8F" secondAttribute="leading" constant="30" id="T4j-e0-yfC"/>
+                            <constraint firstItem="kDI-wL-M8F" firstAttribute="trailing" secondItem="Jtv-85-3HY" secondAttribute="trailing" constant="20" id="UgT-sa-NTM"/>
+                            <constraint firstItem="Jtv-85-3HY" firstAttribute="leading" secondItem="jyZ-oW-r4E" secondAttribute="trailing" constant="15" id="caA-d3-uCo"/>
+                            <constraint firstItem="WgN-4n-2pb" firstAttribute="top" secondItem="kDI-wL-M8F" secondAttribute="top" constant="10" id="fsh-0y-dvk"/>
+                            <constraint firstItem="kDI-wL-M8F" firstAttribute="bottom" secondItem="WgN-4n-2pb" secondAttribute="bottom" constant="30" id="sHi-cW-Nyo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kDI-wL-M8F"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="600" height="300"/>
+                    <connections>
+                        <outlet property="actionButton" destination="bns-89-Tn5" id="Qhn-ri-cD7"/>
+                        <outlet property="detailsLabel" destination="VDp-7B-v0z" id="ZbY-7v-bbj"/>
+                        <outlet property="emailTextField" destination="vuY-nF-qRg" id="lqW-Ra-kdX"/>
+                        <outlet property="titleLabel" destination="jyZ-oW-r4E" id="E21-tX-Tmp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YvE-mG-VIw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="464" y="322"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_x_gray_02" width="19" height="19"/>
+    </resources>
+</document>

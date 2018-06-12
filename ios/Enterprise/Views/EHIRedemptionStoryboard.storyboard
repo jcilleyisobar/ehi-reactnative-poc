@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Redemption View Controller-->
+        <scene sceneID="XLS-xf-zQr">
+            <objects>
+                <viewController storyboardIdentifier="EHIRedemptionViewController" id="9OR-Wf-brV" customClass="EHIRedemptionViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="beG-9f-VrJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TeT-h7-mS2" customClass="EHIReservationConfirmationFooter">
+                                <rect key="frame" x="0.0" y="582" width="375" height="85"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="Y9u-bH-IvH"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="didTapConfirmationFooter:" destination="9OR-Wf-brV" eventType="touchUpInside" id="OMD-sK-jwL"/>
+                                </connections>
+                            </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ejp-hU-Lea" customClass="EHIListCollectionView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="562"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewLayout key="collectionViewLayout" id="ga0-DL-I4U" customClass="EHIListCollectionViewLayout"/>
+                                <cells/>
+                                <connections>
+                                    <outlet property="delegate" destination="9OR-Wf-brV" id="E4E-QN-78i"/>
+                                </connections>
+                            </collectionView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tro-nZ-W8r" userLabel="Loading Indicator" customClass="EHIActivityIndicator">
+                                <rect key="frame" x="0.0" y="20" width="375" height="562"/>
+                                <color key="backgroundColor" red="0.95999997854232788" green="0.95999997854232788" blue="0.95999997854232788" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TeT-h7-mS2" firstAttribute="top" secondItem="ejp-hU-Lea" secondAttribute="bottom" id="2GQ-Ub-ltb"/>
+                            <constraint firstItem="ejp-hU-Lea" firstAttribute="leading" secondItem="ImH-d9-Br1" secondAttribute="leading" id="3uJ-cA-1y0"/>
+                            <constraint firstItem="ImH-d9-Br1" firstAttribute="bottom" secondItem="ejp-hU-Lea" secondAttribute="bottom" constant="85" id="5BP-wL-USO"/>
+                            <constraint firstItem="ejp-hU-Lea" firstAttribute="top" secondItem="ImH-d9-Br1" secondAttribute="top" id="DgR-6K-bdb"/>
+                            <constraint firstItem="ImH-d9-Br1" firstAttribute="bottom" secondItem="TeT-h7-mS2" secondAttribute="bottom" id="Hhb-2G-skW"/>
+                            <constraint firstItem="Tro-nZ-W8r" firstAttribute="leading" secondItem="ImH-d9-Br1" secondAttribute="leading" id="KkI-ZD-JRZ"/>
+                            <constraint firstItem="ImH-d9-Br1" firstAttribute="trailing" secondItem="TeT-h7-mS2" secondAttribute="trailing" id="RIk-6Z-fZn"/>
+                            <constraint firstItem="ImH-d9-Br1" firstAttribute="trailing" secondItem="Tro-nZ-W8r" secondAttribute="trailing" id="SJE-B7-2tt"/>
+                            <constraint firstItem="TeT-h7-mS2" firstAttribute="leading" secondItem="ImH-d9-Br1" secondAttribute="leading" id="mJN-gX-8dB"/>
+                            <constraint firstItem="Tro-nZ-W8r" firstAttribute="top" secondItem="ImH-d9-Br1" secondAttribute="top" id="qIE-Qd-CXW"/>
+                            <constraint firstItem="TeT-h7-mS2" firstAttribute="top" secondItem="Tro-nZ-W8r" secondAttribute="bottom" id="wDB-fs-gAi"/>
+                            <constraint firstItem="ImH-d9-Br1" firstAttribute="trailing" secondItem="ejp-hU-Lea" secondAttribute="trailing" id="yHG-dI-Bp3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ImH-d9-Br1"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5BP-wL-USO"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="ejp-hU-Lea" id="hEk-ZY-gf2"/>
+                        <outlet property="confirmationFooter" destination="TeT-h7-mS2" id="XXr-6d-ANt"/>
+                        <outlet property="loadingIndicator" destination="Tro-nZ-W8r" id="lde-DQ-zq6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ce1-XR-ag1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="310" y="363"/>
+        </scene>
+    </scenes>
+</document>

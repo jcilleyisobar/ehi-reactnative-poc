@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="EHIConfirmationManageReservationCell">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="210"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="329" height="210"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xR4-ZG-8I4">
+                        <rect key="frame" x="20" y="58" width="289" height="140"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RpJ-2U-YDg" customClass="EHIActivityButton">
+                                <rect key="frame" x="0.0" y="8" width="289" height="44"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Xk5-xw-8VM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="13"/>
+                                <inset key="titleEdgeInsets" minX="17" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="MODIFY">
+                                    <color key="titleColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.67000001669999998" green="0.67000001669999998" blue="0.67000001669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapModifyButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="bnE-l0-IW5"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s7Z-LU-7Al">
+                                <rect key="frame" x="15" y="52" width="259" height="1"/>
+                                <color key="backgroundColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="YXK-JV-opN"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xSD-Se-eV7" customClass="EHIActivityButton">
+                                <rect key="frame" x="0.0" y="52" width="289" height="44"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="0d6-RW-FdR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="13"/>
+                                <inset key="titleEdgeInsets" minX="17" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="CANCEL">
+                                    <color key="titleColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.67000001669999998" green="0.67000001669999998" blue="0.67000001669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapCancelButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="yxy-up-oJE"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v8D-i5-nYP">
+                                <rect key="frame" x="15" y="96" width="259" height="1"/>
+                                <color key="backgroundColor" red="0.8862745098" green="0.8862745098" blue="0.8862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="DBG-TM-Nmb"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSf-Gu-cQ3" customClass="EHIActivityButton">
+                                <rect key="frame" x="0.0" y="96" width="289" height="44"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="7Sc-jJ-qL0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="13"/>
+                                <inset key="titleEdgeInsets" minX="17" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="ADD TO CALENDAR">
+                                    <color key="titleColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="disabled">
+                                    <color key="titleColor" red="0.67000001669999998" green="0.67000001669999998" blue="0.67000001669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapAddToCalendarButton:" destination="gTV-IL-0wX" eventType="touchUpInside" id="83x-vN-X90"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="v8D-i5-nYP" firstAttribute="leading" secondItem="xR4-ZG-8I4" secondAttribute="leading" constant="15" id="0j1-gl-JxW"/>
+                            <constraint firstItem="xSD-Se-eV7" firstAttribute="top" secondItem="RpJ-2U-YDg" secondAttribute="bottom" id="EbE-Q5-k83"/>
+                            <constraint firstAttribute="trailing" secondItem="xSD-Se-eV7" secondAttribute="trailing" id="Emd-Bl-2hA"/>
+                            <constraint firstAttribute="trailing" secondItem="RpJ-2U-YDg" secondAttribute="trailing" id="F9L-4a-KhF"/>
+                            <constraint firstItem="RpJ-2U-YDg" firstAttribute="top" secondItem="xR4-ZG-8I4" secondAttribute="top" constant="8" id="Fyi-FB-KcC"/>
+                            <constraint firstAttribute="trailing" secondItem="v8D-i5-nYP" secondAttribute="trailing" constant="15" id="GPC-xW-N5m"/>
+                            <constraint firstAttribute="bottom" secondItem="KSf-Gu-cQ3" secondAttribute="bottom" id="Hgw-FP-1P3"/>
+                            <constraint firstAttribute="trailing" secondItem="KSf-Gu-cQ3" secondAttribute="trailing" id="NNB-ax-P8Y"/>
+                            <constraint firstItem="v8D-i5-nYP" firstAttribute="top" secondItem="xSD-Se-eV7" secondAttribute="bottom" id="OpD-hM-jgK"/>
+                            <constraint firstItem="s7Z-LU-7Al" firstAttribute="leading" secondItem="xR4-ZG-8I4" secondAttribute="leading" constant="15" id="SEO-ac-c6x"/>
+                            <constraint firstItem="KSf-Gu-cQ3" firstAttribute="top" secondItem="xSD-Se-eV7" secondAttribute="bottom" id="a9E-wj-lC2"/>
+                            <constraint firstAttribute="trailing" secondItem="s7Z-LU-7Al" secondAttribute="trailing" constant="15" id="b9j-EH-Mg2"/>
+                            <constraint firstItem="xSD-Se-eV7" firstAttribute="leading" secondItem="xR4-ZG-8I4" secondAttribute="leading" id="fUV-JQ-kfA"/>
+                            <constraint firstItem="s7Z-LU-7Al" firstAttribute="top" secondItem="RpJ-2U-YDg" secondAttribute="bottom" id="n4a-Y9-vvU"/>
+                            <constraint firstItem="RpJ-2U-YDg" firstAttribute="leading" secondItem="xR4-ZG-8I4" secondAttribute="leading" id="uov-dB-lJi"/>
+                            <constraint firstItem="KSf-Gu-cQ3" firstAttribute="leading" secondItem="xR4-ZG-8I4" secondAttribute="leading" id="yeJ-DA-yg4"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W0n-WH-zjN" customClass="EHIBorderedView">
+                        <rect key="frame" x="20" y="0.0" width="289" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MANAGE RESERVATION" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNM-Zu-8yY">
+                                <rect key="frame" x="42" y="23.5" width="207" height="16"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="13"/>
+                                <color key="textColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_menu_02" translatesAutoresizingMaskIntoConstraints="NO" id="h5b-oY-GJU">
+                                <rect key="frame" x="17" y="25" width="12" height="9"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="12" id="Hhc-CG-IPB"/>
+                                    <constraint firstAttribute="height" constant="9" id="OWq-Qk-hVB"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_smgreen" translatesAutoresizingMaskIntoConstraints="NO" id="qPn-Mc-54x">
+                                <rect key="frame" x="264" y="25" width="8" height="13"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="13" id="CNn-zs-R4Q"/>
+                                    <constraint firstAttribute="width" constant="8" id="eij-dg-Odu"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="G30-a5-lrn"/>
+                            <constraint firstItem="uNM-Zu-8yY" firstAttribute="leading" secondItem="h5b-oY-GJU" secondAttribute="trailing" constant="13" id="LAQ-X5-yGF"/>
+                            <constraint firstItem="uNM-Zu-8yY" firstAttribute="centerY" secondItem="h5b-oY-GJU" secondAttribute="centerY" constant="2" id="dkA-lG-uF3"/>
+                            <constraint firstItem="h5b-oY-GJU" firstAttribute="top" secondItem="W0n-WH-zjN" secondAttribute="top" constant="25" id="eGd-Sl-O6N"/>
+                            <constraint firstAttribute="trailing" secondItem="qPn-Mc-54x" secondAttribute="trailing" constant="17" id="mMn-0I-OT4"/>
+                            <constraint firstItem="qPn-Mc-54x" firstAttribute="leading" secondItem="uNM-Zu-8yY" secondAttribute="trailing" constant="15" id="nfe-dM-h3s"/>
+                            <constraint firstItem="qPn-Mc-54x" firstAttribute="top" secondItem="W0n-WH-zjN" secondAttribute="top" constant="25" id="yOW-Fz-MDS"/>
+                            <constraint firstItem="h5b-oY-GJU" firstAttribute="leading" secondItem="W0n-WH-zjN" secondAttribute="leading" constant="17" id="zpI-f7-SO7"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cl0-OL-021" customClass="UIControl">
+                        <rect key="frame" x="20" y="0.0" width="289" height="60"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <action selector="didTapToggle:" destination="gTV-IL-0wX" eventType="touchUpInside" id="xOP-qq-sXn"/>
+                        </connections>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qAI-od-TJn">
+                        <rect key="frame" x="20" y="218" width="289" height="1"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="LKc-ij-2x9"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="qAI-od-TJn" secondAttribute="trailing" constant="20" id="2fe-3N-MBJ"/>
+                <constraint firstAttribute="trailing" secondItem="xR4-ZG-8I4" secondAttribute="trailing" constant="20" id="62C-Cw-Ib7"/>
+                <constraint firstItem="cl0-OL-021" firstAttribute="top" secondItem="W0n-WH-zjN" secondAttribute="top" id="7j1-AA-lKT"/>
+                <constraint firstItem="xR4-ZG-8I4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="Hl7-vK-FhT"/>
+                <constraint firstItem="cl0-OL-021" firstAttribute="leading" secondItem="W0n-WH-zjN" secondAttribute="leading" id="JPp-QH-JMo"/>
+                <constraint firstItem="xR4-ZG-8I4" firstAttribute="top" secondItem="W0n-WH-zjN" secondAttribute="bottom" constant="-2" id="Tra-bK-4to"/>
+                <constraint firstItem="W0n-WH-zjN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="c1x-sK-pbB"/>
+                <constraint firstItem="W0n-WH-zjN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hzg-QT-zsy"/>
+                <constraint firstItem="cl0-OL-021" firstAttribute="trailing" secondItem="W0n-WH-zjN" secondAttribute="trailing" id="tt2-6G-QCb"/>
+                <constraint firstItem="qAI-od-TJn" firstAttribute="top" secondItem="xR4-ZG-8I4" secondAttribute="bottom" constant="20" id="ug1-FD-V8m"/>
+                <constraint firstItem="cl0-OL-021" firstAttribute="bottom" secondItem="W0n-WH-zjN" secondAttribute="bottom" id="vcm-R5-bau"/>
+                <constraint firstItem="qAI-od-TJn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="vm3-wt-TQJ"/>
+                <constraint firstAttribute="trailing" secondItem="W0n-WH-zjN" secondAttribute="trailing" constant="20" id="wub-p0-cs1"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="J4L-ot-0sJ"/>
+            <size key="customSize" width="329" height="210"/>
+            <connections>
+                <outlet property="actionsContainer" destination="xR4-ZG-8I4" id="jXG-z6-aQO"/>
+                <outlet property="addToCalendarButton" destination="KSf-Gu-cQ3" id="Kog-DO-Ry4"/>
+                <outlet property="arrowView" destination="qPn-Mc-54x" id="nxy-qo-xNu"/>
+                <outlet property="bottomView" destination="qAI-od-TJn" id="tjW-B6-xm5"/>
+                <outlet property="cancelButton" destination="xSD-Se-eV7" id="7Gq-he-2Ly"/>
+                <outlet property="modifyButton" destination="RpJ-2U-YDg" id="hOh-XW-EyJ"/>
+                <outlet property="titleLabel" destination="uNM-Zu-8yY" id="Zax-0B-7iz"/>
+                <outlet property="toggleView" destination="W0n-WH-zjN" id="Reb-P5-ToJ"/>
+            </connections>
+            <point key="canvasLocation" x="-473.5" y="186"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_smgreen" width="8" height="13"/>
+        <image name="icon_menu_02" width="12" height="9"/>
+    </resources>
+</document>

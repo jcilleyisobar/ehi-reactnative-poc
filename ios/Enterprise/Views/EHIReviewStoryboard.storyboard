@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Review View Controller-->
+        <scene sceneID="WBq-th-sbt">
+            <objects>
+                <viewController storyboardIdentifier="EHIReviewViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VFx-oB-Wuh" customClass="EHIReviewViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tZA-5N-e4R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="50w-Vo-2uS" customClass="EHIListCollectionView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="502"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="zsj-Ap-38M">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="delegate" destination="VFx-oB-Wuh" id="c7K-ON-Dtu"/>
+                                </connections>
+                            </collectionView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V7W-tx-2nX" userLabel="T&amp;C Toogle Container">
+                                <rect key="frame" x="0.0" y="522" width="375" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8G-qs-Sbl" customClass="EHIToggleButton">
+                                        <rect key="frame" x="20" y="15" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="TCQ-OU-fZj"/>
+                                            <constraint firstAttribute="height" constant="30" id="rEj-yd-b9r"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="didTapReadTerms:" destination="VFx-oB-Wuh" eventType="touchUpInside" id="0aC-z3-lb2"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I have read" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHM-TB-d6f" customClass="EHIClickableLabel">
+                                        <rect key="frame" x="65" y="15" width="290" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="999" constant="30" id="4GP-kX-Yea"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="DIN Next LT Pro" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.88627450980392153" green="0.88627450980392153" blue="0.88627450980392153" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="eHM-TB-d6f" firstAttribute="top" secondItem="V7W-tx-2nX" secondAttribute="top" priority="999" constant="15" id="4SE-Jz-St5"/>
+                                    <constraint firstItem="eHM-TB-d6f" firstAttribute="centerY" secondItem="o8G-qs-Sbl" secondAttribute="centerY" id="Kb7-7M-yX0"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" priority="999" constant="60" id="LGd-dZ-sw4" customClass="EHIRestorableConstraint"/>
+                                    <constraint firstItem="eHM-TB-d6f" firstAttribute="leading" secondItem="o8G-qs-Sbl" secondAttribute="trailing" constant="15" id="Pdr-On-qu6"/>
+                                    <constraint firstAttribute="bottom" secondItem="eHM-TB-d6f" secondAttribute="bottom" constant="15" id="jie-lZ-e6H"/>
+                                    <constraint firstAttribute="trailing" secondItem="eHM-TB-d6f" secondAttribute="trailing" constant="20" id="ovc-8y-Gl0"/>
+                                    <constraint firstItem="o8G-qs-Sbl" firstAttribute="leading" secondItem="V7W-tx-2nX" secondAttribute="leading" constant="20" id="tQL-1U-V2I"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="17h-En-iJy">
+                                <rect key="frame" x="0.0" y="582" width="375" height="85"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qgi-3F-A7p" customClass="EHIReservationConfirmationFooter">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <connections>
+                                            <action selector="didTapBookButton:" destination="VFx-oB-Wuh" eventType="touchUpInside" id="sJv-o7-MO0"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Qgi-3F-A7p" firstAttribute="top" secondItem="17h-En-iJy" secondAttribute="top" id="8pG-oK-p8g"/>
+                                    <constraint firstItem="Qgi-3F-A7p" firstAttribute="leading" secondItem="17h-En-iJy" secondAttribute="leading" id="GBn-mo-eFU"/>
+                                    <constraint firstAttribute="bottom" secondItem="Qgi-3F-A7p" secondAttribute="bottom" id="MUi-37-Mm2"/>
+                                    <constraint firstAttribute="trailing" secondItem="Qgi-3F-A7p" secondAttribute="trailing" id="aXT-IY-Dlg"/>
+                                    <constraint firstAttribute="height" constant="85" id="r8w-e8-Zow" customClass="EHIRestorableConstraint"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3BG-wk-rft" userLabel="Activity View" customClass="EHIActivityIndicator">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="l7Q-vt-asy" firstAttribute="trailing" secondItem="V7W-tx-2nX" secondAttribute="trailing" id="0JE-8a-8NR"/>
+                            <constraint firstItem="V7W-tx-2nX" firstAttribute="top" secondItem="50w-Vo-2uS" secondAttribute="bottom" id="1fg-jb-4CY" customClass="EHIRestorableConstraint"/>
+                            <constraint firstAttribute="bottom" secondItem="3BG-wk-rft" secondAttribute="bottom" id="LNU-KR-0AT"/>
+                            <constraint firstItem="3BG-wk-rft" firstAttribute="leading" secondItem="l7Q-vt-asy" secondAttribute="leading" id="Mhq-BS-sme"/>
+                            <constraint firstItem="l7Q-vt-asy" firstAttribute="bottom" secondItem="17h-En-iJy" secondAttribute="bottom" id="NWf-Y1-cbH"/>
+                            <constraint firstItem="V7W-tx-2nX" firstAttribute="leading" secondItem="l7Q-vt-asy" secondAttribute="leading" id="PTz-wt-RLW"/>
+                            <constraint firstItem="l7Q-vt-asy" firstAttribute="trailing" secondItem="17h-En-iJy" secondAttribute="trailing" id="Q9s-pj-Hpt"/>
+                            <constraint firstAttribute="top" secondItem="3BG-wk-rft" secondAttribute="top" id="TYA-f7-ABa"/>
+                            <constraint firstItem="17h-En-iJy" firstAttribute="top" secondItem="V7W-tx-2nX" secondAttribute="bottom" id="YYK-aA-7Qg"/>
+                            <constraint firstItem="17h-En-iJy" firstAttribute="leading" secondItem="l7Q-vt-asy" secondAttribute="leading" id="YhZ-N0-bwG"/>
+                            <constraint firstItem="50w-Vo-2uS" firstAttribute="top" secondItem="l7Q-vt-asy" secondAttribute="top" id="edA-00-zyM"/>
+                            <constraint firstItem="l7Q-vt-asy" firstAttribute="trailing" secondItem="50w-Vo-2uS" secondAttribute="trailing" id="gnb-4q-WKo"/>
+                            <constraint firstItem="50w-Vo-2uS" firstAttribute="leading" secondItem="l7Q-vt-asy" secondAttribute="leading" id="kT1-aF-0fz"/>
+                            <constraint firstItem="l7Q-vt-asy" firstAttribute="trailing" secondItem="3BG-wk-rft" secondAttribute="trailing" id="q2x-jw-RXg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="l7Q-vt-asy"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="3BG-wk-rft" id="jxE-cc-wZs"/>
+                        <outlet property="bookButton" destination="Qgi-3F-A7p" id="Es8-uX-xgC"/>
+                        <outlet property="bookButtonHeightConstraint" destination="r8w-e8-Zow" id="Ac5-qY-gWr"/>
+                        <outlet property="collectionView" destination="50w-Vo-2uS" id="R3X-ek-6TV"/>
+                        <outlet property="collectionViewBottomConstraint" destination="1fg-jb-4CY" id="fcO-tL-g1y"/>
+                        <outlet property="quickBookTermsLabel" destination="eHM-TB-d6f" id="imm-8b-bxU"/>
+                        <outlet property="quickBookTermsToggle" destination="o8G-qs-Sbl" id="Isk-qV-xV9"/>
+                        <outlet property="termsContainer" destination="V7W-tx-2nX" id="aRb-no-cBn"/>
+                        <outlet property="termsContainerHeightConstraint" destination="LGd-dZ-sw4" id="Uis-23-qp4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="56N-rJ-Vb6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-60" y="52"/>
+        </scene>
+    </scenes>
+</document>

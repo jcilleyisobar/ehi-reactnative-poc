@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-Black.ttf">
+            <string>SourceSansPro-Black</string>
+        </array>
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Dashboard Extend Rental View Controller-->
+        <scene sceneID="DF5-1I-0XI">
+            <objects>
+                <viewController storyboardIdentifier="EHIDashboardExtendRentalViewController" id="psY-FB-IcB" customClass="EHIDashboardExtendRentalViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fNS-CI-Rb9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Opo-Qz-Zv2" userLabel="Container">
+                                <rect key="frame" x="30" y="30" width="315" height="200"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need more time? Call us and we'll help you out." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="315" translatesAutoresizingMaskIntoConstraints="NO" id="ETA-gt-PF0" userLabel="Details" customClass="EHILabel">
+                                        <rect key="frame" x="0.0" y="52.5" width="315" height="37.5"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sMM-6D-IfX" userLabel="Confirmation Container">
+                                        <rect key="frame" x="0.0" y="99.5" width="315" height="44"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Reservation #" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="315" translatesAutoresizingMaskIntoConstraints="NO" id="NsN-MU-4g9" userLabel="Reservation Title" customClass="EHILabel">
+                                                <rect key="frame" x="0.0" y="0.0" width="315" height="19"/>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="DIN Next LT Pro" pointSize="16"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="590205859" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="315" translatesAutoresizingMaskIntoConstraints="NO" id="Vhj-Yo-t3C" userLabel="Reservation" customClass="EHILabel">
+                                                <rect key="frame" x="0.0" y="23" width="315" height="21"/>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Black" family="DIN Next LT Pro" pointSize="18"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="CXG-JD-76u" customClass="EHIRestorableConstraint"/>
+                                            <constraint firstAttribute="bottom" secondItem="Vhj-Yo-t3C" secondAttribute="bottom" id="Dt3-pJ-JEc"/>
+                                            <constraint firstAttribute="trailing" secondItem="NsN-MU-4g9" secondAttribute="trailing" id="V9w-tx-n8F"/>
+                                            <constraint firstItem="Vhj-Yo-t3C" firstAttribute="leading" secondItem="NsN-MU-4g9" secondAttribute="leading" id="bNc-bq-HH2"/>
+                                            <constraint firstItem="NsN-MU-4g9" firstAttribute="leading" secondItem="sMM-6D-IfX" secondAttribute="leading" id="cnf-5a-2tk"/>
+                                            <constraint firstItem="NsN-MU-4g9" firstAttribute="top" secondItem="sMM-6D-IfX" secondAttribute="top" id="i1V-YH-QjA"/>
+                                            <constraint firstItem="Vhj-Yo-t3C" firstAttribute="trailing" secondItem="NsN-MU-4g9" secondAttribute="trailing" id="y6q-k5-98n"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7iO-uW-sPw" userLabel="Action Button" customClass="EHIActionButton">
+                                        <rect key="frame" x="0.0" y="153.5" width="315" height="46"/>
+                                        <color key="backgroundColor" red="0.090000003576278687" green="0.60000002384185791" blue="0.34999999403953552" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="6UV-Gw-4OM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="18"/>
+                                        <state key="normal" title="CALL TO EXTEND RENTAL">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapActionButton:" destination="psY-FB-IcB" eventType="touchUpInside" id="b2K-DV-6lX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3a-xg-B9q" userLabel="Close Button">
+                                        <rect key="frame" x="296" y="0.0" width="19" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="19" id="PBw-5W-Z2D"/>
+                                            <constraint firstAttribute="width" constant="19" id="nG5-fC-EeG"/>
+                                        </constraints>
+                                        <state key="normal" image="icon_x_gray_02">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapCancelButton:" destination="psY-FB-IcB" eventType="touchUpInside" id="H2l-px-KQG"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" horizontalCompressionResistancePriority="249" verticalCompressionResistancePriority="249" text="Extend Rental" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="245" translatesAutoresizingMaskIntoConstraints="NO" id="mSZ-7n-BTW" userLabel="Title" customClass="EHILabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="37.5"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="24"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="M3a-xg-B9q" firstAttribute="leading" secondItem="mSZ-7n-BTW" secondAttribute="trailing" constant="8" id="BRT-im-3sb"/>
+                                    <constraint firstItem="ETA-gt-PF0" firstAttribute="leading" secondItem="Opo-Qz-Zv2" secondAttribute="leading" id="C5p-JX-lJI"/>
+                                    <constraint firstItem="mSZ-7n-BTW" firstAttribute="leading" secondItem="Opo-Qz-Zv2" secondAttribute="leading" id="Gf5-o8-qzN"/>
+                                    <constraint firstItem="sMM-6D-IfX" firstAttribute="leading" secondItem="Opo-Qz-Zv2" secondAttribute="leading" id="HU8-f1-eIJ"/>
+                                    <constraint firstItem="7iO-uW-sPw" firstAttribute="top" secondItem="sMM-6D-IfX" secondAttribute="bottom" constant="10" id="Hfd-Il-9bI"/>
+                                    <constraint firstAttribute="trailing" secondItem="M3a-xg-B9q" secondAttribute="trailing" id="JjT-r2-NpU"/>
+                                    <constraint firstAttribute="bottom" secondItem="7iO-uW-sPw" secondAttribute="bottom" id="OS7-aE-dxE"/>
+                                    <constraint firstAttribute="trailing" secondItem="sMM-6D-IfX" secondAttribute="trailing" id="Q3Z-wk-aMS"/>
+                                    <constraint firstItem="M3a-xg-B9q" firstAttribute="top" secondItem="Opo-Qz-Zv2" secondAttribute="top" id="YoD-zr-JCz"/>
+                                    <constraint firstItem="ETA-gt-PF0" firstAttribute="top" secondItem="mSZ-7n-BTW" secondAttribute="bottom" constant="15" id="epX-hp-QWd"/>
+                                    <constraint firstAttribute="trailing" secondItem="ETA-gt-PF0" secondAttribute="trailing" id="l7g-XR-Nyr"/>
+                                    <constraint firstItem="7iO-uW-sPw" firstAttribute="leading" secondItem="Opo-Qz-Zv2" secondAttribute="leading" id="pyf-0d-zp9"/>
+                                    <constraint firstItem="sMM-6D-IfX" firstAttribute="top" secondItem="ETA-gt-PF0" secondAttribute="bottom" constant="10" id="tpe-BR-Jdj"/>
+                                    <constraint firstItem="mSZ-7n-BTW" firstAttribute="top" secondItem="Opo-Qz-Zv2" secondAttribute="top" id="wds-Ck-gka"/>
+                                    <constraint firstAttribute="trailing" secondItem="7iO-uW-sPw" secondAttribute="trailing" id="yTS-5I-FFC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QMW-A1-C5a" firstAttribute="trailing" secondItem="Opo-Qz-Zv2" secondAttribute="trailing" constant="30" id="19w-XX-o1j"/>
+                            <constraint firstItem="QMW-A1-C5a" firstAttribute="bottom" secondItem="Opo-Qz-Zv2" secondAttribute="bottom" constant="30" id="Hkb-cf-CDp"/>
+                            <constraint firstItem="Opo-Qz-Zv2" firstAttribute="leading" secondItem="QMW-A1-C5a" secondAttribute="leading" constant="30" id="qR9-3P-AIn"/>
+                            <constraint firstItem="Opo-Qz-Zv2" firstAttribute="top" secondItem="fNS-CI-Rb9" secondAttribute="topMargin" constant="30" id="vGp-nJ-Rlb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QMW-A1-C5a"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="260"/>
+                    <connections>
+                        <outlet property="actionButton" destination="7iO-uW-sPw" id="rk4-8m-PUR"/>
+                        <outlet property="contentContainer" destination="Opo-Qz-Zv2" id="MwP-Dl-73T"/>
+                        <outlet property="detailsLabel" destination="ETA-gt-PF0" id="HGF-jX-8qJ"/>
+                        <outlet property="dismissButton" destination="M3a-xg-B9q" id="Y9j-ye-1S8"/>
+                        <outlet property="reservationLabel" destination="Vhj-Yo-t3C" id="kRL-VJ-9Uy"/>
+                        <outlet property="reservationTitleLabel" destination="NsN-MU-4g9" id="sW4-Im-uB6"/>
+                        <outlet property="ticketNumberHeightConstraint" destination="CXG-JD-76u" id="LYa-Bk-iY5"/>
+                        <outlet property="titleLabel" destination="mSZ-7n-BTW" id="0V7-2A-miE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b6P-sk-7sz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100.5" y="157"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_x_gray_02" width="19" height="19"/>
+    </resources>
+</document>

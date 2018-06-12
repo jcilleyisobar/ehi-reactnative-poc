@@ -1,0 +1,10 @@
+{
+    "payment_reference_id": "9640840001176",
+    "payment_type": "CREDIT_CARD",
+    "masked_number": "************1111",
+    "card_type": "VISA",
+    "preferred": true,
+    "expiration_date": "2018-11",
+    "first_six": "411111",
+    "last_four": "1111"
+}

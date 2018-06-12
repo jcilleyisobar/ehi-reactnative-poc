@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EHIAboutEnterprisePlusFooterCell" id="ezd-oQ-3Do" customClass="EHIAboutEnterprisePlusFooterCell">
+            <rect key="frame" x="0.0" y="0.0" width="394" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="394" height="76"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TIU-K9-B22">
+                        <rect key="frame" x="0.0" y="0.0" width="394" height="12"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Hd-el-Lga">
+                                <rect key="frame" x="0.0" y="0.0" width="394" height="1"/>
+                                <color key="backgroundColor" red="0.70196078429999997" green="0.70196078429999997" blue="0.70196078429999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="IOt-uQ-IcC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.83921568629999999" green="0.83921568629999999" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1Hd-el-Lga" firstAttribute="leading" secondItem="TIU-K9-B22" secondAttribute="leading" id="FtN-10-sS1"/>
+                            <constraint firstItem="1Hd-el-Lga" firstAttribute="top" secondItem="TIU-K9-B22" secondAttribute="top" id="KAP-mP-btX"/>
+                            <constraint firstAttribute="height" constant="12" id="aaj-4X-qUL"/>
+                            <constraint firstAttribute="trailing" secondItem="1Hd-el-Lga" secondAttribute="trailing" id="ybn-D1-o9t"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRf-x6-z52" customClass="EHIButton">
+                        <rect key="frame" x="166" y="27" width="62" height="33"/>
+                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="18"/>
+                        <state key="normal" title="TERMS">
+                            <color key="titleColor" red="0.015686274510000001" green="0.5450980392" blue="0.32156862749999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="didTapButton:" destination="ezd-oQ-3Do" eventType="touchUpInside" id="WTB-cv-W9l"/>
+                        </connections>
+                    </button>
+                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="arrow_smgreen" translatesAutoresizingMaskIntoConstraints="NO" id="Ve3-RA-JEL">
+                        <rect key="frame" x="236" y="35" width="8" height="13"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.94509803921568625" green="0.94509803921568625" blue="0.94509803921568625" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="TIU-K9-B22" firstAttribute="leading" secondItem="ezd-oQ-3Do" secondAttribute="leading" id="1W0-cR-IYo"/>
+                <constraint firstItem="TIU-K9-B22" firstAttribute="top" secondItem="ezd-oQ-3Do" secondAttribute="top" id="DW6-Xy-78d"/>
+                <constraint firstItem="Ve3-RA-JEL" firstAttribute="leading" secondItem="SRf-x6-z52" secondAttribute="trailing" constant="8" id="H9w-0R-ci2"/>
+                <constraint firstItem="SRf-x6-z52" firstAttribute="top" secondItem="TIU-K9-B22" secondAttribute="bottom" constant="15" id="JGZ-8Y-KTV"/>
+                <constraint firstItem="Ve3-RA-JEL" firstAttribute="centerY" secondItem="SRf-x6-z52" secondAttribute="centerY" constant="-2" id="RoJ-jm-M5T"/>
+                <constraint firstItem="SRf-x6-z52" firstAttribute="centerX" secondItem="ezd-oQ-3Do" secondAttribute="centerX" id="b9k-cc-fKw"/>
+                <constraint firstItem="SRf-x6-z52" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ezd-oQ-3Do" secondAttribute="leading" constant="20" id="etP-Zr-b3g"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Ve3-RA-JEL" secondAttribute="trailing" constant="20" id="qcc-AZ-YEI"/>
+                <constraint firstAttribute="trailing" secondItem="TIU-K9-B22" secondAttribute="trailing" id="s8e-k5-e7r"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="1mI-Ln-B33"/>
+            <size key="customSize" width="394" height="76"/>
+            <connections>
+                <outlet property="detailsButton" destination="SRf-x6-z52" id="jB6-i7-UZF"/>
+            </connections>
+            <point key="canvasLocation" x="-215" y="44"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_smgreen" width="8" height="13"/>
+    </resources>
+</document>

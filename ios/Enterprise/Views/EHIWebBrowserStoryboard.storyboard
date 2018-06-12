@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Web Browser View Controller-->
+        <scene sceneID="BoY-cO-j26">
+            <objects>
+                <viewController storyboardIdentifier="EHIWebBrowserViewController" id="q8t-Me-vUc" customClass="EHIWebBrowserViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n1N-Ha-eHM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CPx-W5-LcM">
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gjQ-zx-mpm">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <barButtonItem enabled="NO" image="arrow_green_back" style="plain" id="c55-OD-IMD">
+                                        <connections>
+                                            <action selector="goBack" destination="CPx-W5-LcM" id="nRx-yH-PZH"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem width="28" style="plain" systemItem="fixedSpace" id="Eo2-Hz-LYt"/>
+                                    <barButtonItem enabled="NO" image="arrow_green" style="plain" id="2Tb-O3-rdG">
+                                        <connections>
+                                            <action selector="goForward" destination="CPx-W5-LcM" id="efM-uZ-rW0"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ZaY-3G-LEd"/>
+                                    <barButtonItem style="plain" id="erE-hR-brI">
+                                        <view key="customView" contentMode="scaleToFill" id="TQV-WV-E5Z" customClass="EHIActivityIndicator">
+                                            <rect key="frame" x="319" y="2" width="40" height="40"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </view>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="meW-Pc-P7X">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" red="0.090000003576278687" green="0.60000002384185791" blue="0.34999999403953552" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <items>
+                                    <navigationItem id="3yQ-ef-S8D"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.090000003576278687" green="0.60000002384185791" blue="0.34999999403953552" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Cl-4o-EYs" firstAttribute="trailing" secondItem="meW-Pc-P7X" secondAttribute="trailing" id="48n-yV-OPl"/>
+                            <constraint firstItem="gjQ-zx-mpm" firstAttribute="top" secondItem="CPx-W5-LcM" secondAttribute="bottom" id="8zm-v9-zRN"/>
+                            <constraint firstItem="CPx-W5-LcM" firstAttribute="leading" secondItem="6Cl-4o-EYs" secondAttribute="leading" id="CMi-uK-cEA"/>
+                            <constraint firstItem="CPx-W5-LcM" firstAttribute="bottom" secondItem="6Cl-4o-EYs" secondAttribute="bottom" id="E5W-JE-mJG"/>
+                            <constraint firstItem="gjQ-zx-mpm" firstAttribute="trailing" secondItem="CPx-W5-LcM" secondAttribute="trailing" id="HtU-64-04D"/>
+                            <constraint firstItem="meW-Pc-P7X" firstAttribute="top" secondItem="6Cl-4o-EYs" secondAttribute="top" id="IC1-0I-8GA"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="gjQ-zx-mpm" secondAttribute="bottom" id="JVq-we-fvv"/>
+                            <constraint firstItem="CPx-W5-LcM" firstAttribute="top" secondItem="6Cl-4o-EYs" secondAttribute="top" constant="44" id="U3n-gm-w6R"/>
+                            <constraint firstItem="6Cl-4o-EYs" firstAttribute="trailing" secondItem="CPx-W5-LcM" secondAttribute="trailing" id="Yv1-Nc-Zl6"/>
+                            <constraint firstItem="gjQ-zx-mpm" firstAttribute="leading" secondItem="CPx-W5-LcM" secondAttribute="leading" id="Z72-2k-0Hy"/>
+                            <constraint firstItem="meW-Pc-P7X" firstAttribute="leading" secondItem="6Cl-4o-EYs" secondAttribute="leading" id="iEW-WC-rFd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Cl-4o-EYs"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="E5W-JE-mJG"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="c55-OD-IMD" id="Y55-jF-48m"/>
+                        <outlet property="forwardButton" destination="2Tb-O3-rdG" id="h11-2N-JTr"/>
+                        <outlet property="loadingIndicator" destination="TQV-WV-E5Z" id="6Zj-fp-R1D"/>
+                        <outlet property="navigationBar" destination="meW-Pc-P7X" id="Jqg-Sa-03W"/>
+                        <outlet property="webView" destination="CPx-W5-LcM" id="poi-8i-P1u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HdT-od-idu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1149" y="410"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow_green" width="11" height="20"/>
+        <image name="arrow_green_back" width="11" height="20"/>
+    </resources>
+</document>

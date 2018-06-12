@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+        <array key="SourceSansPro-LightItalic.otf">
+            <string>SourceSansPro-LightItalic</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Profile Edit Billing View Controller-->
+        <scene sceneID="yf8-bk-cbJ">
+            <objects>
+                <viewController storyboardIdentifier="EHIProfileEditBillingViewController" id="nf6-eP-LDV" customClass="EHIProfileEditBillingViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Plj-U6-LCr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XTe-D4-VWY">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HHH-85-ffC" userLabel="Content Container">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="278.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BILLING NAME" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9U8-4S-S5f" customClass="EHILabel">
+                                                <rect key="frame" x="20" y="30" width="335" height="19"/>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="16"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qwr-ec-0WS" userLabel="Field" customClass="EHITextField">
+                                                <rect key="frame" x="20" y="64" width="335" height="44"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="44" id="Fru-c9-nS2"/>
+                                                </constraints>
+                                                <color key="textColor" red="0.070000000300000004" green="0.050000000750000002" blue="0.050000000750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="next"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="nf6-eP-LDV" id="FyP-O6-lrc"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BILLING NUMBER" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Znh-ql-nPQ" customClass="EHILabel">
+                                                <rect key="frame" x="20" y="138" width="335" height="19"/>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="16"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="****57" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kvv-1L-qDh" customClass="EHILabel">
+                                                <rect key="frame" x="20" y="177" width="335" height="24"/>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="20"/>
+                                                <color key="textColor" red="0.27450980390000002" green="0.30196078430000001" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Billing account cannot be changed. Please contact your account admin for changes." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2FJ-Na-DKt" customClass="EHILabel">
+                                                <rect key="frame" x="20" y="221" width="335" height="37.5"/>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-LightItalic" family="DIN Next LT Pro" pointSize="16"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="2FJ-Na-DKt" firstAttribute="leading" secondItem="HHH-85-ffC" secondAttribute="leading" constant="20" id="0QP-EG-1hM"/>
+                                            <constraint firstItem="9U8-4S-S5f" firstAttribute="top" secondItem="HHH-85-ffC" secondAttribute="top" constant="30" id="5FE-lz-87z"/>
+                                            <constraint firstItem="qwr-ec-0WS" firstAttribute="leading" secondItem="HHH-85-ffC" secondAttribute="leading" constant="20" id="9z7-b0-mQY"/>
+                                            <constraint firstItem="kvv-1L-qDh" firstAttribute="top" secondItem="Znh-ql-nPQ" secondAttribute="bottom" constant="20" id="AcI-p0-Zzk"/>
+                                            <constraint firstItem="9U8-4S-S5f" firstAttribute="leading" secondItem="HHH-85-ffC" secondAttribute="leading" constant="20" id="Ak2-6f-kYe"/>
+                                            <constraint firstItem="kvv-1L-qDh" firstAttribute="leading" secondItem="HHH-85-ffC" secondAttribute="leading" constant="20" id="Dxa-p3-47l"/>
+                                            <constraint firstAttribute="bottom" secondItem="2FJ-Na-DKt" secondAttribute="bottom" constant="20" id="FG9-Sf-BpH"/>
+                                            <constraint firstAttribute="trailing" secondItem="Znh-ql-nPQ" secondAttribute="trailing" constant="20" id="P7v-fy-ftG"/>
+                                            <constraint firstAttribute="trailing" secondItem="kvv-1L-qDh" secondAttribute="trailing" constant="20" id="abd-18-syh"/>
+                                            <constraint firstAttribute="trailing" secondItem="9U8-4S-S5f" secondAttribute="trailing" constant="20" id="e8L-CB-vVv"/>
+                                            <constraint firstItem="Znh-ql-nPQ" firstAttribute="leading" secondItem="HHH-85-ffC" secondAttribute="leading" constant="20" id="f92-Xv-BOh"/>
+                                            <constraint firstAttribute="trailing" secondItem="qwr-ec-0WS" secondAttribute="trailing" constant="20" id="hYH-iP-uzc"/>
+                                            <constraint firstAttribute="trailing" secondItem="2FJ-Na-DKt" secondAttribute="trailing" constant="20" id="iY2-VO-eBb"/>
+                                            <constraint firstItem="2FJ-Na-DKt" firstAttribute="top" secondItem="kvv-1L-qDh" secondAttribute="bottom" constant="20" id="lnN-9v-9Iv"/>
+                                            <constraint firstItem="Znh-ql-nPQ" firstAttribute="top" secondItem="qwr-ec-0WS" secondAttribute="bottom" constant="30" id="oE3-ph-fQP"/>
+                                            <constraint firstItem="qwr-ec-0WS" firstAttribute="top" secondItem="9U8-4S-S5f" secondAttribute="bottom" constant="15" id="ybL-iV-lp4"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vy9-qy-YA6" userLabel="Divider">
+                                        <rect key="frame" x="0.0" y="278.5" width="375" height="1"/>
+                                        <color key="backgroundColor" red="0.83921568629999999" green="0.83921568629999999" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="JrZ-f2-Dat"/>
+                                        </constraints>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nmO-rx-6XW" userLabel="Make Preferred Container">
+                                        <rect key="frame" x="0.0" y="279.5" width="375" height="82"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Make this the default method of payment" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtF-Ov-Nyj" customClass="EHILabel">
+                                                <rect key="frame" x="54" y="20" width="301" height="42"/>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZx-pj-0C5" userLabel="Toggle Button" customClass="EHIToggleButton">
+                                                <rect key="frame" x="20" y="27" width="24" height="24"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="24" id="Bi0-bY-1fc"/>
+                                                    <constraint firstAttribute="width" constant="24" id="mLN-bA-7Hs"/>
+                                                </constraints>
+                                                <state key="normal">
+                                                    <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="QtF-Ov-Nyj" secondAttribute="bottom" constant="20" id="0GF-Mj-l8W"/>
+                                            <constraint firstAttribute="trailing" secondItem="QtF-Ov-Nyj" secondAttribute="trailing" constant="20" id="14R-Qm-N9v"/>
+                                            <constraint firstItem="KZx-pj-0C5" firstAttribute="leading" secondItem="nmO-rx-6XW" secondAttribute="leading" constant="20" id="KBV-Eh-T7a"/>
+                                            <constraint firstItem="QtF-Ov-Nyj" firstAttribute="top" secondItem="nmO-rx-6XW" secondAttribute="top" priority="999" constant="20" id="lMB-m1-B0E"/>
+                                            <constraint firstItem="KZx-pj-0C5" firstAttribute="centerY" secondItem="QtF-Ov-Nyj" secondAttribute="centerY" constant="-2" id="oWN-kj-dOd"/>
+                                            <constraint firstItem="QtF-Ov-Nyj" firstAttribute="leading" secondItem="KZx-pj-0C5" secondAttribute="trailing" constant="10" id="zDG-Gk-u6V"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="eCb-DT-jOd" appends="YES" id="2PK-iu-7F3"/>
+                                        </connections>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BP5-3F-WPv" userLabel="Preferred Container">
+                                        <rect key="frame" x="0.0" y="361.5" width="375" height="82"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is your default method of payment" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="is0-nQ-TRt" customClass="EHILabel">
+                                                <rect key="frame" x="44" y="20" width="311" height="42"/>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="icon_preferred" translatesAutoresizingMaskIntoConstraints="NO" id="NH9-Or-rqj">
+                                                <rect key="frame" x="20" y="34" width="14" height="14"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="14" id="yHM-25-zWv"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
+                                        <constraints>
+                                            <constraint firstItem="is0-nQ-TRt" firstAttribute="leading" secondItem="NH9-Or-rqj" secondAttribute="trailing" constant="10" id="CEy-mr-aLC"/>
+                                            <constraint firstAttribute="bottom" secondItem="is0-nQ-TRt" secondAttribute="bottom" constant="20" id="ZXq-1c-Odf"/>
+                                            <constraint firstItem="NH9-Or-rqj" firstAttribute="centerY" secondItem="is0-nQ-TRt" secondAttribute="centerY" id="cGA-jm-B7J"/>
+                                            <constraint firstAttribute="trailing" secondItem="is0-nQ-TRt" secondAttribute="trailing" constant="20" id="dpL-IM-w5F"/>
+                                            <constraint firstItem="NH9-Or-rqj" firstAttribute="leading" secondItem="BP5-3F-WPv" secondAttribute="leading" constant="20" id="du4-5W-h3e"/>
+                                            <constraint firstItem="is0-nQ-TRt" firstAttribute="top" secondItem="BP5-3F-WPv" secondAttribute="top" priority="999" constant="20" id="kyp-cc-1zp"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gNM-zg-8aj" customClass="EHIActionButton">
+                                        <rect key="frame" x="20" y="443.5" width="335" height="46"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="a9l-Qh-uH1"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="18"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" red="0.086274509799999996" green="0.60392156860000001" blue="0.35294117650000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapSave:" destination="nf6-eP-LDV" eventType="touchUpInside" id="97b-IT-Eso"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="gNM-zg-8aj" firstAttribute="top" secondItem="BP5-3F-WPv" secondAttribute="bottom" id="6lQ-2g-DeP"/>
+                                    <constraint firstItem="BP5-3F-WPv" firstAttribute="leading" secondItem="XTe-D4-VWY" secondAttribute="leading" id="8g3-nB-SyS"/>
+                                    <constraint firstAttribute="bottom" secondItem="gNM-zg-8aj" secondAttribute="bottom" constant="20" id="AKQ-Dz-RcT"/>
+                                    <constraint firstItem="HHH-85-ffC" firstAttribute="top" secondItem="XTe-D4-VWY" secondAttribute="top" id="EFQ-Ka-WdC"/>
+                                    <constraint firstItem="vy9-qy-YA6" firstAttribute="top" secondItem="HHH-85-ffC" secondAttribute="bottom" id="Tbk-NQ-ztM"/>
+                                    <constraint firstAttribute="trailing" secondItem="HHH-85-ffC" secondAttribute="trailing" id="Xb3-2e-qh8"/>
+                                    <constraint firstAttribute="trailing" secondItem="gNM-zg-8aj" secondAttribute="trailing" constant="20" id="YrE-BX-IG7"/>
+                                    <constraint firstAttribute="width" secondItem="HHH-85-ffC" secondAttribute="width" id="ZfN-0c-oJB"/>
+                                    <constraint firstItem="vy9-qy-YA6" firstAttribute="top" secondItem="HHH-85-ffC" secondAttribute="bottom" id="c9u-La-7oy"/>
+                                    <constraint firstAttribute="trailing" secondItem="nmO-rx-6XW" secondAttribute="trailing" id="d22-vb-AAw"/>
+                                    <constraint firstItem="HHH-85-ffC" firstAttribute="leading" secondItem="XTe-D4-VWY" secondAttribute="leading" id="fdI-l8-l9Z"/>
+                                    <constraint firstItem="gNM-zg-8aj" firstAttribute="leading" secondItem="XTe-D4-VWY" secondAttribute="leading" constant="20" id="g1e-et-TA4"/>
+                                    <constraint firstItem="nmO-rx-6XW" firstAttribute="leading" secondItem="XTe-D4-VWY" secondAttribute="leading" id="g3n-Ec-1mu"/>
+                                    <constraint firstItem="nmO-rx-6XW" firstAttribute="top" secondItem="vy9-qy-YA6" secondAttribute="bottom" id="lGh-Oa-ox0"/>
+                                    <constraint firstItem="BP5-3F-WPv" firstAttribute="top" secondItem="nmO-rx-6XW" secondAttribute="bottom" id="m82-z1-DNC"/>
+                                    <constraint firstItem="BP5-3F-WPv" firstAttribute="top" secondItem="nmO-rx-6XW" secondAttribute="bottom" id="nP5-cv-Qf9"/>
+                                    <constraint firstAttribute="trailing" secondItem="vy9-qy-YA6" secondAttribute="trailing" id="nUL-0S-GfI"/>
+                                    <constraint firstItem="vy9-qy-YA6" firstAttribute="leading" secondItem="XTe-D4-VWY" secondAttribute="leading" id="o8O-Nb-cWN"/>
+                                    <constraint firstAttribute="trailing" secondItem="BP5-3F-WPv" secondAttribute="trailing" id="zcb-K5-ePN"/>
+                                </constraints>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wnf-WA-sKJ" customClass="EHIActivityIndicator">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fLU-kl-V3L" firstAttribute="trailing" secondItem="Wnf-WA-sKJ" secondAttribute="trailing" id="Aj3-AH-e4w"/>
+                            <constraint firstItem="XTe-D4-VWY" firstAttribute="width" secondItem="Plj-U6-LCr" secondAttribute="width" id="Gc9-Uy-ORk"/>
+                            <constraint firstItem="fLU-kl-V3L" firstAttribute="trailing" secondItem="XTe-D4-VWY" secondAttribute="trailing" id="LHf-E9-hUm"/>
+                            <constraint firstItem="Wnf-WA-sKJ" firstAttribute="leading" secondItem="fLU-kl-V3L" secondAttribute="leading" id="X5n-bc-CSc"/>
+                            <constraint firstItem="fLU-kl-V3L" firstAttribute="bottom" secondItem="XTe-D4-VWY" secondAttribute="bottom" id="ZMd-Rb-VcY"/>
+                            <constraint firstItem="Wnf-WA-sKJ" firstAttribute="top" secondItem="Plj-U6-LCr" secondAttribute="top" id="f6G-Eg-jTt"/>
+                            <constraint firstItem="XTe-D4-VWY" firstAttribute="leading" secondItem="fLU-kl-V3L" secondAttribute="leading" id="vQw-8e-nqR"/>
+                            <constraint firstItem="XTe-D4-VWY" firstAttribute="top" secondItem="fLU-kl-V3L" secondAttribute="top" id="ya4-5J-vGJ"/>
+                            <constraint firstItem="fLU-kl-V3L" firstAttribute="bottom" secondItem="Wnf-WA-sKJ" secondAttribute="bottom" id="ynr-bM-fbC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fLU-kl-V3L"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Gc9-Uy-ORk"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="billingNameLabel" destination="9U8-4S-S5f" id="yHZ-qJ-Pm2"/>
+                        <outlet property="billingNumberLabel" destination="kvv-1L-qDh" id="xQ6-FO-omi"/>
+                        <outlet property="billingNumberTitleLabel" destination="Znh-ql-nPQ" id="5Rc-rh-2kl"/>
+                        <outlet property="billingTextField" destination="qwr-ec-0WS" id="5mk-Th-Cmp"/>
+                        <outlet property="loadingIndicator" destination="Wnf-WA-sKJ" id="ylk-sG-33R"/>
+                        <outlet property="makePreferredContainer" destination="nmO-rx-6XW" id="UAH-Il-5JL"/>
+                        <outlet property="preferredContainer" destination="BP5-3F-WPv" id="E6F-6r-2Uh"/>
+                        <outlet property="preferredLabel" destination="is0-nQ-TRt" id="MrQ-H6-kyr"/>
+                        <outlet property="saveButton" destination="gNM-zg-8aj" id="jbI-Jc-hcy"/>
+                        <outlet property="scrollView" destination="XTe-D4-VWY" id="71v-Li-3dr"/>
+                        <outlet property="togglePreferred" destination="KZx-pj-0C5" id="0aV-Z6-8rb"/>
+                        <outlet property="togglePreferredLabel" destination="QtF-Ov-Nyj" id="mK8-1X-mm5"/>
+                        <outlet property="warningLabel" destination="2FJ-Na-DKt" id="7D4-pv-mbH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ufK-KH-RYz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="eCb-DT-jOd">
+                    <connections>
+                        <action selector="didTapToggleDefault:" destination="nf6-eP-LDV" id="Cei-tu-Tz4"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="535" y="397"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_preferred" width="14" height="14"/>
+    </resources>
+</document>

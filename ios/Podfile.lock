@@ -1,0 +1,251 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - Appsee (2.4.1)
+  - CardIO (5.4.1)
+  - CocoaLumberjack (1.9.2):
+    - CocoaLumberjack/Extensions (= 1.9.2)
+  - CocoaLumberjack/Core (1.9.2)
+  - CocoaLumberjack/Extensions (1.9.2):
+    - CocoaLumberjack/Core
+  - CrittercismSDK (5.8.0)
+  - Expecta (1.0.6)
+  - ForeSee (5.0.3):
+    - ForeSee/Core (= 5.0.3)
+  - ForeSee/Core (5.0.3):
+    - ForeSee/CxMeasure
+  - ForeSee/CxMeasure (5.0.3)
+  - libPhoneNumber-iOS (0.9.13)
+  - Localytics (5.1.0)
+  - Masonry (1.1.0)
+  - OCHamcrest (7.1.0)
+  - OCMockito (5.1.0):
+    - OCHamcrest (~> 7.0)
+  - Specta (1.0.7)
+  - YOLOKit (11.2.0):
+    - YOLOKit/all (= 11.2.0)
+    - YOLOKit/any (= 11.2.0)
+    - YOLOKit/array (= 11.2.0)
+    - YOLOKit/base (= 11.2.0)
+    - YOLOKit/chunk (= 11.2.0)
+    - YOLOKit/concat (= 11.2.0)
+    - YOLOKit/dict (= 11.2.0)
+    - YOLOKit/each (= 11.2.0)
+    - YOLOKit/extend (= 11.2.0)
+    - YOLOKit/find (= 11.2.0)
+    - YOLOKit/first (= 11.2.0)
+    - YOLOKit/flatMap (= 11.2.0)
+    - YOLOKit/flatten (= 11.2.0)
+    - YOLOKit/fmap (= 11.2.0)
+    - YOLOKit/get (= 11.2.0)
+    - YOLOKit/groupBy (= 11.2.0)
+    - YOLOKit/has (= 11.2.0)
+    - YOLOKit/indexOf (= 11.2.0)
+    - YOLOKit/inject (= 11.2.0)
+    - YOLOKit/join (= 11.2.0)
+    - YOLOKit/last (= 11.2.0)
+    - YOLOKit/map (= 11.2.0)
+    - YOLOKit/max (= 11.2.0)
+    - YOLOKit/min (= 11.2.0)
+    - YOLOKit/none (= 11.2.0)
+    - YOLOKit/partition (= 11.2.0)
+    - YOLOKit/pick (= 11.2.0)
+    - YOLOKit/pluck (= 11.2.0)
+    - YOLOKit/pmap (= 11.2.0)
+    - YOLOKit/pop (= 11.2.0)
+    - YOLOKit/push (= 11.2.0)
+    - YOLOKit/reduce (= 11.2.0)
+    - YOLOKit/reverse (= 11.2.0)
+    - YOLOKit/rotate (= 11.2.0)
+    - YOLOKit/sample (= 11.2.0)
+    - YOLOKit/select (= 11.2.0)
+    - YOLOKit/shift (= 11.2.0)
+    - YOLOKit/shuffle (= 11.2.0)
+    - YOLOKit/skip (= 11.2.0)
+    - YOLOKit/slice (= 11.2.0)
+    - YOLOKit/snip (= 11.2.0)
+    - YOLOKit/sort (= 11.2.0)
+    - YOLOKit/split (= 11.2.0)
+    - YOLOKit/transpose (= 11.2.0)
+    - YOLOKit/uniq (= 11.2.0)
+    - YOLOKit/unshift (= 11.2.0)
+    - YOLOKit/upTo (= 11.2.0)
+    - YOLOKit/without (= 11.2.0)
+  - YOLOKit/all (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/any (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/array (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/base (11.2.0)
+  - YOLOKit/chunk (11.2.0):
+    - YOLOKit/base
+    - YOLOKit/slice
+  - YOLOKit/concat (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/dict (11.2.0):
+    - YOLOKit/base
+    - YOLOKit/transpose
+  - YOLOKit/each (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/extend (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/find (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/first (11.2.0):
+    - YOLOKit/base
+    - YOLOKit/slice
+  - YOLOKit/flatMap (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/flatten (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/fmap (11.2.0):
+    - YOLOKit/base
+    - YOLOKit/map
+  - YOLOKit/get (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/groupBy (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/has (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/indexOf (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/inject (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/join (11.2.0):
+    - YOLOKit/base
+    - YOLOKit/pluck
+  - YOLOKit/last (11.2.0):
+    - YOLOKit/base
+    - YOLOKit/slice
+  - YOLOKit/map (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/max (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/min (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/none (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/partition (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/pick (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/pluck (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/pmap (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/pop (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/push (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/reduce (11.2.0):
+    - YOLOKit/base
+    - YOLOKit/last
+  - YOLOKit/reverse (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/rotate (11.2.0):
+    - YOLOKit/base
+    - YOLOKit/concat
+    - YOLOKit/skip
+    - YOLOKit/snip
+  - YOLOKit/sample (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/select (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/shift (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/shuffle (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/skip (11.2.0):
+    - YOLOKit/base
+    - YOLOKit/last
+  - YOLOKit/slice (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/snip (11.2.0):
+    - YOLOKit/base
+    - YOLOKit/slice
+  - YOLOKit/sort (11.2.0):
+    - YOLOKit/all
+    - YOLOKit/base
+    - YOLOKit/transpose
+  - YOLOKit/split (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/transpose (11.2.0):
+    - YOLOKit/base
+    - YOLOKit/each
+    - YOLOKit/max
+    - YOLOKit/select
+  - YOLOKit/uniq (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/unshift (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/upTo (11.2.0):
+    - YOLOKit/base
+  - YOLOKit/without (11.2.0):
+    - YOLOKit/base
+
+DEPENDENCIES:
+  - AFNetworking (= 3.1.0)
+  - Appsee (= 2.4.1)
+  - CardIO (= 5.4.1)
+  - CocoaLumberjack (= 1.9.2)
+  - CrittercismSDK (= 5.8.0)
+  - Expecta (= 1.0.6)
+  - ForeSee (= 5.0.3)
+  - libPhoneNumber-iOS (= 0.9.13)
+  - Localytics (= 5.1.0)
+  - Masonry (= 1.1.0)
+  - OCHamcrest (= 7.1.0)
+  - OCMockito (= 5.1.0)
+  - Specta (= 1.0.7)
+  - YOLOKit (= 11.2.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - Appsee
+    - CardIO
+    - CocoaLumberjack
+    - CrittercismSDK
+    - Expecta
+    - ForeSee
+    - libPhoneNumber-iOS
+    - Localytics
+    - Masonry
+    - OCHamcrest
+    - OCMockito
+    - Specta
+    - YOLOKit
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Appsee: ab8b0317b0a5217d08637f61dbddaba2c9748f2a
+  CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
+  CocoaLumberjack: 628fca2e88ef06f7cf6817309aa405f325d9a6fa
+  CrittercismSDK: 8fef9e70af064d78d15348491aa4bd8e9c199a6e
+  Expecta: 3b6bd90a64b9a1dcb0b70aa0e10a7f8f631667d5
+  ForeSee: 22d45c23c2c234747b23ebdf404a83ee0b72b580
+  libPhoneNumber-iOS: e444379ac18bbfbdefad571da735b2cd7e096caa
+  Localytics: 420a187fd1ba94d4a2afff66e100d1569389d9e4
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  OCHamcrest: f91040b9a78196a9e26bc831265dda5ab6839590
+  OCMockito: f420d00dc5ffbb7452f9f499cd1766e6583d61a5
+  Specta: 3e1bd89c3517421982dc4d1c992503e48bd5fe66
+  YOLOKit: 0cc0566dff3edb1e6e19f14c5ea2e49cdcc8862a
+
+PODFILE CHECKSUM: c68ab9e1c409bb933393a0e0298df239abdc704c
+
+COCOAPODS: 1.5.2

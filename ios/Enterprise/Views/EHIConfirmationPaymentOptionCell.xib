@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EHIConfirmationPaymentOptionCell" id="y2h-zH-0cL" customClass="EHIConfirmationPaymentOptionCell">
+            <rect key="frame" x="0.0" y="0.0" width="449" height="214"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="449" height="214"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ov9-p0-7Tk">
+                        <rect key="frame" x="0.0" y="0.0" width="449" height="159"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BpV-kk-kMG">
+                                <rect key="frame" x="20" y="20" width="409" height="18"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Corporate Code" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="253" translatesAutoresizingMaskIntoConstraints="NO" id="Oxz-0h-X32" userLabel="Payment Title" customClass="EHILabel">
+                                <rect key="frame" x="20" y="48" width="409" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="8Tp-MW-IGK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Qb-e8-mfK" userLabel="Card Image Container">
+                                <rect key="frame" x="20" y="71" width="34" height="18"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="creditcard_03_amex" translatesAutoresizingMaskIntoConstraints="NO" id="q6U-Ga-Wu3">
+                                        <rect key="frame" x="0.0" y="0.0" width="26" height="18"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="q6U-Ga-Wu3" firstAttribute="top" secondItem="2Qb-e8-mfK" secondAttribute="top" id="ERy-31-caq"/>
+                                    <constraint firstItem="q6U-Ga-Wu3" firstAttribute="leading" secondItem="2Qb-e8-mfK" secondAttribute="leading" id="ket-Vk-jkz"/>
+                                    <constraint firstAttribute="width" constant="34" id="loJ-Jw-agk" customClass="EHIRestorableConstraint"/>
+                                    <constraint firstAttribute="bottom" secondItem="q6U-Ga-Wu3" secondAttribute="bottom" id="mAu-20-YeJ"/>
+                                </constraints>
+                            </view>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQF-AK-j72" userLabel="T&amp;C Container">
+                                <rect key="frame" x="20" y="107" width="409" height="30"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="arrow_smgreen" translatesAutoresizingMaskIntoConstraints="NO" id="aWb-oo-dD2">
+                                        <rect key="frame" x="277" y="9" width="9" height="13"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" priority="999" constant="13" id="2Yd-xb-iKF"/>
+                                            <constraint firstAttribute="width" constant="9" id="Awd-Xa-JMQ"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hT-Vp-R28" customClass="EHIButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="267" height="30"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="DIN Next LT Pro" pointSize="16"/>
+                                        <state key="normal" title="Prepayment Policy Terms &amp; Conditions">
+                                            <color key="titleColor" red="0.090196078430000007" green="0.59999999999999998" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapTermsButton:" destination="y2h-zH-0cL" eventType="touchUpInside" id="gMl-cE-C9e"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="aWb-oo-dD2" firstAttribute="leading" secondItem="6hT-Vp-R28" secondAttribute="trailing" priority="999" constant="10" id="76h-6Z-kcO"/>
+                                    <constraint firstAttribute="bottom" secondItem="6hT-Vp-R28" secondAttribute="bottom" id="MsW-U7-qbF"/>
+                                    <constraint firstItem="aWb-oo-dD2" firstAttribute="centerY" secondItem="6hT-Vp-R28" secondAttribute="centerY" priority="999" id="Ukp-Lh-7aK"/>
+                                    <constraint firstItem="6hT-Vp-R28" firstAttribute="top" secondItem="qQF-AK-j72" secondAttribute="top" id="ZFe-zj-vj1"/>
+                                    <constraint firstAttribute="height" constant="30" id="uG4-gv-ZuC" customClass="EHIRestorableConstraint"/>
+                                    <constraint firstItem="6hT-Vp-R28" firstAttribute="leading" secondItem="qQF-AK-j72" secondAttribute="leading" id="xI5-b2-4VV"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AccountName ******4675" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="253" translatesAutoresizingMaskIntoConstraints="NO" id="jDD-p5-X8E" userLabel="Value" customClass="EHILabel">
+                                <rect key="frame" x="54" y="70" width="375" height="19"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="16"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qQF-AK-j72" firstAttribute="top" secondItem="jDD-p5-X8E" secondAttribute="bottom" constant="18" id="59d-lJ-NyF"/>
+                            <constraint firstAttribute="bottom" secondItem="qQF-AK-j72" secondAttribute="bottom" constant="22" id="5PF-mz-ebV"/>
+                            <constraint firstItem="qQF-AK-j72" firstAttribute="leading" secondItem="Oxz-0h-X32" secondAttribute="leading" id="88q-k3-MIn"/>
+                            <constraint firstItem="jDD-p5-X8E" firstAttribute="top" secondItem="Oxz-0h-X32" secondAttribute="bottom" id="Iio-w4-IEQ"/>
+                            <constraint firstItem="Oxz-0h-X32" firstAttribute="leading" secondItem="ov9-p0-7Tk" secondAttribute="leading" constant="20" id="MDX-5X-luZ"/>
+                            <constraint firstItem="BpV-kk-kMG" firstAttribute="leading" secondItem="ov9-p0-7Tk" secondAttribute="leading" constant="20" id="OZR-Qq-FsO"/>
+                            <constraint firstItem="2Qb-e8-mfK" firstAttribute="leading" secondItem="Oxz-0h-X32" secondAttribute="leading" id="RyJ-4Q-lay"/>
+                            <constraint firstAttribute="trailing" secondItem="Oxz-0h-X32" secondAttribute="trailing" constant="20" id="TYq-sF-Jck"/>
+                            <constraint firstItem="jDD-p5-X8E" firstAttribute="trailing" secondItem="Oxz-0h-X32" secondAttribute="trailing" id="Tkg-B6-hh3"/>
+                            <constraint firstAttribute="trailing" secondItem="BpV-kk-kMG" secondAttribute="trailing" constant="20" id="WYQ-CR-LRN"/>
+                            <constraint firstItem="Oxz-0h-X32" firstAttribute="top" secondItem="BpV-kk-kMG" secondAttribute="bottom" constant="10" id="a34-HH-Ix4"/>
+                            <constraint firstItem="jDD-p5-X8E" firstAttribute="leading" secondItem="2Qb-e8-mfK" secondAttribute="trailing" id="a82-ms-ZoC"/>
+                            <constraint firstItem="qQF-AK-j72" firstAttribute="trailing" secondItem="Oxz-0h-X32" secondAttribute="trailing" id="iZX-0E-qXD"/>
+                            <constraint firstItem="BpV-kk-kMG" firstAttribute="top" secondItem="ov9-p0-7Tk" secondAttribute="top" constant="20" id="yMW-bY-5aG"/>
+                            <constraint firstItem="2Qb-e8-mfK" firstAttribute="centerY" secondItem="jDD-p5-X8E" secondAttribute="centerY" id="z7A-V4-OVU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ov9-p0-7Tk" firstAttribute="leading" secondItem="y2h-zH-0cL" secondAttribute="leading" id="EgP-3T-mr8"/>
+                <constraint firstItem="ov9-p0-7Tk" firstAttribute="top" secondItem="y2h-zH-0cL" secondAttribute="top" id="ItN-DQ-owk"/>
+                <constraint firstAttribute="trailing" secondItem="ov9-p0-7Tk" secondAttribute="trailing" id="NQc-Ei-GtZ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="v7T-l9-uAP"/>
+            <size key="customSize" width="449" height="214"/>
+            <connections>
+                <outlet property="cardImage" destination="q6U-Ga-Wu3" id="A3I-lJ-KX5"/>
+                <outlet property="contentContainer" destination="ov9-p0-7Tk" id="Ori-1f-f4J"/>
+                <outlet property="creditCardWidthConstraint" destination="loJ-Jw-agk" id="6qt-rm-qbU"/>
+                <outlet property="paymentTitleLabel" destination="Oxz-0h-X32" id="vcT-ax-YMk"/>
+                <outlet property="policiesButton" destination="6hT-Vp-R28" id="nn6-CM-uwB"/>
+                <outlet property="termsContainer" destination="qQF-AK-j72" id="6mK-Wl-pf0"/>
+                <outlet property="termsHeightConstraint" destination="uG4-gv-ZuC" id="dN6-kB-24S"/>
+                <outlet property="titleLabel" destination="BpV-kk-kMG" id="9HS-Rp-JHp"/>
+                <outlet property="valueLabel" destination="jDD-p5-X8E" id="kIA-p7-Odu"/>
+            </connections>
+            <point key="canvasLocation" x="383.5" y="270"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="arrow_smgreen" width="8" height="13"/>
+        <image name="creditcard_03_amex" width="26" height="18"/>
+    </resources>
+</document>

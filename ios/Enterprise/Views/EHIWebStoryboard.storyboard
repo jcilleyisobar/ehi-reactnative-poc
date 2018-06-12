@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Regular.ttf">
+            <string>SourceSansPro-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Web View Controller-->
+        <scene sceneID="Nc8-Zz-rm4">
+            <objects>
+                <viewController storyboardIdentifier="EHIWebViewController" id="Wvn-ZX-UfD" customClass="EHIWebViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YHx-Hj-rqG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cq1-Jc-eIO">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="512" translatesAutoresizingMaskIntoConstraints="NO" id="5za-eP-lhz" customClass="EHILabel">
+                                        <rect key="frame" x="40" y="11" width="287" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="K1E-IB-Xij"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="DIN Next LT Pro" pointSize="18"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="K1E-IB-Xij"/>
+                                            </mask>
+                                        </variation>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qVC-xC-BCX" customClass="EHIButton">
+                                        <rect key="frame" x="337" y="11" width="22" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22" id="NMj-U7-FU4"/>
+                                            <constraint firstAttribute="width" constant="22" id="j1z-VR-Fs3"/>
+                                        </constraints>
+                                        <connections>
+                                            <action selector="didTapDismiss:" destination="Wvn-ZX-UfD" eventType="touchUpInside" id="5bv-jR-xVN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.090196078430000007" green="0.59999999999999998" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="5za-eP-lhz" firstAttribute="centerX" secondItem="cq1-Jc-eIO" secondAttribute="centerX" id="80f-cN-gUJ"/>
+                                    <constraint firstItem="5za-eP-lhz" firstAttribute="bottom" secondItem="cq1-Jc-eIO" secondAttribute="bottomMargin" id="D90-Yk-Y1m"/>
+                                    <constraint firstAttribute="trailing" secondItem="qVC-xC-BCX" secondAttribute="trailing" constant="16" id="DXQ-IU-dy9"/>
+                                    <constraint firstItem="5za-eP-lhz" firstAttribute="top" secondItem="cq1-Jc-eIO" secondAttribute="top" constant="20" id="Dp4-i3-JTH"/>
+                                    <constraint firstItem="qVC-xC-BCX" firstAttribute="leading" secondItem="5za-eP-lhz" secondAttribute="trailing" constant="10" id="VaX-wr-vtC"/>
+                                    <constraint firstItem="qVC-xC-BCX" firstAttribute="centerY" secondItem="cq1-Jc-eIO" secondAttribute="centerY" id="l2g-J7-slO"/>
+                                    <constraint firstItem="5za-eP-lhz" firstAttribute="centerY" secondItem="cq1-Jc-eIO" secondAttribute="centerY" id="rYz-3J-7Nh"/>
+                                    <constraint firstItem="5za-eP-lhz" firstAttribute="leading" secondItem="cq1-Jc-eIO" secondAttribute="leading" constant="40" id="rgt-Hj-ZT2"/>
+                                    <constraint firstAttribute="height" constant="44" id="vI4-ln-Hzv" customClass="EHIRestorableConstraint"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="80f-cN-gUJ"/>
+                                        <exclude reference="D90-Yk-Y1m"/>
+                                        <exclude reference="Dp4-i3-JTH"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ag3-cH-ClA">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ett-La-t9s" customClass="EHIActivityIndicator">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="teR-LI-f1x" firstAttribute="trailing" secondItem="ag3-cH-ClA" secondAttribute="trailing" id="0ho-If-M2G"/>
+                            <constraint firstItem="cq1-Jc-eIO" firstAttribute="leading" secondItem="teR-LI-f1x" secondAttribute="leading" id="1ua-xW-alW"/>
+                            <constraint firstItem="teR-LI-f1x" firstAttribute="trailing" secondItem="cq1-Jc-eIO" secondAttribute="trailing" id="Iyq-su-fGf"/>
+                            <constraint firstAttribute="bottom" secondItem="ett-La-t9s" secondAttribute="bottom" id="JA1-Bv-lmA"/>
+                            <constraint firstItem="teR-LI-f1x" firstAttribute="top" secondItem="cq1-Jc-eIO" secondAttribute="top" id="VSs-wN-411"/>
+                            <constraint firstItem="ett-La-t9s" firstAttribute="leading" secondItem="teR-LI-f1x" secondAttribute="leading" id="bcd-C5-aFU"/>
+                            <constraint firstItem="ag3-cH-ClA" firstAttribute="leading" secondItem="teR-LI-f1x" secondAttribute="leading" id="cG9-vQ-kDz"/>
+                            <constraint firstItem="teR-LI-f1x" firstAttribute="trailing" secondItem="ett-La-t9s" secondAttribute="trailing" id="eGj-tc-Zcp"/>
+                            <constraint firstAttribute="bottom" secondItem="ag3-cH-ClA" secondAttribute="bottom" id="fAH-qa-K6M"/>
+                            <constraint firstItem="ett-La-t9s" firstAttribute="top" secondItem="YHx-Hj-rqG" secondAttribute="top" id="oqa-PJ-eCT"/>
+                            <constraint firstItem="ag3-cH-ClA" firstAttribute="top" secondItem="cq1-Jc-eIO" secondAttribute="bottom" id="r6Y-zm-HTp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="teR-LI-f1x"/>
+                    </view>
+                    <connections>
+                        <outlet property="closeButton" destination="qVC-xC-BCX" id="Uo2-zH-sUm"/>
+                        <outlet property="loadingIndicator" destination="ett-La-t9s" id="wg8-BX-utm"/>
+                        <outlet property="navigationViewHeightConstraint" destination="vI4-ln-Hzv" id="Ypl-Yq-E0h"/>
+                        <outlet property="titleLabel" destination="5za-eP-lhz" id="bN1-tu-dGa"/>
+                        <outlet property="webView" destination="ag3-cH-ClA" id="2eO-L1-NEz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4q9-lf-eC0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="249" y="313"/>
+        </scene>
+    </scenes>
+</document>

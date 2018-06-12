@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="EHIContractNotificationView" id="fWW-2w-Nkx" customClass="EHIContractNotificationView">
+            <rect key="frame" x="0.0" y="0.0" width="411" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aGs-C6-mfY" userLabel="Container View">
+                    <rect key="frame" x="20" y="10" width="371" height="55"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="envelope_green" translatesAutoresizingMaskIntoConstraints="NO" id="79q-Gn-nFG">
+                            <rect key="frame" x="0.0" y="18.5" width="27" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="27" id="LOF-Db-8YD"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upon modifying, tip details will be sent to the administrator/s for" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LGs-Gc-vMR" customClass="EHILabel">
+                            <rect key="frame" x="37" y="0.0" width="334" height="55"/>
+                            <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="16"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="LGs-Gc-vMR" secondAttribute="trailing" id="HxU-ZQ-hN9"/>
+                        <constraint firstItem="79q-Gn-nFG" firstAttribute="centerY" secondItem="LGs-Gc-vMR" secondAttribute="centerY" id="IcF-tr-Bvf"/>
+                        <constraint firstAttribute="bottom" secondItem="LGs-Gc-vMR" secondAttribute="bottom" id="XZ3-KB-SVp"/>
+                        <constraint firstItem="LGs-Gc-vMR" firstAttribute="leading" secondItem="79q-Gn-nFG" secondAttribute="trailing" constant="10" id="qXb-Bw-3FE"/>
+                        <constraint firstItem="79q-Gn-nFG" firstAttribute="leading" secondItem="aGs-C6-mfY" secondAttribute="leading" id="trl-gf-G1i"/>
+                        <constraint firstItem="LGs-Gc-vMR" firstAttribute="top" secondItem="aGs-C6-mfY" secondAttribute="top" id="xjo-Di-f0Q"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.93333333330000001" green="0.93333333330000001" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="aGs-C6-mfY" secondAttribute="trailing" constant="20" id="Bsy-Ov-bFT"/>
+                <constraint firstItem="aGs-C6-mfY" firstAttribute="leading" secondItem="fWW-2w-Nkx" secondAttribute="leading" constant="20" id="aeI-qt-KB3"/>
+                <constraint firstAttribute="bottom" secondItem="aGs-C6-mfY" secondAttribute="bottom" constant="10" id="gCR-si-MsC"/>
+                <constraint firstItem="aGs-C6-mfY" firstAttribute="top" secondItem="fWW-2w-Nkx" secondAttribute="top" constant="10" id="rru-H8-4ge"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="sQK-Dq-Pj5"/>
+            <connections>
+                <outlet property="containerView" destination="aGs-C6-mfY" id="bYL-9x-bAm"/>
+                <outlet property="titleLabel" destination="LGs-Gc-vMR" id="kc1-9B-YAX"/>
+            </connections>
+            <point key="canvasLocation" x="41" y="214"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="envelope_green" width="26" height="18"/>
+    </resources>
+</document>

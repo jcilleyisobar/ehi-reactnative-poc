@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Light.ttf">
+            <string>SourceSansPro-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Signin Recovery View Controller-->
+        <scene sceneID="8e8-vn-aj4">
+            <objects>
+                <viewController storyboardIdentifier="EHISigninRecoveryViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yIe-Qv-epD" customClass="EHISigninRecoveryViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Q3e-lH-bWF">
+                        <rect key="frame" x="0.0" y="0.0" width="400" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23N-fd-F2z" userLabel="Container">
+                                <rect key="frame" x="30" y="30" width="340" height="240"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Forgot Member Number" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="511" translatesAutoresizingMaskIntoConstraints="NO" id="VXo-hC-9Ac" userLabel="Forgot Member Number" customClass="EHILabel">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="29"/>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="24"/>
+                                        <color key="textColor" red="0.070000000300000004" green="0.050000000750000002" blue="0.050000000750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="265" translatesAutoresizingMaskIntoConstraints="NO" id="gWX-0i-LJS" customClass="EHILabel">
+                                        <rect key="frame" x="0.0" y="44" width="340" height="79"/>
+                                        <string key="text">If you have forgotten your member number or need personal assistance call 1-866-674-6222 Monday through Friday, 8am to 5pm Central Time.</string>
+                                        <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="14"/>
+                                        <color key="textColor" red="0.070000000300000004" green="0.050000000750000002" blue="0.050000000750000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jjf-Ix-FWb" userLabel="Contact Us Button" customClass="EHIActionButton">
+                                        <rect key="frame" x="0.0" y="138" width="340" height="46"/>
+                                        <color key="backgroundColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="otO-Kr-C3E"/>
+                                        </constraints>
+                                        <state key="normal" title="Contact Us">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapContactUsButton:" destination="yIe-Qv-epD" eventType="touchUpInside" id="p4T-P7-BuS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjL-cT-quN" userLabel="Cancel Button" customClass="EHIActionButton">
+                                        <rect key="frame" x="0.0" y="194" width="340" height="46"/>
+                                        <color key="backgroundColor" red="0.40000000596046448" green="0.40000000596046448" blue="0.40000000596046448" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="46" id="amv-DU-2Tb"/>
+                                        </constraints>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapCancelButton:" destination="yIe-Qv-epD" eventType="touchUpInside" id="UE4-mq-4JL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHC-WK-IHD" userLabel="Close Button">
+                                        <rect key="frame" x="321" y="0.0" width="19" height="19"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="19" id="GmV-mm-WAq"/>
+                                            <constraint firstAttribute="height" constant="19" id="mnv-up-dbR"/>
+                                        </constraints>
+                                        <state key="normal" image="icon_x_gray_02">
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didTapCancelButton:" destination="yIe-Qv-epD" eventType="touchUpInside" id="42f-RG-PXs"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="VXo-hC-9Ac" firstAttribute="top" secondItem="23N-fd-F2z" secondAttribute="top" id="1Bf-Il-p07"/>
+                                    <constraint firstItem="Jjf-Ix-FWb" firstAttribute="top" secondItem="gWX-0i-LJS" secondAttribute="bottom" constant="15" id="25e-Ec-30a"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jjf-Ix-FWb" secondAttribute="trailing" id="2hE-sZ-PlT"/>
+                                    <constraint firstItem="VXo-hC-9Ac" firstAttribute="leading" secondItem="23N-fd-F2z" secondAttribute="leading" id="92L-9o-Dqu"/>
+                                    <constraint firstAttribute="trailing" secondItem="gWX-0i-LJS" secondAttribute="trailing" id="95o-Z6-uhH"/>
+                                    <constraint firstItem="gWX-0i-LJS" firstAttribute="leading" secondItem="23N-fd-F2z" secondAttribute="leading" id="Ceu-cb-bGz"/>
+                                    <constraint firstItem="UHC-WK-IHD" firstAttribute="leading" secondItem="VXo-hC-9Ac" secondAttribute="trailing" constant="10" id="FeZ-FK-pHz"/>
+                                    <constraint firstItem="kjL-cT-quN" firstAttribute="top" secondItem="gWX-0i-LJS" secondAttribute="bottom" constant="15" id="WG3-IT-oTb"/>
+                                    <constraint firstItem="kjL-cT-quN" firstAttribute="leading" secondItem="23N-fd-F2z" secondAttribute="leading" id="XTp-qs-PZM"/>
+                                    <constraint firstAttribute="trailing" secondItem="kjL-cT-quN" secondAttribute="trailing" id="Z5o-FP-nES"/>
+                                    <constraint firstItem="Jjf-Ix-FWb" firstAttribute="leading" secondItem="23N-fd-F2z" secondAttribute="leading" id="bIF-FQ-ieM"/>
+                                    <constraint firstItem="gWX-0i-LJS" firstAttribute="top" secondItem="VXo-hC-9Ac" secondAttribute="bottom" constant="15" id="bne-Sg-GNM"/>
+                                    <constraint firstItem="UHC-WK-IHD" firstAttribute="top" secondItem="23N-fd-F2z" secondAttribute="top" id="fGh-b2-GTY"/>
+                                    <constraint firstAttribute="bottom" secondItem="kjL-cT-quN" secondAttribute="bottom" id="i4S-gg-JOg"/>
+                                    <constraint firstItem="kjL-cT-quN" firstAttribute="top" secondItem="Jjf-Ix-FWb" secondAttribute="bottom" constant="10" id="nNT-qd-08h"/>
+                                    <constraint firstAttribute="trailing" secondItem="UHC-WK-IHD" secondAttribute="trailing" id="ud7-zw-pSG"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="WG3-IT-oTb"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="23N-fd-F2z" firstAttribute="leading" secondItem="H44-Bt-VhP" secondAttribute="leading" constant="30" id="31B-BR-DVa"/>
+                            <constraint firstItem="23N-fd-F2z" firstAttribute="top" secondItem="Q3e-lH-bWF" secondAttribute="topMargin" constant="30" id="7kC-Lo-5tc"/>
+                            <constraint firstAttribute="bottom" secondItem="23N-fd-F2z" secondAttribute="bottom" constant="30" id="Gyh-M2-nDW"/>
+                            <constraint firstItem="H44-Bt-VhP" firstAttribute="trailing" secondItem="23N-fd-F2z" secondAttribute="trailing" constant="30" id="aA0-UT-QVj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="H44-Bt-VhP"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="400" height="300"/>
+                    <connections>
+                        <outlet property="actionButton" destination="Jjf-Ix-FWb" id="XGi-OT-QTT"/>
+                        <outlet property="cancelButton" destination="kjL-cT-quN" id="Txy-yt-phf"/>
+                        <outlet property="contentContainer" destination="23N-fd-F2z" id="43J-ZQ-ZCO"/>
+                        <outlet property="detailsLabel" destination="gWX-0i-LJS" id="lFi-hN-Ya8"/>
+                        <outlet property="titleLabel" destination="VXo-hC-9Ac" id="Dov-ux-U6y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vW6-Jv-7gt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="336" y="152"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_x_gray_02" width="19" height="19"/>
+    </resources>
+</document>
