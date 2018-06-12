@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="LicenseInfoFragmentBinding">
+        <import type="com.ehi.enterprise.android.utils.databinding.adapter.AppAdapters.SymbolPosition" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:descendantFocusability="beforeDescendants"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextViewSize12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin='@dimen/padding_base'
+                    android:fontFamily="@font/source_sans_light_italic"
+                    android:text="@string/gdpr_my_profile"
+                    android:textColor="@color/ehi_gray"
+                    app:requiredField="@{SymbolPosition.BEFORE}" />
+
+
+                <TextView
+                    style="@style/TextViewSize14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginStart="@dimen/padding_base"
+                    android:layout_marginEnd="@dimen/padding_base"
+                    android:text="@string/profile_edit_country_title"
+                    android:textAllCaps="true"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_bold"
+                    app:requiredField="@{SymbolPosition.AFTER}"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/search_input_height"
+                    android:layout_marginBottom="@dimen/padding_base"
+                    android:layout_marginStart="@dimen/padding_base"
+                    android:layout_marginEnd="@dimen/padding_base"
+                    android:background="@drawable/edit_text_white_border"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/country"
+                        style="@style/TextViewSize18"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:paddingStart="@dimen/padding_base"
+                        android:paddingEnd="@dimen/search_input_height"
+                        android:textColor="@color/ehi_black"
+                        android:fontFamily="@font/source_sans_light"
+                        tools:text="USA"
+                        android:maxLines="1"/>
+
+                    <ImageView
+                        android:layout_width="@dimen/search_input_height"
+                        android:layout_height="@dimen/search_input_height"
+                        android:layout_alignParentEnd="true"
+                        android:background="@drawable/edit_text_green_border"
+                        android:rotation="90"
+                        android:scaleType="center"
+                        android:src="@drawable/arrow_green" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ehi_grey_header_bg" />
+
+                <LinearLayout
+                    android:id="@+id/subdivision_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/TextViewSize14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginStart="@dimen/padding_base"
+                        android:layout_marginEnd="@dimen/padding_base"
+                        android:layout_marginTop="@dimen/padding_base"
+                        android:text="@string/profile_edit_issuing_authority_title"
+                        android:textAllCaps="true"
+                        android:textColor="@color/ehi_black"
+                        android:fontFamily="@font/source_sans_bold"
+                        app:requiredField="@{SymbolPosition.AFTER}"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/search_input_height"
+                        android:layout_marginBottom="@dimen/padding_base"
+                        android:layout_marginStart="@dimen/padding_base"
+                        android:layout_marginEnd="@dimen/padding_base"
+                        android:background="@drawable/edit_text_white_border"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/subdivision"
+                            style="@style/TextViewSize18"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:paddingStart="@dimen/padding_base"
+                            android:paddingEnd="@dimen/search_input_height"
+                            android:textColor="@color/ehi_black"
+                            android:fontFamily="@font/source_sans_light"
+                            tools:text="California"
+                            android:maxLines="1"/>
+
+                        <ImageView
+                            android:layout_width="@dimen/search_input_height"
+                            android:layout_height="@dimen/search_input_height"
+                            android:layout_alignParentEnd="true"
+                            android:background="@drawable/edit_text_green_border"
+                            android:rotation="90"
+                            android:scaleType="center"
+                            android:src="@drawable/arrow_green" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/ehi_grey_header_bg" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/TextViewSize14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/padding_base"
+                    android:layout_marginEnd="@dimen/padding_base"
+                    android:layout_marginTop="@dimen/padding_base"
+                    android:text="@string/profile_edit_license_number_title"
+                    android:textAllCaps="true"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_bold"
+                    app:requiredField="@{SymbolPosition.AFTER}"
+                    />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/driver_license_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorEnabled="true">
+
+                    <EditText
+                        android:id="@+id/driver_license"
+                        style="@style/InputField"
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="@dimen/padding_base"
+                        android:layout_marginEnd="@dimen/padding_base"
+                        android:background="@drawable/edit_text_transparent_dark_border"
+                        android:selectAllOnFocus="true"
+                        app:sensitiveInformation="@{true}"
+                        app:cleanable="@{true}"
+                        android:fontFamily="@font/source_sans_light"
+                        tools:text="****************3254"
+                        android:maxLines="1"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ehi_grey_header_bg" />
+
+                <LinearLayout
+                    android:id="@+id/issue_date_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <TextView
+                        style="@style/TextViewSize14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/padding_base"
+                        android:layout_marginEnd="@dimen/padding_base"
+                        android:layout_marginTop="@dimen/padding_base"
+                        android:text="@string/profile_edit_license_issue_date"
+                        android:textAllCaps="true"
+                        android:textColor="@color/ehi_black"
+                        android:fontFamily="@font/source_sans_bold"
+                        app:requiredField="@{SymbolPosition.AFTER}"
+                        />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/issue_date_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:errorEnabled="true">
+
+                        <EditText
+                            android:id="@+id/issue_date"
+                            style="@style/TextViewSize18"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/search_input_height"
+                            android:layout_marginBottom="@dimen/padding_base"
+                            android:layout_marginStart="@dimen/padding_base"
+                            android:layout_marginEnd="@dimen/padding_base"
+                            android:background="@drawable/edit_text_transparent_dark_border"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:paddingStart="@dimen/padding_base"
+                            android:paddingEnd="@dimen/padding_base"
+                            android:textColor="@color/ehi_black"
+                            app:cleanable="@{true}"
+                            android:fontFamily="@font/source_sans_light"
+                            tools:text="05/23/2018"
+                            android:maxLines="1"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/ehi_grey_header_bg" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/expiration_date_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <TextView
+                        style="@style/TextViewSize14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/padding_base"
+                        android:layout_marginEnd="@dimen/padding_base"
+                        android:layout_marginTop="@dimen/padding_base"
+                        android:text="@string/profile_edit_license_expiration_date_title"
+                        android:textAllCaps="true"
+                        android:textColor="@color/ehi_black"
+                        android:fontFamily="@font/source_sans_bold"
+                        app:requiredField="@{SymbolPosition.AFTER}"
+                        />
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/expiration_date_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:errorEnabled="true">
+
+                        <EditText
+                            android:id="@+id/expiration_date"
+                            style="@style/TextViewSize18"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/search_input_height"
+                            android:layout_marginBottom="@dimen/padding_base"
+                            android:layout_marginStart="@dimen/padding_base"
+                            android:layout_marginEnd="@dimen/padding_base"
+                            android:background="@drawable/edit_text_transparent_dark_border"
+                            android:focusable="false"
+                            android:gravity="center_vertical"
+                            android:paddingStart="@dimen/padding_base"
+                            android:paddingEnd="@dimen/padding_base"
+                            app:cleanable="@{true}"
+                            android:textColor="@color/ehi_black"
+                            android:fontFamily="@font/source_sans_light"
+                            tools:text="05/23/2018"
+                            android:maxLines="1"/>
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/ehi_grey_header_bg" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <com.ehi.enterprise.android.ui.widget.DisabledClickButton
+            android:id="@+id/save_changes"
+            style="@style/GreenContinueButton"
+            android:layout_width="match_parent"
+            android:text="@string/profile_edit_driver_license_save_title"
+            android:textColor="@drawable/button_inactive_white"
+            android:fontFamily="@font/source_sans_bold" />
+    </LinearLayout>
+</layout>

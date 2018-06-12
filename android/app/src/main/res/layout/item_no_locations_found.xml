@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data clas="NoLocationItemBinding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="15dp"
+        android:paddingLeft="@dimen/padding_base"
+        android:paddingRight="@dimen/padding_base"
+        android:paddingTop="15dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_alert_02"/>
+
+        <TextView
+            style="@style/TextViewSize18"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:text="@string/locations_map_fallback_title"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_light"/>
+
+    </LinearLayout>
+</layout>

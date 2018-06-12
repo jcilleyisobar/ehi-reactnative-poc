@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="MyRentalsPastTripItemBinding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/header_divider" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/ehi_grey_header_bg" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/header_divider" />
+
+        <TextView
+            android:id="@+id/header_text"
+            style="@style/TextViewSize18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:textAllCaps="true"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_bold"
+            tools:text="Header" />
+
+        <TextView
+            android:id="@+id/rental_pickup_location"
+            style="@style/TextViewSize26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_light"
+            tools:text="Chicago O'Hare Int. Airport" />
+
+        <TextView
+            android:id="@+id/rental_return_location"
+            style="@style/TextViewSize26"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textColor="@color/ehi_black"
+            android:visibility="gone"
+            android:fontFamily="@font/source_sans_light"
+            tools:text="Chicago O'Hare Int. Airport" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:weightSum="2">
+
+            <TextView
+                style="@style/TextViewSize18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/past_rentals_rental_agreement"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light" />
+
+            <TextView
+                android:id="@+id/rental_agreement_number"
+                style="@style/TextViewSize18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light"
+                tools:text="12301723" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/vehicle_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:weightSum="2">
+
+            <TextView
+                style="@style/TextViewSize18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/past_rentals_vehicle_drive"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light" />
+
+            <TextView
+                android:id="@+id/rental_vehicle"
+                style="@style/TextViewSize18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light"
+                tools:text="White Nissan Altima" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/payment_separator"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/ehi_gray" />
+
+        <LinearLayout
+            android:id="@+id/total_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:visibility="gone"
+            android:weightSum="2"
+            tools:visibility="visible">
+
+            <TextView
+                style="@style/TextViewSize18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:text="@string/past_rentals_total_prefix"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light" />
+
+            <TextView
+                android:id="@+id/total_value"
+                style="@style/TextViewSize18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light"
+                tools:text="$142.22 USD" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/payment_method"
+            style="@style/TextViewSize18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/past_rentals_paid"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_light" />
+
+        <TextView
+            android:id="@+id/payment_info"
+            style="@style/TextViewSize18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_light"
+            tools:text="********** 3452" />
+
+        <TextView
+            android:id="@+id/receipt_button"
+            style="@style/GreenContinueButton"
+            android:layout_margin="@dimen/padding_base"
+            android:text="@string/past_rentals_view_receipt_title"
+            android:fontFamily="@font/source_sans_bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:visibility="gone"
+            android:weightSum="2">
+
+            <TextView
+                style="@style/TextViewSize16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light"
+                tools:text="Points Earned" />
+
+            <TextView
+                android:id="@+id/points_earned_value"
+                style="@style/TextViewSize16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light"
+                tools:text="140" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/email_receipt_button"
+            style="@style/GreenContinueButton"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:fontFamily="@font/source_sans_bold" />
+    </LinearLayout>
+</layout>

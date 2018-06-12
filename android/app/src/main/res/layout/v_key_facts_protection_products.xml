@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data class = "ProtectionProductsViewBinding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextViewSize22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_base"
+            android:layout_marginTop="16dp"
+            android:text="@string/key_facts_protection_products_title"
+            android:textColor="@color/ehi_black"
+            android:textStyle="bold"
+            android:fontFamily="@font/source_sans_bold"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+
+        <TextView
+            android:id="@+id/included_protections_subtitle"
+            style="@style/TextViewSize18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_base"
+            android:layout_marginRight="@dimen/padding_base"
+            android:text="@string/key_facts_included_protections_subtitle"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_light"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="8dp"/>
+
+        <View
+            android:id="@+id/included_protections_divider"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/ehi_dark_rule"/>
+
+        <LinearLayout
+            android:id="@+id/included_protections"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+        <View
+            android:background="@color/ehi_black"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="2px"/>
+
+        <TextView
+            android:id="@+id/optional_protections_subtitle"
+            style="@style/TextViewSize18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_base"
+            android:layout_marginRight="@dimen/padding_base"
+            android:text="@string/key_facts_optional_bookable_protections_subtitle"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_light"/>
+
+        <LinearLayout
+            android:id="@+id/optional_protections"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+    </LinearLayout>
+</layout>

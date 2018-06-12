@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="EnrollThirdStepViewBinding">
+
+        <import type="com.ehi.enterprise.android.utils.databinding.adapter.AppAdapters.SymbolPosition" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/enroll_step_title_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/section_divider" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/review_section_divider_margin"
+                android:background="@color/ehi_grey_header_bg" />
+
+            <TextView
+                android:id="@+id/enroll_step_title"
+                style="@style/TextViewSize18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/section_header_background"
+                android:fontFamily="@font/source_sans_bold"
+                android:paddingBottom="@dimen/padding_xsmall"
+                android:paddingEnd="@dimen/padding_base"
+                android:paddingStart="@dimen/padding_base"
+                android:paddingTop="@dimen/padding_xsmall"
+                android:textColor="@color/ehi_black"
+                tools:text="STEP 3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/padding_base"
+            android:paddingStart="@dimen/padding_base"
+            android:paddingTop="@dimen/padding_large">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+
+
+            <TextView
+                style="@style/TextViewSize12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_xlarge"
+                android:layout_marginTop="@dimen/margin_small"
+                android:fontFamily="@font/source_sans_light_italic"
+                android:text="@string/gdpr_enroll"
+                android:textColor="@color/ehi_gray"
+                app:requiredField="@{SymbolPosition.BEFORE}" />
+
+
+            <TextView
+                style="@style/TextViewSize14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_bold"
+                android:text="@string/enroll_phone_number_title"
+                android:textAllCaps="true"
+                android:textColor="@color/ehi_black"
+                app:requiredField="@{SymbolPosition.AFTER}" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/phone_number_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:id="@+id/phone_number"
+                    style="@style/InputField"
+                    android:background="@drawable/edit_text_transparent_dark_border"
+                    android:fontFamily="@font/source_sans_light"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:nextFocusForward="@+id/email"
+                    app:sensitiveInformation="@{true}" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <TextView
+                style="@style/TextViewSize14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/source_sans_bold"
+                android:text="@string/enroll_email_title"
+                android:textAllCaps="true"
+                android:textColor="@color/ehi_black"
+                app:requiredField="@{SymbolPosition.AFTER}" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/email_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true">
+
+                <EditText
+                    android:id="@+id/email"
+                    style="@style/InputFieldWithoutVerticalPadding"
+                    android:background="@drawable/edit_text_transparent_dark_border"
+                    android:fontFamily="@font/source_sans_light"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/sign_up_email_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/sign_up_email_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/check_box_button_selector"
+                    android:clickable="false" />
+
+                <TextView
+                    style="@style/TextViewSize16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/padding_xsmall"
+                    android:fontFamily="@font/source_sans_light"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/enroll_sign_up_title"
+                    android:textColor="@color/ehi_black"
+                    app:footNote="@{SymbolPosition.AFTER}" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/TextViewSize14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_large"
+                android:fontFamily="@font/source_sans_bold"
+                android:text="@string/enroll_create_password_title"
+                android:textColor="@color/ehi_black"
+                app:requiredField="@{SymbolPosition.AFTER}" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/create_password_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12sp"
+                    app:errorEnabled="true"
+                    app:hintEnabled="false">
+
+                    <EditText
+                        android:id="@+id/create_password"
+                        style="@style/InputFieldWithoutVerticalPadding"
+                        android:background="@drawable/edit_text_transparent_dark_border"
+                        android:fontFamily="@font/source_sans_light"
+                        android:hint="@string/login_password_placeholder"
+                        android:inputType="textPassword"
+                        android:paddingEnd="60dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/toggle_create_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:src="@drawable/icon_show_02" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/password_conditions_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.ehi.enterprise.android.ui.login.widget.ConditionCheckRowView
+                    android:id="@+id/character_count_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.ehi.enterprise.android.ui.login.widget.ConditionCheckRowView
+                    android:id="@+id/contains_letters_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.ehi.enterprise.android.ui.login.widget.ConditionCheckRowView
+                    android:id="@+id/contains_numbers_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.ehi.enterprise.android.ui.login.widget.ConditionCheckRowView
+                    android:id="@+id/no_password_constant_condition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/TextViewSize14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_base"
+                android:fontFamily="@font/source_sans_bold"
+                android:text="@string/enroll_confirm_password_title"
+                android:textColor="@color/ehi_black"
+                app:requiredField="@{SymbolPosition.AFTER}" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/confirm_password_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12sp"
+                    app:errorEnabled="true"
+                    app:hintEnabled="false">
+
+                    <EditText
+                        android:id="@+id/confirm_password"
+                        style="@style/InputFieldWithoutVerticalPadding"
+                        android:background="@drawable/edit_text_transparent_dark_border"
+                        android:fontFamily="@font/source_sans_light"
+                        android:hint="@string/login_password_placeholder"
+                        android:inputType="textPassword"
+                        android:paddingEnd="60dp" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/toggle_confirm_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|end"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:src="@drawable/icon_show_02" />
+
+            </FrameLayout>
+
+            <com.ehi.enterprise.android.ui.login.widget.ConditionCheckRowView
+                android:id="@+id/passwords_do_not_match_condition"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_xsmall" />
+
+            <LinearLayout
+                android:id="@+id/term_and_conditions_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/term_and_conditions_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/check_box_button_selector"
+                    android:clickable="false" />
+
+                <TextView
+                    android:id="@+id/term_and_conditions_text"
+                    style="@style/TextViewSize16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/padding_xsmall"
+                    android:fontFamily="@font/source_sans_light"
+                    android:lineSpacingMultiplier="1.2"
+                    android:text="@string/enroll_terms_and_conditions_title"
+                    android:textColor="@color/ehi_black"
+                    app:requiredField="@{SymbolPosition.AFTER}" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="ReviewDcDetailViewBinding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/section_background"
+        android:duplicateParentState="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/header_view"
+            style="@style/TextViewSize18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_marginLeft="@dimen/padding_base"
+            android:layout_marginTop="@dimen/padding_base"
+            android:text="@string/reservation_review_delivery_collection_section_title"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_bold" />
+
+        <LinearLayout
+            android:id="@+id/use_dc_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_base"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewSize18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_base"
+                android:layout_weight="1"
+                android:clickable="false"
+                android:duplicateParentState="true"
+                android:text="@string/reservation_review_delivery_collection_button_title"
+                android:textColor="@color/ehi_primary"
+                android:fontFamily="@font/source_sans_bold" />
+
+            <ImageView
+                android:id="@+id/use_dc_button_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:scaleType="center"
+                android:src="@drawable/arrow_green" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/dc_information_body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_base"
+            android:paddingTop="@dimen/padding_base">
+
+            <ImageView
+                android:id="@+id/delivery_icon_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/delivery_area"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/delivery_area"
+                android:layout_marginRight="15dp"
+                android:scaleType="center"
+                android:src="@drawable/arrow_green" />
+
+            <ImageView
+                android:id="@+id/collection_icon_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/collection_area"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/collection_area"
+                android:layout_marginRight="15dp"
+                android:scaleType="center"
+                android:src="@drawable/arrow_green" />
+
+            <LinearLayout
+                android:id="@+id/delivery_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_base"
+                android:layout_toLeftOf="@id/delivery_icon_image"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_base"
+                android:paddingRight="@dimen/padding_base">
+
+                <TextView
+                    style="@style/TextViewSize18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/delivery_collection_delivery_details_section_title"
+                    android:textAllCaps="true"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_bold" />
+
+                <TextView
+                    android:id="@+id/delivery_not_available_view"
+                    style="@style/TextViewSize18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delivery_collection_unavailable_delivery_title"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light" />
+
+                <TextView
+                    android:id="@+id/delivery_address_view"
+                    style="@style/TextViewSize18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/ehi_black"
+                    android:textIsSelectable="true"
+                    android:visibility="gone"
+                    android:fontFamily="@font/source_sans_light"
+                    app:shareText="@{true}" />
+
+                <TextView
+                    android:id="@+id/delivery_phone_view"
+                    style="@style/TextViewSize18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/ehi_black"
+                    android:visibility="gone"
+                    android:fontFamily="@font/source_sans_light" />
+
+                <TextView
+                    android:id="@+id/delivery_comment_view"
+                    style="@style/TextViewSize18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ehi_black"
+                    android:visibility="gone"
+                    android:fontFamily="@font/source_sans_light" />
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/delivery_area"
+                android:layout_marginBottom="@dimen/padding_base"
+                android:background="@drawable/section_background" />
+
+            <LinearLayout
+                android:id="@+id/collection_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/divider"
+                android:layout_toLeftOf="@id/collection_icon_image"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/padding_base"
+                android:paddingRight="@dimen/padding_base">
+
+                <TextView
+                    style="@style/TextViewSize18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/delivery_collection_row_collection_details_title"
+                    android:textAllCaps="true"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_bold" />
+
+                <TextView
+                    android:id="@+id/collection_not_available_view"
+                    style="@style/TextViewSize18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delivery_collection_unavailable_collection_title"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light" />
+
+                <TextView
+                    android:id="@+id/collection_same_as_delivery_view"
+                    style="@style/TextViewSize18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delivery_collection_address_same_title"
+                    android:textColor="@color/ehi_black"
+                    android:visibility="gone"
+                    android:fontFamily="@font/source_sans_light" />
+
+                <TextView
+                    android:id="@+id/collection_address_view"
+                    style="@style/TextViewSize18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/ehi_black"
+                    android:visibility="gone"
+                    android:fontFamily="@font/source_sans_light" />
+
+                <TextView
+                    android:id="@+id/collection_phone_view"
+                    style="@style/TextViewSize18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="@color/ehi_black"
+                    android:visibility="gone"
+                    android:fontFamily="@font/source_sans_light" />
+
+                <TextView
+                    android:id="@+id/collection_comment_view"
+                    style="@style/TextViewSize18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ehi_black"
+                    android:visibility="gone"
+                    android:fontFamily="@font/source_sans_light" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+</layout>

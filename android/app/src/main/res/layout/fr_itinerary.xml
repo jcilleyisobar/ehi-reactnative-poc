@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="ItineraryFragmentBinding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:focusable="true">
+
+            <LinearLayout
+                android:id="@+id/parent_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/pickup_location_header"
+                    style="@style/SectionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/section_divider_height"
+                    android:text="@string/reservation_location_selection_pickup_header_title"
+                    android:fontFamily="@font/source_sans_bold" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/pickup_location_container"
+                    android:gravity="center_vertical"
+                    android:background="@drawable/date_button_touch_overlay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/pickup_location_text_view"
+                        style="@style/TextViewSize24"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical|start"
+                        android:minHeight="60dp"
+                        android:layout_weight="1"
+                        android:paddingLeft="@dimen/padding_base"
+                        android:paddingRight="@dimen/padding_base"
+                        android:textColor="@color/ehi_black"
+                        android:fontFamily="@font/source_sans_light" />
+
+                    <ImageView
+                        android:id="@+id/pickup_lock_image"
+                        android:layout_marginRight="@dimen/margin_xlarge"
+                        android:src="@drawable/icon_lock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/return_location_header"
+                    style="@style/SectionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/section_divider_height"
+                    android:text="@string/reservation_location_selection_return_header_title"
+                    android:fontFamily="@font/source_sans_bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/ehi_grey_header_bg"/>
+
+                <LinearLayout
+                    android:id="@+id/dropoff_container"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/add_return_location_button"
+                            style="@style/TextViewSize18"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/date_button_touch_overlay"
+                            android:drawableLeft="@drawable/icon_add"
+                            android:drawablePadding="8dp"
+                            android:gravity="center_vertical|start"
+                            android:minHeight="60dp"
+                            android:paddingLeft="@dimen/padding_base"
+                            android:paddingRight="48dp"
+                            android:text="@string/update_return_location_key"
+                            android:textColor="@color/ehi_primary"
+                            android:fontFamily="@font/source_sans_light"
+                            tools:ignore="RtlHardcoded" />
+
+                        <TextView
+                            android:id="@+id/return_location_text_view"
+                            style="@style/TextViewSize24"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/date_button_touch_overlay"
+                            android:gravity="center_vertical|start"
+                            android:minHeight="60dp"
+                            android:paddingLeft="@dimen/padding_base"
+                            android:paddingRight="@dimen/padding_base"
+                            android:textColor="@color/ehi_black"
+                            android:visibility="gone"
+                            android:fontFamily="@font/source_sans_light" />
+
+                        <ImageButton
+                            android:id="@+id/remove_return_location"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:background="@null"
+                            android:scaleType="center"
+                            android:src="@drawable/st_cros_icon"
+                            android:visibility="gone" />
+
+                    </RelativeLayout>
+
+                    <ImageView
+                        android:id="@+id/dropoff_lock_image"
+                        android:layout_marginRight="@dimen/margin_xlarge"
+                        android:src="@drawable/icon_lock"
+                        android:visibility="gone"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_small"
+                    tools:visibility="gone">
+
+                    <com.ehi.enterprise.android.ui.reservation.widget.DateTimeSelectorView
+                        android:id="@+id/select_pickup_date_view"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/date_selector_height"
+                        android:layout_marginRight="@dimen/margin_small"
+                        android:layout_weight="1"
+                        app:dateTimeTitle="@string/reservation_pickup_date_cell_title"
+                        tools:ignore="RtlHardcoded" />
+
+                    <com.ehi.enterprise.android.ui.reservation.widget.DateTimeSelectorView
+                        android:id="@+id/select_return_date_view"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/date_selector_height"
+                        android:layout_weight="1"
+                        app:dateTimeTitle="@string/reservation_return_date_cell_title"
+                        tools:ignore="RtlHardcoded" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/drivers_age_header"
+                    style="@style/SectionHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/reservation_age_field_title"
+                    android:textAllCaps="true"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_bold" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/selected_date_cell_bg">
+
+                    <com.ehi.enterprise.android.ui.widget.EHISpinnerView
+                        android:id="@+id/driver_age_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp" />
+
+                </FrameLayout>
+
+                <com.ehi.enterprise.android.ui.widget.ItemAppliedView
+                    android:id="@+id/item_applied"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <com.ehi.enterprise.android.ui.widget.ItemAppliedView
+                    android:id="@+id/ec_added"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemTitle="@{@string/reservation_emerald_club_added_title}"
+                    android:visibility="gone"
+                    tools:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/contract_from_profile_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/enterprise_corporate_account_number_use_toggle_title"
+                        android:textColor="@color/ehi_black"
+                        android:fontFamily="@font/source_sans_light" />
+
+                    <TextView
+                        android:id="@+id/contract_from_profile_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/ehi_black"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/source_sans_bold"
+                        tools:text="test contract" />
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/contract_from_profile_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:checked="true" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/cid_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/add_cid_button"
+                        style="@style/TextViewSize18"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginTop="18dp"
+                        android:drawableLeft="@drawable/icon_add"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/padding_base"
+                        android:paddingRight="@dimen/padding_base"
+                        android:text="@string/reservation_code_input_title"
+                        android:textColor="@color/ehi_primary"
+                        android:fontFamily="@font/source_sans_light"
+                        tools:ignore="RtlHardcoded" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginTop="12dp"
+                        android:background="@color/unauth_rentals_divider" />
+
+                    <TextView
+                        android:id="@+id/cid_input_header"
+                        style="@style/TextViewSize14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/padding_base"
+                        android:text="@string/reservation_code_input_title"
+                        android:textAllCaps="true"
+                        android:textColor="@color/ehi_black"
+                        android:visibility="gone"
+                        android:fontFamily="@font/source_sans_bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/cid_input_area"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true"
+                        android:paddingLeft="@dimen/padding_base"
+                        android:paddingRight="@dimen/padding_base"
+                        android:visibility="gone">
+
+                        <EditText
+                            android:id="@+id/cid_edit_text"
+                            style="@style/InputField"
+                            android:background="@drawable/edit_text_transparent_dark_border"
+                            android:hint="@string/reservation_code_input_placeholder"
+                            android:paddingRight="@dimen/search_input_height"
+                            android:fontFamily="@font/source_sans_light" />
+
+                        <ImageButton
+                            android:id="@+id/clear_cid_button"
+                            android:layout_width="@dimen/search_input_height"
+                            android:layout_height="@dimen/search_input_height"
+                            android:layout_alignRight="@+id/cid_edit_text"
+                            android:layout_centerVertical="true"
+                            android:background="@android:color/transparent"
+                            android:src="@drawable/icon_x_gray_03"
+                            tools:ignore="RtlHardcoded" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/ec_sign_in_button"
+                        style="@style/TextViewSize18"
+                        android:layout_width="match_parent"
+                        android:layout_height="42dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="5dp"
+                        android:drawableLeft="@drawable/icon_add"
+                        android:drawablePadding="8dp"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/padding_base"
+                        android:paddingRight="@dimen/padding_base"
+                        android:text="@string/reservation_emerald_club_sign_in_title"
+                        android:textColor="@color/ehi_primary"
+                        android:fontFamily="@font/source_sans_light"
+                        tools:ignore="RtlHardcoded" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/button_continue"
+            style="@style/GreenContinueButton"
+            android:text="@string/reservation_itinerary_action_button"
+            android:textColor="@drawable/button_inactive_white"
+            android:fontFamily="@font/source_sans_bold" />
+
+    </LinearLayout>
+</layout>

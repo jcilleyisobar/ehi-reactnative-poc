@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:enterFadeDuration="@integer/selectors_animation_duration"
+    android:exitFadeDuration="@integer/selectors_animation_duration">
+
+    <item app:state_selectable="false" android:color="@color/ehi_dark_rule" />
+    <item android:state_selected="true" android:color="@color/white"/>
+    <item android:state_selected="false" android:color="@color/ehi_black"/>
+    <item app:state_current_month="false" android:color="@color/ehi_dark_rule"/>
+    <item android:color="@color/ehi_black"/>
+
+</selector>

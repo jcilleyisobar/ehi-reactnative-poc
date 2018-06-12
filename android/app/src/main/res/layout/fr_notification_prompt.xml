@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="NotificationPromptFragmentBinding"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="12dp"
+            android:paddingLeft="@dimen/padding_base"
+            android:paddingRight="@dimen/padding_base"
+            android:paddingTop="20dp">
+
+            <ImageView
+                android:id="@+id/hero_image"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/notif_intro01"/>
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/TextViewSize20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:text="@string/notification_prompt_title"
+                android:textAllCaps="true"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_bold"/>
+
+            <TextView
+                android:id="@+id/subtitle"
+                style="@style/TextViewSize16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:lineSpacingExtra="@dimen/line_spacing_4"
+                android:text="@string/notification_prompt_content"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light"/>
+
+            <TextView
+                android:id="@+id/confirm_button"
+                style="@style/GreenContinueButton"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/notification_prompt_accept"
+                android:fontFamily="@font/source_sans_bold"/>
+
+            <TextView
+                android:id="@+id/deny_button"
+                style="@style/GreenBorderWhiteButton"
+                android:fontFamily="@font/source_sans_bold"
+                android:textSize="16sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="4dp"
+                android:minHeight="48dp"
+                android:text="@string/notification_prompt_deny"/>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/close_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:padding="16dp"
+            android:src="@drawable/icon_x_gray_02"/>
+    </FrameLayout>
+
+</layout>

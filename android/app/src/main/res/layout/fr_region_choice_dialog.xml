@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="RegionChoiceDiaglogFragmentBinding"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_base"
+        android:paddingLeft="@dimen/padding_base"
+        android:paddingRight="@dimen/padding_base">
+
+        <TextView
+            style="@style/TextViewSize22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/region_dialog_title"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_light"/>
+
+        <TextView
+            style="@style/TextViewSize16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_base"
+            android:text="@string/region_dialog_text"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_light"/>
+
+        <RelativeLayout
+            android:id="@+id/change_region_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_base"
+            android:background="@drawable/shape_region_choice_button_background"
+            android:padding="@dimen/padding_base">
+
+            <TextView
+                android:id="@+id/country_label"
+                style="@style/TextViewSize12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/region_dialog_country_label"
+                android:textAllCaps="true"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_bold"/>
+
+            <TextView
+                android:id="@+id/region_name"
+                style="@style/TextViewSize16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/country_label"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light"
+                tools:text="United Kingdom"/>
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_green"/>
+
+            <TextView
+                style="@style/TextViewSize16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/arrow"
+                android:text="@string/region_dialog_button_change"
+                android:textColor="@color/ehi_primary"
+                android:fontFamily="@font/source_sans_bold"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/continue_button"
+            style="@style/GreenContinueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/region_dialog_button_lets_go"
+            android:fontFamily="@font/source_sans_bold"/>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="TripSummaryBinding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_base"
+            android:background="@color/ehi_primary">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/receipt_logo"/>
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_base">
+
+            <TextView
+                android:id="@+id/rental_agreement"
+                style="@style/TextViewSize18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light"
+                tools:text="@string/invoice_rental_number"/>
+
+            <TextView
+                android:id="@+id/contract"
+                style="@style/TextViewSize18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:textColor="@color/ehi_black"
+                android:visibility="gone"
+                android:fontFamily="@font/source_sans_light"
+                tools:text="@string/invoice_rental_contract_name"
+                tools:visibility="visible"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ehi_dark_rule"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_base"
+            android:paddingRight="@dimen/padding_base"
+            android:paddingTop="@dimen/padding_base">
+
+            <TextView
+                style="@style/TextViewSize16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/trip_summary_pick_up"
+                android:textColor="@color/ehi_black"
+                android:textStyle="bold"
+                android:fontFamily="@font/source_sans_bold"/>
+
+            <TextView
+                android:id="@+id/pickup_time"
+                style="@style/TextViewSize18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_regular"
+                tools:text="16 August"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/pickup_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingEnd="@dimen/padding_base"
+            android:paddingStart="@dimen/padding_base">
+
+            <TextView
+                android:id="@+id/pickup_name_view"
+                style="@style/TextViewSize18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light"
+                tools:text="Millennium Park"/>
+
+            <TextView
+                android:id="@+id/pickup_address_view"
+                style="@style/TextViewSize18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/ehi_black"
+                android:textIsSelectable="true"
+                android:fontFamily="@font/source_sans_light"
+                app:shareText="@{true}"
+                tools:text="20 E. Randolph St., Chicago, IL 60608 "/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/padding_base"
+            android:paddingRight="@dimen/padding_base"
+            android:paddingTop="@dimen/padding_base">
+
+            <TextView
+                style="@style/TextViewSize16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/trip_summary_return"
+                android:textColor="@color/ehi_black"
+                android:textStyle="bold"
+                android:fontFamily="@font/source_sans_bold"/>
+
+            <TextView
+                android:id="@+id/return_time"
+                style="@style/TextViewSize18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_regular"
+                tools:text="16 August"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_base"
+            android:paddingEnd="@dimen/padding_base"
+            android:paddingStart="@dimen/padding_base">
+
+            <TextView
+                android:id="@+id/return_name_view"
+                style="@style/TextViewSize18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light"
+                tools:text="Millennium Park"/>
+
+            <TextView
+                android:id="@+id/return_address_view"
+                style="@style/TextViewSize18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/ehi_black"
+                android:textIsSelectable="true"
+                android:fontFamily="@font/source_sans_light"
+                app:shareText="@{true}"
+                tools:text="20 E. Randolph St., Chicago, IL 60608 "/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ehi_dark_rule"/>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_base">
+
+            <TextView
+                android:id="@+id/total_text_view"
+                style="@style/TextViewSize18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:text="@string/trip_summary_final_total"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_regular"/>
+
+            <TextView
+                android:id="@+id/estimated_total"
+                style="@style/TextViewSize24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_bold"
+                tools:text="$100.00"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ehi_dark_rule"/>
+
+        <LinearLayout
+            android:id="@+id/points_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_base"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/TextViewSize18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_weight="1"
+                android:text="@string/trip_summary_points_earned"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_bold"/>
+
+            <TextView
+                android:id="@+id/points_total"
+                style="@style/TextViewSize28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_regular"
+                tools:text="500"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ehi_dark_rule"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

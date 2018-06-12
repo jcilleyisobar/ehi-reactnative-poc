@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+          android:enterFadeDuration="@integer/selectors_animation_duration"
+          android:exitFadeDuration="@integer/selectors_animation_duration">
+    <item android:color="@color/rate_button_stroke" android:state_enabled="false"/>
+    <item android:color="@color/ehi_primary"/>
+</selector>

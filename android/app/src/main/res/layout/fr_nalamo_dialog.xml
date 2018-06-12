@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="NalamoDialogBinding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_base"
+        android:paddingLeft="@dimen/padding_base"
+        android:paddingRight="@dimen/padding_base">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_nalamo_dialog_stroke"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_base">
+
+            <TextView
+                style="@style/TextViewSize18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_base"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/info_modal_drive_alliance_details"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/map_pin_alamo"/>
+
+                <TextView
+                    style="@style/TextViewSize18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/location_brand_alamo"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/map_pin_national"/>
+
+                <TextView
+                    style="@style/TextViewSize18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/location_brand_national"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/ok_button"
+            style="@style/GreenContinueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_base"
+            android:text="@string/alert_okay_title"
+            android:fontFamily="@font/source_sans_bold"/>
+    </LinearLayout>
+</layout>

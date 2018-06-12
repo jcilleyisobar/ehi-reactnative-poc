@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="NotificationSettingsFragmentBinding"/>
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/padding_base"
+        android:orientation="vertical"
+        android:showDividers="middle">
+
+        <RadioButton
+            android:id="@+id/do_not_notify"
+            style="@style/TextViewSize18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_base"
+            android:paddingLeft="8dp"
+            android:paddingTop="@dimen/padding_base"
+            android:text="@string/notification_setting_option_do_not_notify"
+            android:fontFamily="@font/source_sans_light"/>
+
+        <RadioButton
+            android:id="@+id/thirty_minutes"
+            style="@style/TextViewSize18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_base"
+            android:paddingLeft="8dp"
+            android:paddingTop="@dimen/padding_base"
+            android:text="@string/notification_setting_option_thirty_minutes_before"
+            android:fontFamily="@font/source_sans_light"/>
+
+        <RadioButton
+            android:id="@+id/two_hour"
+            style="@style/TextViewSize18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_base"
+            android:paddingLeft="8dp"
+            android:paddingTop="@dimen/padding_base"
+            android:text="@string/notification_setting_option_two_hours_before"
+            android:fontFamily="@font/source_sans_light"/>
+
+        <RadioButton
+            android:id="@+id/one_day"
+            style="@style/TextViewSize18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_base"
+            android:paddingLeft="8dp"
+            android:paddingTop="@dimen/padding_base"
+            android:text="@string/notification_setting_option_one_day_before"
+            android:fontFamily="@font/source_sans_light"/>
+
+    </RadioGroup>
+</layout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="VerifyLoginFragmentBinding"/>
+
+    <FrameLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/fingerprint_login_container"
+            android:animateLayoutChanges="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/ehi_primary">
+
+            <ImageView
+                android:id="@+id/fingerprint_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="120dp"
+                android:src="@drawable/icon_fingerprint_white"/>
+
+            <TextView
+                android:id="@+id/fingerprint_prompt"
+                style="@style/TextViewSize22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_below="@id/fingerprint_icon"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="@dimen/padding_base"
+                android:layout_marginLeft="@dimen/padding_base"
+                android:gravity="center"
+                android:text="@string/profile_fingerprint_unlock_prompt"
+                android:textColor="@color/white"
+                android:fontFamily="@font/source_sans_light"/>
+
+            <TextView
+                android:id="@+id/password_button"
+                android:layout_below="@id/fingerprint_prompt"
+                android:text="@string/profile_fingerprint_unlock_use_password"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="@dimen/padding_base"
+                android:layout_marginRight="@dimen/padding_base"
+                android:minHeight="52dp"
+                style="@style/GreenBorderWhiteButton"
+                android:fontFamily="@font/source_sans_bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    <ScrollView
+        android:id="@+id/password_login_container"
+        android:animateLayoutChanges="true"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="60dp"
+                android:layout_marginTop="60dp"
+                android:minHeight="50dp"
+                android:minWidth="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/icon_signinlarge_01"/>
+
+            <TextView
+                style="@style/TextViewSize28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/rewards_provide_password_header"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light"/>
+
+            <TextView
+                style="@style/TextViewSize18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:lineSpacingMultiplier="1.5"
+                android:text="@string/rewards_provide_password_label"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_bold"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <EditText
+                    android:id="@+id/edit_password_field"
+                    style="@style/InputField"
+                    android:hint="@string/login_password_placeholder"
+                    android:inputType="textPassword"
+                    android:fontFamily="@font/source_sans_regular"/>
+
+                <ImageView
+                    android:id="@+id/show_password_container"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginLeft="-60dp"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:src="@drawable/icon_show_02"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/forgot_password"
+                style="@style/TextViewSize16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:minHeight="50dp"
+                android:text="@string/login_password_forgot_title"
+                android:textAllCaps="true"
+                android:textColor="@color/ehi_primary"
+                android:fontFamily="@font/source_sans_bold"/>
+
+            <TextView
+                android:id="@+id/continue_button"
+                style="@style/GreenContinueButton"
+                android:layout_marginTop="30dp"
+                android:text="@string/rewards_continue_button_label"
+                android:fontFamily="@font/source_sans_bold"/>
+
+            <TextView
+                android:id="@+id/cancel_button"
+                style="@style/TextViewSize18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/green_border_button_overlay"
+                android:gravity="center"
+                android:minHeight="52dp"
+                android:text="@string/standard_button_cancel"
+                android:textAllCaps="true"
+                android:textColor="@color/ehi_primary"
+                android:fontFamily="@font/source_sans_bold"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    </FrameLayout>
+</layout>

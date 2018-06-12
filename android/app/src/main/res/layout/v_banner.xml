@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="BannerBinding">
+
+        <variable
+            name="stub"
+            type="Boolean" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/reservation_info_banner_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp"
+        android:paddingLeft="@dimen/padding_base"
+        android:paddingRight="@dimen/padding_base"
+        android:paddingTop="16dp">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/icon_confirm_01" />
+
+        <TextView
+            android:id="@+id/message"
+            style="@style/TextViewSize16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/padding_xsmall"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_regular" />
+
+    </LinearLayout>
+
+</layout>

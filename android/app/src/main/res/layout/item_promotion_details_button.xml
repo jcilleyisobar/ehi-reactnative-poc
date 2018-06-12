@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="ItemPromotionDetailsButtonViewBinding"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="6dp"
+        android:paddingLeft="@dimen/padding_base"
+        android:paddingRight="@dimen/padding_base"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/promotion_item_button"
+            style="@style/GreenContinueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/source_sans_bold"
+            tools:text="@string/weekend_special_start_reservation_button_title"/>
+
+    </FrameLayout>
+</layout>

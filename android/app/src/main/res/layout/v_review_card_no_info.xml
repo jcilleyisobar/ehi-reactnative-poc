@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="ReviewCardNoInfoViewBinding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/section_background"
+        android:paddingTop="@dimen/padding_xsmall"
+        android:paddingBottom="@dimen/padding_base"
+        android:paddingLeft="@dimen/padding_base"
+        android:paddingRight="@dimen/padding_base"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/add_payment_method_button"
+            style="@style/GreenBorderWhiteButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/icon_add"
+            android:drawablePadding="16dp"
+            android:enabled="true"
+            android:paddingBottom="15dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="45dp"
+            android:paddingTop="15dp"
+            android:text="@string/review_prepay_add_payment_method"
+            android:fontFamily="@font/source_sans_bold"
+            tools:text="Add Payment Method" />
+
+        <LinearLayout
+            android:id="@+id/credit_card_added_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_small"
+            android:background="@drawable/grey_border_with_light_silver_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/TextViewSize18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/icon_check_04"
+                android:drawablePadding="16dp"
+                android:gravity="center_vertical"
+                android:padding="@dimen/padding_small"
+                android:text="@string/review_prepay_creditcard_added"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_regular" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/padding_xsmall"
+                android:layout_marginTop="@dimen/padding_xsmall"
+                android:background="@color/section_divider" />
+
+            <TextView
+                android:id="@+id/credit_card_added_remove_button"
+                style="@style/TextViewSize18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_small"
+                android:text="@string/review_prepay_tap_to_change"
+                android:textColor="@color/ehi_primary"
+                android:fontFamily="@font/source_sans_bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_small"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/have_read_conditions"
+                style="@style/TextViewSize18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/review_prepay_policies"
+                android:textColor="@color/ehi_primary"
+                android:fontFamily="@font/source_sans_bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="7dp"
+                android:src="@drawable/arrow_green" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="DoNotRentDialogViewBinding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_base"
+        android:paddingLeft="@dimen/padding_base"
+        android:paddingRight="@dimen/padding_base">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/icon_alert_02"/>
+
+            <TextView
+                android:id="@+id/dialog_text"
+                style="@style/TextViewSize18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dnr_warning_view_text"
+                android:textColor="@color/ehi_red"
+                android:fontFamily="@font/source_sans_light"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/call_us_button"
+            style="@style/GreenContinueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_base"
+            android:text="@string/locations_empty_query_call_title"
+            android:fontFamily="@font/source_sans_bold"/>
+
+        <TextView
+            android:id="@+id/continue_button"
+            style="@style/GreenContinueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_base"
+            android:text="@string/info_modal_continue_button"
+            android:fontFamily="@font/source_sans_bold"/>
+
+    </LinearLayout>
+</layout>

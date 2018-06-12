@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="ClassDetailsPaymentItemViewBinding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@drawable/bottom_gray_border_white_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/padding_base"
+        android:paddingRight="@dimen/padding_base">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/line_item_text"
+                style="@style/TextViewSize18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light"
+                tools:text="6 Days of Rental"/>
+
+            <ImageView
+                android:id="@+id/line_item_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/icon_info_01"
+                android:visibility="gone"
+                tools:visibility="visible"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/total_price"
+            style="@style/TextViewSize18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_light"
+            tools:text="$120.00"/>
+
+    </LinearLayout>
+</layout>

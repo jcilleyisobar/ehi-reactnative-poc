@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="ModifyPrePayBannerViewBinding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/confirmation_coupon_header_background"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/banner_description"
+                style="@style/TextViewSize16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/modify_reservation_prepay_warning_text"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light" />
+
+            <TextView
+                android:id="@+id/prepay_original_amount"
+                style="@style/TextViewSize16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/modify_reservation_prepay_original_amount"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_bold" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/ehi_primary" />
+
+    </LinearLayout>
+
+</layout>

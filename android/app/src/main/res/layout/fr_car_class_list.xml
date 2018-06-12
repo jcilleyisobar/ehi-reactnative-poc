@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="CarClassListFragmentBinding" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <FrameLayout
+            android:id="@+id/car_select_transition_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/location_info_window_divider_grey"
+            android:clickable="true"
+            android:visibility="gone" />
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.design.widget.AppBarLayout
+                android:id="@+id/app_bar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.design.widget.CollapsingToolbarLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_scrollFlags="scroll|enterAlways|snap">
+
+                    <com.ehi.enterprise.android.ui.reservation.widget.EPointsHeaderView
+                        android:id="@+id/epoints_header_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.design.widget.CollapsingToolbarLayout>
+
+            </android.support.design.widget.AppBarLayout>
+
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/classes_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/location_info_window_divider_grey" />
+
+            </android.support.v4.widget.NestedScrollView>
+        </android.support.design.widget.CoordinatorLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/bottom_spinner_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/bottom_spinner_text"
+                style="@style/TextViewSize18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/bottom_spinner"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/reservation_extras_loading_title"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light" />
+
+            <ImageView
+                android:id="@+id/bottom_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:minHeight="30dp"
+                android:minWidth="30dp"
+                android:src="@drawable/generic_spinner" />
+        </RelativeLayout>
+    </FrameLayout>
+</layout>

@@ -1,0 +1,51 @@
+sudo: required
+language: android
+android:
+  components:
+  - platform-tools
+  - tools
+  - android-26
+  - build-tools-26.0.2
+  - extra-google-google_play_services
+  - extra-google-m2repository
+  - extra-android-m2repository
+  - addon-google_apis-google-26
+jdk:
+- oraclejdk8
+before_install:
+  - mkdir "$ANDROID_HOME/licenses" || true
+  - echo -e "\n8933bad161af4178b1185d1a37fbf41ea5269c55" > "$ANDROID_HOME/licenses/android-sdk-license"
+  - echo -e "\n84831b9409646a918e30573bab4c9c91346d8abd" > "$ANDROID_HOME/licenses/android-sdk-preview-license"
+branches:
+  only:
+  - master
+  - develop
+  - /^release.*$/
+before_script:
+- cp "utils/developer/gradle-wrapper.properties" "gradle/wrapper/gradle-wrapper.properties"
+- echo "y" | sdkmanager "extras;m2repository;com;android;support;constraint;constraint-layout-solver;1.0.2"
+script:
+- ./scripts/build.sh
+after_success:
+- ./scripts/hockey_upload.sh
+after_failure: "cat $TRAVIS_BUILD_DIR/app/build/outputs/lint-results-debug.xml"
+env:
+  global:
+  - APP_FILE="uat/isobarRelease/app-uat-isobarRelease.apk"
+  - BUILD_COMMAND="--stacktrace assembleUatIsobarRelease testUatIsobarRelease"
+  - INCLUDE_GITHASH=YES
+  - TEST_RESULT_FOLDER="uatIsobarRelease"
+  # KEY_PASSWORD
+  - secure: "FdMy1g3GBlDcwfXCc660wjYTrrK2zjRXNosY8DiOecpbFJsHzOMHc5h09H8M9HhOL1NvzYIXt1cQA5QRzzlmHgbD/+QubB5jbaM6lfA9/ahItcJRo7HEXWPCSv8btsEvLxOAIbEGOwdCNW7hI8y5v3mZmRGWxvEvPT7P0B1d24LIqlpUR0Bnl3H8Fpe+Eie/GsQgkWL84Wc1UBLw0elJEC0bBept9d9EVdT7YGH67J33Ceq6HelNaUUwRBDN/1HssPxoDTTnBBvbIJyJS1Z1K5Yf0pnlGzoa3/M083V6+bSL+dvVQCxml9bIqlTST1CG1R2sBpMzz0VzT0XRNJxwV1cMNG6wQT8yF/uE2X64dduy2HOEZ0dezmx4xFCom+cAvq/VMUiJ3XbB7lumNMfoJZ9NxOfr8JoQvxPKrouiE1VUJOlWTitamkJR9eA7+bvsYyTeIg10Npp6pHB6lwYkHVYkVfIkqL5p8NzUxKmV+m8pOgNNAv5WSjRlSVOpJ/2fz/mONr51eqdxq6qzZw6Q2ia1Woi+Yf7/7NVudzuqL08SfaeQgfQ6HUU0ZK09uariVA6l2EWNzrbV3PONHoDJvEPzZxer2lye3en8TzQ4qHwfzMkkEP6dJ3SKwYKEJ3y9HbeBrHXg7sVvp/6dNWLMgh+I3lFGRq4z80b4HeMPs18="
+  # HOCKEY_API_KEY
+  - secure: "3tEWqbXnbcuzG2WP4uIUXoQwvEjSgo2/bKTYoN8a2/sSGm++cPvk3HCJvpH71otfiZrgO5CtTo+XmtizulwLv9lztHJzOoYHeZchGxpfTDj/Y8CPTITD4Mr/7nBWERvqxzGnfYTo5ZTn2vhC4RqnV+CH3rZUEYNclsb+RaimBr592ATjVX/nXjGiOKGX/++vjKchZfRxmk0BSdv4q+enXnq5IGG2bwtKfukAESAvz7xb93UfusE9nReRCjCJq0YHO3R7BugsKq9wvL9//mReWtv6HkNXPtE/5ZWKgyzhIzCG366SctZ6urQuOBPZCGGnJ6aDxjs2XFBkvRUpyaPe1KKc+OBFVo+aQCW7Uk4SP4foxISyaIAA4+ps9nIc55K2a66ln2IXVw8hhIXr34U7P5Rrh2aCj+hUiqNuS9/eDBMKuxeMa87YNNPPdt0b99ZZqIJOJ3Czc2Q00Njp7OjVBWu/O4id9s0lVUJ6FadPH7ONNGZmHYVXE1Jnot24Dp5ZdDMJUvpiUkmQCpeUwWuFHMiNo/EL2BiF+bYE6M+32CD9ISxmG8atSLEjZUdi9MgARoGINLTRbgYvCx7KCqnyzRqbiTlaHTVdYY12ysvrcWzGXKMnRSQKeLpKyhz88tsOdtBPmDtedA/XTOprxUlnVzanfXE75RNqNLI3j8faObM="
+before_cache:
+- rm -f $HOME/.gradle/caches/modules-2/modules-2.lock
+cache:
+  directories:
+  - $HOME/.gradle/caches/
+  - $HOME/.gradle/wrapper/
+notifications:
+  slack: "isobar-us:pCKpgFvEFe9q3dcT9rZvxhOK"
+
+

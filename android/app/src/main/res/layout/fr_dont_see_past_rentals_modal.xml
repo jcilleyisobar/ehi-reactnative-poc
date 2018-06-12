@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="DontSeePastRentalsModalBinding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_base">
+
+        <TextView
+            android:id="@+id/text"
+            style="@style/TextViewSize16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rentals_cannot_find_details"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_light" />
+
+        <TextView
+            android:id="@+id/call_us"
+            style="@style/GreenContinueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_base"
+            android:text="@string/rentals_cannot_find_call_us_button"
+            android:fontFamily="@font/source_sans_bold" />
+
+        <TextView
+            android:id="@+id/close_button"
+            style="@style/GreenContinueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_base"
+            android:text="@string/standard_close_button"
+            android:fontFamily="@font/source_sans_bold" />
+
+    </LinearLayout>
+</layout>

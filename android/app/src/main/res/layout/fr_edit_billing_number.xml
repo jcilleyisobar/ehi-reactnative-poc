@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="EditBillingNumberFragmentBinding" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/padding_base"
+            android:paddingTop="@dimen/padding_base">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true" />
+
+            <TextView
+                style="@style/ProfileHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_base"
+                android:layout_marginRight="@dimen/padding_base"
+                android:text="@string/profile_payment_options_billing_nick_title"
+                android:fontFamily="@font/source_sans_bold" />
+
+            <EditText
+                android:id="@+id/billing_name"
+                style="@style/InputField"
+                android:layout_marginBottom="@dimen/padding_base"
+                android:layout_marginLeft="@dimen/padding_base"
+                android:layout_marginRight="@dimen/padding_base"
+                android:background="@drawable/edit_text_transparent_dark_border"
+                android:fontFamily="@font/source_sans_light" />
+
+            <TextView
+                style="@style/ProfileHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_base"
+                android:layout_marginRight="@dimen/padding_base"
+                android:text="@string/profile_payment_options_billing_number_title"
+                android:fontFamily="@font/source_sans_bold" />
+
+            <TextView
+                android:id="@+id/billing_number"
+                style="@style/TextViewSize20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="@dimen/padding_base"
+                android:layout_marginRight="@dimen/padding_base"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light"
+                tools:text="*****1234" />
+
+            <TextView
+                style="@style/TextViewSize18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_base"
+                android:layout_marginLeft="@dimen/padding_base"
+                android:layout_marginRight="@dimen/padding_base"
+                android:text="@string/profile_payment_options_billing_edit_warn"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light_italic" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="@dimen/padding_base"
+                android:background="@color/dashboard_upcoming_rentals_divider_grey" />
+
+            <LinearLayout
+                android:id="@+id/make_preferred_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_base"
+                android:layout_marginLeft="@dimen/padding_base"
+                android:layout_marginRight="@dimen/padding_base"
+                android:gravity="center_vertical">
+
+                <CheckBox
+                    android:id="@+id/make_preferred_check_box"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/check_box_button_selector"
+                    android:clickable="false" />
+
+                <TextView
+                    android:id="@+id/make_preferred_text"
+                    style="@style/TextViewSize20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:text="@string/profile_payment_options_payment_make_default"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_regular" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/preferred_method_view"
+                style="@style/TextViewSize20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_base"
+                android:layout_marginLeft="@dimen/padding_base"
+                android:layout_marginRight="@dimen/padding_base"
+                android:drawableLeft="@drawable/icon_preferred"
+                android:drawablePadding="5dp"
+                android:text="@string/profile_payment_options_payment_is_default"
+                android:textColor="@color/ehi_primary" />
+
+            <TextView
+                android:id="@+id/edit_billing_save_button"
+                style="@style/GreenContinueButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_base"
+                android:layout_marginRight="@dimen/padding_base"
+                android:text="@string/profile_payment_options_edit_save_action_text"
+                android:fontFamily="@font/source_sans_bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

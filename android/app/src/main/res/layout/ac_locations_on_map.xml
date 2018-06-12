@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="LocationOnMapActivityBinding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbar_include"
+            layout="@layout/in_toolbar"/>
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+                <FrameLayout
+                    android:id="@+id/ac_locations_on_map_map_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:id="@+id/filter_button_layout"
+                    android:clickable="true"
+                    android:gravity="end"
+                    android:elevation="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/location_filter_map_view"
+                    android:orientation="vertical">
+
+                    <View
+                        android:id="@+id/separator_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="-6dp"
+                        android:layout_marginStart="@dimen/margin_xlarge"
+                        android:layout_marginEnd="@dimen/margin_xlarge"
+                        android:background="@color/ehi_grey_header_bg" />
+
+                    <TextView
+                        android:id="@+id/filter_button"
+                        style="@style/LocationSearchFilterButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/margin_small"
+                        android:layout_marginEnd="@dimen/margin_large"
+                        android:paddingEnd="@dimen/margin_large"
+                        android:paddingStart="@dimen/margin_large"
+                        android:paddingTop="@dimen/padding_xxsmall"
+                        android:paddingBottom="@dimen/padding_xxsmall"
+                        android:fontFamily="@font/source_sans_bold"
+                        android:visibility="gone"
+                        tools:visibility="visible"/>
+                </LinearLayout>
+
+                <com.ehi.enterprise.android.ui.location.widgets.FilterTipView
+                    android:id="@+id/filter_tip_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/filter_button_layout"
+                    android:paddingStart="@dimen/margin_large"
+                    android:paddingEnd="@dimen/margin_large"
+                    android:visibility="gone"
+                    tools:visibility="visible">
+                </com.ehi.enterprise.android.ui.location.widgets.FilterTipView>
+
+
+                <com.ehi.enterprise.android.ui.location.widgets.LocationFilterMapView
+                    android:id="@id/location_filter_map_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:elevation="2dp"
+                    android:background="@color/white"
+                    android:paddingTop="@dimen/padding_xsmall"
+                    android:visibility="gone"
+                    tools:visibility="visible"/>
+            </RelativeLayout>
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/bottom_sheet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:behavior_peekHeight="56dp"
+                app:layout_behavior="com.ehi.enterprise.android.ui.widget.LocationMapBottomSheetBehavior">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/bottom_sheet_location_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:behavior_peekHeight="56dp"/>
+
+            </android.support.v4.widget.NestedScrollView>
+        </android.support.design.widget.CoordinatorLayout>
+    </LinearLayout>
+</layout>

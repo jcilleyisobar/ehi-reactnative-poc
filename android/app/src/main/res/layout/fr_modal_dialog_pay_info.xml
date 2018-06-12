@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class = "PaymentInfoDialogFragmentBinding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_base"
+        android:paddingLeft="@dimen/padding_base"
+        android:paddingRight="@dimen/padding_base" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/TextViewSize20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ehi_black"
+                    android:textStyle="bold"
+                    android:text="@string/payment_options_modal_info_prepay_title"/>
+
+                <TextView
+                    style="@style/TextViewSize20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ehi_black"
+                    android:text="@string/payment_options_modal_info_prepay_description"
+                    android:fontFamily="@font/source_sans_light"/>
+
+                <TextView
+                    android:id="@+id/terms_of_use_link"
+                    style="@style/TextViewSize20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/green_text_color"
+                    android:text="@string/terms_and_conditions_prepay_title"
+                    android:fontFamily="@font/source_sans_light"/>
+
+                <TextView
+                    style="@style/TextViewSize20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ehi_black"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/payment_options_modal_info_pay_later_title"/>
+
+                <TextView
+                    style="@style/TextViewSize20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ehi_black"
+                    android:text="@string/payment_options_modal_info_pay_later_description"
+                    android:fontFamily="@font/source_sans_light"/>
+            </LinearLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/close_button"
+            style="@style/GreenContinueButton"
+            android:fontFamily="@font/source_sans_bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_base"
+            android:text="@string/modal_default_confirmation_title"/>
+
+    </LinearLayout>
+</layout>

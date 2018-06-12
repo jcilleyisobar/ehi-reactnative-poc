@@ -1,0 +1,255 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "$rootProject.ext.buildToolsVersion"
+    useLibrary 'org.apache.http.legacy'
+
+    def baseVersion = "2.4.1"
+
+    def buildNum = System.getenv("BUILD_NUMBER")
+    def includeGitHash = "YES".equals(System.getenv("INCLUDE_GITHASH"))
+
+    if (buildNum == null || buildNum.isEmpty()) {
+        buildNum = "1"
+        includeGitHash = true
+    }
+
+    def versionString = baseVersion + "." + buildNum
+    if (includeGitHash) {
+        def gitHash = "git rev-parse --short HEAD".execute().text.trim()
+        versionString = versionString + " (" + gitHash + ")"
+    }
+
+    defaultConfig {
+        applicationId "com.ehi.enterprise.android"
+        minSdkVersion 21
+        targetSdkVersion 26
+        multiDexEnabled true
+        versionCode = buildNum.toInteger()
+        versionName = versionString
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        resConfigs "de", "de-rDE", "en", "en-rCA", "en-rGB", "en-rUS", "es", "es-rES", "es-rUS", "fr", "fr-rCA", "fr-rFR"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                includeCompileClasspath true
+            }
+        }
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file("../keystores/debug.keystore")
+            keyAlias "androiddebugkey"
+            storePassword "android"
+            keyPassword "android"
+        }
+        //Note: alter the global gradle settings to point to the debug certificate if you with to build a release version locally
+        //  OSx/Linux - ~/.gradle/gradle.properties
+        //  Windows - %HOMEPATH%/.gradle/gradle.properties
+        release {
+            storeFile file(enterprise_mobile_app_keystore_file)
+            keyAlias enterprise_mobile_app_key_alias
+            storePassword enterprise_mobile_app_store_password
+            keyPassword enterprise_mobile_app_key_password
+        }
+        internal_release {
+            storeFile file("../keystores/internal_release.jks")
+            keyAlias "enterprise"
+            storePassword "Isobar2015"
+            keyPassword "Isobar2015"
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+            manifestPlaceholders = [GOOGLE_MAPS_API_KEY: "AIzaSyC1PYI6pVvnuIUWLYCdynoBJy24_Oogs4Q"]
+            matchingFallbacks = ['debug']
+        }
+
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            manifestPlaceholders = [GOOGLE_MAPS_API_KEY: "AIzaSyC1PYI6pVvnuIUWLYCdynoBJy24_Oogs4Q"]
+            matchingFallbacks = ['release']
+        }
+
+        isobarRelease.initWith(buildTypes.release)
+
+        isobarRelease {
+            signingConfig signingConfigs.internal_release
+            matchingFallbacks = ['release']
+        }
+    }
+
+    packagingOptions {
+        exclude 'LICENSE.txt'
+        exclude 'jsr305_annotations/Jsr305_annotations.gwt.xml'
+        exclude 'build-data.properties'
+        pickFirst 'protobuf.meta'
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    flavorDimensions "main"
+
+    productFlavors {
+        dev {
+            dimension "main"
+            manifestPlaceholders = [LOCALYTICS_API_KEY: "d04a56a301c6aa7c884cb21-c2cd0256-eaa6-11e4-59a2-00a426b17dd8"]
+            resValue "string", "localytics_api_key", "d04a56a301c6aa7c884cb21-c2cd0256-eaa6-11e4-59a2-00a426b17dd8"
+            resValue "string", "gcm_sender_id", "\"175724330763\""
+        }
+
+        uat {
+            dimension "main"
+            manifestPlaceholders = [LOCALYTICS_API_KEY: "e876f4671e5a080d66e5e8a-20772a38-1f49-11e5-44ff-006918dcf667"]
+            resValue "string", "localytics_api_key", "e876f4671e5a080d66e5e8a-20772a38-1f49-11e5-44ff-006918dcf667"
+            resValue "string", "gcm_sender_id", "\"175724330763\""
+        }
+
+        penTest {
+            dimension "main"
+            manifestPlaceholders = [LOCALYTICS_API_KEY: "e876f4671e5a080d66e5e8a-20772a38-1f49-11e5-44ff-006918dcf667"]
+            resValue "string", "localytics_api_key", "e876f4671e5a080d66e5e8a-20772a38-1f49-11e5-44ff-006918dcf667"
+            resValue "string", "gcm_sender_id", "\"175724330763\""
+        }
+
+        prod {
+            dimension "main"
+            manifestPlaceholders = [LOCALYTICS_API_KEY: "e0cc45e06eaf5879b0eccd6-446b7082-eaa7-11e4-b24f-009c5fda0a25"]
+            resValue "string", "localytics_api_key", "e0cc45e06eaf5879b0eccd6-446b7082-eaa7-11e4-b24f-009c5fda0a25"
+            resValue "string", "gcm_sender_id", "\"175724330763\""
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+        disable 'MissingTranslation'
+    }
+
+    testOptions {
+        unitTests.returnDefaultValues = true
+        unitTests.all {
+            testLogging {
+                events 'passed', 'skipped', 'failed', 'standardOut', 'standardError'
+            }
+        }
+    }
+
+    // Don't need to predex on CI
+    dexOptions {
+        preDexLibraries = !rootProject.ext.ci
+//        dexInProcess = true
+        if (!rootProject.ext.ci) {
+            javaMaxHeapSize "4g"
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+dependencies {
+    implementation files('libs/viewmodel-annotations.jar')
+    implementation project(':google-maps-sdk-m4b')
+    implementation project(':times-square')
+    implementation project(':reactor')
+    implementation project(':reactorbinding')
+    implementation project(':reactorbinding-support-v4')
+    implementation project(':tokenizedstring')
+    implementation project(':unbinder-annotations')
+    implementation project(':newinstancer-annotations')
+    annotationProcessor files('libs/viewmodel-processor.jar')
+    annotationProcessor project(':unbinder-processor')
+    annotationProcessor project(':newinstancer-processor')
+    implementation 'com.android.support:multidex:1.0.2'
+    implementation "com.android.support.constraint:constraint-layout:1.0.2"
+    implementation "com.android.support:support-compat:$rootProject.ext.supportVersion"
+    implementation "com.android.support:support-core-ui:$rootProject.ext.supportVersion"
+    implementation "com.android.support:appcompat-v7:$rootProject.ext.supportVersion"
+    implementation "com.android.support:recyclerview-v7:$rootProject.ext.supportVersion"
+    implementation "com.android.support:design:$rootProject.ext.supportVersion"
+    implementation "com.android.support:customtabs:$rootProject.ext.supportVersion"
+    implementation "com.android.support:support-annotations:$rootProject.ext.supportVersion"
+    implementation ("com.google.android.gms:play-services-location:$rootProject.ext.googlePlayServicesVersion") {
+        exclude group: 'com.google.android.gms:play-services-basement'
+    }
+    implementation "com.google.android.gms:play-services-gcm:$rootProject.ext.googlePlayServicesVersion"
+    implementation "com.google.android.gms:play-services-wallet:$rootProject.ext.googlePlayServicesVersion"
+    implementation "com.google.android.gms:play-services-ads:$rootProject.ext.googlePlayServicesVersion"
+    implementation "com.google.code.gson:gson:$rootProject.ext.gsonVersion"
+    implementation "com.foresee.sdk:sdk:4.2.2"
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.2.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.9.1'
+    implementation 'com.crittercism:crittercism-android-agent:5.8.10'
+    implementation 'com.jakewharton:disklrucache:2.0.2'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'io.card:android-sdk:5.5.1'
+    implementation 'com.googlecode.libphonenumber:libphonenumber:8.8.11'
+    implementation 'com.appsee:appsee-android:2.4.1'
+    implementation 'com.localytics.android:library:5.1.1'
+    devImplementation "com.facebook.stetho:stetho:$rootProject.ext.stethoVersion"
+    devImplementation "com.facebook.stetho:stetho-okhttp3:$rootProject.ext.stethoVersion"
+    uatImplementation "com.facebook.stetho:stetho:$rootProject.ext.stethoVersion"
+    uatImplementation "com.facebook.stetho:stetho-okhttp3:$rootProject.ext.stethoVersion"
+    testImplementation 'org.mockito:mockito-core:2.15.0'
+    testImplementation 'junit:junit:4.12'
+
+}
+
+
+import com.android.build.gradle.api.ApplicationVariant
+import org.apache.http.HttpResponse
+import org.apache.http.client.HttpClient
+import org.apache.http.client.methods.HttpPost
+import org.apache.http.entity.mime.MultipartEntity
+import org.apache.http.entity.mime.content.FileBody
+import org.apache.http.entity.mime.content.StringBody
+import org.apache.http.impl.client.DefaultHttpClient
+import org.apache.http.util.EntityUtils
+
+android.applicationVariants.all { variant ->
+    variant.assemble.doLast {
+        def appVersionName = versionName
+
+        // If adding a new variant for crittercism upload
+        // add the variant name as a case and define the key and appId
+        // for the crittercism app you need to upload to
+        if (variant.name.equals("uatIsobarRelease")) {
+            def key = "47438357c9b52836ba4bcef10d21fa18"
+            def appId = "52fb93e98b2e332c30000001"
+
+            uploadMapping(variant, key, appId, appVersionName)
+        }
+    }
+}
+
+def uploadMapping(ApplicationVariant variant, String appKey, String appId, String appVersionName) {
+    File mappingFile = variant.getMappingFile()
+
+    MultipartEntity mpEntity = new MultipartEntity()
+    mpEntity.addPart("proguard", new FileBody(mappingFile))
+    mpEntity.addPart("app_version", new StringBody(appVersionName))
+    mpEntity.addPart("key", new StringBody(appKey))
+
+    HttpPost httpPost = new HttpPost("https://app.crittercism.com/api_beta/proguard/" + appId)
+    httpPost.setEntity(mpEntity)
+
+    HttpClient httpClient = new DefaultHttpClient()
+    HttpResponse response = httpClient.execute(httpPost)
+
+    if (response.getStatusLine().getStatusCode() != 200) {
+        project.logger.warn("Mapping.txt upload failed: " + EntityUtils.toString(response.getEntity(), "utf-8"))
+    } else {
+        project.logger.info("Mapping.text upload successful!")
+    }
+}

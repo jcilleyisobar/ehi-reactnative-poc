@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="PrePayCancelDialogFragmentBinding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_base"
+        android:paddingLeft="@dimen/padding_base"
+        android:paddingRight="@dimen/padding_base">
+
+        <TextView
+            android:id="@+id/prepay_cancel_text"
+            style="@style/TextViewSize18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_light"/>
+
+        <TextView
+            android:id="@+id/traveling_us_canada_clarification"
+            style="@style/TextViewSize18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ehi_black"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:text="@string/reservation_currency_conversion_title"
+            android:visibility="gone"
+            android:fontFamily="@font/source_sans_light_italic"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <TextView
+                style="@style/TextViewSize18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/reservation_cancel_original_amount"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_bold"/>
+
+            <TextView
+                android:id="@+id/prepay_cancel_original_amount"
+                style="@style/TextViewSize18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <TextView
+                style="@style/TextViewSize18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/reservation_cancel_cancelation_fee"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_bold"/>
+
+            <TextView
+                android:id="@+id/prepay_cancel_cancellation_fee"
+                style="@style/TextViewSize18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/dashboard_upcoming_rentals_divider_grey"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <TextView
+                style="@style/TextViewSize18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:lineSpacingExtra="4dp"
+                android:text="@string/reservation_cancel_refunded_amount"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_bold"/>
+
+            <TextView
+                android:id="@+id/prepay_cancel_refunded_amount"
+                style="@style/TextViewSize18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="4dp"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/refunded_as_amount"
+            android:text="@string/reservation_cancel_currency_refund"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            style="@style/TextViewSize14"
+            android:visibility="gone"
+            android:fontFamily="@font/source_sans_light_italic">
+        </TextView>
+
+        <TextView
+            android:id="@+id/prepay_cancel_reservation_button"
+            style="@style/GreenContinueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_base"
+            android:text="@string/reservation_cancel_confirmation_message"
+            android:fontFamily="@font/source_sans_bold"/>
+
+        <com.ehi.enterprise.android.ui.widget.DisabledClickButton
+            android:id="@+id/prepay_keep_reservation_button"
+            style="@style/GrayBorderWhiteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:enabled="false"
+            android:minHeight="52dp"
+            android:text="@string/reservation_cancel_dismiss_message"
+            android:fontFamily="@font/source_sans_bold"/>
+
+    </LinearLayout>
+</layout>

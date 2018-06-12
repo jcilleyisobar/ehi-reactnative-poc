@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="ReviewExtrasViewBinding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/included_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/section_background"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_base">
+
+            <TextView
+                android:id="@+id/included_title"
+                style="@style/TextViewSize18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reservation_review_incl_extras_section_title"
+                android:textColor="@color/ehi_black"
+                android:textAllCaps="true"
+                android:fontFamily="@font/source_sans_bold" />
+
+            <LinearLayout
+                android:id="@+id/included_extras_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:divider="@drawable/grey_divider_with_white_bg"
+                android:orientation="vertical"
+                android:showDividers="middle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mandatory_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/section_background"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_base">
+
+            <TextView
+                android:id="@+id/mandatory_title"
+                style="@style/TextViewSize18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reservation_review_mand_extras_section_title"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_bold" />
+
+            <LinearLayout
+                android:id="@+id/mandatory_extras_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:divider="@drawable/grey_divider_with_white_bg"
+                android:orientation="vertical"
+                android:showDividers="middle" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/added_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/section_background"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_base">
+
+            <TextView
+                android:id="@+id/added_title"
+                style="@style/TextViewSize18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/reservation_review_added_extras_section_title"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_bold" />
+
+            <LinearLayout
+                android:id="@+id/added_extras_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_small"
+                android:divider="@drawable/grey_divider_with_white_bg"
+                android:orientation="vertical"
+                android:showDividers="middle" />
+
+            <include
+                android:id="@+id/no_extras_added_item"
+                layout="@layout/item_review_extra_item"
+                app:extrasText="@{@string/review_modify_no_extras_title}" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

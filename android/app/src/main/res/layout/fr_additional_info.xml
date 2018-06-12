@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="AdditionalInfoFragmentBinding" >
+        <import type="com.ehi.enterprise.android.utils.databinding.adapter.AppAdapters.SymbolPosition" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <TextView
+                    style="@style/TextViewSize18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/source_sans_regular"
+                    android:padding="@dimen/padding_base"
+                    android:text="@string/additional_information_instructions_message"
+                    android:textColor="@android:color/black" />
+
+
+                <TextView
+                    style="@style/TextViewSize12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart='@dimen/padding_base'
+                    android:layout_marginBottom="@dimen/padding_base"
+                    android:fontFamily="@font/source_sans_light_italic"
+                    android:text="@string/gdpr_res_flow"
+                    android:textColor="@color/ehi_gray"
+                    app:requiredField="@{SymbolPosition.BEFORE}" />
+
+
+
+                <com.ehi.enterprise.android.ui.reservation.widget.EditAdditionalInfoView
+                    android:id="@+id/additional_information_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <com.ehi.enterprise.android.ui.widget.DisabledClickButton
+            android:id="@+id/button_submit"
+            style="@style/GreenContinueButton"
+            android:fontFamily="@font/source_sans_bold"
+            android:text="@string/additional_information_submit_button_title"
+            android:textColor="@drawable/button_inactive_white" />
+
+    </LinearLayout>
+
+</layout>

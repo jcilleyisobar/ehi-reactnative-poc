@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:drawable="@drawable/green_to_dark_green_overlay"
+        android:state_selected="false"/>
+    <item
+        android:drawable="@color/ehi_primary_dark"
+        android:state_selected="true"/>
+
+</selector>

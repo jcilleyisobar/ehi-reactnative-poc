@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="CreditCardInProfileViewBinding" />
+
+    <LinearLayout
+        android:id="@+id/credit_card_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/padding_base">
+
+        <TextView
+            android:id="@+id/item_review_credit_card_company_view"
+            style="@style/TextViewSize18"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="@dimen/padding_base"
+            android:paddingRight="@dimen/padding_base"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_bold"
+            tools:text="VISA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_xsmall"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding_base"
+            android:paddingRight="@dimen/padding_base">
+
+            <TextView
+                android:id="@+id/item_review_credit_card_mask_view"
+                style="@style/TextViewSize18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light"
+                tools:text="917-555-8765 (work)" />
+
+            <ImageView
+                android:id="@+id/use_dc_button_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:scaleType="center"
+                android:src="@drawable/arrow_green" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_review_credit_card_exp_view"
+            style="@style/TextViewSize18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_xsmall"
+            android:paddingLeft="@dimen/padding_base"
+            android:paddingRight="@dimen/padding_base"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_light"
+            tools:text="Expires 06/20" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_xlarge"
+            android:background="@color/section_divider" />
+
+        <LinearLayout
+            android:id="@+id/have_read_conditions_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_base"
+            android:paddingLeft="@dimen/padding_base"
+            android:paddingTop="@dimen/padding_base">
+
+            <TextView
+                android:id="@+id/have_read_conditions_link"
+                style="@style/TextViewSize18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/review_prepay_policies"
+                android:textColor="@color/ehi_primary"
+                android:fontFamily="@font/source_sans_bold" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="7dp"
+                android:src="@drawable/arrow_green" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/prepay_terms_and_conditions_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_base"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <CheckBox
+                android:id="@+id/have_read_conditions_check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/check_box_button_selector"/>
+
+            <TextView
+                android:id="@+id/have_read_conditions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/padding_xsmall"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_regular"
+                tools:text="@string/review_prepay_policies"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

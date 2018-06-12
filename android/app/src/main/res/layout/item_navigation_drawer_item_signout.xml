@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="NavigationDrawerSignOutItemBinding"/>
+
+    <LinearLayout
+        android:id="@+id/navigation_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/navigation_dark_item_height"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/navigation_color_primary_active"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/navigation_item_padding_large">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/TextViewSize18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/ehi_module_background_fill"
+                android:layout_weight="1"
+                android:fontFamily="@font/source_sans_bold"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingStart="4dp"
+                android:paddingEnd="@dimen/padding_xxsmall"
+                android:src="@drawable/icon_signout"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+
+    </LinearLayout>
+
+</layout>

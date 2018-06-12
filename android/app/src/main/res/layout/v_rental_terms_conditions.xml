@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <data class="RentalTermsConditionsViewBinding">
+        <variable
+            name="include"
+            type="boolean"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/spacer_rental_terms_conditions"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/header_divider"/>
+
+        <LinearLayout
+            android:id="@+id/terms_and_conditions_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_base">
+
+            <LinearLayout
+                android:id="@+id/terms_and_conditions_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/terms_and_condition_text_view"
+                    style="@style/TextViewSize18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/eu_terms_footer_text"
+                    android:textColor="@color/ehi_primary"
+                    android:fontFamily="@font/source_sans_bold"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/arrow_green"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data class="FilterPrimaryItemBinding"/>
+
+    <com.ehi.enterprise.android.ui.widget.CompoundRowView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:compoundViewId="@+id/filter_check_box"
+        app:textViewId="@+id/title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/padding_base"
+            android:paddingRight="@dimen/padding_base">
+
+            <ImageView
+                android:id="@+id/item_icon"
+                android:layout_width="21dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:scaleType="center"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/TextViewSize18"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light"/>
+
+            <CheckBox
+                android:id="@+id/filter_check_box"
+                style="@style/EHICheckBox"
+                android:layout_margin="@dimen/check_box_padding"
+                android:clickable="false"/>
+
+        </LinearLayout>
+
+    </com.ehi.enterprise.android.ui.widget.CompoundRowView>
+</layout>

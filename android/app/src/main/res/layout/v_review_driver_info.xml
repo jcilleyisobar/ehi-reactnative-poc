@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="ReviewDriverInfoViewBinding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/section_background"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_base">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TextViewSize18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_xsmall"
+                android:text="@string/reservation_driver_info_title"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_bold"/>
+
+            <TextView
+                android:id="@+id/driver_name_view"
+                style="@style/TextViewSize18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_xsmall"
+                android:singleLine="true"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light"
+                tools:text="Doris Arthur"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewSize18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_xsmall"
+                    android:text="@string/enroll_email_title"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+
+                <TextView
+                    style="@style/TextViewSize18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+
+                <TextView
+                    android:id="@+id/driver_email_view"
+                    style="@style/TextViewSize18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_xsmall"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"
+                    tools:text="doris.arthur@gmail.com"
+                    android:maxLines="1"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextViewSize18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_xsmall"
+                    android:text="@string/enroll_phone_number_title"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+
+                <TextView
+                    style="@style/TextViewSize18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"/>
+
+                <TextView
+                    android:id="@+id/driver_phone_view"
+                    style="@style/TextViewSize18"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_small"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"
+                    tools:text="617-555-3465"
+                    android:maxLines="1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/green_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/arrow_green"/>
+
+    </LinearLayout>
+</layout>

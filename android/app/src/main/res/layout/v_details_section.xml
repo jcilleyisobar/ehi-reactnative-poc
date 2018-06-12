@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="DetailsSectionViewBinding" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/review_section_divider_margin"
+            android:background="@color/ehi_grey_header_bg" />
+
+        <TextView
+            style="@style/TextViewSize18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/section_header_background"
+            android:paddingBottom="@dimen/padding_xsmall"
+            android:paddingLeft="@dimen/padding_base"
+            android:paddingRight="@dimen/padding_base"
+            android:paddingTop="@dimen/padding_xsmall"
+            android:text="@string/reservation_review_details_section_title"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/section_divider" />
+
+        <com.ehi.enterprise.android.ui.reservation.widget.ReviewDriverInfoView
+            android:id="@+id/review_driver_info_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.ehi.enterprise.android.ui.reservation.widget.PaymentMethodConfirmationView
+            android:id="@+id/payment_method_confirmation_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.ehi.enterprise.android.ui.reservation.widget.FlightDetailsView
+            android:id="@+id/flight_details_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.ehi.enterprise.android.ui.confirmation.widgets.AdditionalInformationView
+            android:id="@+id/additional_information_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.ehi.enterprise.android.ui.reservation.widget.ReviewTripPurposeView
+            android:id="@+id/review_trip_purpose_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <com.ehi.enterprise.android.ui.reservation.widget.ReviewDCDetailView
+            android:id="@+id/dc_details_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.ehi.enterprise.android.ui.reservation.widget.BillingAccountView
+            android:id="@+id/billing_account_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</layout>

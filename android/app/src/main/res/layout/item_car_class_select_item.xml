@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="CarClassSelectItemBinding" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        tools:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/class_car_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/class_title_price_container"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="-45dp"
+            android:adjustViewBounds="true"
+            android:minHeight="200dp"
+            tools:src="@drawable/eapp_icon" />
+
+        <FrameLayout
+            android:id="@+id/previously_selected_car_class"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/background_previously_selected"
+            android:paddingBottom="4dp"
+            android:paddingTop="4dp"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <TextView
+                style="@style/TextViewSize18"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/reservation_car_class_previous_selection"
+                android:textColor="@color/white"
+                android:fontFamily="@font/source_sans_regular"
+                tools:text="Keep Selection" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/class_title_price_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/previously_selected_car_class"
+            android:background="@color/white_background_car_select"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/class_title"
+                    style="@style/TextViewSize28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginTop="16dp"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"
+                    tools:text="Economy" />
+
+                <TextView
+                    android:id="@+id/class_description"
+                    style="@style/TextViewSize18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_base"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_light"
+                    tools:text="Ford Fiesta or similar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/big_price_container"
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/negotiated_rate_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/confirmation_coupon_header_background"
+                    android:padding="3dp"
+                    android:visibility="gone"
+                    tools:layout_width="140dp"
+                    tools:visibility="visible">
+
+                    <TextView
+                        android:id="@+id/negotiated_rate_text"
+                        style="@style/TextViewSize14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:text="@string/car_class_cell_negotiated_rate_title"
+                        android:textAllCaps="true"
+                        android:textColor="@color/ehi_black"
+                        android:fontFamily="@font/source_sans_bold"
+                        tools:text="Negotiated Rate" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/no_price_available"
+                    android:layout_width="140dp"
+                    android:layout_height="80dp"
+                    android:background="?attr/colorPrimaryDark"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/reservation_price_unavailable_text"
+                        style="@style/TextViewSize18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        android:padding="10dp"
+                        android:gravity="center"
+                        android:text="@string/reservation_price_unavailable"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/source_sans_regular" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/arrow_white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/price_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/ehi_primary_dark"
+                    android:gravity="center"
+                    android:minHeight="80dp"
+                    android:paddingBottom="18dp"
+                    android:paddingTop="18dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="end|center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/negotiated_rate_extras_text"
+                            style="@style/TextViewSize14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:textAllCaps="true"
+                            android:visibility="gone"
+                            android:layout_marginBottom="@dimen/margin_xsmall"
+                            android:textColor="@color/ehi_black"
+                            android:fontFamily="@font/source_sans_bold"
+                            tools:text="Negotiated Rate" />
+
+                        <TextView
+                            android:id="@+id/net_rate_extras_text"
+                            style="@style/TextViewSize14"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:textAllCaps="true"
+                            android:visibility="gone"
+                            android:layout_marginBottom="@dimen/margin_xsmall"
+                            android:textColor="@color/ehi_black"
+                            android:fontFamily="@font/source_sans_regular"
+                            android:text="@string/reservation_price_unavailable" />
+
+                        <TextView
+                            android:id="@+id/class_price"
+                            style="@style/CarClassCell.PriceLabelStyle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/source_sans_regular"
+                            tools:text="$100.00" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="end"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/total_cost"
+                                style="@style/TextViewSize14"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/source_sans_light"
+                                tools:text="Total Cost" />
+
+                            <TextView
+                                android:id="@+id/total_cost_asterisks"
+                                style="@style/TextViewSize12"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:text="**"
+                                android:textAllCaps="true"
+                                android:textColor="@color/white"
+                                android:visibility="visible"
+                                android:fontFamily="@font/source_sans_light"
+                                tools:text="**" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/chevron"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/arrow_white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/price_unavailable_container"
+            android:layout_width="140dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="?attr/colorPrimaryDark"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/price_unavailable_text"
+                style="@style/TextViewSize14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:fontFamily="@font/source_sans_regular" />
+
+        </FrameLayout>
+
+        <com.ehi.enterprise.android.ui.reservation.widget.EPointsContainer
+            android:id="@+id/points_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/class_car_image" />
+
+        <LinearLayout
+            android:id="@+id/class_details_container"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/list_item_car_class_select_bottom"
+            android:layout_below="@+id/points_container"
+            android:background="@color/car_class_select_bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/class_description_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_base"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:id="@+id/manual_transmission_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/icon_manual_transmission"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/class_transmission_type"
+                    style="@style/TextViewSize16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAllCaps="true"
+                    android:textColor="@color/ehi_black"
+                    android:fontFamily="@font/source_sans_regular"
+                    tools:text="Automatic" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/more_details_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/padding_base"
+                android:layout_weight="1"
+                android:gravity="right">
+
+                <ImageView
+                    android:id="@+id/icon_key"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_included_01" />
+
+                <TextView
+                    style="@style/TextViewSize14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="6dp"
+                    android:text="@string/reservation_car_class_details_button_title"
+                    android:textAllCaps="true"
+                    android:textColor="@color/ehi_primary"
+                    android:fontFamily="@font/source_sans_bold" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/car_transmission_hidden"
+            style="@style/TextViewSize16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/class_car_image"
+            android:paddingBottom="10dp"
+            android:paddingLeft="@dimen/padding_base"
+            android:textColor="@color/ehi_black"
+            android:visibility="gone"
+            android:fontFamily="@font/source_sans_light"
+            tools:text="Automatic"
+            tools:visibility="visible" />
+
+    </RelativeLayout>
+</layout>

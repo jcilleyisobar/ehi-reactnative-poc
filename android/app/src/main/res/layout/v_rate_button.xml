@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="SubtitleButtonViewBinding" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottom_gray_border_white_background"
+        android:duplicateParentState="true"
+        android:minHeight="65dp"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_small">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:duplicateParentState="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/TextViewSize20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:textColor="@color/green_text_color_with_silver_disabled"
+                android:textStyle="bold"
+                android:fontFamily="@font/source_sans_bold"
+                tools:text="Redeem Points" />
+
+            <TextView
+                android:id="@+id/subtitle"
+                style="@style/TextViewSize16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:maxEms="12"
+                android:maxLines="2"
+                android:textColor="@color/ehi_black"
+                android:visibility="gone"
+                android:fontFamily="@font/source_sans_light"
+                tools:text="Test Test Test Not enough points for a free day"
+                tools:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_ltgreen" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@id/arrow"
+            android:duplicateParentState="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/price"
+                style="@style/TextViewSize20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:textColor="@color/green_text_color_with_silver_disabled"
+                android:textStyle="bold"
+                android:fontFamily="@font/source_sans_regular"
+                tools:text="240" />
+
+            <TextView
+                android:id="@+id/total_cost"
+                style="@style/TextViewSize14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:text="@string/reservation_price_subtitle_total_cost"
+                android:textAllCaps="true"
+                android:textColor="@color/green_text_color_with_silver_disabled"
+                android:fontFamily="@font/source_sans_light"
+                tools:text="Points/Day" />
+
+            <TextView
+                android:id="@+id/savingPrice"
+                style="@style/TextViewSize12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:duplicateParentState="true"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light_italic"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

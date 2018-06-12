@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="CancelReservationDialogFragmentBinding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_base"
+        android:paddingLeft="@dimen/padding_base"
+        android:paddingRight="@dimen/padding_base">
+
+        <TextView
+            style="@style/TextViewSize18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="@string/reservation_confirmation_cancel_title"
+            android:textColor="@color/ehi_black"
+            android:fontFamily="@font/source_sans_light"/>
+
+        <com.ehi.enterprise.android.ui.widget.EmailNotificationBannerView
+            android:id="@+id/email_notification_banner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            tools:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/cancel_reservation_button"
+            style="@style/GreenContinueButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_base"
+            android:text="@string/confirmation_cancel_contract_yes_button_title"
+            android:fontFamily="@font/source_sans_bold"/>
+
+        <com.ehi.enterprise.android.ui.widget.DisabledClickButton
+            android:id="@+id/keep_reservation_button"
+            style="@style/GrayBorderWhiteTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:enabled="false"
+            android:minHeight="52dp"
+            android:text="@string/confirmation_cancel_contract_no_button_title"
+            android:fontFamily="@font/source_sans_bold"/>
+
+    </LinearLayout>
+</layout>

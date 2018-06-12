@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="EnrollStepThreeFragmentBinding" >
+        <import type="com.ehi.enterprise.android.utils.databinding.adapter.AppAdapters.SymbolPosition"/>
+    </data>
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.ehi.enterprise.android.ui.enroll.widget.EnrollErrorView
+                android:id="@+id/enroll_error_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/step_text_view"
+                style="@style/TextViewSize14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/padding_base"
+                android:layout_marginTop="@dimen/margin_large"
+                android:fontFamily="@font/source_sans_light"
+                tools:text="@string/enroll_step" />
+
+            <TextView
+                style="@style/TextViewSize20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_large"
+                android:layout_marginEnd="@dimen/padding_base"
+                android:layout_marginStart="@dimen/padding_base"
+                android:layout_marginTop="@dimen/margin_small"
+                android:text="@string/enroll_third_step_title"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_light" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/ehi_grey_header_bg" />
+
+            <com.ehi.enterprise.android.ui.enroll.widget.EnrollStepThreeView
+                android:id="@+id/enroll_step_three_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.ehi.enterprise.android.ui.widget.DisabledClickButton
+                android:id="@+id/continue_button"
+                style="@style/GreenContinueButton"
+                android:layout_marginTop="@dimen/padding_large"
+                android:layout_marginBottom="@dimen/margin_large"
+                android:layout_marginEnd="@dimen/margin_large"
+                android:layout_marginStart="@dimen/margin_large"
+                android:enabled="false"
+                android:text="@string/enroll_join_action" />
+
+            <TextView
+                style="@style/TextViewSize14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ehi_module_background_fill"
+                android:padding="@dimen/padding_base"
+                android:text="@string/gdpr_marketing_optin_lang"
+                app:footNote="@{SymbolPosition.BEFORE}"
+                android:textColor="@color/ehi_black"
+                android:fontFamily="@font/source_sans_regular"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

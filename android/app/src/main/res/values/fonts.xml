@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+           tools:ignore="MissingTranslation">
+    <string name="din_next_light">din_next_light</string>
+    <string name="din_next_light_italic">din_next_light_italic</string>
+    <string name="din_next_regular">din_next_regular</string>
+    <string name="din_next_bold">din_next_bold</string>
+    <string name="din_next_heavy">din_next_heavy</string>
+</resources>
+

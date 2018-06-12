@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data class="AdditionalInfoChildViewBinding"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_base">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/TextViewSize16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_base"
+        android:textColor="@color/ehi_black"
+        android:fontFamily="@font/source_sans_regular"
+        tools:text="hihihihi" />
+
+    <TextView
+        android:id="@+id/helper_text"
+        style="@style/TextViewSize16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_base"
+        android:textColor="@color/ehi_black"
+        android:fontFamily="@font/source_sans_light"
+        tools:text="hihi" />
+
+    <EditText
+        android:id="@+id/input_field"
+        style="@style/InputField"
+        android:fontFamily="@font/source_sans_light"
+        android:visibility="gone" />
+
+        <com.ehi.enterprise.android.ui.widget.EHISpinnerView
+            android:id="@+id/billing_code_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/date_picker"
+        style="@style/TextViewSize20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/edit_text_white_border"
+        android:padding="7dp"
+        android:textColor="@color/ehi_black"
+        android:visibility="gone"
+        android:fontFamily="@font/source_sans_regular" />
+
+    </LinearLayout>
+</layout>
