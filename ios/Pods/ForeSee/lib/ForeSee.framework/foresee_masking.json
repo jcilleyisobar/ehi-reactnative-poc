@@ -1,0 +1,12 @@
+{
+  "webview_masking": {
+    "unmasked":
+    {
+      "": "a wildcard URL to test loading"
+    },
+    "masked":
+    {
+      "": "a wildcard URL to test loading"
+    }
+  }
+}

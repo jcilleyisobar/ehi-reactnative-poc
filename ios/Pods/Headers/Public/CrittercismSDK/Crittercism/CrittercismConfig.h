@@ -1,0 +1,1 @@
+../../../../CrittercismSDK/iOS/Crittercism.framework/Headers/CrittercismConfig.h
