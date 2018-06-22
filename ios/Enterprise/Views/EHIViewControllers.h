@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Enterprise. All rights reserved.
 //
 
+#define EHIScreenRNTest                  @"RN-test-screen"
+
 #define EHIScreenLocations               @"locations"
 #define EHIScreenLocationDetails         @"location"
 #define EHIScreenLocationsMap            @"map"
