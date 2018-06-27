@@ -28,7 +28,7 @@ typedef NS_ENUM(NSInteger, EHIEnrollmentStepThreeSection) {
 
 @class EHIUserContactProfile;
 @class EHIRequiredInfoFootnoteViewModel;
-@interface EHIEnrollmentStepThreeViewModel : EHIEnrollmentStepViewModel <MTRReactive>
+@interface EHIEnrollmentStepThreeViewModel : EHIEnrollmentStepViewModel <MTRReactive, EHIFormFieldTextToggleDelegate>
 @property (copy  , nonatomic) NSString *warning;
 @property (strong, nonatomic) EHIFormFieldTextViewModel *phoneModel;
 @property (strong, nonatomic) EHIFormFieldTextToggleViewModel *emailModel;
@@ -42,6 +42,7 @@ typedef NS_ENUM(NSInteger, EHIEnrollmentStepThreeSection) {
 @property (assign, nonatomic) BOOL isLoading;
 
 - (EHIUserContactProfile *)currentContact;
+- (EHIUserPreferencesProfile *)currentPreferences;
 - (NSArray *)errorMessagesShowingErrors:(BOOL)showErrors;
 
 @end

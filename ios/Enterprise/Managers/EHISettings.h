@@ -18,6 +18,13 @@ typedef NS_ENUM(NSUInteger, EHIRentalReminderTime) {
     EHIRentalReminderTimeCount,
 };
 
+typedef NS_ENUM(NSUInteger, EHICookieRegionBypass) {
+    EHICookieRegionBypassClear,
+    EHICookieRegionBypassEast,
+    EHICookieRegionBypassWest
+};
+
+
 @class EHIUserLoyalty;
 @interface EHISettings : NSObject <EHIAnalyticsUpdater>
 
@@ -39,8 +46,6 @@ typedef NS_ENUM(NSUInteger, EHIRentalReminderTime) {
 @property (assign, nonatomic) BOOL useRentalAssistant;
 /** @c YES if the user opts in to using touch id for various secure features */
 @property (assign, nonatomic) BOOL useTouchId;
-/** @c YES if the dashboard notification prompt has been shown to this user */
-@property (assign, nonatomic) BOOL didPromptDashboardNewFeature;
 /** @c YES if the user wants to use the preferred payment method on the profile, as a default payment method */
 @property (assign, nonatomic) BOOL selectPreferredPaymentMethodAutomatically;
 /** @c YES if should skip survey pooling check (for debug) */
@@ -85,6 +90,12 @@ typedef NS_ENUM(NSUInteger, EHIRentalReminderTime) {
 + (BOOL)shouldShowGDPRModal;
 + (void)didShowGDPRModal;
 
++ (BOOL)shouldPromptForNotifications;
++ (void)didPromptForNotifications;
+
++ (BOOL)shouldPromptForLocationInUpcomingRental;
++ (void)didPromptForLocationInUpcomingRental;
+
 /** Returns loyalty tier level for user */
 + (NSInteger)tierForLoyalty:(EHIUserLoyalty *)loyalty;
 /** Save the tier level of a user loyalty profile */
@@ -111,6 +122,22 @@ typedef NS_ENUM(NSUInteger, EHIRentalReminderTime) {
 + (BOOL)shouldForceIssuingAuthorityRequired;
 + (void)resetShowJoinModal;
 
++ (EHICookieRegionBypass)currentCookieBypass;
++ (void)setCurrentCookieBypass:(EHICookieRegionBypass)currentCookieBypass;
+
 + (void)resetUserDefaults;
 
 @end
+
+NS_INLINE NSValueTransformer * EHICookieRegionBypassTransformer()
+{
+    EHIMapTransformer *transformer = [[EHIMapTransformer alloc] initWithMap:@{
+        @"east"  : @(EHICookieRegionBypassEast),
+        @"west"  : @(EHICookieRegionBypassWest)
+    }];
+    
+    // default to unknown
+    transformer.defaultValue = @(EHICookieRegionBypassClear);
+    
+    return transformer;
+}

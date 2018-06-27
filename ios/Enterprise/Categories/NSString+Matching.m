@@ -75,6 +75,11 @@ NSString * const EHISectionSignString = @"\u00A7";
     return [self containsString:EHIMaskString];
 }
 
+- (BOOL)ehi_isHTML
+{
+    return [self matchesRegex:@"<[^>]*>"];
+}
+
 # pragma mark - Replacement
 
 - (NSString *)stringByReplacingMatchesForRegex:(NSString *)regex withTemplate:(NSString *)replacement

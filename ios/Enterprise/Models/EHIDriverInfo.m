@@ -58,21 +58,8 @@
     request[@"last_name"]          = [self.lastName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
     request[@"email_address"]      = [self email];
     request[@"mask_email_address"] = [self maskedEmail];
-    request[@"phone"]              = [self encodedPhone];
+    request[@"phone"]              = [self phone];
     request[@"request_email_promotions"] = [[self.class transformerForKey:@key(self.wantsEmailNotifications)] reverseTransformedValue:@(self.wantsEmailNotifications)];
-}
-
-- (EHIPhone *)encodedPhone
-{
-    EHIPhone *phone = self.phone.deepCopy;
-    
-    // if there's no number but we do have a masked number, nil it out.
-    // endpoints that uses this class, we cannot send masked data on the number field
-    if(!phone.number && phone.maskedNumber) {
-        phone.maskedNumber = nil;
-    }
-    
-    return phone;
 }
 
 # pragma mark - Accessors

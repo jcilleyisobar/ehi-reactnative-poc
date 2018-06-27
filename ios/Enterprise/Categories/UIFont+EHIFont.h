@@ -21,6 +21,8 @@ typedef NS_ENUM(NSInteger, EHIFontStyle) {
 
 @interface UIFont (EHIFont)
 
++ (NSString *)ehi_fontName;
+
 /**
  @brief Returns the font for the correct style/size combo
  

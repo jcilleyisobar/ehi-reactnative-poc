@@ -16,6 +16,7 @@
 #import "EHISurvey.h"
 #import "NSDate+Formatting.h"
 #import "EHIInfoModalViewModel.h"
+#import "EHIServices_Debug.h"
 
 @interface EHIDebugViewModel () <EHIUserListener>
 
@@ -50,8 +51,10 @@
     switch(viewModel.type) {
         case EHIDebugOptionTypeStringBehavior:
             [self promptStringBehavior]; break;
-        case EHIDebugOptionTypeEnvironment:
-            [self promptEnvironment]; break;
+        case EHIDebugOptionTypeGBOEnvironment:
+            [self promptGBOEnvironment]; break;
+        case EHIDebugOptionTypeAEMEnvironment:
+            [self promptAEMEnvironment]; break;
         case EHIDebugOptionTypeSearchEnvironment:
             [self promptSearchEnvironment]; break;
         case EHIDebugOptionTypeInvalidateAuthToken:
@@ -91,6 +94,8 @@
             [self showGDPRStatusesModal]; break;
         case EHIDebugOptionTypeClearData:
             [self clearData]; break;
+        case EHIDebugOptionTypeGBORegion:
+            [self showCookieSelection]; break;
     }
 }
 
@@ -122,16 +127,23 @@
     });
 }
 
-- (void)promptEnvironment
+- (void)promptGBOEnvironment
 {
-    [[EHIConfiguration configuration] showEnvironmentSelectionAlertWithCompletion:^{
+    [[EHISettings sharedInstance].environment showEnvironmentSelectionAlertForService:EHIServicesEnvironmentTypeGBOProfile withCompletion:^{
+        [self invalidateViewModels];
+    }];
+}
+
+- (void)promptAEMEnvironment
+{
+    [[EHISettings sharedInstance].environment showEnvironmentSelectionAlertForService:EHIServicesEnvironmentTypeAEM withCompletion:^{
         [self invalidateViewModels];
     }];
 }
 
 - (void)promptSearchEnvironment
 {
-    [[EHIConfiguration configuration] showSearchEnvironmentSelectionAlertWithCompletion:^{
+    [[EHISettings sharedInstance].environment showSearchEnvironmentSelectionAlertWithCompletion:^{
         [self invalidateViewModels];
     }];
 }
@@ -458,6 +470,25 @@
     alertView.show(^(NSInteger index, BOOL canceled) {
         if(!canceled) {
             [EHISettings resetUserDefaults];
+            
+            [self invalidateViewModels];
+        }
+    });
+}
+
+- (void)showCookieSelection
+{
+    EHIAlertViewBuilder *alertView = EHIAlertViewBuilder.new
+        .title(@"Which value do you want?")
+        .button(@"Off")
+        .button(@"East")
+        .button(@"West")
+        .cancelButton(@"Cancel");
+    
+    alertView.show(^(NSInteger index, BOOL canceled) {
+        if(!canceled) {
+            [EHISettings setCurrentCookieBypass:index];
+            [[EHIServices sharedInstance] resetRegionCookie];
             
             [self invalidateViewModels];
         }

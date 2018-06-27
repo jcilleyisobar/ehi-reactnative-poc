@@ -111,14 +111,16 @@
 
 - (EHIAttributedStringBuilder *)builder
 {
-    self.numberFormatter.locale       = self.localeB;
-    self.numberFormatter.currencyCode = self.codeB;
-
+    self.numberFormatter.locale         = self.localeB;
+    self.numberFormatter.currencyCode   = self.codeB;
+    
     NSString *currencySymbol = self.symbolB ?: self.numberFormatter.currencySymbol;
 
     // if we are going to omit the currency symbol, we need to reconfigure it
     if(self.omitCurrencyCodeB) {
         self.numberFormatter.currencySymbol = @"";
+    } else {
+        self.numberFormatter.currencySymbol = nil;
     }
 
     // generate the raw price text

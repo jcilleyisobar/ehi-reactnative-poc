@@ -17,7 +17,7 @@
 
 - (void)setEhi_imageName:(NSString *)imageName
 {
-    // only attempt tot create an image if we have a valid image name
+    // only attempt to create an image if we have a valid image name
     UIImage *image = nil;
     if(imageName.length) {
         image = [UIImage imageNamed:imageName];

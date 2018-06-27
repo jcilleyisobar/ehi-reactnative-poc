@@ -67,6 +67,10 @@
 
         _requiredFieldsModel = [EHIRequiredInfoViewModel modelForInfoType: EHIRequiredInfoTypeReservation];
         _footnoteModel       = [EHIRequiredInfoFootnoteViewModel initWithType:EHIRequiredInfoFootnoteTypeReservation];
+
+        _hideEmailSignupContainer = self.specialOffersOptIn == EHIOptionalBooleanTrue
+                                    && !self.isModify
+                                    && self.isAuthenticated;
     }
     
     return self;

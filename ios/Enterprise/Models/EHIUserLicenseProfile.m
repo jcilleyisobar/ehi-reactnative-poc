@@ -57,15 +57,15 @@
 {
     [super encodeWithRequest:request];
     
-    request[@"license_number"]           = self.licenseNumber;
+    request[@"license_number"]               = self.licenseNumber;
     request[@"issuing_authority"]        = self.issuingAuthority;
     request[@"country_subdivision_code"] = self.subdivisionCode;
     request[@"country_subdivision_name"] = self.subdivisionName;
-    request[@"country_code"]             = self.countryCode;
-    request[@"country_name"]             = self.countryName;
-    request[@"license_expiration_date"]  = [self.licenseExpiry ehi_string] ?: self.maskedLicenseExpiry;
-    request[@"unmasked_date_of_birth"]   = [self.birthdate ehi_string];
-    request[@"birth_date"]               = self.maskedBirthDate;
+    request[@"country_code"]                 = self.countryCode;
+    request[@"country_name"]                 = self.countryName;
+    request[@"license_expiration_date"]      = [self.licenseExpiry ehi_string] ?: self.maskedLicenseExpiry;
+    request[@"unmasked_date_of_birth"]       = [self.birthdate ehi_string];
+    request[@"birth_date"]                   = self.maskedBirthDate;
     
     // validation for masking
     NSString *licenseIssue = NSString.new;

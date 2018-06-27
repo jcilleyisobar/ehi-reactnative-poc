@@ -14,6 +14,7 @@
 @property (nonatomic, readonly) EHIUserLocation *userLocation;
 /** @c YES if the user has granted access to location information */
 @property (nonatomic, readonly) BOOL locationsAvailable;
+@property (nonatomic, readonly) CLAuthorizationStatus locationStatus;
 
 /** The shared instance for consumers to access the manager */
 + (EHILocationManager *)sharedInstance;

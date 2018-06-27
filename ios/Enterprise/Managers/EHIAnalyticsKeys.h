@@ -64,6 +64,7 @@
 #define EHIAnalyticsDashActionWkndSpecial               @"Wknd:GetStarted"
 #define EHIAnalyticsDashActionRateVehicle               @"RateVehicle"
 #define EHIAnalyticsDashActionFindGasStations           @"GasStation"
+#define EHIAnalyticsActionRentalAssistantEnable         @"Enable"
 #define EHIAnalyticsDashActionNotificationsNotNow       @"NotNow"
 #define EHIAnalyticsDashActionDataCollectionContinue    @"Continue"
 #define EHIAnalyticsDashActionDataCollectionChange      @"ChangeTrackingSetting"
@@ -426,7 +427,6 @@
 
 #define EHIAnalyticsActionNotificationRemindPickup  @"RemindPU"
 #define EHIAnalyticsActionNotificationRemindDropOff @"RemindDO"
-#define EHIAnalyticsActionRentalAssistantEnable     @"Enable"
 
 #define EHIAnalyticsActionNotificationDashboard             @"Dashboard"
 #define EHIAnalyticsActionNotificationCallBranch            @"Call"

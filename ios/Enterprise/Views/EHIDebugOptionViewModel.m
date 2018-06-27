@@ -33,10 +33,15 @@
     stringBehavior.title    = @"String Behavior";
     stringBehavior.subtitle = [EHILocalization nameForStringBehavior:[EHILocalization stringBehavior]];
     
-    EHIDebugOptionViewModel *environment = [EHIDebugOptionViewModel new];
-    environment.type     = EHIDebugOptionTypeEnvironment;
-    environment.title    = @"Environment";
-    environment.subtitle = [EHISettings environment].displayName;
+    EHIDebugOptionViewModel *gboEnvironment = [EHIDebugOptionViewModel new];
+    gboEnvironment.type     = EHIDebugOptionTypeGBOEnvironment;
+    gboEnvironment.title    = @"GBO Environment";
+    gboEnvironment.subtitle = [[EHISettings environment] displayNameForService:EHIServicesEnvironmentTypeGBOProfile];
+
+    EHIDebugOptionViewModel *aemEnvironment = [EHIDebugOptionViewModel new];
+    aemEnvironment.type     = EHIDebugOptionTypeAEMEnvironment;
+    aemEnvironment.title    = @"AEM Environment";
+    aemEnvironment.subtitle = [[EHISettings environment] displayNameForService:EHIServicesEnvironmentTypeAEM];
 
     EHIDebugOptionViewModel *searchEnvironment = [EHIDebugOptionViewModel new];
     searchEnvironment.type     = EHIDebugOptionTypeSearchEnvironment;
@@ -131,8 +136,13 @@
     clearData.type     = EHIDebugOptionTypeClearData;
     clearData.title    = @"\u2620 Clear Data \u2620";
     clearData.subtitle = [self clearDataSubtitle];
+    
+    EHIDebugOptionViewModel *gboRegion = [EHIDebugOptionViewModel new];
+    gboRegion.type     = EHIDebugOptionTypeGBORegion;
+    gboRegion.title    = @"GBO Region";
+    gboRegion.subtitle = [self gboRegionSubtitle];
 
-    return @[stringBehavior, environment, searchEnvironment, invalidateAuthToken, wrongApiKey, map, officeGeofence, notifications, weekendSpecial, analyticsReminder, appleStoreRate, prepayNABanner, surveyPooling, surveyReset, rewards, filterTip, pushNotificationEvent, issuingAuthorityMock, unauthJoinModal, gdprState, clearData];
+    return @[stringBehavior, gboEnvironment, aemEnvironment, searchEnvironment, invalidateAuthToken, wrongApiKey, map, officeGeofence, notifications, weekendSpecial, analyticsReminder, appleStoreRate, prepayNABanner, surveyPooling, surveyReset, rewards, filterTip, pushNotificationEvent, issuingAuthorityMock, unauthJoinModal, gdprState, clearData, gboRegion];
 }
 
 //
@@ -255,6 +265,13 @@
 + (NSString *)clearDataSubtitle
 {
     return [NSString stringWithFormat:@"This will reset all flags"];
+}
+
++ (NSString *)gboRegionSubtitle
+{
+    NSString *region = [EHICookieRegionBypassTransformer() reverseTransformedValue:@([EHISettings currentCookieBypass])] ?: @"clear";
+    
+    return [NSString stringWithFormat:@"gbo_region status is: %@", region];
 }
 
 @end

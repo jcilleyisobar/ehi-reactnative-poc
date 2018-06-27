@@ -13,6 +13,9 @@
 
 + (NSString *)iconForLocation:(EHILocation *)location
 {
+    if (location.isFavorited) {
+        return @"icon_favorites_02";
+    }
     if(location.isExotics) {
         return @"icon_exotics";
     }

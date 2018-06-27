@@ -9,27 +9,34 @@
 #import "EHISettingsEnvironment.h"
 #import "EHISearchEnvironment.h"
 #import "EHIUserManager.h"
-#import "EHIServicesEnvironment.h"
+#import "EHIConfiguration.h"
+#import "EHIGBOEnvironment.h"
+#import "EHIAEMEnvironment.h"
 
-#define EHISettingsEnvironmentTypeKey @"EHISettingsEnvironmentTypeKey"
+#define EHISettingsGBOEnvironmentTypeKey @"EHISettingsEnvironmentTypeKey"
+#define EHISettingsAEMEnvironmentTypeKey @"EHISettingsAEMEnvironmentTypeKey"
 #define EHISettingsEnvironmentBetaPassword @"Lex5My7H"
 
 #ifdef UAT
-#define EHIDefaultEnvironmentType EHIEnvironmentTypeRcQa
+#define EHIDefaultGBOEnvironmentType EHIEnvironmentTypeRcQaInt1
+#define EHIDefaultAEMEnvironmentType EHIEnvironmentTypeRcQaInt1
 #elif DEBUG
-#define EHIDefaultEnvironmentType EHIEnvironmentTypeRcQa
+#define EHIDefaultGBOEnvironmentType EHIEnvironmentTypeRcQaInt1
+#define EHIDefaultAEMEnvironmentType EHIEnvironmentTypeRcQaInt1
 #elif PENTEST
-#define EHIDefaultEnvironmentType EHIEnvironmentTypePenTest
+#define EHIDefaultGBOEnvironmentType EHIEnvironmentTypePenTest
+#define EHIDefaultAEMEnvironmentType EHIEnvironmentTypeRcQaInt1
 #else
-#define EHIDefaultEnvironmentType EHIEnvironmentTypeProd
+#define EHIDefaultGBOEnvironmentType EHIEnvironmentTypeProd
+#define EHIDefaultAEMEnvironmentType EHIEnvironmentTypeProd
 #endif
 
 @interface EHISettingsEnvironment ()
+@property (assign, nonatomic) EHIEnvironmentType gboEnvironment;
+@property (assign, nonatomic) EHIEnvironmentType aemEnvironment;
 @property (strong, nonatomic) EHISearchEnvironment *searchEnvironment;
-@property (copy  , nonatomic) NSString *services;
 @property (copy  , nonatomic) NSString *search;
 @property (copy  , nonatomic) NSString *searchApiKey;
-@property (copy  , nonatomic) NSString *displayName;
 @end
 
 @implementation EHISettingsEnvironment
@@ -44,12 +51,13 @@
 
     // on launch we're going to load the environment synchronously and _then_ authenticate. this allows the app
     // to start in a consistent state in the general case.
-    environment.internalType = [self unarchiveType];
-    
+    environment.internalGBOEnvironment = [self unarchivedEnvironmentForKey:EHISettingsGBOEnvironmentTypeKey defaultEnvironment:EHIDefaultGBOEnvironmentType];
+    environment.internalAEMEnvironment = [self unarchivedEnvironmentForKey:EHISettingsAEMEnvironmentTypeKey defaultEnvironment:EHIDefaultAEMEnvironmentType];
+
     // then authenticate, and if we fail revert to the default environment
-    [environment authenticateEnvironment:environment.type withHandler:^(BOOL didAuthenticate) {
+    [environment authenticateEnvironment:environment.gboEnvironment withHandler:^(BOOL didAuthenticate) {
         if(!didAuthenticate) {
-            environment.type = EHIDefaultEnvironmentType;
+            environment.gboEnvironment = EHIDefaultGBOEnvironmentType;
             // destroy the current user / credentials (if any)
             [[EHIUserManager sharedInstance] logoutCurrentUser];
         }
@@ -58,19 +66,19 @@
     return environment;
 }
 
-+ (EHIEnvironmentType)unarchiveType
++ (EHIEnvironmentType)unarchivedEnvironmentForKey:(NSString *)key defaultEnvironment:(EHIEnvironmentType)defaultValue
 {
-	// if we are not DEBUG or UAT, we never archive our environment -- we should always be PROD
+    // if we are not DEBUG or UAT, we never archive our environment -- we should always be PROD
 #if !defined(DEBUG) && !defined(UAT)
-	return EHIDefaultEnvironmentType;
+    return defaultValue;
 #else
-    NSNumber *storedType = [[NSUserDefaults standardUserDefaults] objectForKey:EHISettingsEnvironmentTypeKey];
-	
+    NSNumber *storedType = [[NSUserDefaults standardUserDefaults] objectForKey:key];
+
     // if we don't have a stored type yet, use the defaults
     if(!storedType) {
-        return EHIDefaultEnvironmentType;
+        return defaultValue;
     }
-    
+
     return (EHIEnvironmentType)storedType.integerValue;
 #endif
 }
@@ -128,54 +136,50 @@
 
 # pragma mark - Accessors
 
-- (void)setType:(EHIEnvironmentType)type
-{
-    [self setType:type handler:nil];
-}
-
-- (void)setType:(EHIEnvironmentType)type handler:(void (^)(EHIEnvironmentType, BOOL))handler
+- (void)setGBOEnvironment:(EHIEnvironmentType)type handler:(void (^)(EHIEnvironmentType, BOOL))handler
 {
     [self authenticateEnvironment:type withHandler:^(BOOL didAuthenticate) {
         if(didAuthenticate) {
-            self.internalType = type;
+            self.internalGBOEnvironment = type;
         }
         
-        ehi_call(handler)(self.type, didAuthenticate);
+        ehi_call(handler)(self.gboEnvironment, didAuthenticate);
     }];
 }
 
-- (void)setInternalType:(EHIEnvironmentType)type
+- (void)setInternalGBOEnvironment:(EHIEnvironmentType)type
 {
-    _type = type;
+    _gboEnvironment = type;
 
     // update the stored type
-    [[NSUserDefaults standardUserDefaults] setObject:@(type) forKey:EHISettingsEnvironmentTypeKey];
-
-    // set a friendly name for debug display
-    self.displayName = [EHISettingsEnvironment nameForEnvironment:type];
+    [[NSUserDefaults standardUserDefaults] setObject:@(type) forKey:EHISettingsGBOEnvironmentTypeKey];
     
     // notify listeners of the environment change
     [[NSNotificationCenter defaultCenter] postNotificationName:EHISettingsEnvironmentChangedNotification object:nil];
 }
 
-- (void)setServices:(NSString *)services
+- (void)setAEMEnvironment:(EHIEnvironmentType)type handler:(void (^)(EHIEnvironmentType, BOOL))handler
 {
-    // ensure we have a trailing slash
-    if(![services hasSuffix:@"/"]) {
-        services = [services stringByAppendingString:@"/"];
-    }
+    [self authenticateEnvironment:type withHandler:^(BOOL didAuthenticate) {
+        if(didAuthenticate) {
+            self.internalAEMEnvironment = type;
+        }
 
-    if([_services isEqualToString:services]) {
-        return;
-    }
-   
-    _services = services;
-    EHIDomainInfo(EHILogDomainNetwork, @"services base url: %@", services);
+        ehi_call(handler)(self.aemEnvironment, didAuthenticate);
+    }];
+}
+
+- (void)setInternalAEMEnvironment:(EHIEnvironmentType)type
+{
+    _aemEnvironment = type;
+
+    // update the stored type
+    [[NSUserDefaults standardUserDefaults] setObject:@(type) forKey:EHISettingsAEMEnvironmentTypeKey];
 }
 
 - (NSString *)serviceWithType:(EHIServicesEnvironmentType)servicesType
 {
-    NSString *domainURL = [EHIServicesEnvironment serviceWithType:servicesType forEnvironment:self.type].domainURL;
+    NSString *domainURL = [self configurationForService:servicesType].domainURL;
 
     // ensure we have a trailing slash
     if(![domainURL hasSuffix:@"/"]) {
@@ -187,7 +191,7 @@
 
 - (NSString *)servicesApiKeyWithType:(EHIServicesEnvironmentType)servicesType
 {
-    return [EHIServicesEnvironment serviceWithType:servicesType forEnvironment:self.type].apiKey;
+    return [self configurationForService:servicesType].apiKey;
 }
 
 - (NSString *)search
@@ -198,6 +202,11 @@
 - (NSString *)searchApiKey
 {
     return self.searchEnvironment.apiKey;
+}
+
+- (NSString *)displayNameForService:(EHIServicesEnvironmentType)service
+{
+    return [self configurationForService:service].name;
 }
 
 # pragma mark - Beta Validation
@@ -237,54 +246,132 @@
 {
     switch(environment) {
         case EHIEnvironmentTypeBeta:
-        case EHIEnvironmentTypeEast:
-        case EHIEnvironmentTypeWest:
             return YES;
         default:
             return NO;
     }
 }
 
-+ (NSString *)nameForEnvironment:(EHIEnvironmentType)environment
+- (void)showEnvironmentSelectionAlertWithCompletion:(void(^ __nullable)(void))handler
 {
-    switch (environment) {
-		case EHIEnvironmentTypeSvcsQa:
-			return @"SVCSQA";
-		case EHIEnvironmentTypeRcQa:
-			return @"RCQA";
-        case EHIEnvironmentTypeHotHot:
-            return @"HOT HOT";
-		case EHIEnvironmentTypePrdSuPqa:
-			return @"PRDSUPQA";
-		case EHIEnvironmentTypeDev:
-			return @"DEV";
-        case EHIEnvironmentTypeDevQa:
-            return @"DEV QA";
-		case EHIEnvironmentTypeRcDev:
-			return @"RCDEV";
-        case EHIEnvironmentTypeTmpEnv:
-            return @"TMPENV";
-		case EHIEnvironmentTypePrdSuPdev:
-			return @"PRDSUPDEV";
-        case EHIEnvironmentTypePenTest:
-            return @"PEN_TEST";
-        case EHIEnvironmentTypeEast:
-            return @"PROD_EAST";
-        case EHIEnvironmentTypeWest:
-            return @"PROD_WEST";
-        case EHIEnvironmentTypeBeta:
-		case EHIEnvironmentTypeProd:
-			return @"PROD";
-        case EHIEnvironmentTypePrdsup:
-            return @"PRDSUP";
-        case EHIEnvironmentTypeNumEnvironments:
-            return nil;
+    EHIGBOEnvironment *gbo = [EHIGBOEnvironment serviceWithType:EHIServicesEnvironmentTypeGBOProfile forEnvironment:self.gboEnvironment];
+
+    [gbo showEnvironmentSelectionAlertWithCompletion:^(BOOL canceled, EHIEnvironmentType environmentType) {
+        if(canceled) {
+            ehi_call(handler)();
+            return;
+        }
+
+        [self setGBOEnvironment:environmentType handler:^(EHIEnvironmentType type, BOOL didUpdate) {
+            [[EHIConfiguration configuration] refreshCountries];
+            if (didUpdate) {
+                [[EHIUserManager sharedInstance] logoutCurrentUser];
+            }
+
+            ehi_call(handler)();
+        }];
+    }];
+}
+
+- (void)showAEMEnvironmentSelectionAlertWithCompletion:(void(^ __nullable)(void))handler
+{
+    EHIAEMEnvironment *aem = [EHIAEMEnvironment serviceWithEnvironment:self.aemEnvironment];
+
+    [aem showEnvironmentSelectionAlertWithCompletion:^(BOOL canceled, EHIEnvironmentType environmentType) {
+        if(canceled) {
+            ehi_call(handler)();
+            return;
+        }
+
+        [self setAEMEnvironment:environmentType handler:^(EHIEnvironmentType type, BOOL didUpdate) {
+            ehi_call(handler)();
+        }];
+    }];
+}
+
+- (void)showEnvironmentSelectionAlertForService:(EHIServicesEnvironmentType)service withCompletion:(void(^ __nullable)(void))handler
+{
+    void (^completion)(BOOL canceled, EHIEnvironmentType environmentType);
+
+    if(service == EHIServicesEnvironmentTypeAEM) {
+        completion = [^(BOOL canceled, EHIEnvironmentType environmentType) {
+            if(canceled) {
+                ehi_call(handler)();
+                return;
+            }
+            
+            [self setAEMEnvironment:environmentType handler:^(EHIEnvironmentType type, BOOL didUpdate) {
+                ehi_call(handler)();
+            }];
+        } copy];
+    } else {
+        completion = [^(BOOL canceled, EHIEnvironmentType environmentType) {
+            if(canceled) {
+                ehi_call(handler)();
+                return;
+            }
+            
+            [self setGBOEnvironment:environmentType handler:^(EHIEnvironmentType type, BOOL didUpdate) {
+                [[EHIConfiguration configuration] refreshCountries];
+                if (didUpdate) {
+                    [[EHIUserManager sharedInstance] logoutCurrentUser];
+                }
+                
+                ehi_call(handler)();
+            }];
+        } copy];
     }
+
+    [[self configurationForService:service] showEnvironmentSelectionAlertWithCompletion:completion];
+}
+
+- (void)showSearchEnvironmentSelectionAlertWithCompletion:(void(^ __nullable)(void))handler
+{
+#if defined(DEBUG) || defined(UAT)
+    EHIAlertViewBuilder *alertView = EHIAlertViewBuilder.new
+    .title(@"Set Search Environment")
+    .message(@"Which search environment should be used?");
+    
+    // the count is the number of envs less the final environment (for debug we are assuming last
+    // env is unprotected PROD)
+    @(0).upTo(EHISearchEnvironmentTypeNumEnvironments - 1).each(^(NSNumber *number, int index) {
+        NSString *name = [EHISearchEnvironmentTypeTransformer() reverseTransformedValue:@(index)];
+        alertView.button(name);
+    });
+    
+    alertView.cancelButton(@"Cancel");
+    
+    alertView.show(^(NSInteger index, BOOL canceled) {
+        // ignore and call handler immediately on cancel
+        if(canceled) {
+            ehi_call(handler)();
+            return;
+        }
+        
+        // attempt to update environment
+        EHISearchEnvironmentType updatedType = (EHISearchEnvironmentType)index;
+        EHISearchEnvironment *current = [EHISearchEnvironment unarchive];
+        [current setType:updatedType];
+        
+        [self update];
+        
+        ehi_call(handler)();
+    });
+#endif
 }
 
 - (void)update
 {
     self.searchEnvironment = [EHISearchEnvironment unarchive];
+}
+
+- (id<EHIServicesEnvironmentConfiguration>)configurationForService:(EHIServicesEnvironmentType)service
+{
+    if(service == EHIServicesEnvironmentTypeAEM) {
+        return [EHIAEMEnvironment serviceWithEnvironment:self.aemEnvironment];
+    }
+
+    return [EHIGBOEnvironment serviceWithType:service forEnvironment:self.gboEnvironment];
 }
 
 @end

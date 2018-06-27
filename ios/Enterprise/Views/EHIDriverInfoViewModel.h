@@ -41,6 +41,7 @@
 @property (assign, nonatomic, readonly) BOOL isLoading;
 @property (assign, nonatomic, readonly) BOOL hideNameContainer;
 @property (assign, nonatomic, readonly) BOOL hideSaveInfoContainer;
+@property (assign, nonatomic, readonly) BOOL hideEmailSignupContainer;
 @property (assign, nonatomic, readonly) BOOL showSignInContainer;
 @property (assign, nonatomic, readonly) BOOL showOutsideVendor;
 @property (assign, nonatomic, readonly) BOOL invalidDriverInfo;

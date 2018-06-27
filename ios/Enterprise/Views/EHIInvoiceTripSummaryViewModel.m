@@ -58,17 +58,17 @@
 {
     self.returnDate     = rental.returnTimeDisplay;
     self.returnLocation = rental.returnLocation.displayName;
-    self.returnCity  = [rental.returnLocation.address formattedAddress:YES];
-    self.returnPhone = rental.returnLocation.formattedPhoneNumber;
+    self.returnCity     = [rental.returnLocation.address formattedAddress:YES];
+    self.returnPhone    = rental.returnLocation.formattedPhoneNumber;
 }
 
 # pragma mark - Totals and Points
 
 - (void)bindTotals:(EHIUserRental *)rental
 {
-    self.totalPrice     = [EHIPriceFormatter format:rental.priceSummary].string;
-    self.points         = rental.pointsEarned;
-    self.showPoints     = rental.pointsEarned.length > 0;
+    self.totalPrice  = [EHIPriceFormatter format:rental.priceSummary].string;
+    self.points      = rental.pointsEarned;
+    self.showPoints  = rental.pointsEarned.length > 0;
 }
 
 # pragma mark - Actions

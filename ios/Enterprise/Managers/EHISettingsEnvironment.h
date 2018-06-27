@@ -12,15 +12,10 @@
 
 @interface EHISettingsEnvironment : NSObject
 
-/** The type for the environment; setting this property will repopulate the other properties */
-@property (assign, nonatomic) EHIEnvironmentType type;
-
 /** The base URL for search services */
 @property (copy  , nonatomic, readonly) NSString *search;
 /** The api key for search services */
 @property (copy  , nonatomic, readonly) NSString *searchApiKey;
-/** A display name for this environment **/
-@property (copy  , nonatomic, readonly) NSString *displayName;
 /** The name/key for the analytics environment */
 @property (copy  , nonatomic, readonly) NSString *analyticsKey;
 /** The key for the crittercism crash reporting environment */
@@ -34,13 +29,15 @@
 
 /** Unarchives the settings environment based on the stored type */
 + (instancetype)unarchive;
-/** convenience method to convert int type enum to display string */
-+ (NSString *)nameForEnvironment:(EHIEnvironmentType)environment;
-/** Attempts to update the environment type; Calls back the handler with the validated type */
-- (void)setType:(EHIEnvironmentType)type handler:(void(^)(EHIEnvironmentType type, BOOL didUpdate))handler;
+
+- (NSString *)displayNameForService:(EHIServicesEnvironmentType)service;
 
 - (NSString *)serviceWithType:(EHIServicesEnvironmentType)servicesType;
 - (NSString *)servicesApiKeyWithType:(EHIServicesEnvironmentType)servicesType;
+
+// only for DEBUG and UAT builds
+- (void)showEnvironmentSelectionAlertForService:(EHIServicesEnvironmentType)service withCompletion:(void(^ __nullable)(void))handler;
+- (void)showSearchEnvironmentSelectionAlertWithCompletion:(void(^ __nullable)(void))handler;
 
 /** Forced unarchive */
 - (void)update;

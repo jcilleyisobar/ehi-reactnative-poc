@@ -24,6 +24,7 @@ extern NSString * const EHISectionSignString;
 - (BOOL)ehi_isPhoneNumber;
 - (BOOL)ehi_isPossiblePhoneNumber;
 - (BOOL)ehi_isMasked;
+- (BOOL)ehi_isHTML;
 
 // Replacement
 - (NSString *)stringByReplacingMatchesForRegex:(NSString *)regex withTemplate:(NSString *)replacement;

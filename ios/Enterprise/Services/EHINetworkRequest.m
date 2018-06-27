@@ -59,39 +59,48 @@
         _serviceType = serviceType;
         _method      = method;
         _components  = [self componentsByResolvingPath:path];
-
+        
         [self headers:^(EHINetworkRequest *request) {
             request[EHIRequestHeaderAcceptLanguageKey] = [NSLocale ehi_identifier];
         }];
         
-        // add shared headers for requests relative to GBO
-        NSString *service = [EHISettings.environment serviceWithType:serviceType];
-        if(service && [self.url.absoluteString hasPrefix:service]) {
-            [self headers:^(EHINetworkRequest *request) {
-                NSString *apiKey = [EHISettings.environment servicesApiKeyWithType:serviceType];
-#if defined(DEBUG) || defined(UAT)
-                if(EHISettings.sharedInstance.forceWrongApiKey) {
-                    apiKey = EHIWrongApiKey;
-                }
-#endif
-                request[EHIRequestHeaderApiKeyKey]        = apiKey;
-                request[EHIRequestHeaderAuthTokenKey]     = EHIUser.currentUser.authorizationToken;
-                request[EHIRequestHeaderCorKey]           = [NSLocale ehi_region];
-                request[EHIRequestHeaderCorrelationIdKey] = [NSUUID.UUID UUIDString];
-            }];
-        }
-       
-        // add shared headers/params for requests relative to solr
-        if([self.url.absoluteString hasPrefix:EHISettings.environment.search]) {
-            [[self headers:^(EHINetworkRequest *request) {
-                request[EHIRequestHeaderSearchApiKey] = EHISettings.environment.searchApiKey;
-            }] parameters:^(EHINetworkRequest *request) {
-                request[EHIRequestParamFallbackKey]  = @"en_GB";
-            }];
-        }
+        [self addSharedHeadersForService:serviceType];
     }
 	
     return self;
+}
+
+- (void)addSharedHeadersForService:(EHIServicesEnvironmentType)serviceType
+{
+    if(serviceType == EHIServicesEnvironmentTypeAEM) {
+        return;
+    }
+    
+    // add shared headers for requests relative to GBO
+    NSString *service = [EHISettings.environment serviceWithType:serviceType];
+    if(service && [self.url.absoluteString hasPrefix:service]) {
+        [self headers:^(EHINetworkRequest *request) {
+            NSString *apiKey = [EHISettings.environment servicesApiKeyWithType:serviceType];
+#if defined(DEBUG) || defined(UAT)
+            if(EHISettings.sharedInstance.forceWrongApiKey) {
+                apiKey = EHIWrongApiKey;
+            }
+#endif
+            request[EHIRequestHeaderApiKeyKey]        = apiKey;
+            request[EHIRequestHeaderAuthTokenKey]     = EHIUser.currentUser.authorizationToken;
+            request[EHIRequestHeaderCorKey]           = [NSLocale ehi_region];
+            request[EHIRequestHeaderCorrelationIdKey] = [NSUUID.UUID UUIDString];
+        }];
+    }
+    
+    // add shared headers/params for requests relative to solr
+    if([self.url.absoluteString hasPrefix:EHISettings.environment.search]) {
+        [[self headers:^(EHINetworkRequest *request) {
+            request[EHIRequestHeaderSearchApiKey] = EHISettings.environment.searchApiKey;
+        }] parameters:^(EHINetworkRequest *request) {
+            request[EHIRequestParamFallbackKey]  = @"en_GB";
+        }];
+    }
 }
 
 # pragma mark - URL Resolution

@@ -57,9 +57,9 @@
     return self.user.license;
 }
 
-- (NSString *)birthDate
+- (NSDate *)birthDate
 {
-    return self.user.license.birthdate.ehi_string ?: self.user.profiles.basic.maskedBirthDate;
+    return self.user.license.birthdate;
 }
 
 - (EHIEnrollTerms *)terms
@@ -85,7 +85,7 @@
     request[@"individual_id"]        = self.individualId;
     request[@"first_name"]           = self.firstName;
     request[@"last_name"]            = self.lastName;
-    request[@"date_of_birth"]        = self.birthDate;
+    request[@"date_of_birth"]        = self.birthDate.ehi_string;
     request[@"address"]              = self.address;
     request[@"email"]                = self.email;
     request[@"phones"]               = self.phones;

@@ -11,7 +11,8 @@
 #import "EHIContractDetails.h"
 
 @interface EHIServices (Contracts)
+
 - (id<EHINetworkCancelable>)fetchPromotion:(EHIPromotionContract *)promotion handler:(void (^)(EHIPromotionContract *, EHIServicesError *))handler;
-- (id<EHINetworkCancelable>)fetchContractNumber:(NSString *)contractNumber handler:(void (^)(EHIContractDetails *, EHIServicesError *))handler
-;
+- (id<EHINetworkCancelable>)fetchContractNumber:(NSString *)contractNumber handler:(void (^)(EHIContractDetails *, EHIServicesError *))handler;
+
 @end

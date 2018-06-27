@@ -16,14 +16,12 @@ typedef NS_ENUM(NSUInteger, EHIImageQuality) {
 
 @interface EHIImage : EHIModel
 
-@property (copy, nonatomic, readonly) NSString *name;
-@property (copy, nonatomic, readonly) NSString *path;
-@property (copy, nonatomic, readonly) NSArray *supportedWidths;
-@property (copy, nonatomic, readonly) NSArray *supportedQualities;
+- (NSString *)finalPathForWidth:(NSInteger)width quality:(EHIImageQuality)quality;
 
-/** @return The path determined by the scaled width and quality (scaled in terms of retina vs non-retina) */
+/*!
+ * @discussion Template method, consume it via -finalPathForWidth:quality:
+ * @return The path determined by the scaled width and quality (scaled in terms of retina vs non-retina)
+ */
 - (NSString *)pathForWidth:(NSInteger)width quality:(EHIImageQuality)quality;
 
 @end
-
-EHIAnnotatable(EHIImage);

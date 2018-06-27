@@ -92,8 +92,12 @@
 
 + (NSDate *)ehi_dateFromString:(NSString *)string withFormat:(NSString *)format
 {
-    NSDateFormatter *formatter = [self ehi_formatterForFormat:format];
+    NSDateFormatter *formatter = [self ehi_formatterForFormat:format].copy;
     NSDate *date = [formatter dateFromString:string];
+    if(!date) {
+        formatter.lenient = YES;
+        date = [formatter dateFromString:string];
+    }
     return date;
 }
 

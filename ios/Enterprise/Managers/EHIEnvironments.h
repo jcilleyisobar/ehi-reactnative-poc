@@ -9,8 +9,8 @@
 #import "EHIMapTransformer.h"
 
 typedef NS_ENUM(NSInteger, EHIEnvironmentType) {
-    EHIEnvironmentTypeSvcsQa,
-    EHIEnvironmentTypeRcQa,
+    EHIEnvironmentTypeSvcsQaXqa1,
+    EHIEnvironmentTypeRcQaInt1,
     EHIEnvironmentTypeHotHot,
     EHIEnvironmentTypePrdSuPqa,
     EHIEnvironmentTypePrdsup,
@@ -20,8 +20,6 @@ typedef NS_ENUM(NSInteger, EHIEnvironmentType) {
     EHIEnvironmentTypeTmpEnv,
     EHIEnvironmentTypePrdSuPdev,
     EHIEnvironmentTypePenTest,
-    EHIEnvironmentTypeEast,
-    EHIEnvironmentTypeWest,
     EHIEnvironmentTypeBeta,
     EHIEnvironmentTypeProd,
     EHIEnvironmentTypeNumEnvironments
@@ -32,6 +30,7 @@ typedef NS_ENUM(NSInteger, EHIServicesEnvironmentType) {
     EHIServicesEnvironmentTypeGBOLocation,
     EHIServicesEnvironmentTypeGBORental,
     EHIServicesEnvironmentTypeGBOProfile,
+    EHIServicesEnvironmentTypeAEM
 };
 
 typedef NS_ENUM(NSInteger, EHISearchEnvironmentType) {
@@ -60,3 +59,15 @@ NS_INLINE NSValueTransformer * EHISearchEnvironmentTypeTransformer()
 
     return transformer;
 }
+
+# pragma mark - Contracts
+
+@protocol EHIServicesEnvironmentConfiguration <NSObject>
+- (NSString *)domainURL;
+- (NSString *)apiKey;
+- (NSString *)name;
+
+- (void)showEnvironmentSelectionAlertWithCompletion:(void(^ __nullable)(BOOL canceled, EHIEnvironmentType environmentType))handler;
+//+ (NSString *)nameForEnvironment:(EHIEnvironmentType)environment;
+
+@end

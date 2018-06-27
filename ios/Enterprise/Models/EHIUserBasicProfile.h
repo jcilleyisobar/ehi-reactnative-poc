@@ -15,7 +15,6 @@
 @property (copy  , nonatomic, readonly) NSString *firstName;
 @property (assign, nonatomic, readonly) NSInteger age;
 @property (copy  , nonatomic, readonly) NSString *username;
-@property (copy  , nonatomic, readonly) NSString *maskedBirthDate;
 @property (strong, nonatomic, readonly) EHIUserLoyalty *loyalty;
 
 // computed

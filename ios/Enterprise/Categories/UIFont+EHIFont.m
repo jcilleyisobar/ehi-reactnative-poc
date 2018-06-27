@@ -22,6 +22,11 @@
 
 @implementation UIFont (EHIFont)
 
++ (NSString *)ehi_fontName
+{
+    return [[self ehi_fontWithStyle:EHIFontStyleLight size:10] fontName];
+}
+
 + (instancetype)ehi_fontWithStyle:(EHIFontStyle)style size:(CGFloat)size
 {
     NSString *fontName = [self ehi_fontNameForStyle:style];

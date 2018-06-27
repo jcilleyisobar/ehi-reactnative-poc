@@ -15,6 +15,7 @@
 #import "EHIReservationBuilder+Analytics.h"
 #import "EHIServices+Location.h"
 #import "EHINotificationManager.h"
+#import "EHILocationManager.h"
 #import "EHISettings.h"
 #import "EHISurvey.h"
 #import "EHIGeofenceManager.h"
@@ -319,6 +320,8 @@
 
 - (void)acceptNotifications
 {
+    [EHIAnalytics trackAction:EHIAnalyticsActionRentalAssistantEnable handler:self.rentalAssistantHandler];
+
     dispatch_group_t group = dispatch_group_create();
 
     dispatch_group_enter(group);
@@ -338,10 +341,18 @@
 
 - (void)denyNotifications
 {
-    [EHIAnalytics trackAction:EHIAnalyticsDashActionNotificationsNotNow handler:nil];
+    [EHIAnalytics trackAction:EHIAnalyticsDashActionNotificationsNotNow handler:self.rentalAssistantHandler];
     
     // reload rentals after viewing one time notification prompt
     [self reloadRentals];
+}
+
+- (EHIAnalyticsContextHandler)rentalAssistantHandler
+{
+    return ^(EHIAnalyticsContext *context) {
+        [context setRouterScreen:EHIScreenDashboard];
+        context.state = self.currentStatus;
+    };
 }
 
 - (void)clearQuickstart
@@ -414,21 +425,25 @@
     }];
 }
 
+- (EHIModel *)notificationModel
+{
+    return [EHISettings shouldPromptForNotifications] ? [EHIModel placeholder] : nil;
+}
+
+- (EHIModel *)locationPromptModel
+{
+    BOOL shoulPromptLocation = [EHISettings shouldPromptForLocationInUpcomingRental] && self.contentType == EHIContentSectionTypeUpcoming;
+    return shoulPromptLocation ? [EHIModel placeholder] : nil;
+}
+
 - (EHIUserHandler)handleUserRentals:(EHIUserHandler)handler
 {
     return ^(EHIUser *user, EHIServicesError *error) {
-        BOOL promptNotifications = ![EHISettings sharedInstance].didPromptDashboardNewFeature;
         BOOL hasCurrentRentals   = user.currentRentals.count > 0;
         BOOL hasUpcomingRentals  = user.upcomingRentals.count > 0;
-        
-        // show notification prompt once even is user have no rentals
-        if(promptNotifications) {
-            [self setContentModel:[EHIModel placeholder] forType:EHIContentSectionTypeNotifications handler:^{
-                ehi_call(handler)(user, error);
-            }];
-        }
+
         // if we have a user with current rentals, show the current rental
-        else if(hasCurrentRentals) {
+        if(hasCurrentRentals) {
             [self setContentModel:user.currentRentals.firstRental forType:EHIContentSectionTypeCurrent handler:^{
                 ehi_call(handler)(user, error);
             }];
@@ -470,8 +485,6 @@
     }];
 }
 
-# pragma mark - Accessors
-
 - (id)modelAtIndexPath:(NSIndexPath *)indexPath
 {
     switch((EHIDashboardSection)indexPath.section) {
@@ -497,7 +510,6 @@
 {
     context[EHIAnalyticsDashStatusKey] = [self currentStatus];
     context[EHIAnalyticsDashDaysUntilRentalKey] = [self daysUntilRental];
-
 }
 
 //
@@ -514,7 +526,6 @@
         case EHIContentSectionTypeUpcoming:
             return EHIAnalyticsDashStateUpcoming;
         case EHIContentSectionTypeLoading:
-        case EHIContentSectionTypeNotifications:
             return EHIAnalyticsDashStateNone;
     }
 }

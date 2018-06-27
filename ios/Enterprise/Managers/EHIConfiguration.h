@@ -10,7 +10,7 @@
 #import "EHIPhone.h"
 #import "EHIConfigurationHandler.h"
 
-#define EHICountriesRefreshedNotification @"EHICountriesRefreshed"
+extern NSString * const EHICountriesRefreshedNotification;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -61,6 +61,8 @@ NS_ASSUME_NONNULL_BEGIN
 /** Accesses the shared configuration */
 + (instancetype)configuration;
 
+- (void)refreshCountries;
+
 @end
 
 @interface EHIConfiguration (Readiness)
@@ -80,10 +82,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 
 - (nullable EHIConfigurationHandler *)onReady:(EHIConfigurationCallback)callback;
-
-// only for DEBUG and UAT builds
-- (void)showEnvironmentSelectionAlertWithCompletion:(void(^ __nullable)(void))handler;
-- (void)showSearchEnvironmentSelectionAlertWithCompletion:(void(^ __nullable)(void))handler;
 
 @end
 

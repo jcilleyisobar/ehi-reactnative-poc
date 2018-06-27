@@ -11,6 +11,7 @@
 #import "EHIMenuAnimationProgress.h"
 #import "EHIUserManager.h"
 #import "EHIConfiguration.h"
+#import "EHIDealsConfiguration.h"
 
 @interface EHIMenuViewModel () <EHIUserListener, EHIMenuAnimationProgressListener>
 @property (assign, nonatomic) BOOL isVisible;
@@ -27,11 +28,15 @@
         
         [[EHIUserManager sharedInstance] addListener:self];
         [[EHIMenuAnimationProgress sharedInstance] addListener:self];
-        [[EHIConfiguration configuration] onReady:^(BOOL isReady) {
+        
+        void (^readinessHandler)(BOOL) = ^(BOOL isReady) {
             if(isReady) {
                 [self rebuildMenuItems];
             }
-        }];
+        };
+        
+        [[EHIConfiguration configuration] onReady:readinessHandler];
+        [[EHIDealsConfiguration configuration] onReady:readinessHandler];
     }
     
     return self;
@@ -83,6 +88,11 @@
     BOOL hideFeedbackMenu = [NSLocale ehi_hideFeedbackMenu];
     if (hideFeedbackMenu) {
         [filterItems addIndex:EHIMenuItemRowFeedback];
+    }
+    
+    BOOL hideDeals = ![EHIDealsConfiguration configuration].enabled;
+    if(hideDeals) {
+        [filterItems addIndex:EHIMenuItemRowDeals];
     }
     
     // hide debug elements in production build!

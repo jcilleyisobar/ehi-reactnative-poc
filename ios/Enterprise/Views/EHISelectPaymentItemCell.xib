@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -48,7 +47,7 @@
                         </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company Card (Preferred)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lQM-d7-Sb2" userLabel="Alias Label" customClass="EHILabel">
-                        <rect key="frame" x="65" y="20" width="214" height="19"/>
+                        <rect key="frame" x="65" y="20" width="214" height="18"/>
                         <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="15"/>
                         <color key="textColor" red="0.10588235294117647" green="0.55294117647058827" blue="0.28627450980392155" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
@@ -61,7 +60,7 @@
                         </constraints>
                     </view>
                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pbS-mB-9IU" userLabel="Card Image Container">
-                        <rect key="frame" x="65" y="43" width="34" height="18"/>
+                        <rect key="frame" x="65" y="42" width="34" height="18"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="creditcard_03_amex" translatesAutoresizingMaskIntoConstraints="NO" id="stY-zZ-lcl">
                                 <rect key="frame" x="0.0" y="0.0" width="26" height="18"/>
@@ -79,19 +78,19 @@
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="749" text="**** **** **** 8902" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmS-6X-7BZ" userLabel="PaymentTitleLabel" customClass="EHILabel">
-                        <rect key="frame" x="99" y="43" width="181" height="20.5"/>
+                        <rect key="frame" x="99" y="41.5" width="181" height="19"/>
                         <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="16"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="751" verticalHuggingPriority="750" text="Expires: 01/20" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ym-7l-WKN" customClass="EHILabel">
-                        <rect key="frame" x="65" y="67.5" width="215" height="20.5"/>
+                        <rect key="frame" x="65" y="64.5" width="215" height="19"/>
                         <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="16"/>
                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uF7-Il-GaI">
-                        <rect key="frame" x="65" y="88" width="235" height="50"/>
+                        <rect key="frame" x="65" y="83.5" width="235" height="50"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3uq-rc-1Yr" customClass="EHIToggleButton">
                                 <rect key="frame" x="0.0" y="20" width="30" height="30"/>
@@ -133,6 +132,8 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="QaX-lr-Wl6" firstAttribute="top" secondItem="NI8-wy-QCG" secondAttribute="top" id="0Wj-aU-Izj"/>
+                <constraint firstItem="kmS-6X-7BZ" firstAttribute="centerY" secondItem="pbS-mB-9IU" secondAttribute="centerY" id="1MH-Fz-qMT"/>
+                <constraint firstItem="pbS-mB-9IU" firstAttribute="top" secondItem="lQM-d7-Sb2" secondAttribute="bottom" constant="4" id="2bZ-Sx-pB7"/>
                 <constraint firstItem="kLe-iS-4WS" firstAttribute="top" secondItem="NI8-wy-QCG" secondAttribute="top" id="3aY-yu-mBR"/>
                 <constraint firstAttribute="trailing" secondItem="kLe-iS-4WS" secondAttribute="trailing" constant="60" id="7Ab-K5-fva"/>
                 <constraint firstItem="QaX-lr-Wl6" firstAttribute="leading" secondItem="kmS-6X-7BZ" secondAttribute="trailing" constant="20" id="7Hb-cD-gnq"/>
@@ -144,14 +145,12 @@
                 <constraint firstItem="QaX-lr-Wl6" firstAttribute="leading" secondItem="uF7-Il-GaI" secondAttribute="trailing" id="L4F-73-17f"/>
                 <constraint firstItem="M60-1v-OGC" firstAttribute="leading" secondItem="NI8-wy-QCG" secondAttribute="leading" id="UCs-ln-jka"/>
                 <constraint firstItem="ebU-Pv-u4N" firstAttribute="leading" secondItem="NI8-wy-QCG" secondAttribute="leading" constant="20" id="WV3-Fy-aOS"/>
-                <constraint firstItem="kmS-6X-7BZ" firstAttribute="top" secondItem="lQM-d7-Sb2" secondAttribute="bottom" constant="4" id="dRT-T0-TG8"/>
                 <constraint firstItem="QaX-lr-Wl6" firstAttribute="leading" secondItem="kLe-iS-4WS" secondAttribute="trailing" id="gq7-u0-aqO"/>
                 <constraint firstItem="uF7-Il-GaI" firstAttribute="leading" secondItem="pbS-mB-9IU" secondAttribute="leading" id="h2h-Y9-wii"/>
                 <constraint firstItem="6Ym-7l-WKN" firstAttribute="leading" secondItem="lQM-d7-Sb2" secondAttribute="leading" id="hAM-6w-1hP"/>
                 <constraint firstAttribute="bottom" secondItem="kLe-iS-4WS" secondAttribute="bottom" id="hCI-Ug-2Xm"/>
                 <constraint firstItem="lQM-d7-Sb2" firstAttribute="top" secondItem="ebU-Pv-u4N" secondAttribute="top" id="hlm-Dc-08h"/>
                 <constraint firstAttribute="trailing" secondItem="QaX-lr-Wl6" secondAttribute="trailing" id="huY-vf-8R0"/>
-                <constraint firstItem="pbS-mB-9IU" firstAttribute="top" secondItem="kmS-6X-7BZ" secondAttribute="top" id="iML-QO-49D"/>
                 <constraint firstItem="lQM-d7-Sb2" firstAttribute="leading" secondItem="ebU-Pv-u4N" secondAttribute="trailing" constant="20" id="jqb-2r-WH8"/>
                 <constraint firstItem="6Ym-7l-WKN" firstAttribute="top" secondItem="kmS-6X-7BZ" secondAttribute="bottom" constant="4" id="par-r4-lhS"/>
                 <constraint firstItem="M60-1v-OGC" firstAttribute="top" secondItem="QaX-lr-Wl6" secondAttribute="bottom" id="ptx-vq-Lcn"/>

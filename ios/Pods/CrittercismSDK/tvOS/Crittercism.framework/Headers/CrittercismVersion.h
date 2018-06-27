@@ -1,1 +1,0 @@
-#define CRITTERCISM_VERSION @"5.8.0"

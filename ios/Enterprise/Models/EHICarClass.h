@@ -15,7 +15,7 @@
 #import "EHICarClassVehicleRate.h"
 #import "EHICarClassFeature.h"
 #import "EHICarClassMileage.h"
-#import "EHIImage.h"
+#import "EHIGBOImage.h"
 #import "EHICarClassFilter.h"
 #import "EHIFilters.h"
 #import "EHIAnalyticsEncodable.h"
@@ -66,7 +66,7 @@ typedef NS_ENUM(NSInteger, EHICarClassRedemptionLimitReason) {
 @property (assign, nonatomic, readonly) BOOL requiresTermsAndConditions;
 @property (copy  , nonatomic, readonly) NSString *termsAndConditions;
 
-@property (copy  , nonatomic, readonly) NSArray<EHIImage> *images;
+@property (copy  , nonatomic, readonly) NSArray<EHIGBOImage> *images;
 @property (copy  , nonatomic, readonly) NSArray<EHICarClassFilter> *filters;
 @property (copy  , nonatomic, readonly) NSString *licensePlate;
 @property (copy  , nonatomic, readonly) NSString *licenseState;

@@ -40,6 +40,7 @@
         @"contract_number"                  : @key(model.uid),
         @"contract_name"                    : @key(model.name),
         @"contract_description"             : @key(model.details),
+        @"contract_short_description"       : @key(model.shortDescription),
         @"contract_accepts_billing"         : @key(model.customerAcceptsBilling),
         @"third_party_email_notify"         : @key(model.thirdPartyEmailRequired),
         @"marketing_message_indicator"      : @key(model.marketingEmailOptIn),

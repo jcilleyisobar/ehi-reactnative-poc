@@ -69,7 +69,6 @@ NS_ASSUME_NONNULL_BEGIN
     }
     
     [self.listeners addObject:listener];
-    [listener reachability:self didChange:self.isReachable];
 }
 
 # pragma mark - Callbacks

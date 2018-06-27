@@ -61,7 +61,7 @@
 
 - (NSString *)contractInfoForRental:(EHIUserRental *)userRental
 {
-    NSString *contractName  = userRental.contractName;
+    NSString *contractName = userRental.contractName ?: @"";
     if(contractName) {
         NSString *contractTitle = EHILocalizedString(@"invoice_rental_contract_name", @"Contract: #{contract_name}", @"");
         return [contractTitle ehi_applyReplacementMap:@{

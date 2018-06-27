@@ -8,7 +8,6 @@
 
 #import "EHIEnrollmentStepViewModel.h"
 #import "EHIRequiredInfoViewModel.h"
-#import "EHIServices+User.h"
 
 @implementation EHIEnrollmentStepViewModel
 
@@ -77,15 +76,6 @@
     }
     
     return _requiredInfoModel;
-}
-
-- (void)cloneCreateProfile:(EHIEnrollProfile *)profile handler:(void (^)(EHIUser *user, EHIServicesError *error))handler
-{
-    if(self.didMatchProfile) {
-        [[EHIServices sharedInstance] cloneEnrollProfile:profile handler:handler];
-    } else {
-        [[EHIServices sharedInstance] createEnrollProfile:profile handler:handler];
-    }
 }
 
 # pragma mark - Analytics

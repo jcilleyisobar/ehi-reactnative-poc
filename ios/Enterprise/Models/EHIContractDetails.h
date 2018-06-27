@@ -19,6 +19,7 @@ typedef NS_ENUM(NSInteger, EHIContractType) {
 
 @property (copy  , nonatomic, readonly) NSString *name;
 @property (copy  , nonatomic, readonly) NSString *details;
+@property (copy  , nonatomic, readonly) NSString *shortDescription;
 @property (copy  , nonatomic, readonly) NSString *billingAccount;
 @property (copy  , nonatomic, readonly) NSArray<EHIContractAdditionalInfo> *additionalInformation;
 @property (assign, nonatomic, readonly) BOOL customerAcceptsBilling;

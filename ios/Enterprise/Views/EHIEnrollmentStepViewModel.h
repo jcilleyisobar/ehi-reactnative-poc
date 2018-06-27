@@ -48,8 +48,6 @@ typedef NS_ENUM(NSInteger, EHIEnrollmentProfile) {
 - (void)persistUser:(EHIUser *)user;
 - (void)persistUser:(EHIUser *)user password:(NSString *)password readTerms:(BOOL)terms;
 
-- (void)cloneCreateProfile:(EHIEnrollProfile *)profile handler:(void (^)(EHIUser *user, EHIServicesError *error))handler;
-
 - (void)reset;
 
 @end

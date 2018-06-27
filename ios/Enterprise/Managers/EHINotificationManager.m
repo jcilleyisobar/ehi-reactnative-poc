@@ -220,7 +220,7 @@
 
 - (void)promptRegistrationIfNeeded:(void (^)(BOOL shouldNotify))handler
 {
-    if([self isRegisteredForNotifications] || [self hasShownSystemNotificationAlert]) {
+    if([self shouldPromptForNotifications]) {
         ehi_call(handler)(YES);
         return;
     }
@@ -263,7 +263,7 @@
                                    completionHandler:^(BOOL granted, NSError * _Nullable error) {
             [Localytics didRequestUserNotificationAuthorizationWithOptions:options granted:granted];
             outerGranted = granted;
-            [[NSUserDefaults standardUserDefaults] setBool:YES forKey:EHINotificationSystemAlertShownKey];
+            [self didPromptForNotifications];
             ehi_call(completion)();
         }];
     });
@@ -295,9 +295,14 @@
 
 }
 
-- (BOOL)shouldPromptNotifications
+- (BOOL)shouldPromptForNotifications
 {
     return !self.hasShownSystemNotificationAlert && !self.isRegisteredForNotifications;
+}
+
+- (void)didPromptForNotifications
+{
+    [[NSUserDefaults standardUserDefaults] setBool:YES forKey:EHINotificationSystemAlertShownKey];
 }
 
 - (BOOL)hasShownSystemNotificationAlert

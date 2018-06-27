@@ -31,7 +31,7 @@
                                 <rect key="frame" x="0.0" y="20" width="414" height="980"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vXt-jE-i65" userLabel="Content View">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="990"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="991"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8WA-tB-0ib" customClass="EHIActivityIndicator">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="871"/>
@@ -99,7 +99,7 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0eS-o7-h08" userLabel="Form Background">
-                                                <rect key="frame" x="0.0" y="178" width="414" height="567"/>
+                                                <rect key="frame" x="0.0" y="178" width="414" height="568"/>
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                             <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="44" translatesAutoresizingMaskIntoConstraints="NO" id="Pcw-0c-ZIG" userLabel="RequiredInfoView" customClass="EHIRequiredInfoView">
@@ -212,10 +212,10 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ERV-y1-o8W" userLabel="Email Signup Container">
-                                                <rect key="frame" x="20" y="603" width="374" height="39"/>
+                                                <rect key="frame" x="20" y="603" width="374" height="40"/>
                                                 <subviews>
                                                     <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSh-fC-XnH" customClass="EHIToggleButton">
-                                                        <rect key="frame" x="0.0" y="15" width="24" height="24"/>
+                                                        <rect key="frame" x="0.0" y="15.5" width="24" height="24"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="24" id="d9G-yd-XUZ"/>
                                                             <constraint firstAttribute="width" secondItem="lSh-fC-XnH" secondAttribute="height" id="p66-te-P95"/>
@@ -225,7 +225,7 @@
                                                         </state>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign up to receive emails from Enterprise" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="303" translatesAutoresizingMaskIntoConstraints="NO" id="tAg-Pt-QEF" customClass="EHILabel">
-                                                        <rect key="frame" x="32" y="16" width="342" height="23"/>
+                                                        <rect key="frame" x="32" y="16" width="342" height="24"/>
                                                         <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="18"/>
                                                         <color key="textColor" red="0.069491848349571228" green="0.53350794315338135" blue="0.28193217515945435" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
@@ -238,6 +238,7 @@
                                                     <constraint firstItem="tAg-Pt-QEF" firstAttribute="centerY" secondItem="lSh-fC-XnH" secondAttribute="centerY" id="Wpb-0W-7Fq"/>
                                                     <constraint firstItem="lSh-fC-XnH" firstAttribute="leading" secondItem="ERV-y1-o8W" secondAttribute="leading" id="al6-f7-MOu"/>
                                                     <constraint firstItem="tAg-Pt-QEF" firstAttribute="leading" secondItem="lSh-fC-XnH" secondAttribute="trailing" constant="8" id="ej9-yi-Lns"/>
+                                                    <constraint firstAttribute="height" constant="40" id="gts-7d-vvb" customClass="EHIRestorableConstraint"/>
                                                     <constraint firstAttribute="bottom" secondItem="tAg-Pt-QEF" secondAttribute="bottom" id="hbD-ht-Zv0"/>
                                                     <constraint firstAttribute="trailing" secondItem="tAg-Pt-QEF" secondAttribute="trailing" id="krC-9I-WgJ"/>
                                                 </constraints>
@@ -246,7 +247,7 @@
                                                 </connections>
                                             </view>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rgN-ve-xaZ" userLabel="Confirmation Container">
-                                                <rect key="frame" x="20" y="642" width="374" height="43"/>
+                                                <rect key="frame" x="20" y="643" width="374" height="43"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will receive a confirmation email shortly. Please confirm that you would like to opt-in for email specials." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XKp-2h-iJ6" customClass="EHILabel">
                                                         <rect key="frame" x="0.0" y="10" width="374" height="33"/>
@@ -264,11 +265,11 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" placeholderIntrinsicWidth="414" placeholderIntrinsicHeight="50" translatesAutoresizingMaskIntoConstraints="NO" id="NaF-vg-2DW" customClass="EHIRequiredInfoFootnoteView">
-                                                <rect key="frame" x="0.0" y="685" width="414" height="50"/>
+                                                <rect key="frame" x="0.0" y="686" width="414" height="50"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zEE-gJ-lr3" userLabel="Bottom Container">
-                                                <rect key="frame" x="0.0" y="745" width="414" height="245"/>
+                                                <rect key="frame" x="0.0" y="746" width="414" height="245"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vv0-tF-8ge" userLabel="Top Divider">
                                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1"/>
@@ -469,6 +470,7 @@ subsequent reservations</string>
                         <outlet property="emailDescriptionLabel" destination="LtD-V6-LYb" id="WvD-YX-VFl"/>
                         <outlet property="emailLabel" destination="Klo-ad-M4r" id="77O-1d-C9z"/>
                         <outlet property="emailSignupContainer" destination="ERV-y1-o8W" id="KG4-xC-3xS"/>
+                        <outlet property="emailSignupContainerHeight" destination="gts-7d-vvb" id="Vmc-nr-bia"/>
                         <outlet property="emailSignupLabel" destination="tAg-Pt-QEF" id="0NA-nU-1nO"/>
                         <outlet property="emailTextField" destination="6cs-3e-UoH" id="UO1-1q-40P"/>
                         <outlet property="emailToggle" destination="lSh-fC-XnH" id="qgT-zx-gfv"/>

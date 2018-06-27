@@ -39,9 +39,6 @@
 		001664871B45B9EC0063F8B0 /* EHIConfirmationAdditionalInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 001664861B45B9EC0063F8B0 /* EHIConfirmationAdditionalInfoCell.m */; };
 		001664891B45B9FC0063F8B0 /* EHIConfirmationAdditionalInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 001664881B45B9FC0063F8B0 /* EHIConfirmationAdditionalInfoCell.xib */; };
 		0016648C1B45BA0C0063F8B0 /* EHIConfirmationAdditionalInfoViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0016648B1B45BA0C0063F8B0 /* EHIConfirmationAdditionalInfoViewModel.m */; };
-		0023BFEC1C31A44300CFB0C9 /* EHIDashboardNewFeatureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0023BFEB1C31A44300CFB0C9 /* EHIDashboardNewFeatureCell.xib */; };
-		0023BFF01C31A46600CFB0C9 /* EHIDashboardNewFeatureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0023BFEF1C31A46600CFB0C9 /* EHIDashboardNewFeatureCell.m */; };
-		0023BFF41C31A47800CFB0C9 /* EHIDashboardNewFeatureViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0023BFF31C31A47800CFB0C9 /* EHIDashboardNewFeatureViewModel.m */; };
 		002481E91B2A322800678689 /* EHIVehicleLogistics.m in Sources */ = {isa = PBXBuildFile; fileRef = 002481E81B2A322800678689 /* EHIVehicleLogistics.m */; };
 		0034B6CA1B7BC7D40080CC01 /* EHIReservationEligibility.m in Sources */ = {isa = PBXBuildFile; fileRef = 0034B6C91B7BC7D40080CC01 /* EHIReservationEligibility.m */; };
 		003B70E01C04C76700156669 /* EHIDebugViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 003B70DF1C04C76700156669 /* EHIDebugViewController.m */; };
@@ -339,6 +336,7 @@
 		84CCFE621C6A76C6001D6098 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CCFE611C6A76C6001D6098 /* AdSupport.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		84F26DC11C52A8CA004F7480 /* EHIClickableLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F26DC01C52A8CA004F7480 /* EHIClickableLabel.m */; };
 		84F26DC51C5694E0004F7480 /* EHI3DSData.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F26DC41C5694E0004F7480 /* EHI3DSData.m */; };
+		86CB846EAF80E3D82B574B84 /* EHIDealCardViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 86CB821AB4AAD9FE14D0CC1B /* EHIDealCardViewModel.m */; };
 		92003B631D39547100AAEF40 /* EHIReservationPriceSublistCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92003B5F1D39547100AAEF40 /* EHIReservationPriceSublistCell.m */; };
 		92003B651D39547100AAEF40 /* EHIReservationPriceSublistCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92003B601D39547100AAEF40 /* EHIReservationPriceSublistCell.xib */; };
 		92003B671D39547100AAEF40 /* EHIReservationPriceSublistViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92003B621D39547100AAEF40 /* EHIReservationPriceSublistViewModel.m */; };
@@ -371,6 +369,7 @@
 		92168F4E1EBA05DF000756E8 /* EHITemporalSelectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92168F4A1EBA05DF000756E8 /* EHITemporalSelectionView.xib */; };
 		92168F4F1EBA05DF000756E8 /* EHITemporalSelectionViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92168F4C1EBA05DF000756E8 /* EHITemporalSelectionViewModel.m */; };
 		92168F531EBA0868000756E8 /* EHITemporalSelectionViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92168F521EBA0868000756E8 /* EHITemporalSelectionViewModelTests.m */; };
+		921AFC4820D7DE3200C155F6 /* EHIServices+Deals.m in Sources */ = {isa = PBXBuildFile; fileRef = 921AFC4720D7DE3200C155F6 /* EHIServices+Deals.m */; };
 		921C24241EBA5AD300652AD1 /* EHIDateTimeComponentMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 921C24201EBA5AD300652AD1 /* EHIDateTimeComponentMapView.m */; };
 		921C24251EBA5AD300652AD1 /* EHIDateTimeComponentMapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 921C24211EBA5AD300652AD1 /* EHIDateTimeComponentMapView.xib */; };
 		921C24261EBA5AD300652AD1 /* EHIDateTimeComponentViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 921C24231EBA5AD300652AD1 /* EHIDateTimeComponentViewModel.m */; };
@@ -411,6 +410,7 @@
 		923E7B631DAC06E5009AC5A0 /* EHIPaymentOptionFooterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 923E7B5F1DAC06E5009AC5A0 /* EHIPaymentOptionFooterCell.m */; };
 		923E7B641DAC06E5009AC5A0 /* EHIPaymentOptionFooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 923E7B601DAC06E5009AC5A0 /* EHIPaymentOptionFooterCell.xib */; };
 		923E7B651DAC06E5009AC5A0 /* EHIPaymentOptionFooterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 923E7B621DAC06E5009AC5A0 /* EHIPaymentOptionFooterViewModel.m */; };
+		923EA46820C8128900073F54 /* EHIGradientView.m in Sources */ = {isa = PBXBuildFile; fileRef = 923EA46720C8128900073F54 /* EHIGradientView.m */; };
 		9241FE3A1F1FC87000F01C33 /* EHIDashboardActiveRentalViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9241FE391F1FC87000F01C33 /* EHIDashboardActiveRentalViewModelTests.m */; };
 		9243526C1D059F2B008FB24E /* EHIConfirmationHeaders.m in Sources */ = {isa = PBXBuildFile; fileRef = 9243526B1D059F2B008FB24E /* EHIConfirmationHeaders.m */; };
 		924352741D05F9B6008FB24E /* EHIEmeraldClubSignInStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9243526F1D05F9B6008FB24E /* EHIEmeraldClubSignInStoryboard.storyboard */; };
@@ -432,6 +432,11 @@
 		924FB8C31DF5B8D300E9895A /* EHISurveyInviteViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 924FB8C01DF5B8D300E9895A /* EHISurveyInviteViewModel.m */; };
 		9253B2AB1E9BB44A00DC1A55 /* EHICrashNetworkOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9253B2AA1E9BB44A00DC1A55 /* EHICrashNetworkOperation.m */; };
 		9253B2AE1E9BF7BB00DC1A55 /* EHIPriceFormatterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9253B2AD1E9BF7BB00DC1A55 /* EHIPriceFormatterTests.m */; };
+		92553C6B20C8278000323DF9 /* EHIDealDetailStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92553C6720C8278000323DF9 /* EHIDealDetailStoryboard.storyboard */; };
+		92553C6C20C8278000323DF9 /* EHIDealDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92553C6820C8278000323DF9 /* EHIDealDetailViewModel.m */; };
+		92553C6D20C8278000323DF9 /* EHIDealDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92553C6920C8278000323DF9 /* EHIDealDetailViewController.m */; };
+		92553C7020C86B6900323DF9 /* EHIDealInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 92553C6F20C86B6900323DF9 /* EHIDealInfo.m */; };
+		92553C7920C8896900323DF9 /* EHIAEMImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 92553C7820C8896900323DF9 /* EHIAEMImage.m */; };
 		92596BAE1E40B52800F4CD51 /* UIAlertController+Window.m in Sources */ = {isa = PBXBuildFile; fileRef = 92596BAD1E40B52800F4CD51 /* UIAlertController+Window.m */; };
 		9259B4871D51055500F52EDA /* EHIReviewAdditionalInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9259B4831D51055500F52EDA /* EHIReviewAdditionalInfoCell.m */; };
 		9259B4891D51055500F52EDA /* EHIReviewAdditionalInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9259B4841D51055500F52EDA /* EHIReviewAdditionalInfoCell.xib */; };
@@ -484,6 +489,8 @@
 		9275BDEF1D478B5A00CF63FB /* EHISectionDivider.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9275BDEA1D478B5A00CF63FB /* EHISectionDivider.xib */; };
 		9278D3401E392B6900C8C3DE /* EHIDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 9278D33F1E392B6900C8C3DE /* EHIDialog.m */; };
 		9278D3431E392D1300C8C3DE /* EHIDialogModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9278D3421E392D1300C8C3DE /* EHIDialogModel.m */; };
+		9281040B20C975D1000230AB /* EHIGBOImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 9281040A20C975D1000230AB /* EHIGBOImage.m */; };
+		9281040D20C9C882000230AB /* EHIAEMImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9281040C20C9C882000230AB /* EHIAEMImageTests.m */; };
 		928793731DFADEE3008AA1C7 /* EHISurveySession.m in Sources */ = {isa = PBXBuildFile; fileRef = 928793721DFADEE3008AA1C7 /* EHISurveySession.m */; };
 		928AB5DB1E0D46FB00770493 /* EHIAboutEnterprisePlusHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 928AB5D71E0D46FB00770493 /* EHIAboutEnterprisePlusHeaderCell.m */; };
 		928AB5DC1E0D46FB00770493 /* EHIAboutEnterprisePlusHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 928AB5D81E0D46FB00770493 /* EHIAboutEnterprisePlusHeaderCell.xib */; };
@@ -559,6 +566,11 @@
 		92ABD0081E0DA92D00850966 /* EHIAboutEnterprisePlusFooterViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ABD0051E0DA92D00850966 /* EHIAboutEnterprisePlusFooterViewModel.m */; };
 		92AD7C241FEAE4AA00D96D77 /* EHINotificationManager+Private.m in Sources */ = {isa = PBXBuildFile; fileRef = 92AD7C231FEAE4AA00D96D77 /* EHINotificationManager+Private.m */; };
 		92AE20831DF9CC2E00FE8AD5 /* EHISurveyKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 92AE20821DF9CC2E00FE8AD5 /* EHISurveyKeys.m */; };
+		92B2B00720CAF025003449A1 /* EHIDealCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B2B00420CAF025003449A1 /* EHIDealCardCell.m */; };
+		92B2B00820CAF025003449A1 /* EHIDealCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B2B00520CAF025003449A1 /* EHIDealCardCell.xib */; };
+		92B2B00F20CAFD46003449A1 /* EHIDealContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B2B00A20CAFD46003449A1 /* EHIDealContentCell.m */; };
+		92B2B01020CAFD46003449A1 /* EHIDealContentViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B2B00B20CAFD46003449A1 /* EHIDealContentViewModel.m */; };
+		92B2B01120CAFD46003449A1 /* EHIDealContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B2B00C20CAFD46003449A1 /* EHIDealContentCell.xib */; };
 		92B4557520851E6A00A7409B /* EHIExtrasTermsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B4557020851E6A00A7409B /* EHIExtrasTermsCell.m */; };
 		92B4557620851E6A00A7409B /* EHIExtrasTermsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92B4557120851E6A00A7409B /* EHIExtrasTermsViewModel.m */; };
 		92B4557720851E6A00A7409B /* EHIExtrasTermsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92B4557220851E6A00A7409B /* EHIExtrasTermsCell.xib */; };
@@ -667,6 +679,7 @@
 		92D54CD81D9D93F7006816A2 /* EHIProfileEditPaymentViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D54CD51D9D93F7006816A2 /* EHIProfileEditPaymentViewModel.m */; };
 		92D5B54E1E8AE57B00AF9B47 /* EHIConfirmationCancelModalViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D5B54D1E8AE57B00AF9B47 /* EHIConfirmationCancelModalViewModelTests.m */; };
 		92D7D4931E8D7E2E00337D07 /* EHIReservationRentalPriceTotalViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D7D4921E8D7E2E00337D07 /* EHIReservationRentalPriceTotalViewModelTests.m */; };
+		92D8EF2220D001B700AF156E /* deal.json in Resources */ = {isa = PBXBuildFile; fileRef = 92D8EF2120D001B700AF156E /* deal.json */; };
 		92D9BFFA1E23AAE900BF7811 /* EHIGaugeLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D9BFF91E23AAE900BF7811 /* EHIGaugeLayer.m */; };
 		92D9C0001E23E34800BF7811 /* EHIMeterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D9BFFF1E23E34800BF7811 /* EHIMeterView.m */; };
 		92D9C0031E23FC9E00BF7811 /* EHIArcSegmentsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92D9C0021E23FC9E00BF7811 /* EHIArcSegmentsView.m */; };
@@ -674,6 +687,7 @@
 		92DBFAE920B34A30006C0E83 /* EHISettingsAnalyticsModalViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DBFAE720B34A30006C0E83 /* EHISettingsAnalyticsModalViewModel.m */; };
 		92DC26601F38A4FA00323B97 /* EHISearchEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DC265F1F38A4FA00323B97 /* EHISearchEnvironment.m */; };
 		92DC26621F38A5B300323B97 /* EHISearchEnvironmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DC26611F38A5B300323B97 /* EHISearchEnvironmentTests.m */; };
+		92DE842C20D7EA2E00CAFFDF /* EHIDeals.m in Sources */ = {isa = PBXBuildFile; fileRef = 92DE842B20D7EA2E00CAFFDF /* EHIDeals.m */; };
 		92E0BA6220A0913D00478318 /* EHIRequiredInfoFootnoteView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E0BA5D20A0913D00478318 /* EHIRequiredInfoFootnoteView.m */; };
 		92E0BA6320A0913D00478318 /* EHIRequiredInfoFootnoteViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E0BA5E20A0913D00478318 /* EHIRequiredInfoFootnoteViewModel.m */; };
 		92E0BA6420A0913D00478318 /* EHIRequiredInfoFootnoteView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92E0BA5F20A0913D00478318 /* EHIRequiredInfoFootnoteView.xib */; };
@@ -718,8 +732,7 @@
 		92EDEEE61E20166B000D36B1 /* EHIGaugeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92EDEEE21E20166B000D36B1 /* EHIGaugeView.m */; };
 		92EDEEE71E20166B000D36B1 /* EHIGaugeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92EDEEE31E20166B000D36B1 /* EHIGaugeView.xib */; };
 		92EDEEE81E20166B000D36B1 /* EHIGaugeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92EDEEE51E20166B000D36B1 /* EHIGaugeViewModel.m */; };
-		92F01CC21F3B914500FD8C45 /* EHIServicesEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F01CC11F3B914500FD8C45 /* EHIServicesEnvironment.m */; };
-		92F01CC41F3B916700FD8C45 /* EHIServicesEnvironmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F01CC31F3B916700FD8C45 /* EHIServicesEnvironmentTests.m */; };
+		92F01CC41F3B916700FD8C45 /* EHIGBOEnvironmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F01CC31F3B916700FD8C45 /* EHIGBOEnvironmentTests.m */; };
 		92F8A0701E0C5E3800E6D0B6 /* EHIAboutEnterprisePlusStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92F8A06B1E0C5E3800E6D0B6 /* EHIAboutEnterprisePlusStoryboard.storyboard */; };
 		92F8A0711E0C5E3800E6D0B6 /* EHIAboutEnterprisePlusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F8A06D1E0C5E3800E6D0B6 /* EHIAboutEnterprisePlusViewController.m */; };
 		92F8A0721E0C5E3800E6D0B6 /* EHIAboutEnterprisePlusViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92F8A06F1E0C5E3800E6D0B6 /* EHIAboutEnterprisePlusViewModel.m */; };
@@ -734,6 +747,9 @@
 		92FD8F611E267628000B9684 /* EHIGaugeTierView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FD8F5D1E267628000B9684 /* EHIGaugeTierView.m */; };
 		92FD8F621E267628000B9684 /* EHIGaugeTierView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92FD8F5E1E267628000B9684 /* EHIGaugeTierView.xib */; };
 		92FD8F631E267628000B9684 /* EHIGaugeTierViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FD8F601E267628000B9684 /* EHIGaugeTierViewModel.m */; };
+		92FF2DDD20D80B18004AD1DE /* EHIDealsConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FF2DDC20D80B18004AD1DE /* EHIDealsConfiguration.m */; };
+		92FF2DE020D82812004AD1DE /* EHIGBOEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FF2DDF20D82812004AD1DE /* EHIGBOEnvironment.m */; };
+		92FF2DE320D82DAF004AD1DE /* EHIAEMEnvironment.m in Sources */ = {isa = PBXBuildFile; fileRef = 92FF2DE220D82DAF004AD1DE /* EHIAEMEnvironment.m */; };
 		9B004E301B3DFCC5004BD3E2 /* localizable.de_DE.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B004E291B3DFCC5004BD3E2 /* localizable.de_DE.json */; };
 		9B004E311B3DFCC5004BD3E2 /* localizable.en_CA.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B004E2A1B3DFCC5004BD3E2 /* localizable.en_CA.json */; };
 		9B004E321B3DFCC5004BD3E2 /* localizable.en_GB.json in Resources */ = {isa = PBXBuildFile; fileRef = 9B004E2B1B3DFCC5004BD3E2 /* localizable.en_GB.json */; };
@@ -1273,8 +1289,25 @@
 		D33524F91EB433A200A12BD8 /* EHIApplicationBootstrap.m in Sources */ = {isa = PBXBuildFile; fileRef = D33524F81EB433A200A12BD8 /* EHIApplicationBootstrap.m */; };
 		D35F94C41F203AA300DC864A /* EHIConfirmationInAppReviewViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D35F94C31F203AA300DC864A /* EHIConfirmationInAppReviewViewModel.m */; };
 		D382EF951F7E929D00A0FA3D /* NSDate+MaskingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D382EF941F7E929D00A0FA3D /* NSDate+MaskingTests.m */; };
+		D39DF9B220D94BEF001D8E2F /* EHIDealsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D39DF9AE20D94BEF001D8E2F /* EHIDealsStoryboard.storyboard */; };
+		D39DF9B320D94BEF001D8E2F /* EHIDealsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D39DF9AF20D94BEF001D8E2F /* EHIDealsViewModel.m */; };
+		D39DF9B420D94BEF001D8E2F /* EHIDealsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D39DF9B020D94BEF001D8E2F /* EHIDealsViewController.m */; };
+		D39DF9CB20D9519E001D8E2F /* EHIDealLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D39DF9C620D9519E001D8E2F /* EHIDealLabelCell.m */; };
+		D39DF9CC20D9519E001D8E2F /* EHIDealLabelViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D39DF9C720D9519E001D8E2F /* EHIDealLabelViewModel.m */; };
+		D39DF9CD20D9519E001D8E2F /* EHIDealLabelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D39DF9C820D9519E001D8E2F /* EHIDealLabelCell.xib */; };
+		D39DF9DD20D9BD72001D8E2F /* EHIDealHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D39DF9D820D9BD72001D8E2F /* EHIDealHeaderCell.m */; };
+		D39DF9DE20D9BD72001D8E2F /* EHIDealHeaderViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D39DF9D920D9BD72001D8E2F /* EHIDealHeaderViewModel.m */; };
+		D39DF9DF20D9BD72001D8E2F /* EHIDealHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D39DF9DA20D9BD72001D8E2F /* EHIDealHeaderCell.xib */; };
+		D3AA26E720D92398000D9AEC /* EHIAEMEnvironmentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3AA26E620D92398000D9AEC /* EHIAEMEnvironmentTests.m */; };
 		D3F0E11C1ECE762000858023 /* EHILocationFilterWidgetView.m in Sources */ = {isa = PBXBuildFile; fileRef = D3F0E1181ECE762000858023 /* EHILocationFilterWidgetView.m */; };
 		D3F0E11D1ECE762000858023 /* EHILocationFilterWidgetView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F0E1191ECE762000858023 /* EHILocationFilterWidgetView.xib */; };
+		E303145B20DC1741009B696B /* EHIDashboardLocationPromptCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E303145A20DC1741009B696B /* EHIDashboardLocationPromptCell.m */; };
+		E303145E20DC1771009B696B /* EHIDashboardLocationPromptViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E303145D20DC1771009B696B /* EHIDashboardLocationPromptViewModel.m */; };
+		E303146120DC178B009B696B /* EHIDashboardLocationPromptCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E303146020DC178B009B696B /* EHIDashboardLocationPromptCell.xib */; };
+		E3055F0D20CB09E500D17273 /* EHIDashboardNotificationsPromptViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E3055F0C20CB09E500D17273 /* EHIDashboardNotificationsPromptViewModel.m */; };
+		E3055F1020CB0A1300D17273 /* EHIDashboardNotificationsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3055F0F20CB0A1300D17273 /* EHIDashboardNotificationsCell.xib */; };
+		E3B757FA20D03B6F00D9C9CB /* EHIDashboardNotificationsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3B757F920D03B6F00D9C9CB /* EHIDashboardNotificationsCell.m */; };
+		E3D005B120DD94EC009AD9CC /* EHIArrowBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D005B020DD94EC009AD9CC /* EHIArrowBorderView.m */; };
 		E56BE7EB85474C8248B1B6F1 /* libPods-EnterpriseWatchExtension.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 55042486B93B73F449536D13 /* libPods-EnterpriseWatchExtension.a */; };
 		E90034A71B18EB4500AA2623 /* EHICarClassVehicleRate.m in Sources */ = {isa = PBXBuildFile; fileRef = E90034A61B18EB4500AA2623 /* EHICarClassVehicleRate.m */; };
 		E903ED051BD7529200D6F062 /* EHIWKGlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E903ED041BD7529200D6F062 /* EHIWKGlanceController.swift */; };
@@ -2268,11 +2301,6 @@
 		001664881B45B9FC0063F8B0 /* EHIConfirmationAdditionalInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EHIConfirmationAdditionalInfoCell.xib; sourceTree = "<group>"; };
 		0016648A1B45BA0C0063F8B0 /* EHIConfirmationAdditionalInfoViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHIConfirmationAdditionalInfoViewModel.h; sourceTree = "<group>"; };
 		0016648B1B45BA0C0063F8B0 /* EHIConfirmationAdditionalInfoViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIConfirmationAdditionalInfoViewModel.m; sourceTree = "<group>"; };
-		0023BFEB1C31A44300CFB0C9 /* EHIDashboardNewFeatureCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EHIDashboardNewFeatureCell.xib; sourceTree = "<group>"; };
-		0023BFEE1C31A46600CFB0C9 /* EHIDashboardNewFeatureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHIDashboardNewFeatureCell.h; sourceTree = "<group>"; };
-		0023BFEF1C31A46600CFB0C9 /* EHIDashboardNewFeatureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIDashboardNewFeatureCell.m; sourceTree = "<group>"; };
-		0023BFF21C31A47800CFB0C9 /* EHIDashboardNewFeatureViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHIDashboardNewFeatureViewModel.h; sourceTree = "<group>"; };
-		0023BFF31C31A47800CFB0C9 /* EHIDashboardNewFeatureViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIDashboardNewFeatureViewModel.m; sourceTree = "<group>"; };
 		002481E71B2A322800678689 /* EHIVehicleLogistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHIVehicleLogistics.h; sourceTree = "<group>"; };
 		002481E81B2A322800678689 /* EHIVehicleLogistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIVehicleLogistics.m; sourceTree = "<group>"; };
 		0034B6C81B7BC7D40080CC01 /* EHIReservationEligibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHIReservationEligibility.h; sourceTree = "<group>"; };
@@ -2775,6 +2803,8 @@
 		84F26DC01C52A8CA004F7480 /* EHIClickableLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIClickableLabel.m; sourceTree = "<group>"; };
 		84F26DC31C5694E0004F7480 /* EHI3DSData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHI3DSData.h; sourceTree = "<group>"; };
 		84F26DC41C5694E0004F7480 /* EHI3DSData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHI3DSData.m; sourceTree = "<group>"; };
+		86CB821AB4AAD9FE14D0CC1B /* EHIDealCardViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIDealCardViewModel.m; sourceTree = "<group>"; };
+		86CB8BB44DAEFE96D00922C2 /* EHIDealCardViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHIDealCardViewModel.h; sourceTree = "<group>"; };
 		900827705FDC7D6D0B5D5210 /* Pods-EnterpriseTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnterpriseTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EnterpriseTests/Pods-EnterpriseTests.debug.xcconfig"; sourceTree = "<group>"; };
 		92003B5E1D39547100AAEF40 /* EHIReservationPriceSublistCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHIReservationPriceSublistCell.h; sourceTree = "<group>"; };
 		92003B5F1D39547100AAEF40 /* EHIReservationPriceSublistCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIReservationPriceSublistCell.m; sourceTree = "<group>"; };
@@ -2828,6 +2858,8 @@
 		92168F4B1EBA05DF000756E8 /* EHITemporalSelectionViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHITemporalSelectionViewModel.h; sourceTree = "<group>"; };
 		92168F4C1EBA05DF000756E8 /* EHITemporalSelectionViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHITemporalSelectionViewModel.m; sourceTree = "<group>"; };
 		92168F521EBA0868000756E8 /* EHITemporalSelectionViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHITemporalSelectionViewModelTests.m; sourceTree = "<group>"; };
+		921AFC4620D7DE3200C155F6 /* EHIServices+Deals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EHIServices+Deals.h"; sourceTree = "<group>"; };
+		921AFC4720D7DE3200C155F6 /* EHIServices+Deals.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EHIServices+Deals.m"; sourceTree = "<group>"; };
 		921C241F1EBA5AD300652AD1 /* EHIDateTimeComponentMapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHIDateTimeComponentMapView.h; sourceTree = "<group>"; };
 		921C24201EBA5AD300652AD1 /* EHIDateTimeComponentMapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIDateTimeComponentMapView.m; sourceTree = "<group>"; };
 		921C24211EBA5AD300652AD1 /* EHIDateTimeComponentMapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EHIDateTimeComponentMapView.xib; sourceTree = "<group>"; };
@@ -2895,6 +2927,8 @@
 		923E7B601DAC06E5009AC5A0 /* EHIPaymentOptionFooterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EHIPaymentOptionFooterCell.xib; sourceTree = "<group>"; };
 		923E7B611DAC06E5009AC5A0 /* EHIPaymentOptionFooterViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHIPaymentOptionFooterViewModel.h; sourceTree = "<group>"; };
 		923E7B621DAC06E5009AC5A0 /* EHIPaymentOptionFooterViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIPaymentOptionFooterViewModel.m; sourceTree = "<group>"; };
+		923EA46620C8128900073F54 /* EHIGradientView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIGradientView.h; sourceTree = "<group>"; };
+		923EA46720C8128900073F54 /* EHIGradientView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIGradientView.m; sourceTree = "<group>"; };
 		9241FE391F1FC87000F01C33 /* EHIDashboardActiveRentalViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIDashboardActiveRentalViewModelTests.m; sourceTree = "<group>"; };
 		9243526A1D059F2B008FB24E /* EHIConfirmationHeaders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHIConfirmationHeaders.h; sourceTree = "<group>"; };
 		9243526B1D059F2B008FB24E /* EHIConfirmationHeaders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIConfirmationHeaders.m; sourceTree = "<group>"; };
@@ -2930,6 +2964,15 @@
 		9253B2A91E9BB44A00DC1A55 /* EHICrashNetworkOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHICrashNetworkOperation.h; sourceTree = "<group>"; };
 		9253B2AA1E9BB44A00DC1A55 /* EHICrashNetworkOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHICrashNetworkOperation.m; sourceTree = "<group>"; };
 		9253B2AD1E9BF7BB00DC1A55 /* EHIPriceFormatterTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIPriceFormatterTests.m; sourceTree = "<group>"; };
+		92553C6620C8278000323DF9 /* EHIDealDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIDealDetailViewController.h; sourceTree = "<group>"; };
+		92553C6720C8278000323DF9 /* EHIDealDetailStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EHIDealDetailStoryboard.storyboard; sourceTree = "<group>"; };
+		92553C6820C8278000323DF9 /* EHIDealDetailViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIDealDetailViewModel.m; sourceTree = "<group>"; };
+		92553C6920C8278000323DF9 /* EHIDealDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIDealDetailViewController.m; sourceTree = "<group>"; };
+		92553C6A20C8278000323DF9 /* EHIDealDetailViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIDealDetailViewModel.h; sourceTree = "<group>"; };
+		92553C6E20C86B6900323DF9 /* EHIDealInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIDealInfo.h; sourceTree = "<group>"; };
+		92553C6F20C86B6900323DF9 /* EHIDealInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIDealInfo.m; sourceTree = "<group>"; };
+		92553C7720C8896900323DF9 /* EHIAEMImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIAEMImage.h; sourceTree = "<group>"; };
+		92553C7820C8896900323DF9 /* EHIAEMImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIAEMImage.m; sourceTree = "<group>"; };
 		92596BAC1E40B52800F4CD51 /* UIAlertController+Window.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+Window.h"; sourceTree = "<group>"; };
 		92596BAD1E40B52800F4CD51 /* UIAlertController+Window.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+Window.m"; sourceTree = "<group>"; };
 		9259B4821D51055500F52EDA /* EHIReviewAdditionalInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHIReviewAdditionalInfoCell.h; sourceTree = "<group>"; };
@@ -3019,6 +3062,9 @@
 		9278D33F1E392B6900C8C3DE /* EHIDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIDialog.m; sourceTree = "<group>"; };
 		9278D3411E392D1300C8C3DE /* EHIDialogModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHIDialogModel.h; sourceTree = "<group>"; };
 		9278D3421E392D1300C8C3DE /* EHIDialogModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIDialogModel.m; sourceTree = "<group>"; };
+		9281040920C975D1000230AB /* EHIGBOImage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIGBOImage.h; sourceTree = "<group>"; };
+		9281040A20C975D1000230AB /* EHIGBOImage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIGBOImage.m; sourceTree = "<group>"; };
+		9281040C20C9C882000230AB /* EHIAEMImageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIAEMImageTests.m; sourceTree = "<group>"; };
 		928793711DFADEE3008AA1C7 /* EHISurveySession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHISurveySession.h; sourceTree = "<group>"; };
 		928793721DFADEE3008AA1C7 /* EHISurveySession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHISurveySession.m; sourceTree = "<group>"; };
 		928AB5D61E0D46FB00770493 /* EHIAboutEnterprisePlusHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHIAboutEnterprisePlusHeaderCell.h; sourceTree = "<group>"; };
@@ -3112,6 +3158,7 @@
 		92A6A53C207D3E2A00316EA5 /* EHIConfirmationJoinViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIConfirmationJoinViewModel.m; sourceTree = "<group>"; };
 		92A6A53D207D3E2A00316EA5 /* EHIConfirmationJoinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIConfirmationJoinViewController.m; sourceTree = "<group>"; };
 		92A6A53E207D3E2A00316EA5 /* EHIConfirmationJoinViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIConfirmationJoinViewModel.h; sourceTree = "<group>"; };
+		92A8CCD520DD6A4D007DC3E5 /* EHIDealInterfaces.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIDealInterfaces.h; sourceTree = "<group>"; };
 		92A9739F1E27FAC300B002D5 /* EHIRewardsBenefitsHeaderViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHIRewardsBenefitsHeaderViewModel.h; sourceTree = "<group>"; };
 		92A973A01E27FAC300B002D5 /* EHIRewardsBenefitsHeaderViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIRewardsBenefitsHeaderViewModel.m; sourceTree = "<group>"; };
 		92A9D57F208E6F2A00B3C02B /* EHICarClassPriceLineItemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHICarClassPriceLineItemTests.m; sourceTree = "<group>"; };
@@ -3142,6 +3189,14 @@
 		92AD7C231FEAE4AA00D96D77 /* EHINotificationManager+Private.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "EHINotificationManager+Private.m"; sourceTree = "<group>"; };
 		92AE20811DF9CC2E00FE8AD5 /* EHISurveyKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHISurveyKeys.h; sourceTree = "<group>"; };
 		92AE20821DF9CC2E00FE8AD5 /* EHISurveyKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHISurveyKeys.m; sourceTree = "<group>"; };
+		92B2B00420CAF025003449A1 /* EHIDealCardCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIDealCardCell.m; sourceTree = "<group>"; };
+		92B2B00520CAF025003449A1 /* EHIDealCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EHIDealCardCell.xib; sourceTree = "<group>"; };
+		92B2B00620CAF025003449A1 /* EHIDealCardCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIDealCardCell.h; sourceTree = "<group>"; };
+		92B2B00A20CAFD46003449A1 /* EHIDealContentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIDealContentCell.m; sourceTree = "<group>"; };
+		92B2B00B20CAFD46003449A1 /* EHIDealContentViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIDealContentViewModel.m; sourceTree = "<group>"; };
+		92B2B00C20CAFD46003449A1 /* EHIDealContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EHIDealContentCell.xib; sourceTree = "<group>"; };
+		92B2B00D20CAFD46003449A1 /* EHIDealContentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIDealContentCell.h; sourceTree = "<group>"; };
+		92B2B00E20CAFD46003449A1 /* EHIDealContentViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIDealContentViewModel.h; sourceTree = "<group>"; };
 		92B4557020851E6A00A7409B /* EHIExtrasTermsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIExtrasTermsCell.m; sourceTree = "<group>"; };
 		92B4557120851E6A00A7409B /* EHIExtrasTermsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIExtrasTermsViewModel.m; sourceTree = "<group>"; };
 		92B4557220851E6A00A7409B /* EHIExtrasTermsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EHIExtrasTermsCell.xib; sourceTree = "<group>"; };
@@ -3311,6 +3366,7 @@
 		92D54CD51D9D93F7006816A2 /* EHIProfileEditPaymentViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIProfileEditPaymentViewModel.m; sourceTree = "<group>"; };
 		92D5B54D1E8AE57B00AF9B47 /* EHIConfirmationCancelModalViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIConfirmationCancelModalViewModelTests.m; sourceTree = "<group>"; };
 		92D7D4921E8D7E2E00337D07 /* EHIReservationRentalPriceTotalViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIReservationRentalPriceTotalViewModelTests.m; sourceTree = "<group>"; };
+		92D8EF2120D001B700AF156E /* deal.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = deal.json; sourceTree = "<group>"; };
 		92D9BFF81E23AAE900BF7811 /* EHIGaugeLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHIGaugeLayer.h; sourceTree = "<group>"; };
 		92D9BFF91E23AAE900BF7811 /* EHIGaugeLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIGaugeLayer.m; sourceTree = "<group>"; };
 		92D9BFFE1E23E34800BF7811 /* EHIMeterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHIMeterView.h; sourceTree = "<group>"; };
@@ -3327,6 +3383,8 @@
 		92DC265E1F38A4FA00323B97 /* EHISearchEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHISearchEnvironment.h; sourceTree = "<group>"; };
 		92DC265F1F38A4FA00323B97 /* EHISearchEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHISearchEnvironment.m; sourceTree = "<group>"; };
 		92DC26611F38A5B300323B97 /* EHISearchEnvironmentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHISearchEnvironmentTests.m; sourceTree = "<group>"; };
+		92DE842A20D7EA2E00CAFFDF /* EHIDeals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIDeals.h; sourceTree = "<group>"; };
+		92DE842B20D7EA2E00CAFFDF /* EHIDeals.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIDeals.m; sourceTree = "<group>"; };
 		92E0BA5D20A0913D00478318 /* EHIRequiredInfoFootnoteView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIRequiredInfoFootnoteView.m; sourceTree = "<group>"; };
 		92E0BA5E20A0913D00478318 /* EHIRequiredInfoFootnoteViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIRequiredInfoFootnoteViewModel.m; sourceTree = "<group>"; };
 		92E0BA5F20A0913D00478318 /* EHIRequiredInfoFootnoteView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EHIRequiredInfoFootnoteView.xib; sourceTree = "<group>"; };
@@ -3402,9 +3460,7 @@
 		92EDEEE31E20166B000D36B1 /* EHIGaugeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EHIGaugeView.xib; sourceTree = "<group>"; };
 		92EDEEE41E20166B000D36B1 /* EHIGaugeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHIGaugeViewModel.h; sourceTree = "<group>"; };
 		92EDEEE51E20166B000D36B1 /* EHIGaugeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIGaugeViewModel.m; sourceTree = "<group>"; };
-		92F01CC01F3B914500FD8C45 /* EHIServicesEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHIServicesEnvironment.h; sourceTree = "<group>"; };
-		92F01CC11F3B914500FD8C45 /* EHIServicesEnvironment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIServicesEnvironment.m; sourceTree = "<group>"; };
-		92F01CC31F3B916700FD8C45 /* EHIServicesEnvironmentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIServicesEnvironmentTests.m; sourceTree = "<group>"; };
+		92F01CC31F3B916700FD8C45 /* EHIGBOEnvironmentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIGBOEnvironmentTests.m; sourceTree = "<group>"; };
 		92F8A06B1E0C5E3800E6D0B6 /* EHIAboutEnterprisePlusStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = EHIAboutEnterprisePlusStoryboard.storyboard; sourceTree = "<group>"; };
 		92F8A06C1E0C5E3800E6D0B6 /* EHIAboutEnterprisePlusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHIAboutEnterprisePlusViewController.h; sourceTree = "<group>"; };
 		92F8A06D1E0C5E3800E6D0B6 /* EHIAboutEnterprisePlusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIAboutEnterprisePlusViewController.m; sourceTree = "<group>"; };
@@ -3429,6 +3485,12 @@
 		92FD8F5E1E267628000B9684 /* EHIGaugeTierView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EHIGaugeTierView.xib; sourceTree = "<group>"; };
 		92FD8F5F1E267628000B9684 /* EHIGaugeTierViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHIGaugeTierViewModel.h; sourceTree = "<group>"; };
 		92FD8F601E267628000B9684 /* EHIGaugeTierViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIGaugeTierViewModel.m; sourceTree = "<group>"; };
+		92FF2DDB20D80B18004AD1DE /* EHIDealsConfiguration.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIDealsConfiguration.h; sourceTree = "<group>"; };
+		92FF2DDC20D80B18004AD1DE /* EHIDealsConfiguration.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIDealsConfiguration.m; sourceTree = "<group>"; };
+		92FF2DDE20D82812004AD1DE /* EHIGBOEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIGBOEnvironment.h; sourceTree = "<group>"; };
+		92FF2DDF20D82812004AD1DE /* EHIGBOEnvironment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIGBOEnvironment.m; sourceTree = "<group>"; };
+		92FF2DE120D82DAF004AD1DE /* EHIAEMEnvironment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIAEMEnvironment.h; sourceTree = "<group>"; };
+		92FF2DE220D82DAF004AD1DE /* EHIAEMEnvironment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIAEMEnvironment.m; sourceTree = "<group>"; };
 		9B004E291B3DFCC5004BD3E2 /* localizable.de_DE.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = localizable.de_DE.json; sourceTree = "<group>"; };
 		9B004E2A1B3DFCC5004BD3E2 /* localizable.en_CA.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = localizable.en_CA.json; sourceTree = "<group>"; };
 		9B004E2B1B3DFCC5004BD3E2 /* localizable.en_GB.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = localizable.en_GB.json; sourceTree = "<group>"; };
@@ -4071,6 +4133,7 @@
 		D30BD3E31ECF716A00C229FC /* EHILocationsFilterBannerViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHILocationsFilterBannerViewModel.h; sourceTree = "<group>"; };
 		D30BD3E41ECF716A00C229FC /* EHILocationsFilterBannerViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHILocationsFilterBannerViewModel.m; sourceTree = "<group>"; };
 		D30BD3E81ECF718800C229FC /* EHILocationsFilterBannerViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHILocationsFilterBannerViewModelTests.m; sourceTree = "<group>"; };
+		D3152D2420B8B5300024C61B /* EHIServices_Debug.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIServices_Debug.h; sourceTree = "<group>"; };
 		D31F1D3C1F0ACBBE005336C2 /* EHILocationsMapFiltersTipView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHILocationsMapFiltersTipView.h; sourceTree = "<group>"; };
 		D31F1D3D1F0ACBBE005336C2 /* EHILocationsMapFiltersTipView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHILocationsMapFiltersTipView.m; sourceTree = "<group>"; };
 		D31F1D3E1F0ACBBE005336C2 /* EHILocationsMapFiltersTipView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EHILocationsMapFiltersTipView.xib; sourceTree = "<group>"; };
@@ -4089,6 +4152,23 @@
 		D35F94C31F203AA300DC864A /* EHIConfirmationInAppReviewViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIConfirmationInAppReviewViewModel.m; sourceTree = "<group>"; };
 		D382EF931F7E929D00A0FA3D /* NSDate+MaskingTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+MaskingTests.h"; sourceTree = "<group>"; };
 		D382EF941F7E929D00A0FA3D /* NSDate+MaskingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+MaskingTests.m"; sourceTree = "<group>"; };
+		D39DF9AD20D94BEF001D8E2F /* EHIDealsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIDealsViewController.h; sourceTree = "<group>"; };
+		D39DF9AE20D94BEF001D8E2F /* EHIDealsStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EHIDealsStoryboard.storyboard; sourceTree = "<group>"; };
+		D39DF9AF20D94BEF001D8E2F /* EHIDealsViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIDealsViewModel.m; sourceTree = "<group>"; };
+		D39DF9B020D94BEF001D8E2F /* EHIDealsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIDealsViewController.m; sourceTree = "<group>"; };
+		D39DF9B120D94BEF001D8E2F /* EHIDealsViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIDealsViewModel.h; sourceTree = "<group>"; };
+		D39DF9C620D9519E001D8E2F /* EHIDealLabelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIDealLabelCell.m; sourceTree = "<group>"; };
+		D39DF9C720D9519E001D8E2F /* EHIDealLabelViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIDealLabelViewModel.m; sourceTree = "<group>"; };
+		D39DF9C820D9519E001D8E2F /* EHIDealLabelCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EHIDealLabelCell.xib; sourceTree = "<group>"; };
+		D39DF9C920D9519E001D8E2F /* EHIDealLabelCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIDealLabelCell.h; sourceTree = "<group>"; };
+		D39DF9CA20D9519E001D8E2F /* EHIDealLabelViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIDealLabelViewModel.h; sourceTree = "<group>"; };
+		D39DF9D720D98C33001D8E2F /* EHIPromotionRenderable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EHIPromotionRenderable.h; path = ../Views/EHIPromotionRenderable.h; sourceTree = "<group>"; };
+		D39DF9D820D9BD72001D8E2F /* EHIDealHeaderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIDealHeaderCell.m; sourceTree = "<group>"; };
+		D39DF9D920D9BD72001D8E2F /* EHIDealHeaderViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIDealHeaderViewModel.m; sourceTree = "<group>"; };
+		D39DF9DA20D9BD72001D8E2F /* EHIDealHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EHIDealHeaderCell.xib; sourceTree = "<group>"; };
+		D39DF9DB20D9BD72001D8E2F /* EHIDealHeaderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIDealHeaderCell.h; sourceTree = "<group>"; };
+		D39DF9DC20D9BD72001D8E2F /* EHIDealHeaderViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIDealHeaderViewModel.h; sourceTree = "<group>"; };
+		D3AA26E620D92398000D9AEC /* EHIAEMEnvironmentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIAEMEnvironmentTests.m; sourceTree = "<group>"; };
 		D3F0E1171ECE762000858023 /* EHILocationFilterWidgetView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHILocationFilterWidgetView.h; sourceTree = "<group>"; };
 		D3F0E1181ECE762000858023 /* EHILocationFilterWidgetView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHILocationFilterWidgetView.m; sourceTree = "<group>"; };
 		D3F0E1191ECE762000858023 /* EHILocationFilterWidgetView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EHILocationFilterWidgetView.xib; sourceTree = "<group>"; };
@@ -4109,6 +4189,18 @@
 		E0CA0F591F82B5F400847C73 /* exportOptions-Enterprise-Release.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "exportOptions-Enterprise-Release.plist"; sourceTree = "<group>"; };
 		E0CA0F5A1F82B5F400847C73 /* exportOptions-Enterprise-AppStore-Debug.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "exportOptions-Enterprise-AppStore-Debug.plist"; sourceTree = "<group>"; };
 		E1A1CBFA6CF48D9661F76A1E /* Pods-EnterpriseTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnterpriseTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EnterpriseTests/Pods-EnterpriseTests.release.xcconfig"; sourceTree = "<group>"; };
+		E303145A20DC1741009B696B /* EHIDashboardLocationPromptCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIDashboardLocationPromptCell.m; sourceTree = "<group>"; };
+		E303145C20DC1758009B696B /* EHIDashboardLocationPromptCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIDashboardLocationPromptCell.h; sourceTree = "<group>"; };
+		E303145D20DC1771009B696B /* EHIDashboardLocationPromptViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIDashboardLocationPromptViewModel.m; sourceTree = "<group>"; };
+		E303145F20DC177F009B696B /* EHIDashboardLocationPromptViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIDashboardLocationPromptViewModel.h; sourceTree = "<group>"; };
+		E303146020DC178B009B696B /* EHIDashboardLocationPromptCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EHIDashboardLocationPromptCell.xib; sourceTree = "<group>"; };
+		E3055F0C20CB09E500D17273 /* EHIDashboardNotificationsPromptViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIDashboardNotificationsPromptViewModel.m; sourceTree = "<group>"; };
+		E3055F0E20CB09F900D17273 /* EHIDashboardNotificationsPromptViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIDashboardNotificationsPromptViewModel.h; sourceTree = "<group>"; };
+		E3055F0F20CB0A1300D17273 /* EHIDashboardNotificationsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EHIDashboardNotificationsCell.xib; sourceTree = "<group>"; };
+		E3B757F920D03B6F00D9C9CB /* EHIDashboardNotificationsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIDashboardNotificationsCell.m; sourceTree = "<group>"; };
+		E3B757FB20D03B8400D9C9CB /* EHIDashboardNotificationsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIDashboardNotificationsCell.h; sourceTree = "<group>"; };
+		E3D005AF20DD94EC009AD9CC /* EHIArrowBorderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIArrowBorderView.h; sourceTree = "<group>"; };
+		E3D005B020DD94EC009AD9CC /* EHIArrowBorderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIArrowBorderView.m; sourceTree = "<group>"; };
 		E3D1EBCF207E7A470053AC44 /* EHIOptionalBoolean.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIOptionalBoolean.h; sourceTree = "<group>"; };
 		E90034A51B18EB4500AA2623 /* EHICarClassVehicleRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHICarClassVehicleRate.h; sourceTree = "<group>"; };
 		E90034A61B18EB4500AA2623 /* EHICarClassVehicleRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHICarClassVehicleRate.m; sourceTree = "<group>"; };
@@ -6624,6 +6716,13 @@
 			name = Date/Time;
 			sourceTree = "<group>";
 		};
+		921AFC4920D7E23100C155F6 /* Deals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Deals;
+			sourceTree = "<group>";
+		};
 		921E726C1EC62E1D00C6DD9E /* Single Date */ = {
 			isa = PBXGroup;
 			children = (
@@ -6696,6 +6795,21 @@
 			name = Services;
 			sourceTree = "<group>";
 		};
+		923EA46A20C8246000073F54 /* Deals */ = {
+			isa = PBXGroup;
+			children = (
+				D39DF9AC20D94BCB001D8E2F /* List */,
+				92B2B00920CAFCD3003449A1 /* Detail */,
+				92A8CCD520DD6A4D007DC3E5 /* EHIDealInterfaces.h */,
+				92B2B00520CAF025003449A1 /* EHIDealCardCell.xib */,
+				92B2B00620CAF025003449A1 /* EHIDealCardCell.h */,
+				92B2B00420CAF025003449A1 /* EHIDealCardCell.m */,
+				86CB8BB44DAEFE96D00922C2 /* EHIDealCardViewModel.h */,
+				86CB821AB4AAD9FE14D0CC1B /* EHIDealCardViewModel.m */,
+			);
+			name = Deals;
+			sourceTree = "<group>";
+		};
 		9243526E1D05F99B008FB24E /* Emerald Club */ = {
 			isa = PBXGroup;
 			children = (
@@ -6748,6 +6862,14 @@
 				92A9D57F208E6F2A00B3C02B /* EHICarClassPriceLineItemTests.m */,
 			);
 			name = Price;
+			sourceTree = "<group>";
+		};
+		92553C7120C86B8200323DF9 /* Deal */ = {
+			isa = PBXGroup;
+			children = (
+				9281040C20C9C882000230AB /* EHIAEMImageTests.m */,
+			);
+			name = Deal;
 			sourceTree = "<group>";
 		};
 		9259B4981D51178B00F52EDA /* Additional Info */ = {
@@ -7118,6 +7240,31 @@
 				92AB00441DF89481001F6EAE /* EHISurveyViewModel.m */,
 			);
 			name = Survey;
+			sourceTree = "<group>";
+		};
+		92B2B00320CAF00B003449A1 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				92B2B00C20CAFD46003449A1 /* EHIDealContentCell.xib */,
+				92B2B00D20CAFD46003449A1 /* EHIDealContentCell.h */,
+				92B2B00A20CAFD46003449A1 /* EHIDealContentCell.m */,
+				92B2B00E20CAFD46003449A1 /* EHIDealContentViewModel.h */,
+				92B2B00B20CAFD46003449A1 /* EHIDealContentViewModel.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		92B2B00920CAFCD3003449A1 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				92553C6720C8278000323DF9 /* EHIDealDetailStoryboard.storyboard */,
+				92553C6620C8278000323DF9 /* EHIDealDetailViewController.h */,
+				92553C6920C8278000323DF9 /* EHIDealDetailViewController.m */,
+				92553C6A20C8278000323DF9 /* EHIDealDetailViewModel.h */,
+				92553C6820C8278000323DF9 /* EHIDealDetailViewModel.m */,
+				92B2B00320CAF00B003449A1 /* Cells */,
+			);
+			name = Detail;
 			sourceTree = "<group>";
 		};
 		92BD967F1D9591390036D5F9 /* Payment */ = {
@@ -8548,6 +8695,36 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		D39DF9AC20D94BCB001D8E2F /* List */ = {
+			isa = PBXGroup;
+			children = (
+				D39DF9AE20D94BEF001D8E2F /* EHIDealsStoryboard.storyboard */,
+				D39DF9AD20D94BEF001D8E2F /* EHIDealsViewController.h */,
+				D39DF9B020D94BEF001D8E2F /* EHIDealsViewController.m */,
+				D39DF9B120D94BEF001D8E2F /* EHIDealsViewModel.h */,
+				D39DF9AF20D94BEF001D8E2F /* EHIDealsViewModel.m */,
+				D39DF9B520D950BE001D8E2F /* Cells */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		D39DF9B520D950BE001D8E2F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D39DF9C820D9519E001D8E2F /* EHIDealLabelCell.xib */,
+				D39DF9C920D9519E001D8E2F /* EHIDealLabelCell.h */,
+				D39DF9C620D9519E001D8E2F /* EHIDealLabelCell.m */,
+				D39DF9CA20D9519E001D8E2F /* EHIDealLabelViewModel.h */,
+				D39DF9C720D9519E001D8E2F /* EHIDealLabelViewModel.m */,
+				D39DF9DA20D9BD72001D8E2F /* EHIDealHeaderCell.xib */,
+				D39DF9DB20D9BD72001D8E2F /* EHIDealHeaderCell.h */,
+				D39DF9D820D9BD72001D8E2F /* EHIDealHeaderCell.m */,
+				D39DF9DC20D9BD72001D8E2F /* EHIDealHeaderViewModel.h */,
+				D39DF9D920D9BD72001D8E2F /* EHIDealHeaderViewModel.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
 		E01148471D403FF200BBD628 /* bldConfig */ = {
 			isa = PBXGroup;
 			children = (
@@ -9874,6 +10051,7 @@
 				FBF87F321AA75D7E00BB5B99 /* Location Details */,
 				FB2A37BD1AF41FFD001691CF /* Reservation Class Select */,
 				B5CD4CAB1AF7BB84003FD83D /* Reservation Itinerary */,
+				92553C7120C86B8200323DF9 /* Deal */,
 				00F189661AF3FBB700E5CE19 /* Reservation */,
 				926737A21E771AF200D96E88 /* Review */,
 				00F1897B1AF7D9C300E5CE19 /* Shared */,
@@ -9933,6 +10111,7 @@
 				00CDCB5E1B30EC88003D3332 /* Flight Details */,
 				92EDE29E1D1C500F002D80EF /* Airline Search */,
 				92C49BD21CADAB6400DCD8A9 /* Promotion */,
+				923EA46A20C8246000073F54 /* Deals */,
 				E9450C601B73B068008344FF /* Redemption */,
 				929E82F01C4FB16D007BC38F /* Card Scan */,
 				0046B34B1C47133C0029ABDA /* Payment */,
@@ -9980,6 +10159,7 @@
 				E9AFCC451A97CD4B0077D24E /* EHIServices+Reservation.h */,
 				FBE1987F1B2F49D700B9536D /* EHIServices+Config.h */,
 				92D2A9B61CAAE45D006668A6 /* EHIServices+Contracts.h */,
+				921AFC4620D7DE3200C155F6 /* EHIServices+Deals.h */,
 				FB010A861B1E073500248A91 /* EHIServicesError.h */,
 				FB010A871B1E073500248A91 /* EHIServicesError.m */,
 				FB027F231B0578E700162A1B /* EHISearchRegion.h */,
@@ -10162,16 +10342,21 @@
 				E97FB1F01B14D85C00179369 /* EHIDashboardLoadingCell.m */,
 				E97FB1F41B14DC8400179369 /* EHIDashboardLoadingViewModel.h */,
 				E97FB1F51B14DC8400179369 /* EHIDashboardLoadingViewModel.m */,
-				0023BFEB1C31A44300CFB0C9 /* EHIDashboardNewFeatureCell.xib */,
-				0023BFEE1C31A46600CFB0C9 /* EHIDashboardNewFeatureCell.h */,
-				0023BFEF1C31A46600CFB0C9 /* EHIDashboardNewFeatureCell.m */,
-				0023BFF21C31A47800CFB0C9 /* EHIDashboardNewFeatureViewModel.h */,
-				0023BFF31C31A47800CFB0C9 /* EHIDashboardNewFeatureViewModel.m */,
 				928DF16C1CAECC3200C45A72 /* EHIDashboardPromotionCell.xib */,
 				928DF16A1CAECC3200C45A72 /* EHIDashboardPromotionCell.h */,
 				928DF16B1CAECC3200C45A72 /* EHIDashboardPromotionCell.m */,
 				928DF17B1CAECE6000C45A72 /* EHIDashboardPromotionCellViewModel.h */,
 				928DF17C1CAECE6000C45A72 /* EHIDashboardPromotionCellViewModel.m */,
+				E3055F0F20CB0A1300D17273 /* EHIDashboardNotificationsCell.xib */,
+				E3B757FB20D03B8400D9C9CB /* EHIDashboardNotificationsCell.h */,
+				E3B757F920D03B6F00D9C9CB /* EHIDashboardNotificationsCell.m */,
+				E3055F0E20CB09F900D17273 /* EHIDashboardNotificationsPromptViewModel.h */,
+				E3055F0C20CB09E500D17273 /* EHIDashboardNotificationsPromptViewModel.m */,
+				E303146020DC178B009B696B /* EHIDashboardLocationPromptCell.xib */,
+				E303145C20DC1758009B696B /* EHIDashboardLocationPromptCell.h */,
+				E303145A20DC1741009B696B /* EHIDashboardLocationPromptCell.m */,
+				E303145F20DC177F009B696B /* EHIDashboardLocationPromptViewModel.h */,
+				E303145D20DC1771009B696B /* EHIDashboardLocationPromptViewModel.m */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -10356,6 +10541,7 @@
 				B5CD4CAE1AF7C6CA003FD83D /* city2.json */,
 				B5F8AA381AF9368A0074E089 /* city3.json */,
 				FBF87F351AA765F900BB5B99 /* city_stub.json */,
+				92D8EF2120D001B700AF156E /* deal.json */,
 				E9AFCC0C1A9544BE0077D24E /* airport.json */,
 				FBF87F371AA7665800BB5B99 /* airport_stub.json */,
 				FBE952DE1ACC95810011234F /* reservation.json */,
@@ -10538,10 +10724,12 @@
 				FBBB43231A66DE2700D500D8 /* EHISettings.h */,
 				FBBB43241A66DE2700D500D8 /* EHISettings.m */,
 				92DC265D1F389FFB00323B97 /* EHIEnvironments.h */,
+				92FF2DDE20D82812004AD1DE /* EHIGBOEnvironment.h */,
+				92FF2DDF20D82812004AD1DE /* EHIGBOEnvironment.m */,
+				92FF2DE120D82DAF004AD1DE /* EHIAEMEnvironment.h */,
+				92FF2DE220D82DAF004AD1DE /* EHIAEMEnvironment.m */,
 				FBBB43261A66DE4300D500D8 /* EHISettingsEnvironment.h */,
 				FBBB43271A66DE4300D500D8 /* EHISettingsEnvironment.m */,
-				92F01CC01F3B914500FD8C45 /* EHIServicesEnvironment.h */,
-				92F01CC11F3B914500FD8C45 /* EHIServicesEnvironment.m */,
 				92DC265E1F38A4FA00323B97 /* EHISearchEnvironment.h */,
 				92DC265F1F38A4FA00323B97 /* EHISearchEnvironment.m */,
 			);
@@ -10552,6 +10740,7 @@
 			isa = PBXGroup;
 			children = (
 				FBBB432F1A67068500D500D8 /* EHIServices_Private.h */,
+				D3152D2420B8B5300024C61B /* EHIServices_Debug.h */,
 				FB3225661A5B282D005015BE /* EHIServices.m */,
 				FBBB433F1A680FA700D500D8 /* EHIServices+User.m */,
 				FB0B7C0A1B4B2B64004BF261 /* EHIServices+Rentals.m */,
@@ -10560,6 +10749,7 @@
 				E9AFCC461A97CD4B0077D24E /* EHIServices+Reservation.m */,
 				FBE198801B2F49D700B9536D /* EHIServices+Config.m */,
 				92D2A9B71CAAE45D006668A6 /* EHIServices+Contracts.m */,
+				921AFC4720D7DE3200C155F6 /* EHIServices+Deals.m */,
 				923DE6F61F265E2700AEF911 /* EHIServices+URLMasking.h */,
 				923DE6F71F265E2700AEF911 /* EHIServices+URLMasking.m */,
 			);
@@ -10962,6 +11152,10 @@
 			children = (
 				E956969E1A9E407300EB051E /* EHIImage.h */,
 				E956969F1A9E407300EB051E /* EHIImage.m */,
+				9281040920C975D1000230AB /* EHIGBOImage.h */,
+				9281040A20C975D1000230AB /* EHIGBOImage.m */,
+				92553C7720C8896900323DF9 /* EHIAEMImage.h */,
+				92553C7820C8896900323DF9 /* EHIAEMImage.m */,
 				E9AFCC5C1A9D07EC0077D24E /* EHIPhone.h */,
 				E9AFCC5D1A9D07EC0077D24E /* EHIPhone.m */,
 				E9A937521B94DEBD00E5C5BF /* EHIFormattedPhone.h */,
@@ -10980,6 +11174,13 @@
 				923D586C1C3FE28F00D4E939 /* EHIThirdPartyMapWaze.m */,
 				92061B291F8420AF007A2C28 /* EHILocationIconProvider.h */,
 				92061B2A1F8420AF007A2C28 /* EHILocationIconProvider.m */,
+				92FF2DDB20D80B18004AD1DE /* EHIDealsConfiguration.h */,
+				92FF2DDC20D80B18004AD1DE /* EHIDealsConfiguration.m */,
+				D39DF9D720D98C33001D8E2F /* EHIPromotionRenderable.h */,
+				92DE842A20D7EA2E00CAFFDF /* EHIDeals.h */,
+				92DE842B20D7EA2E00CAFFDF /* EHIDeals.m */,
+				92553C6E20C86B6900323DF9 /* EHIDealInfo.h */,
+				92553C6F20C86B6900323DF9 /* EHIDealInfo.m */,
 			);
 			name = Shared;
 			sourceTree = "<group>";
@@ -11021,10 +11222,14 @@
 				FBEB7E7C1AC1C00500ABA0D7 /* EHIArrowLayer.m */,
 				0050696C1BFE436100ABB2A2 /* EHIArrowBorderLayer.h */,
 				0050696D1BFE436100ABB2A2 /* EHIArrowBorderLayer.m */,
+				E3D005AF20DD94EC009AD9CC /* EHIArrowBorderView.h */,
+				E3D005B020DD94EC009AD9CC /* EHIArrowBorderView.m */,
 				B544939D1AEFF34B005D232E /* EHICircleView.h */,
 				B544939E1AEFF34B005D232E /* EHICircleView.m */,
 				3480202D1F7196FA009998AC /* EHIBorderedView.h */,
 				3480202E1F7196FA009998AC /* EHIBorderedView.m */,
+				923EA46620C8128900073F54 /* EHIGradientView.h */,
+				923EA46720C8128900073F54 /* EHIGradientView.m */,
 			);
 			name = Layers/Shapes;
 			sourceTree = "<group>";
@@ -11088,7 +11293,8 @@
 				FBEBD3671A9D299700A3C1C0 /* EHIFavoritesManagerTests.m */,
 				929925F21EDDAF9D00BF9329 /* EHILocationDateFilterStoreTests.m */,
 				92DC26611F38A5B300323B97 /* EHISearchEnvironmentTests.m */,
-				92F01CC31F3B916700FD8C45 /* EHIServicesEnvironmentTests.m */,
+				92F01CC31F3B916700FD8C45 /* EHIGBOEnvironmentTests.m */,
+				D3AA26E620D92398000D9AEC /* EHIAEMEnvironmentTests.m */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -11158,6 +11364,7 @@
 		FBF0164F1A65CDD8007C2AD3 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				921AFC4920D7E23100C155F6 /* Deals */,
 				929761531E96E1B2004465F0 /* Crash */,
 				929761521E96D900004465F0 /* Bootstrap */,
 				9272B95E1DA2E58C001844B1 /* Payment */,
@@ -11342,7 +11549,7 @@
 		FB3225271A5B263C005015BE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = Enterprise;
 				TargetAttributes = {
 					E9DDA9571BC2036C00083FE0 = {
@@ -11515,6 +11722,7 @@
 				E97FB2E91B1CB3E100179369 /* loader_book_icon_green_31@1x.png in Resources */,
 				E97FB42C1B1CB40700179369 /* loader_book_icon_green_74@2x.png in Resources */,
 				E97FB54B1B1CB41D00179369 /* loader_book_icon_green_81@3x.png in Resources */,
+				D39DF9DF20D9BD72001D8E2F /* EHIDealHeaderCell.xib in Resources */,
 				FBCB13D31ACF116E00FF8CB4 /* car_class.json in Resources */,
 				E97FB33D1B1CB3E100179369 /* loader_book_icon_green_115@1x.png in Resources */,
 				E97FB4181B1CB40700179369 /* loader_book_icon_green_54@2x.png in Resources */,
@@ -11554,6 +11762,7 @@
 				E9F3B92C1AAF41C6009CE014 /* EHIReservationStoryboard.storyboard in Resources */,
 				B54492EE1AEFF323005D232E /* loader_book_icon_42@2x.png in Resources */,
 				0097CB571AFD106F00E069AD /* countries.json in Resources */,
+				D39DF9CD20D9519E001D8E2F /* EHIDealLabelCell.xib in Resources */,
 				BE8FFACC1E0C4EDB007B20C9 /* EHIRewardsBenefitsPointsCell.xib in Resources */,
 				B54493511AEFF323005D232E /* loader_book_icon_53@3x.png in Resources */,
 				BC428A6D1E009F88002AE671 /* EHIOnboardingViewController.storyboard in Resources */,
@@ -11562,6 +11771,7 @@
 				E97FB51A1B1CB41D00179369 /* loader_book_icon_green_32@3x.png in Resources */,
 				E95BB8371AC1E78F00D4FE50 /* EHIClassDetailsStoryboard.storyboard in Resources */,
 				E97FB43C1B1CB40700179369 /* loader_book_icon_green_90@2x.png in Resources */,
+				E3055F1020CB0A1300D17273 /* EHIDashboardNotificationsCell.xib in Resources */,
 				E97FB5081B1CB41D00179369 /* loader_book_icon_green_14@3x.png in Resources */,
 				E97FB2EB1B1CB3E100179369 /* loader_book_icon_green_33@1x.png in Resources */,
 				0109DB421D5D1CC400D2E30F /* EHIEnrollmentConfirmationStoryboard.storyboard in Resources */,
@@ -11681,6 +11891,7 @@
 				E97FB5631B1CB41D00179369 /* loader_book_icon_green_105@3x.png in Resources */,
 				E97FB31A1B1CB3E100179369 /* loader_book_icon_green_80@1x.png in Resources */,
 				B599EBF81AE051BE007806E3 /* EHIRentalsFooterCell.xib in Resources */,
+				92553C6B20C8278000323DF9 /* EHIDealDetailStoryboard.storyboard in Resources */,
 				B544933A1AEFF323005D232E /* loader_book_icon_32@3x.png in Resources */,
 				E97FB52B1B1CB41D00179369 /* loader_book_icon_green_49@3x.png in Resources */,
 				B54492901AEFF323005D232E /* loader_book_icon_36@1x.png in Resources */,
@@ -11870,7 +12081,6 @@
 				B54492D71AEFF323005D232E /* loader_book_icon_21@2x.png in Resources */,
 				E97FB51E1B1CB41D00179369 /* loader_book_icon_green_36@3x.png in Resources */,
 				9259B4AC1D51188500F52EDA /* EHIReviewAdditionalInfoItemCell.xib in Resources */,
-				0023BFEC1C31A44300CFB0C9 /* EHIDashboardNewFeatureCell.xib in Resources */,
 				B54492BC1AEFF323005D232E /* loader_book_icon_76@1x.png in Resources */,
 				E97FB4451B1CB40700179369 /* loader_book_icon_green_99@2x.png in Resources */,
 				92D54CCD1D9D34DB006816A2 /* EHIProfileEditBillingStoryboard.storyboard in Resources */,
@@ -12006,6 +12216,8 @@
 				B544927D1AEFF323005D232E /* loader_book_icon_19@1x.png in Resources */,
 				E97FB5461B1CB41D00179369 /* loader_book_icon_green_76@3x.png in Resources */,
 				E97FB3461B1CB3E100179369 /* loader_book_icon_green_124@1x.png in Resources */,
+				92B2B00820CAF025003449A1 /* EHIDealCardCell.xib in Resources */,
+				D39DF9B220D94BEF001D8E2F /* EHIDealsStoryboard.storyboard in Resources */,
 				B54492921AEFF323005D232E /* loader_book_icon_38@1x.png in Resources */,
 				B54493271AEFF323005D232E /* loader_book_icon_15@3x.png in Resources */,
 				B54492C41AEFF323005D232E /* loader_book_icon_83@1x.png in Resources */,
@@ -12058,6 +12270,7 @@
 				B544931F1AEFF323005D232E /* loader_book_icon_87@2x.png in Resources */,
 				B54493181AEFF323005D232E /* loader_book_icon_80@2x.png in Resources */,
 				B54493491AEFF323005D232E /* loader_book_icon_46@3x.png in Resources */,
+				E303146120DC178B009B696B /* EHIDashboardLocationPromptCell.xib in Resources */,
 				B54492BD1AEFF323005D232E /* loader_book_icon_77@1x.png in Resources */,
 				B54492891AEFF323005D232E /* loader_book_icon_2@1x.png in Resources */,
 				B544937D1AEFF323005D232E /* check_mark_icon_11@2x.png in Resources */,
@@ -12216,6 +12429,7 @@
 				E97FB5171B1CB41D00179369 /* loader_book_icon_green_29@3x.png in Resources */,
 				E97FB3E71B1CB40700179369 /* loader_book_icon_green_5@2x.png in Resources */,
 				E97FB2CF1B1CB3E100179369 /* loader_book_icon_green_5@1x.png in Resources */,
+				92D8EF2220D001B700AF156E /* deal.json in Resources */,
 				B55223401ACF397100FF4252 /* EHIExtrasExtraCell.xib in Resources */,
 				B54493371AEFF323005D232E /* loader_book_icon_2@3x.png in Resources */,
 				E97FB3041B1CB3E100179369 /* loader_book_icon_green_58@1x.png in Resources */,
@@ -12379,6 +12593,7 @@
 				B54493621AEFF323005D232E /* loader_book_icon_69@3x.png in Resources */,
 				E97FB5681B1CB41D00179369 /* loader_book_icon_green_110@3x.png in Resources */,
 				E97FB4551B1CB40700179369 /* loader_book_icon_green_115@2x.png in Resources */,
+				92B2B01120CAFD46003449A1 /* EHIDealContentCell.xib in Resources */,
 				E97FB4071B1CB40700179369 /* loader_book_icon_green_37@2x.png in Resources */,
 				924A0EC41C4EB68300A4E4DC /* EHIForgotPasswordStoryboard.storyboard in Resources */,
 				E97FB3F41B1CB40700179369 /* loader_book_icon_green_18@2x.png in Resources */,
@@ -12782,10 +12997,12 @@
 				B55AF20D1BEA75720059B73B /* EHIKeyFactsViewModel.m in Sources */,
 				FBEA9AAA1A9CF062005351A8 /* EHIUserLocation.m in Sources */,
 				E9450C7F1B73F5D8008344FF /* EHIRedemptionSavingsViewModel.m in Sources */,
+				92553C7020C86B6900323DF9 /* EHIDealInfo.m in Sources */,
 				00F189521AE98A8E00E5CE19 /* EHIReservationScheduleViewModel.m in Sources */,
 				BEA7647D1E27F03E001F2D75 /* EHIAboutPointsViewModel.m in Sources */,
 				929C74FB1EFD3EAE00104EB7 /* MTRReactor.m in Sources */,
 				B53E20271BFF8AC000C17590 /* EHINotificationManager.m in Sources */,
+				92FF2DDD20D80B18004AD1DE /* EHIDealsConfiguration.m in Sources */,
 				0118CA811D5390E400604CB5 /* EHIFormFieldActionButtonViewModel.m in Sources */,
 				92919DDD1CD3A6F90053CED6 /* EHIAdditionalInformationViewModel.m in Sources */,
 				E97FB1FC1B15026200179369 /* EHIDashboardUpcomingRentalViewModel.m in Sources */,
@@ -12816,6 +13033,7 @@
 				0109DB3C1D5CECEC00D2E30F /* EHIEnrollmentStepViewModel.m in Sources */,
 				BEA764801E27F07F001F2D75 /* EHIAboutPointsViewController.m in Sources */,
 				920D5A141D5BD54A00CACBEC /* EHIEnrollmentStepThreeViewController.m in Sources */,
+				9281040B20C975D1000230AB /* EHIGBOImage.m in Sources */,
 				B566DC9F1AD6F4A400AB667F /* EHIStepperControl.m in Sources */,
 				FB8ECEA31AEF1BD100FB8269 /* EHIReservationSublistSectionHeader.m in Sources */,
 				92168F4F1EBA05DF000756E8 /* EHITemporalSelectionViewModel.m in Sources */,
@@ -12830,10 +13048,13 @@
 				FBEB7E8D1AC1FDD800ABA0D7 /* EHICalendarMonthCell.m in Sources */,
 				FBD1747B1B0D0A45002AD2E7 /* EHIDashboardQuickstartCell.m in Sources */,
 				B599EBC81AE0171D007806E3 /* EHIRentalsViewController.m in Sources */,
+				D39DF9DD20D9BD72001D8E2F /* EHIDealHeaderCell.m in Sources */,
 				E935FE631BBB362800CAFE78 /* EHICarClassFetch.m in Sources */,
 				FBEA4C761A7AA39800C417E9 /* EHINavigationAnimation.m in Sources */,
 				B500F0C51B30FEDB00FA3DA3 /* EHIRentalsUnauthenticatedViewModel.m in Sources */,
+				92B2B00720CAF025003449A1 /* EHIDealCardCell.m in Sources */,
 				924A0EC51C4EB68300A4E4DC /* EHIForgotPasswordViewController.m in Sources */,
+				D39DF9B320D94BEF001D8E2F /* EHIDealsViewModel.m in Sources */,
 				92FB16B81EF8315D00AA78D5 /* EHILocationConflictCollapsableView.m in Sources */,
 				FB6A8B3D1A69B7A8005DBAC2 /* EHICollection.m in Sources */,
 				FBBB43251A66DE2700D500D8 /* EHISettings.m in Sources */,
@@ -12854,6 +13075,8 @@
 				B55AF21D1BEA77180059B73B /* EHIKeyFactsFooterViewModel.m in Sources */,
 				0034B6CA1B7BC7D40080CC01 /* EHIReservationEligibility.m in Sources */,
 				92DC26601F38A4FA00323B97 /* EHISearchEnvironment.m in Sources */,
+				92DE842C20D7EA2E00CAFFDF /* EHIDeals.m in Sources */,
+				921AFC4820D7DE3200C155F6 /* EHIServices+Deals.m in Sources */,
 				E9AFCC4A1A9BE5380077D24E /* EHIUserProfiles.m in Sources */,
 				E9919A0F1AAF7F8D00186D10 /* EHIItineraryUserInfoView.m in Sources */,
 				FBFFB2F41AAA2D34008A6DD9 /* EHIPageControlDot.m in Sources */,
@@ -12875,11 +13098,13 @@
 				003B70FB1C0CCA0D00156669 /* UNNotificationRequest+Utility.m in Sources */,
 				FBFFB2ED1AAA2C19008A6DD9 /* EHIPageControl.m in Sources */,
 				847004C31C1A1772002E2A88 /* NSLocale+Country.m in Sources */,
+				E3055F0D20CB09E500D17273 /* EHIDashboardNotificationsPromptViewModel.m in Sources */,
 				9228F5771EBB5CA000CEB963 /* EHILocationsFilterListView.m in Sources */,
 				FB65EE1B1A9E7268002B2949 /* EHILocationDetailsInfoViewModel.m in Sources */,
 				92241A361D12CEFE0019DBE1 /* EHIConfirmationAppStoreRateViewModel.m in Sources */,
 				E95696C41A9FD41200EB051E /* EHILocationFilterCellViewModel.m in Sources */,
 				FB5489E71A705FE40014DFD0 /* EHIListDataSourceElement.m in Sources */,
+				923EA46820C8128900073F54 /* EHIGradientView.m in Sources */,
 				92C49C2D1CADAB9E00DCD8A9 /* EHIPromotionDetailsTitleCellViewModel.m in Sources */,
 				00B23C7F1C19F7B300B79B5E /* EHIDebugMapViewController.m in Sources */,
 				E90034A71B18EB4500AA2623 /* EHICarClassVehicleRate.m in Sources */,
@@ -12904,7 +13129,6 @@
 				FB6A8B2B1A69A81B005DBAC2 /* EHILocationsViewController.m in Sources */,
 				01E169B31D56219E00F4D8FF /* EHIEnrollmentStepTwoViewModel.m in Sources */,
 				0118CA901D539BF500604CB5 /* EHIEnrollmentStepHeaderCell.m in Sources */,
-				92F01CC21F3B914500FD8C45 /* EHIServicesEnvironment.m in Sources */,
 				0009E5561ACEF6C30085ECB4 /* EHIReservationExtraViewModel.m in Sources */,
 				FBEB7EA91AC46AF300ABA0D7 /* EHIReservationSchedulePickerStepCell.m in Sources */,
 				E9403DAB1B224A750007D565 /* EHIReviewPaymentOptionsCell.m in Sources */,
@@ -12915,6 +13139,7 @@
 				FBEA9AA41A9BBE56005351A8 /* EHIDataStore.m in Sources */,
 				923E7B631DAC06E5009AC5A0 /* EHIPaymentOptionFooterCell.m in Sources */,
 				FB2A37B71AF41E25001691CF /* EHIClassSelectDiscountCell.m in Sources */,
+				92B2B01020CAFD46003449A1 /* EHIDealContentViewModel.m in Sources */,
 				FB6A8B5D1A6EC809005DBAC2 /* EHILocationTimesSlice.m in Sources */,
 				FB3225671A5B282D005015BE /* EHIServices.m in Sources */,
 				E9551AFA1AE165D600FAB84F /* EHILocationFilterQuery.m in Sources */,
@@ -12941,6 +13166,7 @@
 				E9CEF86F1AE96ADD0099AAF7 /* EHIClassSelectFilterQuery.m in Sources */,
 				B5D127981ACF2877003A683C /* EHIReservationPriceButton.m in Sources */,
 				015E9A211D5375C300FFF28D /* EHIEnrollmentStepOneViewController.m in Sources */,
+				92553C6C20C8278000323DF9 /* EHIDealDetailViewModel.m in Sources */,
 				FBE952B61AC9E8220011234F /* EHIMenuSecondaryCell.m in Sources */,
 				003B70E31C04C77700156669 /* EHIDebugViewModel.m in Sources */,
 				FBF016531A65CDFC007C2AD3 /* EHILogging.m in Sources */,
@@ -13094,7 +13320,9 @@
 				FB0A6B501AE05EFC00870BD7 /* EHISigninViewModel.m in Sources */,
 				924FB8C31DF5B8D300E9895A /* EHISurveyInviteViewModel.m in Sources */,
 				FB7A5A321A8C050D00931B1F /* EHILocalization.m in Sources */,
+				92FF2DE020D82812004AD1DE /* EHIGBOEnvironment.m in Sources */,
 				FBE952B91ACA00440011234F /* UIResponder+Eventing.m in Sources */,
+				E3B757FA20D03B6F00D9C9CB /* EHIDashboardNotificationsCell.m in Sources */,
 				344990F5200FBAD500302C92 /* EHIDriverInfoViewModel_Private.m in Sources */,
 				8436F0AF1C29C22400A6CE73 /* EHIProfilePasswordRuleViewModel.m in Sources */,
 				E9AFCC351A97BB9F0077D24E /* EHICarClassExtras.m in Sources */,
@@ -13177,6 +13405,7 @@
 				92C49C051CADAB9E00DCD8A9 /* EHIPromotionDetailsBulletItemCell.m in Sources */,
 				92D2A9C31CAC152C006668A6 /* EHIPromotionContract.m in Sources */,
 				E9FCAC741AA11BC3002B2986 /* EHILocationFilterMiscCell.m in Sources */,
+				92553C7920C8896900323DF9 /* EHIAEMImage.m in Sources */,
 				BC5853731DC26D7D0001E53D /* EHISelectPaymentFooterViewModel.m in Sources */,
 				E9CEF8601AE824B70099AAF7 /* EHIFilters.m in Sources */,
 				920FF5EF1E82EA7B008D5C50 /* EHIReservationBookStateBuilder.m in Sources */,
@@ -13206,6 +13435,7 @@
 				926B65661E36888E0038F29A /* EHIRewardsLegalCell.m in Sources */,
 				003FA5941AD8859C0063F495 /* EHIReservationEnterprisePlusInfoViewController.m in Sources */,
 				92E5926A1EDC4F2100CF9D20 /* EHILocationsMapListCell.m in Sources */,
+				D39DF9DE20D9BD72001D8E2F /* EHIDealHeaderViewModel.m in Sources */,
 				92BE732C1D9ADF26006A615C /* EHIProfilePaymentMethodModifyActionsViewModel.m in Sources */,
 				9259B4B51D5136AD00F52EDA /* EHIReviewAdditionalInfoAddCell.m in Sources */,
 				FB873C781B56B6FB005690C3 /* EHIRefreshControlViewModel.m in Sources */,
@@ -13264,6 +13494,7 @@
 				FB10EF8E1A7FE79300A3609A /* EHILocationAnnotation.m in Sources */,
 				8446CA3E1C59156A0053F4FF /* EHIWebBrowserViewModel.m in Sources */,
 				00F1896C1AF4075B00E5CE19 /* EHIFormFieldViewModel.m in Sources */,
+				D39DF9CC20D9519E001D8E2F /* EHIDealLabelViewModel.m in Sources */,
 				E912B2251AB864C9008060E9 /* EHILocationSearchQuery.m in Sources */,
 				9259B4871D51055500F52EDA /* EHIReviewAdditionalInfoCell.m in Sources */,
 				BE8FFAC41E0C3F04007B20C9 /* EHIRewardsBenefitsHeaderCell.m in Sources */,
@@ -13312,7 +13543,6 @@
 				92EBEAC31E2D4A1A002C1C5A /* EHITagLayer.m in Sources */,
 				847C5ECF1D3E68100081BEE9 /* EHIRentalsCondensedReceiptViewModel.m in Sources */,
 				B53D43E61B0B9C12003AE63E /* EHIAddress.m in Sources */,
-				0023BFF01C31A46600CFB0C9 /* EHIDashboardNewFeatureCell.m in Sources */,
 				FBBB433A1A672D7700D500D8 /* EHINetworkFileOperation.m in Sources */,
 				E9F3477C1A8186E600AB71B0 /* EHISectionHeaderModel.m in Sources */,
 				D33524F91EB433A200A12BD8 /* EHIApplicationBootstrap.m in Sources */,
@@ -13349,10 +13579,12 @@
 				92DBFAE520B334FB006C0E83 /* EHIDataCollectionModalViewModel.m in Sources */,
 				928DF17D1CAECE6000C45A72 /* EHIDashboardPromotionCellViewModel.m in Sources */,
 				84AA0EA21BA74AD0006FCF83 /* UILabel+Autoshrink.m in Sources */,
+				92553C6D20C8278000323DF9 /* EHIDealDetailViewController.m in Sources */,
 				B53D43F61B0CFE92003AE63E /* EHIProfileFooterCell.m in Sources */,
 				FB010A7B1B1D090000248A91 /* EHIAnalyticsContext+Serialization.m in Sources */,
 				FBD048561A8A6E700091FB49 /* NSCollections+Utility.m in Sources */,
 				921E726F1EC648A800C6DD9E /* EHILocationFilterDateQuery.m in Sources */,
+				E3D005B120DD94EC009AD9CC /* EHIArrowBorderView.m in Sources */,
 				FB010A621B17949C00248A91 /* EHIAnalytics.m in Sources */,
 				00CDCB851B346062003D3332 /* EHIInformationBannerViewModel.m in Sources */,
 				FBE94AC31A9BB181004F4DCF /* EHIFileSerializer.m in Sources */,
@@ -13381,6 +13613,7 @@
 				B5D06A811B2B63FB002AF801 /* EHIContractAdditionalInfoDropdownValue.m in Sources */,
 				B57052DE1B7B98E1004A757F /* EHIRedemptionLineItemsView.m in Sources */,
 				9275BDED1D478B5A00CF63FB /* EHISectionDivider.m in Sources */,
+				92FF2DE320D82DAF004AD1DE /* EHIAEMEnvironment.m in Sources */,
 				FB548A141A71AF7A0014DFD0 /* EHIPlaceholder.m in Sources */,
 				92FB16BB1EF8317C00AA78D5 /* EHILocationConflictCollapsableLayer.m in Sources */,
 				FB5489E31A7053300014DFD0 /* EHIListDataSourceSection.m in Sources */,
@@ -13409,6 +13642,7 @@
 				FBEBD38F1A9E565000A3C1C0 /* EHIListCollectionViewSections.m in Sources */,
 				B53718901AE801B000A27A40 /* EHIRentalsFallbackViewModel.m in Sources */,
 				B55184251B73AD14008E08EB /* EHIRedemptionPointsCell.m in Sources */,
+				92B2B00F20CAFD46003449A1 /* EHIDealContentCell.m in Sources */,
 				3480202F1F7196FA009998AC /* EHIBorderedView.m in Sources */,
 				D30BD3E71ECF716A00C229FC /* EHILocationsFilterBannerViewModel.m in Sources */,
 				49CAEFC51A9F1940000D6026 /* EHIPoliciesViewModel.m in Sources */,
@@ -13497,6 +13731,7 @@
 				FBD168FA1A604F50004472A0 /* EHIMainRouter.m in Sources */,
 				00669F3A1B1E298E00544AC5 /* EHIFormFieldToggleViewModel.m in Sources */,
 				0118CA921D539BF500604CB5 /* EHIEnrollmentStepHeaderViewModel.m in Sources */,
+				D39DF9CB20D9519E001D8E2F /* EHIDealLabelCell.m in Sources */,
 				92CAF3E31EBBBBD20036769D /* EHIDateTimeComponentMapViewModel.m in Sources */,
 				92D9C0031E23FC9E00BF7811 /* EHIArcSegmentsView.m in Sources */,
 				E9403DA31B21F0CF0007D565 /* EHIConfirmationCarClassViewModel.m in Sources */,
@@ -13508,6 +13743,7 @@
 				FBBB43201A66DA8900D500D8 /* NSString+Matching.m in Sources */,
 				92BE731E1D9ADB4E006A615C /* EHIProfilePaymentMethodModifyViewModel.m in Sources */,
 				9259B4AA1D51188500F52EDA /* EHIReviewAdditionalInfoItemCell.m in Sources */,
+				D39DF9B420D94BEF001D8E2F /* EHIDealsViewController.m in Sources */,
 				B523BFCA1B0A9DBC007711DF /* EHIProfileBasicViewModel.m in Sources */,
 				92E0BA6320A0913D00478318 /* EHIRequiredInfoFootnoteViewModel.m in Sources */,
 				FBCB13EB1AD2F7FB00FF8CB4 /* EHIReservationFeeCell.m in Sources */,
@@ -13515,6 +13751,7 @@
 				923305C71EC235A4004C626B /* EHICalendarPlacardViewModel.m in Sources */,
 				BC3676D01E2FE2C20039FEC4 /* EHIOnboardingBenefitsView.m in Sources */,
 				929C74F81EFD3EAE00104EB7 /* MTRDependency.m in Sources */,
+				E303145B20DC1741009B696B /* EHIDashboardLocationPromptCell.m in Sources */,
 				92AB00471DF89481001F6EAE /* EHISurveyViewModel.m in Sources */,
 				FB00275F1B0161260063C6DB /* EHIInfoModalViewModel.m in Sources */,
 				92DBFAE920B34A30006C0E83 /* EHISettingsAnalyticsModalViewModel.m in Sources */,
@@ -13583,7 +13820,6 @@
 				E973F2291AA76AEC0081F02A /* EHIItineraryPickupLocationViewModel.m in Sources */,
 				FBBB43281A66DE4300D500D8 /* EHISettingsEnvironment.m in Sources */,
 				00F189791AF40DA400E5CE19 /* EHIFormFieldTextViewModel.m in Sources */,
-				0023BFF41C31A47800CFB0C9 /* EHIDashboardNewFeatureViewModel.m in Sources */,
 				B55223411ACF397100FF4252 /* EHIExtrasExtraViewModel.m in Sources */,
 				FBD945B41B447098003D7DE1 /* EHIInfoModalModelable.m in Sources */,
 				E973FB9C1AC464BD00B8080F /* EHIReservationRentalPriceTotalCell.m in Sources */,
@@ -13621,6 +13857,7 @@
 				00F1895D1AEFDA6D00E5CE19 /* EHICarClassCell.m in Sources */,
 				FBFDA7531A82C5AC00873329 /* EHIActionButton.m in Sources */,
 				92EBEAD71E2D653F002C1C5A /* EHIRewardsAboutTiersListViewModel.m in Sources */,
+				E303145E20DC1771009B696B /* EHIDashboardLocationPromptViewModel.m in Sources */,
 				FB0A6B4A1AE058BF00870BD7 /* EHISigninViewController.m in Sources */,
 				E982A1701A7BFBE9000ABBDA /* EHILocationNearbyCell.m in Sources */,
 				FBE80AEC1AADFCE00079B48C /* EHIMapTransformer.m in Sources */,
@@ -13650,6 +13887,7 @@
 				92919DDC1CD3A6F90053CED6 /* EHIAdditionalInformationViewController.m in Sources */,
 				E9F693A41B3866DB00272C7E /* EHICallSupportViewModel.m in Sources */,
 				EAD6AAC926DF389EE523B5B0 /* EHICalendarDateTimeInteractor.m in Sources */,
+				86CB846EAF80E3D82B574B84 /* EHIDealCardViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -13674,11 +13912,13 @@
 				B53FFB581B01149500488B45 /* EHIRentalsViewModelTests.m in Sources */,
 				92FB16B51EF80B5100AA78D5 /* EHILocationConflictViewModelTests.m in Sources */,
 				925D9E401E9D212F005DB322 /* EHIPaymentOptionCellViewModelTests.m in Sources */,
+				D3AA26E720D92398000D9AEC /* EHIAEMEnvironmentTests.m in Sources */,
 				00F189681AF3FBF800E5CE19 /* EHIReservationClassSelectViewModelTests.m in Sources */,
 				D30B58AF205AB4FA007C8E80 /* EHISelectPaymentItemViewModelTests.m in Sources */,
-				92F01CC41F3B916700FD8C45 /* EHIServicesEnvironmentTests.m in Sources */,
+				92F01CC41F3B916700FD8C45 /* EHIGBOEnvironmentTests.m in Sources */,
 				921C24281EBA5BAF00652AD1 /* EHIDateTimeComponentViewModelTests.m in Sources */,
 				FBD168F21A604075004472A0 /* EHIDashboardViewModelTests.m in Sources */,
+				9281040D20C9C882000230AB /* EHIAEMImageTests.m in Sources */,
 				92168F531EBA0868000756E8 /* EHITemporalSelectionViewModelTests.m in Sources */,
 				FBF87F341AA75E3500BB5B99 /* EHILocationDetailsViewModelTests.m in Sources */,
 				FBEBD3681A9D299700A3C1C0 /* EHIFavoritesManagerTests.m in Sources */,
@@ -13798,7 +14038,7 @@
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
 				EHI_BUILD_NUMBER = 1;
-				EHI_BUILD_VERSION = 2.4.1;
+				EHI_BUILD_VERSION = 2.5.0;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -13837,7 +14077,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = TL76Q6ELX9;
-				EHI_BUILD_VERSION = 2.4.1;
+				EHI_BUILD_VERSION = 2.5.0;
 				EHI_UAT_BUNDLE_ID = com.enterprise.enterprisemobile;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -14112,7 +14352,7 @@
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
 				EHI_BUILD_NUMBER = 1;
-				EHI_BUILD_VERSION = 2.4.1;
+				EHI_BUILD_VERSION = 2.5.0;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -14152,7 +14392,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
-				EHI_BUILD_VERSION = 2.4.1;
+				EHI_BUILD_VERSION = 2.5.0;
 				EHI_UAT_BUNDLE_ID = com.enterprise.enterprisemobile;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -14590,7 +14830,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				EHI_BUILD_NUMBER = 1;
-				EHI_BUILD_VERSION = 2.4.1;
+				EHI_BUILD_VERSION = 2.5.0;
 				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -14634,7 +14874,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
-				EHI_BUILD_VERSION = 2.4.1;
+				EHI_BUILD_VERSION = 2.5.0;
 				EHI_UAT_BUNDLE_ID = com.enterprise.enterprisemobile;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -14913,7 +15153,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				EHI_BUILD_NUMBER = 1;
-				EHI_BUILD_VERSION = 2.4.1;
+				EHI_BUILD_VERSION = 2.5.0;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -14970,7 +15210,7 @@
 				COPY_PHASE_STRIP = YES;
 				DEAD_CODE_STRIPPING = YES;
 				EHI_BUILD_NUMBER = 1;
-				EHI_BUILD_VERSION = 2.4.1;
+				EHI_BUILD_VERSION = 2.5.0;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -15009,7 +15249,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
-				EHI_BUILD_VERSION = 2.4.1;
+				EHI_BUILD_VERSION = 2.5.0;
 				EHI_UAT_BUNDLE_ID = com.enterprise.enterprisemobile;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -15110,7 +15350,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
-				EHI_BUILD_VERSION = 2.4.1;
+				EHI_BUILD_VERSION = 2.5.0;
 				EHI_UAT_BUNDLE_ID = com.enterprise.enterprisemobile;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (

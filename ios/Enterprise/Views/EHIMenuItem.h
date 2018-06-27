@@ -24,7 +24,6 @@ typedef NS_ENUM(NSInteger, EHIMenuItemHeader) {
 
 typedef NS_ENUM(NSInteger, EHIMenuItemRow) {
     EHIMenuItemRowPromotion,
-    EHIMenuItemRowRNTest,
     EHIMenuItemRowHome,
     EHIMenuItemRowRentals,
     EHIMenuItemRowRewards,
@@ -33,6 +32,7 @@ typedef NS_ENUM(NSInteger, EHIMenuItemRow) {
     EHIMenuItemRowRentalLookUp,
     EHIMenuItemRowNewRental,
     EHIMenuItemRowLocations,
+    EHIMenuItemRowDeals,
     EHIMenuItemRowFeedback,
     EHIMenuItemRowSupport,
     EHIMenuItemRowSettings,

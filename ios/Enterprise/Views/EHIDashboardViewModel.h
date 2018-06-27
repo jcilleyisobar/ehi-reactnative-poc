@@ -16,7 +16,6 @@ typedef NS_ENUM(NSInteger, EHIContentSectionType) {
     EHIContentSectionTypeLoading,
     EHIContentSectionTypeCurrent,
     EHIContentSectionTypeUpcoming,
-    EHIContentSectionTypeNotifications,
 };
 
 @interface EHIDashboardViewModel : EHIViewModel <MTRReactive>
@@ -42,12 +41,15 @@ typedef NS_ENUM(NSInteger, EHIContentSectionType) {
 /** @c YES if the quickstart section should display the fallback cell */
 @property (assign, nonatomic, readonly) BOOL showsHistoryFallback;
 /** @c YES if the dashboard is currently loading data */
-@property (assign, nonatomic, readonly) BOOL isLoading;
-
+@property (assign, nonatomic, readonly) BOOL isLoading; 
 /** A placehodler to enable/disable the hero imager */
 @property (strong, nonatomic, readonly) EHIModel *heroImageModel;
 /** A placeholder to enable/disable the loyalty section */
 @property (strong, nonatomic, readonly) EHIModel *loyaltyPromptModel;
+
+@property (strong, nonatomic, readonly) EHIModel *notificationModel;
+@property (strong, nonatomic, readonly) EHIModel *locationPromptModel;
+
 /** A placeholder to enable/disable the promotion section */
 @property (strong, nonatomic) EHIDashboardPromotionCellViewModel *promotionModel;
 

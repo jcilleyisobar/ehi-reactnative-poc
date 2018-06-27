@@ -319,7 +319,6 @@
 - (void)enableGeofencingWithCompletion:(EHIGeofenceEnableHandler)completion
 {
     self.completion = [completion copy];
-    [EHIAnalytics trackAction:EHIAnalyticsActionRentalAssistantEnable handler:nil];
 
     // update geofences or request authorization
     if(self.hasAlwaysAuthorization) {

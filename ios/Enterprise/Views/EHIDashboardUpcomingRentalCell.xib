@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="SourceSansPro-Bold.ttf">
-            <string>SourceSansPro-Bold</string>
-        </array>
         <array key="SourceSansPro-Black.ttf">
             <string>SourceSansPro-Black</string>
+        </array>
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
         </array>
         <array key="SourceSansPro-Light.ttf">
             <string>SourceSansPro-Light</string>
@@ -34,7 +35,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sau-M0-OJQ" userLabel="Content Container">
-                        <rect key="frame" x="0.0" y="0.0" width="327" height="458"/>
+                        <rect key="frame" x="0.0" y="0.0" width="327" height="483"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Dk-Sj-BxL" userLabel="Top Padding">
                                 <rect key="frame" x="0.0" y="0.0" width="327" height="10"/>
@@ -44,16 +45,16 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o5m-HT-Ich" userLabel="Confirmation Container">
-                                <rect key="frame" x="0.0" y="10" width="327" height="170"/>
+                                <rect key="frame" x="0.0" y="10" width="327" height="179"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="N4W-K7-hPi" userLabel="Car Image" customClass="EHINetworkImageView">
-                                        <rect key="frame" x="163" y="-4.5" width="163.5" height="174"/>
+                                        <rect key="frame" x="163" y="4.5" width="163.5" height="174"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="174" id="pZn-Fb-Dd6"/>
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UPCOMING RENTAL" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="144" translatesAutoresizingMaskIntoConstraints="NO" id="o01-q0-cHL" userLabel="Title Label" customClass="EHILabel">
-                                        <rect key="frame" x="20" y="20" width="180" height="61"/>
+                                        <rect key="frame" x="20" y="20" width="180" height="65.5"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="180" id="KzI-oY-QC1"/>
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="66" id="Ta9-Dc-Kx9"/>
@@ -69,13 +70,13 @@
                                         </variation>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CONFIRMATION NUMBER" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="144" translatesAutoresizingMaskIntoConstraints="NO" id="1m6-F8-gfN" userLabel="Confirmation Title" customClass="EHILabel">
-                                        <rect key="frame" x="20" y="90.5" width="143.5" height="33"/>
+                                        <rect key="frame" x="20" y="95" width="143.5" height="35.5"/>
                                         <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="14"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#2456W1234" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="144" translatesAutoresizingMaskIntoConstraints="NO" id="iBB-OD-uTz" userLabel="Confirmation Subtitle" customClass="EHILabel">
-                                        <rect key="frame" x="20" y="128.5" width="143.5" height="21"/>
+                                        <rect key="frame" x="20" y="135.5" width="143.5" height="23"/>
                                         <constraints>
                                             <constraint firstAttribute="height" relation="lessThanOrEqual" constant="28" id="apq-lM-8mb"/>
                                             <constraint firstAttribute="height" constant="28" id="cQ7-Hq-sbt"/>
@@ -90,7 +91,7 @@
                                         </variation>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HTG-cx-XyI" userLabel="Divider">
-                                        <rect key="frame" x="0.0" y="168.5" width="327" height="1"/>
+                                        <rect key="frame" x="0.0" y="177.5" width="327" height="1"/>
                                         <color key="backgroundColor" red="0.88999998569488525" green="0.88999998569488525" blue="0.88999998569488525" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="1" id="FMR-JB-qhk"/>
@@ -129,16 +130,16 @@
                                 </variation>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="InT-E3-JQm" userLabel="Rental Container">
-                                <rect key="frame" x="0.0" y="179.5" width="327" height="268"/>
+                                <rect key="frame" x="0.0" y="188.5" width="327" height="284"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEE YOU TOMORROW" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="130" translatesAutoresizingMaskIntoConstraints="NO" id="rl7-81-T4L" userLabel="Header Label" customClass="EHILabel">
-                                        <rect key="frame" x="20" y="20" width="139.5" height="33"/>
+                                        <rect key="frame" x="20" y="20" width="139.5" height="35.5"/>
                                         <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="14"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kg8-st-XgH" customClass="EHIButton">
-                                        <rect key="frame" x="59" y="63" width="248" height="40"/>
+                                        <rect key="frame" x="59" y="65.5" width="248" height="43"/>
                                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="DIN Next LT Pro" pointSize="24"/>
                                         <state key="normal" title="Chicago O'Hare Airport">
@@ -150,7 +151,7 @@
                                         </connections>
                                     </button>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fbB-DZ-9Zh" userLabel="Airport Icon Container">
-                                        <rect key="frame" x="20" y="71.5" width="38" height="21"/>
+                                        <rect key="frame" x="20" y="75.5" width="38" height="21"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_airport_green" translatesAutoresizingMaskIntoConstraints="NO" id="ngo-lM-NwK">
                                                 <rect key="frame" x="0.0" y="0.0" width="28" height="21"/>
@@ -168,30 +169,43 @@
                                             <constraint firstAttribute="width" constant="38" id="ut9-Bf-oRo" customClass="EHIRestorableConstraint"/>
                                         </constraints>
                                     </view>
-                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="pPy-Cp-0xK" customClass="EHISecondaryActionButton">
-                                        <rect key="frame" x="20" y="212" width="287" height="46"/>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jcr-as-Pzv">
+                                        <rect key="frame" x="20" y="210" width="287" height="66"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="pPy-Cp-0xK" customClass="EHISecondaryActionButton">
+                                                <rect key="frame" x="0.0" y="10" width="287" height="46"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="46" id="TM9-an-au7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="DIN Next LT Pro" pointSize="18"/>
+                                                <inset key="titleEdgeInsets" minX="30" minY="2" maxX="15" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="DIRECTIONS FROM TERMINAL" image="icon_terminal_directions">
+                                                    <color key="titleColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didTapTerminalDirectionsButton:" destination="hzT-4a-4gX" eventType="touchUpInside" id="OBb-Aj-IYZ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="46" id="lzb-ax-5lU" customClass="EHIRestorableConstraint"/>
+                                            <constraint firstAttribute="bottom" secondItem="pPy-Cp-0xK" secondAttribute="bottom" constant="10" id="5iJ-q0-YKc"/>
+                                            <constraint firstItem="pPy-Cp-0xK" firstAttribute="top" secondItem="Jcr-as-Pzv" secondAttribute="top" priority="999" constant="10" id="Dh6-PR-cc9"/>
+                                            <constraint firstItem="pPy-Cp-0xK" firstAttribute="leading" secondItem="Jcr-as-Pzv" secondAttribute="leading" id="U5h-h4-QX0"/>
+                                            <constraint firstAttribute="trailing" secondItem="pPy-Cp-0xK" secondAttribute="trailing" id="d6w-HP-xCQ"/>
+                                            <constraint firstAttribute="height" constant="66" id="heR-wv-A6n" customClass="EHIRestorableConstraint"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="SourceSansPro-Regular" family="DIN Next LT Pro" pointSize="18"/>
-                                        <inset key="titleEdgeInsets" minX="30" minY="2" maxX="15" maxY="0.0"/>
-                                        <inset key="imageEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                        <state key="normal" title="DIRECTIONS FROM TERMINAL" image="icon_terminal_directions">
-                                            <color key="titleColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="didTapTerminalDirectionsButton:" destination="hzT-4a-4gX" eventType="touchUpInside" id="OBb-Aj-IYZ"/>
-                                        </connections>
-                                    </button>
+                                    </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="May 20, 2015 at 12:00 PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="202" translatesAutoresizingMaskIntoConstraints="NO" id="2gN-nI-vqr" userLabel="Title Label" customClass="EHILabel">
-                                        <rect key="frame" x="20" y="113" width="287" height="28"/>
+                                        <rect key="frame" x="20" y="118.5" width="287" height="30.5"/>
                                         <fontDescription key="fontDescription" name="SourceSansPro-Light" family="DIN Next LT Pro" pointSize="24"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="44A-xg-pfz" userLabel="Get Directions Button" customClass="EHIActionButton">
-                                        <rect key="frame" x="20" y="156" width="287" height="46"/>
+                                        <rect key="frame" x="20" y="164" width="287" height="46"/>
                                         <color key="backgroundColor" red="0.090000003580000001" green="0.60000002379999995" blue="0.34999999399999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="46" id="39H-wq-lOA"/>
@@ -208,7 +222,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OGA-vT-scJ" customClass="EHIButton">
-                                        <rect key="frame" x="174" y="28" width="139.5" height="17"/>
+                                        <rect key="frame" x="174" y="29" width="139.5" height="18"/>
                                         <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="DIN Next LT Pro" pointSize="14"/>
                                         <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="2"/>
@@ -224,40 +238,26 @@
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="2gN-nI-vqr" firstAttribute="leading" secondItem="44A-xg-pfz" secondAttribute="leading" id="3E2-E2-Ef3"/>
-                                    <constraint firstItem="pPy-Cp-0xK" firstAttribute="top" secondItem="44A-xg-pfz" secondAttribute="bottom" constant="10" id="5Vi-cL-YG4"/>
                                     <constraint firstItem="kg8-st-XgH" firstAttribute="top" secondItem="rl7-81-T4L" secondAttribute="bottom" constant="10" id="8IW-0N-MI9"/>
                                     <constraint firstItem="2gN-nI-vqr" firstAttribute="trailing" secondItem="44A-xg-pfz" secondAttribute="trailing" id="9g7-tv-eGg"/>
                                     <constraint firstItem="kg8-st-XgH" firstAttribute="centerY" secondItem="ngo-lM-NwK" secondAttribute="centerY" constant="1" id="DHW-0n-ueM"/>
                                     <constraint firstItem="fbB-DZ-9Zh" firstAttribute="leading" secondItem="InT-E3-JQm" secondAttribute="leading" constant="20" id="HdN-f8-h27"/>
                                     <constraint firstItem="rl7-81-T4L" firstAttribute="leading" secondItem="InT-E3-JQm" secondAttribute="leading" constant="20" id="Jg4-Xi-iX2"/>
+                                    <constraint firstItem="Jcr-as-Pzv" firstAttribute="leading" secondItem="InT-E3-JQm" secondAttribute="leading" constant="20" id="NRL-wi-hcY"/>
                                     <constraint firstItem="rl7-81-T4L" firstAttribute="top" secondItem="InT-E3-JQm" secondAttribute="top" constant="20" id="PA9-sX-PbV"/>
                                     <constraint firstAttribute="trailing" secondItem="OGA-vT-scJ" secondAttribute="trailing" constant="13" id="RT1-Gh-KAI"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jcr-as-Pzv" secondAttribute="trailing" constant="20" id="RVv-9m-Fzf"/>
                                     <constraint firstItem="rl7-81-T4L" firstAttribute="width" secondItem="OGA-vT-scJ" secondAttribute="width" multiplier="1:1" id="TL2-f6-s2A"/>
                                     <constraint firstItem="44A-xg-pfz" firstAttribute="leading" secondItem="InT-E3-JQm" secondAttribute="leading" constant="20" id="UuI-ob-pSV"/>
-                                    <constraint firstItem="pPy-Cp-0xK" firstAttribute="leading" secondItem="InT-E3-JQm" secondAttribute="leading" constant="20" id="ZMN-dy-zQE"/>
                                     <constraint firstItem="rl7-81-T4L" firstAttribute="centerY" secondItem="OGA-vT-scJ" secondAttribute="centerY" id="Zhf-4S-a63"/>
                                     <constraint firstItem="2gN-nI-vqr" firstAttribute="top" secondItem="kg8-st-XgH" secondAttribute="bottom" constant="10" id="aLB-Xp-WQg"/>
                                     <constraint firstItem="kg8-st-XgH" firstAttribute="leading" secondItem="fbB-DZ-9Zh" secondAttribute="trailing" constant="1" id="emj-1L-1RL"/>
-                                    <constraint firstAttribute="trailing" secondItem="pPy-Cp-0xK" secondAttribute="trailing" constant="20" id="foM-rj-osV"/>
                                     <constraint firstItem="OGA-vT-scJ" firstAttribute="leading" secondItem="rl7-81-T4L" secondAttribute="trailing" constant="15" id="gCz-tv-f6l"/>
                                     <constraint firstItem="kg8-st-XgH" firstAttribute="trailing" secondItem="2gN-nI-vqr" secondAttribute="trailing" id="qBk-4A-uKp"/>
                                     <constraint firstAttribute="trailing" secondItem="44A-xg-pfz" secondAttribute="trailing" constant="20" id="sbO-6G-Uwp"/>
-                                    <constraint firstAttribute="bottom" secondItem="pPy-Cp-0xK" secondAttribute="bottom" constant="10" id="z7X-e8-24F"/>
+                                    <constraint firstItem="Jcr-as-Pzv" firstAttribute="top" secondItem="44A-xg-pfz" secondAttribute="bottom" id="tc7-Mw-DOl"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jcr-as-Pzv" secondAttribute="bottom" constant="8" id="xDn-tS-DNM"/>
                                     <constraint firstItem="44A-xg-pfz" firstAttribute="top" secondItem="2gN-nI-vqr" secondAttribute="bottom" constant="15" id="znA-kj-FDP"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BjT-Lu-Grk" userLabel="Divider">
-                                <rect key="frame" x="0.0" y="446.5" width="327" height="1"/>
-                                <color key="backgroundColor" red="0.67000001669999998" green="0.67000001669999998" blue="0.67000001669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="1" id="gg7-t6-Mta"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="guu-xQ-pQ9" userLabel="Bottom Padding">
-                                <rect key="frame" x="0.0" y="447.5" width="327" height="10"/>
-                                <color key="backgroundColor" red="0.83999997380000002" green="0.83999997380000002" blue="0.83999997380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="10" id="Vb2-d6-tq6"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -265,21 +265,15 @@
                         <constraints>
                             <constraint firstItem="InT-E3-JQm" firstAttribute="top" secondItem="o5m-HT-Ich" secondAttribute="bottom" id="8IR-Ll-0kr"/>
                             <constraint firstAttribute="trailing" secondItem="InT-E3-JQm" secondAttribute="trailing" id="9Ur-Ds-WS7"/>
-                            <constraint firstItem="guu-xQ-pQ9" firstAttribute="top" secondItem="InT-E3-JQm" secondAttribute="bottom" id="CMn-aC-cT8"/>
                             <constraint firstAttribute="trailing" secondItem="3Dk-Sj-BxL" secondAttribute="trailing" id="CPV-je-n52"/>
-                            <constraint firstAttribute="trailing" secondItem="guu-xQ-pQ9" secondAttribute="trailing" id="F6l-xy-Z91"/>
-                            <constraint firstItem="InT-E3-JQm" firstAttribute="trailing" secondItem="BjT-Lu-Grk" secondAttribute="trailing" id="SjJ-4a-Z6G"/>
-                            <constraint firstItem="InT-E3-JQm" firstAttribute="leading" secondItem="BjT-Lu-Grk" secondAttribute="leading" id="cWk-ef-Bg3"/>
-                            <constraint firstItem="guu-xQ-pQ9" firstAttribute="leading" secondItem="sau-M0-OJQ" secondAttribute="leading" id="dUN-17-9cG"/>
+                            <constraint firstAttribute="bottom" secondItem="InT-E3-JQm" secondAttribute="bottom" constant="10" id="J71-zo-OSf"/>
                             <constraint firstItem="3Dk-Sj-BxL" firstAttribute="leading" secondItem="sau-M0-OJQ" secondAttribute="leading" id="fci-al-LDO"/>
                             <constraint firstItem="3Dk-Sj-BxL" firstAttribute="top" secondItem="sau-M0-OJQ" secondAttribute="top" id="gYu-Gd-yAz"/>
                             <constraint firstAttribute="trailing" secondItem="o5m-HT-Ich" secondAttribute="trailing" id="geN-MF-0Hq"/>
                             <constraint firstAttribute="bottom" secondItem="InT-E3-JQm" secondAttribute="bottom" id="ioP-Gy-uAH"/>
-                            <constraint firstItem="InT-E3-JQm" firstAttribute="bottom" secondItem="BjT-Lu-Grk" secondAttribute="bottom" id="k4m-8Z-j7k"/>
                             <constraint firstItem="o5m-HT-Ich" firstAttribute="top" secondItem="3Dk-Sj-BxL" secondAttribute="bottom" id="mf1-QV-9rH"/>
                             <constraint firstItem="InT-E3-JQm" firstAttribute="leading" secondItem="sau-M0-OJQ" secondAttribute="leading" id="mp3-n6-OHd"/>
                             <constraint firstItem="o5m-HT-Ich" firstAttribute="leading" secondItem="sau-M0-OJQ" secondAttribute="leading" id="tsy-Lx-1p4"/>
-                            <constraint firstAttribute="bottom" secondItem="guu-xQ-pQ9" secondAttribute="bottom" id="yv2-q7-E1b"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -313,7 +307,7 @@
                 <outlet property="pickupDateLabel" destination="2gN-nI-vqr" id="1x9-Em-5ny"/>
                 <outlet property="pickupLocationButton" destination="kg8-st-XgH" id="XM9-eq-fze"/>
                 <outlet property="relativePickupDateLabel" destination="rl7-81-T4L" id="EI3-SN-nY8"/>
-                <outlet property="terminalDirectionsHeightConstraint" destination="lzb-ax-5lU" id="BGc-Ps-zpH"/>
+                <outlet property="terminalDirectionsHeightConstraint" destination="heR-wv-A6n" id="KzS-cD-DOv"/>
                 <outlet property="upcomingRentalTitleLabel" destination="o01-q0-cHL" id="N7k-51-gL7"/>
                 <outlet property="vehicleImageView" destination="N4W-K7-hPi" id="URT-Pm-o1G"/>
             </connections>

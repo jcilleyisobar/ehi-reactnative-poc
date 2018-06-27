@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SourceSansPro-Bold.ttf">
+            <string>SourceSansPro-Bold</string>
+        </array>
+        <array key="SourceSansPro-ExtraLight.ttf">
+            <string>SourceSansPro-ExtraLight</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="dhQ-nv-cnR" customClass="EHIDashboardLocationPromptCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="311"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="311"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UxK-8G-M4D" userLabel="Content Container">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="293.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dTy-ui-8z4" customClass="EHIArrowBorderView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="Nw6-3N-Hep"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GET SMART UPDATES ABOUT YOUR RENTAL BASED YOUR LOCATION" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j9F-uG-hGE">
+                                <rect key="frame" x="20" y="21" width="335" height="42"/>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLH-zv-wll">
+                                <rect key="frame" x="20" y="83" width="335" height="49"/>
+                                <string key="text">Get return instructions as you get near the drop
+You need to select "Always allow" we only use this when you have a rental</string>
+                                <fontDescription key="fontDescription" name="SourceSansPro-ExtraLight" family="Source Sans Pro" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r7y-tr-2bF" customClass="EHIButton">
+                                <rect key="frame" x="20" y="162" width="335" height="46"/>
+                                <color key="backgroundColor" red="0.090196078430000007" green="0.59999999999999998" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="xGN-6z-X6R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="18"/>
+                                <state key="normal" title="ENABLE">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapAcceptButton:" destination="dhQ-nv-cnR" eventType="touchUpInside" id="4Ir-7f-CQN"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xE-5c-bjO" customClass="EHIButton">
+                                <rect key="frame" x="20" y="218" width="335" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="D47-pC-ccs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SourceSansPro-Bold" family="Source Sans Pro" pointSize="18"/>
+                                <state key="normal" title="NOT NOW">
+                                    <color key="titleColor" red="0.090196078430000007" green="0.59999999999999998" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapDenyButton:" destination="dhQ-nv-cnR" eventType="touchUpInside" id="Uja-gM-1ka"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cds-rc-ysn" userLabel="Bottom Padding">
+                                <rect key="frame" x="0.0" y="283.5" width="375" height="10"/>
+                                <color key="backgroundColor" red="0.83999997380000002" green="0.83999997380000002" blue="0.83999997380000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="pSN-Pb-wYF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="dTy-ui-8z4" secondAttribute="trailing" id="2gI-St-n0y"/>
+                            <constraint firstItem="Cds-rc-ysn" firstAttribute="leading" secondItem="UxK-8G-M4D" secondAttribute="leading" id="34d-Yi-tXV"/>
+                            <constraint firstAttribute="trailing" secondItem="cLH-zv-wll" secondAttribute="trailing" constant="20" id="3Ss-rd-Hhn"/>
+                            <constraint firstAttribute="trailing" secondItem="Cds-rc-ysn" secondAttribute="trailing" id="7GJ-Mz-Gyu"/>
+                            <constraint firstItem="j9F-uG-hGE" firstAttribute="leading" secondItem="UxK-8G-M4D" secondAttribute="leading" constant="20" id="BAp-v6-XC0"/>
+                            <constraint firstItem="cLH-zv-wll" firstAttribute="leading" secondItem="UxK-8G-M4D" secondAttribute="leading" constant="20" id="CWz-vW-2to"/>
+                            <constraint firstItem="cLH-zv-wll" firstAttribute="top" secondItem="j9F-uG-hGE" secondAttribute="bottom" constant="20" id="DbY-mI-kus"/>
+                            <constraint firstAttribute="trailing" secondItem="8xE-5c-bjO" secondAttribute="trailing" constant="20" id="DyE-U6-120"/>
+                            <constraint firstItem="r7y-tr-2bF" firstAttribute="leading" secondItem="UxK-8G-M4D" secondAttribute="leading" constant="20" id="EDw-6z-Fkz"/>
+                            <constraint firstItem="8xE-5c-bjO" firstAttribute="top" secondItem="r7y-tr-2bF" secondAttribute="bottom" constant="10" id="Hid-Ye-Uxf"/>
+                            <constraint firstAttribute="trailing" secondItem="j9F-uG-hGE" secondAttribute="trailing" constant="20" id="Iim-uO-LQd"/>
+                            <constraint firstAttribute="trailing" secondItem="r7y-tr-2bF" secondAttribute="trailing" constant="20" id="XJm-lH-Gl8"/>
+                            <constraint firstItem="r7y-tr-2bF" firstAttribute="top" secondItem="cLH-zv-wll" secondAttribute="bottom" constant="30" id="dUC-49-Rp0"/>
+                            <constraint firstItem="Cds-rc-ysn" firstAttribute="top" secondItem="8xE-5c-bjO" secondAttribute="bottom" constant="20" id="dfH-Cb-Z8I"/>
+                            <constraint firstItem="dTy-ui-8z4" firstAttribute="top" secondItem="UxK-8G-M4D" secondAttribute="top" id="hbT-ZN-647"/>
+                            <constraint firstItem="dTy-ui-8z4" firstAttribute="leading" secondItem="UxK-8G-M4D" secondAttribute="leading" id="mUL-ce-bw9"/>
+                            <constraint firstAttribute="bottom" secondItem="Cds-rc-ysn" secondAttribute="bottom" id="wiX-kl-nP8"/>
+                            <constraint firstItem="8xE-5c-bjO" firstAttribute="leading" secondItem="UxK-8G-M4D" secondAttribute="leading" constant="20" id="wxu-bO-hhL"/>
+                            <constraint firstItem="j9F-uG-hGE" firstAttribute="top" secondItem="dTy-ui-8z4" secondAttribute="bottom" constant="20" id="zKq-sc-Xq4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="UxK-8G-M4D" firstAttribute="top" secondItem="dhQ-nv-cnR" secondAttribute="top" id="OW6-hp-ItJ"/>
+                <constraint firstItem="UxK-8G-M4D" firstAttribute="leading" secondItem="dhQ-nv-cnR" secondAttribute="leading" id="fDS-dy-qGs"/>
+                <constraint firstAttribute="trailing" secondItem="UxK-8G-M4D" secondAttribute="trailing" id="mLb-CG-PPS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="FOc-xX-B6w"/>
+            <size key="customSize" width="375" height="311"/>
+            <connections>
+                <outlet property="acceptButton" destination="r7y-tr-2bF" id="A62-GY-qSb"/>
+                <outlet property="arrowBorderView" destination="dTy-ui-8z4" id="KQ6-9X-AGD"/>
+                <outlet property="bulletLabel" destination="cLH-zv-wll" id="zWZ-7D-z8R"/>
+                <outlet property="containerView" destination="UxK-8G-M4D" id="yBr-WE-JId"/>
+                <outlet property="denyButton" destination="8xE-5c-bjO" id="W0V-wr-N90"/>
+                <outlet property="titleLabel" destination="j9F-uG-hGE" id="D5N-XF-2br"/>
+            </connections>
+            <point key="canvasLocation" x="313.5" y="-156.5"/>
+        </collectionViewCell>
+    </objects>
+</document>

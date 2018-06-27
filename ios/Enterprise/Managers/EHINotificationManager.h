@@ -16,7 +16,6 @@ typedef void (^EHINotificationEnableHandler)(BOOL);
 
 /** Performs any initial setup and consumes launch notifications */
 + (void)prepareToLaunch;
-
 /** Consume a local notification received while the app is running */
 - (void)handleLocalNotification:(UNNotificationContent *)notification;
 /** Consume a local notification where a user selected a specific action */
@@ -30,10 +29,6 @@ typedef void (^EHINotificationEnableHandler)(BOOL);
 - (void)registerForNotifications;
 /** Tell the system we want to register for notifications and set all notification settings to the defaults */
 - (void)registerForNotificationsWithDefaults:(EHINotificationEnableHandler)completion;
-/** @c YES if the user isn't registered for notifications and hasn't been prompted by the system yet */
-- (BOOL)shouldPromptNotifications;
-/** @c YES if the user has been prompted by the OS to accept notifications */
-- (BOOL)hasShownSystemNotificationAlert;
 /** @c YES if the user is currently receiving notifications */
 - (BOOL)isRegisteredForNotifications;
 

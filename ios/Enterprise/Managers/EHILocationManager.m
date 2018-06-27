@@ -170,6 +170,11 @@
         || status == kCLAuthorizationStatusAuthorizedAlways;
 }
 
+- (CLAuthorizationStatus)locationStatus
+{
+    return [CLLocationManager authorizationStatus];
+}
+
 - (BOOL)shouldRequestWhenIsUseAuthorization
 {
     return [CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined;

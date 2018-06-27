@@ -13,6 +13,7 @@
 #import "EHIUserProfiles.h"
 #import "EHIUserManager.h"
 #import "EHIFormattedPhone.h"
+#import "EHIServices+User.h"
 #import "EHIEnrollmentConfirmationViewModel.h"
 #import "EHIEnrollProfile.h"
 #import "EHIEnrollmentIssuesViewModel.h"
@@ -20,7 +21,7 @@
 #import "EHIDriverInfo.h"
 #import "EHIRequiredInfoFootnoteViewModel.h"
 
-@interface EHIEnrollmentStepThreeViewModel () <EHIFormFieldDelegate, EHIFormFieldTextToggleDelegate, EHIEnrollmentPasswordViewModelDelegate>
+@interface EHIEnrollmentStepThreeViewModel () <EHIFormFieldDelegate, EHIEnrollmentPasswordViewModelDelegate>
 @property (strong, nonatomic) EHIUser *user;
 @property (strong, nonatomic) NSArray *passwordRequirements;
 @property (copy  , nonatomic) NSString *password;
@@ -61,8 +62,6 @@
 
     self.emailModel.isRequired    = YES;
     self.emailModel.isEmailField  = YES;
-    self.emailModel.toggleEnabled = [NSLocale ehi_shouldCheckEmailNotificationsByDefault];
-    self.emailModel.delegate      = self;
     self.emailModel.returnKeyType = UIReturnKeyNext;
     
     [self.emailModel validates:^BOOL(id input) {
@@ -146,11 +145,15 @@
         [self bindDriverInfo];
     }
     
-    EHIOptionalBoolean specialOffers = [NSLocale ehi_shouldCheckEmailNotificationsByDefault]
+    BOOL hasSpecialOffers = self.user.preference.email != nil;
+    EHIOptionalBoolean specialOffers = !hasSpecialOffers && [NSLocale ehi_shouldCheckEmailNotificationsByDefault]
         ? EHIOptionalBooleanTrue
-        : EHIOptionalBooleanNull;
+        : self.user.preference.email.specialOffers;
     
     [self.user updateSpecialOffersOptIn:specialOffers];
+    
+    self.emailModel.toggleEnabled = self.user.preference.email.specialOffers == EHIOptionalBooleanTrue;
+    self.emailModel.delegate      = self;
 }
 
 - (void)bindDriverInfo
@@ -198,9 +201,7 @@
     BOOL acceptedTerms = self.readTerms;
     EHIEnrollProfile *enrollProfile = [EHIEnrollProfile modelForUser:user password:password acceptedTerms:acceptedTerms];
     
-    self.isLoading = YES;
-    
-    [self cloneCreateProfile:enrollProfile handler:^(EHIUser *user, EHIServicesError *error) {
+    void (^handler)(EHIUser *, EHIServicesError *) = ^(EHIUser *user, EHIServicesError *error) {
         self.isLoading = NO;
         if(!error.hasFailed) {
             [self showConfirmation:user];
@@ -212,7 +213,14 @@
                 [self showIssues];
             }];
         }
-    }];
+    };
+    
+    self.isLoading = YES;
+    if(self.didMatchProfile) {
+        [[EHIServices sharedInstance] cloneEnrollProfile:enrollProfile handler:handler];
+    } else {
+        [[EHIServices sharedInstance] createEnrollProfile:enrollProfile handler:handler];
+    }
 }
 
 - (void)showAlertErrorWithMessage:(NSString *)message completion:(void(^)())completion
@@ -444,6 +452,11 @@
 - (EHIUserContactProfile *)currentContact
 {
     return self.createContact;
+}
+
+- (EHIUserPreferencesProfile *)currentPreferences
+{
+    return self.user.preference;
 }
 
 @end

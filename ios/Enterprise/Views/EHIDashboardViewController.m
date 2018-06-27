@@ -17,7 +17,8 @@
 #import "EHIDashboardLoadingCell.h"
 #import "EHIDashboardActiveRentalCell.h"
 #import "EHIDashboardUpcomingRentalCell.h"
-#import "EHIDashboardNewFeatureCell.h"
+#import "EHIDashboardNotificationsCell.h"
+#import "EHIDashboardLocationPromptCell.h"
 #import "EHIDashboardLayoutDelegate.h"
 #import "EHILocationsViewController.h"
 #import "EHIListCollectionView.h"
@@ -31,7 +32,7 @@
 
 #define EHIDashboardParallaxThrottle 0.3f
 
-@interface EHIDashboardViewController () <EHIDashboardLayoutDelegate, EHIDashboardNewFeatureCellActions, EHIDashboardSearchActions, EHIPromotionViewActions, EHIListCollectionViewDelegate, EHIUserListener>
+@interface EHIDashboardViewController () <EHIDashboardLayoutDelegate, EHIPromotionViewActions, EHIListCollectionViewDelegate, EHIUserListener, EHIDashboardNotificationsActions, EHIDashboardLocationActions>
 @property (strong, nonatomic) EHIDashboardViewModel *viewModel;
 @property (assign, nonatomic) BOOL willRefreshRentals;
 @property (weak  , nonatomic) EHIDashboardSearchCell *searchCell;
@@ -94,6 +95,8 @@
         @(EHIDashboardSectionSearch)        : [EHIDashboardSearchCell class],
         @(EHIDashboardSectionPromotion)     : [EHIDashboardPromotionCell class],
         @(EHIDashboardSectionLoyaltyPrompt) : [EHIDashboardLoyaltyPromptCell class],
+        @(EHIDashboardSectionNotification)  : [EHIDashboardNotificationsCell class],
+        @(EHIDashboardSectionLocation)      : [EHIDashboardLocationPromptCell class],
     }];
 
     // add placeholder models for fixed sections
@@ -105,7 +108,12 @@
     self.collectionView.sections[EHIDashboardSectionLoyaltyPrompt].isDynamicallySized = YES;
     
     self.collectionView.sections[EHIDashboardSectionContent].klass = [self contentClassForType:self.viewModel.contentType];
-    
+
+    self.collectionView.sections[EHIDashboardSectionLocation].isDynamicallySized = YES;
+
+    self.collectionView.sections[EHIDashboardSectionNotification].model = self.viewModel.notificationModel;
+    self.collectionView.sections[EHIDashboardSectionNotification].isDynamicallySized = YES;
+
     // configure the quickstart section
     EHIListDataSourceSection *quickstart = self.collectionView.sections[EHIDashboardSectionQuickstart];
     quickstart.isDynamicallySized = YES;
@@ -126,10 +134,10 @@
 
     [MTRReactor autorun:self action:@selector(invalidateContentSection:)];
     [MTRReactor autorun:self action:@selector(invalidateQuickstartSection:)];
-   
+
     EHIRefreshControlViewModel *refreshControl = self.collectionView.ehiRefreshControl;
-    EHIListDataSourceSection   *loyaltyPrompt  = self.collectionView.sections[EHIDashboardSectionLoyaltyPrompt];
-    EHIListDataSourceSection   *promotion      = self.collectionView.sections[EHIDashboardSectionPromotion];
+    EHIListDataSourceSection *loyaltyPrompt    = self.collectionView.sections[EHIDashboardSectionLoyaltyPrompt];
+    EHIListDataSourceSection *promotion        = self.collectionView.sections[EHIDashboardSectionPromotion];
     
     model.bind.map(@{
         source(model.loyaltyPromptModel) : dest(loyaltyPrompt,  .model),
@@ -144,13 +152,18 @@
     self.collectionView.sections[EHIDashboardSectionContent].klass = [self contentClassForType:self.viewModel.contentType];
     
     // capture the models for reactivity
-    EHIModel *heroModel    = self.viewModel.heroImageModel;
-    EHIModel *contentModel = self.viewModel.contentModel;
-  
+    EHIModel *heroModel           = self.viewModel.heroImageModel;
+    EHIModel *contentModel        = self.viewModel.contentModel;
+    EHIModel *locationPromptModel = self.viewModel.locationPromptModel;
+    EHIModel *notificationModel   = self.viewModel.notificationModel;
+
+    __weak typeof(self) welf = self;
     [self.collectionView performAnimated:NO batchUpdates:^{
         // animate changes to the hero / content section
-        self.collectionView.sections[EHIDashboardSectionHero].model    = heroModel;
-        self.collectionView.sections[EHIDashboardSectionContent].model = contentModel;
+        welf.collectionView.sections[EHIDashboardSectionHero].model     = heroModel;
+        welf.collectionView.sections[EHIDashboardSectionContent].model  = contentModel;
+        welf.collectionView.sections[EHIDashboardSectionLocation].model = locationPromptModel;
+        welf.collectionView.sections[EHIDashboardSectionNotification].model = notificationModel;
     } completion:nil];
 }
 
@@ -180,8 +193,6 @@
             return [EHIDashboardActiveRentalCell class];
         case EHIContentSectionTypeUpcoming:
             return [EHIDashboardUpcomingRentalCell class];
-        case EHIContentSectionTypeNotifications:
-            return [EHIDashboardNewFeatureCell class];
     }
 }
 
@@ -281,8 +292,7 @@
 - (BOOL)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)layout shouldSnapWithProposedOffset:(CGPoint)offset
 {
     return self.viewModel.contentType != EHIContentSectionTypeCurrent
-        && self.viewModel.contentType != EHIContentSectionTypeUpcoming
-        && self.viewModel.contentType != EHIContentSectionTypeNotifications;
+        && self.viewModel.contentType != EHIContentSectionTypeUpcoming;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)layout willSnapToOffset:(CGPoint)point
@@ -335,23 +345,6 @@
     return user && !isEmerald ? [UIColor whiteColor] : [UIColor colorWithPatternImage:[UIImage imageNamed:@"eplus_tilepattern"]];
 }
 
-# pragma mark - EHIDashboardNewFeatureCellActions
-
-- (void)didTapAcceptButtonForDashboardNewFeatureCell:(EHIDashboardNewFeatureCell *)sender
-{
-    [self.viewModel acceptNotifications];
-}
-
-- (void)didTapDenyButtonForDashboardNewFeatureCell:(EHIDashboardNewFeatureCell *)sender
-{
-    [self.viewModel denyNotifications];
-}
-
-- (void)didTapCloseButtonForDashboardNewFeatureCell:(EHIDashboardNewFeatureCell *)sender
-{
-    [self.viewModel denyNotifications];
-}
-
 # pragma mark - Actions
 
 - (void)didTapQuickstartHeader:(UIGestureRecognizer *)gesture
@@ -372,6 +365,18 @@
 - (void)didTapPromotionGetStarted
 {
     [self.viewModel pushPromotionDetails];
+}
+
+# pragma mark - EHIDashboardNotificationsCellProtocol
+
+- (void)dashboardNotificationsCellDidInteract:(EHIDashboardNotificationsCell *)sender
+{
+    [self invalidateContentSection:nil];
+}
+
+- (void)dashboardLocationCellDidInteract:(EHIDashboardLocationPromptCell *)sender
+{
+    [self invalidateContentSection:nil];
 }
 
 //

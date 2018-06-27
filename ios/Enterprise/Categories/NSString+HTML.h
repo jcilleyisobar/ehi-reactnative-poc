@@ -18,6 +18,10 @@
 
 - (NSString *)ehi_fontAdjustedHtml;
 
+- (NSString *)ehi_adjustedHTMLWithFontSize:(CGFloat)fontSize;
+
+- (NSString *)ehi_adjustedWithCustomStyling:(NSString *)css;
+
 /**
  @brief  removes html tags and character references
  @return the string without html tags or character references

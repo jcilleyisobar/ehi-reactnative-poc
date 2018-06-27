@@ -349,10 +349,19 @@
         context.state = EHIAnalyticsResStateAbandon;
     }];
     
-    // dismiss the reservation modal
-    EHIMainRouter.router.transition
-        .root(EHIScreenDashboard).animated(NO)
-        .dismiss.start(nil);
+    if(self.isModifyingReservation) {
+        self.router.transition
+            .resolve(EHIScreenConfirmation)
+            .object(self.reservation)
+            .start(nil);
+    } else {
+        // dismiss the reservation modal
+        EHIMainRouter.router.transition
+            .root(EHIScreenDashboard)
+            .animated(NO)
+            .dismiss
+            .start(nil);
+    }
 }
 
 - (EHIReservation *)targetSavingReservation
@@ -849,7 +858,8 @@
 {
     return [EHIUser currentUser] == nil
         || [EHIUserManager sharedInstance].isEmeraldUser
-        || self.reservation.selectedPaymentOption == EHIReservationPaymentOptionPayNow;
+        || self.reservation.selectedPaymentOption == EHIReservationPaymentOptionPayNow
+        || self.reservation.hasToAssociate;
 }
 
 - (NSInteger)daysRedeemed

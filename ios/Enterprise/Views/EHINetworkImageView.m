@@ -80,7 +80,7 @@
     // we need to make sure our bounds are correct before fetching the image
     [self layoutIfNeeded];
     
-    NSString *path = [imageModel pathForWidth:self.bounds.size.width quality:EHIImageQualityHigh];
+    NSString *path = [imageModel finalPathForWidth:self.bounds.size.width quality:EHIImageQualityHigh];
     [self fetchImageForPath:path handler:handler];
 }
 

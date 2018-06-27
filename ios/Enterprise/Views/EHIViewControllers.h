@@ -6,8 +6,6 @@
 //  Copyright (c) 2015 Enterprise. All rights reserved.
 //
 
-#define EHIScreenRNTest                  @"RN-test-screen"
-
 #define EHIScreenLocations               @"locations"
 #define EHIScreenLocationDetails         @"location"
 #define EHIScreenLocationsMap            @"map"
@@ -81,6 +79,8 @@
 #define EHIScreenDebugMap           @"debug-map"
 
 #define EHIScreenPromotionDetails              @"promotion-details"
+#define EHIScreenDealDetails                   @"deal-details"
+#define EHIScreenDeals                         @"deals-list"
 
 #define EHIScreenReservation                   @"reservation"
 #define EHIScreenReservationItinerary          @"itinerary"

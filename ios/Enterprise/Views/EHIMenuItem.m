@@ -11,6 +11,7 @@
 #import "EHIAlertViewBuilder.h"
 #import "EHIAnalyticsKeys.h"
 #import "EHIConfiguration.h"
+#import "EHIDealsConfiguration.h"
 #import "EHIUserManager.h"
 
 @interface EHIMenuItem ()
@@ -22,7 +23,7 @@
 - (void(^)(NAVTransitionBuilder *))transition
 {
     EHIMenuTransition result = _transition;
-    
+   
     // if we don't have a custom transition and do have a destination, auto-generate
     // a root-switch transition
     if(!result && self.root) {
@@ -30,7 +31,7 @@
             transition.root(self.root).animated(NO);
         };
     }
-    
+
     return result;
 }
 
@@ -41,125 +42,126 @@
     EHIMenuItem *model;
     
     return [EHIMenuItem modelsWithDictionaries:@[@{
-     @key(model.type)     : @(EHIMenuItemTypePromotion),
-      @key(model.row)      : @(EHIMenuItemRowPromotion),
-      //TODO: Check analytics key
-      //@key(model.analyticsAction) : EHIAnalyticsMenuActionDashboard,
-      }, @{
-     @key(model.type)     : @(EHIMenuItemTypeScreen),
-      @key(model.row)      : @(EHIMenuItemRowRNTest),
-      @key(model.header)   : @(EHIMenuItemHeaderNone),
-      @key(model.title)    : EHILocalizedString(@"menu_rntest", @"RN Test", @"title for menu: RN Test"),
-      @key(model.iconName) : @"icon_home_01",
-      @key(model.root)     : EHIScreenDashboard,
-      @key(model.analyticsAction) : EHIAnalyticsMenuActionDashboard
-      }, @{
-     @key(model.type)     : @(EHIMenuItemTypeScreen),
-      @key(model.row)      : @(EHIMenuItemRowHome),
-      @key(model.header)   : @(EHIMenuItemHeaderNone),
-      @key(model.title)    : EHILocalizedString(@"menu_home", @"Home", @"title for menu: Home"),
-      @key(model.iconName) : @"icon_home_01",
-      @key(model.root)     : EHIScreenDashboard,
-      @key(model.analyticsAction) : EHIAnalyticsMenuActionDashboard
-      }, @{
-     @key(model.type)     : @(EHIMenuItemTypeScreen),
-      @key(model.row)      : @(EHIMenuItemRowRentals),
-      @key(model.header)   : @(EHIMenuItemHeaderEnterprisePlus),
-      @key(model.title)    : EHILocalizedString(@"menu_my_rentals", @"My Rentals", @"title for Menu: My Rentals"),
-      @key(model.iconName) : @"icon_rentals_01",
-      @key(model.root)     : EHIScreenRentals,
-      @key(model.analyticsAction) : EHIAnalyticsMenuActionRentals
-      }, @{
-     @key(model.type)     : @(EHIMenuItemTypeScreen),
-      @key(model.row)      : @(EHIMenuItemRowRewards),
-      @key(model.header)   : @(EHIMenuItemHeaderEnterprisePlus),
-      @key(model.title)    : self.isNotEmeraldUser
-      ? EHILocalizedString(@"menu_enterprise_plus_rewards", @"My Rewards & Benefits", @"")
-      : EHILocalizedString(@"menu_learn_about_rewards", @"Learn about Rewards", @""),
-      @key(model.iconName) : @"icon_rewards_01",
-      @key(model.root)     : self.isNotEmeraldUser ? EHIScreenRewardsBenefitsAuth : EHIScreenRewardsLearnMore,
-      @key(model.analyticsAction) : EHIAnalyticsMenuActionRewards,
-      @key(model.analyticsAction) : EHIAnalyticsMenuActionRewards
-      }, @{
-     @key(model.type)     : @(EHIMenuItemTypeScreen),
-      @key(model.row)      : @(EHIMenuItemRowSignIn),
-      @key(model.iconName) : @"icon_signin_bold",
-      @key(model.root)     : EHIScreenDashboard,
-      @key(model.analyticsAction) : EHIAnalyticsMenuActionSignIn,
-      @key(model.action) : ^(void(^completion)(BOOL)){
-        [self transitionToSignInWithCompletion:completion];
+         @key(model.type)     : @(EHIMenuItemTypePromotion),
+         @key(model.row)      : @(EHIMenuItemRowPromotion),
+        //TODO: Check analytics key
+        //@key(model.analyticsAction) : EHIAnalyticsMenuActionDashboard,
+    }, @{
+        @key(model.type)     : @(EHIMenuItemTypeScreen),
+        @key(model.row)      : @(EHIMenuItemRowHome),
+        @key(model.header)   : @(EHIMenuItemHeaderNone),
+        @key(model.title)    : EHILocalizedString(@"menu_home", @"Home", @"title for menu: Home"),
+        @key(model.iconName) : @"icon_home_01",
+        @key(model.root)     : EHIScreenDashboard,
+        @key(model.analyticsAction) : EHIAnalyticsMenuActionDashboard
+    }, @{
+        @key(model.type)     : @(EHIMenuItemTypeScreen),
+        @key(model.row)      : @(EHIMenuItemRowRentals),
+        @key(model.header)   : @(EHIMenuItemHeaderEnterprisePlus),
+        @key(model.title)    : EHILocalizedString(@"menu_my_rentals", @"My Rentals", @"title for Menu: My Rentals"),
+        @key(model.iconName) : @"icon_rentals_01",
+        @key(model.root)     : EHIScreenRentals,
+        @key(model.analyticsAction) : EHIAnalyticsMenuActionRentals
+    }, @{
+        @key(model.type)     : @(EHIMenuItemTypeScreen),
+        @key(model.row)      : @(EHIMenuItemRowRewards),
+        @key(model.header)   : @(EHIMenuItemHeaderEnterprisePlus),
+        @key(model.title)    : self.isNotEmeraldUser
+                                    ? EHILocalizedString(@"menu_enterprise_plus_rewards", @"My Rewards & Benefits", @"")
+                                    : EHILocalizedString(@"menu_learn_about_rewards", @"Learn about Rewards", @""),
+        @key(model.iconName) : @"icon_rewards_01",
+        @key(model.root)     : self.isNotEmeraldUser ? EHIScreenRewardsBenefitsAuth : EHIScreenRewardsLearnMore,
+        @key(model.analyticsAction) : EHIAnalyticsMenuActionRewards,
+        @key(model.analyticsAction) : EHIAnalyticsMenuActionRewards
+    }, @{
+        @key(model.type)     : @(EHIMenuItemTypeScreen),
+        @key(model.row)      : @(EHIMenuItemRowSignIn),
+        @key(model.iconName) : @"icon_signin_bold",
+        @key(model.root)     : EHIScreenDashboard,
+        @key(model.analyticsAction) : EHIAnalyticsMenuActionSignIn,
+        @key(model.action) : ^(void(^completion)(BOOL)){
+            [self transitionToSignInWithCompletion:completion];
+        },
+        @key(model.header)   : @(EHIMenuItemHeaderEnterprisePlus)
+    }, @{
+        @key(model.type)     : @(EHIMenuItemTypeScreen),
+        @key(model.row)      : @(EHIMenuItemRowProfile),
+        @key(model.header)   : @(EHIMenuItemHeaderEnterprisePlus),
+        @key(model.title)    : EHILocalizedString(@"menu_profile", @"Profile", @"title for Menu: Profile"),
+        @key(model.iconName) : @"icon_profile_01",
+        @key(model.root)     : EHIScreenProfile,
+        @key(model.analyticsAction) : EHIAnalyticsMenuActionProfile
+    }, @{
+        @key(model.type)     : @(EHIMenuItemTypeScreen),
+        @key(model.row)      : @(EHIMenuItemRowRentalLookUp),
+        @key(model.header)   : @(EHIMenuItemHeaderReservation),
+        @key(model.title)    : EHILocalizedString(@"menu_look_up_rentals", @"Look Up Rentals", @""),
+        @key(model.iconName) : @"icon_rentals_01",
+        @key(model.root)     : EHIScreenRentals,
+        @key(model.analyticsAction) : EHIAnalyticsMenuActionRentals
+    }, @{
+        @key(model.type)     : @(EHIMenuItemTypeScreen),
+        @key(model.row)      : @(EHIMenuItemRowNewRental),
+        @key(model.header)   : @(EHIMenuItemHeaderReservation),
+        @key(model.title)    : EHILocalizedString(@"menu_start_a_reservation", @"Start a Reservation", @"title for Menu: start new rental button"),
+        @key(model.iconName) : @"icon_reservation",
+        @key(model.root)     : EHIScreenLocations,
+        @key(model.analyticsAction) : EHIAnalyticsMenuActionStartRental,
+        @key(model.action)   : ^(void(^completion)(BOOL)){
+            [self transitionToLocationSearchWithCompletion:completion];
+        }
+    }, @{
+        @key(model.type)     : @(EHIMenuItemTypeScreen),
+        @key(model.row)      : @(EHIMenuItemRowLocations),
+        @key(model.header)   : @(EHIMenuItemHeaderReservation),
+        @key(model.title)    : EHILocalizedString(@"menu_look_up_a_location", @"Look Up a Location", @"title for Menu: Locations"),
+        @key(model.iconName) : @"icon_locations_01",
+        @key(model.root)     : EHIScreenLocations,
+        @key(model.analyticsAction) : EHIAnalyticsMenuActionLocations,
+        @key(model.action)   : ^(void(^completion)(BOOL)){
+            [self transitionToLocationSearchWithCompletion:completion];
+        }
+    },@{
+        @key(model.type)     : @(EHIMenuItemTypeScreen),
+        @key(model.row)      : @(EHIMenuItemRowDeals),
+        @key(model.header)   : @(EHIMenuItemHeaderReservation),
+        @key(model.title)    : EHILocalizedString(@"deals_page_title", @"Deals", @""),
+        @key(model.iconName) : @"icon_promo",
+        @key(model.action)     : ^(void(^completion)(BOOL)){
+            [self transitionToDealsWithCompletion:completion];
+        }
+    }, @{
+        @key(model.type)       : @(EHIMenuItemTypeSecondary),
+        @key(model.row)        : @(EHIMenuItemRowFeedback),
+        @key(model.header)     : @(EHIMenuItemHeaderSupport),
+        @key(model.title)      : EHILocalizedString(@"menu_send_feedback", @"Send Feedback", @""),
+        @key(model.root)       : EHIScreenDashboard,
+        @key(model.action)     : ^(void(^completion)(BOOL)){
+            [self transitionToSupportWithCompletion:completion];
+        }
+    }, @{
+        @key(model.type)    : @(EHIMenuItemTypeSecondary),
+        @key(model.row)     : @(EHIMenuItemRowSupport),
+        @key(model.header)  : @(EHIMenuItemHeaderSupport),
+        @key(model.title)   : EHILocalizedString(@"menu_customer_support", @"Customer Support", @"title for Menu: customer support"),
+        @key(model.root)    : EHIScreenCustomerSupport,
+        @key(model.analyticsAction) : EHIAnalyticsMenuActionSupport
+    }, @{
+        @key(model.type)    : @(EHIMenuItemTypeSecondary),
+        @key(model.row)     : @(EHIMenuItemRowSettings),
+        @key(model.header)  : @(EHIMenuItemHeaderSupport),
+        @key(model.title)   : EHILocalizedString(@"menu_settings", @"Settings", @"title for Menu: settings"),
+        @key(model.root)    : EHIScreenSettings,
+        @key(model.analyticsAction) : EHIAnalyticsMenuActionSettings
     },
-      @key(model.header)   : @(EHIMenuItemHeaderEnterprisePlus)
-      }, @{
-     @key(model.type)     : @(EHIMenuItemTypeScreen),
-      @key(model.row)      : @(EHIMenuItemRowProfile),
-      @key(model.header)   : @(EHIMenuItemHeaderEnterprisePlus),
-      @key(model.title)    : EHILocalizedString(@"menu_profile", @"Profile", @"title for Menu: Profile"),
-      @key(model.iconName) : @"icon_profile_01",
-      @key(model.root)     : EHIScreenProfile,
-      @key(model.analyticsAction) : EHIAnalyticsMenuActionProfile
-      }, @{
-     @key(model.type)     : @(EHIMenuItemTypeScreen),
-      @key(model.row)      : @(EHIMenuItemRowRentalLookUp),
-      @key(model.header)   : @(EHIMenuItemHeaderReservation),
-      @key(model.title)    : EHILocalizedString(@"menu_look_up_rentals", @"Look Up Rentals", @""),
-      @key(model.iconName) : @"icon_rentals_01",
-      @key(model.root)     : EHIScreenRentals,
-      @key(model.analyticsAction) : EHIAnalyticsMenuActionRentals
-      }, @{
-     @key(model.type)     : @(EHIMenuItemTypeScreen),
-      @key(model.row)      : @(EHIMenuItemRowNewRental),
-      @key(model.header)   : @(EHIMenuItemHeaderReservation),
-      @key(model.title)    : EHILocalizedString(@"menu_start_a_reservation", @"Start a Reservation", @"title for Menu: start new rental button"),
-      @key(model.iconName) : @"icon_reservation",
-      @key(model.root)     : EHIScreenLocations,
-      @key(model.analyticsAction) : EHIAnalyticsMenuActionStartRental,
-      @key(model.action)   : ^(void(^completion)(BOOL)){
-[self transitionToLocationSearchWithCompletion:completion];
-}
-      }, @{
-     @key(model.type)     : @(EHIMenuItemTypeScreen),
-      @key(model.row)      : @(EHIMenuItemRowLocations),
-      @key(model.header)   : @(EHIMenuItemHeaderReservation),
-      @key(model.title)    : EHILocalizedString(@"menu_look_up_a_location", @"Look Up a Location", @"title for Menu: Locations"),
-      @key(model.iconName) : @"icon_locations_01",
-      @key(model.root)     : EHIScreenLocations,
-      @key(model.analyticsAction) : EHIAnalyticsMenuActionLocations,
-      @key(model.action)   : ^(void(^completion)(BOOL)){
-[self transitionToLocationSearchWithCompletion:completion];
-}
-      }, @{
-     @key(model.type)       : @(EHIMenuItemTypeSecondary),
-      @key(model.row)        : @(EHIMenuItemRowFeedback),
-      @key(model.header)     : @(EHIMenuItemHeaderSupport),
-      @key(model.title)      : EHILocalizedString(@"menu_send_feedback", @"Send Feedback", @""),
-      @key(model.root)       : EHIScreenDashboard,
-      @key(model.action)     : ^(void(^completion)(BOOL)){
-[self transitionToSupportWithCompletion:completion];
-}
-      }, @{
-     @key(model.type)    : @(EHIMenuItemTypeSecondary),
-      @key(model.row)     : @(EHIMenuItemRowSupport),
-      @key(model.header)  : @(EHIMenuItemHeaderSupport),
-      @key(model.title)   : EHILocalizedString(@"menu_customer_support", @"Customer Support", @"title for Menu: customer support"),
-      @key(model.root)    : EHIScreenCustomerSupport,
-      @key(model.analyticsAction) : EHIAnalyticsMenuActionSupport
-      }, @{
-     @key(model.type)    : @(EHIMenuItemTypeSecondary),
-      @key(model.row)     : @(EHIMenuItemRowSettings),
-      @key(model.header)  : @(EHIMenuItemHeaderSupport),
-      @key(model.title)   : EHILocalizedString(@"menu_settings", @"Settings", @"title for Menu: settings"),
-      @key(model.root)    : EHIScreenSettings,
-      @key(model.analyticsAction) : EHIAnalyticsMenuActionSettings
-      },
- [self signOutMenuItem],
- @{
-     @key(model.type)   : @(EHIMenuItemTypeSecondary),
-      @key(model.row)    : @(EHIMenuItemRowDebug),
-      @key(model.header) : @(EHIMenuItemHeaderSupport),
-      @key(model.title)  : @"Debug Options",
-      @key(model.root)   : EHIScreenDebug
-      }]];
+        [self signOutMenuItem],
+    @{
+        @key(model.type)   : @(EHIMenuItemTypeSecondary),
+        @key(model.row)    : @(EHIMenuItemRowDebug),
+        @key(model.header) : @(EHIMenuItemHeaderSupport),
+        @key(model.title)  : @"Debug Options",
+        @key(model.root)   : EHIScreenDebug
+    }]];
 }
 
 + (NSDictionary *)signOutMenuItem
@@ -168,13 +170,13 @@
     BOOL isEmeraldClub = [[EHIUserManager sharedInstance] isEmeraldUser];
     
     NSMutableDictionary *signOut = [@{
-                                      @key(model.type)    : @(EHIMenuItemTypeSecondary),
-                                       @key(model.row)     : @(EHIMenuItemRowSignout),
-                                       @key(model.header)  : @(EHIMenuItemHeaderEnterprisePlus),
-                                       @key(model.root)    : EHIScreenDashboard,
-                                       @key(model.iconName) : @"arrow_smwhite",
-                                       @key(model.analyticsAction) : EHIAnalyticsMenuActionSignOut
-                                       } mutableCopy];
+        @key(model.type)    : @(EHIMenuItemTypeSecondary),
+        @key(model.row)     : @(EHIMenuItemRowSignout),
+        @key(model.header)  : @(EHIMenuItemHeaderEnterprisePlus),
+        @key(model.root)    : EHIScreenDashboard,
+        @key(model.iconName) : @"arrow_smwhite",
+        @key(model.analyticsAction) : EHIAnalyticsMenuActionSignOut
+    } mutableCopy];
     
     id completionHandler;
     
@@ -248,8 +250,8 @@
 + (void)transitionToLocationSearchWithCompletion:(void(^)(BOOL))completion
 {
     EHIMainRouter.router.transition
-    .root(EHIScreenDashboard)
-    .push(EHIScreenLocations).animated(NO).start(nil);
+        .root(EHIScreenDashboard)
+        .push(EHIScreenLocations).animated(NO).start(nil);
     
     ehi_call(completion)(YES);
 }
@@ -257,9 +259,9 @@
 + (void)transitionToSignInWithCompletion:(void(^)(BOOL))completion
 {
     EHIMainRouter.router.transition
-    .root(EHIScreenDashboard)
-    .present(EHIScreenMainSignin).animated(YES).start(nil);
-    
+        .root(EHIScreenDashboard)
+        .present(EHIScreenMainSignin).animated(YES).start(nil);
+
     
     ehi_call(completion)(YES);
 }
@@ -267,20 +269,21 @@
 + (void)transitionToSupportWithCompletion:(void(^)(BOOL))completion
 {
     EHIMainRouter.router.transition
-    .root(EHIScreenDashboard)
-    .present(EHIScreenWebBrowser).animated(YES)
-    .object([NSURL URLWithString:[EHIConfiguration configuration].feedbackUrl])
-    .start(nil);
+        .root(EHIScreenDashboard)
+        .present(EHIScreenWebBrowser).animated(YES)
+        .object([NSURL URLWithString:[EHIConfiguration configuration].feedbackUrl])
+        .start(nil);
     
     ehi_call(completion)(YES);
 }
 
-+ (void)transitionToRNTestWithCompletion:(void(^)(BOOL))completion
++ (void)transitionToDealsWithCompletion:(void(^)(BOOL))completion
 {
+    //EHIDealsConfiguration
     EHIMainRouter.router.transition
-    .root(EHIScreenDashboard)
-    .present(EHIScreenRNTest).animated(YES)
-    .start(nil);
+        .root(EHIScreenDeals)
+        .object([EHIDealsConfiguration configuration])
+        .start(nil);
     
     ehi_call(completion)(YES);
 }

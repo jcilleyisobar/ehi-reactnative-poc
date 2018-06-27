@@ -18,7 +18,6 @@
         @"first_name"        : @key(model.firstName),
         @"loyalty_data"      : @key(model.loyalty),
         @"user_name"         : @key(model.username),
-        @"date_of_birth"     : @key(model.maskedBirthDate),
     };
 }
 

@@ -110,6 +110,11 @@
 
 - (void)formFieldViewModelDidChangeValue:(EHIFormFieldViewModel *)viewModel { }
 
+- (void)formField:(EHIFormFieldTextToggleViewModel *)field didChangeToggleValue:(BOOL)toggleEnabled
+{
+    [self.stepThree formField:field didChangeToggleValue:toggleEnabled];
+}
+
 - (void)formFieldViewModelButtonTapped:(EHIFormFieldViewModel *)viewModel
 {
     [self invalidateModels];
@@ -121,6 +126,7 @@
         EHIUser *user = self.stepOne.currentUser;
         [user updateAddress:self.stepTwo.currentAddress];
         [user updateContact:self.stepThree.currentContact];
+        [user updateSpecialOffersOptIn:self.stepThree.currentPreferences.email.specialOffers];
         
         [self createEnrollProfileWithUser:user];
     }
@@ -133,7 +139,7 @@
     EHIEnrollProfile *enrollProfile = [EHIEnrollProfile modelForUser:user password:password acceptedTerms:acceptedTerms];
     
     self.isLoading = YES;
-    [self cloneCreateProfile:enrollProfile handler:^(EHIUser *user, EHIServicesError *error) {
+    [[EHIServices sharedInstance] createEnrollProfile:enrollProfile handler:^(EHIUser *user, EHIServicesError *error) {
         self.isLoading = NO;
         if(!error.hasFailed) {
             [self showConfirmation:user];

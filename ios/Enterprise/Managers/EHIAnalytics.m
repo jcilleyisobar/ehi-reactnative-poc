@@ -329,7 +329,7 @@ NS_ASSUME_NONNULL_BEGIN
     self[EHIAnalyticsDimensionApplePay]      = @([EHIPaymentManager canPayWithApplePay]);
     
     // update location services dimensions
-    self[EHIAnalyticsDimensionLocationServices] = @([EHILocationManager sharedInstance].locationsAvailable);
+    self[EHIAnalyticsDimensionLocationServices] = [self locationTypeFromStatus:[EHILocationManager sharedInstance].locationStatus];
     
     NSString *source = [Localytics valueForCustomDimension:EHIAnalyticsDimensionSessionSource];
     if (!source) {
@@ -346,6 +346,18 @@ NS_ASSUME_NONNULL_BEGIN
    
     // update the custom dimension
     [Localytics setValue:object forCustomDimension:dimension];
+}
+
+- (NSString *)locationTypeFromStatus:(CLAuthorizationStatus)status
+{
+    switch(status) {
+        case kCLAuthorizationStatusAuthorizedWhenInUse:
+            return EHIAnalyticsDimensionLocationInApp;
+        case kCLAuthorizationStatusAuthorizedAlways:
+            return EHIAnalyticsTrueValue;
+        default:
+            return EHIAnalyticsFalseValue;
+    }
 }
 
 - (NSString *)memberTypeFromUserManager:(EHIUserManager *)manager

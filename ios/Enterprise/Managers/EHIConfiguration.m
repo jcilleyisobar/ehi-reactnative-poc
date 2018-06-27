@@ -10,12 +10,13 @@
 #import "EHIConfiguration.h"
 #import "EHIServices+Config.h"
 #import "EHIServices+User.h"
-#import "EHISettingsEnvironment.h"
 #import "EHISettings.h"
 #import "EHIUserManager.h"
 #import "EHISearchEnvironment.h"
 
 NS_ASSUME_NONNULL_BEGIN
+
+NSString * const EHICountriesRefreshedNotification = @"EHICountriesRefreshed";
 
 #define EHIAlamoRedirectFallback    @"https://www.alamo.com/en_US/car-rental/home.html"
 #define EHINationalRedirectFallback @"https://www.nationalcar.com/en_US/car-rental/home.html"
@@ -57,6 +58,11 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 # pragma mark - EHICountriesRefreshedNotification
+
+- (void)refreshCountries
+{
+    [self refreshCountries:nil];
+}
 
 - (void)refreshCountries:(NSNotification * _Nullable)notification
 {
@@ -164,7 +170,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #if defined(DEBUG) || defined(UAT)
         if ([EHISettings sharedInstance].isFirstRun) {
-            [self showEnvironmentSelectionAlertWithCompletion:fetchConfigHandler];
+            [[EHISettings sharedInstance].environment showEnvironmentSelectionAlertForService:EHIServicesEnvironmentTypeGBOProfile withCompletion:fetchConfigHandler];
         } else {
             fetchConfigHandler();
         }
@@ -186,77 +192,6 @@ NS_ASSUME_NONNULL_BEGIN
     }
     
     return handler;
-}
-
-- (void)showEnvironmentSelectionAlertWithCompletion:(void(^ __nullable)(void))handler
-{
-#if defined(DEBUG) || defined(UAT)
-    EHIAlertViewBuilder *alertView = EHIAlertViewBuilder.new
-    .title(@"Set Environment")
-    .message(@"Which environment should be used?");
-    
-    // the count is the number of envs less the final environment (for debug we are assuming last
-    // env is unprotected PROD)
-    @(0).upTo(EHIEnvironmentTypeNumEnvironments - 2).each(^(NSNumber *number, int index) {
-        alertView.button([EHISettingsEnvironment nameForEnvironment:index]);
-    });
-    
-    alertView.cancelButton(@"Cancel");
-    
-    alertView.show(^(NSInteger index, BOOL canceled) {
-        // ignore and call handler immediately on cancel
-        if(canceled) {
-            ehi_call(handler)();
-            return;
-        }
-        
-        // attempt to update environment
-        EHIEnvironmentType updatedType = (EHIEnvironmentType)index;
-        [[EHISettings environment] setType:updatedType handler:^(EHIEnvironmentType type, BOOL didUpdate) {
-            [self refreshCountries:nil];
-            if(didUpdate) {
-                [[EHIUserManager sharedInstance] logoutCurrentUser];
-            }
-                
-            ehi_call(handler)();
-        }];
-    });
-#endif
-}
-
-- (void)showSearchEnvironmentSelectionAlertWithCompletion:(void(^ __nullable)(void))handler
-{
-#if defined(DEBUG) || defined(UAT)
-    EHIAlertViewBuilder *alertView = EHIAlertViewBuilder.new
-        .title(@"Set Search Environment")
-        .message(@"Which search environment should be used?");
-
-    // the count is the number of envs less the final environment (for debug we are assuming last
-    // env is unprotected PROD)
-    @(0).upTo(EHISearchEnvironmentTypeNumEnvironments - 1).each(^(NSNumber *number, int index) {
-        NSString *name = [EHISearchEnvironmentTypeTransformer() reverseTransformedValue:@(index)];
-        alertView.button(name);
-    });
-
-    alertView.cancelButton(@"Cancel");
-
-    alertView.show(^(NSInteger index, BOOL canceled) {
-        // ignore and call handler immediately on cancel
-        if(canceled) {
-            ehi_call(handler)();
-            return;
-        }
-
-        // attempt to update environment
-        EHISearchEnvironmentType updatedType = (EHISearchEnvironmentType)index;
-        EHISearchEnvironment *current = [EHISearchEnvironment unarchive];
-        [current setType:updatedType];
-
-        [[EHISettings environment] update];
-
-        ehi_call(handler)();
-    });
-#endif
 }
 
 //

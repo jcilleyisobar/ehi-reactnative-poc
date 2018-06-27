@@ -25,9 +25,18 @@
 - (void)updateWithLineItem:(EHICarClassPriceLineItem *)lineItem
 {
     BOOL isSummary = lineItem.type == EHIReservationLineItemTypeFeeSummary;
+
+    NSAttributedString *titleAndRate = EHIAttributedStringBuilder.new
+        .color([UIColor blackColor])
+        .fontStyle(EHIFontStyleLight, 18.f)
+        .text(lineItem.formattedTitle)
+        .space
+        .appendText(lineItem.formattedRate)
+        .color([UIColor ehi_grayColor4])
+        .fontStyle(EHIFontStyleLight, 14.f)
+        .string;
    
-    self.title          = lineItem.formattedTitle;
-    self.rateString     = lineItem.formattedRate;
+    self.titleAndRate   = titleAndRate;
     self.accessoryTitle = lineItem.formattedTotal;
     self.hasDetails     = lineItem.extra || isSummary;
     self.hideIcon       = !isSummary;

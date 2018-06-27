@@ -89,6 +89,11 @@
       </BuildableProductRunnable>
       <EnvironmentVariables>
          <EnvironmentVariable
+            key = "CFNETWORK_DIAGNOSTICS"
+            value = "1"
+            isEnabled = "NO">
+         </EnvironmentVariable>
+         <EnvironmentVariable
             key = "OS_ACTIVITY_MODE"
             value = "DISABLE"
             isEnabled = "YES">

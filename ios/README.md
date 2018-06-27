@@ -4,10 +4,10 @@ Enterprise Mobile
 |    Branch     |    Build Status   |
 |:-------------:|:-----------------:|
 | Develop       | ![Develop Status] |
-| Release 2.3.1 | ![Release Status] |
+| Release 2.4.0 | ![Release Status] |
 
 [Develop Status]:https://travis-ci.com/RoundarchLabs/ehi-ios.svg?token=obK1JXnFzBpsP6tqQWJD&branch=develop
-[Release Status]:https://travis-ci.com/RoundarchLabs/ehi-ios.svg?token=obK1JXnFzBpsP6tqQWJD&branch=release/2.3.1
+[Release Status]:https://travis-ci.com/RoundarchLabs/ehi-ios.svg?token=obK1JXnFzBpsP6tqQWJD&branch=release/2.4.0
 
 ## Getting Started
 Open `Enterprise.xcworkspace` and attempt to run the application.  

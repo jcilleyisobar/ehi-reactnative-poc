@@ -8,6 +8,7 @@
 
 #import "EHIModel.h"
 #import "EHIContractDetails.h"
+#import "EHIPromotionRenderable.h"
 
 typedef NS_ENUM(NSInteger, EHIPromotionContractType) {
     EHIPromotionContractTypeUnkown,
@@ -17,7 +18,7 @@ typedef NS_ENUM(NSInteger, EHIPromotionContractType) {
     EHIPromotionContractTypeSaturdayNightStayPromotions,
 };
 
-@interface EHIPromotionContract : EHIContractDetails
+@interface EHIPromotionContract : EHIContractDetails <EHIPromotionRenderable>
 @property (copy  , nonatomic, readonly) NSString *code;
 @property (strong, nonatomic, readonly) NSArray<NSString* >*descriptions;
 @property (assign, nonatomic, readonly) EHIPromotionContractType type;

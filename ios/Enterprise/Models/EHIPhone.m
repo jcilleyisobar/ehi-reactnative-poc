@@ -114,11 +114,11 @@
         self.type = EHIPhoneTypeMobile;
     }
     
-    request[@"phone_type"]        = [[self.class transformerForKey:@key(self.type)] reverseTransformedValue:@(self.type)];
-    request[@"priority"]          = @(self.priority);
-    request[@"country_code"]      = self.countryCode;
-    request[@"country_name"]      = self.countryName;
-    request[@"phone_number"]      = self.number.ehi_isMasked ? self.number : [self.number ehi_stripNonDecimalCharacters] ?: self.maskedNumber;
+    request[@"phone_type"]   = [[self.class transformerForKey:@key(self.type)] reverseTransformedValue:@(self.type)];
+    request[@"priority"]     = @(self.priority);
+    request[@"country_code"] = self.countryCode;
+    request[@"country_name"] = self.countryName;
+    request[@"phone_number"] = self.number.ehi_isMasked ? self.number : [self.number ehi_stripNonDecimalCharacters];
 }
 
 @end

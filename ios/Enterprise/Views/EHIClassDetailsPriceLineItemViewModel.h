@@ -9,9 +9,8 @@
 #import "EHIViewModel.h"
 
 @interface EHIClassDetailsPriceLineItemViewModel : EHIViewModel <MTRReactive>
-@property (copy  , nonatomic) NSString *title;
+@property (copy  , nonatomic) NSAttributedString *titleAndRate;
 @property (copy  , nonatomic) NSString *accessoryTitle;
-@property (copy  , nonatomic) NSString *rateString;
 @property (assign, nonatomic) BOOL hideIcon;
 @property (assign, nonatomic) BOOL hasDetails;
 @end

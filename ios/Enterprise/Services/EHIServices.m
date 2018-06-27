@@ -7,18 +7,21 @@
 //
 
 #import "EHIServices_Private.h"
+#import "EHIServices_Debug.h"
 #import "EHIUserManager.h"
 #import "EHIConfiguration.h"
 #import "EHIErrors.h"
 #import "EHIAnalytics.h"
 #import "EHICrashManager.h"
 #import "EHIServices+URLMasking.h"
+#import "EHISettings.h"
 
 NSString * const kEHIServicesParameterSourceCodeKey              = @"EMOBILEAPP";
 NSString * const kEHIServicesParameterEnrollSourceCodeKey        = @"EMBLAPPMEM";
 NSString * const kEHIServicesBrandPathKey                        = @"ENTERPRISE";
 NSString * const kEHIServicesChannelPathKey                      = @"mobile";
 NSString * const kEHIServicesGBORegionCookieKey                  = @"gbo_region";
+NSString * const kEHIServicesSetCookieKey                        = @"Set-Cookie";
 
 @interface EHIServices()
 @property (copy, nonatomic) NSString *lastCookieValue;
@@ -273,7 +276,7 @@ NSString * const kEHIServicesGBORegionCookieKey                  = @"gbo_region"
 
     __weak typeof(self) welf = self;
     return [self.client fetchRequest:request handler:^(NSHTTPURLResponse *urlResponse, id response, EHIServicesError *error) {
-        welf.lastCookieValue = urlResponse.allHeaderFields[kEHIServicesGBORegionCookieKey];
+        welf.lastCookieValue = [self cookieByParsing:urlResponse.allHeaderFields];
 
         // only async the parsing if we didn't error
         BOOL shouldAsync = isAsynchronous && !error.hasFailed;
@@ -295,14 +298,63 @@ NSString * const kEHIServicesGBORegionCookieKey                  = @"gbo_region"
     }];
 }
 
-- (NSDictionary *)cookiePropertiesWithURL:(NSURL *)url
+# pragma mark - Accessors
+
+- (void)setLastCookieValue:(NSString *)lastCookieValue
 {
-    NSString *lastCookieValue = self.lastCookieValue;
+    if(!lastCookieValue) return;
     
-    if(!(lastCookieValue && url)) {
+    _lastCookieValue = lastCookieValue;
+    
+#if defined(DEBUG) || defined(UAT)
+    if([EHISettings currentCookieBypass] != EHICookieRegionBypassClear) {
+        _lastCookieValue = [EHICookieRegionBypassTransformer() reverseTransformedValue:@([EHISettings currentCookieBypass])];
+    }
+#endif
+}
+
+#pragma mark - Debug
+
+- (void)resetRegionCookie
+{
+    _lastCookieValue = nil;
+}
+
+//
+// Helpers
+//
+
+- (NSString *)cookieByParsing:(NSDictionary *)headers
+{
+    NSString *setCookie = headers[kEHIServicesSetCookieKey];
+    if(!headers || !setCookie) {
         return nil;
     }
     
+    // "Set-Cookie" = "gbo_region=west;max-age=1200;Domain=.csdev.ehiaws.com;path=/"
+    return setCookie
+        .split(@";")
+        // ["gbo_region=west", "max-age=1200", "Domain=.csdev.ehiaws.com", "path=/"]
+        .select(^(NSString *pair){
+            return [pair containsString:kEHIServicesGBORegionCookieKey];
+        })
+        // ["gbo_region=west"]
+        .map(^(NSString *gboRegion){
+            return gboRegion.split(@"=");
+        })
+        // [["gbo_region", west"]]
+        .flatten
+        // ["gbo_region", west"]
+        .lastObject;
+}
+
+- (NSDictionary *)cookiePropertiesWithURL:(NSURL *)url
+{
+    NSString *lastCookieValue = self.lastCookieValue;
+    if(!lastCookieValue || !url) {
+        return nil;
+    }
+
     return @{
         NSHTTPCookieName      : kEHIServicesGBORegionCookieKey,
         NSHTTPCookieValue     : lastCookieValue,
@@ -312,3 +364,5 @@ NSString * const kEHIServicesGBORegionCookieKey                  = @"gbo_region"
 }
 
 @end
+
+

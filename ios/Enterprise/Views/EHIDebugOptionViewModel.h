@@ -13,7 +13,8 @@
 
 typedef NS_ENUM(NSUInteger, EHIDebugOptionType) {
     EHIDebugOptionTypeStringBehavior,
-    EHIDebugOptionTypeEnvironment,
+    EHIDebugOptionTypeGBOEnvironment,
+    EHIDebugOptionTypeAEMEnvironment,
     EHIDebugOptionTypeSearchEnvironment,
     EHIDebugOptionTypeInvalidateAuthToken,
     EHIDebugOptionTypeWrongApiKey,
@@ -33,6 +34,7 @@ typedef NS_ENUM(NSUInteger, EHIDebugOptionType) {
     EHIDebugOptionTypeIssuingAuthorityRequiredMock,
     EHIDebugOptionTypeUnauthJoinModal,
     EHIDebugOptionTypeGDPRState,
+    EHIDebugOptionTypeGBORegion,
     EHIDebugOptionTypeClearData
 };
 

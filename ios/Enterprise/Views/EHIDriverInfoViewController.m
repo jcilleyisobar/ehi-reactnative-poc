@@ -39,6 +39,7 @@
 @property (weak  , nonatomic) IBOutlet EHILabel *emailDescriptionLabel;
 @property (weak  , nonatomic) IBOutlet EHITextField *emailTextField;
 @property (weak  , nonatomic) IBOutlet UIView *emailSignupContainer;
+@property (weak  , nonatomic) IBOutlet EHIRestorableConstraint *emailSignupContainerHeight;
 @property (weak  , nonatomic) IBOutlet EHIToggleButton *emailToggle;
 @property (weak  , nonatomic) IBOutlet EHILabel *emailSignupLabel;
 
@@ -158,11 +159,13 @@
 
 - (void)invalidateLayout:(MTRComputation *)computation
 {
-    BOOL hideNameContainer     = self.viewModel.hideNameContainer;
-    BOOL hideSaveInfoContainer = self.viewModel.hideSaveInfoContainer;
+    BOOL hideNameContainer          = self.viewModel.hideNameContainer;
+    BOOL hideSaveInfoContainer      = self.viewModel.hideSaveInfoContainer;
+    BOOL hideEmailSignupContainer   = self.viewModel.hideEmailSignupContainer;
 
     self.nameFieldsContainerHeight.isDisabled  = hideNameContainer;
     self.saveContainerHeight.isDisabled        = hideSaveInfoContainer;
+    self.emailSignupContainerHeight.isDisabled = hideEmailSignupContainer;
 
     BOOL showSignInContainer = self.viewModel.showSignInContainer;
     BOOL showOutsideVendor   = self.viewModel.showOutsideVendor;

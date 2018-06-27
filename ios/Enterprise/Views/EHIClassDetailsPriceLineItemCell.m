@@ -36,8 +36,6 @@
 - (void)updateConstraints
 {
     [super updateConstraints];
-
-    self.rateTextTrailing.isDisabled = !self.viewModel.rateString;
 }
 
 # pragma mark - Reactions
@@ -47,9 +45,8 @@
     [super registerReactions:model];
     
     model.bind.map(@{
-        source(model.title)          : dest(self, .titleLabel.text),
+        source(model.titleAndRate)   : dest(self, .titleLabel.attributedText),
         source(model.accessoryTitle) : dest(self, .accessoryLabel.text),
-        source(model.rateString)     : dest(self, .rateLabel.text),
         source(model.hideIcon)       : dest(self, .iconContainerWidth.isDisabled),
         source(model.hasDetails)     : ^(NSNumber *hasDetails) {
             self.titleLabel.textColor = hasDetails.boolValue ? [UIColor ehi_greenColor] : [UIColor ehi_blackColor];

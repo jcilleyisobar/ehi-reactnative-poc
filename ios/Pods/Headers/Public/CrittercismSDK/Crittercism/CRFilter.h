@@ -1,1 +1,0 @@
-../../../../CrittercismSDK/iOS/Crittercism.framework/Headers/CRFilter.h

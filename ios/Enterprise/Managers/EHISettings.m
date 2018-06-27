@@ -22,7 +22,8 @@
 #define EHIRedemptionHidePointsKey                      @"EHIRedemptionHidePointsKey"
 #define EHIUseRentalAssistantKey                        @"EHIUseRentalAssistantKey"
 #define EHIUseTouchIdKey                                @"EHIUseTouchIdKey"
-#define EHIDidPromptDashboardNewFeatureKey              @"EHIDidPromptDashboardNewFeatureKey"
+#define EHIShouldPromptNotificationsKey                 @"EHIShouldPromptNotificationsKey"
+#define EHIShouldPromptLocationInUpcomingRentalKey      @"EHIShouldPromptLocationInUpcomingRentalKey"
 #define EHICurrentRentalReminderTimeKey                 @"EHICurrentRentalReminderTimeKey"
 #define EHIUpcomingRentalReminderTimeKey                @"EHIUpcomingRentalReminderTimeKey"
 #define EHIPromotionCodeKey                             @"EHIPromotionCodeKey"
@@ -39,6 +40,7 @@
 #define EHIIssuingAuthorityRequiredKey                  @"EHIIssuingAuthorityRequiredKey"
 #define EHIConfirmationShowJoinModalKey                 @"EHIConfirmationShowJoinModalKey"
 #define EHIGDPRShowModalKey                             @"EHIGDPRShowModalKey"
+#define EHICookieRegionBypassKey                        @"EHICookieRegionBypassKey"
 
 #define EHIConfirmationViewsCountToShowRate 2
 #define EHIAnalyticsReminderIntervalInMonths 12
@@ -96,6 +98,8 @@
         EHIRedemptionHidePointsKey                          : @(NO),
         EHIUseRentalAssistantKey                            : @(NO),
         EHIUseTouchIdKey                                    : @(NO),
+        EHIShouldPromptNotificationsKey                     : @(YES),
+        EHIShouldPromptLocationInUpcomingRentalKey          : @(YES),
         EHIConfirmationScreenViewCounterKey                 : @(NO),
         EHIAppStoreRateViewPresentedKey                     : @(NO),
         EHIInAppReviewDebugKey                              : @(NO),
@@ -106,6 +110,7 @@
         EHIShowLocationsMapFilterTipKey                     : @(YES),
         EHIConfirmationShowJoinModalKey                     : @(YES),
         EHIGDPRShowModalKey                                 : @(YES),
+        EHICookieRegionBypassKey                            : @(0),
         EHICurrentRentalReminderTimeKey                     : [settings.rentalReminderTimeTransformer transformedValue:@(EHIRentalReminderTimeNone)],
         EHIUpcomingRentalReminderTimeKey                    : [settings.rentalReminderTimeTransformer transformedValue:@(EHIRentalReminderTimeNone)]
     }];
@@ -208,11 +213,6 @@
     [self synchronize];
 }
 
-- (void)setDidPromptDashboardNewFeature:(BOOL)didPromptDashboardNewFeature
-{
-    [[NSUserDefaults standardUserDefaults] setBool:didPromptDashboardNewFeature forKey:EHIDidPromptDashboardNewFeatureKey];
-}
-
 - (void)setSelectPreferredPaymentMethodAutomatically:(BOOL)selectPreferredPaymentMethodAutomaically
 {
     [[NSUserDefaults standardUserDefaults] setBool:selectPreferredPaymentMethodAutomaically forKey:EHISelectPreferredPaymentMethodAutomaticallyKey];
@@ -271,11 +271,6 @@
 - (BOOL)useTouchId
 {
     return [[NSUserDefaults standardUserDefaults] boolForKey:EHIUseTouchIdKey];
-}
-
-- (BOOL)didPromptDashboardNewFeature
-{
-    return [[NSUserDefaults standardUserDefaults] boolForKey:EHIDidPromptDashboardNewFeatureKey];
 }
 
 - (BOOL)selectPreferredPaymentMethodAutomatically
@@ -471,6 +466,42 @@
 + (void)resetShowJoinModal
 {
     [[NSUserDefaults standardUserDefaults] setBool:YES forKey:EHIConfirmationShowJoinModalKey];
+}
+
+# pragma mark - Prompt Notifications
+
++ (BOOL)shouldPromptForNotifications
+{
+    return [[NSUserDefaults standardUserDefaults] boolForKey:EHIShouldPromptNotificationsKey];
+}
+
++ (void)didPromptForNotifications
+{
+    [[NSUserDefaults standardUserDefaults] setBool:NO forKey:EHIShouldPromptNotificationsKey];
+}
+
+# pragma mark - Prompt Location
+
++ (BOOL)shouldPromptForLocationInUpcomingRental
+{
+    return [[NSUserDefaults standardUserDefaults] boolForKey:EHIShouldPromptLocationInUpcomingRentalKey];
+}
+
++ (void)didPromptForLocationInUpcomingRental
+{
+    [[NSUserDefaults standardUserDefaults] setBool:NO forKey:EHIShouldPromptLocationInUpcomingRentalKey];
+}
+
+# pragma mark - Cookie bypass
+
++ (EHICookieRegionBypass)currentCookieBypass
+{
+    return [[NSUserDefaults standardUserDefaults] integerForKey:EHICookieRegionBypassKey];
+}
+
++ (void)setCurrentCookieBypass:(EHICookieRegionBypass)currentCookieBypass
+{
+    [[NSUserDefaults standardUserDefaults] setInteger:currentCookieBypass forKey:EHICookieRegionBypassKey];
 }
 
 # pragma mark - Reset

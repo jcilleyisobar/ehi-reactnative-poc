@@ -24,6 +24,7 @@
 #define EHIAnalyticsDimensionMemberTypeLoyalty    @"EP"
 #define EHIAnalyticsDimensionMemberTypeLoyaltyAlt @"EC"
 #define EHIAnalyticsDimensionMemberTypeGuest      @"Guest"
+#define EHIAnalyticsDimensionLocationInApp        @"App"
 
 #define EHIAnalyticsDimensionFallbackValue        @"Not available"
 

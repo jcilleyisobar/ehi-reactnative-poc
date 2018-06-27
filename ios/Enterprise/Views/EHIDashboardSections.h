@@ -11,8 +11,10 @@ typedef NS_ENUM(NSInteger, EHIDashboardSection) {
     EHIDashboardSectionHeader,
     EHIDashboardSectionHero,
     EHIDashboardSectionContent,
+    EHIDashboardSectionLocation,
     EHIDashboardSectionSearch,
     EHIDashboardSectionQuickstart,
+    EHIDashboardSectionNotification,
     EHIDashboardSectionPromotion,
     EHIDashboardSectionLoyaltyPrompt
 };

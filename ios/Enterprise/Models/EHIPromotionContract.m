@@ -44,4 +44,41 @@
     } defaultValue:@(EHIPromotionContractTypeUnkown)];
 }
 
+# pragma mark - EHIPromotionRenderable
+
+- (NSString *)title
+{
+    return self.name;
+}
+
+- (NSString *)shortTitle
+{
+    return self.shortDescription.ehi_stripHtml;
+}
+
+- (NSString *)subtitle
+{
+    return self.shortDescription.ehi_stripHtml;
+}
+
+- (NSString *)longDescription
+{
+    return self.details;
+}
+
+- (NSString *)cid
+{
+    return self.code;
+}
+
+- (NSString *)terms
+{
+    return self.termsAndConditions;
+}
+
+- (NSString *)imageName
+{
+    return @"weekend_special";
+}
+
 @end
