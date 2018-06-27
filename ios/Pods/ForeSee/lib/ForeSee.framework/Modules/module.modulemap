@@ -1,0 +1,14 @@
+framework module ForeSee {
+    umbrella header "ForeSee.h"
+
+    export *
+    
+    explicit module Trigger {
+        header "TRMeasure.h"
+        header "FSInviteDelegate.h"
+        header "FSTriggerCriteria.h"
+        header "FSInviteHandler.h"
+        header "FSUserProfile.h"
+        header "SRViewChangeDefinition.h"
+    }
+}
