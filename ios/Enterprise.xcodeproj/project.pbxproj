@@ -295,6 +295,10 @@
 		4C9FECF01F22893B007A4A78 /* localizable.en.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C9FECE71F22892F007A4A78 /* localizable.en.json */; };
 		4C9FECF11F22893E007A4A78 /* localizable.de.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C9FECE61F22892F007A4A78 /* localizable.de.json */; };
 		4CA337861DAC6EC70020682E /* COMODO_RSA_Organization_Validation_Secure_Server_CA.cer in Resources */ = {isa = PBXBuildFile; fileRef = 4CA337851DAC6EC70020682E /* COMODO_RSA_Organization_Validation_Secure_Server_CA.cer */; };
+		526EE47E20E2F282002874BD /* EHIRNTestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526EE47D20E2F282002874BD /* EHIRNTestStoryboard.storyboard */; };
+		526EE48020E3E9F1002874BD /* EHIRNTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526EE47F20E3E9F1002874BD /* EHIRNTestViewController.m */; };
+		526EE48320E3F917002874BD /* EHIRNManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 526EE48220E3F917002874BD /* EHIRNManager.m */; };
+		526EE48520E41D9A002874BD /* EHIRNFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 526EE48420E41D9A002874BD /* EHIRNFactory.m */; };
 		8409811B1B7B7F4F005FE42C /* EHIWebBrowserStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8409811A1B7B7F4F005FE42C /* EHIWebBrowserStoryboard.storyboard */; };
 		841670631C11DDFE00EA3E7F /* EHIWKCallSupportManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841670621C11DDFE00EA3E7F /* EHIWKCallSupportManager.swift */; };
 		841670651C1207BA00EA3E7F /* EHIWKLocationWayfinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841670641C1207BA00EA3E7F /* EHIWKLocationWayfinding.swift */; };
@@ -2752,6 +2756,13 @@
 		4CAAB1B91EDF24F90090FA36 /* EHISingleDateCalendarEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHISingleDateCalendarEnums.h; sourceTree = "<group>"; };
 		50998B72A9C569B0A2741973 /* Pods-Enterprise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Enterprise.release.xcconfig"; path = "Pods/Target Support Files/Pods-Enterprise/Pods-Enterprise.release.xcconfig"; sourceTree = "<group>"; };
 		516C52693B3DBEBAA5B7650A /* Pods-Enterprise.pentest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Enterprise.pentest.xcconfig"; path = "Pods/Target Support Files/Pods-Enterprise/Pods-Enterprise.pentest.xcconfig"; sourceTree = "<group>"; };
+		526EE47A20E2F26C002874BD /* EHIRNTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIRNTestViewController.h; sourceTree = "<group>"; };
+		526EE47D20E2F282002874BD /* EHIRNTestStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EHIRNTestStoryboard.storyboard; sourceTree = "<group>"; };
+		526EE47F20E3E9F1002874BD /* EHIRNTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIRNTestViewController.m; sourceTree = "<group>"; };
+		526EE48120E3F917002874BD /* EHIRNManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIRNManager.h; sourceTree = "<group>"; };
+		526EE48220E3F917002874BD /* EHIRNManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIRNManager.m; sourceTree = "<group>"; };
+		526EE48420E41D9A002874BD /* EHIRNFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIRNFactory.m; sourceTree = "<group>"; };
+		526EE48620E41EFA002874BD /* EHIRNFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHIRNFactory.h; sourceTree = "<group>"; };
 		55042486B93B73F449536D13 /* libPods-EnterpriseWatchExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-EnterpriseWatchExtension.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AC0481DCF0831EA71B1A5C1 /* libPods-Enterprise.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Enterprise.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		632B84921EF2E9BD04E9E236 /* Pods-EnterpriseTests.pentest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EnterpriseTests.pentest.xcconfig"; path = "Pods/Target Support Files/Pods-EnterpriseTests/Pods-EnterpriseTests.pentest.xcconfig"; sourceTree = "<group>"; };
@@ -6552,6 +6563,27 @@
 			name = "Location Details";
 			sourceTree = "<group>";
 		};
+		526EE47820E2F1D4002874BD /* Deals */ = {
+			isa = PBXGroup;
+			children = (
+				526EE47A20E2F26C002874BD /* EHIRNTestViewController.h */,
+				526EE47F20E3E9F1002874BD /* EHIRNTestViewController.m */,
+				526EE47D20E2F282002874BD /* EHIRNTestStoryboard.storyboard */,
+			);
+			name = Deals;
+			sourceTree = "<group>";
+		};
+		526EE47920E2F1E7002874BD /* React Native */ = {
+			isa = PBXGroup;
+			children = (
+				526EE48120E3F917002874BD /* EHIRNManager.h */,
+				526EE48220E3F917002874BD /* EHIRNManager.m */,
+				526EE48620E41EFA002874BD /* EHIRNFactory.h */,
+				526EE48420E41D9A002874BD /* EHIRNFactory.m */,
+			);
+			name = "React Native";
+			sourceTree = "<group>";
+		};
 		536FFCE229436E310E7EE26E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -10074,6 +10106,7 @@
 		FB3225591A5B275E005015BE /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				526EE47820E2F1D4002874BD /* Deals */,
 				FB32253C1A5B263C005015BE /* EHIMainStoryboard.storyboard */,
 				FBD168FB1A604FA5004472A0 /* EHIViewControllers.h */,
 				921EAD291D25C80D00C6482D /* EHIAccessibilityIdentifiers.h */,
@@ -10463,6 +10496,7 @@
 		FB6A8B281A69A7DF005DBAC2 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				526EE47920E2F1E7002874BD /* React Native */,
 				00A083751BFA6AD9002AC678 /* Router */,
 				00B23C5C1C1750F900B79B5E /* EHIRouter.h */,
 				00B23C5D1C1750F900B79B5E /* EHIRouter.m */,
@@ -11809,6 +11843,7 @@
 				B544933D1AEFF323005D232E /* loader_book_icon_35@3x.png in Resources */,
 				B54A9F111B0A577A008156DA /* EHIProfileBasicCell.xib in Resources */,
 				B54492971AEFF323005D232E /* loader_book_icon_42@1x.png in Resources */,
+				526EE47E20E2F282002874BD /* EHIRNTestStoryboard.storyboard in Resources */,
 				E97FB2E81B1CB3E100179369 /* loader_book_icon_green_30@1x.png in Resources */,
 				B54492C51AEFF323005D232E /* loader_book_icon_84@1x.png in Resources */,
 				B544928E1AEFF323005D232E /* loader_book_icon_34@1x.png in Resources */,
@@ -13562,6 +13597,7 @@
 				003FA5971AD885B90063F495 /* EHIReservationEnterprisePlusInfoViewModel.m in Sources */,
 				01DFF7221D63869300619F66 /* EHIEnrollmentIssuesHeaderCell.m in Sources */,
 				92C08A601D3FDCBB00AB6B5E /* EHIInvoiceSublistCell.m in Sources */,
+				526EE48520E41D9A002874BD /* EHIRNFactory.m in Sources */,
 				92F8A0711E0C5E3800E6D0B6 /* EHIAboutEnterprisePlusViewController.m in Sources */,
 				9272B9611DA2E5AC001844B1 /* EHIPaymentGateway.m in Sources */,
 				003FA5891AD876CA0063F495 /* EHIClassSelectEnterprisePlusCell.m in Sources */,
@@ -13609,6 +13645,7 @@
 				FB6A8B5A1A6EC726005DBAC2 /* EHILocationTimes.m in Sources */,
 				92C49BC61CAD7E6300DCD8A9 /* EHIPromotionView.m in Sources */,
 				92D144911D5E5C26002CBB97 /* EHIPlaceholderCell.m in Sources */,
+				526EE48320E3F917002874BD /* EHIRNManager.m in Sources */,
 				FB32256F1A5B2C82005015BE /* NSDate+Formatting.m in Sources */,
 				B5D06A811B2B63FB002AF801 /* EHIContractAdditionalInfoDropdownValue.m in Sources */,
 				B57052DE1B7B98E1004A757F /* EHIRedemptionLineItemsView.m in Sources */,
@@ -13867,6 +13904,7 @@
 				B54493A31AEFF34B005D232E /* EHIReviewBookingLoadingIndicator.m in Sources */,
 				007E26F21BB095C500581A81 /* EHIReservationStepViewModel.m in Sources */,
 				92EDEEE61E20166B000D36B1 /* EHIGaugeView.m in Sources */,
+				526EE48020E3E9F1002874BD /* EHIRNTestViewController.m in Sources */,
 				00CDCB5D1B30E3D0003D3332 /* EHIAirline.m in Sources */,
 				9275BDE11D47776300CF63FB /* EHIInvoiceSectionHeader.m in Sources */,
 				0097CB3E1AFBEC6000E069AD /* EHIFormFieldDateMonthYearCell.m in Sources */,
