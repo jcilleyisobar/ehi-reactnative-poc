@@ -12,6 +12,7 @@
 
 @property (strong) RCTBridge *rctBridge;
 @property (strong) EHIRNFactory *factory;
+@property (strong) EHIRNEventDispatcher *dispatcher;
 
 @end
 
@@ -28,20 +29,10 @@
         __sharedInstance = [[EHIRNManager alloc] init];
         __sharedInstance.rctBridge = [[RCTBridge alloc] initWithDelegate:__sharedInstance launchOptions:nil];
         __sharedInstance.factory = [[EHIRNFactory alloc] initWithRCTBridge:__sharedInstance.rctBridge];
+        __sharedInstance.dispatcher = [[EHIRNEventDispatcher alloc] init];
     });
 
     return __sharedInstance;
-}
-
-- (void)bindViewConstraints:(UIView *)view toSuperView:(UIView *)superview
-{
-    view.translatesAutoresizingMaskIntoConstraints = false;
-    NSLayoutConstraint *widthConstraint =
-        [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeWidth relatedBy:NSLayoutRelationEqual toItem:superview attribute:NSLayoutAttributeWidth multiplier:1 constant:0];
-    NSLayoutConstraint *heightConstraint =
-        [NSLayoutConstraint constraintWithItem:view attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:superview attribute:NSLayoutAttributeWidth multiplier:1 constant:0];
-
-    [superview addConstraints:@[widthConstraint, heightConstraint]];
 }
 
 #pragma mark - RCTBridgeDelegate -

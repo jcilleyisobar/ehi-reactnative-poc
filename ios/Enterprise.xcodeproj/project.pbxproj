@@ -295,6 +295,7 @@
 		4C9FECF01F22893B007A4A78 /* localizable.en.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C9FECE71F22892F007A4A78 /* localizable.en.json */; };
 		4C9FECF11F22893E007A4A78 /* localizable.de.json in Resources */ = {isa = PBXBuildFile; fileRef = 4C9FECE61F22892F007A4A78 /* localizable.de.json */; };
 		4CA337861DAC6EC70020682E /* COMODO_RSA_Organization_Validation_Secure_Server_CA.cer in Resources */ = {isa = PBXBuildFile; fileRef = 4CA337851DAC6EC70020682E /* COMODO_RSA_Organization_Validation_Secure_Server_CA.cer */; };
+		526663A220E73170008B33A1 /* EHIRNEventDispatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 526663A120E73170008B33A1 /* EHIRNEventDispatcher.m */; };
 		526EE47E20E2F282002874BD /* EHIRNTestStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526EE47D20E2F282002874BD /* EHIRNTestStoryboard.storyboard */; };
 		526EE48020E3E9F1002874BD /* EHIRNTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 526EE47F20E3E9F1002874BD /* EHIRNTestViewController.m */; };
 		526EE48320E3F917002874BD /* EHIRNManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 526EE48220E3F917002874BD /* EHIRNManager.m */; };
@@ -2756,6 +2757,8 @@
 		4CAAB1B91EDF24F90090FA36 /* EHISingleDateCalendarEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EHISingleDateCalendarEnums.h; sourceTree = "<group>"; };
 		50998B72A9C569B0A2741973 /* Pods-Enterprise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Enterprise.release.xcconfig"; path = "Pods/Target Support Files/Pods-Enterprise/Pods-Enterprise.release.xcconfig"; sourceTree = "<group>"; };
 		516C52693B3DBEBAA5B7650A /* Pods-Enterprise.pentest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Enterprise.pentest.xcconfig"; path = "Pods/Target Support Files/Pods-Enterprise/Pods-Enterprise.pentest.xcconfig"; sourceTree = "<group>"; };
+		526663A020E73170008B33A1 /* EHIRNEventDispatcher.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIRNEventDispatcher.h; sourceTree = "<group>"; };
+		526663A120E73170008B33A1 /* EHIRNEventDispatcher.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EHIRNEventDispatcher.m; sourceTree = "<group>"; };
 		526EE47A20E2F26C002874BD /* EHIRNTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EHIRNTestViewController.h; sourceTree = "<group>"; };
 		526EE47D20E2F282002874BD /* EHIRNTestStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EHIRNTestStoryboard.storyboard; sourceTree = "<group>"; };
 		526EE47F20E3E9F1002874BD /* EHIRNTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EHIRNTestViewController.m; sourceTree = "<group>"; };
@@ -6563,6 +6566,19 @@
 			name = "Location Details";
 			sourceTree = "<group>";
 		};
+		5266639F20E7312B008B33A1 /* React Native */ = {
+			isa = PBXGroup;
+			children = (
+				526EE48120E3F917002874BD /* EHIRNManager.h */,
+				526EE48220E3F917002874BD /* EHIRNManager.m */,
+				526EE48620E41EFA002874BD /* EHIRNFactory.h */,
+				526EE48420E41D9A002874BD /* EHIRNFactory.m */,
+				526663A020E73170008B33A1 /* EHIRNEventDispatcher.h */,
+				526663A120E73170008B33A1 /* EHIRNEventDispatcher.m */,
+			);
+			path = "React Native";
+			sourceTree = "<group>";
+		};
 		526EE47820E2F1D4002874BD /* Deals */ = {
 			isa = PBXGroup;
 			children = (
@@ -6576,10 +6592,6 @@
 		526EE47920E2F1E7002874BD /* React Native */ = {
 			isa = PBXGroup;
 			children = (
-				526EE48120E3F917002874BD /* EHIRNManager.h */,
-				526EE48220E3F917002874BD /* EHIRNManager.m */,
-				526EE48620E41EFA002874BD /* EHIRNFactory.h */,
-				526EE48420E41D9A002874BD /* EHIRNFactory.m */,
 			);
 			name = "React Native";
 			sourceTree = "<group>";
@@ -10033,6 +10045,7 @@
 		FB3225311A5B263C005015BE /* Enterprise */ = {
 			isa = PBXGroup;
 			children = (
+				5266639F20E7312B008B33A1 /* React Native */,
 				FB3225361A5B263C005015BE /* EHIAppDelegate.h */,
 				FB3225371A5B263C005015BE /* EHIAppDelegate.m */,
 				929C74FC1EFD3EB100104EB7 /* Reactor */,
@@ -13536,6 +13549,7 @@
 				92003B821D39548200AAEF40 /* EHIReservationPriceItemViewModel.m in Sources */,
 				0071003C1B38907A0077BCE3 /* NSBundle+Utility.m in Sources */,
 				92B8AF501EEF196D00F783D4 /* EHILocationDetailsAfterHoursModalViewModel.m in Sources */,
+				526663A220E73170008B33A1 /* EHIRNEventDispatcher.m in Sources */,
 				00669F5D1B1F46C100544AC5 /* EHIFormFieldTextViewCell.m in Sources */,
 				E9BD6DF41AEAD72C00AA237F /* EHIClassSelectActiveFilterCell.m in Sources */,
 				E9DB445A1AC5DCEF00388F66 /* EHIPriceFormatter.m in Sources */,

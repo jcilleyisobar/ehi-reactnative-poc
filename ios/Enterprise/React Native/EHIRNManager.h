@@ -9,13 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <React/RCTRootView.h>
 #import "EHIRNFactory.h"
+#import "EHIRNEventDispatcher.h"
 
 @interface EHIRNManager : NSObject
 
 + (EHIRNManager *)sharedInstance;
 
 @property(readonly) EHIRNFactory *factory;
-
-- (void)bindViewConstraints:(UIView *)view toSuperView:(UIView *)superview;
+@property(readonly) EHIRNEventDispatcher *dispatcher;
 
 @end
